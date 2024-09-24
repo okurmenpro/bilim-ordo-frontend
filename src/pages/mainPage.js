@@ -1,6 +1,7 @@
 import Test from "../components/Test"
 import { useEffect, useState } from "react"
 import Header from "../components/Header"
+import { Button } from "bootstrap"
 
 
 const MainPage = () => {
@@ -21,6 +22,12 @@ const MainPage = () => {
         <Test text={'helllo world'} />
         {number}
         <button onClick={handleCount}>Count</button>
+        <br/>
+        {/* <Button type="button" class="btn btn-primary" onClick={handleCount}>count</Button> */}
+        <button type="button" class="btn btn-outline-primary" onClick={handleCount}>Primary</button>
+
+        
+        
         </>
     )
 }
