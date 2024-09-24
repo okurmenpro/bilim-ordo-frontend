@@ -1,0 +1,34 @@
+.cart{
+    width: 258px;
+    height: 296px;
+
+    margin: 0 auto;
+}
+.cart img{
+    height: 145px;
+    width: 258px;
+}
+.cart h1{
+    font-size: 17px;
+    margin-top: -5px;
+}
+.cart h4{
+    margin-top: -8px;
+    color: gray;
+}
+.cart-flex{
+    display: flex;
+align-items: center;    
+    margin-top: -30px;
+    gap: 5px;
+}
+.cart-top{
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    gap: 7px;
+}
+.cart-top p{
+text-decoration: line-through;
+color: gray;
+}
