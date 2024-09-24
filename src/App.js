@@ -1,10 +1,17 @@
+import Test from "./components/Test";
+import { MainPage, myConst } from "./pages/mainPage";
+import Header from "./components/Header";
 
 
-
-function App() {
+const App = () => {
   return (
+    <>
+    <Header/>
    <p>First Day</p>
-   
+   <MainPage/>
+   {myConst}
+   </>
+
   );
 }
 
