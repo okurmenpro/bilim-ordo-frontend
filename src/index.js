@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Context from './context/Context';
+import Carts from './ContCarts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Context>
-      <App />
+      {/* <App /> */}
+      <Carts/>
     </Context>
   </React.StrictMode>
 );

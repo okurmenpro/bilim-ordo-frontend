@@ -1,0 +1,21 @@
+.carts-cont {
+    border: solid 1px red;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title-carts {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.cart {
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px solid blue;
+}
+
+.carts {
+    display: flex;
+    justify-content: space-between;
+}
