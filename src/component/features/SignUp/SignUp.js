@@ -24,15 +24,54 @@ export default function SignUp() {
           <Modal.Title>Sign up</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+
+         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
         <Form.Label column sm={2}>
-          Email
+          Фамилия
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="text" placeholder="Фамилия" />
+        </Col>
+
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Label column sm={2}>
+          Имя
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="text" placeholder="Имя" />
+        </Col>
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Label column sm={2}>
+          Отчество
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="text" placeholder="Отчество" />
+        </Col>
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Label column sm={2}>
+        Email
         </Form.Label>
         <Col sm={10}>
           <Form.Control type="email" placeholder="Email" />
         </Col>
       </Form.Group>
+
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Label column sm={2}>
+        Phone
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="number" placeholder="Phone number" />
+        </Col>
+      </Form.Group>
+
+      
 
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
         <Form.Label column sm={2}>
