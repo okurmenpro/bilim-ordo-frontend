@@ -1,13 +1,22 @@
-import TypesExample from "./component/Card/Card";
+
+import LogIn from "./component/features/LogIn/LogIn";
+import SignUp from "./component/features/SignUp/SignUp";
 
 
-function App() {
+
+
+
+export default function App() {
   return (
     <>
-    <TypesExample/>
+    
+    <LogIn/>
+    <SignUp/>
+    
+
+
     </>
     
   );
 }
 
-export default App;
