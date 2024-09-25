@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import { CiGlobe } from "react-icons/ci";
 
-const FooterCom = () => {
+const Footer = () => {
   return (
     <div >
         <div className='footer'>
@@ -86,4 +86,4 @@ const FooterCom = () => {
   )
 }
 
-export default FooterCom
+export default Footer

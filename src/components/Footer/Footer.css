@@ -24,10 +24,13 @@ ul{
 li{
     list-style: none;
 
+
 }
 
 ul li a{
     color: white;
+    text-decoration: none;
+
 }
 
 .b1{
