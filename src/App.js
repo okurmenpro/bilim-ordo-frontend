@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
+
 import './App.css';
-import BannerCom from './components/Banner/BannerCom';
+import BannerCom from './Components/Banner/BannerCom';
 
 function App() {
   return (
