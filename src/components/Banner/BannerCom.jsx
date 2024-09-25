@@ -4,6 +4,7 @@ import './BannerCom.css'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from '../slider';
+import Header from '../Header/Header';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,7 +12,8 @@ import Slider from '../slider';
 function BannerCom() {
     return (
         <>
-              <Slider/>
+            <Header/>
+            <Slider/>
         </>
     )
 }
