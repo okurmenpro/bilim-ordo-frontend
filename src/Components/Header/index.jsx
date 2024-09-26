@@ -6,6 +6,7 @@ import korzina from "../../assets/svg/korzina.svg"
 import notif from "../../assets/svg/notif.svg"
 
 function Header() {
+  const categories = ['Разработка', 'Бизнес', 'Финансы и бухгалтерский учет', 'ИТ и ПО', 'Офисное Программное обеспечение']
   return (
     <header>
         <div class="container">
@@ -23,17 +24,7 @@ function Header() {
         </div>
         <hr />
         <div className='bottom container'>
-            
-                <li>Разработка</li>
-                <li>Бизнес</li>
-                <li>Финансы и бухгалтерский учет</li>
-                <li>ИТ и ПО</li>
-                <li>Офисное Программное обеспечение</li>
-                <li>Личностный рост</li>
-                <li>Дизайн</li>
-                <li>Маркетинг</li>
-                <li>Здоровье и фитнес</li>
-                <li>Музыка</li>
+          {categories.map((category) => <li>{category}</li>)}
         </div>
     </header>
   )

@@ -1,0 +1,44 @@
+.cart{
+    width: 258px;
+    height: 296px;
+
+    margin: 0 auto;
+}
+.cart img{
+    height: 145px;
+    width: 258px;
+}
+.cart h1{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.cart h4{
+    margin-top: -8px;
+    color: gray;
+    font-size: 17px;
+    margin-left: -90px;
+}
+.cart-flex{
+    display: flex;
+    margin-top: -5px;
+    
+    
+    gap: 5px;
+}
+.cart-flex h2{
+    font-size: 20px;
+}
+.cart-top{
+    display: flex;
+    /* align-items: center; */
+    margin-top: -20px;
+    gap: 7px;
+}
+.cart-top p{
+text-decoration: line-through;
+color: gray;
+font-size: 17px;
+}
+.cart-top h3{
+    font-size: 17px;
+}
