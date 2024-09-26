@@ -27,38 +27,30 @@ export default function SignUp() {
 
          <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
         <Form.Label column sm={2}>
-          Фамилия
+          Name
         </Form.Label>
         <Col sm={10}>
-          <Form.Control type="text" placeholder="Фамилия" />
+          <Form.Control type="text" placeholder="Ivan" />
         </Col>
 
       </Form.Group>
 
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
         <Form.Label column sm={2}>
-          Имя
+          Last name
         </Form.Label>
         <Col sm={10}>
-          <Form.Control type="text" placeholder="Имя" />
+          <Form.Control type="text" placeholder="Ivanov" />
         </Col>
       </Form.Group>
 
-      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-        <Form.Label column sm={2}>
-          Отчество
-        </Form.Label>
-        <Col sm={10}>
-          <Form.Control type="text" placeholder="Отчество" />
-        </Col>
-      </Form.Group>
 
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
         <Form.Label column sm={2}>
         Email
         </Form.Label>
         <Col sm={10}>
-          <Form.Control type="email" placeholder="Email" />
+          <Form.Control type="email" placeholder="ivan@gmail.com" />
         </Col>
       </Form.Group>
 
@@ -72,15 +64,24 @@ export default function SignUp() {
       </Form.Group>
 
       
-
-      <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+      <Form.Label htmlFor="inputPassword5">Password</Form.Label>
+      <Form.Control
+        type="password"
+        id="inputPassword5"
+        aria-describedby="passwordHelpBlock"
+      />
+      <Form.Text id="passwordHelpBlock" muted>
+        Your password must be 8-20 characters long, contain letters and numbers,
+        and must not contain spaces, special characters, or emoji.
+      </Form.Text>
+      {/* <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
         <Form.Label column sm={2}>
           Password
         </Form.Label>
         <Col sm={10}>
           <Form.Control type="password" placeholder="Password" />
         </Col>
-      </Form.Group>
+      </Form.Group> */}
       
       {/* <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
