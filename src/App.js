@@ -1,11 +1,11 @@
-
 import './App.css';
-import BannerCom from './Components/Banner/BannerCom';
+import { RouterProvider } from 'react-router-dom'
+import { Router } from './router'
 
 function App() {
   return (
     <div className="App">
-      <BannerCom/>
+      <RouterProvider router={Router} />
     </div>
   );
 }
