@@ -1,13 +1,11 @@
-// import logo from './logo.svg';
 import './App.css';
-import BannerCom from './components/Banner/BannerCom';
-import Banner from './components/bannerCourse/Banner';
+import { RouterProvider } from 'react-router-dom'
+import { Router } from './router'
 
 function App() {
   return (
     <div className="App">
-      <BannerCom/>
-      <Banner/>
+      <RouterProvider router={Router} />
     </div>
   );
 }
