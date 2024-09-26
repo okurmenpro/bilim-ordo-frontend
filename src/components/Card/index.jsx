@@ -4,7 +4,7 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 
 function Card(props) {
   
- const array = [
+ const product = [
       {
         name: "Python разработка - с нуля до профессионала. Python 3",
         price: "74,99$"
@@ -33,7 +33,7 @@ function Card(props) {
     <div>
           <div className='flex'>
             {
-            array.map((item, index) => (
+            product.map((item, index) => (
                 <div key={index} className='cart'>
                     <img src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/643ee30a82b8.jpg" alt="" />
                     <h1>{item.name}</h1>
