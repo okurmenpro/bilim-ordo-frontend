@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.css'
-import Slider from '../slider';
+import Slider from '../Carousel';
 
 function Banner() {
     return (
