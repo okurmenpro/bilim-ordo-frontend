@@ -2,7 +2,7 @@ import React from 'react'
 import "./Cart.css"
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
-function CartCom() {
+function Card() {
   return (
     <div>
         <div className='cart'>
@@ -23,4 +23,4 @@ function CartCom() {
   )
 }
 
-export default CartCom
+export default Card;
