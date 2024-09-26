@@ -28,7 +28,6 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
                     <div className='a1'>
                         <ul>
                         <li>
