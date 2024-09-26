@@ -18,6 +18,7 @@ function CartCom() {
                 <p>77,99$</p>
             </div>
         </div>
+        
     </div>
   )
 }
