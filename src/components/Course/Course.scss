@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.course {
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+
+    .course__content {
+      width: 100%;
+      height: 320px;
+      border: 1px solid black;
+      display: flex;
+      align-items: start;
+      padding: 25px;
+      gap: 25px;
+      text-align: start;
+      cursor: pointer;
+      transition: 0.3s;
+
+      img {
+        width: 478px;
+        height: 269px;
+      }
+
+      .course__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+
+        h1 {
+          width: 405px;
+          color: black;
+          font-size: 28px;
+          font-weight: 700;
+          font-family: "inter";
+          letter-spacing: 0.3px;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          width: 600px;
+          color: black;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          font-family: "inter";
+        }
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          color: black;
+          font-size: 13px;
+          font-weight: 300;
+          font-family: "inter";
+        }
+
+        .course__star {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          gap: 6px;
+          height: 55px;
+
+          img {
+            width: 12px;
+            height: 12px;
+          }
+
+          h4 {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "inter";
+          }
+
+          h5 {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: "inter";
+          }
+        }
+      }
+
+      .crouse__price {
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: "inter";
+      }
+    }
+
+    .course__content:hover {
+      background: #00000011;
+    }
+  }
+}
