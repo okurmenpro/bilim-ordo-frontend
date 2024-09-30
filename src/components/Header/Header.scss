@@ -67,14 +67,24 @@ ul,li {
 }
 
 .bottom {
-    display: flex;
-    justify-content: space-evenly;
-
-    li {
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: -40px;
+  display: flex;
+  justify-content: space-evenly;
+  height: max-content;
+  margin-bottom: 20px;
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 1.4;
+    color: #2d2f31;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    &:hover {
+      color: #5022c3;
     }
+}
 }
 
 // ------

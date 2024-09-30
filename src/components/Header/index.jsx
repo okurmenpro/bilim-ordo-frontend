@@ -1,11 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
 import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
-import { Dropdown } from 'react-bootstrap';
-import { MdKeyboardArrowRight } from 'react-icons/md';
+import { Dropdown } from "react-bootstrap";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+import LogIn from "../LogIn";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -20,38 +22,41 @@ function Header() {
 
   const timerRef = useRef(null);
   const titleNav = [
-    "Разработка", "Разработка", "Финансы и бухгалтерский учет", "ИТ и ПО", "Офисное Программное обеспечение"
-  ]
-
+    "Разработка",
+    "Разработка",
+    "Финансы и бухгалтерский учет",
+    "ИТ и ПО",
+    "Офисное Программное обеспечение",
+  ];
 
   const mainMenuItems = [
     {
-      label: 'Разработка',
-      subMenu: ['Frontend', 'Backend'],
+      label: "Разработка",
+      subMenu: ["Frontend", "Backend"],
     },
     {
-      label: 'Бизнес',
-      subMenu: ['Маркетинг', 'Продажи'],
+      label: "Бизнес",
+      subMenu: ["Маркетинг", "Продажи"],
     },
     {
-      label: 'Финансы и бухгалтерский учет',
-      subMenu: ['Бухгалтерия', 'Финансовый анализ'],
+      label: "Финансы и бухгалтерский учет",
+      subMenu: ["Бухгалтерия", "Финансовый анализ"],
     },
     {
-      label: 'ИТ и ПО',
-      subMenu: ['Тестирование', 'Программирование'],
+      label: "ИТ и ПО",
+      subMenu: ["Тестирование", "Программирование"],
     },
   ];
 
   const subSubMenuData = {
-    Frontend: ['React', 'Vue'],
-    Backend: ['Node.js', 'Django'],
-    Маркетинг: ['Digital', 'SMM'],
-    Продажи: ['B2B', 'B2C'],
-    Бухгалтерия: ['Налоги', 'Отчеты'],
-    Финансовый: ['Финансовые отчеты', 'Аудит'],
-    Тестирование: ['Unit-тесты', 'UI/UX-тестирование'],
-    Программирование: ['Python', 'JavaScript'],
+    Frontend: ["React", "Vue"],
+    Backend: ["Node.js", "Django"],
+    Маркетинг: ["Digital", "SMM"],
+    Продажи: ["B2B", "B2C"],
+    Бухгалтерия: ["Налоги", "Отчеты"],
+    Финансовый: ["Финансовые отчеты", "Аудит"],
+    Тестирование: ["Unit-тесты", "UI/UX-тестирование"],
+    Программирование: ["Python", "JavaScript"],
   };
 
   const handleMouseEnterMainMenu = (subMenu, mainItem) => {
@@ -104,20 +109,28 @@ function Header() {
         >
           <h3>Категории</h3>
 
-  <div className='icons'>
-    <img src={heart} alt="" />
-    <img src={korzina} alt="" />
-    <img className='not' src={notif} alt="" />
-    <LogIn />
-  </div>
+          <div className="icons">
+            <img src={heart} alt="" />
+            <img src={korzina} alt="" />
+            <img className="not" src={notif} alt="" />
+            <LogIn />
+          </div>
 
           {showMainMenu && (
-            <div className="main-menu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
+            <div
+              className="main-menu"
+              onMouseEnter={handleMouseEnterAllMenus}
+              onMouseLeave={handleMouseLeaveAllMenus}
+            >
               {mainMenuItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`menu-item ${activeMainItem === item.label ? 'active' : ''}`} 
-                  onMouseEnter={() => handleMouseEnterMainMenu(item.subMenu, item.label)}
+                  className={`menu-item ${
+                    activeMainItem === item.label ? "active" : ""
+                  }`}
+                  onMouseEnter={() =>
+                    handleMouseEnterMainMenu(item.subMenu, item.label)
+                  }
                 >
                   <Dropdown.Item id="text" href={`#/action-${index}`}>
                     {item.label}
@@ -127,11 +140,17 @@ function Header() {
               ))}
 
               {showSubMenu && (
-                <div className="submenu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
+                <div
+                  className="submenu"
+                  onMouseEnter={handleMouseEnterAllMenus}
+                  onMouseLeave={handleMouseLeaveAllMenus}
+                >
                   {subMenuItems.map((subItem, index) => (
                     <div
                       key={index}
-                      className={`menu-item ${activeSubItem === subItem ? 'active' : ''}`}
+                      className={`menu-item ${
+                        activeSubItem === subItem ? "active" : ""
+                      }`}
                       onMouseEnter={() => handleMouseEnterSubMenu(subItem)}
                     >
                       <Dropdown.Item id="text" href={`#/sub-action-${index}`}>
@@ -142,14 +161,26 @@ function Header() {
                   ))}
 
                   {showSubSubMenu && (
-                    <div className="subsubmenu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
+                    <div
+                      className="subsubmenu"
+                      onMouseEnter={handleMouseEnterAllMenus}
+                      onMouseLeave={handleMouseLeaveAllMenus}
+                    >
                       {subSubMenuItems.map((subSubItem, index) => (
                         <div
                           key={index}
-                          className={`menu-item ${activeSubSubItem === subSubItem ? 'active' : ''}`} уровня
-                          onMouseEnter={() => handleMouseEnterSubSubMenu(subSubItem)}
+                          className={`menu-item ${
+                            activeSubSubItem === subSubItem ? "active" : ""
+                          }`}
+                          уровня
+                          onMouseEnter={() =>
+                            handleMouseEnterSubSubMenu(subSubItem)
+                          }
                         >
-                          <Dropdown.Item id="text" href={`#/sub-sub-action-${index}`}>
+                          <Dropdown.Item
+                            id="text"
+                            href={`#/sub-sub-action-${index}`}
+                          >
                             {subSubItem}
                           </Dropdown.Item>
                         </div>
@@ -166,27 +197,25 @@ function Header() {
 
         <div className="providers">
           {['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'].map((provider, index) => (
-            <a key={index}>{provider}</a>
+            <Link to='#' key={index}>{provider}</Link>
           ))}
         </div >
 
-    <div className="icons">
-      <img src={heart} alt="Heart" />
-      <img src={korzina} alt="Cart" />
-      <img className="not" src={notif} alt="Notifications" />
-    </div>
-      </div >
+        <div className="icons">
+          <img src={heart} alt="Heart" />
+          <img src={korzina} alt="Cart" />
+          <img className="not" src={notif} alt="Notifications" />
+        </div>
+      </div>
 
       <hr />
 
       <div className="bottom container">
-  {titleNav.map((category, index) => (
-    <li key={index}>{category}</li>
-  ))}
-</div>
-
-     
-    </header >
+        {titleNav.map((category, index) => (
+          <li key={index}>{category}</li>
+        ))}
+      </div>
+    </header>
   );
 }
 
