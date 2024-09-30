@@ -109,13 +109,6 @@ function Header() {
         >
           <h3>Категории</h3>
 
-          <div className="icons">
-            <img src={heart} alt="" />
-            <img src={korzina} alt="" />
-            <img className="not" src={notif} alt="" />
-            <LogIn />
-          </div>
-
           {showMainMenu && (
             <div
               className="main-menu"
@@ -196,15 +189,20 @@ function Header() {
         <input type="search" placeholder="Ищите что угодно" />
 
         <div className="providers">
-          {['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'].map((provider, index) => (
-            <Link to='#' key={index}>{provider}</Link>
-          ))}
-        </div >
+          {["Udemy Business", "Преподавайте на Udemy", "Мое обучение"].map(
+            (provider, index) => (
+              <Link to="#" key={index}>
+                {provider}
+              </Link>
+            )
+          )}
+        </div>
 
         <div className="icons">
           <img src={heart} alt="Heart" />
           <img src={korzina} alt="Cart" />
           <img className="not" src={notif} alt="Notifications" />
+          <LogIn />
         </div>
       </div>
 
@@ -212,7 +210,9 @@ function Header() {
 
       <div className="bottom container">
         {titleNav.map((category, index) => (
-          <li key={index}>{category}</li>
+          <Link to="#" key={index}>
+            {category}
+          </Link>
         ))}
       </div>
     </header>
