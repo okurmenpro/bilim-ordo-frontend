@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import { CiGlobe } from "react-icons/ci";
+// import { CiGlobe } from "react-icons/ci";
 
 const Footer = () => {
   return (
@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
                 <div className='info-right'>
                     <button className='b1'>
-                    <CiGlobe className='icon1'/>                        
+                    {/* <CiGlobe className='icon1'/>                         */}
                     <h3>Русский</h3>
                     </button>
                 </div>
