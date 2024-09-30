@@ -88,7 +88,7 @@ ul,li {
     background-color: #fff;
     width: 300px; 
     min-height: 300px;
-    border-right: 1px solid #929292;
+    border: 1px solid #929292;
     margin: 0;
     padding: 0;
     z-index: 9999;
@@ -104,7 +104,7 @@ ul,li {
     background-color: #fff;
     width: 300px;
     min-height: 300px;
-    border-right: 1px solid #929292;
+    border: 1px solid #929292;
     margin: 0;
     padding: 0;
     z-index: 9999;
@@ -123,6 +123,7 @@ ul,li {
     padding: 0;
     z-index: 9999;
     text-align: left;
+    border: 1px solid #929292;
 }
 
 .menu-item {
