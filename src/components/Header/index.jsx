@@ -14,11 +14,15 @@ function Header() {
   const [subMenuItems, setSubMenuItems] = useState([]);
   const [subSubMenuItems, setSubSubMenuItems] = useState([]);
 
-  const [activeMainItem, setActiveMainItem] = useState(null); 
-  const [activeSubItem, setActiveSubItem] = useState(null);   
+  const [activeMainItem, setActiveMainItem] = useState(null);
+  const [activeSubItem, setActiveSubItem] = useState(null);
   const [activeSubSubItem, setActiveSubSubItem] = useState(null);
 
   const timerRef = useRef(null);
+  const titleNav = [
+    "Разработка", "Разработка", "Финансы и бухгалтерский учет", "ИТ и ПО", "Офисное Программное обеспечение"
+  ]
+
 
   const mainMenuItems = [
     {
@@ -55,22 +59,22 @@ function Header() {
     setSubMenuItems(subMenu);
     setShowSubMenu(true);
     setShowSubSubMenu(false);
-    setActiveMainItem(mainItem); 
-    setActiveSubItem(null); 
-    setActiveSubSubItem(null); 
+    setActiveMainItem(mainItem);
+    setActiveSubItem(null);
+    setActiveSubSubItem(null);
   };
 
   const handleMouseEnterSubMenu = (subMenuItem) => {
     clearTimeout(timerRef.current);
     setSubSubMenuItems(subSubMenuData[subMenuItem] || []);
     setShowSubSubMenu(true);
-    setActiveSubItem(subMenuItem); 
-    setActiveSubSubItem(null); 
+    setActiveSubItem(subMenuItem);
+    setActiveSubSubItem(null);
   };
 
   const handleMouseEnterSubSubMenu = (subSubItem) => {
     clearTimeout(timerRef.current);
-    setActiveSubSubItem(subSubItem); 
+    setActiveSubSubItem(subSubItem);
   };
 
   const handleMouseLeaveAllMenus = () => {
@@ -78,7 +82,7 @@ function Header() {
       setShowMainMenu(false);
       setShowSubMenu(false);
       setShowSubSubMenu(false);
-      setActiveMainItem(null); 
+      setActiveMainItem(null);
       setActiveSubItem(null);
       setActiveSubSubItem(null);
     }, 300);
@@ -99,6 +103,13 @@ function Header() {
           onMouseLeave={handleMouseLeaveAllMenus}
         >
           <h3>Категории</h3>
+
+  <div className='icons'>
+    <img src={heart} alt="" />
+    <img src={korzina} alt="" />
+    <img className='not' src={notif} alt="" />
+    <LogIn />
+  </div>
 
           {showMainMenu && (
             <div className="main-menu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
@@ -157,23 +168,25 @@ function Header() {
           {['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'].map((provider, index) => (
             <a key={index}>{provider}</a>
           ))}
-        </div>
+        </div >
 
-        <div className="icons">
-          <img src={heart} alt="Heart" />
-          <img src={korzina} alt="Cart" />
-          <img className="not" src={notif} alt="Notifications" />
-        </div>
-      </div>
+    <div className="icons">
+      <img src={heart} alt="Heart" />
+      <img src={korzina} alt="Cart" />
+      <img className="not" src={notif} alt="Notifications" />
+    </div>
+      </div >
 
       <hr />
 
       <div className="bottom container">
-        {['Разработка', 'Бизнес', 'Финансы и бухгалтерский учет', 'ИТ и ПО', 'Офисное Программное обеспечение'].map((category, index) => (
-          <li key={index}>{category}</li>
-        ))}
-      </div>
-    </header>
+  {titleNav.map((category, index) => (
+    <li key={index}>{category}</li>
+  ))}
+</div>
+
+     
+    </header >
   );
 }
 
