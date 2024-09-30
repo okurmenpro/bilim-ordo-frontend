@@ -36,6 +36,21 @@ ul,li {
         display: flex;
         gap: 15px;
 
+        .b1{
+            text-decoration: none;
+           background-color: white;
+           color: black;
+        //    font-size: 18px;
+           border: 2px solid black;
+
+        }
+
+        .b2{
+            height: 38px;
+            background-color: black;
+            color: white;
+        }
+
         img {
             width: 40px;
             height: 40px;
