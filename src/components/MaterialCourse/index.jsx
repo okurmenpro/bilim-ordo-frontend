@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { materials } from '../../data/material';
 import { IoDocumentOutline } from "react-icons/io5";
 
-function Index() {
+function CouserMaterials() {
     // Состояние для отслеживания видимости каждого раздела
     const [visibleSections, setVisibleSections] = useState({});
 
@@ -53,4 +53,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default CouserMaterials;

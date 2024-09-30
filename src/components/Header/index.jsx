@@ -7,6 +7,7 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import LogIn from "../LogIn";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -20,6 +21,13 @@ function Header() {
   const [activeSubSubItem, setActiveSubSubItem] = useState(null);
 
   const timerRef = useRef(null);
+  const titleNav = [
+    "Разработка",
+    "Разработка",
+    "Финансы и бухгалтерский учет",
+    "ИТ и ПО",
+    "Офисное Программное обеспечение",
+  ];
 
   const mainMenuItems = [
     {
@@ -101,6 +109,13 @@ function Header() {
         >
           <h3>Категории</h3>
 
+          <div className="icons">
+            <img src={heart} alt="" />
+            <img src={korzina} alt="" />
+            <img className="not" src={notif} alt="" />
+            <LogIn />
+          </div>
+
           {showMainMenu && (
             <div
               className="main-menu"
@@ -181,12 +196,10 @@ function Header() {
         <input type="search" placeholder="Ищите что угодно" />
 
         <div className="providers">
-          {["Udemy Business", "Преподавайте на Udemy", "Мое обучение"].map(
-            (provider, index) => (
-              <a key={index}>{provider}</a>
-            )
-          )}
-        </div>
+          {['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'].map((provider, index) => (
+            <Link to='#' key={index}>{provider}</Link>
+          ))}
+        </div >
 
         <div className="icons">
           <img src={heart} alt="Heart" />
@@ -198,14 +211,8 @@ function Header() {
       <hr />
 
       <div className="bottom container">
-        {[
-          "Веб-дизайн ",
-          "Графический дизайн и иллюстрация",
-          "Инструменты дизайна",
-          "Дизайн пользовательского интерфейса",
-          "Дизайн игр",
-        ].map((category, index) => (
-          <Link key={index}>{category}</Link>
+        {titleNav.map((category, index) => (
+          <li key={index}>{category}</li>
         ))}
       </div>
     </header>
