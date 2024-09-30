@@ -4,6 +4,8 @@ import udemy from "../../assets/images/udemy.png"
 import heart from "../../assets/svg/heart.svg"
 import korzina from "../../assets/svg/korzina.svg"
 import notif from "../../assets/svg/notif.svg"
+import LogIn from '../LogIn'
+
 
 function Header() {
   const categories = ['Разработка', 'Бизнес', 'Финансы и бухгалтерский учет', 'ИТ и ПО', 'Офисное Программное обеспечение']
@@ -24,7 +26,9 @@ function Header() {
                 <img src={heart} alt="" />
                 <img src={korzina} alt="" />
                 <img className='not' src={notif} alt="" />
+                <LogIn/>
             </div>
+
         </div>
         <hr />
         <div className='bottom container'>
