@@ -1,79 +1,89 @@
-ul,li {
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 .container {
-    width: 1500px;
+  width: 1500px;
+  height: 100px;
+  // border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: center;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  h3:hover {
+    color: rgb(51, 51, 201);
+  }
+
+  img {
+    width: 180px;
     height: 100px;
-    // border: 1px solid black;
+  }
+
+  input {
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    border: 0.1 solid black;
+  }
+  .icons {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    gap: 20px;
-    align-items: center;
+    gap: 15px;
 
-    h3{
-        font-size: 20px;
-        font-weight: 400;
-        cursor: pointer;
-    }
-    h3:hover {
-        color: rgb(51, 51, 201);
-    }
-    
     img {
-        width: 180px;
-        height: 100px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
     }
+    .not {
+      width: 43px;
+      height: 33px;
+      margin-top: 4px;
+    }
+  }
 
-    input{
-        width: 400px;
-        height: 50px;
-        border-radius: 30px;
-        border: 0.1 solid black;
+  .providers {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    // border: 1px  solid black;
+    width: 980px;
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      cursor: pointer;
     }
-    .icons {
-        display: flex;
-        gap: 15px;
-
-        img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-
-        }
-        .not {
-            width: 43px;
-            height: 33px; 
-            margin-top: 4px;
-        }
+    .providers,
+    a:hover {
+      color: rgb(51, 51, 201);
     }
-    
-    .providers {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        // border: 1px  solid black;
-        width: 980px;
-        a{
-            font-size: 20px;
-            font-weight: 400;
-            cursor: pointer;
-        }
-        .providers, a:hover {
-            color: rgb(51, 51, 201);
-        }
-    }
-    
+  }
 }
 
 .bottom {
-    display: flex;
-    justify-content: space-evenly;
-
-    li {
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: -40px;
+  display: flex;
+  justify-content: space-evenly;
+  height: max-content;
+  margin-bottom: 20px;
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 1.4;
+    color: #2d2f31;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    &:hover {
+      color: #5022c3;
     }
+  }
 }
