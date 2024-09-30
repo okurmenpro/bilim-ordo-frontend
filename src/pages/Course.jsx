@@ -1,10 +1,12 @@
 import React from 'react'
-import Banner from '../components/bannerCourse/Banner'
+import Index from '../components/MaterialCourse/Index'
+import Banner from '../components/BannerCourse/Banner'
 
 function Course() {
   return (
     <div>
       <Banner/>
+      <Index/>
     </div>
   )
 }

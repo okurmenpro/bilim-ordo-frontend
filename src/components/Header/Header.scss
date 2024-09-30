@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap');
 ul,li {
     list-style: none;
 }
@@ -5,7 +6,6 @@ ul,li {
 .container {
     width: 1500px;
     height: 100px;
-    // border: 1px solid black;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -53,7 +53,6 @@ ul,li {
         display: flex;
         align-items: center;
         gap: 25px;
-        // border: 1px  solid black;
         width: 980px;
         a{
             font-size: 20px;
@@ -77,3 +76,110 @@ ul,li {
         margin-top: -40px;
     }
 }
+
+// ------
+
+
+.main-menu {
+    display: block; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 300px; 
+    min-height: 300px;
+    border-right: 1px solid #929292;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.submenu {
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: 300px; 
+    background-color: #fff;
+    width: 300px;
+    min-height: 300px;
+    border-right: 1px solid #929292;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    text-align: left;
+}
+
+.subsubmenu {
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: 300px; 
+    background-color: #fff;
+    width: 300px;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    text-align: left;
+}
+
+.menu-item {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 8px 12px;
+    cursor: pointer;
+    align-items: center;
+    margin: 0;
+}
+
+.menu-item:hover {
+    background-color: #f1f1f1;
+}
+
+#text {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Varta', sans-serif;
+    margin: 0;
+}
+
+#text:hover {
+    color: rgb(89, 27, 212);
+}
+
+.categories-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+    background-color: #f1f1f1;
+    
+    a {
+      color: rgb(89, 27, 212); 
+    }
+  }
+  
+  .submenu .menu-item.active {
+    color:rgb(89, 27, 212) ;
+ 
+  }
+  
+  .subsubmenu .menu-item.active {
+    color:rgb(89, 27, 212) ;
+  }
+  
+  
