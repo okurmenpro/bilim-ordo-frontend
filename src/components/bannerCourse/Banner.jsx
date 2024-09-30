@@ -6,7 +6,7 @@ import { BsExclamationOctagon } from "react-icons/bs";
 
 function Banner() {
     return (
-        <div className='course__banner container'>
+        <div className='course__banner'>
             <div className='img__text'>
                 <p>Разработка</p>
                 <img src="" alt="" />
