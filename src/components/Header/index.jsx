@@ -7,7 +7,7 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LogIn from "../LogIn";
+import LogIn from "../Login";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -98,24 +98,16 @@ function Header() {
     setShowMainMenu(true);
   };
 
+  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
   return (
     <header>
       <div className="container">
         <img src={udemy} alt="Udemy" />
-
         <Dropdown
           onMouseEnter={handleMouseEnterAllMenus}
           onMouseLeave={handleMouseLeaveAllMenus}
         >
           <h3>Категории</h3>
-
-          <div className="icons">
-            <img src={heart} alt="" />
-            <img src={korzina} alt="" />
-            <img className="not" src={notif} alt="" />
-            <LogIn />
-          </div>
-
           {showMainMenu && (
             <div
               className="main-menu"
@@ -192,24 +184,26 @@ function Header() {
             </div>
           )}
         </Dropdown>
-
         <input type="search" placeholder="Ищите что угодно" />
-
-        <div className="providers">
-          {['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'].map((provider, index) => (
+        <div className='providers'>
+            <Link to={"/"}>
+            {providers.map((provider, index) => (
             <Link to='#' key={index}>{provider}</Link>
           ))}
-        </div >
+            </Link>
 
-        <div className="icons">
-          <img src={heart} alt="Heart" />
-          <img src={korzina} alt="Cart" />
-          <img className="not" src={notif} alt="Notifications" />
-        </div>
+                <Link to={"/basket"}>
+                <img src={korzina} alt="" />
+                </Link>
+                <Link to={"/login"}>
+                <button className='b1'>Войти</button>
+                </Link>
+                <Link to={"/register"}>
+                <button className='b2'>Регистрация</button>
+                </Link>
+            </div> 
       </div>
-
       <hr />
-
       <div className="bottom container">
         {titleNav.map((category, index) => (
           <li key={index}>{category}</li>
