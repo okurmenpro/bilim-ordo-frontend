@@ -7,7 +7,7 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LogIn from "../LogIn";
+import LogIn from "../Login";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -98,17 +98,16 @@ function Header() {
     setShowMainMenu(true);
   };
 
+  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
   return (
     <header>
       <div className="container">
         <img src={udemy} alt="Udemy" />
-
         <Dropdown
           onMouseEnter={handleMouseEnterAllMenus}
           onMouseLeave={handleMouseLeaveAllMenus}
         >
           <h3>Категории</h3>
-
           {showMainMenu && (
             <div
               className="main-menu"
@@ -185,7 +184,6 @@ function Header() {
             </div>
           )}
         </Dropdown>
-
         <input type="search" placeholder="Ищите что угодно" />
 
         <div className="providers">
@@ -205,9 +203,7 @@ function Header() {
           <LogIn />
         </div>
       </div>
-
       <hr />
-
       <div className="bottom container">
         {titleNav.map((category, index) => (
           <Link to="#" key={index}>
