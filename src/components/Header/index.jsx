@@ -6,6 +6,7 @@ import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from 'react-bootstrap';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -138,9 +139,12 @@ function Header() {
                           className={`menu-item ${activeSubSubItem === subSubItem ? 'active' : ''}`} уровня
                           onMouseEnter={() => handleMouseEnterSubSubMenu(subSubItem)}
                         >
+                          <Link to="./course">
                           <Dropdown.Item id="text" href={`#/sub-sub-action-${index}`}>
                             {subSubItem}
                           </Dropdown.Item>
+                          </Link>
+                          
                         </div>
                       ))}
                     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from '../components/MaterialCourse/Index'
+import Index from '../components/MaterialCourse'
 import Banner from '../components/BannerCourse/Banner'
 
 function Course() {
