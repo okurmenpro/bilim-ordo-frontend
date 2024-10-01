@@ -1,3 +1,8 @@
+.flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
 .cart{
     width: 258px;
     height: 296px;
@@ -11,12 +16,14 @@
 .cart h1{
     font-size: 18px;
     margin-top: 10px;
+    text-align: left;
 }
 .cart h4{
     margin-top: -8px;
     color: gray;
     font-size: 17px;
-    margin-left: -90px;
+    margin-left: -100px;
+    
 }
 .cart-flex{
     display: flex;
@@ -27,6 +34,7 @@
 }
 .cart-flex h2{
     font-size: 20px;
+    text-align: left;
 }
 .cart-top{
     display: flex;
@@ -38,6 +46,7 @@
 text-decoration: line-through;
 color: gray;
 font-size: 17px;
+text-align: left;
 }
 .cart-top h3{
     font-size: 17px;
