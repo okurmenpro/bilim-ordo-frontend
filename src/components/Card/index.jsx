@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Cart.css"
+import "./Card.css"
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
 function Card() {
