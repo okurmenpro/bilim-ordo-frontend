@@ -12,7 +12,7 @@ function CarouselUrl() {
             <div key={item.id} className="carousel">
               <img
                 src={item.image}
-                alt="photo carousel"
+                alt="photo carousel to slide"
                 className="carousel__image"
               />
               <Carousel.Caption>
