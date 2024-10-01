@@ -1,4 +1,4 @@
-export const CarouselUrl = [
+export const CarouselData = [
   {
     id: 1,
     image:

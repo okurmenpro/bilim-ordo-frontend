@@ -1,11 +1,9 @@
-import React from 'react'
-import './Banner.css'
-import Slider from '../Carousel/Carousel';
+import React from "react";
+import "./Banner.css";
+import Slider from "../Carousel/CarouselUrl";
 
 function Banner() {
-    return (
-        <Slider/>
-    )
+  return <Slider />;
 }
 
 export default Banner;

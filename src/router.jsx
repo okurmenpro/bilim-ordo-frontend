@@ -5,7 +5,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./components/HomePage";
-import CarouselData from "./components/Carousel/Carousel";
+import CarouselUrl from "./components/Carousel/CarouselUrl";
 
 export const Router = createBrowserRouter([
   {
@@ -33,6 +33,6 @@ export const Router = createBrowserRouter([
 
   {
     path: "/carousel",
-    element: <CarouselData />,
+    element: <CarouselUrl />,
   },
 ]);
