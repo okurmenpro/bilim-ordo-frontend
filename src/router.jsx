@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import Course from './pages/Course'
+import CoursePage from "./pages/CoursePage.jsx";
 
 export const Router = createBrowserRouter([
    {
@@ -9,6 +9,6 @@ export const Router = createBrowserRouter([
    },
    {
       path: "course",
-      element: <Course/>
+      element: <CoursePage/>
    }
 ])

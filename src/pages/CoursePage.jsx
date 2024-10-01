@@ -2,7 +2,7 @@ import React from 'react'
 import Index from '../components/MaterialCourse'
 import Banner from '../components/BannerCourse/Banner'
 
-function Course() {
+function CoursePage() {
   return (
     <div>
       <Banner/>
@@ -11,4 +11,4 @@ function Course() {
   )
 }
 
-export default Course
+export default CoursePage
