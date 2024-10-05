@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap';
 
 function Slider() {
   return (
-    <Carousel className='banner-container'> 
+    <Carousel className='banner-container container'> 
       <Carousel.Item className='banner-in'>
         <img src="https://www.cnet.com/a/img/resize/05ddcebef02ed2db237bb6ecabc40255a94b10bb/hub/2019/01/11/b251bf04-5bf8-469a-be8d-79489551460b/avatar-2009.jpg?auto=webp&fit=crop&height=675&width=1200" alt="" />
         <Carousel.Caption>

@@ -9,6 +9,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../CartContext";
+import { GrCart } from "react-icons/gr";
 
 
 function Header() {
@@ -104,9 +105,10 @@ function Header() {
 
   const providers = ["Udemy Business", "Преподавайте на Udemy", "Мое обучение"];
   return (
-    <header>
+    <header >
       <div className="container">
-        <img src={udemy} alt="Udemy" />
+       <div className="header">
+       <img src={udemy} alt="Udemy" />
         <Dropdown
           onMouseEnter={handleMouseEnterAllMenus}
           onMouseLeave={handleMouseLeaveAllMenus}
@@ -195,7 +197,7 @@ function Header() {
 
           <Link to={"/addcart"}>
             <div className="cart-icon">
-              <img src={korzina} alt="Корзина" />
+              <GrCart  className="cartIcon"/>
               <span className="cart-count">{cartItems.length}</span> 
             </div>
           </Link>
@@ -206,14 +208,8 @@ function Header() {
             <button className='b2'>Регистрация</button>
           </Link>
         </div>
-      </div>
       <hr />
-      <div className="bottom container">
-        {titleNav.map((category, index) => (
-          <Link to="#" key={index}>
-            {category}
-          </Link>
-        ))}
+       </div>
       </div>
     </header>
   );
