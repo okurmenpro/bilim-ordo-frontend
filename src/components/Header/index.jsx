@@ -98,7 +98,7 @@ function Header() {
     setShowMainMenu(true);
   };
 
-  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
+  const providers = ["Udemy Business", "Преподавайте на Udemy", "Мое обучение"];
   return (
     <header>
       <div className="container">
