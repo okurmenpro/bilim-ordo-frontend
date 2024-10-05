@@ -82,28 +82,8 @@ function Header() {
     setActiveSubSubItem(null);
   };
 
-  const handleMouseEnterSubSubMenu = (subSubItem) => {
-    clearTimeout(timerRef.current);
-    setActiveSubSubItem(subSubItem);
-  };
+  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
 
-  const handleMouseLeaveAllMenus = () => {
-    timerRef.current = setTimeout(() => {
-      setShowMainMenu(false);
-      setShowSubMenu(false);
-      setShowSubSubMenu(false);
-      setActiveMainItem(null);
-      setActiveSubItem(null);
-      setActiveSubSubItem(null);
-    }, 300);
-  };
-
-  const handleMouseEnterAllMenus = () => {
-    clearTimeout(timerRef.current);
-    setShowMainMenu(true);
-  };
-
-  const providers = ["Udemy Business", "Преподавайте на Udemy", "Мое обучение"];
   return (
     <header >
       <div className="container">
@@ -136,54 +116,15 @@ function Header() {
                 </div>
               ))}
 
-              {showSubMenu && (
-                <div
-                  className="submenu"
-                  onMouseEnter={handleMouseEnterAllMenus}
-                  onMouseLeave={handleMouseLeaveAllMenus}
-                >
-                  {subMenuItems.map((subItem, index) => (
-                    <div
-                      key={index}
-                      className={`menu-item ${activeSubItem === subItem ? "active" : ""
-                        }`}
-                      onMouseEnter={() => handleMouseEnterSubMenu(subItem)}
-                    >
-                      <Dropdown.Item id="text" href={`#/sub-action-${index}`}>
-                        {subItem}
-                      </Dropdown.Item>
-                      <MdKeyboardArrowRight />
-                    </div>
-                  ))}
+          <div className='providers'>
+            {providers.map((provider) => <a>{provider}</a>)}
+          </div>
 
-                  {showSubSubMenu && (
-                    <div
-                      className="subsubmenu"
-                      onMouseEnter={handleMouseEnterAllMenus}
-                      onMouseLeave={handleMouseLeaveAllMenus}
-                    >
-                      {subSubMenuItems.map((subSubItem, index) => (
-                        <div
-                          key={index}
-                          className={`menu-item ${activeSubSubItem === subSubItem ? "active" : ""
-                            }`}
-                          уровня
-                          onMouseEnter={() =>
-                            handleMouseEnterSubSubMenu(subSubItem)
-                          }
-                        >
-                          <Dropdown.Item
-                            id="text"
-                            href={`#/sub-sub-action-${index}`}
-                          >
-                            {subSubItem}
-                          </Dropdown.Item>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )}
+          <div className='icons'>
+            <div className="icon">
+              <img src={heart} alt="" />
+            </div>
+            </div>
             </div>
           )}
         </Dropdown>
@@ -200,16 +141,18 @@ function Header() {
               <GrCart  className="cartIcon"/>
               <span className="cart-count">{cartItems.length}</span> 
             </div>
-          </Link>
-          <Link to={"/login"}>
-            <button className='b1'>Войти</button>
-          </Link>
-          <Link to={"/register"}>
-            <button className='b2'>Регистрация</button>
-          </Link>
-        </div>
+            </Link>
+            <div className="icon">
+              <img className='not' src={notif} alt="" />
+            </div>
+          </div>
+        
       <hr />
        </div>
+      </div>
+
+      <div className='bottom container'>
+        {categories.map((category) => <li>{category}</li>)}
       </div>
     </header>
   );
