@@ -1,0 +1,83 @@
+.course__banner {
+    margin-top: 10px;
+    background-color: #2d2f31;
+    padding-top: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img__text {
+    display: flex;
+    gap: 5px;
+}
+
+.img__text p {
+    color: #c0c4fc;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.course__banner h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    width: 900px;
+}
+
+.course__banner h3 {
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: #fff;
+    width: 900px;
+    text-align: left;
+}
+
+.banner__rating {
+    display: flex;
+    gap: 10px;
+}
+
+.banner__rating p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.banner__rating h5 {
+    color: #c0c4fc;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.course__update{
+    display: flex;
+    gap: 5px;
+    color: #fff;
+    align-items: baseline;
+}
+
+.course__update div{
+    display: flex;
+    gap: 3px;
+
+}
+
+.course__banner h4{
+    color: #c0c4fc;
+    text-align: left;
+}
+
+.banner__star button{
+    color: yellow;
+    background: none;
+}
+
+.course__update button{
+    background: none;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+}
