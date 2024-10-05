@@ -9,7 +9,7 @@ function Basket3() {
       <div className='v2'>
         <img src="https://business.udemy.com/wp-content/uploads/2022/01/Empty_Cart_Spot@2x.png" alt="" />
         <p className='cart3'>Корзина пуста. Продолжите поиск, чтобы найти нужный курс.</p>
-        <button className='cart4'>Продолжить поиск</button>
+       <a href="/"><button className='cart4'>Продолжить поиск</button></a> 
       </div>
     </div>
   )
