@@ -1,0 +1,297 @@
+.Emotional {
+    position: relative;
+    width: 450px;
+    height: 1730px;
+    top: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image video {
+    position: absolute;
+    width: 448px;
+    height: 250px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.list {
+    position: absolute;
+    padding: 0 30px;
+    margin-top: 220px;
+}
+
+.number {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+        font-size: 48px;
+        margin-left: 4px;
+    }
+
+    h2 {
+
+        font-size: 18px;
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.508);
+        text-decoration: line-through;
+    }
+
+    h3 {
+
+        font-size: 18px;
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.508);
+    }
+}
+
+.day {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+
+    h1 {
+        font-size: 16px;
+        margin-left: 8px;
+        color: rgba(255, 0, 0, 0.695);
+
+        a {
+            color: rgb(186, 58, 58);
+            font-family: Arial;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
+
+.f1 {
+    font-size: 16px;
+    margin-top: -10px;
+    color: rgba(255, 0, 0, 0.695);
+    margin-left: 4px;
+}
+
+.b4 {
+    width: 380px;
+    height: 60px;
+    margin-top: 100px;
+
+    background: rgb(163, 93, 232);
+    margin-bottom: 15px;
+}
+
+.b4:hover {
+    background: rgb(143, 49, 236);
+}
+
+.b5 {
+    width: 380px;
+    height: 60px;
+
+    background: #fff;
+}
+
+.b5:hover {
+    background: rgba(10, 10, 10, 0.085);
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.discount {
+    width: 380px;
+    height: 120px;
+    border: 1px dashed rgba(0, 0, 0, 0.448);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding: 20px;
+}
+
+.b3 {
+    padding: 0;
+    margin: 0;
+}
+
+.b3 h1 {
+    font-size: 20px;
+}
+
+.b3 h1 a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.n {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.x {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(39, 15, 145);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.discont__course {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.discont__course h1 {
+    font-size: 22px;
+    text-align: start;
+    font-weight: 650;
+}
+
+.discont__map {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.discont__map img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.discont__map h3 {
+    font-size: 18px;
+    height: 30px;
+    text-align: start;
+}
+
+.discont__map1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share_it {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.share__it-title {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(15, 15, 160);
+    text-decoration: underline;
+    line-height: 50px;
+}
+
+.emotional_input_ess {
+    width: 380px;
+    height: 70px;
+    border: 1px dashed rgba(0, 0, 0, 0.448);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.emotional_input_ess h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.523);
+    cursor: pointer none;
+}
+
+.emotional_input_ess h3 a {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.523);
+    text-decoration: none;
+}
+
+.x1 {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(43, 61, 176);
+}
+
+.input {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.input input {
+    outline: none;
+    border: 1.5px solid black;
+    width: 280px;
+    border-radius: 0;
+    padding-left: 15px;
+}
+
+.input button {
+    width: 102px;
+    height: 50px;
+    border-radius: 0;
+    color: #fff;
+    background: #000;
+    border: none;
+}
+
+.hr{
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    background-color: #00000027;
+    left: 0px;
+    top: 1160px;
+}
+
+.training h2{
+    font-size: 27px;
+    text-align: start;
+    font-weight: 650;
+    margin-left: 2px;
+}
+
+.training p{
+    font-size: 18px;
+    text-align: start;
+    font-weight: 490;
+    margin-left: 2px;
+}
+
+.try{
+    width: 380px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: -2px;
+    color: #000;
+    border: 1.5px solid black;  
+}
+.try:hover{
+    background: rgba(10, 10, 10, 0.085);
+}
