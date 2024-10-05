@@ -7,6 +7,9 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
+
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -18,6 +21,8 @@ function Header() {
   const [activeMainItem, setActiveMainItem] = useState(null);
   const [activeSubItem, setActiveSubItem] = useState(null);
   const [activeSubSubItem, setActiveSubSubItem] = useState(null);
+
+  const { cartItems } = useContext(CartContext);
 
   const timerRef = useRef(null);
   const titleNav = [
@@ -116,9 +121,8 @@ function Header() {
               {mainMenuItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`menu-item ${
-                    activeMainItem === item.label ? "active" : ""
-                  }`}
+                  className={`menu-item ${activeMainItem === item.label ? "active" : ""
+                    }`}
                   onMouseEnter={() =>
                     handleMouseEnterMainMenu(item.subMenu, item.label)
                   }
@@ -139,9 +143,8 @@ function Header() {
                   {subMenuItems.map((subItem, index) => (
                     <div
                       key={index}
-                      className={`menu-item ${
-                        activeSubItem === subItem ? "active" : ""
-                      }`}
+                      className={`menu-item ${activeSubItem === subItem ? "active" : ""
+                        }`}
                       onMouseEnter={() => handleMouseEnterSubMenu(subItem)}
                     >
                       <Dropdown.Item id="text" href={`#/sub-action-${index}`}>
@@ -160,9 +163,8 @@ function Header() {
                       {subSubMenuItems.map((subSubItem, index) => (
                         <div
                           key={index}
-                          className={`menu-item ${
-                            activeSubSubItem === subSubItem ? "active" : ""
-                          }`}
+                          className={`menu-item ${activeSubSubItem === subSubItem ? "active" : ""
+                            }`}
                           уровня
                           onMouseEnter={() =>
                             handleMouseEnterSubSubMenu(subSubItem)
@@ -185,22 +187,25 @@ function Header() {
         </Dropdown>
         <input type="search" placeholder="Ищите что угодно" />
         <div className='providers'>
-            <Link to={"/"}>
+          <Link to={"/"}>
             {providers.map((provider, index) => (
-            <Link to='#' key={index}>{provider}</Link>
-          ))}
-            </Link>
+              <Link to='#' key={index}>{provider}</Link>
+            ))}
+          </Link>
 
-                <Link to={"/basket"}>
-                <img src={korzina} alt="" />
-                </Link>
-                <Link to={"/login"}>
-                <button className='b1'>Войти</button>
-                </Link>
-                <Link to={"/register"}>
-                <button className='b2'>Регистрация</button>
-                </Link>
-            </div> 
+          <Link to={"/addcart"}>
+            <div className="cart-icon">
+              <img src={korzina} alt="Корзина" />
+              <span className="cart-count">{cartItems.length}</span> 
+            </div>
+          </Link>
+          <Link to={"/login"}>
+            <button className='b1'>Войти</button>
+          </Link>
+          <Link to={"/register"}>
+            <button className='b2'>Регистрация</button>
+          </Link>
+        </div>
       </div>
       <hr />
       <div className="bottom container">
