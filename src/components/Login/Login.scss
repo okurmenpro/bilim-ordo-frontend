@@ -1,103 +1,122 @@
-.register{
-    display: flex;
-    margin: 0 auto;
-
-}
-.register-left img{
-    width: 600px;
-    // height: 400px;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+.login input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.login button {
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.register {
+  display: flex;
+  margin: 0 auto;
+}
+
+.register-left img {
+  width: 600px;
+  // height: 400px;
+}
 
 .register-right {
-    width: 300px;
-    margin: 70px auto;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-container {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 300px;
-    height: 60px;
-    padding: 10px 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    transition: padding 0.3s ease;
-    margin-top: 10px;
-  }
-  
-  input::placeholder {
-    color: #999;
-    transition: 0.3s ease;
-  }
-  
-  input:focus,
-  input:not(:placeholder-shown) {
-    padding-top: 20px; 
-  }
-  
-  input:focus::placeholder,
-  input:not(:placeholder-shown)::placeholder {
-    transform: translateY(-15px); 
-    font-size: 12px; 
-    color: #333; 
-  }
-  .register-footer{
-    display: flex;
-    gap: 10px;
-
-  }
-  .register-footer input{
-    width: 60px;
-  }
-//   .register-footer p{
-//     text-align: left;
-//     padding-top: 20px;
-//   }
-  .register-right button{
-    width: 300px;
-    height: 50px;
-    background-color: purple;
-    color: white;
-    border: none;
-  }
-//   .register-right button:hover{
-//     background-color: palevioletred;
-//   }
-//   .register-right h3{
-//     text-align: center;
-//     font-size: 10px;
-
-//     padding-top: 20px;
-//   }
-  .register-ali{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    background-color: white;
-
-  }
-  
-  .register-ali  button{
-    background: none;
-    border: 3px solid black;
-
-img{
-    width: 30px;
-    height: 30px;
+  width: 300px;
+  margin: 70px auto;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  height: 60px;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: padding 0.3s ease;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #999;
+  transition: 0.3s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  padding-top: 20px;
+}
+
+input:focus::placeholder,
+input:not(:placeholder-shown)::placeholder {
+  transform: translateY(-15px);
+  font-size: 12px;
+  color: #333;
+}
+
+.register-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.register-footer input {
+  width: 60px;
+}
+
+.register-right button {
+  width: 300px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  border: none;
+}
+
+.register-ali {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: white;
+}
+
+.register-ali button {
+  background: none;
+  border: 3px solid black;
+}
+
+img {
+  width: 30px;
+  height: 30px;
 }
