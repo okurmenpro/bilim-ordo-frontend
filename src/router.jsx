@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import Emotional from "./components/Emotional intelligence/Emotional";
+// import HomePage from "./components/HomePage";
+import Saidbar from "./components/Saidbar/Saidbar";
 
 // import HomePage from "./components/HomePage";
 import Basket from "./pages/Basket";
@@ -11,16 +11,11 @@ import HomePage from "./components/HomePage";
 
 export const Router = createBrowserRouter([
    {
-    path: "/",
-    element: <HomePage/> ,
-   },
-   {
-      path: "/emotional",
-      element: <Emotional/> ,
-     },
-  
+
+   path: "/",
     element: <Layout/> ,
     children: [
+      
       {
          path: "/basket",
          element: <Basket />
@@ -36,7 +31,12 @@ export const Router = createBrowserRouter([
       {
          path: "/",
          element: < HomePage />
-      }
+      },
+     
     ]
-   }
+   },
+   {
+      path: "/Saidbar",
+      element: <Saidbar/> ,
+     },
 ])

@@ -1,83 +1,73 @@
 .Emotional {
-    position: relative;
     width: 450px;
-    height: 1730px;
-    top: 50px;
+    height: 1760px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
 }
 
-.container {
+.container1 {
     margin: 0 auto;
     padding: 0;
 }
 
 .image video {
-    position: absolute;
-    width: 448px;
+    width: 450px;
     height: 250px;
     object-fit: cover;
-    top: 0;
-    left: 0;
 }
 
-.list {
-    position: absolute;
+.list5 {
     padding: 0 30px;
-    margin-top: 220px;
 }
 
 .number {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
 
-    h1 {
-        font-size: 48px;
-        margin-left: 4px;
-    }
+.number h1 {
+    font-size: 48px;
 
-    h2 {
+}
 
-        font-size: 18px;
-        margin-top: 8px;
-        color: rgba(0, 0, 0, 0.508);
-        text-decoration: line-through;
-    }
+.number h2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.508);
+    text-decoration: line-through;
 
-    h3 {
+}
 
-        font-size: 18px;
-        margin-top: 8px;
-        color: rgba(0, 0, 0, 0.508);
-    }
+.number h3 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.508);
+    padding-right: 70px;
 }
 
 .day {
-    position: absolute;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
 
-    h1 {
-        font-size: 16px;
-        margin-left: 8px;
-        color: rgba(255, 0, 0, 0.695);
+}
 
-        a {
-            color: rgb(186, 58, 58);
-            font-family: Arial;
-            font-weight: 700;
-            text-decoration: none;
-        }
-    }
+.day h1 {
+    font-size: 16px;
+    padding-right: 95px;
+    color: rgba(255, 0, 0, 0.695);
+}
+
+.day a {
+    color: rgb(186, 58, 58);
+    font-family: Arial;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .f1 {
     font-size: 16px;
-    margin-top: -10px;
+    margin-top: -20px;
     color: rgba(255, 0, 0, 0.695);
     margin-left: 4px;
 }
@@ -85,8 +75,8 @@
 .b4 {
     width: 380px;
     height: 60px;
-    margin-top: 100px;
-
+    font-size: 22px;
+    font-weight: 500;
     background: rgb(163, 93, 232);
     margin-bottom: 15px;
 }
@@ -98,7 +88,8 @@
 .b5 {
     width: 380px;
     height: 60px;
-
+    font-size: 22px;
+    font-weight: 500;
     background: #fff;
 }
 
@@ -107,7 +98,7 @@
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 20px;
 }
 
@@ -119,12 +110,14 @@ p {
     justify-content: space-between;
     align-items: center;
     text-align: start;
-    padding: 20px;
+    padding-left: 15px;
+
 }
 
 .b3 {
     padding: 0;
     margin: 0;
+
 }
 
 .b3 h1 {
@@ -147,6 +140,7 @@ p {
     color: rgb(39, 15, 145);
     text-decoration: underline;
     cursor: pointer;
+    padding-right: 15px;
 }
 
 .discont__course {
@@ -160,6 +154,7 @@ p {
     font-size: 22px;
     text-align: start;
     font-weight: 650;
+    padding-left: 2px;
 }
 
 .discont__map {
@@ -186,10 +181,9 @@ p {
     gap: 15px;
 }
 
-.share_it {
+.share_it1 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -199,7 +193,8 @@ p {
     font-weight: 500;
     color: rgb(15, 15, 160);
     text-decoration: underline;
-    line-height: 50px;
+    line-height: 40px;
+    margin-bottom: 20px;
 }
 
 .emotional_input_ess {
@@ -245,44 +240,49 @@ p {
 .input input {
     outline: none;
     border: 1.5px solid black;
-    width: 280px;
+    width: 340px;
+    height: 55px;
     border-radius: 0;
-    padding-left: 15px;
+    padding-left: 20px;
+    font-size: 18px;
 }
 
 .input button {
-    width: 102px;
-    height: 50px;
+    width: 230px;
+    height: 55px;
     border-radius: 0;
     color: #fff;
     background: #000;
     border: none;
+    margin-top: 10px;
+    font-size: 20px
 }
 
-.hr{
-    position: absolute;
+.hr {
+
     width: 450px;
     height: 1px;
     background-color: #00000027;
-    left: 0px;
-    top: 1160px;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 35px;
 }
 
-.training h2{
+.training h2 {
     font-size: 27px;
     text-align: start;
     font-weight: 650;
     margin-left: 2px;
 }
 
-.training p{
+.training p {
     font-size: 18px;
     text-align: start;
     font-weight: 490;
     margin-left: 2px;
 }
 
-.try{
+.try {
     width: 380px;
     height: 50px;
     background-color: #fff;
@@ -290,8 +290,9 @@ p {
     font-weight: 700;
     margin-left: -2px;
     color: #000;
-    border: 1.5px solid black;  
+    border: 1.5px solid black;
 }
-.try:hover{
+
+.try:hover {
     background: rgba(10, 10, 10, 0.085);
 }

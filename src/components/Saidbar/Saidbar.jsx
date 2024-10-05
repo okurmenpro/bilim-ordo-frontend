@@ -1,18 +1,18 @@
 import React from 'react'
-import "./Emotional.css"
+import "./Saidbar.css"
 import { ImAlarm } from "react-icons/im";
 import { EmotionalData } from '../../data/Emotional';
 import { HiMiniXMark } from "react-icons/hi2";
 import video from "../../assets/video/Python3.mp4"
 
-function Emotional() {
+function Saidbar() {
     return (
-        <div className='  container Emotional'>
+        <div className='  container1 Emotional'>
             <div className='image'>
                 <video src={video} controls></video>
             </div>
 
-            <div className='list'>
+            <div className='list5'>
                 <div className='number'>
                     <h1>13,99$</h1>
                     <h2>74,99$</h2>
@@ -34,7 +34,6 @@ function Emotional() {
                         <h1>Дополнительная <br /> скидка 15%  <a href="">курсы </a> </h1>
                         <h2 className='n'>15BONUS24DAY10NLY</h2>
                     </div>
-
                     <p className='x'>Применить</p>
                 </div>
 
@@ -51,7 +50,7 @@ function Emotional() {
                         ))}
                     </div>
                 </div>
-                <div className='share_it'>
+                <div className='share_it1'>
                     <h1 className='share__it-title'>Поделиться</h1>
                     <h2 className='share__it-title'>Подарить этот курс</h2>
                 </div>
@@ -85,4 +84,4 @@ function Emotional() {
     )
 }
 
-export default Emotional
+export default Saidbar
