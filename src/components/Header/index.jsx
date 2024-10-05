@@ -102,7 +102,7 @@ function Header() {
     setShowMainMenu(true);
   };
 
-  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
+  const providers = ["Udemy Business", "Преподавайте на Udemy", "Мое обучение"];
   return (
     <header>
       <div className="container">
@@ -210,7 +210,9 @@ function Header() {
       <hr />
       <div className="bottom container">
         {titleNav.map((category, index) => (
-          <li key={index}>{category}</li>
+          <Link to="#" key={index}>
+            {category}
+          </Link>
         ))}
       </div>
     </header>
