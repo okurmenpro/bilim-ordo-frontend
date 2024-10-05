@@ -7,7 +7,7 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LogIn from "../Login";
+import Login from "../../pages/Login";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -200,7 +200,7 @@ function Header() {
           <img src={heart} alt="Heart" />
           <img src={korzina} alt="Cart" />
           <img className="not" src={notif} alt="Notifications" />
-          <LogIn />
+          <Login />
         </div>
       </div>
       <hr />
