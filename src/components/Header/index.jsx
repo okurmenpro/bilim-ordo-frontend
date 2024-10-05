@@ -8,28 +8,36 @@ import notif from "../../assets/svg/notif.svg"
 function Header() {
   const categories = ['Разработка', 'Бизнес', 'Финансы и бухгалтерский учет', 'ИТ и ПО', 'Офисное Программное обеспечение']
 
-  const providers = [ 'Udemy Business', 'Преподавайте на Udemy','Мое обучение']
+  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
+
   return (
     <header>
-        <div class="container">
-            <img src={udemy} alt="" />
-           <h3>Категории</h3>
-           <input type="search" placeholder='Ищите что угодно' />
+      <div className="he">
+        <div class="container header">
+          <img src={udemy} alt="" />
+          <button>Категории</button>
+          <input type="search" placeholder='Поиск' />
 
-           <div className='providers'>
+          <div className='providers'>
             {providers.map((provider) => <a>{provider}</a>)}
-            </div> 
+          </div>
 
-            <div className='icons'>
-                <img src={heart} alt="" />
-                <img src={korzina} alt="" />
-                <img className='not' src={notif} alt="" />
+          <div className='icons'>
+            <div className="icon">
+              <img src={heart} alt="" />
             </div>
+            <div className="icon">
+              <img src={korzina} alt="" />
+            </div>
+            <div className="icon">
+              <img className='not' src={notif} alt="" />
+            </div>
+          </div>
         </div>
-        <hr />
-        <div className='bottom container'>
-          {categories.map((category) => <li>{category}</li>)}
-        </div>
+      </div>
+      <div className='bottom container'>
+        {categories.map((category) => <li>{category}</li>)}
+      </div>
     </header>
   )
 }
