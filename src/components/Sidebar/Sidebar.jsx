@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Saidbar.css"
+import "./Sidebar.css"
 import { ImAlarm } from "react-icons/im";
 import { EmotionalData } from '../../data/Emotional';
 import { HiMiniXMark } from "react-icons/hi2";

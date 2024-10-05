@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 // import HomePage from "./components/HomePage";
-import Saidbar from "./components/Saidbar/Saidbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 // import HomePage from "./components/HomePage";
 import Basket from "./pages/Basket";
@@ -36,7 +36,7 @@ export const Router = createBrowserRouter([
     ]
    },
    {
-      path: "/Saidbar",
-      element: <Saidbar/> ,
+      path: "/Sidebar",
+      element: <Sidebar/> ,
      },
 ])
