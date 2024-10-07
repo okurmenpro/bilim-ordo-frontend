@@ -8,7 +8,7 @@ import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ isLoggedIn, currentUser }) {
   const [showMainMenu, setShowMainMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [showSubSubMenu, setShowSubSubMenu] = useState(false);
@@ -98,6 +98,7 @@ function Header() {
   };
 
   const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
+
   return (
     <header>
       <div className="container">
@@ -163,7 +164,6 @@ function Header() {
                           className={`menu-item ${
                             activeSubSubItem === subSubItem ? "active" : ""
                           }`}
-                          уровня
                           onMouseEnter={() =>
                             handleMouseEnterSubSubMenu(subSubItem)
                           }
@@ -185,22 +185,30 @@ function Header() {
         </Dropdown>
         <input type="search" placeholder="Ищите что угодно" />
         <div className='providers'>
-            <Link to={"/"}>
+          <Link to={"/"}>
             {providers.map((provider, index) => (
-            <Link to='#' key={index}>{provider}</Link>
-          ))}
-            </Link>
-
-                <Link to={"/basket"}>
-                <img src={korzina} alt="" />
-                </Link>
-                <Link to={"/login"}>
+              <Link to='#' key={index}>{provider}</Link>
+            ))}
+          </Link>
+          <Link to={"/basket"}>
+            <img src={korzina} alt="" />
+          </Link>
+          {isLoggedIn ? (
+            <div className="user-avatar">
+              <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Avatar" />
+              <p>{currentUser.email}</p>
+            </div>
+          ) : (
+            <>
+              <Link to={"/login"}>
                 <button className='b1'>Войти</button>
-                </Link>
-                <Link to={"/register"}>
+              </Link>
+              <Link to={"/register"}>
                 <button className='b2'>Регистрация</button>
-                </Link>
-            </div> 
+              </Link>
+            </>
+          )}
+        </div> 
       </div>
       <hr />
       <div className="bottom container">
