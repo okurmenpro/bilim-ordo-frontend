@@ -1,27 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CoursePage from "./pages/CoursePage.jsx";
-import Basket from "./pages/Basket";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Layout from "./components/Layout/Layout";
-import HomePage from "./components/HomePage";
-import Development from "./pages/Development.jsx";
-import FrontEnd from "./pages/FrontEnd.jsx";
+import React from 'react'
+import { createBrowserRouter, createRoutesFromElements, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Basket from './pages/Basket';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Development from './pages/Development';
+import FrontEnd from './pages/FrontEnd';
+import CoursePage from './pages/CoursePage';
+import Layout from './components/Layout/Layout';
+
+
+
 
 export default function AppRouter() {
-  return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/basket" element={<Basket />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/development" element={<Development />} />
-          <Route path="/development/frontend" element={<FrontEnd />} />
-          <Route path="/development/frontend/coursepage" element={<CoursePage />} />
-        </Routes>
-      </Layout>
-    </Router>
-  );
+  const route = createBrowserRouter(createRoutesFromElements(
+    <>
+      <Route path='/' element={<Layout />}>
+        <Route path='/Development' element={<Development />} />
+        <Route path='/Development/frontend' element={<FrontEnd />} />
+        <Route path='/Development/frontend/coursepage' element={<CoursePage />} />
+        <Route index element={<HomePage />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Route>
+    </>
+  ))
+  return route
 }

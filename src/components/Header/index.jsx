@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import korzina from "../../assets/svg/korzina.svg";
-import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { CartContext } from "../CartContext";
@@ -32,6 +31,7 @@ function Header() {
     {
       label: "Разработка",
       subMenu: ["Frontend", "Backend"],
+
     },
     {
       label: "Бизнес",
@@ -115,7 +115,7 @@ function Header() {
                   className={`menu-item ${activeMainItem === item.label ? "active" : ""}`}
                   onMouseEnter={() => handleMouseEnterMainMenu(item.subMenu, item.label)}
                 >
-                  <Link to="/development">
+                  <Link to="/Development">
                     <Dropdown.Item id="text">{item.label}</Dropdown.Item>
                   </Link>
                   <MdKeyboardArrowRight />
