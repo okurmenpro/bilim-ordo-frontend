@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
@@ -7,6 +7,7 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { CartContext } from "../CartContext";
 
 // import LogIn from "../Login";
 
