@@ -4,6 +4,7 @@ import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
 import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
+import wold from "../../assets/svg/wold.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -81,31 +82,35 @@ function Header() {
     setActiveSubSubItem(null);
   };
 
-  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
+  const providers = ['Udemy Business', 'Преподавайте на Udemy']
 
   return (
     <header>
       <div className="he">
         <div class="container header">
           <img src={udemy} alt="" />
-          <button>Категории</button>
-          <input type="search" placeholder='Поиск' />
+          <button className="cate-btn">Категории</button>
 
           <div className='providers'>
             {providers.map((provider) => <a>{provider}</a>)}
           </div>
 
+          <input type="search" placeholder='Поиск' />
+
+          <div className="login-btns">
+            <button className="login-btn">Войти</button>
+            <button className="register-btn">Зарегистрироваться</button>
+          </div>
+
           <div className='icons'>
-            <div className="icon">
-              <img src={heart} alt="" />
-            </div>
             <div className="icon">
               <img src={korzina} alt="" />
             </div>
             <div className="icon">
-              <img className='not' src={notif} alt="" />
+              <img className='not' src={wold} alt="" />
             </div>
           </div>
+
         </div>
       </div>
 
