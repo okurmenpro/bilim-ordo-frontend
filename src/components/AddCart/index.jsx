@@ -4,21 +4,21 @@ import { CartContext } from "../CartContext"
 import { useNavigate } from 'react-router-dom';
 
 function AddCart() {
-  const { cartItems } = useContext(CartContext); 
-  const navigate = useNavigate();  
+  const { cartItems } = useContext(CartContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (cartItems.length === 0) {
-      navigate('/basket');  
+      navigate('/basket');
     }
   }, [cartItems, navigate]);
 
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
-      const price = parseFloat(item.price.replace('$', '').replace(',', '.')); 
+      const price = parseFloat(item.price.replace('$', '').replace(',', '.'));
       return total + price;
-    }, 0).toFixed(2); 
+    }, 0).toFixed(2);
   };
 
   return (
@@ -43,7 +43,7 @@ function AddCart() {
 
       <div className='cartOrder'>
         <h2>Общая сумма:</h2>
-        <h1>${calculateTotalPrice()}</h1> 
+        <h1>${calculateTotalPrice()}</h1>
         <button>Оформить заказ</button>
       </div>
     </section>

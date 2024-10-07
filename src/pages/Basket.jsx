@@ -1,10 +1,10 @@
 import React from 'react'
-import Basket3 from '../components/Basket/Basket3'
+import BasketBanner from '../components/Basket'
 
 function Basket() {
   return (
     <div>
-      <Basket3 />
+      <BasketBanner />
     </div>
   )
 }

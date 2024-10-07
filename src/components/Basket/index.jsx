@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Basket.scss"
 
-function Basket3() {
+function BasketBanner() {
   return (
     <div className='v1'>
       <h1 className='cart1'>Корзина</h1>
@@ -9,10 +9,10 @@ function Basket3() {
       <div className='v2'>
         <img src="https://business.udemy.com/wp-content/uploads/2022/01/Empty_Cart_Spot@2x.png" alt="" />
         <p className='cart3'>Корзина пуста. Продолжите поиск, чтобы найти нужный курс.</p>
-       <a href="/"><button className='cart4'>Продолжить поиск</button></a> 
+        <a href="/"><button className='cart4'>Продолжить поиск</button></a>
       </div>
     </div>
   )
 }
 
-export default Basket3
+export default BasketBanner

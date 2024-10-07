@@ -1,10 +1,10 @@
 import React from 'react'
-import Login2 from "../components/Login/Login2"
+import LoginSecond from '../components/LogIn/indexLogin'
 
 function Login() {
   return (
     <div>
-      <Login2 />
+      <LoginSecond />
     </div>
   )
 }

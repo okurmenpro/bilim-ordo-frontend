@@ -1,10 +1,10 @@
 import React from 'react'
-import "./banner.css"
+import "./Banner.css"
 import { GrLanguage } from "react-icons/gr";
 import { FaRegStar } from "react-icons/fa";
 import { BsExclamationOctagon } from "react-icons/bs";
 
-function Banner() {
+function BannerCourse() {
     return (
         <div className='course__banner'>
             <div className='img__text'>
@@ -31,8 +31,8 @@ function Banner() {
             <div className='course__update'>
                 <button><BsExclamationOctagon /></button>
                 <div>
-                <p>Последнее обновление:</p>
-                <h5> 04.2023</h5>
+                    <p>Последнее обновление:</p>
+                    <h5> 04.2023</h5>
                 </div>
                 <button><GrLanguage /></button>
                 <p>русский</p>
@@ -41,4 +41,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default BannerCourse

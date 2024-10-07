@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Login.scss";
 
-function Login2() {
-  // Массив пользователей
+function LoginSecond() {
   const users = [
     { email: "user1@example.com", password: "password1" },
     { email: "user2@example.com", password: "password2" },
@@ -13,7 +12,7 @@ function Login2() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
 
-  // Функция для обработки входа
+
   const handleLogin = () => {
     const user = users.find(
       (user) => user.email === email && user.password === password
@@ -98,4 +97,4 @@ function Login2() {
   );
 }
 
-export default Login2;
+export default LoginSecond;

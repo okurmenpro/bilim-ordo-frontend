@@ -52,30 +52,30 @@
     font-weight: 400;
 }
 
-.course__update{
+.course__update {
     display: flex;
     gap: 5px;
     color: #fff;
     align-items: baseline;
 }
 
-.course__update div{
+.course__update div {
     display: flex;
     gap: 3px;
 
 }
 
-.course__banner h4{
+.course__banner h4 {
     color: #c0c4fc;
     text-align: left;
 }
 
-.banner__star button{
+.banner__star button {
     color: yellow;
     background: none;
 }
 
-.course__update button{
+.course__update button {
     background: none;
     font-weight: 400;
     font-size: 25px;

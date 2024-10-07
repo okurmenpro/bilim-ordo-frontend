@@ -1,12 +1,12 @@
 import React from 'react'
-import Index from '../components/MaterialCourse/Index'
-import Banner from '../components/BannerCourse/Banner'
+import MaterialCourse from '../components/MaterialCourse'
+import BannerCourse from '../components/BannerCourse'
 
 function Course() {
   return (
     <div>
-      <Banner/>
-      <Index/>
+      <BannerCourse />
+      <MaterialCourse />
     </div>
   )
 }

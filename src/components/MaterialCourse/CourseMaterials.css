@@ -15,7 +15,7 @@
     justify-content: space-between;
 }
 
-.materials__text h4{
+.materials__text h4 {
     font-size: 15px;
     color: #5022c3;
 }
@@ -30,9 +30,11 @@
     border: 1px solid gray;
     padding: 10px 15px;
 }
-.document{
+
+.document {
     font-size: 8px;
 }
+
 .mini__img {
     display: flex;
     align-items: center;
@@ -45,7 +47,7 @@
     margin-bottom: 10px;
 }
 
-.mini__img h3{
+.mini__img h3 {
     cursor: pointer;
     font-weight: 700;
     font-size: 19px;

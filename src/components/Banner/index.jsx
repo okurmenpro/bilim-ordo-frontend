@@ -4,7 +4,7 @@ import Slider from '../Carousel';
 
 function Banner() {
     return (
-        <Slider/>
+        <Slider />
     )
 }
 
