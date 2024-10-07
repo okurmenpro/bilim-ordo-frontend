@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import korzina from "../../assets/svg/korzina.svg";
-import { Dropdown } from "react-bootstrap";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import notif from "../../assets/svg/notif.svg";
+
+import { Dropdown } from 'react-bootstrap';
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
+
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
