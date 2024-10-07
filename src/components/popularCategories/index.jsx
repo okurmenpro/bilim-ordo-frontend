@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './PopularCategories.css'
-import js from "../../assets/images/js.png"
-import python from "../../assets/images/python.png"
-import figma from "../../assets/images/figma.png"
-import android from '../../assets/images/android.png'
-import ios from '../../assets/images/IOS.png'
-import oneC from '../../assets/images/oneC.png'
 
+// import js from "../../assets/images/js.png"
+// import python from "../../assets/images/python.png"
+// import figma from "../../assets/images/figma.png"
+// import android from '../../assets/images/android.png'
+// import ios from '../../assets/images/IOS.png'
+// import oneC from '../../assets/images/oneC.png'
+
+
+import { popular_categories } from '../../data/popular_categories'
 
 const PopularCategories = () => {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -20,42 +23,17 @@ const PopularCategories = () => {
                 <h2>Популярные категории</h2>
             </div>
             <div className="photos">
-                <div className="border-png">
-                    <div className="background">
-                        <img src={js} alt="js" />
+                {popular_categories.map((elements, index) =>
+                    <div className="border-png">
+
+                        <div key={index} className="background">
+                            <img src={elements.img} alt="" />
+                        </div>
+                        <h6>{elements.title}</h6>
+
                     </div>
-                    <h6>Java Script</h6>
-                </div>
-                <div className="border-png">
-                    <div className="background">
-                        <img src={python} alt="python" />
-                    </div>
-                    <h6>Python</h6>
-                </div>
-                <div className="border-png">
-                    <div className="background">
-                        <img src={figma} alt="figma" />
-                    </div>
-                    <h6>Figma</h6>
-                </div>
-                <div className="border-png">
-                    <div className="background">
-                        <img src={android} alt="android" />
-                    </div>
-                    <h6>Android</h6>
-                </div>
-                <div className="border-png">
-                    <div className="background">
-                        <img src={ios} alt="ios" />
-                    </div>
-                    <h6>IOS</h6>
-                </div>
-                <div className="border-png">
-                    <div className="background">
-                        <img src={oneC} alt="oneC" />
-                    </div>
-                    <h6> 1 C</h6>
-                </div>
+                )}
+
 
             </div>
             <div className="dropdown">
@@ -63,7 +41,7 @@ const PopularCategories = () => {
                     Посмотреть еще
 
                 </button>
-                <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}aria-labelledby="dropdownMenuButton1">
+                <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`} aria-labelledby="dropdownMenuButton1">
                     <li><a className="dropdown-item" href="#">Action</a></li>
                     <li><a className="dropdown-item" href="#">Another action</a></li>
                     <li><a className="dropdown-item" href="#">Something else here</a></li>
