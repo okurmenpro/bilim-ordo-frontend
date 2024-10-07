@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { CartContext } from "../CartContext";
 
 
+
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
@@ -109,7 +110,7 @@ function Header() {
         </div>
       </div>
       <div className='bottom container'>
-        {categories.map((category) => <li>{category}</li>)}
+      {/* {categories.map((category) => <li>{category}</li>)}  */}
 
       </div>
     </header>

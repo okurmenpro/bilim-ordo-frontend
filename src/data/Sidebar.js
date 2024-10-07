@@ -1,4 +1,4 @@
-export const EmotionalData = [ 
+export const SidebarData = [ 
     { 
         id: 1, 
         img: "https://media.istockphoto.com/id/653116850/vector/tv-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=Naacj5SkEFDKoCObVJUAJOD2iy0XrFjz8-x6WO-sv94=", 

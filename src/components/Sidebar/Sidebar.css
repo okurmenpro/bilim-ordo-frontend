@@ -1,15 +1,18 @@
-.Emotional {
+.Sidebar {
     width: 450px;
-    height: 1760px;
+    height: 1780px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
+
 }
 
 .container1 {
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.image video {
+.video video {
     width: 450px;
     height: 250px;
     object-fit: cover;
@@ -19,26 +22,26 @@
     padding: 0 30px;
 }
 
-.number {
+.price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.number h1 {
+.price h1 {
     font-size: 48px;
 
 }
 
-.number h2 {
+.price h2 {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.508);
     text-decoration: line-through;
 
 }
 
-.number h3 {
+.price h3 {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.508);
     padding-right: 70px;
@@ -50,6 +53,13 @@
     justify-content: space-between;
     align-items: center;
 
+}
+
+.watch {
+    font-size: 16px;
+    margin-top: -20px;
+    color: rgba(255, 0, 0, 0.695);
+    margin-left: 4px;
 }
 
 .day h1 {
@@ -65,14 +75,8 @@
     text-decoration: none;
 }
 
-.f1 {
-    font-size: 16px;
-    margin-top: -20px;
-    color: rgba(255, 0, 0, 0.695);
-    margin-left: 4px;
-}
 
-.b4 {
+.add-btn {
     width: 380px;
     height: 60px;
     font-size: 22px;
@@ -81,11 +85,11 @@
     margin-bottom: 15px;
 }
 
-.b4:hover {
+.add-btn:hover {
     background: rgb(143, 49, 236);
 }
 
-.b5 {
+.buy_now-btn {
     width: 380px;
     height: 60px;
     font-size: 22px;
@@ -93,7 +97,7 @@
     background: #fff;
 }
 
-.b5:hover {
+.buy_now-btn:hover {
     background: rgba(10, 10, 10, 0.085);
 }
 
@@ -114,28 +118,24 @@ p {
 
 }
 
-.b3 {
-    padding: 0;
-    margin: 0;
-
-}
-
-.b3 h1 {
+.discount_price h1 {
     font-size: 20px;
+    text-align: start;
 }
 
-.b3 h1 a {
+.discount_price h1 a {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
 }
 
-.n {
+.bonus {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
+    text-align: start;
 }
 
-.x {
-    font-size: 18px;
+.apply {
+    font-size: 20px;
     font-weight: 700;
     color: rgb(39, 15, 145);
     text-decoration: underline;
@@ -197,7 +197,7 @@ p {
     margin-bottom: 20px;
 }
 
-.emotional_input_ess {
+.used_coupon {
     width: 380px;
     height: 70px;
     border: 1px dashed rgba(0, 0, 0, 0.448);
@@ -207,7 +207,7 @@ p {
     padding: 5px 10px;
 }
 
-.emotional_input_ess h3 {
+.used_coupon h3 {
     font-size: 16px;
     font-weight: 400;
     text-align: start;
@@ -215,20 +215,20 @@ p {
     cursor: pointer none;
 }
 
-.emotional_input_ess h3 a {
+.used_coupon h3 a {
     font-size: 20px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.523);
     text-decoration: none;
 }
 
-.x1 {
+.icons_x {
     font-size: 30px;
     cursor: pointer;
     color: rgb(43, 61, 176);
 }
 
-.input {
+.input3 {
     width: 380px;
     display: flex;
     justify-content: space-between;
@@ -237,7 +237,7 @@ p {
     margin-bottom: 70px;
 }
 
-.input input {
+.input3 input {
     outline: none;
     border: 1.5px solid black;
     width: 340px;
@@ -247,7 +247,7 @@ p {
     font-size: 18px;
 }
 
-.input button {
+.input3 button {
     width: 230px;
     height: 55px;
     border-radius: 0;
@@ -258,7 +258,7 @@ p {
     font-size: 20px
 }
 
-.hr {
+.line {
 
     width: 450px;
     height: 1px;
@@ -282,7 +282,7 @@ p {
     margin-left: 2px;
 }
 
-.try {
+.try_btn {
     width: 380px;
     height: 50px;
     background-color: #fff;
@@ -293,6 +293,6 @@ p {
     border: 1.5px solid black;
 }
 
-.try:hover {
+.try_btn:hover {
     background: rgba(10, 10, 10, 0.085);
 }
