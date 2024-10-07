@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Footer.css"
 // import { CiGlobe } from "react-icons/ci";
+import { MdLanguage } from "react-icons/md";
+
 
 const Footer = () => {
   return (
@@ -12,10 +14,10 @@ const Footer = () => {
                     <div className='a1'>
                         <ul>
                         <li>
-                                <a href="">Udemy Business</a>
+                                <a href="">Bilim-Ordo Business</a>
                             </li>
                             <li>
-                                <a href="">Преподавайде на Udemy</a>
+                                <a href="">Преподавайде на Bilim-Ordo</a>
                             </li>
                             <li>
                                 <a href="">скачать приложение</a>
@@ -71,14 +73,14 @@ const Footer = () => {
                 </div>
                 <div className='info-right'>
                     <button className='b1'>
-                    {/* <CiGlobe className='icon1'/>                         */}
+                    {<MdLanguage    />}
                     <h3>Русский</h3>
                     </button>
                 </div>
             </div>
             <div className='info-bottom'>
-                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="" />
-                <p>© 2024 Udemy, Inc.</p>
+                <h2><span>B</span>ILIM-ORDO</h2>
+                <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
         </div>
     </div>

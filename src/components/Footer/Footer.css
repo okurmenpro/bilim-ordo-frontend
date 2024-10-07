@@ -1,6 +1,6 @@
 .footer{
     width: 1440px;
-    background-color: black;
+    background-color: #2d2f31;
     padding: 20px 40px;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ ul li a{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: black;
+    background-color:#2d2f31;
     color: white;
     border:1px solid white;
 
@@ -61,3 +61,16 @@ height: 80px;
 .info-bottom p {
     color: white;
 }
+.a1 ul li a:hover{
+    text-decoration: underline;
+}
+.info-bottom h2 span{
+    color: purple;
+}
+.info-bottom h2{
+    color: white ;
+}
+.info-right button:hover{
+    background-color:#1c1d1f;
+}
+

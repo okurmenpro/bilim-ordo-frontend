@@ -7,9 +7,8 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { CartContext } from "../CartContext";
 
+// import LogIn from "../Login";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
