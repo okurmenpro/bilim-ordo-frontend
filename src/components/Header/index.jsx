@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
