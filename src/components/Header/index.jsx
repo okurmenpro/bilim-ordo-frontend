@@ -1,10 +1,10 @@
 import React, { useState, useRef, useContext } from "react";
-import { Link } from "react-router-dom";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import korzina from "../../assets/svg/korzina.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
 
 function Header() {
@@ -176,6 +176,14 @@ function Header() {
           </Link>
         </div>
       </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className='bottom container'>
+        {categories.map((category) => <li>{category}</li>)}
+      </div> */}
+
     </header>
   );
 }
