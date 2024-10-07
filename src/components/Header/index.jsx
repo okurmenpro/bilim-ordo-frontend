@@ -107,10 +107,11 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className='bottom container'>
-        {categories.map((category) => <li>{category}</li>)}
 
-      </div>
+      {/* <div className='bottom container'>
+        {categories.map((category) => <li>{category}</li>)}
+      </div> */}
+
     </header>
   );
 }
