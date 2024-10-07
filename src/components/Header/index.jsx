@@ -1,15 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
 import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
-
-import { Dropdown } from 'react-bootstrap';
-import { MdKeyboardArrowRight } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-
-
+import { Dropdown } from "react-bootstrap";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { CartContext } from "../CartContext";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -20,6 +17,8 @@ function Header() {
   const [activeMainItem, setActiveMainItem] = useState(null);
   const [activeSubItem, setActiveSubItem] = useState(null);
   const [activeSubSubItem, setActiveSubSubItem] = useState(null);
+
+  const { cartItems } = useContext(CartContext);
   const timerRef = useRef(null);
 
   const titleNav = [
@@ -178,12 +177,6 @@ function Header() {
             <button className='b2'>Регистрация</button>
           </Link>
         </div>
-      </div>
-      <hr />
-      <div className="bottom container">
-        {titleNav.map((category, index) => (
-          <li key={index}>{category}</li>
-        ))}
       </div>
     </header>
   );
