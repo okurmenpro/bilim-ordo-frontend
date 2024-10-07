@@ -7,12 +7,10 @@ import Layout from "./components/Layout/Layout";
 import HomePage from "./components/HomePage";
 import Development from "./pages/Development.jsx";
 import FrontEnd from "./pages/FrontEnd.jsx";
-import { createBrowserHistory } from "history";
 
 
 
 export default function AppRouter() {
-  const customHistory = createBrowserHistory();
 
   return (
       <Layout>
