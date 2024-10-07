@@ -1,12 +1,6 @@
-ul,
-li {
-    // list-style: none;
-}
-
 .header {
     min-width: 1390px;
     height: 100px;
-    // border: 1px solid black;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -18,12 +12,9 @@ li {
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
-        // width: 136px;
-        // height: 52px;
         padding: 13px 24px 13px 24px;
         border-radius: 4px;
         background: #A435F0;
-        // font-family: Roboto;
         font-size: 18px;
         font-weight: 600;
         line-height: 25.2px;
@@ -49,7 +40,6 @@ li {
         border-radius: 4px;
         background: #F2F2F2;
         border: none;
-        // font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
         line-height: 22.4px;
@@ -74,14 +64,7 @@ li {
             img {
                 cursor: pointer;
                 width: 30px;
-                // height: 21.24px;
             }
-
-            // .not {
-            //     width: 43px;
-            //     height: 33px;
-            //     margin-top: 4px;
-            // }
         }
     }
 
@@ -89,12 +72,9 @@ li {
         display: flex;
         align-items: center;
         gap: 25px;
-        // width: 980px;
-
         a {
             cursor: pointer;
             min-width: 47px;
-            // font-family: Roboto;
             font-size: 18px;
             font-weight: 600;
             line-height: 21.09px;
