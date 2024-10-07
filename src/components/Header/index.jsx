@@ -115,9 +115,7 @@ function Header() {
                   className={`menu-item ${activeMainItem === item.label ? "active" : ""}`}
                   onMouseEnter={() => handleMouseEnterMainMenu(item.subMenu, item.label)}
                 >
-                  <Link to="/Development">
                     <Dropdown.Item id="text">{item.label}</Dropdown.Item>
-                  </Link>
                   <MdKeyboardArrowRight />
                 </div>
               ))}
