@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './PopularCategories.css'
 import js from "../../assets/images/js.png"
 import python from "../../assets/images/python.png"
@@ -9,6 +9,11 @@ import oneC from '../../assets/images/oneC.png'
 
 
 const PopularCategories = () => {
+    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+    const handleClick = () => {
+        setIsDropdownVisible(oldValue => !oldValue); // Переключаем видимость
+    };
+
     return (
         <>
             <div className='title'>
@@ -53,14 +58,15 @@ const PopularCategories = () => {
                 </div>
 
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="dropdown">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleClick}>
                     Посмотреть еще
+
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}aria-labelledby="dropdownMenuButton1">
+                    <li><a className="dropdown-item" href="#">Action</a></li>
+                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                    <li><a className="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
         </>
