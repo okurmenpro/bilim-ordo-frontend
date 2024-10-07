@@ -35,7 +35,7 @@ function Card() {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex container">
         {products.map((item, index) => (
           <div key={index} className="cart">
             <img src={item.img} alt={item.name} />

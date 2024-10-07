@@ -7,7 +7,9 @@ import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 import { CartContext } from "../CartContext";
+import { GrCart } from "react-icons/gr";
 
 // import LogIn from "../Login";
 
@@ -84,12 +86,36 @@ function Header() {
   const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
 
   return (
-    <header>
-      <div className="he">
-        <div class="container header">
-          <img src={udemy} alt="" />
-          <button>Категории</button>
-          <input type="search" placeholder='Поиск' />
+    <header >
+      <div className="container">
+       <div className="header">
+       <img src={udemy} alt="Udemy" />
+        <Dropdown
+          onMouseEnter={handleMouseEnterAllMenus}
+          onMouseLeave={handleMouseLeaveAllMenus}
+        >
+          <h3>Категории</h3>
+          {showMainMenu && (
+            <div
+              className="main-menu"
+              onMouseEnter={handleMouseEnterAllMenus}
+              onMouseLeave={handleMouseLeaveAllMenus}
+            >
+              {mainMenuItems.map((item, index) => (
+                <div
+                  key={index}
+                  className={`menu-item ${activeMainItem === item.label ? "active" : ""
+                    }`}
+                  onMouseEnter={() =>
+                    handleMouseEnterMainMenu(item.subMenu, item.label)
+                  }
+                >
+                  <Dropdown.Item id="text" href={`#/action-${index}`}>
+                    {item.label}
+                  </Dropdown.Item>
+                  <MdKeyboardArrowRight />
+                </div>
+              ))}
 
           <div className='providers'>
             {providers.map((provider) => <a>{provider}</a>)}
@@ -99,20 +125,36 @@ function Header() {
             <div className="icon">
               <img src={heart} alt="" />
             </div>
-            <div className="icon">
-              <img src={korzina} alt="" />
             </div>
+            </div>
+          )}
+        </Dropdown>
+        <input type="search" placeholder="Ищите что угодно" />
+        <div className='providers'>
+          <Link to={"/"}>
+            {providers.map((provider, index) => (
+              <Link to='#' key={index}>{provider}</Link>
+            ))}
+          </Link>
+
+          <Link to={"/addcart"}>
+            <div className="cart-icon">
+              <GrCart  className="cartIcon"/>
+              <span className="cart-count">{cartItems.length}</span> 
+            </div>
+            </Link>
             <div className="icon">
               <img className='not' src={notif} alt="" />
             </div>
           </div>
-        </div>
+        
+      <hr />
+       </div>
       </div>
 
-      {/* <div className='bottom container'>
+      <div className='bottom container'>
         {categories.map((category) => <li>{category}</li>)}
-      </div> */}
-
+      </div>
     </header>
   );
 }

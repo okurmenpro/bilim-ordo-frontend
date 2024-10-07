@@ -7,7 +7,7 @@ import { MdLanguage } from "react-icons/md";
 const Footer = () => {
   return (
     <div >
-        <div className='footer'>
+        <div className='footer container'>
             <div className='info-top'>
                 <div className='info-left'>
 
@@ -83,6 +83,9 @@ const Footer = () => {
                 <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
         </div>
+
+
+       
     </div>
   )
 }
