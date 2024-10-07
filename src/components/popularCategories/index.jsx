@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import './PopularCategories.css'
 
-// import js from "../../assets/images/js.png"
-// import python from "../../assets/images/python.png"
-// import figma from "../../assets/images/figma.png"
-// import android from '../../assets/images/android.png'
-// import ios from '../../assets/images/IOS.png'
-// import oneC from '../../assets/images/oneC.png'
 
 
 import { popular_categories } from '../../data/popular_categories'
@@ -14,7 +8,7 @@ import { popular_categories } from '../../data/popular_categories'
 const PopularCategories = () => {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
     const handleClick = () => {
-        setIsDropdownVisible(oldValue => !oldValue); // Переключаем видимость
+        setIsDropdownVisible(oldValue => !oldValue); 
     };
 
     return (
