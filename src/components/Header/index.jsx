@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { CartContext } from "../CartContext";
 import { GrCart } from "react-icons/gr";
 
+// import LogIn from "../Login";
 
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);

@@ -4,10 +4,10 @@ li {
     list-style: none;
 }
 
-header{
-  width: 100%;
   
-  .header {
+.header {
+    min-width: 1390px;
+    height: 100px;
     display: flex;
     margin: 0 auto;
     gap: 20px;
@@ -48,6 +48,7 @@ header{
         margin-top: 4px;
       }
     }
+  }
   
     .providers {
       display: flex;
@@ -70,43 +71,33 @@ header{
     margin: 0 auto;
     gap: 20px;
     align-items: center;
-}
-    }
-
-.header {
-    min-width: 1390px;
-    height: 100px;
-    // border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    // gap: 20px;
-    align-items: center;
+    margin-bottom: 61px;
 
     button {
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
-        // width: 136px;
-        // height: 52px;
         padding: 13px 24px 13px 24px;
         border-radius: 4px;
         background: #A435F0;
-        // font-family: Roboto;
         font-size: 18px;
         font-weight: 600;
         line-height: 25.2px;
         text-align: center;
         color: #EFEFFF;
-        border: none
+        border: none;
+    }
+
+    button:hover {
+        background: #c163ff;
+
     }
 
     img {
-        // width: 191px;
+        width: 160px;
         height: 80px;
-
     }
-  }
+
 
     input {
         width: 236px;
@@ -114,12 +105,12 @@ header{
         border-radius: 4px;
         background: #F2F2F2;
         border: none;
-        // font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
         line-height: 22.4px;
         text-align: left;
         padding-left: 10px;
+        margin: 0;
     }
 
     .icons {
@@ -138,14 +129,7 @@ header{
             img {
                 cursor: pointer;
                 width: 30px;
-                // height: 21.24px;
             }
-
-            // .not {
-            //     width: 43px;
-            //     height: 33px;
-            //     margin-top: 4px;
-            // }
         }
     }
 
@@ -153,12 +137,9 @@ header{
         display: flex;
         align-items: center;
         gap: 25px;
-        // width: 980px;
-
         a {
             cursor: pointer;
             min-width: 47px;
-            // font-family: Roboto;
             font-size: 18px;
             font-weight: 600;
             line-height: 21.09px;
@@ -168,9 +149,7 @@ header{
         a:hover {
             color: #A435F0;
         }
-
     }
-
 }
 
 .he {
@@ -178,11 +157,12 @@ header{
 }
 
 
-  .bottom {
+.bottom {
     display: flex;
     justify-content: space-evenly;
     height: max-content;
     margin-bottom: 20px;
+
     a {
       font-size: 16px;
       font-weight: 400;
@@ -358,9 +338,6 @@ header{
       width: 60px;
       height: 60px;
       margin-top: 30px;
-
-      .cartIcon{
-      }
 
       
     }

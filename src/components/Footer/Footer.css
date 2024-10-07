@@ -1,4 +1,5 @@
-.footer {
+.footer{
+    width: 1440px;
     background-color: black;
     padding: 20px 40px;
     margin: 0 auto;
@@ -38,7 +39,7 @@ ul li a {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: black;
+    background-color:#2d2f31;
     color: white;
     border: 1px solid white;
 }
