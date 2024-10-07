@@ -1,8 +1,10 @@
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
-import { Router } from './router';
+import  Router from './router';
 
-function App() {
+
+
+export default function App() {
   return (
     <div className="App">
       <RouterProvider router={Router} />
@@ -10,4 +12,3 @@ function App() {
   );
 }
 
-export default App;
