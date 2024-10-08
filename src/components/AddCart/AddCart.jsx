@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import './AddCart.css';
-import { CartContext } from "../CartContext"
+import { CartContext } from '../CartContext';
 import { useNavigate } from 'react-router-dom';
 
 function AddCart() {
-  const { cartItems } = useContext(CartContext); 
+  const { cartItems, removeFromCart } = useContext(CartContext);  
   const navigate = useNavigate();  
 
   useEffect(() => {
@@ -12,7 +12,6 @@ function AddCart() {
       navigate('/basket');  
     }
   }, [cartItems, navigate]);
-
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
@@ -36,14 +35,19 @@ function AddCart() {
                 <h2>{item.price}</h2>
               </div>
             </div>
+            <button 
+              onClick={() => removeFromCart(item.name)} 
+              className="remove-button"
+            >
+              Удалить
+            </button>
           </div>
         ))}
       </div>
 
-
       <div className='cartOrder'>
         <h2>Общая сумма:</h2>
-        <h1>${calculateTotalPrice()}</h1> 
+        <h1>${calculateTotalPrice()}</h1>
         <button>Оформить заказ</button>
       </div>
     </section>

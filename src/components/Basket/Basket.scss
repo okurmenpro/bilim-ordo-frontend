@@ -2,14 +2,18 @@
     width: 1400px;
     padding: 20px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .v2{
     width: 1200px;
+    height: 400px;
     margin: 0 auto;
     border: 3px solid rgb(233, 228, 228);
 }
 .v2 img {
     width: 300px;
+    height: 150px;
+    // margin-top: 100px;
 }
 
 .cart1{
@@ -23,6 +27,7 @@
 }
 .cart3{
     font-weight: 200;
+    margin-top: 100px;
 }
 .cart4{
     width: 200px;
@@ -33,4 +38,5 @@
     font-size: 17px;
     font-weight: 700;
     border: none;
+    // margin-top: 170px;
 }

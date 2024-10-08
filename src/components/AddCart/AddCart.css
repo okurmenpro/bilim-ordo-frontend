@@ -173,8 +173,9 @@
 .price {
     display: flex;
     flex-direction: column;
-    margin-top: -85px;
+    margin-top: -40px;
     margin-left: 20px;
+
 }
 
 .price h2 {
@@ -358,3 +359,18 @@
 .useCoupon h3{
     margin-top: -28px;
 }
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  
+  .remove-button:hover {
+    background-color: darkred; 
+  }
+  
+  
