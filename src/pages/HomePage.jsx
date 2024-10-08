@@ -1,12 +1,18 @@
 import React from 'react'
-import HomePageComponent from '../components/HomePage'
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import PopularCategories from '../components/popularCategories'
+
+
 
 function HomePage() {
   return (
     <div>
-      <HomePageComponent />
+      <Banner />
+      <Card />
+      <PopularCategories/>
     </div>
   )
 }
 
-export default HomePage
+export default HomePage;

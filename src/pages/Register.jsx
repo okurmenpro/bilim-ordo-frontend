@@ -1,6 +1,6 @@
 import Register from '../components/Register/index';
 
-function RegisterPage() { // Renamed to RegisterPage
+function RegisterPage() { 
   return (
     <div>
       <Register />
