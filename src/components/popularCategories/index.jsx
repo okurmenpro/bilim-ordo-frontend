@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import './PopularCategories.css'
-
-
-
 import { popular_categories } from '../../data/popular_categories'
 
+const dropdown_items = [
+    {
+        name: "Action"
+    },
+    {
+        name: "Another action"
+    },
+    {
+        name: "Something else here"
+    }
+]
 const PopularCategories = () => {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
     const handleClick = () => {
-        setIsDropdownVisible(oldValue => !oldValue); 
+        setIsDropdownVisible(oldValue => !oldValue);
     };
-
     return (
         <>
             <div className='title'>
@@ -27,18 +34,16 @@ const PopularCategories = () => {
 
                     </div>
                 )}
-
-
             </div>
             <div className="dropdown">
                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleClick}>
                     Посмотреть еще
-
                 </button>
                 <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`} aria-labelledby="dropdownMenuButton1">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    {dropdown_items.map((el, index) =>
+                        <li key={index}><a className="dropdown-item" href="#">{el.name}</a></li>
+                    )}
+
                 </ul>
             </div>
         </>
