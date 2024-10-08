@@ -4,6 +4,7 @@ import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
 import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
+import wold from "../../assets/svg/wold.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -99,18 +100,18 @@ function Header() {
     setShowMainMenu(true);
   };
 
-  const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
+  const providers = ['Udemy Business', 'Преподавайте на Udemy']
 
   return (
     <header >
-      <div className="container">
-       <div className="header">
-       <img src={udemy} alt="Udemy" />
+      <div className="he">
+        <div class="container header">
+          <img src={udemy} alt="" />
         <Dropdown
           onMouseEnter={handleMouseEnterAllMenus}
           onMouseLeave={handleMouseLeaveAllMenus}
         >
-          <h3>Категории</h3>
+        <button className="cate-btn">Категории</button>
           {showMainMenu && (
             <div
               className="main-menu"
@@ -132,13 +133,20 @@ function Header() {
                   <MdKeyboardArrowRight />
                 </div>
               ))}
-
           <div className='providers'>
             {providers.map((provider) => <a>{provider}</a>)}
           </div>
 
+          <input type="search" placeholder='Поиск' />
+
+          <div className="login-btns">
+            <button className="login-btn">Войти</button>
+            <button className="register-btn">Зарегистрироваться</button>
+          </div>
+
           <div className='icons'>
             <div className="icon">
+              <img src={korzina} alt="" />
               <img src={heart} alt="" />
             </div>
             </div>
@@ -160,12 +168,11 @@ function Header() {
             </div>
             </Link>
             <div className="icon">
-              <img className='not' src={notif} alt="" />
+              <img className='not' src={wold} alt="" />
             </div>
           </div>
-        
-      <hr />
-       </div>
+
+        </div>
       </div>
 
       <div className='bottom container'>
