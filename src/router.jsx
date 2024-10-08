@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AddCart from "./pages/AddCart";
+import Sidebar from "./components/Sidebar/Sidebar";
+
 
 export const Router = createBrowserRouter([
    {
@@ -31,8 +33,14 @@ export const Router = createBrowserRouter([
             path: "/addcart",
             element: < AddCart />
          },
+         {
+            path: "/sidebar",
+            element: < Sidebar />
+         }
 
 
       ]
    },
+
+
 ])

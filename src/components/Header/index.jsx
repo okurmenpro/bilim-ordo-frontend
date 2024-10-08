@@ -6,6 +6,7 @@ import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
 import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
+
 function Header() {
   return (
     <header>
@@ -24,11 +25,14 @@ function Header() {
           <img className="not" src={notif} alt="Notifications" />
         </div>
       </div>
-      <hr />
-      <div className="bottom container">
-        {['Разработка', 'Бизнес', 'Финансы и бухгалтерский учет', 'ИТ и ПО', 'Офисное Программное обеспечение'].map((category, index) => (
-          <li key={index}>{category}</li>
-        ))}
+
+      <div className='bottom container'>
+
+      {/* {categories.map((category) => <li>{category}</li>)}  */}
+
+
+        {categories.map((category) => <li>{category}</li>)}
+
       </div>
     </header>
   );
