@@ -181,7 +181,7 @@ p {
     gap: 15px;
 }
 
-.share_it1 {
+.share_it {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -228,7 +228,7 @@ p {
     color: rgb(43, 61, 176);
 }
 
-.input3 {
+.enter_coupon{
     width: 380px;
     display: flex;
     justify-content: space-between;
@@ -237,7 +237,7 @@ p {
     margin-bottom: 70px;
 }
 
-.input3 input {
+.enter_coupon input {
     outline: none;
     border: 1.5px solid black;
     width: 340px;
@@ -247,7 +247,7 @@ p {
     font-size: 18px;
 }
 
-.input3 button {
+.enter_coupon button {
     width: 230px;
     height: 55px;
     border-radius: 0;

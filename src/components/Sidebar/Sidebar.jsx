@@ -50,7 +50,7 @@ function Sidebar() {
                         ))}
                     </div>
                 </div>
-                <div className='share_it1'>
+                <div className='share_it'>
                     <h1 className='share__it-title'>Поделиться</h1>
                     <h2 className='share__it-title'>Подарить этот курс</h2>
                 </div>
@@ -62,7 +62,7 @@ function Sidebar() {
                     <HiMiniXMark className='icons_x' />
                 </div>
 
-                <div className='input3'>
+                <div className='enter_coupon'>
                     <input type="text" placeholder='Введите купон '/>
                     <button>Применить</button>
                 </div>
