@@ -6,6 +6,15 @@ import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
+import { Dropdown } from "react-bootstrap";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { CartContext } from "../CartContext";
+import { GrCart } from "react-icons/gr";
+
+
+
+
 function Header() {
 
   const categories = ['Category 1', 'Category 2', 'Category 3']; 

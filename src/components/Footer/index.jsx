@@ -11,7 +11,8 @@ const Footer = () => {
             <div className='info-top'>
                 <div className='info-left'>
 
-                        <div className='categories'>
+
+    <div className='categories'>
                             <ul>
                                 <li>
                                     <a href="">Bilim-Ordo Business</a>
@@ -69,6 +70,8 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
+                   
+
 
                     </div>
                     <div className='info-right'>
