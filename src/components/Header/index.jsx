@@ -13,6 +13,7 @@ import { GrCart } from "react-icons/gr";
 
 // import LogIn from "../Login";
 
+
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
@@ -153,7 +154,12 @@ function Header() {
       </div>
 
       <div className='bottom container'>
+
+      {/* {categories.map((category) => <li>{category}</li>)}  */}
+
+
         {categories.map((category) => <li>{category}</li>)}
+
       </div>
     </header>
   );

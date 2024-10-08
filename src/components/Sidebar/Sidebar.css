@@ -1,0 +1,298 @@
+.Sidebar {
+    width: 450px;
+    height: 1780px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
+
+}
+
+.container1 {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.video video {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.list5 {
+    padding: 0 30px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.price h1 {
+    font-size: 48px;
+
+}
+
+.price h2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.508);
+    text-decoration: line-through;
+
+}
+
+.price h3 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.508);
+    padding-right: 70px;
+}
+
+.day {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.watch {
+    font-size: 16px;
+    margin-top: -20px;
+    color: rgba(255, 0, 0, 0.695);
+    margin-left: 4px;
+}
+
+.day h1 {
+    font-size: 16px;
+    padding-right: 95px;
+    color: rgba(255, 0, 0, 0.695);
+}
+
+.day a {
+    color: rgb(186, 58, 58);
+    font-family: Arial;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.add-btn {
+    width: 380px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    background: rgb(163, 93, 232);
+    margin-bottom: 15px;
+}
+
+.add-btn:hover {
+    background: rgb(143, 49, 236);
+}
+
+.buy_now-btn {
+    width: 380px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #fff;
+}
+
+.buy_now-btn:hover {
+    background: rgba(10, 10, 10, 0.085);
+}
+
+p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.discount {
+    width: 380px;
+    height: 120px;
+    border: 1px dashed rgba(0, 0, 0, 0.448);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding-left: 15px;
+
+}
+
+.discount_price h1 {
+    font-size: 20px;
+    text-align: start;
+}
+
+.discount_price h1 a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.bonus {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.541);
+    text-align: start;
+}
+
+.apply {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(39, 15, 145);
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.discont__course {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.discont__course h1 {
+    font-size: 22px;
+    text-align: start;
+    font-weight: 650;
+    padding-left: 2px;
+}
+
+.discont__map {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.discont__map img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.discont__map h3 {
+    font-size: 18px;
+    height: 30px;
+    text-align: start;
+}
+
+.discont__map1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share_it {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.share__it-title {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(15, 15, 160);
+    text-decoration: underline;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.used_coupon {
+    width: 380px;
+    height: 70px;
+    border: 1px dashed rgba(0, 0, 0, 0.448);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.used_coupon h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.523);
+    cursor: pointer none;
+}
+
+.used_coupon h3 a {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.523);
+    text-decoration: none;
+}
+
+.icons_x {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(43, 61, 176);
+}
+
+.enter_coupon{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.enter_coupon input {
+    outline: none;
+    border: 1.5px solid black;
+    width: 340px;
+    height: 55px;
+    border-radius: 0;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.enter_coupon button {
+    width: 230px;
+    height: 55px;
+    border-radius: 0;
+    color: #fff;
+    background: #000;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px
+}
+
+.line {
+
+    width: 450px;
+    height: 1px;
+    background-color: #00000027;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 35px;
+}
+
+.training h2 {
+    font-size: 27px;
+    text-align: start;
+    font-weight: 650;
+    margin-left: 2px;
+}
+
+.training p {
+    font-size: 18px;
+    text-align: start;
+    font-weight: 490;
+    margin-left: 2px;
+}
+
+.try_btn {
+    width: 380px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: -2px;
+    color: #000;
+    border: 1.5px solid black;
+}
+
+.try_btn:hover {
+    background: rgba(10, 10, 10, 0.085);
+}
