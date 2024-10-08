@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+// import HomePage from "./components/HomePage";
 import Basket from "./pages/Basket";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./components/HomePage"; 
-import AddCart from "./components/AddCart/AddCart";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 export const Router = createBrowserRouter([
    {
@@ -28,11 +29,9 @@ export const Router = createBrowserRouter([
          element: < HomePage />
       },
       {
-         path: "/addcart",
-         element: < AddCart />
-      },
-      
-     
+         path: "/sidebar",
+         element: < Sidebar />
+      }
     ]
-   },
+   }
 ])
