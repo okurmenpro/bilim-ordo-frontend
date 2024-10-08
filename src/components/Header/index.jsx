@@ -4,10 +4,12 @@ import udemy from "../../assets/images/udemy.png";
 import heart from "../../assets/svg/heart.svg";
 import korzina from "../../assets/svg/korzina.svg";
 import notif from "../../assets/svg/notif.svg";
-import DropdownMenu from '../DropdownMenu/DropdownMenu'
-
+import DropdownMenu from '../DropdownMenu/DropdownMenu';
 
 function Header() {
+
+  const categories = ['Category 1', 'Category 2', 'Category 3']; 
+
   return (
     <header>
       <div className="container">
@@ -27,15 +29,15 @@ function Header() {
       </div>
 
       <div className='bottom container'>
-
-      {/* {categories.map((category) => <li>{category}</li>)}  */}
-
-
-        {categories.map((category) => <li>{category}</li>)}
-
+        <ul>
+          {categories.map((category, index) => (
+            <li key={index}>{category}</li>
+          ))}
+        </ul>
       </div>
     </header>
   );
 }
 
 export default Header;
+
