@@ -83,6 +83,22 @@ function Header() {
     setActiveSubSubItem(null);
   };
 
+  const handleMouseLeaveAllMenus = () => {
+    timerRef.current = setTimeout(() => {
+      setShowMainMenu(false);
+      setShowSubMenu(false);
+      setShowSubSubMenu(false);
+      setActiveMainItem(null); 
+      setActiveSubItem(null);
+      setActiveSubSubItem(null);
+    }, 300);
+  };
+
+  const handleMouseEnterAllMenus = () => {
+    clearTimeout(timerRef.current);
+    setShowMainMenu(true);
+  };
+
   const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение']
 
   return (
@@ -153,12 +169,7 @@ function Header() {
       </div>
 
       <div className='bottom container'>
-
       {/* {categories.map((category) => <li>{category}</li>)}  */}
-
-
-        {categories.map((category) => <li>{category}</li>)}
-
       </div>
     </header>
   );
