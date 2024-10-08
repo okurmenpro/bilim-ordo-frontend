@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from '../Banner'
-import Header from '../Header'
 import Courses from "../courses"
 
 
@@ -10,12 +9,8 @@ function HomePage() {
   return (
     <div>
       <Banner />
-
       <Courses />
-      <Footer />
-
       <Card />
-
     </div>
   )
 }
