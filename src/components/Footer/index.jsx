@@ -5,13 +5,13 @@ import { MdLanguage } from "react-icons/md";
 
 
 const Footer = () => {
-    return (
-        <div >
-            <div className='footer'>
-                <div className='info-top'>
-                    <div className='info-left'>
+  return (
+    <div >
+        <div className='footer container'>
+            <div className='info-top'>
+                <div className='info-left'>
 
-                        <div className='a1'>
+                        <div className='categories'>
                             <ul>
                                 <li>
                                     <a href="">Bilim-Ordo Business</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='a1'>
+                        <div className='categories'>
                             <ul>
                                 <li>
                                     <a href="">Карьера</a>
@@ -50,7 +50,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className='a1'>
+                        <div className='categories'>
                             <ul>
                                 <li>
                                     <a href="">Условия использования</a>

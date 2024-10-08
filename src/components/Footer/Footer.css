@@ -1,6 +1,6 @@
 .footer {
     width: 1440px;
-    background-color: #2d2f31;
+    background-color: black;
     padding: 20px 40px;
     margin: 0 auto;
 }
@@ -66,7 +66,7 @@ ul li a {
     color: white;
 }
 
-.a1 ul li a:hover {
+.categories ul li a:hover {
     text-decoration: underline;
 }
 
