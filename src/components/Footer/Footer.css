@@ -63,3 +63,16 @@ ul li a {
 .info-bottom p {
     color: white;
 }
+.categori ul li a:hover{
+    text-decoration: underline;
+}
+.info-bottom h2 span{
+    color: purple;
+}
+.info-bottom h2{
+    color: white ;
+}
+.info-right button:hover{
+    background-color:#1c1d1f;
+}
+

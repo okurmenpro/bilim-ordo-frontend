@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='info-top'>
                 <div className='info-left'>
 
-                    <div className='a1'>
+                    <div className='categori'>
                         <ul>
                         <li>
                                 <a href="">Bilim-Ordo Business</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='a1'>
+                    <div className='categori'>
                         <ul>
                         <li>
                                 <a href="">Карьера</a>
@@ -50,7 +50,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='a1'>
+                    <div className='categori'>
                     <ul>
                         <li>
                                 <a href="">Условия использования</a>
