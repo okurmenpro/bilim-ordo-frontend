@@ -14,9 +14,7 @@
 .info-left {
     display: flex;
     gap: 100px;
-    /* width: 100%; */
-
-    
+    padding:39px 0px 64px;
 }
 
 ul {
@@ -38,7 +36,7 @@ ul li a {
 }
 
 .b1 {
-    padding: 5px 30px;
+    padding: 5px 30px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,14 +51,26 @@ ul li a {
 }
 
 .info-bottom {
-    padding: 20px 40px;
+    padding: 5px 27px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+   
     h2 {
         font-size: 30px;
+      
     }
 
+}
+.footer-png1{
+    width:80px;
+    height: 30px;
+}
+.footer-png4{
+    width: 80px;
+    height: 30px;
+    margin-top: 3px;
 }
 
 .info-bottom img {
@@ -76,6 +86,7 @@ ul li a {
 }
 .info-bottom h2 span{
     color: purple;
+  
 }
 .info-bottom h2{
     color: white ;
@@ -84,10 +95,15 @@ ul li a {
     background-color:#1c1d1f;
 }
 .footer-business{
-    border: 1px solid rgb(199, 194, 194);
+    border: 0.3px solid rgb(199, 194, 194);
     border-top: none;
     border-left: none;
     border-right: none;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
    
   
 }
@@ -100,18 +116,20 @@ ul li a {
 .footer-business-h1 strong{
     color: white;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 70px;
+    
 }
 .footer-business-h1 strong span{
-    color: purple;
+    color: #C0C4FC;
+    padding: 5px;
+    
 }
 .footer-business-h3{
     display: flex;
-    gap: 16px;
-    strong{
-        color: white;
-        font-size: 20px;
-        margin-right: 5px;
-    }
+    gap: 10px;
+    
+}
+.info-right{
+    padding: 30px ;
 }

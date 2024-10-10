@@ -2,21 +2,27 @@ import React from 'react'
 import "./Footer.css"
 // import { CiGlobe } from "react-icons/ci";
 import { MdLanguage } from "react-icons/md";
+import Nasdaq from "../../assets/images/nasdaq.png"
+import Volkswagen from "../../assets/images/volkswagen.png"
+import Box from "../../assets/images/box.png"
+import NetApp from "../../assets/images/netApp.png"
+import Eventbrite from "../../assets/images/eventbrite.png"
 
 
 const Footer = () => {
   return (
-    <div className='footer' >
+    <footer className='footer' >
         <div className='footer-business'>
         <div className='footer-business2'>
          <div className='footer-business-h1'>
-                <strong>Top companies choose <span>Bilim-ordo Business</span> Top companies choose </strong>
+                <strong>Top companies choose <span> Bilim-ordo Business</span>   to build in-demand career skills. </strong>
             </div>
             <div className='footer-business-h3'>
-                <strong>Nasdaq</strong>
-                <strong> box</strong>
-                <strong>NetApp</strong>
-                <strong>eventbrite</strong>
+             <img className='footer-png1' src={Nasdaq} alt="nasdaq" />
+              <img className='footer-png2' src={Volkswagen} alt="volkswagen" />
+              <img className='footer-png3' src={Box} alt="box" />
+              <img className='footer-png4' src={NetApp} alt="netApp" />
+              <img className='footer-png4' src={Eventbrite}alt="eventbrite" />
             </div>
          </div>
         </div>
@@ -102,7 +108,7 @@ const Footer = () => {
 
 
        
-    </div>
+    </footer>
   )
 }
 
