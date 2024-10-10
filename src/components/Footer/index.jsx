@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-// import { CiGlobe } from "react-icons/ci";
+
 import { MdLanguage } from "react-icons/md";
 import Nasdaq from "../../assets/images/nasdaq.png"
 import Volkswagen from "../../assets/images/volkswagen.png"
@@ -14,10 +14,10 @@ const Footer = () => {
     <footer className='footer' >
         <div className='footer-business'>
         <div className='footer-business2'>
-         <div className='footer-business-h1'>
-                <strong>Top companies choose <span> Bilim-ordo Business</span>   to build in-demand career skills. </strong>
+         <div className='footer-business-strong'>
+                <strong>Top companies choose <span> Bilim-ordo Business</span> to build in-demand career skills. </strong>
             </div>
-            <div className='footer-business-h3'>
+            <div className='footer-business-img'>
              <img className='footer-png1' src={Nasdaq} alt="nasdaq" />
               <img className='footer-png2' src={Volkswagen} alt="volkswagen" />
               <img className='footer-png3' src={Box} alt="box" />
@@ -27,9 +27,7 @@ const Footer = () => {
          </div>
         </div>
         <div className='footer '>
-            <div className='info-top'>
-             
-
+            <div className='info-top'>        
        <div className='info-left'>
        <div className='categori'>
                         <ul>
@@ -69,7 +67,6 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
                     <div className='categori'>
                     <ul>
                         <li>
@@ -89,25 +86,19 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
-       </div>
-
-              
+       </div>              
                 <div className='info-right'>
-                    <button className='b1'>
+                    <button className='btn'>
                     {<MdLanguage    />}
                     <h3>Русский</h3>
                     </button>
                 </div>
             </div>
             <div className='info-bottom'>
-                <h2><span>B</span>ILIM-ORDO</h2>
+                <strong><span>B</span>ILIM-ORDO</strong>
                 <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
-        </div>
-
-
-       
+        </div>      
     </footer>
   )
 }

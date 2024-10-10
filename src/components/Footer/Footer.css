@@ -32,10 +32,9 @@ li {
 ul li a {
     color: white;
     text-decoration: none;
-
 }
 
-.b1 {
+.btn {
     padding: 5px 30px ;
     display: flex;
     justify-content: center;
@@ -55,13 +54,9 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-   
     h2 {
-        font-size: 30px;
-      
+        font-size: 30px;  
     }
-
 }
 .footer-png1{
     width:80px;
@@ -84,12 +79,12 @@ ul li a {
 .categori ul li a:hover{
     text-decoration: underline;
 }
-.info-bottom h2 span{
+.info-bottom strong span{
     color: purple;
-  
 }
-.info-bottom h2{
+.info-bottom strong{
     color: white ;
+    font-size: 40px;
 }
 .info-right button:hover{
     background-color:#1c1d1f;
@@ -102,10 +97,7 @@ ul li a {
     height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  
-   
-  
+    justify-content: center; 
 }
 
 .footer-business2 {
@@ -113,22 +105,19 @@ ul li a {
     display: flex;
     justify-content: space-between;
 }
-.footer-business-h1 strong{
+.footer-business-strong strong{
     color: white;
     font-size: 20px;
-    font-weight: 900;
-    margin-left: 70px;
-    
+    font-weight: 800;
+    margin-left: 70px;   
 }
-.footer-business-h1 strong span{
+.footer-business-strong strong span{
     color: #C0C4FC;
-    padding: 5px;
-    
+    padding: 5px;   
 }
-.footer-business-h3{
+.footer-business-img{
     display: flex;
-    gap: 10px;
-    
+    gap: 10px;   
 }
 .info-right{
     padding: 30px ;
