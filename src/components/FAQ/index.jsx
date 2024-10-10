@@ -1,35 +1,10 @@
 import "./FAQ.scss";
 import iconArrowDrop from "../../assets/svg/arrow_drop_down.svg";
 import { useState } from "react";
+import { accortionsData } from "../../data/accordions";
 
 const FAQ = () => {
-  const [dataAccordions, setDataAccordions] = useState([
-    {
-      id: 1,
-      title: "Кто обучает учеников",
-      isOpen: false,
-    },
-    {
-      id: 2,
-      title: "Кто обучает учеников",
-      isOpen: false,
-    },
-    {
-      id: 3,
-      title: "Кто обучает учеников",
-      isOpen: false,
-    },
-    {
-      id: 4,
-      title: "Кто обучает учеников",
-      isOpen: false,
-    },
-    {
-      id: 5,
-      title: "Кто обучает учеников",
-      isOpen: false,
-    },
-  ]);
+  const [dataAccordions, setDataAccordions] = useState(accortionsData);
 
   const handleOpen = (id) => {
     setDataAccordions((prev) =>
