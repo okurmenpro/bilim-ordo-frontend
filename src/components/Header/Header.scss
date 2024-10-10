@@ -1,89 +1,82 @@
 .aback {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .head {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
-    padding: 14px 0 14px 0;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 20px;
-
-    span {
-        color: purple;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    h2 {
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 11px;
+        span {
+            color: purple;
+        }
     }
 }
-
 .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-left: -40px;
-
     button {
         padding: 10px 15px 10px 15px;
-        color: #000;
-        font-size: 14px;
+        color: #2D2F31;
+        font-size: 16px;
         font-weight: 500;
-
     }
 }
-
 #active-btn {
+    padding-top: 9px;
     position: relative;
+    display: flex;
+    gap: 10px ;
 }
-
 #active-btn::after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 2px;
+    bottom: 0;
+    left: 0;
     background-color: rgb(151, 13, 151);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-
 #active-btn:hover::after {
     transform: scaleX(1);
 }
-
-input {
-    height: 36px;
-}
-
 #search {
-    width: 180px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    input {
+        width: 236;
+        height: 52px;
+       margin-left: -70px;
+    }
 }
-
 .btn-outline-secondary {
-    margin-bottom: -25px;
-}
+    margin-bottom: -45px;
+    padding: 13px 15px 13px 15px;
 
+}
 .icons {
     display: flex;
     gap: 14px;
-
     img {
-        width: 35px;
+       width: 50px;
+       height: 50px;
     }
+}
+.sign-up {
+    background: #2D2F31;
+    color: #FFFFFF !important;
+    border-radius: 4px;
+}
+.sign-up:hover {
+    background: gray;
 }
 
 .login {
@@ -91,9 +84,8 @@ input {
     background: #F2F2F2;
     border-radius: 4px;
 }
-
 .login:hover {
-    background: #2D2F31;
-    color: white;
-    transition: 0.5 ease;
+    background: #2d2f319a;
+    color: rgba(255, 255, 255, 0.899);
+    transition: 0.3s ease;
 }
