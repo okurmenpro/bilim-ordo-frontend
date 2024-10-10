@@ -5,7 +5,7 @@ import earth from '../../assets/svg/earth.svg'
 import { GrSearch } from "react-icons/gr";
 
 function Header() {
-  const providers = ['Udemy Business', 'Преподавайте на Udemy']
+  const providers = ['Категории','Udemy Business', 'Преподавайте на Udemy']
   const authorization = ['Войти' , 'Зарегистрироваться']
   return (
     <main className="aback">
