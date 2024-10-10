@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.scss";
-import udemy from "../../assets/images/udemy.png";
 import cart from '../../assets/svg/cart.svg'
 import earth from '../../assets/svg/earth.svg'
 import { GrSearch } from "react-icons/gr";
@@ -11,7 +10,7 @@ function Header() {
   return (
     <main className="aback">
       <header className="head container">
-        <img className="logo" src={udemy} alt="" />
+      <h2><span>B</span>ILIM-ORDO</h2>
         <div className="buttons">
         {providers.map((provider) =>
           <button id="active-btn">{provider}</button>)}
@@ -41,4 +40,3 @@ function Header() {
   );
 }
 export default Header;
-
