@@ -11,9 +11,6 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
 import { GrCart } from "react-icons/gr";
 
-
-
-
 function Header() {
   const [showMainMenu, setShowMainMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
@@ -100,78 +97,77 @@ function Header() {
     setShowMainMenu(true);
   };
 
-  const providers = ['Udemy Business', 'Преподавайте на Udemy']
+  const providers = ['Udemy Business', 'Преподавайте на Udemy'];
 
   return (
-    <header >
+    <header>
       <div className="he">
-        <div class="container header">
+        <div className="container header">
           <img src={udemy} alt="" />
-        <Dropdown
-          onMouseEnter={handleMouseEnterAllMenus}
-          onMouseLeave={handleMouseLeaveAllMenus}
-        >
-        <button className="cate-btn">Категории</button>
-          {showMainMenu && (
-            <div
-              className="main-menu"
-              onMouseEnter={handleMouseEnterAllMenus}
-              onMouseLeave={handleMouseLeaveAllMenus}
-            >
-              {mainMenuItems.map((item, index) => (
-                <div
-                  key={index}
-                  className={`menu-item ${activeMainItem === item.label ? "active" : ""
-                    }`}
-                  onMouseEnter={() =>
-                    handleMouseEnterMainMenu(item.subMenu, item.label)
-                  }
-                >
-                  <Dropdown.Item id="text" href={`#/action-${index}`}>
-                    {item.label}
-                  </Dropdown.Item>
-                  <MdKeyboardArrowRight />
+          <Dropdown
+            onMouseEnter={handleMouseEnterAllMenus}
+            onMouseLeave={handleMouseLeaveAllMenus}
+          >
+            <button className="cate-btn">Категории</button>
+            {showMainMenu && (
+              <div
+                className="main-menu"
+                onMouseEnter={handleMouseEnterAllMenus}
+                onMouseLeave={handleMouseLeaveAllMenus}
+              >
+                {mainMenuItems.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`menu-item ${activeMainItem === item.label ? "active" : ""}`}
+                    onMouseEnter={() =>
+                      handleMouseEnterMainMenu(item.subMenu, item.label)
+                    }
+                  >
+                    <Dropdown.Item id="text" href={`#/action-${index}`}>
+                      {item.label}
+                    </Dropdown.Item>
+                    <MdKeyboardArrowRight />
+                  </div>
+                ))}
+                <div className='providers'>
+                  {providers.map((provider) => <a key={provider}>{provider}</a>)}
                 </div>
-              ))}
+
+                <input type="search" placeholder='Поиск' />
+
+                <div className="login-btns">
+                  <button className="login-btn">Войти</button>
+                  <button className="register-btn">Зарегистрироваться</button>
+                </div>
+
+                <div className='icons'>
+                  <div className="icon">
+                    <img src={korzina} alt="" />
+                    <img src={heart} alt="" />
+                  </div>
+                </div>
+              </div>
+            )}
+          </Dropdown>
+          <input type="search" placeholder="Ищите что угодно" />
           <div className='providers'>
-            {providers.map((provider) => <a>{provider}</a>)}
-          </div>
+            <Link to={"/"}>
+              {providers.map((provider, index) => (
+                <Link to='#' key={index}>{provider}</Link>
+              ))}
+            </Link>
 
-          <input type="search" placeholder='Поиск' />
-
-          <div className="login-btns">
-            <button className="login-btn">Войти</button>
-            <button className="register-btn">Зарегистрироваться</button>
-          </div>
-
-          <div className='icons'>
-            <div className="icon">
-             <img src={korzina} alt="" />
-              <img src={heart} alt="" />
-            </div>
-            </div>
-            </div>
-          )}
-        </Dropdown>
-        <input type="search" placeholder="Ищите что угодно" />
-        <div className='providers'>
-          <Link to={"/"}>
-            {providers.map((provider, index) => (
-              <Link to='#' key={index}>{provider}</Link>
-            ))}
-          </Link>
-
-          <Link to={"/basket"}>
-            <div className="cart-icon">
-              <GrCart  className="cartIcon"/>
-              <span className="cart-count">{cartItems.length}</span> 
-            </div>
+            <Link to={"/basket"}>
+              <div className="cart-icon">
+                <GrCart className="cartIcon" />
+                {cartItems.length === 0 && <span className="cart-count"></span>}
+                {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
+              </div>
             </Link>
             <div className="icon">
               <img className='not' src={wold} alt="" />
             </div>
           </div>
-
         </div>
       </div>
 
