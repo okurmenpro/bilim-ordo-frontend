@@ -78,7 +78,7 @@ const DropdownMenu = () => {
       onMouseEnter={handleMouseEnterAllMenus}
       onMouseLeave={handleMouseLeaveAllMenus}
     >
-      <h3 className='cate-btn'>Категории</h3>
+      <button className='cate-btn'>Категории</button>
       {showMainMenu && (
         <div className="main-menu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
           {mainMenuItems.map((item, index) => (
