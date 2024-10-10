@@ -3,24 +3,23 @@ import "./Sidebar.css"
 import { ImAlarm } from "react-icons/im";
 import { SidebarData } from '../../data/Sidebar';
 import { HiMiniXMark } from "react-icons/hi2";
-import video from "../../assets/video/Python3.mp4"
 
-function Sidebar() {
+function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc }) {
     return (
         <div className='  container1 Sidebar'>
             <div className='video'>
-                <video src={video} controls></video>
+                <video src={videoSrc} controls></video>
             </div>
 
             <div className='list5'>
                 <div className='price'>
-                    <h1>13,99$</h1>
-                    <h2>74,99$</h2>
-                    <h3>Скидка 81%</h3>
+                    <h1>{price}$</h1>
+                    <h2>{originalPrice}$</h2>
+                    <h3>Скидка {discount}%</h3>
                 </div>
                 <div className='day'>
                     <ImAlarm className='watch' />
-                    <h1>Данная цена доступна eще  <a href="">2 дней!</a></h1>
+                    <h1>Данная цена доступна eще  <a href="">{daysLeft}дней!</a></h1>
                 </div>
 
                 <button className='add-btn'>Добавить в корзину</button>
@@ -57,13 +56,13 @@ function Sidebar() {
                 <h2 className='share__it-title'>Использовать купон</h2>
 
                 <div className='used_coupon'>
-                    <h3>Использован купон <a href="">ST15MT100124B</a><br />
+                    <h3>Использован купон <a href="">{coupon}</a><br />
                         Купон Udemy</h3>
                     <HiMiniXMark className='icons_x' />
                 </div>
 
                 <div className='enter_coupon'>
-                    <input type="text" placeholder='Введите купон '/>
+                    <input type="text" placeholder='Введите купон ' />
                     <button>Применить</button>
                 </div>
                 <div className='line'></div>

@@ -31,20 +31,25 @@
 
 .price h1 {
     font-size: 48px;
+    font-weight: 500;
 
 }
 
 .price h2 {
-    font-size: 18px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.508);
     text-decoration: line-through;
+    font-weight: 550;
+    margin-top: -10px;
 
 }
 
 .price h3 {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.508);
-    padding-right: 70px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.684);
+    padding-right: 60px;
+    font-weight: 550;
+    margin-top: -10px;
 }
 
 .day {
@@ -64,8 +69,9 @@
 
 .day h1 {
     font-size: 16px;
-    padding-right: 95px;
+    padding-right: 105px;
     color: rgba(255, 0, 0, 0.695);
+   
 }
 
 .day a {
@@ -95,6 +101,7 @@
     font-size: 22px;
     font-weight: 500;
     background: #fff;
+    border:  1px solid black;
 }
 
 .buy_now-btn:hover {
@@ -119,19 +126,21 @@ p {
 }
 
 .discount_price h1 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: start;
 }
 
 .discount_price h1 a {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
+    font-family: Arial;
 }
 
 .bonus {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
     text-align: start;
+    font-family: Arial;
 }
 
 .apply {
