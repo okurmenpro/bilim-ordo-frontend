@@ -10,13 +10,13 @@ const Footer = () => {
         <div className='footer-business'>
         <div className='footer-business2'>
          <div className='footer-business-h1'>
-                <h1>Top companies choose <span>Bilim-ordo Business</span> Top companies choose </h1>
+                <strong>Top companies choose <span>Bilim-ordo Business</span> Top companies choose </strong>
             </div>
             <div className='footer-business-h3'>
-                <h3>Nasdaq</h3>
-                <h3> box</h3>
-                <h3>NetApp</h3>
-                <h3>eventbrite</h3>
+                <strong>Nasdaq</strong>
+                <strong> box</strong>
+                <strong>NetApp</strong>
+                <strong>eventbrite</strong>
             </div>
          </div>
         </div>

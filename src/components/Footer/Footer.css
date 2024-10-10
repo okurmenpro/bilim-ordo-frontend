@@ -92,24 +92,24 @@ ul li a {
   
 }
 
-.footer-business2{
+.footer-business2 {
     width: 100%;
- 
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
-.footer-business-h1 h1{
+.footer-business-h1 strong{
     color: white;
     font-size: 20px;
     font-weight: 700;
     margin-left: 70px;
 }
-.footer-business-h1 h1 span{
+.footer-business-h1 strong span{
     color: purple;
 }
 .footer-business-h3{
     display: flex;
     gap: 16px;
-    h3{
+    strong{
         color: white;
         font-size: 20px;
         margin-right: 5px;
