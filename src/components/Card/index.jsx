@@ -5,7 +5,7 @@ import { CartContext } from "../CartContext";
 
 function Card() {
   const { addToCart, cartItems } = useContext(CartContext);
-  
+
   const products = [
     { 
       name: "Python разработка - с нуля до профессионала. Python 3", 
@@ -27,15 +27,14 @@ function Card() {
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(cartItem => cartItem.name === item.name);
     if (!isAlreadyInCart) {
-      addToCart(item);
-    } else {
-      alert("Этот продукт уже в корзине!");
+      addToCart(item); 
     }
+
   };
 
   return (
     <div>
-      <div className="flex container">
+      <div className="flex">
         {products.map((item, index) => (
           <div key={index} className="cart">
             <img src={item.img} alt={item.name} />
@@ -58,7 +57,7 @@ function Card() {
               onClick={() => handleAddToCart(item)}  
               className="add-to-cart-button"
             >
-              Add to Cart
+              Добавить в корзину
             </button>
           </div>
         ))}

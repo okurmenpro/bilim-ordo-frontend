@@ -10,7 +10,6 @@
 
     display: flex;
     gap: 40px;
-    /* margin-top: 10px; */
 
 }
 .courses-h1 h1{
@@ -48,7 +47,6 @@
 
 .courses-flex{
     display: flex;
-    /* align-items: center; */
     
     gap: 5px;
 }
@@ -67,4 +65,7 @@
     margin-top: -10px;
     color: grey;
 }
-
+.courses-left img{
+    width: 400px;
+    height: 170px;
+}

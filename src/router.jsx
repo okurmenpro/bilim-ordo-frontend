@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-// import HomePage from "./components/HomePage";
-import Basket from "./pages/Basket";
+import Basket from "./pages/Basket";  
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
@@ -13,25 +12,26 @@ export const Router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/basket",
-        element: <Basket />,
+        path: "/basket",  
+        element: <Basket />,  
       },
       {
         path: "/register",
-        element: <Register />,
+        element: <Register />
       },
       {
         path: "/login",
-        element: <Login />,
+        element: <Login />
       },
       {
         path: "/",
-        element: <HomePage />,
+        element: <HomePage />
       },
       {
         path: "/sidebar",
-        element: <Sidebar />,
+        element: <Sidebar />
       },
-    ],
-  },
+    
+    ]
+  }
 ]);
