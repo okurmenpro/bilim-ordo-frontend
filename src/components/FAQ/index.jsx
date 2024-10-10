@@ -55,11 +55,9 @@ const FAQ = () => {
                   handleOpen(el.id);
                 }}
               >
-                <ul>
-                  <li>
-                    <h3>{el.title}</h3>
-                  </li>
-                </ul>
+                <div className="accordion-title">
+                  <h3>{el.title}</h3>
+                </div>
                 <div
                   className={
                     el.isOpen ? `icon-arrow-drop icon-down` : " icon-arrow-drop"
@@ -70,8 +68,13 @@ const FAQ = () => {
               </div>
               <div className={el.isOpen ? "container-childs" : " none"}>
                 <div className="child-content">
-                  <h3>dop content</h3>
-                  <p>{el.title}</p>
+                  <ul>
+                    <li>
+                      <p>
+                        {el.title} {el.id}
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
