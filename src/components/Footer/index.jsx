@@ -6,12 +6,26 @@ import { MdLanguage } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div >
-        <div className='footer container'>
+    <div className='footer' >
+        <div className='footer-business'>
+        <div className='footer-business2'>
+         <div className='footer-business-h1'>
+                <h1>Top companies choose <span>Bilim-ordo Business</span> Top companies choose </h1>
+            </div>
+            <div className='footer-business-h3'>
+                <h3>Nasdaq</h3>
+                <h3> box</h3>
+                <h3>NetApp</h3>
+                <h3>eventbrite</h3>
+            </div>
+         </div>
+        </div>
+        <div className='footer '>
             <div className='info-top'>
-                <div className='info-left'>
+             
 
-                    <div className='categori'>
+       <div className='info-left'>
+       <div className='categori'>
                         <ul>
                         <li>
                                 <a href="">Bilim-Ordo Business</a>
@@ -70,7 +84,9 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                </div>
+       </div>
+
+              
                 <div className='info-right'>
                     <button className='b1'>
                     {<MdLanguage    />}
