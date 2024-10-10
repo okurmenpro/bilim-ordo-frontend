@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
 import { GrCart } from "react-icons/gr";
 import wold from "../../assets/svg/wold.svg";
-import DropdownMenu from "../Dropdown/Index";
+import DropdownMenu from "../Dropdown/index";
 
 
 function Header() {
