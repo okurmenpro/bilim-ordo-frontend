@@ -1,11 +1,9 @@
 import React from 'react'
 import Banner from '../Banner'
 import Courses from "../courses"
-
-
 import Card from '../Card'
 import PopularCategories from '../popularCategories';
-
+import Request from '../Request/Request';
 
 function HomePage() {
   return (
@@ -13,7 +11,8 @@ function HomePage() {
       <Banner />
       <Courses />
       <Card />
-      <PopularCategories/>
+      <PopularCategories />
+      <Request />
     </div>
   )
 }
