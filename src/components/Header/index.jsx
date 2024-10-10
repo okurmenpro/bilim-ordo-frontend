@@ -146,7 +146,7 @@ function Header() {
 
           <div className='icons'>
             <div className="icon">
-              <img src={korzina} alt="" />
+             <img src={korzina} alt="" />
               <img src={heart} alt="" />
             </div>
             </div>
@@ -161,7 +161,7 @@ function Header() {
             ))}
           </Link>
 
-          <Link to={"/addcart"}>
+          <Link to={"/basket"}>
             <div className="cart-icon">
               <GrCart  className="cartIcon"/>
               <span className="cart-count">{cartItems.length}</span> 
@@ -176,7 +176,6 @@ function Header() {
       </div>
 
       <div className='bottom container'>
-      {/* {categories.map((category) => <li>{category}</li>)}  */}
       </div>
     </header>
   );
