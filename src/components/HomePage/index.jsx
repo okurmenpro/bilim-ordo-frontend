@@ -4,7 +4,7 @@ import Courses from "../courses"
 
 
 import Card from '../Card'
-import PopularCategories from '../popularCategories';
+import PopularCategories from '../PopularCategories';
 
 
 function HomePage() {
