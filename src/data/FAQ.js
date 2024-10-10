@@ -1,4 +1,4 @@
-export const accortionsData = [
+export const dataFAQ = [
   {
     id: 1,
     title: "Кто обучает учеников",

@@ -1,10 +1,10 @@
 import "./FAQ.scss";
 import iconArrowDrop from "../../assets/svg/arrow_drop_down.svg";
 import { useState } from "react";
-import { accortionsData } from "../../data/FAQ";
+import { dataFAQ } from "../../data/FAQ";
 
 const FAQ = () => {
-  const [dataAccordions, setDataAccordions] = useState(accortionsData);
+  const [dataAccordions, setDataAccordions] = useState(dataFAQ);
 
   const handleOpen = (id) => {
     setDataAccordions((prev) =>
