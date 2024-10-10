@@ -65,4 +65,7 @@
     margin-top: -10px;
     color: grey;
 }
-
+.courses-left img{
+    width: 400px;
+    height: 170px;
+}
