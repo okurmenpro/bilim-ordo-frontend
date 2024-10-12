@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import "./Footer.scss"
 
 import { MdLanguage } from "react-icons/md";
 import Nasdaq from "../../assets/images/nasdaq.png"
