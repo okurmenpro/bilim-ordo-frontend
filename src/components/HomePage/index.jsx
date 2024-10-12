@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Banner";
 import Courses from "../courses";
+import Pythonskills from "../Pythonskills";
 
 import Card from "../Card";
 import PopularCategories from "../popularCategories";
@@ -14,6 +15,7 @@ function HomePage() {
       <Card />
       <PopularCategories />
       <InfoSection />
+      <Pythonskills />
     </div>
   );
 }
