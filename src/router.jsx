@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
 import Course from './pages/Course';
 import HomePage from "./components/HomePage";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
 
 export const Router = createBrowserRouter([
