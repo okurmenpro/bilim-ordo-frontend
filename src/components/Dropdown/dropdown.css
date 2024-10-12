@@ -13,6 +13,7 @@
     margin-top: 80px;
     text-align: left;
 }
+
 .cate-btn {
     margin-bottom: -90px;
     font-weight: 500;
@@ -26,9 +27,11 @@
     font-size: 15px;
     cursor: pointer;
 }
+
 .cate-btn:hover {
     background: #a433efe5;
 }
+
 .submenu {
     display: block;
     position: absolute;
@@ -43,6 +46,7 @@
     z-index: 9999;
     text-align: left;
 }
+
 .subsubmenu {
     display: block;
     position: absolute;
@@ -57,6 +61,7 @@
     text-align: left;
     border: 1px solid #929292;
 }
+
 .menu-item {
     display: flex;
     justify-content: space-between;
@@ -65,9 +70,11 @@
     align-items: center;
     margin: 0;
 }
+
 .menu-item:hover {
     background-color: #f1f1f1;
 }
+
 #text {
     text-decoration: none;
     color: black;
@@ -75,14 +82,17 @@
     font-family: 'Varta', sans-serif;
     margin: 0;
 }
+
 #text:hover {
     color: rgb(89, 27, 212);
 }
+
 .categories-dropdown {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
+
 .dropdown-container {
     position: absolute;
     top: 100%;
@@ -91,16 +101,20 @@
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .menu-item.active {
     background-color: #f1f1f1;
+
     a {
         color: rgb(89, 27, 212);
     }
 }
+
 .submenu .menu-item.active {
     color: rgb(89, 27, 212);
 
 }
+
 .subsubmenu .menu-item.active {
     color: rgb(89, 27, 212);
 }

@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    margin-top: -40px;
+    margin-top: 20px;
+    padding-bottom: 14px;
     padding-left: 50px;
     padding-right: 50px;
     h2 {
@@ -87,3 +88,6 @@
     color: rgba(255, 255, 255, 0.899);
     transition: 0.3s ease;
 }
+// #dropdowns{
+//     margin-bottom: -100px !important;
+// }
