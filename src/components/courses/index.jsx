@@ -20,7 +20,7 @@ function Courses() {
     },
     {
       id: 2,
-      image: "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/3cfbe3220824.jpg", 
+      image: "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/3cfbe3220824.jpg",
       title: "Полное руководство по Python 3: от новичка до специалиста",
       price: 13.99,
       oldPrice: 74.99,
@@ -30,6 +30,7 @@ function Courses() {
       reviews: 9888,
       totalHours: "Всего 39ч 217 лекций. Начальный",
     },
+    
   ];
   return (
     <div>
