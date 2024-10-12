@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import "./Dropdown.css"
+import { Link } from 'react-router-dom';
 
 const DropdownMenu = () => {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -87,9 +88,9 @@ const DropdownMenu = () => {
               className={`menu-item ${activeMainItem === item.label ? 'active' : ''}`}
               onMouseEnter={() => handleMouseEnterMainMenu(item.subMenu, item.label)}
             >
-              <Dropdown.Item id={`text`} href={`#/action-${index}`}>
-                {item.label}
-              </Dropdown.Item>
+                <Dropdown.Item id={`text`}>
+                  {item.label}
+                </Dropdown.Item>
               <MdKeyboardArrowRight />
             </div>
           ))}
@@ -102,7 +103,7 @@ const DropdownMenu = () => {
                   className={`menu-item ${activeSubItem === subItem ? 'active' : ''}`}
                   onMouseEnter={() => handleMouseEnterSubMenu(subItem)}
                 >
-                  <Dropdown.Item id={`text`} href={`#/sub-action-${index}`}>
+                  <Dropdown.Item id={`text`}>
                     {subItem}
                   </Dropdown.Item>
                   <MdKeyboardArrowRight />
@@ -117,7 +118,7 @@ const DropdownMenu = () => {
                       className={`menu-item ${activeSubSubItem === subSubItem ? 'active' : ''}`}
                       onMouseEnter={() => handleMouseEnterSubSubMenu(subSubItem)}
                     >
-                      <Dropdown.Item id={`text`} href={`#/sub-sub-action-${index}`}>
+                      <Dropdown.Item id={`text`}>
                         {subSubItem}
                       </Dropdown.Item>
                     </div>
