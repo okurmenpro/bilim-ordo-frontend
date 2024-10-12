@@ -13,12 +13,13 @@ li {
     gap: 20px;
     align-items: center;
   
-    h3 {
+    .cate-btn {
+      margin-top: 110px;
       font-size: 20px;
       font-weight: 400;
       cursor: pointer;
     }
-    h3:hover {
+    .cate-btn:hover {
       color: rgb(51, 51, 201);
     }
   
@@ -262,7 +263,7 @@ li {
     // ------
   
     .main-menu {
-      display: block;
+     
       position: absolute;
       top: 100%;
       left: 0;
@@ -274,48 +275,7 @@ li {
       padding: 0;
       z-index: 9999;
       margin-top: 30px;
-      text-align: left;
     }
-  
-    .submenu {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 300px;
-      background-color: #fff;
-      width: 300px;
-      min-height: 300px;
-      border: 1px solid #929292;
-      margin: 0;
-      padding: 0;
-      z-index: 9999;
-      text-align: left;
-    }
-  
-    .subsubmenu {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 300px;
-      background-color: #fff;
-      width: 300px;
-      min-height: 300px;
-      margin: 0;
-      padding: 0;
-      z-index: 9999;
-      text-align: left;
-      border: 1px solid #929292;
-    }
-  
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 12px;
-      cursor: pointer;
-      align-items: center;
-      margin: 0;
-    }
-  
     .menu-item:hover {
       background-color: #f1f1f1;
     }
@@ -367,17 +327,16 @@ li {
     
   
     .cart-icon {
-      position: relative;
+      // position: relative;
       width: 60px;
       height: 60px;
       margin-top: 30px;
-
-      
+      display: block;
     }
     .cart-count {
       width: 30px;
       height: 30px;
-      position: absolute;
+      // position: absolute;
       top: -10px;
       right: -10px;
       background-color: red;
@@ -385,9 +344,8 @@ li {
       padding: 5px 10px;
       border-radius: 50%;
       font-size: 14px;
-    }
-    
-    
-    
+      display: block;
+
+    } 
   }
 }
