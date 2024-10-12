@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Banner from '../Banner'
 import Courses from "../courses"
@@ -5,6 +6,14 @@ import Companystatistics from "../Companystatistics"
 
 import Card from '../Card'
 import PopularCategories from '../popularCategories';
+
+import React from "react";
+import Banner from "../Banner";
+import Courses from "../courses";
+import Card from "../Card";
+import PopularCategories from '../popularCategories'
+import InfoSection from "../InfoSection";
+import TeachSection from "../TeachSection";
 
 
 function HomePage() {
@@ -14,9 +23,11 @@ function HomePage() {
       <Companystatistics />
       <Courses />
       <Card />
-      <PopularCategories/>
+      <PopularCategories />
+      <TeachSection />
+      <InfoSection />
     </div>
-  )
+  );
 }
 
 export default HomePage;
