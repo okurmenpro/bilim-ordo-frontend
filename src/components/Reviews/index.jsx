@@ -1,0 +1,35 @@
+import React, { useState } from 'react'
+import "./Reviews.scss"
+import { DataReviews } from "../../data/Reviews.js";
+import stars from "../../assets/svg/stars.png"
+import hands from "../../assets/svg/hands.svg"
+
+const Reviews = () => {
+    const [ReviewsData, setReviewsData] = useState(DataReviews)
+
+    return (
+        <div className='container reviews'>
+            <h2>Отзывы</h2>
+            <div className="reviews-carts">
+                {DataReviews.map(el => (
+                    <div className="cart">
+                        <div className="first">
+                            <img className='avatar' src={el.img} alt="" />
+                            <div className="f-right">
+                                <h4>{el.name}</h4>
+                                <img src={stars} alt="" />
+                            </div>
+                        </div>
+                        <p>{el.text}</p>
+                        <div className="end">
+                            <img src={hands} alt="" />
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <button>Посмотреть все отзывы</button>
+        </div>
+    )
+}
+
+export default Reviews
