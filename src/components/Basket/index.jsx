@@ -14,6 +14,7 @@ function AddCart() {
       navigate('/basket');
     } 
   }, [cartItems, navigate]);
+  
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {

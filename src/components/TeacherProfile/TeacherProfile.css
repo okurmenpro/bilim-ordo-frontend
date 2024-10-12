@@ -75,11 +75,12 @@
     margin-right: 500px;
     color: #5022c3;
 }
-.togglebutton{
+.toggleButton{
     width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: none;
 }
 .arrow{
     margin-right: 395px;
