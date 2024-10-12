@@ -5,6 +5,8 @@ import { CartProvider } from "./components/CartContext";
 
 
 export default function App() {
+
+
   return (
     <CartProvider> 
       <div className="App">

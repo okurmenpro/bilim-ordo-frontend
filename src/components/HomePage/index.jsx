@@ -2,14 +2,13 @@ import React from 'react'
 import Banner from '../Banner'
 import Courses from "../courses"
 import ContainerCart from '../CardContainer'
-
 import React from "react";
 import Banner from "../Banner";
 import Courses from "../courses";
-
 import Card from "../Card";
-import PopularCategories from "../popularCategories";
+import PopularCategories from '../popularCategories'
 import InfoSection from "../InfoSection";
+import TeachSection from "../TeachSection";
 
 function HomePage() {
   return (
@@ -19,6 +18,7 @@ function HomePage() {
       <ContainerCart/>
       <Card />
       <PopularCategories />
+      <TeachSection />
       <InfoSection />
     </div>
   );
