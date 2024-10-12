@@ -1,5 +1,5 @@
 import FAQ from "../FAQ/index";
-import Request from "../Request/Request";
+import Request from "../Request";
 
 const InfoSection = () => {
   return (
