@@ -1,12 +1,9 @@
 import React from 'react'
 import Banner from '../Banner'
 import Courses from "../courses"
-import ContainerCart from '../CardContainer'
-import React from "react";
-import Banner from "../Banner";
-import Courses from "../courses";
+import CartContainer from '../CardContainer'
 import Card from "../Card";
-import PopularCategories from '../popularCategories'
+import PopularCategories from "../PopularCategories";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
 

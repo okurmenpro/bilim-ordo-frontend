@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './PopularCategories.css'
-
-
-
 import { popular_categories } from '../../data/popular_categories'
 
 const PopularCategories = () => {
@@ -30,7 +27,7 @@ const PopularCategories = () => {
 
 
             </div>
-            <div className="dropdown">
+            <div className="dropdowns-pop-categories">
                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleClick}>
                     Посмотреть еще
 
