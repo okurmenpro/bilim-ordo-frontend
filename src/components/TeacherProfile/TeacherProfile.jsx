@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './TeacherProfile.css';
 import { GoStarFill } from "react-icons/go";
+import { IoPeopleSharp } from "react-icons/io5";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
+import { VscPreview } from "react-icons/vsc";
+import { IoIosArrowDown } from "react-icons/io";
 
 function TeacherProfile() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -20,15 +24,18 @@ function TeacherProfile() {
           <div className='statistics'>
             <div className='aboutStatistic'>
               <GoStarFill />
-              <strong>4,6 рейтинг</strong>
+              <strong id='strong'>4,6 рейтинг</strong>
             </div>
             <div className='aboutStatistic'>
+              <VscPreview/>
               <strong>34 455 отзывов</strong>
             </div>
             <div className='aboutStatistic'>
+              <IoPeopleSharp/>
               <strong>297 155 студентов</strong>
             </div>
             <div className='aboutStatistic'>
+              <MdOutlineSlowMotionVideo/>
               <strong>25 курса</strong>
             </div>
           </div>
@@ -47,10 +54,12 @@ function TeacherProfile() {
             <p>See you on my courses!</p>
           </>
         )}
-
+        <div className='toggleButton'>
         <button className="toggle-button" onClick={toggleText}>
           {isExpanded ? 'Свернуть' : 'Развернуть'}
         </button>
+        <IoIosArrowDown className='arrow'/>
+        </div>
       </section>
     </>
   );
