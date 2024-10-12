@@ -3,12 +3,9 @@ import Basket from "./pages/Basket";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
-
-import HomePage from "./components/HomePage"; 
 import Course from './pages/Course';
-
 import HomePage from "./components/HomePage";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/Sidebar";
 
 
 export const Router = createBrowserRouter([
@@ -36,8 +33,8 @@ export const Router = createBrowserRouter([
 
          path: "/course",
          element: < Course />
-      }
-
+      },
+      {
         path: "/sidebar",
         element: <Sidebar />
       },
