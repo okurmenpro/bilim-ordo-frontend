@@ -1,18 +1,20 @@
+
 import React, { useContext, useEffect } from 'react';
-import './AddCart.css';
-import { CartContext } from "../CartContext"
+import './Basket.scss';
+import { CartContext } from '../CartContext';
 import { useNavigate } from 'react-router-dom';
 
 function AddCart() {
-  const { cartItems } = useContext(CartContext); 
-  const navigate = useNavigate();  
+  const { cartItems, removeFromCart } = useContext(CartContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (cartItems.length === 0) {
-      navigate('/basket');  
-    }
-  }, [cartItems, navigate]);
 
+    if (cartItems.length === 0) {
+      navigate('/basket');
+    } 
+  }, [cartItems, navigate]);
+  
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
@@ -20,6 +22,22 @@ function AddCart() {
       return total + price;
     }, 0).toFixed(2); 
   };
+
+
+  if (cartItems.length === 0) {
+    return (
+      <div className='v1'>
+        <h1 className='cart1'>Корзина</h1>
+        <h5 className='cart2'>0 курсов в корзине</h5>
+        <div className='v2'>
+          <img src="https://business.udemy.com/wp-content/uploads/2022/01/Empty_Cart_Spot@2x.png" alt="Пустая корзина" />
+          <p className='cart3'>Корзина пуста. Продолжите поиск, чтобы найти нужный курс.</p>
+          <a href="/"><button className='cart4'>Продолжить поиск</button></a> 
+        </div>
+      </div>
+    );
+  }
+
 
   return (
     <section className='addCart'>
@@ -36,14 +54,19 @@ function AddCart() {
                 <h2>{item.price}</h2>
               </div>
             </div>
+            <button 
+              onClick={() => removeFromCart(item.name)} 
+              className="remove-button"
+            >
+              Удалить
+            </button>
           </div>
         ))}
       </div>
 
-
       <div className='cartOrder'>
         <h2>Общая сумма:</h2>
-        <h1>${calculateTotalPrice()}</h1> 
+        <h1>${calculateTotalPrice()}</h1>
         <button>Оформить заказ</button>
       </div>
     </section>
