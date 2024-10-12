@@ -15,7 +15,7 @@
     height: 145px;
     width: 258px;
 }
-.cart h1{
+.cart h2{
     font-size: 18px;
     margin-top: 10px;
     text-align: left;
@@ -40,7 +40,6 @@
 }
 .cart-top{
     display: flex;
-    /* align-items: center; */
     margin-top: -20px;
     gap: 7px;
 }

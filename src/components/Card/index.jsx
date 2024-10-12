@@ -41,7 +41,7 @@ function Card() {
           return (
             <div key={index} className="cart">
               <img src={item.img} alt={item.name} />
-              <h1>{item.name}</h1>
+              <h2>{item.name}</h2>
               <h4>Юрий Аллахвердов</h4>
               <div className="cart-flex">
                 <h2>4,3</h2>
