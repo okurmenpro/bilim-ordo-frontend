@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar/Sidebar";
+import TeacherProfile from "./components/TeacherProfile/TeacherProfile";
 
 export const Router = createBrowserRouter([
   {
@@ -31,7 +32,10 @@ export const Router = createBrowserRouter([
         path: "/sidebar",
         element: <Sidebar />
       },
-    
+      {
+        path: "/teacherprofile",
+        element: <TeacherProfile />
+      },
     ]
   }
 ]);
