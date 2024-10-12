@@ -12,7 +12,7 @@ function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc })
             </div>
 
             <div className='list5'>
-                <div className='price'>
+                <div className='price1'>
                     <div className="price-value">{price}$</div>
                     <div className='original-price'>{originalPrice}$</div>
                     <div className='discount-div'>Скидка {discount}%</div>
@@ -33,7 +33,7 @@ function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc })
                         <span>Дополнительная <br /> скидка 15%  <a href="">курсы </a> </span>
                         <div className='bonus'>15BONUS24DAY10NLY</div>
                     </div>
-                    <button className='apply'>Применить</button>
+                    <button className='apply-btn'>Применить</button>
 
                 </div>
 
