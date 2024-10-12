@@ -37,6 +37,7 @@
 
 .banner__rating {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -80,4 +81,8 @@
     font-weight: 400;
     font-size: 25px;
     color: #fff;
+}
+.text{
+    display: flex;
+    align-items: center;
 }

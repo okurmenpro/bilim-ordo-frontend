@@ -9,9 +9,7 @@ function Banner() {
         <div className='course__banner'>
             <div className='img__text'>
                 <p>Разработка</p>
-                <img src="" alt="" />
                 <p>Языки программирования</p>
-                <img src="" alt="" />
                 <p>Python</p>
             </div>
             <h1>Полное руководство по Python 3: от новичка до специалиста</h1>
@@ -30,7 +28,7 @@ function Banner() {
             <h4>Авторы: Илья Фофанов,DevSchool.Progressive Training Solutions</h4>
             <div className='course__update'>
                 <button><BsExclamationOctagon /></button>
-                <div>
+                <div className='text'>
                 <p>Последнее обновление:</p>
                 <h5> 04.2023</h5>
                 </div>
