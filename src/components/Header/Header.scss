@@ -3,10 +3,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    margin-top: 20px;
-    padding-bottom: 14px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 14px 50px 14px 50px;
     h2 {
         font-weight: 700;
         font-size: 20px;
@@ -15,16 +12,20 @@
             color: purple;
             padding-top: 14px;
             padding-bottom: 14px;
+            text-decoration: none;
         }
     }
 }
+
 .aback {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
+
 .buttons {
     display: flex;
     gap: 14px;
+
     button {
         color: #2D2F31;
         font-size: 16px;
@@ -32,11 +33,13 @@
         border: none;
     }
 }
+
 #active-btn {
     position: relative;
     display: flex;
     gap: 10px;
 }
+
 #active-btn::after {
     content: '';
     position: absolute;
@@ -48,46 +51,56 @@
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
+
 #active-btn:hover::after {
     transform: scaleX(1);
 }
+
 #search {
     input {
         height: 48px;
         margin-left: -30px;
     }
 }
+
 .btn-outline-secondary {
     padding: 15px 15px 15px 15px !important;
     margin-top: 10px;
 }
+
 .icons {
     display: flex;
     gap: 14px;
+
     img {
         width: 40px;
         height: 40px;
     }
 }
+
 .sign-up {
     background: #2D2F31;
     color: #FFFFFF !important;
     border-radius: 4px;
     padding: 0 15px 0 15px;
 }
+
 .sign-up:hover {
     background: gray;
 }
+
 .login {
     padding: 13px 12px;
     background: #F2F2F2;
     border-radius: 4px;
 }
+
 .login:hover {
     background: #2d2f319a;
     color: rgba(255, 255, 255, 0.899);
     transition: 0.3s ease;
 }
+
 // #dropdowns{
 //     margin-bottom: -100px !important;
 // }
