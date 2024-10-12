@@ -3,15 +3,18 @@ import "./Header.scss";
 import cart from '../../assets/svg/cart.svg'
 import earth from '../../assets/svg/earth.svg'
 import { GrSearch } from "react-icons/gr";
+import Dropdown from '../Dropdown/Index'
+import {NavLink } from 'react-router-dom';
+
 function Header() {
   const providers = ['Udemy Business', 'Преподавайте на Udemy']
   return (
     <div className="aback">
-
-      <header className="head container">
+      <header className="head ">
         <div>
           <h2><span>B</span>ILIM-ORDO</h2>
         </div>
+        <Dropdown id="dropdowns" />
         <div className="buttons">
           {providers.map((provider) =>
             <button id="active-btn">{provider}</button>)}
@@ -31,7 +34,9 @@ function Header() {
           <button className="sign-up">Зарегистрироваться</button>
         </div>
         <div className="icons">
-          <img src={cart} alt="" />
+          <NavLink to='/basket'>
+            <img src={cart} alt="" />
+          </NavLink>
           <img src={earth} alt="" />
         </div>
       </header>
@@ -39,3 +44,14 @@ function Header() {
   );
 }
 export default Header;
+
+
+
+
+
+
+
+
+
+
+
