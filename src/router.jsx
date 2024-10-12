@@ -3,9 +3,8 @@ import Basket from "./pages/Basket";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
+import Course from './pages/Course';
 import HomePage from "./components/HomePage";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Course from "./pages/Course";
 
 export const Router = createBrowserRouter([
   {
@@ -29,14 +28,11 @@ export const Router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/sidebar",
-        element: <Sidebar />
-      },
-      {
+
          path: "/course",
-         element: <Course />
-      }
-    
+         element: < Course />
+      },
+     
     ]
   }
 ]);
