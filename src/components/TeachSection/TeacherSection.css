@@ -1,0 +1,81 @@
+.teachSection {
+  display: flex;
+  width: 1270px;
+  height: 412px;
+  margin: 80px;
+  margin-left: 0px;
+}
+
+.teacher {
+  text-align: left;
+  width: 560px;
+  height: 311px;
+  margin-left: 40px;
+}
+
+.teachSectionTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2d2f31;
+}
+.teachSectionImg {
+  display: flex;
+
+  width: 670px;
+  height: 412px;
+}
+.section1 {
+  width: 325px;
+  height: 412px;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.section2 {
+  width: 325px;
+  height: 412px;
+  flex-direction: column;
+}
+.teacherImg {
+  width: 325px;
+  height: 230px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.teacherImg1 {
+  width: 325px;
+  height: 162px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.teacherImg2 {
+  width: 325px;
+  height: 162px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.teacherImg3 {
+  width: 325px;
+  height: 230px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.teachSectionBtn {
+  width: 306px;
+  height: 52px;
+  border-radius: 4px;
+  background: #2d2f31;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+.teachSectionContent {
+  font-size: 22.5px;
+  font-weight: 400;
+  color: #2d2f31;
+}
