@@ -1,5 +1,5 @@
 import React from 'react'
-import Basket3 from '../components/Basket/Basket3'
+import Basket3 from '../components/Basket/index'
 
 function Basket() {
   return (
