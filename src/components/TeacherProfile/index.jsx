@@ -55,9 +55,9 @@ function TeacherProfile() {
           </>
         )}
         <div className='toggleButton'>
-        <button className="toggle-button" onClick={toggleText}>
+        <strong className="toggle-button" onClick={toggleText}>
           {isExpanded ? 'Свернуть' : 'Развернуть'}
-        </button>
+        </strong>
         <IoIosArrowDown className='arrow'/>
         </div>
       </section>
