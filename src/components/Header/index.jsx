@@ -14,9 +14,7 @@ function Header() {
       <header className="head ">
         <div>
           <NavLink to='/'>
-
           <h2><span>B</span>ILIM-ORDO</h2>
-
           </NavLink>
         </div>
         <Dropdown id="dropdowns" />
@@ -40,8 +38,10 @@ function Header() {
         </div>
         <div className="icons">
           <NavLink to='/basket'>
-            <img src={cart} alt="" />
-            <span className="cart-count">{cartItems.length > 0 ? cartItems.length : ''}</span>
+          <img src={cart} alt="Cart" />
+            {cartItems.length > 0 && (
+              <span className="cart-count">{cartItems.length}</span>
+            )}
           </NavLink>
           <img src={earth} alt="" />
         </div>
