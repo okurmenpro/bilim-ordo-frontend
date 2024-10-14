@@ -1,25 +1,20 @@
 .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 14px 50px 14px 50px;
-  background-color: #fefefe;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-  h2 {
-    font-weight: 700;
-    font-size: 20px;
-    padding-top: 11px;
-    span {
-      color: purple;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 14px 50px 14px 50px;
+    h2 {
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 11px;
+        span {
+            color: purple;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            text-decoration: none;
+        }
     }
-  }
 }
 
 .aback {
@@ -71,8 +66,8 @@
 }
 
 .btn-outline-secondary {
-  padding: 15px 15px 15px 15px !important;
-  margin-top: 10px;
+    padding: 15px 15px 15px 15px !important;
+    margin-top: 10px;
 }
 
 .icons {
