@@ -22,13 +22,10 @@ const FAQ = () => {
       <div className="accordions-container">
         {dataAccordions.map((el) => (
           <>
-            <div className="accordion-content">
+            <div className={"accordion-content"}>
               <div
                 key={el.id}
-                className={
-                  el.isOpen ? `accordion accordion-open` : "accordion"
-                }
-                
+                className={el.isOpen ? `accordion accordion-open` : "accordion"}
                 onClick={() => {
                   handleOpen(el.id);
                 }}
@@ -48,9 +45,9 @@ const FAQ = () => {
                 <div className="child-content">
                   <ul>
                     <li>
-                        <p>
-                          {el.title} {el.id}
-                        </p>
+                      <p>
+                        {el.title} {el.id}
+                      </p>
                     </li>
                   </ul>
                 </div>

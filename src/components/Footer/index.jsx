@@ -116,12 +116,12 @@ const Footer = () => {
                 <div className='info-right'>
                     <button className='btn'>
                     {<MdLanguage    />}
-                    <h3>Русский</h3>
+                    <div>Русский</div>
                     </button>
                 </div>
             </div>
             <div className='info-bottom'>
-                <strong><span>B</span>ILIM-ORDO</strong>
+                <strong><span className='first-letter'>B</span>ILIM-ORDO</strong>
                 <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
         </div>      

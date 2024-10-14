@@ -1,88 +1,90 @@
-.courses{
+.courses {
     width: 690px;
     height: 175px;
     display: flex;
     gap: 10px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
-
-/* @media(max-width:375px) {
-    .courses{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 200px;
-    }
-    .courses-left{
-        width: 320px;
-        margin-bottom:100px ;
-    }
-    .courses-3text{
-        padding-top: 20px;
-        padding-bottom: 300px;
-    }
-} */
-
-.courses-h1{
-
+.courses-h1 {
     display: flex;
-    gap: 40px;
-
+    gap: 27px;
 }
-.courses-h1 h1{
-    font-size: 10px;
+
+.courses-h1 h2 {
+    font-size: 13px;
     font-weight: 500;
     color: black;
+    text-align: left;
 }
-.courses-h1 h3{
+
+.courses-h1 p {
     font-size: 10px;
 
 }
-.courses-p{
+
+.courses-p {
     display: flex;
     gap: 30px;
 }
-.courses-p p{
+
+.courses-p p {
     font-size: 10px;
-    text-align: left;   
-    
+    text-align: left;
+    margin-top: -6px;
+
 }
-.courses-p h3{
+
+.courses-p h3 {
     font-size: 10px;
     padding-right: 13px;
     text-decoration: line-through;
 
 }
-.courses-3text h4{
+
+.courses-3text p {
     font-size: 10px;
     text-align: left;
     color: grey;
+    margin-bottom: -8px;
 }
-.courses-3text{
+
+.courses-3text {
     margin-top: -10px;
 }
 
-.courses-flex{
+.courses-flex {
     display: flex;
-    
+    align-items: center;
     gap: 5px;
 }
-.courses-flex h3{
+
+.courses-flex h3 {
     font-size: 12px;
+    margin-top: 10px;
 }
-.courses-flex p{
+
+.courses-flex p {
     font-size: 10px;
 }
-.star-5{
+
+.star-5 {
     font-size: 14px;
+    margin-top: 2px;
 }
-.courses-3text h5{
+
+.courses-3text p {
     font-size: 10px;
     text-align: left;
-    margin-top: -10px;
+    margin-top: 0px;
     color: grey;
 }
-.courses-left img{
+
+.courses-left img {
     width: 400px;
     height: 170px;
+}
+
+.courses-right {
+    border-bottom: 1px solid gray;
 }

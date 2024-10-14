@@ -15,7 +15,7 @@ function Slider() {
           </Carousel.Caption>
         </Carousel.Item>
       ))}
-    </Carousel>
+    </Carousel> 
   );
 }
 
