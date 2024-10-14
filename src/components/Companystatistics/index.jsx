@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Companystatistics.css";
-import { statisticsData } from '../../data/Statisticscompany';
-
+import { statisticsData } from '../../data/statisticscompany.js';
 
 
 function Companystatistics() {
