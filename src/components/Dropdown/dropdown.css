@@ -1,24 +1,41 @@
 .main-menu {
-    display: block; 
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #fff;
-    width: 300px; 
+    width: 300px;
     min-height: 300px;
     border: 1px solid #929292;
     margin: 0;
     padding: 0;
     z-index: 9999;
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: left;
 }
 
+.cate-btn {
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    background: #A435F0;
+    text-align: center;
+    color: #EFEFFF;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cate-btn:hover {
+    background: #a433efe5;
+}
+
 .submenu {
-    display: block; 
+    display: block;
     position: absolute;
     top: -1px;
-    left: 299px; 
+    left: 299px;
     background-color: #fff;
     width: 300px;
     min-height: 300px;
@@ -30,10 +47,10 @@
 }
 
 .subsubmenu {
-    display: block; 
+    display: block;
     position: absolute;
     top: -1px;
-    left: 299px; 
+    left: 299px;
     background-color: #fff;
     width: 300px;
     min-height: 300px;
@@ -45,8 +62,8 @@
 }
 
 .menu-item {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     padding: 8px 12px;
     cursor: pointer;
     align-items: center;
@@ -54,49 +71,49 @@
 }
 
 .menu-item:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 #text {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: 'Varta', sans-serif;
-    margin: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Varta", sans-serif;
+  margin: 0;
 }
 
 #text:hover {
-    color: rgb(89, 27, 212);
+  color: rgb(89, 27, 212);
 }
 
 .categories-dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .dropdown-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 9999;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item.active {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 
     a {
-      color: rgb(89, 27, 212); 
+        color: rgb(89, 27, 212);
     }
-  }
+}
 
-  .submenu .menu-item.active {
-    color:rgb(89, 27, 212) ;
+.submenu .menu-item.active {
+    color: rgb(89, 27, 212);
 
-  }
+}
 
-  .subsubmenu .menu-item.active {
-    color:rgb(89, 27, 212) ;
-  }
+.subsubmenu .menu-item.active {
+    color: rgb(89, 27, 212);
+}
