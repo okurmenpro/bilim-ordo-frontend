@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Banner.css"
+import "./Banner"
 import { GrLanguage } from "react-icons/gr";
 import { FaRegStar } from "react-icons/fa";
 import { BsExclamationOctagon } from "react-icons/bs";
