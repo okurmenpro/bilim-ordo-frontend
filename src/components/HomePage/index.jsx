@@ -4,7 +4,7 @@ import Banner from "../Banner";
 import Courses from "../courses";
 
 import Card from "../Card";
-import PopularCategories from "../PopularCategories";
+import PopularCategories from "../popularCategories/index";
 import InfoSection from "../InfoSection";
 
 function HomePage() {
