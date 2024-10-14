@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import "./Reviews.scss"
 import { DataReviews } from "../../data/Reviews.js";
-import stars from "../../assets/svg/stars.png"
-import hands from "../../assets/svg/hands.svg"
+import { FaStar } from "react-icons/fa";
+import { BiLike, BiDislike } from "react-icons/bi";
 
 const Reviews = () => {
     const [ReviewsData, setReviewsData] = useState(DataReviews)
@@ -17,12 +17,19 @@ const Reviews = () => {
                             <img className='avatar' src={el.img} alt="" />
                             <div className="f-right">
                                 <h4>{el.name}</h4>
-                                <img src={stars} alt="" />
+                                <div className="stars">
+                                    <FaStar className='star' />
+                                    <FaStar className='star' />
+                                    <FaStar className='star' />
+                                    <FaStar className='star' />
+                                    <FaStar className='star' />
+                                </div>
                             </div>
                         </div>
                         <p>{el.text}</p>
                         <div className="end">
-                            <img src={hands} alt="" />
+                            <BiLike className='hand' />
+                            <BiDislike className='hand' />
                         </div>
                     </div>
                 ))}

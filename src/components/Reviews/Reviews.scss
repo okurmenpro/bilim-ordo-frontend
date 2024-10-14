@@ -46,10 +46,16 @@
                         margin-left: 3px;
                     }
 
-                    img {
-                        width: 120px;
-                        height: 24px;
+                    .stars {
+                        display: flex;
+                        gap: 3px;
 
+                        .star {
+                            color: yellow;
+                            width: 19.99px;
+                            height: 19.2px;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -57,10 +63,12 @@
             .end {
                 display: flex;
                 justify-content: end;
+                gap: 16px;
 
-                img {
-                    width: 64px;
+                .hand {
+                    width: 24px;
                     height: 24px;
+                    cursor: pointer;
                 }
             }
         }
