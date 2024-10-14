@@ -12,8 +12,9 @@ function HomePage() {
     <div>
       <Banner />
       <Courses />
-      <ContainerCart/>
+      <ContainerCart>
       <Card />
+      </ContainerCart>
       <PopularCategories/>
     </div>
   )
