@@ -23,7 +23,7 @@
     margin-left: 5px;
 }
 
-.price {
+.price1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +66,8 @@
 
 .watch-text {
     font-size: 16px;
-    padding-right: 105px;
+    font-weight: 500;
+    padding-right: 100px;
     color: rgba(255, 0, 0, 0.695);
 }
 
@@ -86,6 +87,7 @@
     background: rgb(163, 93, 232);
     margin-bottom: 15px;
     margin-right: 10px;
+    border: none;
 }
 
 .add-btn:hover {
@@ -124,7 +126,7 @@ p {
 }
 
 .discount_price span {
-    font-size: 20px;
+    font-size: 22px;
     text-align: start;
     text-decoration: none;
 }
@@ -142,13 +144,14 @@ p {
     font-family: Arial;
 }
 
-.apply {
+.apply-btn {
     font-size: 20px;
     font-weight: 700;
     color: rgb(39, 15, 145);
     text-decoration: underline;
     cursor: pointer;
     padding-right: 15px;
+    border: none;
 }
 
 .discont__course {
@@ -204,6 +207,7 @@ p {
     text-decoration: underline;
     line-height: 40px;
     margin-bottom: 10px;
+    border: none;
 }
 
 a.share_it-title {
@@ -255,6 +259,7 @@ span {
     font-size: 30px;
     cursor: pointer;
     color: rgb(43, 61, 176);
+    border: none;
 }
 
 .enter_coupon {
@@ -315,7 +320,7 @@ span {
     width: 380px;
     height: 50px;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: -2px;
     color: #000;
