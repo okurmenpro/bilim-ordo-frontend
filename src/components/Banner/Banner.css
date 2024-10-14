@@ -6,3 +6,9 @@
     width: 1340px;
     object-fit: cover;
 }
+/* @media(max-width:375px) {
+    .banner-in img{
+        width: 375px;
+        object-fit: cover;
+    }
+} */

@@ -6,6 +6,23 @@
     margin: 0 auto;
 }
 
+
+/* @media(max-width:375px) {
+    .courses{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+    .courses-left{
+        width: 320px;
+        margin-bottom:100px ;
+    }
+    .courses-3text{
+        padding-top: 20px;
+        padding-bottom: 300px;
+    }
+} */
+
 .courses-h1{
 
     display: flex;
