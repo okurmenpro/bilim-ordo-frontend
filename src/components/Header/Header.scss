@@ -4,10 +4,12 @@
     justify-content: space-between;
     gap: 50px;
     padding: 14px 50px 14px 50px;
+
     h2 {
         font-weight: 700;
         font-size: 20px;
         padding-top: 11px;
+
         span {
             color: purple;
             padding-top: 14px;
@@ -100,7 +102,3 @@
     color: rgba(255, 255, 255, 0.899);
     transition: 0.3s ease;
 }
-
-// #dropdowns{
-//     margin-bottom: -100px !important;
-// }
