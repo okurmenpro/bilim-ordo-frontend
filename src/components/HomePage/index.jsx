@@ -9,7 +9,7 @@ import Companystatistics from "../Companystatistics"
 
 
 import Card from "../Card";
-import PopularCategories from "../PopularCategories";
+import PopularCategories from '../popularCategories';
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
 
