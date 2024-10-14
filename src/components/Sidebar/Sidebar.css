@@ -1,6 +1,6 @@
 .Sidebar {
     width: 450px;
-    height: 1780px;
+    height: 1680px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
 
 }
@@ -20,31 +20,33 @@
 
 .list5 {
     padding: 0 30px;
+    margin-left: 5px;
 }
 
-.price {
+.price1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.price h1 {
+.price-value {
     font-size: 48px;
-
+    font-weight: 500;
 }
 
-.price h2 {
-    font-size: 18px;
+.original-price {
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.508);
     text-decoration: line-through;
-
+    font-weight: 550;
 }
 
-.price h3 {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.508);
-    padding-right: 70px;
+.discount-div {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.684);
+    padding-right: 50px;
+    font-weight: 550;
 }
 
 .day {
@@ -52,23 +54,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 
 }
 
 .watch {
     font-size: 16px;
-    margin-top: -20px;
     color: rgba(255, 0, 0, 0.695);
-    margin-left: 4px;
+    
 }
 
-.day h1 {
+.watch-text {
     font-size: 16px;
-    padding-right: 95px;
+    font-weight: 500;
+    padding-right: 100px;
     color: rgba(255, 0, 0, 0.695);
 }
 
-.day a {
+.watch-text a {
     color: rgb(186, 58, 58);
     font-family: Arial;
     font-weight: 700;
@@ -83,6 +86,8 @@
     font-weight: 500;
     background: rgb(163, 93, 232);
     margin-bottom: 15px;
+    margin-right: 10px;
+    border: none;
 }
 
 .add-btn:hover {
@@ -95,6 +100,8 @@
     font-size: 22px;
     font-weight: 500;
     background: #fff;
+    border: 1px solid black;
+    margin-right: 10px;
 }
 
 .buy_now-btn:hover {
@@ -118,29 +125,33 @@ p {
 
 }
 
-.discount_price h1 {
-    font-size: 20px;
+.discount_price span {
+    font-size: 22px;
     text-align: start;
+    text-decoration: none;
 }
 
-.discount_price h1 a {
+.discount_price span a {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
+    font-family: Arial;
 }
 
 .bonus {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.541);
     text-align: start;
+    font-family: Arial;
 }
 
-.apply {
+.apply-btn {
     font-size: 20px;
     font-weight: 700;
     color: rgb(39, 15, 145);
     text-decoration: underline;
     cursor: pointer;
     padding-right: 15px;
+    border: none;
 }
 
 .discont__course {
@@ -150,16 +161,22 @@ p {
     margin-top: 50px;
 }
 
-.discont__course h1 {
+.discont__course h3 {
     font-size: 22px;
     text-align: start;
     font-weight: 650;
     padding-left: 2px;
 }
 
+.discont__map1 {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
 .discont__map {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: start;
 }
 
@@ -169,33 +186,48 @@ p {
     object-fit: cover;
 }
 
-.discont__map h3 {
+.discont__map h5 {
     font-size: 18px;
     height: 30px;
     text-align: start;
 }
 
-.discont__map1 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
 .share_it {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.share__it-title {
+.share_it button {
     font-size: 20px;
     cursor: pointer;
     font-weight: 500;
     color: rgb(15, 15, 160);
     text-decoration: underline;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border: none;
 }
+
+a.share_it-title {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(15, 15, 160);
+    line-height: 40px;
+    text-decoration: underline;
+}
+
+span {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(15, 15, 160);
+    line-height: 40px;
+    text-decoration: underline;
+}
+
 
 .used_coupon {
     width: 380px;
@@ -205,9 +237,10 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+    margin-top: 10px;
 }
 
-.used_coupon h3 {
+.used_coupon p {
     font-size: 16px;
     font-weight: 400;
     text-align: start;
@@ -215,8 +248,8 @@ p {
     cursor: pointer none;
 }
 
-.used_coupon h3 a {
-    font-size: 20px;
+.used_coupon p a {
+    font-size: 18px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.523);
     text-decoration: none;
@@ -226,9 +259,10 @@ p {
     font-size: 30px;
     cursor: pointer;
     color: rgb(43, 61, 176);
+    border: none;
 }
 
-.enter_coupon{
+.enter_coupon {
     width: 380px;
     display: flex;
     justify-content: space-between;
@@ -263,16 +297,16 @@ p {
     width: 450px;
     height: 1px;
     background-color: #00000027;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-left: -30px;
     margin-bottom: 35px;
 }
 
-.training h2 {
-    font-size: 27px;
-    text-align: start;
+.training h4 {
+    font-size: 22px;
     font-weight: 650;
     margin-left: 2px;
+    text-align: start;
 }
 
 .training p {
@@ -286,7 +320,7 @@ p {
     width: 380px;
     height: 50px;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: -2px;
     color: #000;

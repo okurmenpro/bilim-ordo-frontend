@@ -1,393 +1,113 @@
-
-ul,
-li {
-    list-style: none;
-}
-
-  
-.header {
-    min-width: 1390px;
-    height: 100px;
-    display: flex;
-    margin: 0 auto;
-    gap: 20px;
-    align-items: center;
-  
-    h3 {
-      font-size: 20px;
-      font-weight: 400;
-      cursor: pointer;
-    }
-    h3:hover {
-      color: rgb(51, 51, 201);
-    }
-  
-    img {
-      width: 180px;
-      height: 100px;
-    }
-  
-    input {
-      width: 400px;
-      height: 50px;
-      border-radius: 30px;
-      border: 0.1 solid black;
-    }
-    .icons {
-      display: flex;
-      gap: 15px;
-  
-      img {
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-      }
-      .not {
-        width: 43px;
-        height: 33px;
-        margin-top: 4px;
-      }
-    }
-    .cate-btn {
-      font-size: 20px;
-      font-weight: 400;
-      cursor: pointer;
-      padding: 13px 24px 13px 24px;
-      border-radius: 4px;
-      background: #A435F0;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 25.2px;
-      text-align: center;
-      color: #EFEFFF;
-      border: none;
-  }
-
-  .cate-btn:hover {
-      background: #c163ff;
-
-  }
-  }
-  
-    .providers {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      a {
-        font-size: 17px;
-        font-weight: 400;
-        white-space: nowrap;
-        text-decoration: none;
-        cursor: pointer;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
-        color: #2d2f31;
-      }
-      .providers,
-      a:hover {
-    flex-direction: row;
-    margin: auto;
-    gap: 14px;
-    align-items: center;
-    margin-bottom: 61px;
-
-    img {
-        width: 120px;
-        height: 65px;
-    }
-
-
-    input {
-        width: 236px;
-        height: 52px;
-        border-radius: 4px;
-        background: #F2F2F2;
-        border: none;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22.4px;
-        text-align: left;
-        padding-left: 10px;
-        margin: 0;
-    }
-
-    .icons {
-        display: flex;
-        gap: 15px;
-
-        .icon {
-            width: 60px;
-            height: 52px;
-            border-radius: 4px;
-            background: #F2F2F2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                cursor: pointer;
-                width: 30px;
-            }
-        }
-    }
-
-    .providers {
-        display: flex;
-        align-items: center;
-        gap: 12.5px;
-        min-width: 363px;
-        
-        a {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 21.09px;
-            color: #2D2F31;
-        }
-
-        a:hover {
-            color: #A435F0;
-        }
-    }
-
-    .login-btns {
-        display: flex;
-        gap: 14px;
-
-        .login-btn {
-            width: 76px;
-            height: 52px;
-            border-radius: 4px;
-            background: #F2F2F2;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 25.2px;
-            text-align: center;
-            color: #424242;
-            border: none;
-        }
-
-        .register-btn {
-            width: 224px;
-            height: 52px;
-            border-radius: 4px;
-            background: #2D2F31;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 25.2px;
-            text-align: center;
-            color: #FFFFFF;
-            border: none;
-        }
-    }
-}
-
-.he {
-    box-shadow: 0px 2px 6px 0px #00000040;
-}
-
-
-.bottom {
-    display: flex;
-    justify-content: space-evenly;
-    height: max-content;
-    margin-bottom: 20px;
-
-    a {
-      font-size: 16px;
-      font-weight: 400;
-      white-space: nowrap;
-      line-height: 1.4;
-      color: #2d2f31;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 14px 50px 14px 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: #f2f2f2;
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 11px;
+    span {
+      color: purple;
+      padding-top: 14px;
+      padding-bottom: 14px;
       text-decoration: none;
-      &:hover {
-        color: #5022c3;
-        .icons {
-          display: flex;
-          gap: 15px;
-  
-          .b1 {
-            text-decoration: none;
-            background-color: white;
-            color: black;
-            //    font-size: 18px;
-            border: 2px solid black;
-          }
-  
-          .b2 {
-            height: 38px;
-            background-color: black;
-            color: white;
-          }
-  
-          img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-          }
-          .not {
-            width: 43px;
-            height: 33px;
-            margin-top: 4px;
-          }
-        }
-      }
     }
-  
-    .bottom {
-      display: flex;
-      justify-content: space-evenly;
-      height: max-content;
-      margin-bottom: 20px;
-      a {
-        font-size: 16px;
-        font-weight: 400;
-        white-space: nowrap;
-        line-height: 1.4;
-        color: #2d2f31;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
-        text-decoration: none;
-        &:hover {
-          color: #5022c3;
-        }
-      }
-    }
-  
-    // ------
-  
-    .main-menu {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      width: 300px;
-      min-height: 300px;
-      border: 1px solid #929292;
-      margin: 0;
-      padding: 0;
-      z-index: 9999;
-      margin-top: 30px;
-      text-align: left;
-    }
-  
-    .submenu {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 300px;
-      background-color: #fff;
-      width: 300px;
-      min-height: 300px;
-      border: 1px solid #929292;
-      margin: 0;
-      padding: 0;
-      z-index: 9999;
-      text-align: left;
-    }
-  
-    .subsubmenu {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 300px;
-      background-color: #fff;
-      width: 300px;
-      min-height: 300px;
-      margin: 0;
-      padding: 0;
-      z-index: 9999;
-      text-align: left;
-      border: 1px solid #929292;
-    }
-  
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 12px;
-      cursor: pointer;
-      align-items: center;
-      margin: 0;
-    }
-  
-    .menu-item:hover {
-      background-color: #f1f1f1;
-    }
-  
-    #text {
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-      font-family: "Varta", sans-serif;
-      margin: 0;
-    }
-  
-    #text:hover {
-      color: rgb(89, 27, 212);
-    }
-  
-    .categories-dropdown {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-  
-
-
-    .dropdown-container {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 9999;
-      background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  
-    .menu-item.active {
-      background-color: #f1f1f1;
-  
-      a {
-        color: rgb(89, 27, 212);
-      }
-    }
-  
-    .submenu .menu-item.active {
-      color: rgb(89, 27, 212);
-    }
-  
-    .subsubmenu .menu-item.active {
-      color: rgb(89, 27, 212);
-    }
-    
-  
-    .cart-icon {
-      position: relative;
-      width: 60px;
-      height: 60px;
-      margin-top: 30px;
-
-      
-    }
-    .cart-count {
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      background-color: red;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 50%;
-      font-size: 14px;
-    }
-    
-    
-    
   }
 }
+
+.aback {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  margin-bottom: 102px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+
+  button {
+    color: #2d2f31;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+  }
+}
+
+#active-btn {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+#active-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(151, 13, 151);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#active-btn:hover::after {
+  transform: scaleX(1);
+}
+
+#search {
+  input {
+    height: 48px;
+    margin-left: -30px;
+  }
+}
+
+.btn-outline-secondary {
+  padding: 15px 15px 15px 15px !important;
+  margin-top: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 14px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sign-up {
+  background: #2d2f31;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 0 15px 0 15px;
+}
+
+.sign-up:hover {
+  background: gray;
+}
+
+.login {
+  padding: 13px 12px;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.login:hover {
+  background: #2d2f319a;
+  color: rgba(255, 255, 255, 0.899);
+  transition: 0.3s ease;
+}
+
+// #dropdowns{
+//     margin-bottom: -100px !important;
+// }

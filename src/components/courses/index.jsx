@@ -20,7 +20,7 @@ function Courses() {
     },
     {
       id: 2,
-      image: "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/3cfbe3220824.jpg", 
+      image: "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/3cfbe3220824.jpg",
       title: "Полное руководство по Python 3: от новичка до специалиста",
       price: 13.99,
       oldPrice: 74.99,
@@ -30,6 +30,7 @@ function Courses() {
       reviews: 9888,
       totalHours: "Всего 39ч 217 лекций. Начальный",
     },
+    
   ];
   return (
     <div>
@@ -40,8 +41,8 @@ function Courses() {
           </div>
           <div className='courses-right'>
             <div className='courses-h1'>
-              <h1>{course.title}</h1>
-              <h3>{course.price}$</h3>
+              <h2>{course.title}</h2>
+              <p>{course.price}$</p>
             </div>
 
             <div className='courses-p'>
@@ -50,7 +51,7 @@ function Courses() {
             </div>
 
             <div className='courses-3text'>
-              <h4>{course.author}</h4>
+              <p className='author'>{course.author}</p>
               <div className='courses-flex'>
                 <h3>{course.rating}</h3>
                 {[...Array(Math.floor(course.rating))].map((_, index) => (
@@ -58,7 +59,7 @@ function Courses() {
                 ))}
                 <p>({course.reviews})</p>
               </div>
-              <h5>{course.totalHours}</h5>
+              <p>{course.totalHours}</p>
             </div>
           </div>
         </div>
