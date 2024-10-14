@@ -8,6 +8,7 @@
         font-weight: 700;
         font-size: 20px;
         padding-top: 11px;
+        color: #000;
         span {
             color: purple;
             padding-top: 14px;
@@ -66,6 +67,7 @@
 .btn-outline-secondary {
     padding: 15px 15px 15px 15px !important;
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 .icons {
@@ -100,7 +102,16 @@
     color: rgba(255, 255, 255, 0.899);
     transition: 0.3s ease;
 }
-
-// #dropdowns{
-//     margin-bottom: -100px !important;
-// }
+.cart-count {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(197, 81, 197);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-left: -20px;
+    line-height: 1.5;
+}
