@@ -16,7 +16,7 @@ const Reviews = () => {
                         <div className="first">
                             <img className='avatar' src={el.img} alt="" />
                             <div className="f-right">
-                                <h4>{el.name}</h4>
+                                <h3>{el.name}</h3>
                                 <div className="stars">
                                     <FaStar className='star' />
                                     <FaStar className='star' />
