@@ -1,8 +1,16 @@
-.banner-container{
+.banner-container {
     margin: 0 auto;
 }
-.banner-in img{
+
+.banner-in img {
     height: 400px;
     width: 1340px;
     object-fit: cover;
+}
+
+
+@media (max-width: 720px) {
+    .banner-in img {
+        width: 720px;
+    }
 }
