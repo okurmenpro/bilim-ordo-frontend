@@ -85,8 +85,14 @@ ul li a {
     text-decoration: underline;
 }
 
-.info-bottom strong span {
-    color: purple;
+.info-bottom {
+    .first-letter {
+        color: purple;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
 }
 
 .info-bottom strong {
@@ -94,8 +100,9 @@ ul li a {
     font-size: 40px;
 }
 
-.info-right button:hover {
-    background-color: #1c1d1f;
+.btn:hover {
+    background-color: rgb(154, 143, 143);
+    color: black;
 }
 
 .footer-business {

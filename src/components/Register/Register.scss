@@ -1,14 +1,10 @@
-.register{
-    display: flex;
-    margin: 0 auto;
-
-}
-
-
 
 .register-right {
-    width: 300px;
-    margin: 70px auto;
+   padding-left: 20px;
+   padding-top: 45px;
+  }
+  .register{
+    display: flex;
   }
   
   h1 {
@@ -17,32 +13,28 @@
   }
   
   .input-container {
-    // position: relative;
     margin-bottom: 20px;
   }
-  
   input {
-    width: 300px;
+    width: 400px;
     height: 60px;
     padding: 10px 5px;
     font-size: 16px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none;
     transition: padding 0.3s ease;
     margin-top: 10px;
+    border: none;
+   
   }
   
   input::placeholder {
     color: #999;
-    transition: 0.3s ease;
+    transition: 0.3s ease; 
   }
-  
   input:focus,
   input:not(:placeholder-shown) {
     padding-top: 20px; 
   }
-  
   input:focus::placeholder,
   input:not(:placeholder-shown)::placeholder {
     transform: translateY(-15px); 
@@ -52,7 +44,6 @@
   .register-footer{
     display: flex;
     gap: 10px;
-
   }
   .register-footer input{
     width: 60px;
@@ -62,32 +53,26 @@
     padding-top: 20px;
   }
   .register-right button{
-    width: 300px;
+    width: 400px;
     height: 50px;
     background-color: purple;
     color: white;
     border: none;
   }
-  .register-right button:hover{
-    background-color: palevioletred;
-  }
-  .register-right h3{
-    text-align: center;
+ 
+  .register-right strong{
     font-size: 10px;
-
-    padding-top: 20px;
-  }
-  .register-ali{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    background-color: #bcbcbc;
+    margin-left: 90px;
   }
   .register-ali h5{
     font-size: 12px;
   }
   .register-ali p{
     padding-top: 5px;
+  }
+  .register-right h1{
+     text-align:left;
+     font-size:20px;
+     font-weight: 700;
+     margin-top: 10px; 
   }
