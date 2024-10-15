@@ -39,9 +39,7 @@ function Header() {
         <div className="buttons">
           <button className="login">Войти</button>
 
-          {/* <a href="/signup" class="btn btn-primary btn-lg active" role="button"  aria-pressed="true">Зарегистрироваться</a> */}
-{/* <a href="/basket" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a> */}
-         
+                 
           <a href='/SignUp' className="sign-up"> Зарегистрироваться</a>
    
         </div>   
