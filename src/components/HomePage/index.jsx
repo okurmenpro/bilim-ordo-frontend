@@ -3,7 +3,7 @@ import Banner from '../Banner'
 import Courses from "../courses"
 import CartContainer from '../CardContainer'
 import Card from "../Card";
-import PopularCategories from "../popularCategories";
+import PopularCategories from "../PopularCategories";
 import TeachSection from "../TeachSection";
 import InfoSection from "../InfoSection";
 
