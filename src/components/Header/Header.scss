@@ -1,22 +1,28 @@
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 14px 50px 14px 50px;
-    h2 {
-        font-weight: 700;
-        font-size: 20px;
-        padding-top: 11px;
-        color: #000;
-        span {
-            color: purple;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            text-decoration: none;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 14px 50px 14px 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: #fefefe;
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 11px;
+    color: #000;
+
+    span {
+      color: purple;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      text-decoration: none;
     }
   }
+}
 
 
 .aback {
@@ -68,9 +74,9 @@
 }
 
 .btn-outline-secondary {
-    padding: 15px 15px 15px 15px !important;
-    margin-top: 10px;
-    margin-left: 5px;
+  padding: 15px 15px 15px 15px !important;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .icons {
@@ -105,16 +111,17 @@
   color: rgba(255, 255, 255, 0.899);
   transition: 0.3s ease;
 }
+
 .cart-count {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    background-color: rgb(197, 81, 197);
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 50%;
-    margin-top: -10px;
-    margin-left: -20px;
-    line-height: 1.5;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(197, 81, 197);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: -20px;
+  line-height: 1.5;
 }
