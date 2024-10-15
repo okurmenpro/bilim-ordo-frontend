@@ -1,4 +1,4 @@
-import React,  {useContext} from "react";
+import  {React, useContext, useEffect, useState} from "react";
 import "./Header.scss";
 import cart from '../../assets/svg/cart.svg'
 import earth from '../../assets/svg/earth.svg'
@@ -9,6 +9,7 @@ import { CartContext} from '../CartContext'
 function Header() {
   const providers = ['Udemy Business', 'Преподавайте на Udemy']
   const { cartItems } = useContext(CartContext);
+  const [inputWidth] = useState("200px");
   return (
     <div className="aback">
       <header className="head ">
@@ -24,7 +25,7 @@ function Header() {
         </div>
         <div id="search">
           <div class="input-group mb-3">
-            <input class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+            <input class="form-control" placeholder="Search" style={{ width: inputWidth }} aria-label="Recipient's username" aria-describedby="basic-addon2" />
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" >
                 <GrSearch />
