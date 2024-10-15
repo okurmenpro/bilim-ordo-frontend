@@ -1,14 +1,14 @@
 import React, { useState, useRef } from "react";
 import "./Header.scss";
 import udemy from "../../assets/images/udemy.png";
+import heart from "../../assets/svg/heart.svg";
 import korzina from "../../assets/svg/korzina.svg";
+import notif from "../../assets/svg/notif.svg";
 import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useAuth } from "./../../context/AuthContext";
 
 function Header() {
-  const { isLoggedIn, currentUser } = useAuth();
   const [showMainMenu, setShowMainMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [showSubSubMenu, setShowSubSubMenu] = useState(false);
@@ -22,17 +22,29 @@ function Header() {
   const timerRef = useRef(null);
   const titleNav = [
     "Разработка",
-    "Бизнес",
+    "Разработка",
     "Финансы и бухгалтерский учет",
     "ИТ и ПО",
     "Офисное Программное обеспечение",
   ];
 
   const mainMenuItems = [
-    { label: "Разработка", subMenu: ["Frontend", "Backend"] },
-    { label: "Бизнес", subMenu: ["Маркетинг", "Продажи"] },
-    { label: "Финансы и бухгалтерский учет", subMenu: ["Бухгалтерия", "Финансовый анализ"] },
-    { label: "ИТ и ПО", subMenu: ["Тестирование", "Программирование"] },
+    {
+      label: "Разработка",
+      subMenu: ["Frontend", "Backend"],
+    },
+    {
+      label: "Бизнес",
+      subMenu: ["Маркетинг", "Продажи"],
+    },
+    {
+      label: "Финансы и бухгалтерский учет",
+      subMenu: ["Бухгалтерия", "Финансовый анализ"],
+    },
+    {
+      label: "ИТ и ПО",
+      subMenu: ["Тестирование", "Программирование"],
+    },
   ];
 
   const subSubMenuData = {
@@ -52,6 +64,8 @@ function Header() {
     setShowSubMenu(true);
     setShowSubSubMenu(false);
     setActiveMainItem(mainItem);
+    setActiveSubItem(null);
+    setActiveSubSubItem(null);
   };
 
   const handleMouseEnterSubMenu = (subMenuItem) => {
@@ -59,6 +73,12 @@ function Header() {
     setSubSubMenuItems(subSubMenuData[subMenuItem] || []);
     setShowSubSubMenu(true);
     setActiveSubItem(subMenuItem);
+    setActiveSubSubItem(null);
+  };
+
+  const handleMouseEnterSubSubMenu = (subSubItem) => {
+    clearTimeout(timerRef.current);
+    setActiveSubSubItem(subSubItem);
   };
 
   const handleMouseLeaveAllMenus = () => {
@@ -66,6 +86,9 @@ function Header() {
       setShowMainMenu(false);
       setShowSubMenu(false);
       setShowSubSubMenu(false);
+      setActiveMainItem(null);
+      setActiveSubItem(null);
+      setActiveSubSubItem(null);
     }, 300);
   };
 
@@ -75,37 +98,82 @@ function Header() {
   };
 
   const providers = ['Udemy Business', 'Преподавайте на Udemy', 'Мое обучение'];
-
   return (
     <header>
       <div className="container">
         <img src={udemy} alt="Udemy" />
-        <Dropdown onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
+        <Dropdown
+          onMouseEnter={handleMouseEnterAllMenus}
+          onMouseLeave={handleMouseLeaveAllMenus}
+        >
           <h3>Категории</h3>
           {showMainMenu && (
-            <div className="main-menu">
+            <div
+              className="main-menu"
+              onMouseEnter={handleMouseEnterAllMenus}
+              onMouseLeave={handleMouseLeaveAllMenus}
+            >
               {mainMenuItems.map((item, index) => (
-                <div key={index} className={`menu-item ${activeMainItem === item.label ? "active" : ""}`}
-                  onMouseEnter={() => handleMouseEnterMainMenu(item.subMenu, item.label)}>
-                  <Dropdown.Item id="text" href={`#/action-${index}`}>{item.label}</Dropdown.Item>
+                <div
+                  key={index}
+                  className={`menu-item ${
+                    activeMainItem === item.label ? "active" : ""
+                  }`}
+                  onMouseEnter={() =>
+                    handleMouseEnterMainMenu(item.subMenu, item.label)
+                  }
+                >
+                  <Dropdown.Item id="text" href={`#/action-${index}`}>
+                    {item.label}
+                  </Dropdown.Item>
                   <MdKeyboardArrowRight />
                 </div>
               ))}
+
               {showSubMenu && (
-                <div className="submenu">
+                <div
+                  className="submenu"
+                  onMouseEnter={handleMouseEnterAllMenus}
+                  onMouseLeave={handleMouseLeaveAllMenus}
+                >
                   {subMenuItems.map((subItem, index) => (
-                    <div key={index} className={`menu-item ${activeSubItem === subItem ? "active" : ""}`}
-                      onMouseEnter={() => handleMouseEnterSubMenu(subItem)}>
-                      <Dropdown.Item id="text" href={`#/sub-action-${index}`}>{subItem}</Dropdown.Item>
+                    <div
+                      key={index}
+                      className={`menu-item ${
+                        activeSubItem === subItem ? "active" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnterSubMenu(subItem)}
+                    >
+                      <Dropdown.Item id="text" href={`#/sub-action-${index}`}>
+                        {subItem}
+                      </Dropdown.Item>
                       <MdKeyboardArrowRight />
                     </div>
                   ))}
+
                   {showSubSubMenu && (
-                    <div className="subsubmenu">
+                    <div
+                      className="subsubmenu"
+                      onMouseEnter={handleMouseEnterAllMenus}
+                      onMouseLeave={handleMouseLeaveAllMenus}
+                    >
                       {subSubMenuItems.map((subSubItem, index) => (
-                        <div key={index} className={`menu-item ${activeSubSubItem === subSubItem ? "active" : ""}`}
-                          onMouseEnter={() => setActiveSubSubItem(subSubItem)}>
-                          <Dropdown.Item id="text" href={`#/sub-sub-action-${index}`}>{subSubItem}</Dropdown.Item>
+                        <div
+                          key={index}
+                          className={`menu-item ${
+                            activeSubSubItem === subSubItem ? "active" : ""
+                          }`}
+                          уровня
+                          onMouseEnter={() =>
+                            handleMouseEnterSubSubMenu(subSubItem)
+                          }
+                        >
+                          <Dropdown.Item
+                            id="text"
+                            href={`#/sub-sub-action-${index}`}
+                          >
+                            {subSubItem}
+                          </Dropdown.Item>
                         </div>
                       ))}
                     </div>
@@ -116,28 +184,23 @@ function Header() {
           )}
         </Dropdown>
         <input type="search" placeholder="Ищите что угодно" />
-        <div className="providers">
-          {providers.map((provider, index) => (
+        <div className='providers'>
+            <Link to={"/"}>
+            {providers.map((provider, index) => (
             <Link to='#' key={index}>{provider}</Link>
           ))}
-          <Link to="/basket">
-            <img src={korzina} alt="Корзина" />
-          </Link>
-          {isLoggedIn ? (
-            <div className="user-avatar">
-              <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Avatar" />
-            </div>
-          ) : (
-            <>
-              <Link to="/login">
-                <button className="b1">Войти</button>
-              </Link>
-              <Link to="/register">
-                <button className="b2">Регистрация</button>
-              </Link>
-            </>
-          )}
-        </div>
+            </Link>
+
+                <Link to={"/basket"}>
+                <img src={korzina} alt="" />
+                </Link>
+                <Link to={"/login"}>
+                <button className='b1'>Войти</button>
+                </Link>
+                <Link to={"/register"}>
+                <button className='b2'>Регистрация</button>
+                </Link>
+            </div> 
       </div>
       <hr />
       <div className="bottom container">

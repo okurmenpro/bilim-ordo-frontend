@@ -18,14 +18,26 @@
   border: none;
 }
 
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .register {
   display: flex;
   margin: 0 auto;
 }
 
 .register-left img {
-  width: 660px;
-  height: 720px;
+  width: 600px;
+  // height: 400px;
 }
 
 .register-right {
