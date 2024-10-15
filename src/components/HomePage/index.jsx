@@ -5,7 +5,6 @@ import Card from "../Card";
 import PopularCategories from "../PopularCategories";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
-import InfoSection from "../InfoSection";
 
 function HomePage() {
   return (
