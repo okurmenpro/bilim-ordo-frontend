@@ -4,7 +4,7 @@ import { GrLanguage } from "react-icons/gr";
 import { FaRegStar } from "react-icons/fa";
 import { BsExclamationOctagon } from "react-icons/bs";
 
-function index() {
+function Banner() {
     return (
         <div className='course__banner'>
             <div className='img__text'>
@@ -41,4 +41,4 @@ function index() {
     )
 }
 
-export default index
+export default Banner
