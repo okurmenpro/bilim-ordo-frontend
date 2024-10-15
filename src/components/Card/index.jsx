@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Card.css';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { CartContext } from "../CartContext";
+import { NavLink } from 'react-router-dom';
 
 function Card() {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -39,8 +40,11 @@ function Card() {
           const isInCart = cartItems.some(cartItem => cartItem.name === item.name);
 
           return (
-            <div key={index} className="cart">
-              <img src={item.img} alt={item.name} />
+          
+                   <div key={index} className="cart">
+                    <NavLink to="/course">
+           <img src={item.img} alt={item.name} />
+         
               <h1>{item.name}</h1>
               <h4>Юрий Аллахвердов</h4>
               <div className="cart-flex">
@@ -55,6 +59,9 @@ function Card() {
               <div className="cart-top">
                 <h3>{item.price}</h3>
               </div>
+              </NavLink>
+       
+              
 
               <button
                 onClick={() => handleAddToCart(item)}
@@ -64,6 +71,7 @@ function Card() {
                 {isInCart ? "В корзине" : "Добавить в корзину"}
               </button>
             </div>
+         
           );
         })}
       </div>
