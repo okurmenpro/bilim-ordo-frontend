@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Courses.css";
 import { MdOutlineStarPurple500 } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -33,11 +34,12 @@ function Courses() {
     
   ];
   return (
-    <div>
+<NavLink to="/course">
+<div>
       {coursesData.map(course => (
         <div key={course.id} className='courses'>
-          <div className='courses-left'>
-            <img src={course.image} alt={course.title} />
+          <div className='courses-left'> 
+            <img src={course.image} alt={course.title} />          
           </div>
           <div className='courses-right'>
             <div className='courses-h1'>
@@ -65,6 +67,7 @@ function Courses() {
         </div>
       ))}
     </div>
+</NavLink>
   );
 }
 
