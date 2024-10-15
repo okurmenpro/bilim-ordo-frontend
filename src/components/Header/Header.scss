@@ -83,129 +83,123 @@ ul,li {
 
 .bottom {
   display: flex;
-  justify-content: space-evenly;
-  height: max-content;
-  margin-bottom: 20px;
-  a {
-    font-size: 18px;
-    font-weight: 400;
-    white-space: nowrap;
-    line-height: 1.4;
-    color: #2d2f31;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-    text-decoration: none;
-    &:hover {
-      color: #5022c3;
-    }
-}
-}
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 14px 50px 14px 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: #fefefe;
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 11px;
+    color: #000;
 
-// ------
-
-
-.main-menu {
-    display: block; 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    width: 300px; 
-    min-height: 300px;
-    border: 1px solid #929292;
-    margin: 0;
-    padding: 0;
-    z-index: 9999;
-    margin-top: 30px;
-    text-align: left;
-}
-
-.submenu {
-    display: block; 
-    position: absolute;
-    top: 0;
-    left: 300px; 
-    background-color: #fff;
-    width: 300px;
-    min-height: 300px;
-    border: 1px solid #929292;
-    margin: 0;
-    padding: 0;
-    z-index: 9999;
-    text-align: left;
-}
-
-.subsubmenu {
-    display: block; 
-    position: absolute;
-    top: 0;
-    left: 300px; 
-    background-color: #fff;
-    width: 300px;
-    min-height: 300px;
-    margin: 0;
-    padding: 0;
-    z-index: 9999;
-    text-align: left;
-    border: 1px solid #929292;
-}
-
-.menu-item {
-    display: flex; 
-    justify-content: space-between; 
-    padding: 8px 12px;
-    cursor: pointer;
-    align-items: center;
-    margin: 0;
-}
-
-.menu-item:hover {
-    background-color: #f1f1f1;
-}
-
-#text {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: 'Varta', sans-serif;
-    margin: 0;
-}
-
-#text:hover {
-    color: rgb(89, 27, 212);
-}
-
-.categories-dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dropdown-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 9999;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item.active {
-    background-color: #f1f1f1;
-    
-    a {
-      color: rgb(89, 27, 212); 
+    span {
+      color: purple;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      text-decoration: none;
     }
   }
-  
-  .submenu .menu-item.active {
-    color:rgb(89, 27, 212) ;
- 
+}
+
+
+.aback {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  margin-bottom: 102px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+
+  button {
+    color: #2d2f31;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
   }
   
   .subsubmenu .menu-item.active {
     color:rgb(89, 27, 212) ;
   }
-  
-  
+}
+
+.btn-outline-secondary {
+  padding: 15px 15px 15px 15px !important;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 14px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sign-up {
+  background: #2d2f31;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 0 15px 0 15px;
+}
+
+.sign-up:hover {
+  background: gray;
+}
+
+.login {
+  padding: 13px 12px;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.login:hover {
+  background: #2d2f319a;
+  color: rgba(255, 255, 255, 0.899);
+  transition: 0.3s ease;
+}
+
+.cart-count {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(197, 81, 197);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: -20px;
+  line-height: 1.5;
+}
+
+#search {
+  flex-grow: 1; // Позволяет инпуту занимать доступное пространство
+  transition: width 0.3s ease; // Плавный переход
+
+  .input-group {
+    width: 100%; // Устанавливаем ширину группы ввода на 100%
+
+    input {
+      width: 100%; // Инпут будет занимать 100% ширины группы
+    }
+  }
+}
+
+.expanded {
+  // Увеличьте ширину контейнера, если необходимо
+  .input-group {
+    width: 100%; // Или можно задать конкретную ширину
+  }
+}
