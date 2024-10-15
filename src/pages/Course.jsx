@@ -16,6 +16,7 @@ function Course() {
 
   return (
     <div>
+      <BannerCourse />
       <Sidebar
         price={price}
         originalPrice={originalPrice}
@@ -25,7 +26,6 @@ function Course() {
         coupon={coupon}
         videoSrc={video}
       />
-      <BannerCourse />
       <MaterialCourse />
       <TeacherProfile />
       <Reviews />
