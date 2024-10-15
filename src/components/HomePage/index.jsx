@@ -4,7 +4,8 @@ import Courses from "../courses";
 import Pythonskills from "../Pythonskills";
 
 import Card from "../Card";
-import PopularCategories from "../popularCategories";
+import PopularCategories from "../PopularCategories";
+import TeachSection from "../TeachSection";
 import InfoSection from "../InfoSection";
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
       <Courses />
       <Card />
       <PopularCategories />
+      <TeachSection />
       <InfoSection />
       <Pythonskills />
     </div>

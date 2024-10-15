@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import "./Footer.scss"
 
 import { MdLanguage } from "react-icons/md";
 import Nasdaq from "../../assets/images/nasdaq.png"
@@ -90,12 +90,12 @@ const Footer = () => {
                 <div className='info-right'>
                     <button className='btn'>
                     {<MdLanguage    />}
-                    <h3>Русский</h3>
+                    <div>Русский</div>
                     </button>
                 </div>
             </div>
             <div className='info-bottom'>
-                <strong><span>B</span>ILIM-ORDO</strong>
+                <strong><span className='first-letter'>B</span>ILIM-ORDO</strong>
                 <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
         </div>      
