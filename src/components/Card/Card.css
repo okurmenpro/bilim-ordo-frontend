@@ -19,6 +19,7 @@
     font-size: 18px;
     margin-top: 10px;
     text-align: left;
+    color: black;
 }
 .cart h4{
     margin-top: -8px;
@@ -29,20 +30,25 @@
 }
 .cart-flex{
     display: flex;
-    margin-top: -5px;
-    
-    
+    margin-top: -19px;  
     gap: 5px;
+    color: yellow;
+    
 }
 .cart-flex h2{
     font-size: 20px;
     text-align: left;
+    color: black;
+    margin-top: 18px
+}
+.cart-flex p{
+    color: black;
 }
 .cart-top{
     display: flex;
-    /* align-items: center; */
     margin-top: -20px;
     gap: 7px;
+    color: black;
 }
 .cart-top p{
 text-decoration: line-through;
@@ -52,6 +58,7 @@ text-align: left;
 }
 .cart-top h3{
     font-size: 17px;
+    margin-top: 5px;
 }
 
 
@@ -63,6 +70,9 @@ text-align: left;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .add-to-cart-button:hover {
