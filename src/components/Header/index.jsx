@@ -6,6 +6,10 @@ import { GrSearch } from "react-icons/gr";
 import Dropdown from '../Dropdown/Index'
 import { NavLink } from 'react-router-dom';
 import { CartContext} from '../CartContext'
+
+
+
+
 function Header() {
   const { cartItems } = useContext(CartContext);
   const providers = ['Udemy Business', 'Преподавайте на Udemy']
@@ -34,8 +38,13 @@ function Header() {
         </div>
         <div className="buttons">
           <button className="login">Войти</button>
-          <button className="sign-up">Зарегистрироваться</button>
-        </div>
+
+          {/* <a href="/signup" class="btn btn-primary btn-lg active" role="button"  aria-pressed="true">Зарегистрироваться</a> */}
+{/* <a href="/basket" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a> */}
+         
+          <a href='/SignUp' className="sign-up"> Зарегистрироваться</a>
+   
+        </div>   
         <div className="icons">
           <NavLink to='/basket'>
           <img src={cart} alt="Cart" />

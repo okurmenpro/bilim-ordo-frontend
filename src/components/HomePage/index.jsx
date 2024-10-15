@@ -6,6 +6,9 @@ import PopularCategories from "../PopularCategories";
 import TeachSection from "../TeachSection";
 import InfoSection from "../InfoSection";
 
+
+
+
 function HomePage() {
   return (
     <div>
@@ -15,6 +18,8 @@ function HomePage() {
       <PopularCategories />
       <TeachSection />
       <InfoSection />
+      
+      
     </div>
   );
 }
