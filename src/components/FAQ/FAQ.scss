@@ -101,3 +101,31 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .faq-content {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .faq-title {
+    font-size: 32px; 
+  }
+
+  .accordion {
+    padding: 15px 10px; 
+  }
+
+  .accordion-title h3 {
+    font-size: 18px;
+  }
+
+  .container-childs {
+    flex-direction: column;
+  }
+
+  .child-content {
+    padding: 10px; 
+  }
+}
