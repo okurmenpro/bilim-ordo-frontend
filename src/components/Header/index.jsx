@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React,  {useContext} from "react";
 import "./Header.scss";
 import cart from '../../assets/svg/cart.svg'
 import earth from '../../assets/svg/earth.svg'
@@ -7,14 +7,14 @@ import Dropdown from '../Dropdown/Index'
 import { NavLink } from 'react-router-dom';
 import { CartContext} from '../CartContext'
 function Header() {
-  const { cartItems } = useContext(CartContext);
   const providers = ['Udemy Business', 'Преподавайте на Udemy']
+  const { cartItems } = useContext(CartContext);
   return (
     <div className="aback">
       <header className="head ">
         <div>
           <NavLink to='/'>
-          <h2><span>B</span>ILIM-ORDO</h2>
+            <h2><span>B</span>ILIM-ORDO</h2>
           </NavLink>
         </div>
         <Dropdown id="dropdowns" />
@@ -38,7 +38,7 @@ function Header() {
         </div>
         <div className="icons">
           <NavLink to='/basket'>
-          <img src={cart} alt="Cart" />
+            <img src={cart} alt="Cart" />
             {cartItems.length > 0 && (
               <span className="cart-count">{cartItems.length}</span>
             )}
