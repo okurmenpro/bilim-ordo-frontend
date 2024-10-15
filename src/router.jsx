@@ -37,11 +37,7 @@ export const Router = createBrowserRouter([
       {
         path: "/sidebar",
         element: <Sidebar />
-      },
-      {
-        path: "/teacherprofile",
-        element: <TeacherProfile />
-      },
+      }
     ]
   }
 ]);

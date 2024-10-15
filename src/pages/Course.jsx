@@ -6,6 +6,7 @@ import { SidebarData } from '../data/Sidebar'
 import video from "../assets/video/Python3.mp4"
 import Index from '../components/MaterialCourse'
 import Reviews from '../components/Reviews'
+import TeacherProfile from '../components/TeacherProfile'
 
 function Course() {
   const price = 13.99;
@@ -28,6 +29,7 @@ function Course() {
       />
       <MaterialCourse />
       <Index />
+      <TeacherProfile/>
       <Reviews />
     </div>
   )
