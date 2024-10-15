@@ -1,3 +1,4 @@
+
 import React from 'react'
 import MaterialCourse from '../components/MaterialCourse'
 import BannerCourse from '../components/BannerCourse'
@@ -5,6 +6,8 @@ import Sidebar from "../components/Sidebar"
 import { SidebarData } from '../data/Sidebar'
 import video from "../assets/video/Python3.mp4"
 import Index from '../components/MaterialCourse'
+import Reviews from "../components/Reviews";
+import TeacherProfile from "../components/TeacherProfile";
 
 function Course() {
   const price = 13.99;
@@ -27,8 +30,10 @@ function Course() {
       <BannerCourse/>
       <MaterialCourse/>
       <Index/>
+      <TeacherProfile />
+      <Reviews />
     </div>
-  )
+  );
 }
 
-export default Course
+export default Course;
