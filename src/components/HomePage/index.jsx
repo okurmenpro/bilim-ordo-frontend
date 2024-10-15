@@ -12,9 +12,9 @@ function HomePage() {
     <div>
       <Banner />
       <Courses />
-      <CartContainer name="Учащиеся смотрят">
+      <CardContainer name="Учащиеся смотрят">
       <Card />
-      </CartContainer>
+      </CardContainer>
       <PopularCategories/>
       <TeachSection />
       <InfoSection />
