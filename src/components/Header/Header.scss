@@ -8,11 +8,13 @@
   top: 0px;
   width: 100%;
   z-index: 1;
-  background-color: #f2f2f2;
+  background-color: #fefefe;
   h2 {
     font-weight: 700;
     font-size: 20px;
     padding-top: 11px;
+    color: #000;
+
     span {
       color: purple;
       padding-top: 14px;
@@ -21,6 +23,7 @@
     }
   }
 }
+
 
 .aback {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -73,6 +76,7 @@
 .btn-outline-secondary {
   padding: 15px 15px 15px 15px !important;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .icons {
@@ -108,6 +112,16 @@
   transition: 0.3s ease;
 }
 
-// #dropdowns{
-//     margin-bottom: -100px !important;
-// }
+.cart-count {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(197, 81, 197);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: -20px;
+  line-height: 1.5;
+}
