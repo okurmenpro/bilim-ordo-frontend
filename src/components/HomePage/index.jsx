@@ -13,7 +13,7 @@ function HomePage() {
       <Banner />
       <Courses />
       <CardContainer name="Учащиеся смотрят">
-      <Card />
+        <Card />
       </CardContainer>
       <PopularCategories/>
       <TeachSection />

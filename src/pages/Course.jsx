@@ -1,6 +1,6 @@
 import React from 'react'
 import MaterialCourse from '../components/MaterialCourse'
-import Banner from '../components/BannerCourse/Banner'
+import BannerCourse from '../components/BannerCourse'
 import Sidebar from "../components/Sidebar"
 import { SidebarData } from '../data/Sidebar'
 import video from "../assets/video/Python3.mp4"
@@ -15,6 +15,7 @@ function Course() {
 
   return (
     <div>
+      <BannerCourse/>
        <Sidebar 
           price={price} 
           originalPrice={originalPrice} 
@@ -24,7 +25,6 @@ function Course() {
           coupon={coupon} 
           videoSrc={video}
         />
-      <Banner/>
       <MaterialCourse/>
       <Index/>
     </div>
