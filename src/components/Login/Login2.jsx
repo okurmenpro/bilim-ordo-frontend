@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Login.scss";
+import "../LogIn/Login.scss";
+import Authorization from "../../assets/images/authorization.png"
 
 function Login2() {
-  // Массив пользователей
+ 
   const users = [
     { email: "user1@example.com", password: "password1" },
     { email: "user2@example.com", password: "password2" },
@@ -13,7 +14,6 @@ function Login2() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
 
-  // Функция для обработки входа
   const handleLogin = () => {
     const user = users.find(
       (user) => user.email === email && user.password === password
@@ -28,19 +28,16 @@ function Login2() {
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="register">
         <div className="register-left">
-          <img
-            src="https://frontends.udemycdn.com/components/auth/desktop-illustration-step-1-x1.webp"
-            alt=""
-          />
+         <img src={ Authorization} alt="" />
         </div>
 
         <div className="register-right">
           {!isLoggedIn ? (
             <>
-              <h1>Вход в учетную запись Udemy</h1>
+              <h1>Авторизация</h1>
               <input
                 type="text"
                 placeholder="Адрес электронной почты"
@@ -53,9 +50,10 @@ function Login2() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+               <strong>Нет аккаунта? Зарегистрироваться</strong>
               <button onClick={handleLogin}>Войти</button>
-              <h3>или Забыли пароль?</h3>
-              <h3>Другие варианты выхода</h3>
+             
+
 
               <div className="register-ali">
                 <button>
@@ -78,10 +76,7 @@ function Login2() {
                 </button>
               </div>
 
-              <div className="b2">
-                <h3>Не зарегистрированы? Регистрация</h3>
-                <h3>Войдите в систему, указав свою организацию</h3>
-              </div>
+              
             </>
           ) : (
             <div className="user-avatar">

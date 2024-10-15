@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Courses.css";
 import { MdOutlineStarPurple500 } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -33,16 +34,17 @@ function Courses() {
     
   ];
   return (
-    <div>
+<NavLink to="/course">
+<div>
       {coursesData.map(course => (
         <div key={course.id} className='courses'>
-          <div className='courses-left'>
-            <img src={course.image} alt={course.title} />
+          <div className='courses-left'> 
+            <img src={course.image} alt={course.title} />          
           </div>
           <div className='courses-right'>
             <div className='courses-h1'>
-              <h1>{course.title}</h1>
-              <h3>{course.price}$</h3>
+              <h2>{course.title}</h2>
+              <p>{course.price}$</p>
             </div>
 
             <div className='courses-p'>
@@ -51,7 +53,7 @@ function Courses() {
             </div>
 
             <div className='courses-3text'>
-              <h4>{course.author}</h4>
+              <p className='author'>{course.author}</p>
               <div className='courses-flex'>
                 <h3>{course.rating}</h3>
                 {[...Array(Math.floor(course.rating))].map((_, index) => (
@@ -59,12 +61,13 @@ function Courses() {
                 ))}
                 <p>({course.reviews})</p>
               </div>
-              <h5>{course.totalHours}</h5>
+              <p>{course.totalHours}</p>
             </div>
           </div>
         </div>
       ))}
     </div>
+</NavLink>
   );
 }
 
