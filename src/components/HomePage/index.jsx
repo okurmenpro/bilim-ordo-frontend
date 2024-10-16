@@ -10,7 +10,6 @@ import PopularCategories from "../PopularCategories";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
 
-
 function HomePage() {
   return (
     <div>

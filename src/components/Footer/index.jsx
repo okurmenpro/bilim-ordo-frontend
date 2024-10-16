@@ -61,7 +61,7 @@ const Footer = () => {
                                 <a href="">Bilim-Ordo Business</a>
                             </li>
                             <li>
-                                <a href="">Преподавайде на Bilim-Ordo</a>
+                                <a href="">Преподавайте на Bilim-Ordo</a>
                             </li>
                             <li>
                                 <a href="">скачать приложение</a>
