@@ -44,9 +44,29 @@ text-align: center;
 color: rgb(45, 47, 49);
 font-family: SF Pro Display;
 font-size: 16px;
-font-weight: 400;
+font-weight: 500;
 line-height: 150%;
 letter-spacing: -2%;
 text-align: center;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .Companystatistics h2{
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .Statistica{
+        width: 200px;
+    
+    }
+    .Statistica strong {
+        font-size: 38px;
+
+    }
+    .Statistica h3{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

@@ -8,28 +8,15 @@ import video from "../assets/video/Python3.mp4"
 import Reviews from '../components/Reviews'
 
 function Course() {
-  const price = 13.99;
-  const originalPrice = 74.99;
-  const discount = 81;
-  const daysLeft = 2;
-  const coupon = "ST15MT100124B";
-
   return (
     <div>
       <BannerCourse />
-      <Sidebar
-        price={price}
-        originalPrice={originalPrice}
-        discount={discount}
-        daysLeft={daysLeft}
-        courses={SidebarData}
-        coupon={coupon}
-        videoSrc={video}
-      />
+      <Sidebar />
       <MaterialCourse />
+      <TeacherProfile />
       <Reviews />
     </div>
-  )
+  );
 }
 
-export default Course
+export default Course;

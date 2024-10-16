@@ -4,8 +4,6 @@
 
 .banner-in img {
     height: 400px;
-    width: 1340px;
+    width: 1340px; 
     object-fit: cover;
 }
-
-

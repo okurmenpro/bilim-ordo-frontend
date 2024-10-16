@@ -20,12 +20,15 @@
 
 .courses-h1 p {
     font-size: 10px;
+    color: black;
+    margin-right: 14px;
 
 }
 
 .courses-p {
     display: flex;
     gap: 30px;
+    color: rgb(148, 147, 147);
 }
 
 .courses-p p {
@@ -57,6 +60,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    color: black;
 }
 
 .courses-flex h3 {

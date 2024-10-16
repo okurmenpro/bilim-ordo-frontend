@@ -19,7 +19,7 @@ function HomePage() {
       <CardContainer name="Учащиеся смотрят">
         <Card />
       </CardContainer>
-      <PopularCategories/>
+      <PopularCategories />
       <TeachSection />
       <InfoSection />
     </div>
