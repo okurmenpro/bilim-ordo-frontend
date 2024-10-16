@@ -1,9 +1,10 @@
 import React from "react";
 import MaterialCourse from "../components/MaterialCourse";
-import BannerCourse from "../components/BannerCourse";
+import BannerCourse from "../components/bannerCourse";
 import Sidebar from "../components/Sidebar";
 import Reviews from "../components/Reviews";
 import TeacherProfile from "../components/TeacherProfile";
+
 
 function Course() {
   return (
