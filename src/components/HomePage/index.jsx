@@ -11,9 +11,11 @@ import Courses from "../courses"
 import Companystatistics from "../Companystatistics"
 import CardContainer from '../CardContainer'
 import Card from "../Card";
+import PopularCategories from '../PopularCategories';
 import PopularCategories from "../popularCategories";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
+import Programmingexercises from "../Programmingexercises"
 
 function HomePage() {
   return (
@@ -25,6 +27,7 @@ function HomePage() {
         <Card />
       </CardContainer>
       <PopularCategories />
+      <Programmingexercises />
       <TeachSection />
       <InfoSection />
        <Courseskills />
