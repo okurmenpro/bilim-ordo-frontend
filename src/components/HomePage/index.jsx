@@ -14,6 +14,7 @@ import Card from "../Card";
 import PopularCategories from '../PopularCategories'
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
+import Programmingexercises from "../Programmingexercises"
 
 
 
@@ -29,6 +30,7 @@ function HomePage() {
         <Card />
       </CardContainer>
       <PopularCategories />
+      <Programmingexercises />
       <TeachSection />
       <InfoSection />
       
