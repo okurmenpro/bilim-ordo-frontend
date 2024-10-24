@@ -1,3 +1,8 @@
+import React from "react";
+import Banner from "../Banner";
+import Courses from "../courses";
+import Courseskills from "../Courseskills";
+
 
 
 import React from 'react'
@@ -22,6 +27,7 @@ function HomePage() {
       <PopularCategories />
       <TeachSection />
       <InfoSection />
+       <Courseskills />
     </div>
   );
 }
