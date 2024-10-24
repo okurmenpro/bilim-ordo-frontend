@@ -1,43 +1,52 @@
-.photos {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    margin-bottom: 40px;
-}
-
-.background {
-    margin-left: 17px;
-    width: 210px;
-    height: 210px;
-    border-radius: 100px;
-    background-color: #F5F5F5;
-    padding-left: -20px;
-    padding-top: 53px;
-    img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 .title {
     padding-top: 80px;
-    h2 {
-        color: #000000;
-        font-weight: 700;
-        font-size: 32px;
-        text-align: left;
-        padding-left: 100px;
-    }
+    margin: 0 auto;
+}
+
+.title h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.photos {
+    display: flex; /* Устанавливаем флекс-контейнер для карусели */
+    overflow-x: auto; /* Позволяет прокручивать элементы по горизонтали */
+    padding-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px; /* Расстояние между элементами */
+    scroll-snap-type: x mandatory; /* Устанавливаем "прилипание" при прокрутке */
 }
 
 .border-png {
-    p {
-        padding-top: 20px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 700;
-        color: #000000;
-    }
+    flex: 0 0 auto; /* Указывает, что элементы не будут растягиваться */
+    text-align: center; /* Центрируем текст под изображениями */
+    scroll-snap-align: start; /* Элементы "прилипают" к началу прокрутки */
+}
+
+.background {
+    width: 210px; /* Ширина контейнера */
+    height: 210px; /* Высота контейнера */
+    border-radius: 100px;
+    background-color: #F5F5F5;
+    display: flex; /* Flexbox для центрирования изображения внутри фона */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.background img {
+    width: 100px; /* Ширина изображения */
+    height: 100px; /* Высота изображения */
+}
+
+.border-png p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .dropdowns-pop-categories {
@@ -46,7 +55,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .dropdown-menu {
@@ -54,31 +62,39 @@
     margin-top: 180px;
 }
 
-@media screen and (max-width: 1024px) {
-    .title h2{
+/* Медиа-запрос для экранов шире 768px */
+@media screen and (max-width: 768px) {
+    .title h2 {
         font-weight: 700;
         font-size: 26px;
         text-align: left;
-        padding-left: 60px;
+        padding-left: 20px; /* Уменьшаем отступ для мобильных */
     }
+
+    .photos {
+        padding-left: 10px; /* Отступ для карусели */
+    }
+
+    .border-png {
+        width: 150px; /* Уменьшаем ширину для мобильных */
+    }
+
     .background {
-        margin-top: -20px;
-        width: 130px;
-        height: 130px;
+        width: 130px; /* Уменьшаем ширину фона */
+        height: 130px; /* Уменьшаем высоту фона */
     }
-    .background img{
-        margin-top: -25px;
-        width: 70px;
-        height: 70px;
+
+    .background img {
+        width: 70px; /* Уменьшаем ширину изображения */
+        height: 70px; /* Уменьшаем высоту изображения */
     }
-    .dropdown-toggle{
+
+    .border-png p {
+        font-size: 18px; /* Уменьшаем размер шрифта для мобильных */
+    }
+
+    .dropdown-toggle {
         width: 150px;
         font-size: 12px;
-    }
-    .border-png p {
-        padding-top: 2px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
     }
 }

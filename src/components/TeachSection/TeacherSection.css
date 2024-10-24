@@ -92,7 +92,6 @@
   color: #2d2f31;
 }
 
-@media screen and (max-width: 1024px) {
   .section1 {
     width: 180px;
     height: 290px;
@@ -140,4 +139,17 @@
     font-size: 14px;
     font-weight: 400;
   }
-}
+
+  @media screen and (max-width:768px){
+    .teachSection{
+      display: flex;
+      flex-direction: column;
+    }
+    .teachSectionImg{
+      margin: 0 auto;
+    }
+    .teacher{
+      margin: 0 auto;
+      padding-top: 140px;
+    }
+  }
