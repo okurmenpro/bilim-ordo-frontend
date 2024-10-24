@@ -1,10 +1,12 @@
-/* Основные стили для больших экранов */
+
 .Companystatistics {
     width: 1207px;
     height: 303px;
     margin: 0 auto;
+    margin-top: 80px;
+    font-family: Roboto;
+    margin-bottom: 40px;
 }
-
 .Companystatistics h2 {
     color: rgb(0, 0, 0);
     font-family: Roboto;
@@ -18,14 +20,13 @@
 .Statistics {
     margin-top: 61px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 }
-
 .Statistica {
     width: 260px;
     height: 202px;
 }
-
 .Statistica strong {
     color: rgb(164, 53, 240);
     font-family: SF Pro Display;
@@ -36,7 +37,16 @@
     text-align: center;
     text-transform: uppercase;
 }
-
+@media screen and (max-width:768px) {
+.Companystatistics h2{
+    margin-left: 40px;
+}
+.Statistics{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}   
+}
 .Statistica h3 {
     color: rgb(45, 47, 49);
     font-family: SF Pro Display;
@@ -46,7 +56,6 @@
     letter-spacing: 0%;
     text-align: center;
 }
-
 .Statistica p {
     color: rgb(45, 47, 49);
     font-family: SF Pro Display;
@@ -57,11 +66,10 @@
     text-align: center;
 }
 
-/* Медиа-запрос для экранов до 768px (телефоны) */
 @media screen and (max-width: 768px) {
     .Companystatistics {
         width: 100%;
-        padding: 0 10px; /* Отступы для мобильных устройств */
+        padding: 0 10px; 
     }
 
     .Companystatistics h2 {
@@ -72,17 +80,17 @@
 
     .Statistics {
         display: flex;
-        flex-direction: row; /* Элементы идут по горизонтали */
-        overflow-x: auto; /* Горизонтальная прокрутка */
-        scroll-snap-type: x mandatory; /* Горизонтальная карусель */
-        -webkit-overflow-scrolling: touch; /* Плавная прокрутка для мобильных устройств */
+        flex-direction: row; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
     }
 
     .Statistica {
-        min-width: 80%; /* Элементы занимают 80% ширины экрана */
+        min-width: 80%; 
         height: auto;
-        margin-right: 20px; /* Расстояние между элементами */
-        scroll-snap-align: start; /* Элементы будут выравниваться как слайды */
+        margin-right: 20px; 
+        scroll-snap-align: start; 
     }
 
     .Statistica strong {
