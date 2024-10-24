@@ -124,7 +124,7 @@ const Footer = () => {
                 <strong><span className='first-letter'>B</span>ILIM-ORDO</strong>
                 <p>© 2024 Bilim-Ordo, Inc.</p>
             </div>
-        </div>      
+        </div>   
     </footer>
   )
 }

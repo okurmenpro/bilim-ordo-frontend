@@ -6,6 +6,7 @@ import Sidebar from "../components/Sidebar"
 import { SidebarData } from '../data/Sidebar'
 import video from "../assets/video/Python3.mp4"
 import Reviews from '../components/Reviews'
+import TeacherProfile from '../components/TeacherProfile'
 
 function Course() {
   return (

@@ -18,6 +18,10 @@
     height: 145px;
     width: 258px;
 }
+.cart-1 h2{
+    width: 300px;
+    margin-top: 50px;
+}
 .cart h1{
     font-size: 18px;
     margin-top: 10px;

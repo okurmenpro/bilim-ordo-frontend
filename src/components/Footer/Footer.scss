@@ -43,6 +43,7 @@ ul li a {
     background-color: #2d2f31;
     color: white;
     border: 1px solid white;
+    display: none;
 }
 
 .icon1 {
@@ -137,15 +138,13 @@ ul li a {
     gap: 10px;
     display: block;
 }
-.media_top{
-    display: none;
-}
-.media-top{
-    display: block;
-}
-.media-code{
-    display: none;
-}
+
+// .media-top{
+//     display: block;
+// }
+// .media-code{
+//     display: none;
+// }
 .lines{
     display: none;
 }
@@ -161,6 +160,7 @@ ul li a {
         width: 768px;
         margin-top: 100px;
         margin-bottom: -100px;
+        // margin-left: 300px;
     }
     .footer-business{
         width: 768px;
@@ -193,13 +193,14 @@ ul li a {
         display: none;
     }
     .media_top{
-        display: block;
         width: 300px;
         font-size: 18px;
         padding-left: -70px;
         text-align: center;
-
     }
+    // .media-code{
+    //     display: block;
+    // }
     .media-top{
         display: none;
         text-align: left;
@@ -227,8 +228,8 @@ ul li a {
         margin-left: 30px;
     }
     .categories{
-        margin-left: -145px;
-        margin-top: -40px;
+        margin-left: -48px;
+        // margin-top: -40px;
         margin-bottom: -50px;
     }
     .active{
@@ -315,6 +316,7 @@ ul li a {
 
     .info-left {
         gap: 50px;
+        // margin-left: 100px;
     }
 
     .info-bottom {
@@ -332,7 +334,7 @@ ul li a {
     }
 
     .footer-business-strong {
-        margin-left: -55px;
+        padding-top: 5px;
         width: 500px;
 
         strong {
@@ -344,4 +346,10 @@ ul li a {
     .info-right {
         padding: 20px;
     }
+    .active{
+        width: 1150px;
+    }
 }
+
+
+

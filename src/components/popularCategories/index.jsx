@@ -10,7 +10,7 @@ const PopularCategories = () => {
 
   return (
     <>
-      <div className="title">
+      <div className="title container">
         <h2>Популярные категории</h2>
       </div>
       <div className="photos">
