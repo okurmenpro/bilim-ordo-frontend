@@ -19,7 +19,7 @@ const PopularCategories = () => {
             <div className="background">
               <img src={elements.img} alt="" />
             </div>
-            <h6>{elements.title}</h6>
+            <p>{elements.title}</p>
           </div>
         ))}
       </div>

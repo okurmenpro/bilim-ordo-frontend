@@ -1,0 +1,107 @@
+.teacher-profile {
+    width: 900px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: left;
+
+    h1 {
+        font-family: Georgia;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36.36px;
+        text-align: left;
+        color: #2D2F31;
+    }
+
+    h2 {
+        color: #A435F0;
+        text-decoration: underline;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32.81px;
+        text-align: left;
+    }
+
+    h3 {
+        color: #707070;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.44px;
+        text-align: left;
+    }
+
+    .aboutTeacher {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        margin-top: 30px;
+
+        .icon {
+            width: 19.99px;
+            height: 19.2px;
+            margin-right: 10px;
+        }
+    }
+
+    #teach-img {
+        width: 11.2rem !important;
+        height: 11.2rem !important;
+        border-radius: 50%;
+    }
+
+    .statistics {
+        margin-left: 40px;
+    }
+
+    .aboutStatistic {
+        display: flex;
+        align-items: center;
+        width: 250px;
+    }
+
+    .aboutStatistic img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .aboutStatistic strong {
+        color: #2d2f31;
+        font-family: var(--font-stack-text);
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+        text-align: left;
+        color: #5B5B5B;
+    }
+
+    .toggle-button {
+        margin-right: 500px;
+        color: #5022c3;
+    }
+
+    .toggleButton {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .arrow {
+        margin-right: 395px;
+        margin-top: -48px;
+        color: #5022c3;
+    }
+}

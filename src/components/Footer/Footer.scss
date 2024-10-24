@@ -142,3 +142,41 @@ ul li a {
 .info-right {
     padding: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 20px 20px;
+    }
+
+    .info-left {
+        gap: 50px;
+    }
+
+    .info-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .footer-business {
+        height: auto;
+        padding: 10px;
+    }
+
+    .footer-business-strong {
+        margin-left: -55px;
+        width: 500px;
+
+        strong {
+            width: 200px;
+            font-size: 18px;
+        }
+    }
+
+    .info-right {
+        padding: 20px;
+    }
+}
