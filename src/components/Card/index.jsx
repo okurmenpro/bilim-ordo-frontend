@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Card.css';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { CartContext } from "../CartContext";
+import { NavLink } from 'react-router-dom';
 
 function Card() {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -35,27 +36,26 @@ function Card() {
     <div>
       <div className="flex">
         {products.map((item, index) => {
-
           const isInCart = cartItems.some(cartItem => cartItem.name === item.name);
-
           return (
             <div key={index} className="cart">
-              <img src={item.img} alt={item.name} />
-              <h1>{item.name}</h1>
-              <h4>Юрий Аллахвердов</h4>
-              <div className="cart-flex">
-                <h2>4,3</h2>
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <p>(3 3316)</p>
-              </div>
-              <div className="cart-top">
-                <h3>{item.price}</h3>
-              </div>
-
+              <NavLink to="/course">
+                <img src={item.img} alt={item.name} />
+                <h2>{item.name}</h2>
+                <h3>Юрий Аллахвердов</h3>
+                <div className="cart-flex">
+                  <h2>4,3</h2>
+                  <MdOutlineStarPurple500 />
+                  <MdOutlineStarPurple500 />
+                  <MdOutlineStarPurple500 />
+                  <MdOutlineStarPurple500 />
+                  <MdOutlineStarPurple500 />
+                  <p>(3 3316)</p>
+                </div>
+                <div className="cart-top">
+                  <p>{item.price}</p>
+                </div>
+              </NavLink>
               <button
                 onClick={() => handleAddToCart(item)}
                 className="add-to-cart-button"

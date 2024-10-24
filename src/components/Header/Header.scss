@@ -9,7 +9,9 @@
   width: 100%;
   z-index: 1;
   background-color: #fefefe;
+
   h2 {
+    width: 130px;
     font-weight: 700;
     font-size: 20px;
     padding-top: 11px;
@@ -112,6 +114,82 @@
   transition: 0.3s ease;
 }
 
+@media screen and (max-width: 1024px) {
+  .head {
+    align-items: center;
+    padding: 14px 20px;
+    gap: 20px;
+
+    h2 {
+      font-size: 18px;
+      width: 110px;
+    }
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  #active-btn {
+    margin-right: 10px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .icons {
+    gap: 10px;
+
+    img {
+      width: 47px;
+      height: 35px;
+    }
+  }
+
+  .sign-up {
+    width: 90px;
+    font-size: 9px !important;
+    padding: 0 3px;
+  }
+
+  .login {
+    width: 50px;
+    font-size: 10px !important;
+    padding: 10px 10px;
+  }
+
+  .input-group {
+    align-items: center;
+  }
+
+  .btn-outline-secondary {
+    height: 35px;
+  }
+
+  .cate-btn {
+    width: 90px;
+    height: 37px;
+    padding: 4px 3px !important;
+  }
+
+  .search {
+    width: 250px !important;
+
+    .form-control {
+      width: 100px !important;
+    }
+  }
+
+  .input-group{
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+    input{
+      width: 150px;
+    }
+  }
+}
+
 .cart-count {
   position: absolute;
   width: 22px;
@@ -124,4 +202,25 @@
   margin-top: -10px;
   margin-left: -20px;
   line-height: 1.5;
+}
+
+#search {
+  flex-grow: 1;
+  transition: width 0.3s ease;
+  width: 300px;
+
+  .input-group {
+    width: 100%; 
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.expanded {
+
+  .input-group {
+    width: 100%;
+  }
 }

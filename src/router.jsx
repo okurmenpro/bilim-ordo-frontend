@@ -7,6 +7,7 @@ import Course from './pages/Course';
 import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
+import Admin from "./pages/Admin"
 
 export const Router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ export const Router = createBrowserRouter([
         path: "/teacherprofile",
         element: <TeacherProfile />
       },
+      {
+        path: "/admin",
+        element: <Admin />
+      },
+
     ]
   }
 ]);
