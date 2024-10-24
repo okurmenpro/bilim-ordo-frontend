@@ -1,6 +1,6 @@
-.footer{
+.footer {
     width: 100%;
-    background-color:#2d2f31 ;
+    background-color: #2d2f31;
     padding: 20px 40px;
     margin: 0 auto;
 }
@@ -14,7 +14,7 @@
 .info-left {
     display: flex;
     gap: 100px;
-    padding:39px 0px 64px;
+    padding: 39px 0px 64px;
 }
 
 ul {
@@ -35,15 +35,16 @@ ul li a {
 }
 
 .btn {
-    padding: 5px 30px ;
+    padding: 5px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color:#2d2f31;
+    background-color: #2d2f31;
     color: white;
     border: 1px solid white;
 }
+
 .icon1 {
     width: 30px;
     height: 30px;
@@ -54,15 +55,18 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h2 {
-        font-size: 30px;  
+        font-size: 30px;
     }
 }
-.footer-png1{
-    width:80px;
+
+.footer-png1 {
+    width: 80px;
     height: 30px;
 }
-.footer-png4{
+
+.footer-png4 {
     width: 80px;
     height: 30px;
     margin-top: 3px;
@@ -76,20 +80,32 @@ ul li a {
 .info-bottom p {
     color: white;
 }
-.categori ul li a:hover{
+
+.categori ul li a:hover {
     text-decoration: underline;
 }
-.info-bottom strong span{
-    color: purple;
+
+.info-bottom {
+    .first-letter {
+        color: purple;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
 }
-.info-bottom strong{
-    color: white ;
+
+.info-bottom strong {
+    color: white;
     font-size: 40px;
 }
-.info-right button:hover{
-    background-color:#1c1d1f;
+
+.btn:hover {
+    background-color: rgb(154, 143, 143);
+    color: black;
 }
-.footer-business{
+
+.footer-business {
     border: 0.3px solid rgb(199, 194, 194);
     border-top: none;
     border-left: none;
@@ -97,7 +113,7 @@ ul li a {
     height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .footer-business2 {
@@ -105,20 +121,24 @@ ul li a {
     display: flex;
     justify-content: space-between;
 }
-.footer-business-strong strong{
+
+.footer-business-strong strong {
     color: white;
     font-size: 20px;
     font-weight: 800;
-    margin-left: 70px;   
+    margin-left: 70px;
 }
-.footer-business-strong strong span{
+
+.footer-business-strong strong span {
     color: #C0C4FC;
-    padding: 5px;   
+    padding: 5px;
 }
-.footer-business-img{
+
+.footer-business-img {
     display: flex;
-    gap: 10px;   
+    gap: 10px;
 }
-.info-right{
-    padding: 30px ;
+
+.info-right {
+    padding: 30px;
 }

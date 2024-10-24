@@ -1,5 +1,8 @@
 .faq-content {
   margin-bottom: 50px;
+  width: 670px;
+  margin-right: 40px;
+
   .faq-title {
     font-size: 40px;
     font-weight: 700;
@@ -7,12 +10,14 @@
     justify-content: start;
     margin-bottom: 40px;
   }
+
   .accordions-container {
     display: flex;
     flex-direction: column;
     justify-content: start;
     max-width: 670px;
     gap: 20px 0px;
+
     .accordion {
       display: flex;
       align-items: center;
@@ -21,13 +26,16 @@
       padding: 18px 20px;
       user-select: none;
       cursor: pointer;
+      border-radius: 8px;
 
       .accordion-title {
         display: flex;
         align-items: center;
+
         &::before {
           content: "•";
         }
+
         h3 {
           margin: 0px 0px 0px 20px;
           font-size: 20px;
@@ -38,12 +46,14 @@
       .icon-arrow-drop {
         display: flex;
         align-items: start;
+
         img {
           width: 10px;
           max-height: 5px;
           transition: 0.2s;
         }
       }
+
       .icon-down {
         img {
           transform: rotate(180deg);
@@ -51,23 +61,37 @@
         }
       }
     }
+
+    .accordion-open {
+      border-radius: 8px 8px 0px 0px;
+    }
+
     .none {
       display: none;
+
       .child-content {
         display: none;
       }
     }
+
     .container-childs {
       display: flex;
+
       .child-content {
         display: flex;
         align-items: center;
         padding: 5px 20px;
+        background: #f2f2f2;
+        width: 100%;
+        border-radius: 0px 0px 8px 8px;
+
         ul {
           padding: 0px;
           margin: 0px;
+
           li {
             cursor: default;
+
             p {
               user-select: none;
             }
