@@ -6,10 +6,9 @@ import Courses from "../courses"
 import Companystatistics from "../Companystatistics"
 import CardContainer from '../CardContainer'
 import Card from "../Card";
-import PopularCategories from '../popularCategories';
+import PopularCategories from "../popularCategories";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
-
 
 function HomePage() {
   return (

@@ -1,14 +1,19 @@
-.flex {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 70px;
+.carousel-container {
+    display: flex; /* Устанавливаем флекс-контейнер */
+    overflow-x: auto; /* Позволяет прокручивать элементы по горизонтали */
+    scroll-snap-type: x mandatory; /* Устанавливает прокрутку с "прилипанием" */
+    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+    gap: 30px; /* Расстояние между элементами */
+    padding: 10px 0; /* Отступы сверху и снизу */
 }
 
 .cart {
-    width: 258px;
-    height: 296px;
-    margin: 0 auto;
+    scroll-snap-align: start; /* Элементы "прилипают" к началу прокрутки */
+    flex: 0 0 auto; /* Указывает, что элементы не будут растягиваться */
+    width: 258px; /* Ширина элементов */
+    height: 296px; /* Высота элементов */
+    display: flex; /* Добавлено для вертикального выравнивания */
+    flex-direction: column; /* Выравнивание по вертикали */
 }
 
 .cart img {
@@ -29,24 +34,24 @@
     color: gray;
     font-size: 17px;
     margin-left: -105px;
-
 }
 
 .cart-flex {
     display: flex;
     align-items: center;
     margin-top: -20px;
-   gap: 5px;
-   color: yellow;
+    gap: 5px;
+    color: yellow;
 }
 
 .cart-flex h2 {
     font-size: 20px;
     text-align: left;
     color: black;
-    margin-top: 18px
+    margin-top: 18px;
 }
-.cart-flex p{
+
+.cart-flex p {
     color: black;
 }
 
@@ -69,7 +74,6 @@
     margin-top: 5px;
 }
 
-
 .add-to-cart-button {
     background-color: black;
     color: white;
@@ -81,21 +85,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .add-to-cart-button:hover {
+}
+
+.add-to-cart-button:hover {
     background-color: #28a745;
 }
 
+/* Медиа-запрос для экранов шире 720px */
 @media (max-width: 720px) {
+    .carousel-container {
+        flex-direction: row; /* Горизонтальное расположение для карусели */
+    }
+
     .cart {
-        width: 200px;
-        height: 296px;
+        width: 200px; /* Уменьшенная ширина для мобильных */
+        height: auto; /* Автоматическая высота для мобильных */
     }
 
     .cart img {
         width: 200px;
         height: 125px;
+    }
+    .star-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -150px;
+    }
+    .cart-flex{
+        display: flex;
+        margin-top: 10px;
     }
 
     .cart h2 {
@@ -109,5 +128,16 @@
         margin-left: -45px;
     }
 
+    /* Новая часть для вертикального расположения цен */
+    .cart-top {
+        flex-direction: column; /* Вертикальное расположение */
+        align-items: flex-start; /* Выравнивание по левому краю */
+        margin-top: 10px; /* Отступ сверху для отделения от других элементов */
+    }
 
+    .cart-top p {
+        font-size: 17px; /* Размер шрифта для цены */
+        color: black; /* Цвет текста */
+        margin: 0; /* Убираем отступы */
+    }
 }
