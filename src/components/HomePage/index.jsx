@@ -6,9 +6,10 @@ import Courses from "../courses"
 import Companystatistics from "../Companystatistics"
 import CardContainer from '../CardContainer'
 import Card from "../Card";
-import PopularCategories from '../popularCategories';
+import PopularCategories from '../PopularCategories';
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
+import Programmingexercises from "../Programmingexercises"
 
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
         <Card />
       </CardContainer>
       <PopularCategories />
+      <Programmingexercises />
       <TeachSection />
       <InfoSection />
     </div>
