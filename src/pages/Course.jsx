@@ -6,6 +6,7 @@ import { SidebarData } from "../data/Sidebar";
 import video from "../assets/video/Python3.mp4";
 import Reviews from "../components/Reviews";
 import TeacherProfile from "../components/TeacherProfile";
+import Course2 from "../components/Course/index.jsx";
 
 function Course() {
   const price = 13.99;
@@ -25,8 +26,9 @@ function Course() {
         courses={SidebarData}
         coupon={coupon}
         videoSrc={video}
-      />
+        />
       <MaterialCourse/>
+      <Course2 />
       <TeacherProfile />
       <Reviews />
     </div>
