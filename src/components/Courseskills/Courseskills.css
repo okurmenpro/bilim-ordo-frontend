@@ -1,4 +1,4 @@
-.Pythonskills{
+.Course-skills{
 width: 800px;
 height: 310px;
 border: 1px solid gray;
@@ -6,7 +6,7 @@ margin: 0 auto;
 border-radius: 5px;
 
 }
-.Pythonskills h1{
+.Course-skills h2{
     color: black;
     font-weight: bold;
     font-size: 20px;
