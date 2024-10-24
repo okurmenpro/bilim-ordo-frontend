@@ -1,70 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.Companystatistics{
-    width: 1250px;
+.Companystatistics {
+    width: 1207px;
     height: 303px;
     margin: 0 auto;
     margin-top: 80px;
     font-family: Roboto;
     margin-bottom: 40px;
 }
-.Companystatistics h2{
-color: rgb(0, 0, 0);
-font-family: Roboto;
-font-size: 32px;
-font-weight: 700;
-line-height: 38px;
+.Companystatistics h2 {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
 }
-.Statistics{
-    margin-top: 60px;
+
+.Statistics {
+    margin-top: 61px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.Statistica{
+.Statistica {
     width: 260px;
     height: 202px;
 }
-.Statistica strong{
-color: rgb(164, 53, 240);
-font-size: 44px;
-font-weight: 700;
-line-height: 121.2%;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
-}
-.Statistica h3{
-color: rgb(45, 47, 49);
-font-size: 18px;
-font-weight: 700;
-line-height: 150%;
-}
-.Statistica p{
-color: rgb(45, 47, 49);
-font-size: 16px;
-font-weight: 400;
-line-height: 150%;
-letter-spacing: -2%;
-text-align: center;
+.Statistica strong {
+    color: rgb(164, 53, 240);
+    font-family: SF Pro Display;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 121.2%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
 }
 @media screen and (max-width:768px) {
 .Companystatistics h2{
     margin-left: 40px;
-   
 }
 .Statistics{
     display: flex;
     justify-content: center;
     gap: 30px;
+}   
 }
-    
+.Statistica h3 {
+    color: rgb(45, 47, 49);
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.Statistica p {
+    color: rgb(45, 47, 49);
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -2%;
+    text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .Companystatistics {
+        width: 100%;
+        padding: 0 10px; 
+    }
 
+    .Companystatistics h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
 
+    .Statistics {
+        display: flex;
+        flex-direction: row; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
+    }
 
+    .Statistica {
+        min-width: 80%; 
+        height: auto;
+        margin-right: 20px; 
+        scroll-snap-align: start; 
+    }
 
+    .Statistica strong {
+        font-size: 30px;
+    }
 
+    .Statistica h3 {
+        font-size: 14px;
+    }
 
- 
+    .Statistica p {
+        font-size: 13px;
+    }
+}

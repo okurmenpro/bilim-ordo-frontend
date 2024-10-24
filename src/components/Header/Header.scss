@@ -3,27 +3,24 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 14px 50px 14px 50px;
+  padding: 14px 50px;
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
   z-index: 1;
   background-color: #fefefe;
+
   h2 {
+    width: 130px;
     font-weight: 700;
     font-size: 20px;
-    padding-top: 11px;
     color: #000;
 
     span {
       color: purple;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      text-decoration: none;
     }
   }
 }
-
 
 .aback {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,7 +43,6 @@
 
 #active-btn {
   position: relative;
-  display: flex;
   gap: 10px;
 }
 
@@ -74,7 +70,7 @@
 }
 
 .btn-outline-secondary {
-  padding: 15px 15px 15px 15px !important;
+  padding: 15px;
   margin-top: 10px;
   margin-left: 5px;
 }
@@ -91,9 +87,9 @@
 
 .sign-up {
   background: #2d2f31;
-  color: #ffffff !important;
+  color: #ffffff;
   border-radius: 4px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .sign-up:hover {
@@ -126,22 +122,132 @@
   line-height: 1.5;
 }
 
-#search {
-  flex-grow: 1; // Позволяет инпуту занимать доступное пространство
-  transition: width 0.3s ease; // Плавный переход
+@media screen and (max-width: 768px) {
+  .buttons {
+    display: none;
+  }
 
-  .input-group {
-    width: 100%; // Устанавливаем ширину группы ввода на 100%
+  .burger-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
-    input {
-      width: 100%; // Инпут будет занимать 100% ширины группы
+  .center-title {
+    margin: 0 auto;
+    // width: 500px;
+
+    h2{
+      width: 300px;
+      margin: 0 auto;
+      margin-left: 100px;
     }
   }
-}
 
-.expanded {
-  // Увеличьте ширину контейнера, если необходимо
-  .input-group {
-    width: 100%; // Или можно задать конкретную ширину
+  .right-side {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #search {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+  }
+
+  .cart-count {
+    margin-left: 0;
+    margin-top: -15px;
+  }
+
+  .icons {
+    margin-right: 10px;
+  }
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 20px; 
+  }
+
+  .auth-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .auth-link {
+    text-decoration: none;
+    color: #2d2f31;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .auth-link:hover {
+    color: rgb(151, 13, 151);
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+        .arrow {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .btn-russian {
+    padding: 10px;
+    background-color: #2d2f31;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 10px 0;
+  }
+}
+

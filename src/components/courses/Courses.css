@@ -1,9 +1,20 @@
+/* Основные стили для экранов шире 768px */
 .courses {
     width: 690px;
     height: 175px;
     display: flex;
     gap: 10px;
     margin: 15px auto;
+}
+
+.courses-left img {
+    width: 400px;
+    height: 170px;
+}
+
+.courses-right {
+    border-bottom: 1px solid gray;
+    padding: 10px;
 }
 
 .courses-h1 {
@@ -15,14 +26,11 @@
     font-size: 13px;
     font-weight: 500;
     color: black;
-    text-align: left;
 }
 
 .courses-h1 p {
     font-size: 10px;
     color: black;
-    margin-right: 14px;
-
 }
 
 .courses-p {
@@ -35,46 +43,16 @@
     font-size: 10px;
     text-align: left;
     margin-top: -6px;
-
 }
 
 .courses-p h3 {
     font-size: 10px;
     padding-right: 13px;
     text-decoration: line-through;
-
-}
-
-.courses-3text p {
-    font-size: 10px;
-    text-align: left;
-    color: grey;
-    margin-bottom: -8px;
 }
 
 .courses-3text {
     margin-top: -10px;
-}
-
-.courses-flex {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: black;
-}
-
-.courses-flex h3 {
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.courses-flex p {
-    font-size: 10px;
-}
-
-.star-5 {
-    font-size: 14px;
-    margin-top: 2px;
 }
 
 .courses-3text p {
@@ -84,11 +62,71 @@
     color: grey;
 }
 
-.courses-left img {
-    width: 400px;
-    height: 170px;
+.courses-flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
 }
 
-.courses-right {
-    border-bottom: 1px solid gray;
+.star-5 {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* Медиа-запрос для мобильных устройств до 768px */
+@media screen and (max-width: 768px) {
+    .courses-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .courses {
+        flex-shrink: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: center;
+    }
+
+    .courses-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .courses-right {
+        text-align: center;
+    }
+
+    .courses-h1 h2 {
+        font-size: 14px;
+    }
+
+    .courses-h1 p {
+        font-size: 12px;
+    }
+
+    .courses-p p {
+        font-size: 12px;
+    }
+
+    .courses-p h3 {
+        font-size: 12px;
+    }
+
+    .courses-flex h3 {
+        font-size: 14px;
+    }
+
+    .courses-flex p {
+        font-size: 12px;
+    }
+
+    .courses-3text p {
+        font-size: 12px;
+    }
 }
