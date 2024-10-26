@@ -1,7 +1,7 @@
 .materials {
     padding: 20px 50px;
-    width: 1200px;
-    margin: 0 auto;
+    width: 1000px;
+    
 }
 
 .materials h2 {
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1100px;
+    width: 900px;
     height: 60px;
     background-color: #f1f1f2;
     border: 1px solid gray;
