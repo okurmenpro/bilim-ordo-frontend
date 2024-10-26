@@ -6,6 +6,7 @@ import { GrSearch } from "react-icons/gr";
 import Dropdown from '../Dropdown/Index';
 import { NavLink } from 'react-router-dom';
 import { CartContext} from '../CartContext'
+import { IoMenu } from "react-icons/io5";
 
 
 
@@ -33,7 +34,7 @@ function Header() {
         <div className="left-side">
           {isMobile && (
             <button className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
-              <GiHamburgerMenu size={25} />
+              <IoMenu size={25} />
             </button>
           )}
           <div className="top_header_media">
