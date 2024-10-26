@@ -7,7 +7,7 @@ import Course from './pages/Course';
 import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
-import Admin from "./pages/Admin"
+import SignUp from "./components/SignUp";
 
 export const Router = createBrowserRouter([
   {
@@ -44,10 +44,9 @@ export const Router = createBrowserRouter([
         element: <TeacherProfile />
       },
       {
-        path: "/admin",
-        element: <Admin />
+        path: "/SignUp",
+        element: <SignUp/>
       },
-
     ]
   }
 ]);

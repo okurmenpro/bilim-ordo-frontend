@@ -5,13 +5,18 @@ import Courseskills from "../Courseskills";
 
 
 
+
 import Companystatistics from "../Companystatistics"
 import CardContainer from '../CardContainer'
-import Card from "../Card";
 import PopularCategories from "../popularCategories";
+import Card from "../Card";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
 import Programmingexercises from "../Programmingexercises"
+
+
+
+
 
 function HomePage() {
   return (
@@ -26,7 +31,8 @@ function HomePage() {
       <Programmingexercises />
       <TeachSection />
       <InfoSection />
-       <Courseskills />
+      
+      
     </div>
   );
 }

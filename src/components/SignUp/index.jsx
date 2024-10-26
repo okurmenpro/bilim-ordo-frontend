@@ -5,6 +5,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./SignUp.scss"
 
 function SignUp() {
   const { Formik } = formik;
@@ -20,6 +22,8 @@ function SignUp() {
   });
 
   return (
+
+    <div className='signup_form'>
     <Formik
       validationSchema={schema}
       onSubmit={console.log}
@@ -140,6 +144,7 @@ function SignUp() {
         </Form>
       )}
     </Formik>
+    </div>
   );
 }
 

@@ -5,8 +5,10 @@ import earth from '../../assets/svg/earth.svg';
 import { GrSearch } from "react-icons/gr";
 import Dropdown from '../Dropdown/Index';
 import { NavLink } from 'react-router-dom';
-import { CartContext } from '../CartContext';
-import { GiHamburgerMenu } from "react-icons/gi"; 
+import { CartContext} from '../CartContext'
+
+
+
 
 function Header() {
   const providers = ['Udemy Business', 'Преподавайте на Udemy'];
@@ -40,37 +42,13 @@ function Header() {
             </NavLink>
           </div>
         </div>
+        <div className="buttons">
+          <button className="login">Войти</button>
 
-        {!isMobile && <Dropdown id="dropdowns" />}
-
-        {(!isMobile || menuOpen) && (
-          <div className="buttons">
-            {providers.map((provider) => (
-              <div key={provider}>
-                <button id="active-btn">{provider}</button>
-                {provider === 'Преподавайте на Udemy' && <hr className="divider" />}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {!isMobile && (
-          <div id="search">
-            <div className="input-group mb-3">
-              <input
-                className="form-control"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <div className="input-group-append">
-                <button className="btn btn-outline-secondary">
-                  <GrSearch />
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-
+                 
+          <a href='/SignUp' className="sign-up"> Зарегистрироваться</a>
+   
+        </div>   
         <div className="icons">
           <NavLink to="/basket">
             <img src={cart} alt="Cart" />
