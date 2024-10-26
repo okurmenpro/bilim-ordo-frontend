@@ -4,23 +4,32 @@ import { ImAlarm } from "react-icons/im";
 import { SidebarData } from '../../data/Sidebar';
 import { HiMiniXMark } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
+import video from "../../assets/video/Python3.mp4";
 
-function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc }) {
+import { MdLiveTv } from "react-icons/md";
+import { IoCode } from "react-icons/io5";
+import { VscFiles } from "react-icons/vsc";
+import { FaRegFolderClosed } from "react-icons/fa6";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { CgInfinity } from "react-icons/cg";
+import { TfiCup } from "react-icons/tfi";
+
+function Sidebar() {
     return (
         <div className='  container1 Sidebar'>
             <div className='video'>
-                <video src={videoSrc} controls></video>
+                <video src={video} controls></video>
             </div>
 
             <div className='list5'>
                 <div className='price1'>
-                    <div className="price-value">{price}$</div>
-                    <div className='original-price'>{originalPrice}$</div>
-                    <div className='discount-div'>Скидка {discount}%</div>
+                    <div className="price-value">{SidebarData.price}$</div>
+                    <div className='original-price'>{SidebarData.originalPrice}$</div>
+                    <div className='discount-div'>Скидка {SidebarData.discount}%</div>
                 </div>
                 <div className='day'>
                     <ImAlarm className='watch' />
-                    <div className='watch-text'>Данная цена доступна eще  <a href="">{daysLeft}дней!</a></div>
+                    <div className='watch-text'>Данная цена доступна eще  <a href="">{SidebarData.daysLeft}дней!</a></div>
                 </div>
 
                 <button className='add-btn'>Добавить в корзину</button>
@@ -42,13 +51,29 @@ function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc })
                     <h3>Этот курс включает:</h3>
 
                     <div className='discont__map1'>
-                        {SidebarData.map((item) => (
-                            <div key={item.id}     className='discont__map'>
-                                <img src={item.img} alt={item.title} />
-                                <h5>{item.title}</h5>
-                            </div>
-                        ))}
+                        <div className='discont__map'>
+                            <MdLiveTv className='map1-icon' /><h5>{SidebarData.video}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <IoCode className='map1-icon' /><h5>{SidebarData.exercises}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <VscFiles className='map1-icon' /><h5>{SidebarData.article}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <FaRegFolderClosed className='map1-icon' /><h5>{SidebarData.download}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <MdOutlinePhoneAndroid className='map1-icon' /><h5>{SidebarData.phone}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <CgInfinity className='map1-icon' /><h5>{SidebarData.access}</h5>
+                        </div>
+                        <div className='discont__map'>
+                            <TfiCup className='map1-icon' /><h5>{SidebarData.certificate}</h5>
+                        </div>
                     </div>
+
                 </div>
                 <div className='share_it'>
                     <button>Поделиться</button>
@@ -57,7 +82,7 @@ function Sidebar({ price, originalPrice, discount, daysLeft, coupon, videoSrc })
                 <span>Использовать купон</span>
 
                 <div className='used_coupon'>
-                    <p>Использован купон <a href="">{coupon}</a><br />
+                    <p>Использован купон <a href="">{SidebarData.coupon}</a><br />
                         Купон Udemy</p>
                     <button className='icons_x'> <HiMiniXMark /></button>
                 </div>

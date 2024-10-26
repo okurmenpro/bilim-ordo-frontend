@@ -4,7 +4,7 @@ import { GrLanguage } from "react-icons/gr";
 import { FaRegStar } from "react-icons/fa";
 import { BsExclamationOctagon } from "react-icons/bs";
 
-function Banner() {
+function BannerCourse() {
     return (
         <div className='course__banner'>
             <div className='img__text'>
@@ -39,4 +39,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default BannerCourse

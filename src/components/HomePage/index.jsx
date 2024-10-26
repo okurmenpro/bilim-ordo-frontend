@@ -1,12 +1,21 @@
-import React from 'react'
-import Banner from '../Banner'
-import Courses from "../courses"
+import React from "react";
+import Banner from "../Banner";
+import Courses from "../courses";
+import Courseskills from "../Courseskills";
+
+
+
+
 import Companystatistics from "../Companystatistics"
 import CardContainer from '../CardContainer'
+import PopularCategories from "../PopularCategories";
 import Card from "../Card";
-import PopularCategories from '../PopularCategories';
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
+import Programmingexercises from "../Programmingexercises"
+
+
+
 
 
 function HomePage() {
@@ -18,9 +27,12 @@ function HomePage() {
       <CardContainer name="Учащиеся смотрят">
         <Card />
       </CardContainer>
-      <PopularCategories/>
+      <PopularCategories />
+      <Programmingexercises />
       <TeachSection />
       <InfoSection />
+      
+      
     </div>
   );
 }

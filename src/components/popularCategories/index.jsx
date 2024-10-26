@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { popular_categories } from "../../data/popular_categories";
-import "./PopularCategories.scss";
+import "./PopularCategories.css";
 
 const PopularCategories = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -10,7 +10,7 @@ const PopularCategories = () => {
 
   return (
     <>
-      <div className="title">
+      <div className="title container">
         <h2>Популярные категории</h2>
       </div>
       <div className="photos">
@@ -19,7 +19,7 @@ const PopularCategories = () => {
             <div className="background">
               <img src={elements.img} alt="" />
             </div>
-            <h6>{elements.title}</h6>
+            <p>{elements.title}</p>
           </div>
         ))}
       </div>

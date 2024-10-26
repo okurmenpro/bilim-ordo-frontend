@@ -23,22 +23,26 @@
   color: #2d2f31 !important;
   text-decoration: none !important;
 }
+
 .teachSectionImg {
   display: flex;
   width: 670px;
   height: 412px;
 }
+
 .section1 {
   width: 325px;
   height: 412px;
   flex-direction: column;
   margin-right: 20px;
 }
+
 .section2 {
   width: 325px;
   height: 412px;
   flex-direction: column;
 }
+
 .teacherImg {
   width: 325px;
   height: 230px;
@@ -46,12 +50,14 @@
   margin-bottom: 20px;
   object-fit: cover;
 }
+
 .teacherImg1 {
   width: 325px;
   height: 162px;
   border-radius: 12px;
   object-fit: cover;
 }
+
 .teacherImg2 {
   width: 325px;
   height: 162px;
@@ -59,6 +65,7 @@
   margin-bottom: 20px;
   object-fit: cover;
 }
+
 .teacherImg3 {
   width: 325px;
   height: 230px;
@@ -78,8 +85,71 @@
   color: #ffffff;
   border: none;
 }
+
 .teachSectionContent {
   font-size: 22.5px;
   font-weight: 400;
   color: #2d2f31;
 }
+
+  .section1 {
+    width: 180px;
+    height: 290px;
+    flex-direction: column;
+    margin-right: 5px;
+  }
+
+  .section2 {
+    width: 180px;
+    height: 290px;
+    flex-direction: column;
+  }
+
+  .teacherImg {
+    width: 170px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .teacherImg1 {
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .teacherImg2 {
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .teacherImg3 {
+    width: 170px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .teachSectionTitle {
+    margin-top: -110px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .teachSectionContent {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width:768px){
+    .teachSection{
+      display: flex;
+      flex-direction: column;
+    }
+    .teachSectionImg{
+      margin: 0 auto;
+    }
+    .teacher{
+      margin: 0 auto;
+      padding-top: 140px;
+    }
+  }

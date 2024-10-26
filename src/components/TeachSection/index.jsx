@@ -9,6 +9,7 @@ export default function TeachSection() {
     <>
       <div className="container">
         <div className="teachSection">
+
           <div className="teachSectionImg">
             <div className="section1">
               <img src={teach} alt="" className="teacherImg" />
