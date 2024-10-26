@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Banner";
-import Courses from "../courses";
+import Courses from "../Courses";
 import Companystatistics from "../Companystatistics";
 import CardContainer from "../CardContainer";
 import Card from "../Card";

@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialCourse from "../components/MaterialCourse";
-import BannerCourse from "../components/bannerCourse";
+import BannerCourse from "../components/BannerCourse";
 import Sidebar from "../components/Sidebar";
 import { SidebarData } from "../data/Sidebar";
 import video from "../assets/video/Python3.mp4";
