@@ -1,0 +1,78 @@
+
+.register-right {
+   padding-left: 20px;
+   padding-top: 45px;
+  }
+  .register{
+    display: flex;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  input {
+    width: 400px;
+    height: 60px;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: padding 0.3s ease;
+    margin-top: 10px;
+    border: none;
+   
+  }
+  
+  input::placeholder {
+    color: #999;
+    transition: 0.3s ease; 
+  }
+  input:focus,
+  input:not(:placeholder-shown) {
+    padding-top: 20px; 
+  }
+  input:focus::placeholder,
+  input:not(:placeholder-shown)::placeholder {
+    transform: translateY(-15px); 
+    font-size: 12px; 
+    color: #333; 
+  }
+  .register-footer{
+    display: flex;
+    gap: 10px;
+  }
+  .register-footer input{
+    width: 60px;
+  }
+  .register-footer p{
+    text-align: left;
+    padding-top: 20px;
+  }
+  .register-right button{
+    width: 400px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    border: none;
+  }
+ 
+  .register-right strong{
+    font-size: 10px;
+    margin-left: 90px;
+  }
+  .register-ali h5{
+    font-size: 12px;
+  }
+  .register-ali p{
+    padding-top: 5px;
+  }
+  .register-right h1{
+     text-align:left;
+     font-size:20px;
+     font-weight: 700;
+     margin-top: 10px; 
+  }

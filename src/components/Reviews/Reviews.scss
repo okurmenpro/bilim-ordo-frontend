@@ -1,0 +1,89 @@
+.reviews {
+    width: 808px;
+    height: 406px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    h2 {
+        font-family: Georgia;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36.36px;
+        text-align: left;
+        color: #2D2F31;
+    }
+
+    .reviews-carts {
+        display: flex;
+        margin-top: 32px;
+
+        .cart {
+            width: 384px;
+            height: 258px;
+
+            .first {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                .avatar {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100px;
+                }
+
+                .f-right {
+                    width: 201px;
+                    height: 60px;
+
+                    h4 {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28.13px;
+                        text-align: left;
+                        color: black;
+                        margin-left: 3px;
+                    }
+
+                    .stars {
+                        display: flex;
+                        gap: 3px;
+
+                        .star {
+                            color: yellow;
+                            width: 19.99px;
+                            height: 19.2px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .end {
+                display: flex;
+                justify-content: end;
+                gap: 16px;
+
+                .hand {
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 246px;
+        height: 52px;
+        border-radius: 4px;
+        background: #F2F2F2;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: center;
+        color: #424242;
+    }
+}

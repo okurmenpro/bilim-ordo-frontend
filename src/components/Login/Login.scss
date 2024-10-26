@@ -1,0 +1,105 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.login button {
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.register-left img {
+  width: 600px;
+  height: 400px;
+  margin-top: 60px;
+}
+.register-right {
+  width: 300px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input-container {
+  position: relative;
+}
+input {
+  height: 60px;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: padding 0.3s ease;
+  margin-top: 10px;
+}
+input::placeholder {
+  color: #999;
+  transition: 0.3s ease;
+}
+input:focus,
+input:not(:placeholder-shown) {
+  padding-top: 20px;
+}
+input:focus::placeholder,
+input:not(:placeholder-shown)::placeholder {
+  transform: translateY(-15px);
+  font-size: 12px;
+  color: #333;
+}
+.register-footer {
+  display: flex;
+  gap: 10px;
+}
+.register-footer input {
+  width: 60px;
+}
+.register-right button {
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.register-ali {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  width: 400px;
+  height: 60px;
+}
+.register-ali button {
+  background-color: #f9f7f7;
+  width: 60px;
+  border-radius: 4px;
+}
+img {
+  width: 30px;
+  height: 30px;
+}

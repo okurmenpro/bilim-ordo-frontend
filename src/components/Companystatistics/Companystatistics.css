@@ -1,0 +1,72 @@
+.Companystatistics{
+    width: 1207px;
+    height: 303px;
+    margin: 0 auto;
+}
+.Companystatistics h2{
+color: rgb(0, 0, 0);
+font-family: Roboto;
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0%;
+text-align: center;
+}
+.Statistics{
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+.Statistica{
+    width: 260px;
+    height: 202px;
+}
+.Statistica strong{
+color: rgb(164, 53, 240);
+font-family: SF Pro Display;
+font-size: 49px;
+font-weight: 700;
+line-height: 121.2%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
+.Statistica h3{
+color: rgb(45, 47, 49);
+font-family: SF Pro Display;
+font-size: 18px;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+}
+.Statistica p{
+color: rgb(45, 47, 49);
+font-family: SF Pro Display;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: -2%;
+text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .Companystatistics h2{
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .Statistica{
+        width: 200px;
+    
+    }
+    .Statistica strong {
+        font-size: 38px;
+
+    }
+    .Statistica h3{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
