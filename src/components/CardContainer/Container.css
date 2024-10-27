@@ -1,77 +1,72 @@
-.container{
-    width: 1300px;
+.container {
+  width: 1300px;
 }
-.flex{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 70px;
+.flex {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 70px;
+}
+.cart {
+  width: 258px;
+  height: 296px;
 
+  margin: 0 auto;
 }
-.cart{
-    width: 258px;
-    height: 296px;
+.cart img {
+  height: 145px;
+  width: 258px;
+}
+.cart-1 h2 {
+  width: 300px;
+  margin-top: 50px;
+}
+.cart h1 {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+.cart h4 {
+  margin-top: -8px;
+  color: gray;
+  font-size: 17px;
+  margin-left: -100px;
+}
+.cart-flex {
+  display: flex;
+  margin-top: -5px;
 
-    margin: 0 auto;
+  gap: 5px;
 }
-.cart img{
-    height: 145px;
-    width: 258px;
+.cart-flex h2 {
+  font-size: 20px;
+  text-align: left;
 }
-.cart-1 h2{
-    width: 300px;
-    margin-top: 50px;
+.cart-top {
+  display: flex;
+  margin-top: -20px;
+  gap: 7px;
 }
-.cart h1{
-    font-size: 18px;
-    margin-top: 10px;
-    text-align: left;
+.cart-top p {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 17px;
+  text-align: left;
 }
-.cart h4{
-    margin-top: -8px;
-    color: gray;
-    font-size: 17px;
-    margin-left: -100px;
-    
+.cart-top h3 {
+  font-size: 17px;
 }
-.cart-flex{
-    display: flex;
-    margin-top: -5px;
-    
-    
-    gap: 5px;
-}
-.cart-flex h2{
-    font-size: 20px;
-    text-align: left;
-}
-.cart-top{
-    display: flex;
-    /* align-items: center; */
-    margin-top: -20px;
-    gap: 7px;
-}
-.cart-top p{
-text-decoration: line-through;
-color: gray;
-font-size: 17px;
-text-align: left;
-}
-.cart-top h3{
-    font-size: 17px;
-}
-
 
 .add-to-cart-button {
-    background-color:black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #28a745;
-  }
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #28a745;
+}

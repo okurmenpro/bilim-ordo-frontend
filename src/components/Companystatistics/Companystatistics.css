@@ -1,99 +1,145 @@
-/* Основные стили для больших экранов */
 .Companystatistics {
-    width: 1207px;
-    height: 303px;
-    margin: 0 auto;
+  width: 1207px;
+  height: 303px;
+  margin: 0 auto;
 }
 
 .Companystatistics h2 {
-    color: rgb(0, 0, 0);
-    font-family: Roboto;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0%;
-    text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .Statistics {
-    margin-top: 61px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 61px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Statistica {
-    width: 260px;
-    height: 202px;
+  width: 260px;
+  height: 202px;
 }
 
 .Statistica strong {
-    color: rgb(164, 53, 240);
-    font-family: SF Pro Display;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 121.2%;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
+  color: rgb(164, 53, 240);
+  font-family: SF Pro Display;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 121.2%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .Statistica h3 {
-    color: rgb(45, 47, 49);
-    font-family: SF Pro Display;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
+  color: rgb(45, 47, 49);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .Statistica p {
-    color: rgb(45, 47, 49);
-    font-family: SF Pro Display;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -2%;
-    text-align: center;
+  color: rgb(45, 47, 49);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -2%;
+  text-align: center;
 }
 
-/* Медиа-запрос для экранов до 768px (телефоны) */
 @media screen and (max-width: 768px) {
-    .Companystatistics {
-        width: 100%;
-        padding: 0 10px; /* Отступы для мобильных устройств */
-    }
+  .Companystatistics {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-    .Companystatistics h2 {
-        font-size: 22px;
-        line-height: 30px;
-        margin-top: 10px;
-    }
+  .Companystatistics h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 60px;
+  }
 
-    .Statistics {
-        display: flex;
-        flex-direction: row; /* Элементы идут по горизонтали */
-        overflow-x: auto; /* Горизонтальная прокрутка */
-        scroll-snap-type: x mandatory; /* Горизонтальная карусель */
-        -webkit-overflow-scrolling: touch; /* Плавная прокрутка для мобильных устройств */
-    }
+  .Statistics {
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+  }
 
-    .Statistica {
-        min-width: 80%; /* Элементы занимают 80% ширины экрана */
-        height: auto;
-        margin-right: 20px; /* Расстояние между элементами */
-        scroll-snap-align: start; /* Элементы будут выравниваться как слайды */
-    }
+  .Statistica {
+    min-width: 80%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
 
-    .Statistica strong {
-        font-size: 30px;
-    }
+  .Statistica strong {
+    font-size: 20px;
+  }
 
-    .Statistica h3 {
-        font-size: 14px;
-    }
+  .Statistica h3 {
+    font-size: 11px;
+  }
 
-    .Statistica p {
-        font-size: 13px;
-    }
+  .Statistica p {
+    font-size: 13px;
+    width: 190px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Companystatistics {
+    width: 375px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .Companystatistics h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 60px;
+  }
+
+  .Statistics {
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+  }
+
+  .Statistica {
+    min-width: 80%;
+    height: auto;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .Statistica strong {
+    font-size: 20px;
+  }
+
+  .Statistica h3 {
+    font-size: 11px;
+  }
+
+  .Statistica p {
+    font-size: 13px;
+    width: 190px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }

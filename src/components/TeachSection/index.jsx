@@ -20,7 +20,7 @@ export default function TeachSection() {
             </div>
           </div>
           <div className="teacher">
-            <h2 className="teachSectionTitle">Станьте переподователем</h2>
+            <h2 className="teachSectionTitle">Станьте преподователем</h2>
             <p className="teachSectionContent">
               Преподаватели со всего мира обучают миллионы студентов на Udemy,
               создавая доступные и разнообразные курсы по самым разным темам.

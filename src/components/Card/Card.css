@@ -1,143 +1,198 @@
 .carousel-container {
-    display: flex; /* Устанавливаем флекс-контейнер */
-    overflow-x: auto; /* Позволяет прокручивать элементы по горизонтали */
-    scroll-snap-type: x mandatory; /* Устанавливает прокрутку с "прилипанием" */
-    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
-    gap: 30px; /* Расстояние между элементами */
-    padding: 10px 0; /* Отступы сверху и снизу */
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
 }
 
 .cart {
-    scroll-snap-align: start; /* Элементы "прилипают" к началу прокрутки */
-    flex: 0 0 auto; /* Указывает, что элементы не будут растягиваться */
-    width: 258px; /* Ширина элементов */
-    height: 296px; /* Высота элементов */
-    display: flex; /* Добавлено для вертикального выравнивания */
-    flex-direction: column; /* Выравнивание по вертикали */
+  flex: 0 0 auto;
+  width: 258px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart img {
-    height: 145px;
-    width: 258px;
+  height: 145px;
+  width: 258px;
 }
 
 .cart h2 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-    text-align: left;
-    color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: left;
+  color: black;
 }
 
 .cart h3 {
-    margin-top: -6px;
-    color: gray;
-    font-size: 17px;
-    margin-left: -105px;
+  margin-top: -6px;
+  color: gray;
+  font-size: 17px;
+  margin-left: -105px;
 }
 
 .cart-flex {
-    display: flex;
-    align-items: center;
-    margin-top: -20px;
-    gap: 5px;
-    color: yellow;
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  gap: 5px;
+  color: yellow;
 }
 
 .cart-flex h2 {
-    font-size: 20px;
-    text-align: left;
-    color: black;
-    margin-top: 18px;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  margin-top: 18px;
 }
 
 .cart-flex p {
-    color: black;
+  color: black;
 }
 
 .cart-top {
-    display: flex;
-    margin-top: -20px;
-    gap: 7px;
-    color: black;
+  display: flex;
+  margin-top: -20px;
+  gap: 7px;
+  color: black;
 }
 
 .cart-top p {
-    text-decoration: line-through;
-    color: gray;
-    font-size: 17px;
-    text-align: left;
+  text-decoration: line-through;
+  color: gray;
+  font-size: 17px;
+  text-align: left;
 }
 
 .cart-top h3 {
-    font-size: 17px;
-    margin-top: 5px;
+  font-size: 17px;
+  margin-top: 5px;
 }
 
 .add-to-cart-button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .add-to-cart-button:hover {
-    background-color: #28a745;
+  background-color: #28a745;
 }
 
-/* Медиа-запрос для экранов шире 720px */
-@media (max-width: 720px) {
-    .carousel-container {
-        flex-direction: row; /* Горизонтальное расположение для карусели */
-    }
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 768px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: row;
+    padding-top: 0px;
+  }
 
-    .cart {
-        width: 200px; /* Уменьшенная ширина для мобильных */
-        height: auto; /* Автоматическая высота для мобильных */
-    }
+  .cart {
+    width: 200px;
+    height: auto;
+    scroll-snap-align: start;
+  }
 
-    .cart img {
-        width: 200px;
-        height: 125px;
-    }
-    .star-icons{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: -150px;
-    }
-    .cart-flex{
-        display: flex;
-        margin-top: 10px;
-    }
+  .cart img {
+    width: 200px;
+    height: 125px;
+  }
+  .star-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -150px;
+  }
+  .cart-flex {
+    display: flex;
+    margin-top: 10px;
+  }
 
-    .cart h2 {
-        font-size: 15px;
-        margin-top: 10px;
-        text-align: left;
-        font-weight: 500;
-    }
+  .cart h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 500;
+  }
 
-    .cart h3 {
-        margin-left: -45px;
-    }
+  .cart h3 {
+    margin-left: -45px;
+  }
 
-    /* Новая часть для вертикального расположения цен */
-    .cart-top {
-        flex-direction: column; /* Вертикальное расположение */
-        align-items: flex-start; /* Выравнивание по левому краю */
-        margin-top: 10px; /* Отступ сверху для отделения от других элементов */
-    }
+  .cart-top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
 
-    .cart-top p {
-        font-size: 17px; /* Размер шрифта для цены */
-        color: black; /* Цвет текста */
-        margin: 0; /* Убираем отступы */
-    }
+  .cart-top p {
+    font-size: 17px;
+    color: black;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .carousel-container {
+    width: 375px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: row;
+    padding-top: 0px;
+  }
+
+  .cart {
+    width: 200px;
+    height: auto;
+    scroll-snap-align: start;
+  }
+
+  .cart img {
+    width: 200px;
+    height: 125px;
+  }
+  .star-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -150px;
+  }
+  .cart-flex {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .cart h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .cart h3 {
+    margin-left: -45px;
+  }
+
+  .cart-top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .cart-top p {
+    font-size: 17px;
+    color: black;
+    margin: 0;
+  }
 }
