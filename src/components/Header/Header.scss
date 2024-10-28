@@ -95,9 +95,9 @@
   border-radius: 4px;
   background: #f2f2f2;
 
-  img {
-    width: 60px;
-    height: 40px;
+  .icon__image {
+    width: 120px;
+    height: 50px;
   }
 }
 
@@ -150,11 +150,11 @@
 
   .icons {
     gap: 10px;
+  }
 
-    img {
-      width: 47px;
-      height: 35px;
-    }
+  .icon__image {
+    width: 50px !important;
+    height: 35px !important;
   }
 
   .sign-up {
