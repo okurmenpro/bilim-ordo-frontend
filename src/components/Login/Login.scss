@@ -30,12 +30,13 @@
   margin-right: 10px;
 }
 .register-left img {
-  width: 800px;
-  height: 400px;
+  width: 70%;
+  height: 30%;
   margin-top: 60px;
 }
 .register-right {
   width: 300px;
+  margin-right: 70px;
 }
 h1 {
   text-align: center;
@@ -76,7 +77,7 @@ input:not(:placeholder-shown)::placeholder {
   width: 60px;
 }
 .register-right button {
-  width: 400px;
+  width: 380px;
   height: 50px;
   background-color: black;
   color: white;
@@ -113,5 +114,9 @@ img {
   }
   .register-right {
     margin: 0 auto;
+  }
+  .register-left img {
+    width: 40%;
+    height: 40%;
   }
 }
