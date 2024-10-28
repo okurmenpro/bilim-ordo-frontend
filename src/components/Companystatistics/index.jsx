@@ -5,7 +5,7 @@ import { statisticsData } from '../../data/statisticscompany.js';
 
 function Companystatistics() {
   return (
-    <div className='Companystatistics'>
+    <div className='Companystatistics container'>
       <h2>Нам доверяют более 16 000 компаний и миллионы учащихся по всему миру</h2>
 
       <div className='Statistics'>
