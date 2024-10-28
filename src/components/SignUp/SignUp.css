@@ -104,10 +104,9 @@
     margin-top: 50px;
   }
   .signup-png {
-   margin-left: 20px;
-    max-width: 100%;
-    margin-right: -20px;
+    width: 100%;
     height: auto;
+    padding-left: 300px;
   }
   .registration {
     font-size: 30px;
@@ -119,9 +118,8 @@
     padding-right: 20px;
     input {
       margin-bottom: 15px;
-      padding-left: 20px;
       height: 45px;
-    width: 100%;
+      width: 500px;
     }
   }
   .bottom-sign-in {
