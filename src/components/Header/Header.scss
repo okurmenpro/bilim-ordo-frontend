@@ -118,7 +118,7 @@
   .head {
     align-items: center;
     padding: 14px 20px;
-    gap: 20px;
+    gap: 2px;
 
     h2 {
       font-size: 18px;
@@ -134,6 +134,7 @@
     margin-right: 10px;
     font-size: 13px;
     gap: 6px;
+    width: 90px;
   }
 
   .icons {
@@ -146,13 +147,13 @@
   }
 
   .sign-up {
-    width: 90px;
+    width: 100%;
     font-size: 9px !important;
     padding: 0 3px;
   }
 
   .login {
-    width: 50px;
+    width: 100%;
     font-size: 10px !important;
     padding: 10px 10px;
   }
@@ -166,26 +167,27 @@
   }
 
   .cate-btn {
-    width: 90px;
+    width: 100%;
     height: 37px;
     padding: 4px 3px !important;
   }
 
-  .search {
-    width: 250px !important;
+  #search {
+    display: none !important;
+    width: 100% !important;
 
     .form-control {
-      width: 100px !important;
+      width: 100% !important;
     }
   }
 
-  .input-group{
+  .input-group {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 100%;
 
-    input{
-      width: 150px;
+    input {
+      width: 100%;
     }
   }
 }
@@ -205,12 +207,13 @@
 }
 
 #search {
+  display: flex;
   flex-grow: 1;
   transition: width 0.3s ease;
-  width: 300px;
+  width: 100%;
 
   .input-group {
-    width: 100%; 
+    width: 100%;
 
     input {
       width: 100%;
