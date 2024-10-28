@@ -1,14 +1,21 @@
+.aback {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 61px;
+  width: 100%;
+
+}
+
 .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 14px 50px 14px 50px;
-  position: fixed;
   top: 0px;
-  width: 100%;
   z-index: 1;
   background-color: #fefefe;
+  max-width: 1280px;
+  margin: auto;
+  height: 100px;
 
   h2 {
     width: 130px;
@@ -16,6 +23,7 @@
     font-size: 20px;
     padding-top: 11px;
     color: #000;
+    padding: 0px;
 
     span {
       color: purple;
@@ -24,12 +32,6 @@
       text-decoration: none;
     }
   }
-}
-.aback {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  position: relative;
-  margin-bottom: 102px;
 }
 
 .buttons {
@@ -63,9 +65,19 @@
   transform: scaleX(1);
 }
 #search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+
+  button {
+    margin-left: 0;
+    border-radius: 0px 7px 7px 0px;
+  }
+
   input {
     height: 48px;
-    margin-left: -30px;
+    margin-right: 0;
   }
 }
 .btn-outline-secondary {
@@ -73,12 +85,14 @@
   margin-top: 10px;
   margin-left: 5px;
 }
-.icons {
-  display: flex;
-  gap: 14px;
+
+.icon {
+  border-radius: 4px;
+  background: #f2f2f2;
+
   img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
   }
 }
 .sign-up {
@@ -100,6 +114,83 @@
   color: rgba(255, 255, 255, 0.899);
   transition: 0.3s ease;
 }
+
+@media screen and (max-width: 1024px) {
+  .head {
+    align-items: center;
+    padding: 14px 20px;
+    gap: 20px;
+
+    h2 {
+      font-size: 18px;
+      width: 110px;
+    }
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  #active-btn {
+    margin-right: 10px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .icons {
+    gap: 10px;
+
+    img {
+      width: 47px;
+      height: 35px;
+    }
+  }
+
+  .sign-up {
+    width: 90px;
+    font-size: 9px !important;
+    padding: 0 3px;
+  }
+
+  .login {
+    width: 50px;
+    font-size: 10px !important;
+    padding: 10px 10px;
+  }
+
+  .input-group {
+    align-items: center;
+  }
+
+  .btn-outline-secondary {
+    height: 35px;
+  }
+
+  .cate-btn {
+    width: 90px;
+    height: 37px;
+    padding: 4px 3px !important;
+  }
+
+  .search {
+    width: 250px !important;
+
+    .form-control {
+      width: 100px !important;
+    }
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+    input {
+      width: 150px;
+    }
+  }
+}
+
 .cart-count {
   position: absolute;
   width: 22px;

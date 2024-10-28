@@ -42,7 +42,7 @@ export const Router = createBrowserRouter([
         element: <TeacherProfile />,
       },
       {
-        path: "/SignUp",
+        path: "/signup",
         element: <SignUp/>
       },
     ],

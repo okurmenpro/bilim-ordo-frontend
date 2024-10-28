@@ -1,18 +1,17 @@
 import { React, useContext, useEffect, useState } from "react";
 import "./Header.scss";
-import cart from "../../assets/svg/cart.svg";
-import earth from "../../assets/svg/earth.svg";
+import cart from '../../assets/svg/cart.svg'
 import { GrSearch } from "react-icons/gr";
-import Dropdown from "../Dropdown/Index";
-import { NavLink } from "react-router-dom";
-import { CartContext } from "../CartContext";
+import Dropdown from '../Dropdown/Index'
+import { NavLink } from 'react-router-dom';
+import { CartContext } from '../CartContext'
+
 function Header() {
-  const providers = ["Udemy Business", "Преподавайте на Udemy"];
   const { cartItems } = useContext(CartContext);
   const [inputWidth] = useState("200px");
   return (
     <div className="aback">
-      <header className="head ">
+      <header className="head">
         <div>
           <NavLink to="/">
             <h2>
@@ -21,11 +20,6 @@ function Header() {
           </NavLink>
         </div>
         <Dropdown id="dropdowns" />
-        <div className="buttons">
-          {providers.map((provider) => (
-            <button id="active-btn">{provider}</button>
-          ))}
-        </div>
         <div id="search">
           <div class="input-group mb-3">
             <input
@@ -42,20 +36,19 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="buttons">
-          <button className="login">Войти</button>
-            <NavLink to="/SignUp">
-              <button className="sign-up">Зарегистрироваться</button>
-            </NavLink>
-        </div>
-        <div className="icons">
-          <NavLink to="/basket">
+        <NavLink to='/basket'>
+          <div className="icon">
             <img src={cart} alt="Cart" />
             {cartItems.length > 0 && (
-              <span className="cart-count">{cartItems.length}</span>
+            <span className="cart-count">{cartItems.length}</span>
             )}
+          </div>
           </NavLink>
-          <img src={earth} alt="" />
+        <div className="buttons">
+          <button className="login">Войти</button>
+            <NavLink to="/signup">
+              <button className="sign-up">Зарегистрироваться</button>
+            </NavLink>
         </div>
       </header>
     </div>
