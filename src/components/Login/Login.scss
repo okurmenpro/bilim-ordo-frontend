@@ -30,7 +30,7 @@
   margin-right: 10px;
 }
 .register-left img {
-  width: 600px;
+  width: 800px;
   height: 400px;
   margin-top: 60px;
 }
@@ -82,24 +82,36 @@ input:not(:placeholder-shown)::placeholder {
   color: white;
   border: none;
   border-radius: 2px;
+  margin-top: 10px;
 }
 .register-ali {
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: center;
-  width: 300px;
+  justify-content: space-between;
+  width: 30px;
   height: 50px;
   background-color: white;
-  width: 400px;
+  width: 300px;
   height: 60px;
+  margin-bottom: 20px;
 }
 .register-ali button {
   background-color: #f9f7f7;
-  width: 60px;
+  width: 40px;
   border-radius: 4px;
 }
 img {
   width: 30px;
   height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .register-right button {
+    width: 380px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  .register-right {
+    margin: 0 auto;
+  }
 }

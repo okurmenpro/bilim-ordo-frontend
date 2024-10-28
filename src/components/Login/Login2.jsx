@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "../LogIn/Login.scss";
-import Authorization from "../../assets/images/authorization.png"
+import Authorization from "../../assets/images/authorization.png";
 
 function Login2() {
- 
   const users = [
     { email: "user1@example.com", password: "password1" },
     { email: "user2@example.com", password: "password2" },
@@ -31,7 +30,7 @@ function Login2() {
     <div className="container">
       <div className="register">
         <div className="register-left">
-         <img src={ Authorization} alt="" />
+          <img src={Authorization} alt="" />
         </div>
 
         <div className="register-right">
@@ -50,10 +49,10 @@ function Login2() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-               <strong>Нет аккаунта? Зарегистрироваться</strong>
-              <button onClick={handleLogin}>Войти</button>
-             
-
+              <strong>Нет аккаунта? Зарегистрироваться</strong>
+              <button className="register-right-button" onClick={handleLogin}>
+                Войти
+              </button>
 
               <div className="register-ali">
                 <button>
@@ -75,8 +74,6 @@ function Login2() {
                   />
                 </button>
               </div>
-
-              
             </>
           ) : (
             <div className="user-avatar">
