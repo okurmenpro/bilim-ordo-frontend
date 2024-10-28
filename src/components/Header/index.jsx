@@ -13,16 +13,24 @@ function Header() {
     <div className="aback">
       <header className="head">
         <div>
-          <NavLink to='/'>
-            <h2><span>B</span>ILIM-ORDO</h2>
+          <NavLink to="/">
+            <h2>
+              <span>B</span>ILIM-ORDO
+            </h2>
           </NavLink>
         </div>
         <Dropdown id="dropdowns" />
         <div id="search">
           <div class="input-group mb-3">
-            <input class="form-control" placeholder="Search" style={{ width: inputWidth }} aria-label="Recipient's username" aria-describedby="basic-addon2" />
+            <input
+              class="form-control"
+              placeholder="Search"
+              style={{ width: inputWidth }}
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" >
+              <button class="btn btn-outline-secondary">
                 <GrSearch />
               </button>
             </div>
@@ -38,7 +46,9 @@ function Header() {
           </NavLink>
         <div className="buttons">
           <button className="login">Войти</button>
-          <button className="sign-up">Зарегистрироваться</button>
+            <NavLink to="/signup">
+              <button className="sign-up">Зарегистрироваться</button>
+            </NavLink>
         </div>
       </header>
     </div>
