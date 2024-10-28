@@ -4,7 +4,7 @@ import Request from "../Request";
 const InfoSection = () => {
   return (
     <section>
-      <div className="container d-flex">
+      <div className="d-flex container">
         <FAQ />
         <Request />
       </div>

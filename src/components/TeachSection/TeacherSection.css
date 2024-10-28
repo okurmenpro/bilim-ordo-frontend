@@ -143,6 +143,10 @@
 @media screen and (max-width: 768px) {
   .teacher p {
     width: 400px;
+    margin-left: 160px;
+  }
+  .teacher h2 {
+    margin-left: 100px;
   }
   .teachSectionImg {
     padding-left: 50px;
@@ -165,6 +169,10 @@
 @media screen and (max-width: 375px) {
   .teacher p {
     width: 400px;
+    margin-left: 160px;
+  }
+  .teacher h2 {
+    margin-left: 100px;
   }
   .teachSectionImg {
     padding-left: 50px;
@@ -182,5 +190,8 @@
     margin: 0 auto;
     padding-top: 140px;
     padding-bottom: 50px;
+  }
+  .teachSectionContent {
+    padding-left: 100px;
   }
 }

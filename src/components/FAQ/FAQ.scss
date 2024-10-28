@@ -2,7 +2,6 @@
   margin-bottom: 50px;
   width: 670px;
   margin-right: 40px;
-  
 
   .faq-title {
     font-size: 40px;
@@ -108,15 +107,15 @@
     width: 100%;
     height: auto;
     margin-right: 20px;
-    margin-top: 60px;
+    margin-top: 150px;
   }
 
   .faq-title {
-    font-size: 32px; 
+    font-size: 32px;
   }
 
   .accordion {
-    padding: 15px 10px; 
+    padding: 15px 10px;
   }
 
   .accordion-title h3 {
@@ -128,6 +127,19 @@
   }
 
   .child-content {
-    padding: 10px; 
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-content {
+    width: 100%;
+
+    .leave-request {
+      width: 100%;
+    }
   }
 }

@@ -1,17 +1,17 @@
-import { React, useContext, useEffect, useState } from "react"; 
+import { React, useContext, useEffect, useState } from "react";
 import "./Header.scss";
-import cart from '../../assets/svg/cart.svg';
-import earth from '../../assets/svg/earth.svg';
+import cart from "../../assets/svg/cart.svg";
+import earth from "../../assets/svg/earth.svg";
 import { GrSearch } from "react-icons/gr";
-import Dropdown from '../Dropdown/Index';
-import { NavLink } from 'react-router-dom';
-import { CartContext } from '../CartContext';
-import { GiHamburgerMenu } from "react-icons/gi"; 
+import Dropdown from "../Dropdown/Index";
+import { NavLink } from "react-router-dom";
+import { CartContext } from "../CartContext";
+import { IoMenu } from "react-icons/io5";
 
 function Header() {
-  const providers = ['Udemy Business', 'Преподавайте на Udemy'];
+  const providers = ["Udemy Business", "Преподавайте на Udemy"];
   const { cartItems } = useContext(CartContext);
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleResize = () => {
@@ -30,13 +30,18 @@ function Header() {
       <header className="head">
         <div className="left-side">
           {isMobile && (
-            <button className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
-              <GiHamburgerMenu size={25} />
+            <button
+              className="burger-menu"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <IoMenu size={25} />
             </button>
           )}
           <div className="top_header_media">
             <NavLink to="/" className="center-title">
-              <h2><span>B</span>ILIM-ORDO</h2>
+              <h2>
+                <span>B</span>ILIM-ORDO
+              </h2>
             </NavLink>
           </div>
         </div>
@@ -48,7 +53,9 @@ function Header() {
             {providers.map((provider) => (
               <div key={provider}>
                 <button id="active-btn">{provider}</button>
-                {provider === 'Преподавайте на Udemy' && <hr className="divider" />}
+                {provider === "Преподавайте на Udemy" && (
+                  <hr className="divider" />
+                )}
               </div>
             ))}
           </div>
@@ -84,17 +91,29 @@ function Header() {
 
       {menuOpen && (
         <div className="mobile-menu">
-          <button className="close-menu" onClick={() => setMenuOpen(false)} style={{ fontSize: '20px' }}>X</button>
+          <button
+            className="close-menu"
+            onClick={() => setMenuOpen(false)}
+            style={{ fontSize: "20px" }}
+          >
+            X
+          </button>
           <div className="auth-links">
-            <NavLink to="/login" className="auth-link">Войти</NavLink>
-            <NavLink to="/register" className="auth-link">Регистрация</NavLink>
+            <NavLink to="/login" className="auth-link">
+              Войти
+            </NavLink>
+            <NavLink to="/register" className="auth-link">
+              Регистрация
+            </NavLink>
             <hr className="divider" />
           </div>
           <div className="menu-links">
             <ul>
               {providers.map((provider) => (
                 <li key={provider}>
-                  <NavLink to="#" className="auth-link">{provider}</NavLink>
+                  <NavLink to="#" className="auth-link">
+                    {provider}
+                  </NavLink>
                   <span className="arrow">→</span>
                 </li>
               ))}

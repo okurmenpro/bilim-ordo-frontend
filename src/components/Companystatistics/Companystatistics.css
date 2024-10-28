@@ -60,7 +60,7 @@
   .Companystatistics {
     width: 100%;
     padding: 0 10px;
-    margin-left: -45px;
+    /* margin-left: -45px; */
   }
 
   .Companystatistics h2 {
@@ -68,7 +68,7 @@
     line-height: 30px;
     margin-top: 10px;
     width: 400px;
-    padding-left: -60px;
+    padding-left: 60px;
   }
 
   .Statistics {
@@ -105,7 +105,7 @@
     width: 375px;
     padding: 0 10px;
     margin: 0 auto;
-    margin-left: -45px;
+    /* margin-left: -45px; */
   }
 
   .Companystatistics h2 {
