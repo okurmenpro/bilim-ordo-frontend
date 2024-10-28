@@ -100,24 +100,28 @@
 }
 @media screen and (max-width: 1024px) {
   .main-spot {
-    display: block;
+    display: flex;
+    margin-top: 50px;
   }
   .signup-png {
-    width: 100%;
-    padding: 0 100px 100px 150px;
-    height: 100%;
-    margin-top: -120px;
+   margin-left: 20px;
+    max-width: 100%;
+    margin-right: -20px;
+    height: auto;
   }
   .registration {
-    font-size: 35px;
-    
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 1px;
   }
   .inputs {
-    margin-left: 100px;
+    padding-top: 10px;
+    padding-right: 20px;
     input {
-      margin: auto;
       margin-bottom: 15px;
       padding-left: 20px;
+      height: 45px;
+    width: 100%;
     }
   }
   .bottom-sign-in {
