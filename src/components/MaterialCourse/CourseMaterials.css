@@ -1,12 +1,12 @@
 .materials {
     padding: 20px 50px;
-    width: 1000px;
+    width: 800px;
     
 }
 
 .materials h2 {
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 25px;
     text-align: left;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .materials__text h4{
-    font-size: 15px;
+    font-size: 12px;
     color: #5022c3;
 }
 
@@ -24,14 +24,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 700px;
     height: 60px;
     background-color: #f1f1f2;
     border: 1px solid gray;
     padding: 10px 15px;
 }
 .document{
-    font-size: 8px;
+    font-size: 6px;
 }
 .mini__img {
     display: flex;
@@ -41,12 +41,12 @@
 .mini__img button {
     background: none;
     border: none;
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 .mini__img h3{
     cursor: pointer;
-    font-weight: 700;
-    font-size: 19px;
+    font-weight: 600;
+    font-size: 15px;
 }
