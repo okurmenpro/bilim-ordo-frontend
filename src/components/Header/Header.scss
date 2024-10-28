@@ -23,8 +23,6 @@
     }
   }
 }
-
-
 .aback {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -43,13 +41,11 @@
     border: none;
   }
 }
-
 #active-btn {
   position: relative;
   display: flex;
   gap: 10px;
 }
-
 #active-btn::after {
   content: "";
   position: absolute;
@@ -61,57 +57,47 @@
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-
 #active-btn:hover::after {
   transform: scaleX(1);
 }
-
 #search {
   input {
     height: 48px;
     margin-left: -30px;
   }
 }
-
 .btn-outline-secondary {
   padding: 15px 15px 15px 15px !important;
   margin-top: 10px;
   margin-left: 5px;
 }
-
 .icons {
   display: flex;
   gap: 14px;
-
   img {
     width: 40px;
     height: 40px;
   }
 }
-
 .sign-up {
   background: #2d2f31;
   color: #ffffff !important;
   border-radius: 4px;
-  padding: 0 15px 0 15px;
+  padding: 14px 15px 14px 15px;
 }
-
 .sign-up:hover {
   background: gray;
 }
-
 .login {
   padding: 13px 12px;
   background: #f2f2f2;
   border-radius: 4px;
 }
-
 .login:hover {
   background: #2d2f319a;
   color: rgba(255, 255, 255, 0.899);
   transition: 0.3s ease;
 }
-
 .cart-count {
   position: absolute;
   width: 22px;
@@ -125,23 +111,18 @@
   margin-left: -20px;
   line-height: 1.5;
 }
-
 #search {
-  flex-grow: 1; // Позволяет инпуту занимать доступное пространство
-  transition: width 0.3s ease; // Плавный переход
-
+  flex-grow: 1;
+  transition: width 0.3s ease;
   .input-group {
-    width: 100%; // Устанавливаем ширину группы ввода на 100%
-
+    width: 100%;
     input {
-      width: 100%; // Инпут будет занимать 100% ширины группы
+      width: 100%
     }
   }
 }
-
 .expanded {
-  // Увеличьте ширину контейнера, если необходимо
   .input-group {
-    width: 100%; // Или можно задать конкретную ширину
+    width: 100%;
   }
 }
