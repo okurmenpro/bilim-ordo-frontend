@@ -13,13 +13,13 @@
 
 .info-left {
   display: flex;
-  gap: 0; /* Убираем отступы между блоками .categori */
+  gap: 0; 
   padding: 39px 0px 64px;
 }
 
 .categori {
-  margin: 0; /* Убираем внешние отступы */
-  padding: 0; /* Убираем внутренние отступы */
+  margin: 0;
+  padding: 0; 
 }
 
 ul {
@@ -130,12 +130,13 @@ ul li a {
 }
 
 @media screen and (max-width: 1024px) {
-  .footer {
-    padding: 20px 20px;
-  }
+    .footer {
+        width: 100%;
+        padding: 20px 20px;
+    }
 
   .info-left {
-    gap: 0; /* Убираем отступы */
+    gap: 0; 
   }
 
   .info-bottom {

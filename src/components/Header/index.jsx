@@ -38,7 +38,7 @@ function Header() {
         </div>
         <NavLink to='/basket'>
           <div className="icon">
-            <img src={cart} alt="Cart" />
+            <img className="icon__image" src={cart} alt="Cart" />
             {cartItems.length > 0 && (
             <span className="cart-count">{cartItems.length}</span>
             )}
