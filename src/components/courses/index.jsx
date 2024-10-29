@@ -6,11 +6,11 @@ import { NavLink } from "react-router-dom";
 import { coursesData } from "../../data/courses";
 
 function Courses() {
-  const [coursData, setCoursesData] = useState(coursesData);
+  const [courseData, setCoursesData] = useState(coursesData);
 
   const getCourses = async () => {
     try {
-      const response = await axios.get("/coursesData");
+      const response = await axios.get("/courses");
       setCoursesData(response.data);
     } catch (error) {
       console.error(error);
@@ -23,7 +23,7 @@ function Courses() {
 
   return (
     <div>
-      {coursData.map((course) => (
+      {courseData.map((course) => (
         <NavLink key={course.id} to="/course">
           <div className="courses">
             <div className="courses-left">
