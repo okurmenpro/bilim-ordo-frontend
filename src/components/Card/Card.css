@@ -87,7 +87,7 @@
     background-color: #28a745;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
     .cart {
         width: 200px;
         height: 296px;

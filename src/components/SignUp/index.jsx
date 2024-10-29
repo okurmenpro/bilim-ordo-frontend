@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div>
       <div className="step-back">
-        <NavLink to='/' className='nav-link'>
+        <NavLink to="/" className="nav-link">
           <IoChevronBackOutline className="backward" /> Backward
         </NavLink>
       </div>

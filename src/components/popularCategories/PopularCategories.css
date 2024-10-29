@@ -63,13 +63,13 @@
     }
     .background {
         margin-top: -20px;
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
     .background img{
         margin-top: -25px;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
     .dropdown-toggle{
         width: 150px;
