@@ -10,7 +10,7 @@ function Card() {
   const { addToCart, cartItems } = useContext(CartContext);
   const [cardCourse, setCourse] = useState(course);
 
-  const Cardcourse = async () => {
+  const getcourse = async () => {
     try {
       const response = await axios.get("/course");
       setCourse(response.data);
@@ -20,7 +20,7 @@ function Card() {
   };
 
   useEffect(() => {
-    Cardcourse();
+    getcourse();
   }, []);
 
   const handleAddToCart = (item) => {
