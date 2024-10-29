@@ -1,34 +1,37 @@
 .aback {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 61px;
   width: 100%;
-
+  margin-bottom: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #fefefe;
+  position: fixed;
+  z-index:999;
+ 
 }
-
 .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  top: 0px;
-  z-index: 1;
   background-color: #fefefe;
+  width: 100%;
   max-width: 1280px;
-  margin: auto;
-  height: 100px;
+  
+  
 
   h2 {
     width: 130px;
     font-weight: 700;
     font-size: 20px;
-    padding-top: 11px;
-    color: #000;
-    padding: 0px;
+    margin: 0;
+    color: #333;
 
-    span {
+    a {
       color: purple;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       text-decoration: none;
     }
   }
@@ -69,10 +72,9 @@
 }
 
 #search {
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 5px;
 
   button {
     margin-left: 0;
@@ -92,6 +94,9 @@
 }
 
 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
   border-radius: 4px;
   background: #f2f2f2;
 
@@ -138,6 +143,7 @@
   }
 
   .buttons {
+    display: flex;
     gap: 10px;
   }
 
@@ -148,8 +154,10 @@
     width: 90px;
   }
 
-  .icons {
-    gap: 10px;
+  .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .icon__image {
@@ -160,8 +168,8 @@
   .sign-up {
     height: 35px;
     width: 100%;
-    font-size: 9px !important;
-    padding: 10px;
+    font-size: 14px !important;
+    padding: 8px 16px;
   }
 
   .login {
@@ -171,8 +179,9 @@
   }
 
   .input-group {
-    align-items: center;
-    flex-wrap: nowrap;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
   }
 
   .btn-outline-secondary {
@@ -207,16 +216,13 @@
 
 .cart-count {
   position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: rgb(197, 81, 197);
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: #fff;
   border-radius: 50%;
-  margin-top: -10px;
-  margin-left: -20px;
-  line-height: 1.5;
+  padding: 2px 6px;
+  font-size: 12px;
 }
 
 #search {

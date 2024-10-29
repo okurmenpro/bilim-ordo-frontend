@@ -11,47 +11,47 @@ function Header() {
   const [inputWidth] = useState("200px");
   return (
     <div className="aback">
-      <header className="head">
-        <div>
-          <NavLink to="/">
-            <h2>
-              <span>B</span>ILIM-ORDO
-            </h2>
-          </NavLink>
-        </div>
-        <Dropdown id="dropdowns" />
-        <div id="search">
-          <div class="input-group mb-3">
-            <input
-              class="form-control"
-              placeholder="Search"
-              style={{ width: inputWidth }}
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary">
-                <GrSearch />
-              </button>
+        <header className="head">
+          <div>
+            <NavLink to="/">
+              <h2>
+                <a href="">B</a>ILIM-ORDO
+              </h2>
+            </NavLink>
+          </div>
+          <Dropdown id="dropdowns" />
+          <div id="search">
+            <div className="input-group mb-3">
+              <input
+                className="form-control"
+                placeholder="Search"
+                style={{ width: inputWidth }}
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <div className="input-group-append">
+                <button className="btn btn-outline-secondary">
+                  <GrSearch />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <NavLink to='/basket'>
-          <div className="icon">
-            <img className="icon__image" src={cart} alt="Cart" />
-            {cartItems.length > 0 && (
-            <span className="cart-count">{cartItems.length}</span>
-            )}
-          </div>
+          <NavLink to='/basket'>
+            <div className="icon">
+              <img className="icon__image" src={cart} alt="Cart" />
+              {cartItems.length > 0 && (
+                <span className="cart-count">{cartItems.length}</span>
+              )}
+            </div>
           </NavLink>
-        <div className="buttons">
-          <button className="login">Войти</button>
+          <div className="buttons">
+            <button className="login">Войти</button>
             <NavLink to="/signup">
               <button className="sign-up">Зарегистрироваться</button>
             </NavLink>
-        </div>
-      </header>
-    </div>
+          </div>
+        </header>
+      </div>
   );
 }
 export default Header;
