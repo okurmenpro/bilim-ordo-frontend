@@ -5,7 +5,7 @@ import { skillsData } from '../../data/Courseskills';
 
 
 
-function Pythonskills() {
+function Skills() {
  
   return (
     <div>
@@ -26,4 +26,4 @@ function Pythonskills() {
   );
 }
 
-export default Pythonskills;
+export default Skills;

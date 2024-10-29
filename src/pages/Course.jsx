@@ -5,14 +5,14 @@ import Sidebar from "../components/Sidebar";
 import Reviews from "../components/Reviews";
 import TeacherProfile from "../components/TeacherProfile";
 import Programmingexercises from "../components/Programmingexercises/index";
-import Pythonskills from "../components/Courseskills";
+import Skills from "../components/Courseskills";
 
 function Course() {
   return (
     <div>
       <BannerCourse />
       <Sidebar />
-      <Pythonskills />
+      <Skills />
       <Programmingexercises/>
       <MaterialCourse />
       <TeacherProfile />
