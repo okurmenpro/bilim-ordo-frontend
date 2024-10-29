@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { coursesData } from "../../data/courses";
 
 function Courses() {
-  const [coursesData, setCoursesData] = useState(coursesData);
+  const [coursData, setCoursesData] = useState(coursesData);
 
   const getCourses = async () => {
     try {
@@ -23,7 +23,7 @@ function Courses() {
 
   return (
     <div>
-      {coursesData.map((course) => (
+      {coursData.map((course) => (
         <NavLink key={course.id} to="/course">
           <div className="courses">
             <div className="courses-left">
