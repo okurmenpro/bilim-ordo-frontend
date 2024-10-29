@@ -3,8 +3,6 @@
   width: 100%;
   margin-bottom: 500px;
   height: 100px;
-  display: flex;
-  justify-content: center;
   background-color: #fefefe;
   position: fixed;
   z-index: 999;
@@ -19,6 +17,7 @@
   background-color: #fefefe;
   width: 100%;
   max-width: 1280px;
+  margin: 0 auto;
 
 
 
@@ -73,9 +72,10 @@
 }
 
 #search {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5px;
 
   button {
     margin-left: 0;
@@ -96,8 +96,6 @@
 
 .icon {
   position: relative;
-  display: flex;
-  align-items: center;
   border-radius: 4px;
 
 
@@ -144,7 +142,6 @@
   }
 
   .buttons {
-    display: flex;
     gap: 10px;
   }
 
@@ -157,8 +154,6 @@
 
   .icon {
     position: relative;
-    display: flex;
-    align-items: center;
   }
 
   .icon__image {
@@ -180,7 +175,6 @@
   }
 
   .input-group {
-    display: flex;
     width: 100%;
     max-width: 300px;
   }
@@ -204,8 +198,6 @@
   }
 
   .input-group {
-    display: flex;
-    align-items: center;
     width: 100%;
 
     input {
@@ -227,7 +219,7 @@
   border-radius: 50%;
   font-size: 12px;
   bottom: 37px;
-  left: 78px;
+  left: 40px;
   text-decoration: none;
 }
 
