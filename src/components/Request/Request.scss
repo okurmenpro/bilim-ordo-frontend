@@ -28,7 +28,7 @@
             margin-top: 0px;
         }
 
-        button {
+        .leave-req-btn {
             width: 191px;
             height: 52px;
             border-radius: 8px;
@@ -43,5 +43,16 @@
             justify-content: center;
             border: none;
         }
+    }
+}
+@media screen and (max-width:768px) {
+        .leave-req-btn {
+            display: inline-block !important;
+        }
+    .leave-request {
+        margin-bottom: 50px;
+    }
+    .leave-req-title {
+      display: inline-flex !important;
     }
 }
