@@ -8,7 +8,7 @@ import { coursesData } from "../../data/courses";
 function Courses() {
   const [CoursesData, setCoursesData] = useState(coursesData);
 
-  const Courses = async () => {
+  const getCourses = async () => {
     try {
       const response = await axios.get("/coursesData");
       setCoursesData(response.data);
@@ -18,7 +18,7 @@ function Courses() {
   };
 
   useEffect(() => {
-    Courses();
+    getCourses();
   }, []);
 
   return (
