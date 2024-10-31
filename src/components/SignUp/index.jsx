@@ -1,6 +1,6 @@
 import React from "react";
 import { IoChevronBackOutline } from "react-icons/io5";
-import "./SignUp.css";
+import "./SignUp.scss"
 import signup from "../../assets/images/signup.png";
 import { NavLink } from "react-router-dom";
 const index = () => {
