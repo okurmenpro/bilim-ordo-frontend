@@ -28,7 +28,7 @@ function Login2() {
 
   return (
     <div className="container">
-      <div className="register">
+      <div className="registerLogin">
         <div className="register-left">
           <img src={Authorization} alt="" />
         </div>

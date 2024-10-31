@@ -1,7 +1,8 @@
-.register {
+.registerLogin {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 150px;
 }
 .register-right h1 {
   font-size: 20px;
@@ -9,7 +10,6 @@
   margin-top: 60px;
   margin-right: 200px;
 }
-
 .register-right input {
   width: 380px;
   height: 50px;
@@ -19,24 +19,27 @@
 .register-right {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 .register-right strong {
   margin-top: 10px;
 }
+
 @media screen and (max-width: 768px) {
-  .register {
+  .registerLogin {
     flex-direction: column;
+    justify-content: end;
   }
   .register-right {
-    padding-top: 20px;
-    margin-top: 100px;
-  }
-  .input-container {
-    margin-top: auto;
+    margin-right: 855px;
   }
   .register-right input {
-    width: 380px;
-    height: 40px;
+    width: 70%;
+    height: 30px;
+    margin-left: 30px;
+  }
+  .register-right strong {
+    margin-right: 40%;
+    font-size: 10px;
   }
 }
