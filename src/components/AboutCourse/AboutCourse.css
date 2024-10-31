@@ -1,0 +1,13 @@
+.registration__course {
+    width: 500px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    box-shadow: 2px 3px 25px;
+}
+
+.input__registration__course {
+    margin: 30px;
+
+}

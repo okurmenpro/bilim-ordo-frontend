@@ -5,14 +5,12 @@ import { materials } from '../../data/material';
 import { IoDocumentOutline } from "react-icons/io5";
 
 function CouserMaterials() {
-    // Состояние для отслеживания видимости каждого раздела
     const [visibleSections, setVisibleSections] = useState({});
 
-    // Функция для переключения видимости конкретного раздела
     const toggleSectionVisibility = (index) => {
         setVisibleSections((prevState) => ({
             ...prevState,
-            [index]: !prevState[index], // Инвертируем видимость
+            [index]: !prevState[index], 
         }));
     };
 
@@ -36,7 +34,6 @@ function CouserMaterials() {
                             <h6>{x.lesson}</h6>
                         </div>
 
-                        {/* Условное отображение блока на основе состояния */}
                         {visibleSections[index] && (
                             <div className='div__mini'>
                                 <div className='mini__img'>
