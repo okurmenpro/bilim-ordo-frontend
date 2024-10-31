@@ -13,7 +13,7 @@ letter-spacing: 0%;
 text-align: center;
 }
 .Statistics{
-    margin-top: 61px;
+    margin-top: 41px;
     display: flex;
     justify-content: space-between;
 }
@@ -58,7 +58,7 @@ text-align: center;
     }
     .Statistica{
         width: 200px;
-    
+        margin-left: -9px;
     }
     .Statistica strong {
         font-size: 38px;
