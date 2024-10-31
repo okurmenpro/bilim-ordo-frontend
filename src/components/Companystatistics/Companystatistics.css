@@ -1,31 +1,35 @@
 .Companystatistics{
     width: 1207px;
     height: 303px;
-    margin: 0 auto;
+    margin: 100px auto;
+    gap: 60px;
+    padding: 0 20px;
 }
 .Companystatistics h2{
 color: rgb(0, 0, 0);
-font-family: Roboto;
+font: Roboto;
 font-size: 32px;
 font-weight: 700;
 line-height: 38px;
 letter-spacing: 0%;
-text-align: center;
 }
 .Statistics{
-    margin-top: 61px;
+    margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20;
 }
 .Statistica{
     width: 260px;
     height: 202px;
+    margin-bottom: 100px;
 }
 .Statistica strong{
 color: rgb(164, 53, 240);
-font-family: SF Pro Display;
+font: SF Pro Display;
 font-size: 49px;
-font-weight: 700;
+font-weight: 600;
 line-height: 121.2%;
 letter-spacing: 0%;
 text-align: center;
@@ -33,8 +37,8 @@ text-transform: uppercase;
 }
 .Statistica h3{
 color: rgb(45, 47, 49);
-font-family: SF Pro Display;
-font-size: 18px;
+font: SF Pro Display;
+font-size: 17px;
 font-weight: 700;
 line-height: 150%;
 letter-spacing: 0%;
@@ -51,7 +55,7 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .Companystatistics h2{
         font-size: 26px;
         margin-top: 10px;
@@ -68,5 +72,66 @@ text-align: center;
         margin-top: 10px;
         font-size: 15px;
         font-weight: 700;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .Companystatistics {
+        width: 100%;
+        height: 100%;
+        margin: 50px auto;
+        gap: 30px;
+    }
+    .StatisticsWrap {
+        display: flex;
+        justify-content: center;
+    }
+       
+    .Statistica {
+        /* width: 90%;  */
+        height: auto; 
+        margin-bottom: 30px;
+    }
+    .Companystatistics h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .Statistica strong {
+        font-size: 36px;
+    }
+    .Statistica h3 {
+        font-size: 15px;
+    }
+    .Statistica p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .Companystatistics h2 {
+      font-size: 24px;
+    }
+    .Statistics {
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+
+@media (max-width: 480px) {
+    .Companystatistics h2 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .Statistica {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .Statistica strong {
+      font-size: 36px;
+    }
+    .Statistica h3 {
+      font-size: 20px;
+    }
+    .Statistica p {
+      font-size: 20px;
     }
 }
