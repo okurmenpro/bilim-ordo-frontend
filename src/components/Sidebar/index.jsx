@@ -16,6 +16,7 @@ import { TfiCup } from "react-icons/tfi";
 
 function Sidebar() {
     return (
+        <div className='container'>
         <div className='  container1 Sidebar'>
             <div className='video'>
                 <video src={video} controls></video>
@@ -98,6 +99,7 @@ function Sidebar() {
                 </div>
                 <button className='try_btn'>Попробуйте Udemy Business</button>
             </div>
+        </div>
         </div>
     )
 }

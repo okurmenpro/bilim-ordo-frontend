@@ -17,7 +17,7 @@ function CouserMaterials() {
     };
 
     return (
-        <div className='materials'>
+        <div className='materials container'>
             <h2>Материалы курса</h2>
             <div className='materials__text'>
                 <p>21 раздел • 217 лекций • Общая продолжительность 38 ч 48 мин</p>
