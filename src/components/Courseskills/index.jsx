@@ -8,8 +8,8 @@ import { skillsData } from '../../data/Courseskills';
 function Skills() {
  
   return (
-    <div>
-      <div className="Course-skills">
+    <div className='skill container'>
+      <div className="Course-skills ">
         <h2>Чему вы научитесь</h2>
 
         <div className="skills-container">

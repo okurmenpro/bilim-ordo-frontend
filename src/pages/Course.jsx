@@ -9,7 +9,7 @@ import Skills from "../components/Courseskills";
 
 function Course() {
   return (
-    <div>
+    <div style={{position: "relative"}}>
       <BannerCourse />
       <Sidebar />
       <Skills />
