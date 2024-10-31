@@ -8,7 +8,7 @@ export const course = [
     {
       name: "Python - Полный Курс по Python, Django, Data Science",
       price: "74,99$",
-      img: "https://shethink.in/wp-content/uploads/2021/07/react.js-img.png",
+      img: "https://banner2.cleanpng.com/20180817/jll/607ab18cdbb99b1d7ad42079f4acba3a.webp",
       author: "Юрий Гагарин",
     },
     {
