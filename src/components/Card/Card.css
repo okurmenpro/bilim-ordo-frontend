@@ -94,83 +94,36 @@
 .scroll-button {
   display: none;
 }
-/* @media (max-width: 768px) {
-  .scroll-button {
-    display: none !important;
-  }
-  .flex {
-    display: flex;
-    overflow-x: auto;
-    max-width: 100% !important;
-    padding: 10px 0;
-    max-height: 100% !important; 
-     
-  }
-  .cart {
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 10px; 
-    max-width: 300px;
-  }
-  .cart h2,
-  .cart h3,
-  .cart-top p {
-    text-align: left !important;
-    margin: 2px 0;
-    font-size: 10px;
-  }
-  .cart-flex {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-    margin-top: 0;
-  }
-
-  .cart-top {
-    display: flex;
-    justify-content: start;
-    max-width: 100% !important;
-  }
-  .scroll-button {
-    display: none;
-  }
-  .add-to-cart-button {
-    min-width: 100% !important;
-  }
-} */
-
 @media (max-width: 768px) {
   .flex {
     display: flex;
-    overflow-x: auto; /* Горизонтальный скроллинг */
+    overflow-x: auto;
     padding: 10px 0;
     max-width: 100%;
   }
 
   .cart {
-    margin: 0 5px; /* Уменьшенный отступ между карточками */
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 180px; /* Уменьшенная ширина карточек */
-    max-height: 280px; /* Уменьшенная высота карточек */
+    width: 180px; 
+    max-height: 280px;
   }
 
   .cart img {
-    width: 100%; /* Ширина изображения на всю карточку */
-    height: auto; /* Авто-высота для адаптации */
-    max-height: 120px; /* Максимальная высота для изображений */
-    object-fit: cover; /* Обрезка изображения */
+    width: 100%;
+    height: auto;
+    max-height: 120px; 
+    object-fit: cover; 
   }
 
   .cart h2,
   .cart h3,
   .cart-top p {
-    text-align: left; /* Выравнивание по левому краю */
+    text-align: left; 
     margin: 2px 0;
-    font-size: 12px; /* Увеличение размера шрифта для читаемости */
+    font-size: 12px; 
   }
 
   .cart-flex {
@@ -187,8 +140,8 @@
   }
 
   .add-to-cart-button {
-    width: 100%; /* Кнопка на всю ширину */
-    padding: 5px; /* Уменьшенный отступ */
+    width: 100%;
+    padding: 5px; 
   }
   .scroll-button {
     display: none !important; 
