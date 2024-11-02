@@ -8,6 +8,9 @@ import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
 import SignUp from "./components/SignUp";
+import TeachersCourses from "./components/TeachersCourses";
+
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -44,6 +47,10 @@ export const Router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp/>
+      },
+      {
+        path: "/mycourses",
+        element: <TeachersCourses/>
       },
     ],
   },
