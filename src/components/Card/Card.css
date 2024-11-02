@@ -94,7 +94,7 @@
 .scroll-button {
   display: none;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .scroll-button {
     display: none !important;
   }
@@ -110,10 +110,9 @@
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 200px;
+    align-items: flex-start;
+    margin-right: 10px; 
+    max-width: 300px;
   }
   .cart h2,
   .cart h3,
@@ -131,7 +130,7 @@
 
   .cart-top {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     max-width: 100% !important;
   }
   .scroll-button {
@@ -140,8 +139,61 @@
   .add-to-cart-button {
     min-width: 100% !important;
   }
-}
+} */
 
+@media (max-width: 768px) {
+  .flex {
+    display: flex;
+    overflow-x: auto; /* Горизонтальный скроллинг */
+    padding: 10px 0;
+    max-width: 100%;
+  }
+
+  .cart {
+    margin: 0 5px; /* Уменьшенный отступ между карточками */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 180px; /* Уменьшенная ширина карточек */
+    max-height: 280px; /* Уменьшенная высота карточек */
+  }
+
+  .cart img {
+    width: 100%; /* Ширина изображения на всю карточку */
+    height: auto; /* Авто-высота для адаптации */
+    max-height: 120px; /* Максимальная высота для изображений */
+    object-fit: cover; /* Обрезка изображения */
+  }
+
+  .cart h2,
+  .cart h3,
+  .cart-top p {
+    text-align: left; /* Выравнивание по левому краю */
+    margin: 2px 0;
+    font-size: 12px; /* Увеличение размера шрифта для читаемости */
+  }
+
+  .cart-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-top: 5px;
+  }
+
+  .cart-top {
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+  }
+
+  .add-to-cart-button {
+    width: 100%; /* Кнопка на всю ширину */
+    padding: 5px; /* Уменьшенный отступ */
+  }
+  .scroll-button {
+    display: none !important; 
+  }
+}
 
 
 @media (max-width: 1024px) {
@@ -189,19 +241,23 @@
   .cart h2,
   .cart h3,
   .cart-top p {
-    text-align: center;
+    text-align: left;
     margin: 5px 0;
+    font-size: 12px;
+  white-space: nowrap ;
+  overflow: hidden ; 
+  text-overflow: ellipsis;
   }
 
   .cart-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .cart-top {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
   }
 
@@ -271,6 +327,6 @@
     display: none; 
   }
   .add-to-cart-button  {
-    margin-top: -20px !important;
+    margin-top: -10px !important;
   }
 }

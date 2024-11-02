@@ -44,6 +44,9 @@ function Card() {
       behavior: "smooth",
     });
   };
+  const truncateText = (text, limit) => {
+    return text.length > limit ? text.substring(0, limit) + '...' : text;
+  };
   return (
     <div className="card-container">
       <button onClick={scrollLeft} className="scroll-button left">
@@ -59,7 +62,7 @@ function Card() {
               <div key={index} className="cart">
                 <NavLink to="/course">
                   <img src={item.img} alt={item.name} />
-                  <h2>{item.name}</h2>
+                  <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
                   <div className="cart-flex">
                     <h2>4,3</h2>
