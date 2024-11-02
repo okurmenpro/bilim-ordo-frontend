@@ -14,7 +14,6 @@ function AddCart() {
       navigate('/basket');
     } 
   }, [cartItems, navigate]);
-  
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
@@ -39,6 +38,7 @@ function AddCart() {
   }
 
 
+  
   return (
     <section className='addCart'>
       <div className='leftCart'>
@@ -49,7 +49,7 @@ function AddCart() {
             <img src={item.img} alt={item.name} />
             <div className='description'>
               <h1>{item.name}</h1>
-              <p>Автор: Юрий Аллахвердов</p>
+              <p>Автор: Юрий Гагарин</p>
               <div className='price'>
                 <h2>{item.price}</h2>
               </div>
