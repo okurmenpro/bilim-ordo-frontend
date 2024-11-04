@@ -10,7 +10,6 @@
     justify-content: start;
     margin-bottom: 40px;
   }
-
   .accordions-container {
     display: flex;
     flex-direction: column;
@@ -110,11 +109,11 @@
   }
 
   .faq-title {
-    font-size: 32px; 
+    font-size: 32px;
   }
 
   .accordion {
-    padding: 15px 10px; 
+    padding: 15px 10px;
   }
 
   .accordion-title h3 {
@@ -126,6 +125,22 @@
   }
 
   .child-content {
-    padding: 10px; 
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-flex {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    .accordions-container {
+      max-width: 100%;
+    }
+    .faq-title {
+      display: inline-flex;
+    }
+  }
+  .accordion {
+    max-width: 100% !important;
   }
 }

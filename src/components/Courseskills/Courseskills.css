@@ -1,9 +1,13 @@
+.skill{
+    margin: 50px auto;
+    
+}
+
 .Course-skills{
     width: 750px;
     height: 310px;
     border: 1px solid gray;
     border-radius: 5px;
-    margin: 50px;
     
     }
     .Course-skills h2{
