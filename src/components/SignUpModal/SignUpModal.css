@@ -5,7 +5,6 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 25px;
   font-family: Arial, sans-serif;
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -35,6 +34,18 @@
 
 .SignUp-input {
   margin-top: 20px;
+}
+.show-password-button {
+  width: 100px;
+  height: 30px;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  margin-left: 250px;
+}
+.show-password-button:hover {
+  background-color: #4500b5;
 }
 
 .SignUp-input .form-control {

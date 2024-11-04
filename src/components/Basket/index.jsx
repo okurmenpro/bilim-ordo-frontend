@@ -26,9 +26,8 @@ function AddCart() {
 
   const handleOrder = () => {
     if (!isLoggedIn) {
-      setIsModalOpen(true); // Открываем модал, если пользователь не зарегистрирован
+      setIsModalOpen(true);
     } else {
-      // Логика оформления заказа, если пользователь зарегистрирован
       console.log("Оформление заказа...");
     }
   };
@@ -57,6 +56,7 @@ function AddCart() {
   return (
     <>
       {isModalOpen && <SignUpModal onClose={() => setIsModalOpen(false)} />}
+      {isModalOpen && <div className="overlay"></div>}
       <section className="addCart">
         <div className="leftCart">
           <h1>Корзина</h1>
