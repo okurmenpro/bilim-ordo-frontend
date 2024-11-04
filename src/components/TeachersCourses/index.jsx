@@ -3,7 +3,7 @@ import "./TeachersCourses.scss";
 import Card from "../Card";
 const index = () => {
   return (
-    <div className="container">
+    <div className="container-courses-of-teacher">
       <div className="teachers-courses">
         <Card />
       </div>
