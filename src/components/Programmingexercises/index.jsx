@@ -5,7 +5,7 @@ import Programmingimg from "../../assets/images/Programmingimg.png"
 function Programmingexercises() {
   return (
     <div>
-      <div className='Programming-Exercises'>
+      <div className='Programming-Exercises container'>
         <div className='Exercises'>
           <h2>Упрожнения по 
           написанию кода</h2>

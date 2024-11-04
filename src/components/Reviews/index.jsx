@@ -8,7 +8,7 @@ const Reviews = () => {
     const [ReviewsData, setReviewsData] = useState(DataReviews)
 
     return (
-        <div className='reviews '>
+        <div className='reviews container'>
             <h2>Отзывы</h2>
             <div className="reviews-carts">
                 {DataReviews.map(el => (
