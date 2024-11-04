@@ -1,105 +1,127 @@
-.app {
+.authorization {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.login button {
-  padding: 10px;
-  background-color: purple;
-  color: white;
-  border: none;
-}
-
-.user-avatar {
-  display: flex;
-  align-items: center;
-}
-
-.user-avatar img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.register-left img {
-  width: 600px;
-  height: 400px;
-  margin-top: 60px;
-}
-.register-right {
-  width: 300px;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.input-container {
-  position: relative;
-}
-input {
-  height: 60px;
-  padding: 10px 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-  transition: padding 0.3s ease;
-  margin-top: 10px;
-}
-input::placeholder {
-  color: #999;
-  transition: 0.3s ease;
-}
-input:focus,
-input:not(:placeholder-shown) {
-  padding-top: 20px;
-}
-input:focus::placeholder,
-input:not(:placeholder-shown)::placeholder {
-  transform: translateY(-15px);
-  font-size: 12px;
-  color: #333;
-}
-.register-footer {
-  display: flex;
-  gap: 10px;
-}
-.register-footer input {
-  width: 60px;
-}
-.register-right button {
-  width: 400px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 2px;
-}
-.register-ali {
-  display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 50px;
-  background-color: white;
-  width: 400px;
-  height: 60px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+
+  .authorization-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+
+    .back-button {
+      align-self: flex-start;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #666;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .authorization-right {
+    max-width: 450px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin-right: 240px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+
+      a {
+        color: #6a0dad;
+        text-decoration: none;
+      }
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
 }
-.register-ali button {
-  background-color: #f9f7f7;
-  width: 60px;
-  border-radius: 4px;
+.authorization-right {
+  .password-container {
+    position: relative;
+    width: 100%;
+
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding-right: 80px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
 }
-img {
-  width: 30px;
-  height: 30px;
+@media (max-width: 768px) {
+  .authorization {
+    flex-direction: column;
+  }
+
+  .authorization-left {
+    order: -1;
+    margin-bottom: 20px;
+  }
 }
