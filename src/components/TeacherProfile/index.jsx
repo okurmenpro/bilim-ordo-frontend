@@ -16,7 +16,7 @@ function TeacherProfile() {
   };
 
   return (
-    <section className="teacher-profile">
+    <section className="teacher-profile container">
       <h1>Преподаватель</h1>
       {teacherData.map((el) => (
         <div className="">

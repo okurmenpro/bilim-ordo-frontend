@@ -1,9 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .teachers-courses {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center !important; 
-    align-items: center !important;
-    width: 200px;
-    padding-left: 200px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: center !important;
+  max-width: 100%;
+}
