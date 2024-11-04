@@ -70,6 +70,21 @@ function AddCart() {
                 <div className="price">
                   <h2>{item.price}</h2>
                 </div>
+
+  
+  return (
+    <section className='addCart'>
+      <div className='leftCart'>
+        <h1>Корзина</h1>
+        <h3>{cartItems.length} курса в корзине</h3>
+        {cartItems.map((item, index) => (
+          <div className='aboutCart' key={index}>
+            <img src={item.img} alt={item.name} />
+            <div className='description'>
+              <h1>{item.name}</h1>
+              <p>Автор: Юрий Гагарин</p>
+              <div className='price'>
+                <h2>{item.price}</h2>
               </div>
               <button
                 onClick={() => removeFromCart(item.name)}
