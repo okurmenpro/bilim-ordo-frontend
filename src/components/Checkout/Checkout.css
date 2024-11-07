@@ -1,0 +1,278 @@
+.checkout {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.checkout-form {
+  max-width: 600px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.billing-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #555;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+  width: 270px;
+  text-align: left;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  margin-top: 10px;
+}
+
+.icon1 {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}
+
+input[type="text"] {
+  width: 260px;
+  height: 44px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+  text-align: left;
+}
+/* ------------------- */
+.payment-method {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  /* margin: auto; */
+  padding: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  background-color: #fbfafa;
+}
+
+.payment-option:hover {
+  border-color: #0070ba;
+}
+
+.svg-inline--fa {
+  position: relative;
+  left: -250px;
+}
+
+.payment-option input[type="radio"] {
+  transform: scale(0.4);
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -120px;
+}
+
+.payment-option label {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  left: -250px;
+}
+
+.payment-option .icon {
+  font-size: 20px;
+  color: #0070ba;
+  margin-right: 10px;
+}
+
+.payment-option.selected {
+  border-color: #0070ba;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* ----------------------- */
+.order-details {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  /* margin: auto; */
+  padding: 20px;
+  color: #333;
+}
+
+.order-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.course-details {
+  display: flex;
+}
+
+.course-title {
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+  text-decoration: none;
+}
+
+.course-title a:visited {
+  color: #333;
+}
+
+.course-price {
+  display: grid;
+  text-align: right;
+  max-width: 90px;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+}
+
+.original-price {
+  font-size: 12px;
+  color: #888;
+  text-decoration: line-through;
+  text-align: right;
+}
+/* ----------------------- */
+.checkout-right {
+  text-align: left;
+  width: 600px;
+}
+.summary-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+}
+
+.summary-container span {
+  color: #333;
+}
+
+.summary-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.line-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.line-service {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.total-line {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.line-service span {
+  font-size: 15px;
+  opacity: 1;
+  color: #0070ba;
+}
+
+.proceed-button {
+  background-color: #a855f7;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.money-back-note {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}

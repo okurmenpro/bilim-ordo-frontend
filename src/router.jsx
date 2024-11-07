@@ -8,6 +8,7 @@ import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
 import SignUp from "./components/SignUp";
+import Check from "./pages/Check";
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -43,7 +44,11 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/signup",
-        element: <SignUp/>
+        element: <SignUp />,
+      },
+      {
+        path: "/checkout",
+        element: <Check />,
       },
     ],
   },
