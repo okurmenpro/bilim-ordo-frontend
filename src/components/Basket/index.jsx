@@ -43,6 +43,7 @@ function AddCart() {
     );
   }
 
+
   return (
     <section className="addCart">
       <div className="leftCart">
@@ -51,6 +52,7 @@ function AddCart() {
         {cartItems.map((item, index) => (
           <div className="aboutCart" key={index}>
             <img src={item.img} alt={item.name} />
+
             <div className="aboutCart-cart">
               <div className="description">
                 <span>{item.name}</span>
@@ -60,6 +62,13 @@ function AddCart() {
                     <span>{item.price}</span>
                   </div>
                 </div>
+
+            <div className='description'>
+              <h1>{item.name}</h1>
+              <p>Автор: Юрий Гагарин</p>
+              <div className='price'>
+                <h2>{item.price}</h2>
+
               </div>
               <button
                 onClick={() => removeFromCart(item.name)}
