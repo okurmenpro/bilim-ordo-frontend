@@ -7,6 +7,9 @@ import { BsExclamationOctagon } from "react-icons/bs";
 function Banner() {
     return (
         <div className='course__banner'>
+
+            <div className='inbanner'>
+
             <div className='img__text'>
                 <p>Разработка</p>
                 <p>Языки программирования</p>
@@ -36,6 +39,7 @@ function Banner() {
                 
                 <button><GrLanguage /></button>
                 <p>русский</p>
+            </div>
             </div>
         </div>
     )

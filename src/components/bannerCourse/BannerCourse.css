@@ -6,7 +6,6 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
-
 }
 
 .img__text {
@@ -54,40 +53,74 @@
     font-weight: 400;
 }
 
-.course__update{
+.course__update {
     display: flex;
     gap: 5px;
     color: #fff;
     align-items: baseline;
 }
 
-.course__update div{
+.course__update div {
     display: flex;
     gap: 3px;
-
 }
 
-.course__banner h4{
+.course__banner h4 {
     color: #c0c4fc;
     text-align: left;
 }
 
-.banner__star button{
+.banner__star button {
     color: yellow;
     background: none;
 }
 
-.course__update button{
+.course__update button {
     background: none;
     font-weight: 400;
     font-size: 25px;
     color: #fff;
 }
 
-.incourse{
+.incourse h5 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
-    h5{
-        margin-top: 20px;
-        margin-left: 10px;
+.inbanner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+
+/* Планшетке адаптация */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .course__banner {
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .course__banner h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .course__banner h3 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .inbanner {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .banner__rating h5, .banner__rating p, .course__update p {
+        font-size: 1rem;
+    }
+    
+    .banner__star button {
+        font-size: 1.2rem;
     }
 }
