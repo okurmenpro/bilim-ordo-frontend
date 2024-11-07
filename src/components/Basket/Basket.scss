@@ -12,6 +12,7 @@
   max-width: 100%;
   width: 100%;
   height: auto;
+  // border: 3px solid rgb(233, 228, 228);
   box-shadow: 0 0 2px #d1d7dc;
   margin: 0 auto 30px;
   padding: 24px;
@@ -21,9 +22,12 @@
   width: 240px;
   height: 180px;
   flex-shrink: 0;
+  // max-width: 100%;
+  // height: auto;
+  // vertical-align: middle;
+  // margin-bottom: 2.4rem;
 }
 
-/*когда в корзине есть товары*/
 .cart1 {
   font-family: var(--font-stack-heading);
   text-align: left;
@@ -314,6 +318,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 400px;
+  // height: ;
   margin-left: auto;
   flex-shrink: 0;
 }
@@ -464,10 +469,13 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .v1 {
+    // width: 1024px;
     margin: 0px 0px 64px;
     padding: 0px 48px;
   }
   .v2 {
+    // width: 928px;
+    // height: 347px;
     width: 100%;
     height: auto;
   }
@@ -507,6 +515,7 @@
 
   .description {
     width: 326px;
+    // height: 84px;
     margin-top: 0;
     margin-left: 15px;
     gap: 0px;
@@ -571,6 +580,10 @@
     width: 300px;
     height: 48px;
   }
+
+  // .cartOrder .cartOrder_placing button {
+  //   font-size: 1rem;
+  // }
 }
 
 @media (max-width: 768px) {

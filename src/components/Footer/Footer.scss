@@ -20,7 +20,6 @@
 .categori {
   margin: 0;
   padding: 0;
-
 }
 
 ul {
@@ -73,7 +72,6 @@ ul li a {
 .info-bottom strong {
   color: white;
   font-size: 40px;
-
 }
 
 .footer-png1,
@@ -232,41 +230,39 @@ ul li a {
   color: black;
 }
 
-  .btn:hover {
-    background-color: rgb(154, 143, 143);
-    color: black;
-  }
+.btn:hover {
+  background-color: rgb(154, 143, 143);
+  color: black;
+}
 
-  @media screen and (max-width: 1024px) {
-    .footer {
-      width: 100%;
-      padding: 20px 20px;
-    }
+@media screen and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    padding: 20px 20px;
   }
+}
 
-  .info-left {
+.info-left {
+  gap: 0;
+}
 
-    gap: 0;
-  }
+.info-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  .info-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.footer-business {
+  height: auto;
+  padding: 10px;
+}
 
-  .footer-business {
-    height: auto;
-    padding: 10px;
-  }
+.footer-business-strong {
+  margin-left: -55px;
+  width: 500px;
+}
 
-  .footer-business-strong {
-    margin-left: -55px;
-    width: 500px;
-  }
-
-  .info-right {
-    padding: 20px;
-  }
+.info-right {
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -308,7 +304,6 @@ ul li a {
     flex-direction: column;
     align-items: flex-start;
   }
-
 
   .info-right {
     display: flex;
