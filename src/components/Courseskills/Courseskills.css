@@ -1,0 +1,38 @@
+.skill{
+    margin: 50px auto;
+    
+}
+
+.Course-skills{
+    width: 750px;
+    height: 310px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+    }
+    .Course-skills h2{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 30px;    
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills {
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: -20px;
+    
+    }
+    .skills p {
+        padding-left: 10px;
+        padding-bottom: 5px;
+        text-align: left;
+      
+    }
+    

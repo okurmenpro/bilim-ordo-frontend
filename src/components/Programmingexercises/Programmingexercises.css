@@ -1,0 +1,82 @@
+.Programming-Exercises {
+    width: 750px;
+    height: 368px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;   
+    margin: 0 auto; 
+}
+
+.Programming-Exercises img{
+    width: 400px;
+    height: 300px;
+    padding-top: 50px; 
+}
+
+.Exercises{
+    width: 295px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 54px;   
+}
+
+.Exercises h2{
+    color: rgb(45, 47, 49);
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;    
+}
+
+.Exercises p{
+    color: rgb(112, 112, 112);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;    
+}
+
+.Exercises button{
+    width: 295px;
+    height: 52px;
+    border-radius: 4px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 24px;    
+}
+
+@media (max-width: 600px) {
+
+    .Programming-Exercises {
+        flex-direction: column; 
+        align-items: center;
+        width: 400px;
+        height:468px;
+        padding-top: 90px;
+    }
+    
+    .Programming-Exercises img {
+        width: 424px;
+        height: 278px;        
+        margin-top: -600px;
+    }
+    
+    .Exercises {
+        margin-left: 0; 
+        margin-top: 90px; 
+    }
+}
