@@ -6,7 +6,7 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { VscPreview } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 import { TeacherProfileData } from "../../data/TeacherProfile";
-
+import { NavLink } from "react-router-dom";
 function TeacherProfile() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [teacherData, setTeacherData] = useState(TeacherProfileData);
@@ -18,16 +18,17 @@ function TeacherProfile() {
   return (
     <section className="teacher-profile container">
       <h1>Преподаватель</h1>
-      {teacherData.map(el => (
+      {teacherData.map((el) => (
         <div className="">
-          <h2>{el.name} | {el.work}</h2>
+          <NavLink to="/mycourses">
+            <h2>
+              {el.name} | {el.work}
+            </h2>
+          </NavLink>
+
           <h3>{el.slogan}</h3>
           <div className="aboutTeacher">
-            <img
-              id="teach-img"
-              src={el.img}
-              alt="Преподаватель"
-            />
+            <img id="teach-img" src={el.img} alt="Преподаватель" />
             <div className="statistics">
               <div className="aboutStatistic">
                 <GoStarFill className="icon" />
