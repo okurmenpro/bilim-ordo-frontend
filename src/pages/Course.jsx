@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialCourse from "../components/MaterialCourse";
-import BannerCourse from "../components/bannerCourse";
+import BannerCourse from "../components/BannerCourse";
 import Sidebar from "../components/Sidebar";
 import Reviews from "../components/Reviews";
 import TeacherProfile from "../components/TeacherProfile";
@@ -9,11 +9,11 @@ import Skills from "../components/Courseskills";
 
 function Course() {
   return (
-    <div style={{position: "relative"}}>
+    <div style={{ position: "relative" }}>
       <BannerCourse />
       <Sidebar />
       <Skills />
-      <Programmingexercises/>
+      <Programmingexercises />
       <MaterialCourse />
       <TeacherProfile />
       <Reviews />
@@ -21,4 +21,4 @@ function Course() {
   );
 }
 
-export default Course;  
+export default Course;
