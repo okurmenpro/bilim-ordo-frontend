@@ -14,7 +14,7 @@ export const course = [
     {
       name: "Data Science и Machine Learning на Python 3 с нуля",
       price: "6859,99$",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsuMxSee8-MrVmqkpTx4KWP2GWjrI3cpFx8Q&s",
+      img: "https://masteringjs.io/assets/images/vue/vue-spelled-out.jpg",
       author: "Юрий Гагарин",
     },
     {
