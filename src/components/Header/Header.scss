@@ -22,14 +22,24 @@
   max-width: 1280px;
   margin: 0 auto;
 
+}
 
-
-  h2 {
-    width: 130px;
-    font-weight: 700;
+  .bilim{
+    align-items: center;
+    justify-content: center !important;
+    display: flex;
+    width: 120px;
     font-size: 20px;
-    margin: 0;
-    color: #333;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: -2px;
+  }
+  .B{
+    margin-top:15px;
+    color: purple;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
     a {
       color: purple;
@@ -37,8 +47,8 @@
       padding-bottom: 20px;
       text-decoration: none;
     }
-  }
-}
+  
+
 
 .buttons {
   display: flex;

@@ -94,7 +94,7 @@ function Header() {
       <header className="head">
         <div className="logo">
           <NavLink to="/">
-            <h2><span>B</span>ILIM-ORDO</h2>
+            <h2 className='bilim'><p className="B">B</p>ILIM-ORDO</h2>
           </NavLink>
         </div>
 
@@ -131,10 +131,12 @@ function Header() {
 
         {/* Login and Signup Buttons */}
         <div className="buttons">
-          <button className="login">Войти</button>
           <NavLink to="/signup">
-            <button className="sign-up">Зарегистрироваться</button>
+          <button className="login">Войти</button>
           </NavLink>
+          <NavLink to="/login">
+            <button className="sign-up">Зарегистрироваться</button>
+            </NavLink>
         </div>
 
         {/* Burger Menu for Mobile */}
