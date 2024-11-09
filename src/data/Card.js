@@ -2,13 +2,13 @@ export const course = [
     {
       name: "Python разработка - с нуля до профессионала. Python 3",
       price: "74,99$",
-      img: "https://masteringjs.io/assets/images/vue/vue-spelled-out.jpg",
+      img: "https://logowik.com/content/uploads/images/angular-new6082.logowik.com.webp",
       author: "Юрий Гагарин",
     },
     {
       name: "Python - Полный Курс по Python, Django, Data Science",
       price: "74,99$",
-      img: "https://banner2.cleanpng.com/20180817/jll/607ab18cdbb99b1d7ad42079f4acba3a.webp",
+      img: "https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png",
       author: "Юрий Гагарин",
     },
     {
@@ -20,7 +20,7 @@ export const course = [
     {
       name: "Data Science и Machine Learning на Python 3 с нуля",
       price: "69987,99$",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9k88C3M1FmsiZLG98XFG0Ldz5L2v0SdfMvaWbDr1zgOM8fy9aVKX_U55FnMVQ2ls28Hk&usqp=CAU",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgjniXPycJlcaIzhDL1hqVLQET4ywgcpBAaQ&s",
       author: "Юрий Гагарин",
     },
     {
