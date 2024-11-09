@@ -9,11 +9,11 @@ import Skills from "../components/Courseskills";
 
 function Course() {
   return (
-    <div style={{position: "relative"}}>
+    <div style={{ position: "relative" }}>
       <BannerCourse />
       <Sidebar />
       <Skills />
-      <Programmingexercises/>
+      <Programmingexercises />
       <MaterialCourse />
       <TeacherProfile />
       <Reviews />
@@ -21,4 +21,4 @@ function Course() {
   );
 }
 
-export default Course;  
+export default Course;
