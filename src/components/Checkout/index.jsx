@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "./Checkout.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import {
-  faCcVisa,
-  faPaypal,
-  faCcMastercard,
-  faGooglePay,
-  faCcDiscover,
-  faCcAmex,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaCcVisa } from "react-icons/fa";
+import { FaCcPaypal } from "react-icons/fa";
+import { IoCardSharp } from "react-icons/io5";
+import { FaGooglePay } from "react-icons/fa";
+import { SiAfterpay } from "react-icons/si";
+import { SiKlarna } from "react-icons/si";
 
 function Checkout() {
   const originalPrice = 294.98;
@@ -118,7 +115,8 @@ function Checkout() {
               checked={selectedMethod === "visa"}
               readOnly
             />
-            <FontAwesomeIcon icon={faCcVisa} className="icon" />
+            <FaCcVisa className="icons-new" />
+
             <label htmlFor="visa">Visa **** 9720</label>
           </div>
           <div
@@ -134,7 +132,7 @@ function Checkout() {
               checked={selectedMethod === "paypal"}
               readOnly
             />
-            <FontAwesomeIcon icon={faPaypal} className="icon" />
+            <FaCcPaypal className="icons-new" />
             <label htmlFor="paypal">PayPal</label>
           </div>
           <div
@@ -150,7 +148,8 @@ function Checkout() {
               checked={selectedMethod === "cards"}
               readOnly
             />
-            <FontAwesomeIcon icon={faCcMastercard} className="icon" />
+            <IoCardSharp className="icons-new" />
+
             <label htmlFor="cards">Cards</label>
           </div>
           <div
@@ -166,7 +165,7 @@ function Checkout() {
               checked={selectedMethod === "googlepay"}
               readOnly
             />
-            <FontAwesomeIcon icon={faGooglePay} className="icon" />
+            <FaGooglePay className="icons-new" />
             <label htmlFor="googlepay">Google Pay</label>
           </div>
           <div
@@ -182,7 +181,8 @@ function Checkout() {
               checked={selectedMethod === "afterpay"}
               readOnly
             />
-            <FontAwesomeIcon icon={faCcDiscover} className="icon" />
+            <SiAfterpay className="icons-new" />
+
             <label htmlFor="afterpay">Afterpay</label>
           </div>
           <div
@@ -198,7 +198,7 @@ function Checkout() {
               checked={selectedMethod === "klarna"}
               readOnly
             />
-            <FontAwesomeIcon icon={faCcAmex} className="icon" />
+            <SiKlarna className="icons-new" />
             <label htmlFor="klarna">Klarna</label>
           </div>
 

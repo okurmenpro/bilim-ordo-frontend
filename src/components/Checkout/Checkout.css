@@ -82,13 +82,13 @@ input[type="text"] {
 .payment-method {
   font-family: Arial, sans-serif;
   max-width: 600px;
-  /* margin: auto; */
   padding: 20px;
 }
 
 h3 {
   font-size: 18px;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .payment-option {
@@ -98,6 +98,13 @@ h3 {
   cursor: pointer;
   transition: border-color 0.3s;
   background-color: #fbfafa;
+  gap: 20px;
+  height: 50px;
+}
+
+.icons-new {
+  width: 30px;
+  height: 30px;
 }
 
 .payment-option:hover {
@@ -110,37 +117,21 @@ h3 {
 }
 
 .payment-option input[type="radio"] {
-  transform: scale(0.4);
+  transform: scale(1.5);
   display: flex;
-  align-items: center;
-  position: relative;
-  left: -120px;
+  margin-left: 20px;
 }
 
 .payment-option label {
   font-size: 16px;
   cursor: pointer;
   position: relative;
-  left: -250px;
-}
-
-.payment-option .icon {
-  font-size: 20px;
-  color: #0070ba;
-  margin-right: 10px;
 }
 
 .payment-option.selected {
   border-color: #0070ba;
 }
 
-.message {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
-  font-size: 15px;
-  font-weight: 600;
-}
 /* ----------------------- */
 .order-details {
   font-family: Arial, sans-serif;
@@ -233,7 +224,7 @@ h3 {
 .summary-title {
   font-size: 24px;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .line-item {
