@@ -25,6 +25,7 @@ function Card() {
   useEffect(() => {
     getcourse();
   }, []);
+  
 
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(

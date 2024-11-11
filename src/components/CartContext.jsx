@@ -8,6 +8,10 @@ export const CartProvider = ({ children }) => {
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Состояние для отслеживания входа пользователя
+
+
   const addToCart = (product) => {
     setCartItems((prevItems) => {
       const updatedCart = [...prevItems, product];
@@ -16,9 +20,11 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+
   const removeFromCart = (productId) => {
     setCartItems((prevItems) => {
       const updatedCart = prevItems.filter((item) => item.id !== productId);
+  
       localStorage.setItem("cartItems", JSON.stringify(updatedCart));
       return updatedCart;
     });
@@ -29,13 +35,32 @@ export const CartProvider = ({ children }) => {
     localStorage.removeItem("cartItems");
   };
 
+
+  const login = () => {
+    setIsLoggedIn(true); // Устанавливаем состояние входа
+  };
+
+  const logout = () => {
+    setIsLoggedIn(false); // Устанавливаем состояние выхода
+  };
+
+
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, clearCart }}
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        isLoggedIn,
+        login,
+        logout,
+      }}
+
     >
       {children}
     </CartContext.Provider>

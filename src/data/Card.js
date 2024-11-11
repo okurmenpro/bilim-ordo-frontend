@@ -1,4 +1,5 @@
 export const course = [
+
   {
     id: 1,
     name: "Python разработка - с нуля до профессионала. Python 3",
@@ -48,4 +49,5 @@ export const course = [
     img: "https://miro.medium.com/v2/resize:fit:1200/1*Uov-TfA20xfGqeIZyLWfnA.png",
     author: "Юрий Гагарин",
   },
+
 ];

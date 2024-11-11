@@ -1,6 +1,6 @@
 .materials {
     padding: 20px 50px;
-    width: 800px;
+    width: 750px;
     
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
+    width: 650px;
     height: 60px;
     background-color: #f1f1f2;
     border: 1px solid gray;
