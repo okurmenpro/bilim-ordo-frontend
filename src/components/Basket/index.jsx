@@ -56,17 +56,19 @@ function AddCart() {
                 <span>{item.name}</span>
                 <div className="author-price-container">
                   <p>Автор: Юрий Аллахвердов</p>
-                  <div className="price">
-                    <span>{item.price}</span>
-                  </div>
                 </div>
               </div>
-              <button
-                onClick={() => removeFromCart(item.id)}
-                className="remove-button"
-              >
-                Удалить
-              </button>
+              <div className="remove-container">
+                <button
+                  onClick={() => removeFromCart(item.id)}
+                  className="remove-button"
+                >
+                  Удалить
+                </button>
+              </div>
+              <div className="price">
+                <span>{item.price}</span>
+              </div>
             </div>
           </div>
         ))}
