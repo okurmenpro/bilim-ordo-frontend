@@ -9,17 +9,19 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;  // Ensure responsiveness on smaller screens
 }
 
 .info-left {
   display: flex;
-  gap: 0; 
-  padding: 39px 0px 64px;
+  gap: 0;
+  padding: 39px 0 64px;
+  flex: 1;
 }
 
 .categori {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 ul {
@@ -46,11 +48,7 @@ ul li a {
   background-color: #2d2f31;
   color: white;
   border: 1px solid white;
-}
-
-.icon1 {
-  width: 30px;
-  height: 30px;
+  cursor: pointer;
 }
 
 .info-bottom {
@@ -58,6 +56,7 @@ ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;  // Ensure content wraps properly
 }
 
 .info-bottom strong {
@@ -121,7 +120,6 @@ ul li a {
 
 .first-letter {
   color: purple;
-  text-decoration: none;
   font-size: 40px;
   font-weight: 800;
 }
@@ -132,18 +130,20 @@ ul li a {
 }
 
 @media screen and (max-width: 1024px) {
-    .footer {
-        width: 100%;
-        padding: 20px 20px;
-    }
+  .footer {
+    padding: 20px 20px;
+  }
 
   .info-left {
-    gap: 0; 
+    gap: 0;
+    flex-direction: column;
+    padding: 20px 0;
   }
 
   .info-bottom {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
   }
 
   .footer-business {
@@ -158,6 +158,11 @@ ul li a {
 
   .info-right {
     padding: 20px;
+  }
+
+  .footer-business-img {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -189,6 +194,7 @@ ul li a {
     background-color: #2d2f31;
     color: white;
     border-radius: 0;
+    font-size: 14px;  // Adjust font size on smaller screens
   }
 
   .info-left {
@@ -196,6 +202,7 @@ ul li a {
     flex-direction: column;
     gap: 15px;
     margin-top: -20px;
+    flex: 1;
   }
 
   .info-bottom {
@@ -207,23 +214,37 @@ ul li a {
   .info-bottom strong {
     margin-top: 10px;
   }
+
+  .footer-png1,
+  .footer-png3 {
+    width: 50px;
+    height: 20px;
+  }
+
+  .footer-png2 {
+    width: 30px;
+    height: 30px;
+  }
+
   .categori {
     margin-top: -27px;
   }
 }
 
-.footer-png2{
+.footer-png2 {
   display: flex;
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
 }
-.footer-png3{
+
+.footer-png3 {
   width: 55px;
   height: 25px;
   margin-bottom: 5px;
 }
-.footer-png1{
+
+.footer-png1 {
   width: 70px;
   height: 30px;
   margin-left: 12px;
