@@ -60,8 +60,7 @@
 
 @media screen and (max-width: 1024px) {
     .Companystatistics h2 {
-        font-size: 26px;
-        margin-top: 10px;
+        font-size: 23px; 
     }
 
     .Statistica {
@@ -79,4 +78,12 @@
         font-size: 15px;
         font-weight: 700;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    .Companystatistics h2 {
+        font-size: 18px; 
+    }
+
 }
