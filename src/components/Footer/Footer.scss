@@ -1,5 +1,5 @@
 .footer {
-  width: 100%;
+  max-width: 100%;
   background-color: #2d2f31;
   padding: 0 40px;
   margin: 0 auto;
@@ -8,7 +8,7 @@
 .info-top {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;  // Ensure responsiveness on smaller screens
 }
 
