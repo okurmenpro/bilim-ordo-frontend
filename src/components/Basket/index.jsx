@@ -75,14 +75,16 @@ function AddCart() {
       </div>
 
       <div className="cartOrder">
-        <div className="cartOrder_price_text_container">
-          <div className="cartOrder_price_sum">Общая сумма:</div>
-          <span className="cartOrder_price_sum_text">
-            ${calculateTotalPrice()}
-          </span>
-        </div>
-        <div className="cartOrder_placing">
-          <button>Оформить заказ</button>
+        <div className="cartOrder-container">
+          <div className="cartOrder_price_text_container">
+            <div className="cartOrder_price_sum">Общая сумма:</div>
+            <span className="cartOrder_price_sum_text">
+              ${calculateTotalPrice()}
+            </span>
+          </div>
+          <div className="cartOrder_placing">
+            <button>Оформить заказ</button>
+          </div>
         </div>
       </div>
     </section>
