@@ -6,10 +6,10 @@ import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
 import SignUp from "./components/SignUp";
-
-import Check from "./pages/Check";
+import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
+import Checkout from "./components/Checkout";
 
 export const Router = createBrowserRouter([
   {
@@ -46,12 +46,16 @@ export const Router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "/checkout",
-        element: <Check />,
+        path: "/mycourses",
+        element: <TeachersCourses />,
       },
       {
         path: "/teacherpage",
         element: <TeacherPage />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },
