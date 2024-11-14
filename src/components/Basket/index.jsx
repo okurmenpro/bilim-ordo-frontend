@@ -1,19 +1,17 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Basket.scss";
 import { CartContext } from "../CartContext";
 import { useNavigate } from "react-router-dom";
-import SignUpModal from "../SignUpModal";
 
 function AddCart() {
-  const { cartItems, removeFromCart, isLoggedIn } = useContext(CartContext);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { cartItems, removeFromCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (cartItems.length === 0) {
       navigate("/basket");
     }
-  }, [cartItems, navigate]); // Убрана лишняя точка с запятой
+  }, [cartItems, navigate]);
 
   const calculateTotalPrice = () => {
     return cartItems
@@ -22,14 +20,6 @@ function AddCart() {
         return total + price;
       }, 0)
       .toFixed(2);
-  };
-
-  const handleOrder = () => {
-    if (!isLoggedIn) {
-      setIsModalOpen(true);
-    } else {
-      console.log("Оформление заказа...");
-    }
   };
 
   if (cartItems.length === 0) {
@@ -54,40 +44,50 @@ function AddCart() {
   }
 
   return (
-    <>
-      {isModalOpen && <SignUpModal onClose={() => setIsModalOpen(false)} />}
-      {isModalOpen && <div className="overlay"></div>}
-      <section className="addCart">
-        <div className="leftCart">
-          <h1>Корзина</h1>
-          <h3>{cartItems.length} курса в корзине</h3>
-          {cartItems.map((item, index) => (
-            <div className="aboutCart" key={index}>
-              <img src={item.img} alt={item.name} />
+    <section className="addCart">
+      <div className="leftCart">
+        <h1>Корзина</h1>
+        <span>{cartItems.length} курса в корзине</span>
+        {cartItems.map((item, index) => (
+          <div className="aboutCart" key={index}>
+            <img src={item.img} alt={item.name} />
+            <div className="aboutCart-cart">
               <div className="description">
-                <h1>{item.name}</h1>
-                <p>Автор: Юрий Аллахвердов</p>
-                <div className="price">
-                  <h2>{item.price}</h2>
+                <span>{item.name}</span>
+                <div className="author-price-container">
+                  <p>Автор: Юрий Аллахвердов</p>
                 </div>
               </div>
-              <button
-                onClick={() => removeFromCart(item.name)}
-                className="remove-button"
-              >
-                Удалить
-              </button>
+              <div className="remove-container">
+                <button
+                  onClick={() => removeFromCart(item.id)}
+                  className="remove-button"
+                >
+                  Удалить
+                </button>
+              </div>
+              <div className="price">
+                <span>{item.price}</span>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
-        <div className="cartOrder">
-          <h2>Общая сумма:</h2>
-          <h1>${calculateTotalPrice()}</h1>
-          <button onClick={handleOrder}>Оформить заказ</button>
+      <div className="cartOrder">
+        <div className="cartOrder-container">
+          <div className="cartOrder_price_text_container">
+            <div className="cartOrder_price_sum">Общая сумма:</div>
+            <span className="cartOrder_price_sum_text">
+              ${calculateTotalPrice()}
+            </span>
+          </div>
+          <div className="cartOrder_placing">
+            <button>Оформить заказ</button>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

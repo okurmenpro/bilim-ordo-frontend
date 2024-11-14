@@ -1,192 +1,186 @@
-.registration__course {
-    margin: 50px auto;
-    padding: 40px 50px;
+/* .registration__course {
+  margin: 50px auto;
+  padding: 40px 50px;
 
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    box-shadow: 2px 5px 10px;
-    border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  box-shadow: 2px 5px 10px;
+  border-radius: 5px;
 }
 
 .registration__course h2 {
-    font-size: 22px;
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .gray__line {
-    height: 1px;
-    background-color: rgb(193, 193, 193);
+  height: 1px;
+  background-color: rgb(193, 193, 193);
 }
 
 .registration__course__description {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    text-align: left;
-    color: rgb(82, 82, 82);
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: left;
+  color: rgb(82, 82, 82);
 }
 
 .input__name {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1px;
 }
 
 .aboutCourseInput {
-    width: 100%;
-
+  width: 100%;
 }
 
 .description {
-    text-align: left;
-    color: rgba(123, 122, 122, 0.724);
-    margin-top: 5px;
-    margin-bottom: 35px;
-    font-size: 12px;
+  text-align: left;
+  color: rgba(123, 122, 122, 0.724);
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 .description__container {
-    text-align: left;
-    width: 100%;
-    border: 1px solid rgb(193, 193, 193);
+  text-align: left;
+  width: 100%;
+  border: 1px solid rgb(193, 193, 193);
 }
 
 .registration__course__icon {
-    margin-top: -15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 10px;
-    text-align: left;
-    border-bottom: 1px solid rgb(193, 193, 193);
-
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgb(193, 193, 193);
 }
 
 .registration__course__icon p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .number__menu {
-    font-size: 20px !important;
-    margin-top: 22px;
+  font-size: 20px !important;
+  margin-top: 22px;
 }
 
 .description__course__input {
-    margin: 5px;
-    border: none;
+  margin: 5px;
+  border: none;
 }
 
 .select__language {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .language {
-    width: 350px;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
 }
 
-
 .registration__image {
-    display: flex;
-    gap: 20px;
-
+  display: flex;
+  gap: 20px;
 }
 
 .CourseImage {
-    width: 600px;
-    height: 350px;
-    object-fit: contain;
-    margin-top: 10px;
-    border: 1px solid rgb(197, 196, 196);
-    margin-bottom: 20px;
+  width: 600px;
+  height: 350px;
+  object-fit: contain;
+  margin-top: 10px;
+  border: 1px solid rgb(197, 196, 196);
+  margin-bottom: 20px;
 }
 
 .CourseText p {
-    width: 600px;
-    text-align: left;
+  width: 600px;
+  text-align: left;
 }
 
 .AddFileInput {
-    height: 60px;
-    margin-top: 0;
-    border: none;
+  height: 60px;
+  margin-top: 0;
+  border: none;
 }
 
 .AddFileBtn {
-    height: 60px;
-    border: none;
-    border-left: 1px solid black;
+  height: 60px;
+  border: none;
+  border-left: 1px solid black;
 }
 
 .AddFile {
-    height: 60px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
+  height: 60px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
 }
 
 .registration__course__warning {
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: rgb(251, 161, 137);
-    padding: 5px 15px;
-
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(251, 161, 137);
+  padding: 5px 15px;
 }
 
 .WarningExclamation {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .minWord {
-    margin-top: -5px;
-    text-align: left;
-    margin-bottom: 3px;
-    font-size: 14px;
+  margin-top: -5px;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 14px;
 }
 
 .official__account {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .account__examplamation {
-    font-size: 18px;
-    color: rgb(255, 106, 0);
+  font-size: 18px;
+  color: rgb(255, 106, 0);
 }
 
 .account__profile {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .account__name {
-    font-size: 18px;
-    margin-top: 30px;
+  font-size: 18px;
+  margin-top: 30px;
 }
 
 .notification {
-    background-color: rgb(251, 161, 137);
-    padding: 10px 15px;
-    text-align: left
+  background-color: rgb(251, 161, 137);
+  padding: 10px 15px;
+  text-align: left;
 }
 
 .notification p {
-    margin-top: 0;
-    font-size: 14px;
+  margin-top: 0;
+  font-size: 14px;
 }
 
 .required__image {
-    margin-top: -15px !important;
+  margin-top: -15px !important;
 }
 
 .update {
-    margin-top: -15px !important;
-}
+  margin-top: -15px !important;
+} */

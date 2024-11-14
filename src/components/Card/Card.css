@@ -159,6 +159,7 @@
 
     max-width: 100%; 
     object-fit: cover; 
+
   }
 
   .cart h2,
@@ -189,6 +190,7 @@
 
   .scroll-button {
     display: block !important; /* Показываем кнопки прокрутки */
+
   }
 }
 
@@ -267,6 +269,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .scroll-button {
+    display: block;
+  }
+}
+
 @media (max-width: 600px) {
   .card-container {
     position: relative;
@@ -323,7 +331,6 @@
     display: none;
   }
 
-  .add-to-cart-button {
     margin-top: -10px !important;
   }
 }
