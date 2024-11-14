@@ -62,10 +62,10 @@
 }
 
 .cart h3 {
-  margin-top: -6px;
+  margin: 0;
   color: gray;
   font-size: 17px;
-  margin-left: -145px;
+  text-align: left;
 
 }
 
@@ -151,7 +151,7 @@
     align-items: center;
     height: 100%;
     margin-top: 100px;
-f  }
+  }
 
   .cart img {
     width: 100%;
