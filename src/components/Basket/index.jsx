@@ -1,13 +1,22 @@
-import React, { useContext, useEffect } from "react";
-import "./Basket.scss";
+import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../CartContext";
 import { useNavigate } from "react-router-dom";
+import SignUpModal from "../SignUpModal";
+import "./Basket.scss";
 
 function AddCart() {
   const { cartItems, removeFromCart } = useContext(CartContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isUserRegistered, setIsUserRegistered] = useState(false);
   const navigate = useNavigate();
 
+  // Проверка, был ли пользователь зарегистрирован при монтировании компонента
   useEffect(() => {
+    const registered = localStorage.getItem("isUserRegistered");
+    if (registered === "true") {
+      setIsUserRegistered(true);
+    }
+
     if (cartItems.length === 0) {
       navigate("/basket");
     }
@@ -20,6 +29,16 @@ function AddCart() {
         return total + price;
       }, 0)
       .toFixed(2);
+  };
+
+  // Обработчик оформления заказа
+  const handleOrder = () => {
+    const registered = localStorage.getItem("isUserRegistered");
+    if (registered !== "true" && !isModalOpen) {
+      setIsModalOpen(true); // Открываем модал, если пользователь не зарегистрирован
+    } else {
+      console.log("Оформление заказа...");
+    }
   };
 
   if (cartItems.length === 0) {
@@ -83,10 +102,13 @@ function AddCart() {
             </span>
           </div>
           <div className="cartOrder_placing">
-            <button>Оформить заказ</button>
+            <button onClick={handleOrder}>Оформить заказ</button>
           </div>
         </div>
       </div>
+
+      {/* Показываем модал только если оно открыто */}
+      {isModalOpen && <SignUpModal onClose={() => setIsModalOpen(false)} />}
     </section>
   );
 }
