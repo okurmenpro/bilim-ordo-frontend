@@ -7,13 +7,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import Context from "./context/Context";
+import CoursContextProvider from "./context/CoursContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Context>
-    <App />
-  </Context>
+    <CoursContextProvider>
+      <Context>
+        <App />
+      </Context>
+    </CoursContextProvider>
   </React.StrictMode>
 );
 
