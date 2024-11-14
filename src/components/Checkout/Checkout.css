@@ -268,3 +268,9 @@ h3 {
   text-align: center;
   margin-top: 10px;
 }
+
+@media (max-width: 1024px) {
+  .checkout {
+    display: grid;
+  }
+}
