@@ -17,6 +17,10 @@
     max-width: 670px;
     gap: 20px 0px;
 
+    .accordion-content {
+      width: 620px;
+    }
+
     .accordion {
       display: flex;
       align-items: center;
