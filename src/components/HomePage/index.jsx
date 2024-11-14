@@ -15,6 +15,7 @@ function HomePage() {
       <Companystatistics />
       <Courses />
       <CardContainer name="Учащиеся смотрят">
+      </CardContainer>
         <Card />
       <PopularCategories />
       <TeachSection />

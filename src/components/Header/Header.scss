@@ -1,37 +1,54 @@
 .aback {
+  display: flex;
+  align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 61px;
   width: 100%;
-}
+  margin-bottom: 500px;
+  height: 100px;
+  background-color: #fefefe;
+  position: fixed;
+  z-index: 999;
 
+
+}
 .head {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  top: 0px;
-  z-index: 1;
   background-color: #fefefe;
+  width: 100%;
   max-width: 1280px;
-  margin: auto;
-  height: 100px;
+  margin: 0 auto;
 
-  h2 {
-    width: 130px;
-    font-weight: 700;
+}
+
+  .bilim{
+    align-items: center;
+    justify-content: center !important;
+    display: flex;
+    width: 120px;
     font-size: 20px;
-    padding-top: 11px;
+    font-weight: 600;
     color: #000;
-    padding: 0px;
+    margin-bottom: -2px;
+  }
+  .B{
+    margin-top:15px;
+    color: purple;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-    span {
+    a {
       color: purple;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       text-decoration: none;
     }
-  }
-}
+  
+
 
 .buttons {
   display: flex;
@@ -68,10 +85,10 @@
 }
 
 #search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
+display: flex;
+justify-content: center;
+align-items: center !important;
+margin-top:22px;
 
   button {
     margin-left: 0;
@@ -86,11 +103,14 @@
 
 .btn-outline-secondary {
   padding: 15px 15px 15px 15px !important;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 5px;
 }
 
 .icon {
+  position: relative;
+  border-radius: 4px;
+
   .icon__image {
     width: 120px;
     height: 50px;
@@ -166,7 +186,7 @@
   }
   .icon {
     .icon__image {
-      width: 40px !important;
+      width: 50px !important;
       height: 30px;
     }
     .searchIcon {
@@ -419,8 +439,8 @@
     width: 90px;
   }
 
-  .icons {
-    gap: 10px;
+  .icon {
+    position: relative;
   }
 
   .icon__image {
@@ -431,8 +451,8 @@
   .sign-up {
     height: 35px;
     width: 100%;
-    font-size: 9px !important;
-    padding: 10px;
+    font-size: 14px !important;
+    padding: 8px 16px;
   }
 
   .login {
@@ -442,8 +462,8 @@
   }
 
   .input-group {
-    align-items: center;
-    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 300px;
   }
 
   .btn-outline-secondary {
@@ -465,8 +485,6 @@
   }
 
   .input-group {
-    display: flex;
-    align-items: center;
     width: 100%;
 
     input {
@@ -478,16 +496,18 @@
 
 .cart-count {
   position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: rgb(197, 81, 197);
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 49, 211);
+  color: #fff;
   border-radius: 50%;
-  margin-top: -10px;
-  margin-left: -20px;
-  line-height: 1.5;
+  font-size: 12px;
+  bottom: 37px;
+  left: 40px;
+  text-decoration: none;
 }
 
 #search {
@@ -509,3 +529,4 @@
     width: 100%;
   }
 }
+
