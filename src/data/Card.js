@@ -15,6 +15,7 @@ export const course = [
     author: "Юрий Гагарин",
   },
   {
+  
     id: 3,
     name: "Data Science и Machine Learning на Python 3 с нуля",
     price: "68,99$",
@@ -22,6 +23,7 @@ export const course = [
     author: "Юрий Гагарин",
   },
   {
+
     id: 4,
     name: "Data Science и Machine Learning на Python 3 с нуля",
     price: "87,99$",
@@ -29,6 +31,7 @@ export const course = [
     author: "Юрий Гагарин",
   },
   {
+
     id: 5,
     name: "Data Science и Machine Learning на Python 3 с нуля",
     price: "82,99$",
@@ -36,6 +39,7 @@ export const course = [
     author: "Юрий Гагарин",
   },
   {
+
     id: 6,
     name: "Data Science и Machine Learning на Python 3 с нуля",
     price: "59,99$",
@@ -43,6 +47,7 @@ export const course = [
     author: "Юрий Гагарин",
   },
   {
+
     id: 7,
     name: "Data Science и Machine Learning на Python 3 с нуля",
     price: "69,99$",
