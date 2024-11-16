@@ -274,3 +274,15 @@ h3 {
     display: grid;
   }
 }
+
+@media (max-width: 660px) {
+  .checkout {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  container {
+    max-width: 425px;
+  }
+}
