@@ -1,3 +1,6 @@
+import React from 'react'
+import Banner from '../Banner'
+import Companystatistics from "../Companystatistics"
 import React from "react";
 import Companystatistics from "../Companystatistics"
 import Banner from "../Banner";
