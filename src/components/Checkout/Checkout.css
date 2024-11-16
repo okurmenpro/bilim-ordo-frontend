@@ -272,17 +272,48 @@ h3 {
 @media (max-width: 1024px) {
   .checkout {
     display: grid;
+    padding-left: 185px;
+    padding-bottom: 30px;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 820px) {
   .checkout {
-    margin: 0 auto;
+    padding-left: 60px;
   }
 }
 
-@media (max-width: 425px) {
-  container {
-    max-width: 425px;
+@media (max-width: 768px) {
+  .checkout {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .checkout {
+    padding: 0;
+    margin: 0;
+  }
+  .form-group {
+    display: grid;
+  }
+  .disclaimer {
+    width: 300px;
+  }
+  .payment-method {
+    width: 310px;
+  }
+  .order-details {
+    width: 310px;
+  }
+  .course-details {
+    display: grid;
+  }
+  .course-price {
+    padding-left: 130px;
+  }
+  .checkout-right {
+    width: 310px;
+    padding-bottom: 20px;
   }
 }
