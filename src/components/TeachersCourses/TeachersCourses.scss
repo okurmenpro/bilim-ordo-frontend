@@ -1,16 +1,14 @@
 #container-teachers-courses {
   display: flex;
-align-items: center;
-justify-content: center;
-
+  align-items: center;
+  justify-content: center;
 
   .teachers-courses {
-    // width: 200px;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     flex-direction: column;
+    margin-top: 110px;
   }
-
 }

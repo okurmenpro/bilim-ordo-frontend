@@ -25,7 +25,6 @@ function TeacherProfile() {
               {el.name} | {el.work}
             </h2>
           </NavLink>
-
           <h3>{el.slogan}</h3>
           <div className="aboutTeacher">
             <img id="teach-img" src={el.img} alt="Преподаватель" />
@@ -48,12 +47,10 @@ function TeacherProfile() {
               </div>
             </div>
           </div>
-
           <p>{el.text1}</p>
           <p>{el.text2}</p>
           <p>{el.text3}</p>
           <p>{el.text4}</p>
-
           {isExpanded && (
             <>
               <p>{el.text5}</p>

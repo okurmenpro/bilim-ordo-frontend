@@ -2,15 +2,14 @@ import React from "react";
 import "./TeachersCourses.scss";
 import Card from "../Card";
 
-const index = () => {
-
+const TeachersCourses = () => {
   return (
     <div id="container-teachers-courses">
       <div className="teachers-courses">
-          <Card  />
+        <Card /> {/* Внутри компонента Card будет кнопка */}
       </div>
     </div>
   );
 };
 
-export default index;
+export default TeachersCourses;

@@ -66,7 +66,6 @@
   color: gray;
   font-size: 17px;
   text-align: left;
-
 }
 
 .cart-flex {
@@ -157,9 +156,8 @@
     width: 100%;
     height: auto;
 
-    max-width: 100%; 
-    object-fit: cover; 
-
+    max-width: 100%;
+    object-fit: cover;
   }
 
   .cart h2,
@@ -189,8 +187,7 @@
   }
 
   .scroll-button {
-    display: block !important; /* Показываем кнопки прокрутки */
-
+    display: block !important;
   }
 }
 
@@ -329,8 +326,5 @@
 
   .scroll-button {
     display: none;
-  }
-
-    margin-top: -10px !important;
   }
 }
