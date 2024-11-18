@@ -22,7 +22,7 @@
 
 .title {
     padding-top: 80px;
-    max-width: 1500px;
+    width: 1500px;
     margin: auto;
 
     h2 {
@@ -59,11 +59,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .title h2 {
-        font-weight: 700;
-        font-size: 26px;
-        text-align: left;
-        padding-left: 60px;
+
+    .title {
+        width: 850px;
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: left;
+            padding-left: 60px;
+        }
     }
 
     .background {

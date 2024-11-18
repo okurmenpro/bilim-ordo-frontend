@@ -2,7 +2,7 @@
   width: 1300px;
 }
 .flex {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 70px;
@@ -10,9 +10,8 @@
 .cart {
   width: 258px;
   height: 296px;
-
-  margin: 0 auto;
 }
+
 .cart img {
   height: 145px;
   width: 258px;

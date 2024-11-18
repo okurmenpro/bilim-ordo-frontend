@@ -1,22 +1,19 @@
 .footer {
-  max-width: 100%;
+  width: 100%;
   background-color: #2d2f31;
-  padding: 0 40px;
+  padding: 20px 40px;
   margin: 0 auto;
 }
 
 .info-top {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
-  flex-wrap: wrap;  // Ensure responsiveness on smaller screens
+  width: 100%;
 }
 
 .info-left {
   display: flex;
   gap: 0;
-  padding: 39px 0 64px;
-  flex: 1;
   padding: 39px 0px 64px;
 }
 
@@ -49,7 +46,11 @@ ul li a {
   background-color: #2d2f31;
   color: white;
   border: 1px solid white;
-  cursor: pointer;
+}
+
+.icon1 {
+  width: 30px;
+  height: 30px;
 }
 
 .info-bottom {
@@ -57,7 +58,6 @@ ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;  // Ensure content wraps properly
 
   h2 {
     font-size: 30px;
@@ -177,9 +177,10 @@ ul li a {
   border-top: none;
   border-left: none;
   border-right: none;
-  height: 55px;
+  height: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .footer-business2 {
@@ -189,10 +190,8 @@ ul li a {
 }
 
 .footer-business-strong strong {
-  display: flex;
-  align-items: center;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 800;
   margin-left: 70px;
 }
@@ -204,7 +203,6 @@ ul li a {
 
 .footer-business-img {
   display: flex;
-  align-items: center;
   gap: 10px;
 }
 
@@ -222,6 +220,7 @@ ul li a {
 
 .first-letter {
   color: purple;
+  text-decoration: none;
   font-size: 40px;
   font-weight: 800;
 }
@@ -238,13 +237,6 @@ ul li a {
 
 @media screen and (max-width: 1024px) {
   .footer {
-    padding: 20px 20px;
-  }
-
-  .info-left {
-    gap: 0;
-    flex-direction: column;
-    padding: 20px 0;
     width: 100%;
     padding: 20px 20px;
   }
@@ -286,7 +278,6 @@ ul li a {
   .info-bottom {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
   }
 
   .footer-business {
@@ -295,17 +286,12 @@ ul li a {
   }
 
   .footer-business-strong {
-    margin-left: -60px;
+    margin-left: -55px;
     width: 500px;
   }
 
   .info-right {
     padding: 20px;
-  }
-
-  .footer-business-img {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -337,7 +323,6 @@ ul li a {
     background-color: #2d2f31;
     color: white;
     border-radius: 0;
-    font-size: 14px;  // Adjust font size on smaller screens
   }
 
   .info-left {
@@ -345,7 +330,6 @@ ul li a {
     flex-direction: column;
     gap: 15px;
     margin-top: -20px;
-    flex: 1;
   }
 
   .info-bottom {
@@ -357,22 +341,11 @@ ul li a {
   .info-bottom strong {
     margin-top: 10px;
   }
-
-  .footer-png1,
-  .footer-png3 {
-    width: 50px;
-    height: 20px;
-  }
-
-  .footer-png2 {
-    width: 30px;
-    height: 30px;
-  }
-
   .categori {
     margin-top: -27px;
   }
 }
+
 
 .footer-png2 {
   display: flex;
