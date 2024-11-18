@@ -1,56 +1,22 @@
-.card-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.scroll-button {
-  display: block;
-  background: transparent;
-  border: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.scroll-button.left {
-  left: -30px;
-  top: 190px;
-}
-
-.scroll-button.right {
-  right: -35px;
-  top: 190px;
-}
-
 .flex {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 1rem;
-  overflow-x: scroll;
-  scrollbar-color: transparent transparent;
-  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 70px;
 }
 
 .cart {
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 15px;
-  position: relative;
-  margin: 10px;
-  min-width: 250px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 350px;
-  overflow: hidden;
+  width: 258px;
+  height: 296px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-right: 70px;
 }
 
 .cart img {
-  width: 100%;
   height: 145px;
+  width: 258px;
+  object-fit: cover;
 }
 
 .cart h2 {
@@ -62,10 +28,10 @@
 }
 
 .cart h3 {
-  margin: 0;
+  margin-top: -6px;
   color: gray;
   font-size: 17px;
-  text-align: left;
+  margin-left: -145px;
 
 }
 
@@ -83,7 +49,6 @@
   color: black;
   margin-top: 18px;
 }
-
 .cart-flex p {
   color: black;
 }
@@ -100,8 +65,6 @@
   color: gray;
   font-size: 17px;
   text-align: left;
-  margin-top: 10px;
-  padding-bottom: 20px;
 }
 
 .cart-top h3 {
@@ -113,17 +76,12 @@
   background-color: black;
   color: white;
   padding: 10px 20px;
-  margin-top: -30px;
-  width: 100%;
-  height: 35px;
   border: none;
   cursor: pointer;
-  text-align: center;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .add-to-cart-button:hover {
@@ -135,13 +93,15 @@
   display: flex;
   align-items: center;
 }
-
+.scroll-button {
+  display: none;
+}
 @media (max-width: 768px) {
   .flex {
     display: flex;
     overflow-x: auto;
     padding: 10px 0;
-    gap: 15px;
+    max-width: 100%;
   }
 
   .cart {
@@ -156,10 +116,8 @@
   .cart img {
     width: 100%;
     height: auto;
-
-    max-width: 100%; 
-    object-fit: cover; 
-
+    max-height: 120px;
+    object-fit: cover;
   }
 
   .cart h2,
@@ -187,10 +145,8 @@
     width: 100%;
     padding: 5px;
   }
-
   .scroll-button {
-    display: block !important; /* Показываем кнопки прокрутки */
-
+    display: none !important;
   }
 }
 
@@ -200,21 +156,17 @@
     display: flex;
     align-items: center;
   }
-
   .scroll-button {
     cursor: pointer;
     z-index: 10;
     border: none;
   }
-
   .scroll-button.left {
     margin-right: 10px;
   }
-
   .scroll-button.right {
     margin-left: 10px;
   }
-
   .flex {
     display: flex;
     overflow-x: auto;
@@ -268,7 +220,6 @@
     width: 100%;
   }
 }
-
 @media (max-width: 1024px) {
   .scroll-button {
     display: block;
@@ -326,11 +277,10 @@
     justify-content: flex-start;
     width: 100%;
   }
-
   .scroll-button {
     display: none;
   }
-
+  .add-to-cart-button {
     margin-top: -10px !important;
   }
 }
