@@ -146,6 +146,7 @@ h3 {
   font-weight: bold;
   margin-bottom: 16px;
   text-align: left;
+  max-width: 600px;
 }
 
 .order-list {
@@ -178,6 +179,7 @@ h3 {
   text-align: left;
   color: #333;
   text-decoration: none;
+  width: 430px;
 }
 
 .course-title a:visited {
@@ -194,6 +196,7 @@ h3 {
 .price {
   font-size: 16px;
   color: #333;
+  text-align: right;
 }
 
 .original-price {
@@ -209,21 +212,22 @@ h3 {
   padding-top: 30px;
 }
 .summary-container {
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   max-width: 600px;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding-top: 60px;
+  background-color: aliceblue;
 }
 
 .summary-container span {
   color: #333;
+  text-decoration: none;
 }
 
 .summary-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 16px;
   text-align: left;
 }
@@ -231,7 +235,6 @@ h3 {
 .line-item {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
 }
 
 .line-service {
@@ -267,6 +270,10 @@ h3 {
   color: #555;
   text-align: center;
   margin-top: 10px;
+}
+
+.origin-price {
+  font-weight: 700;
 }
 
 @media (max-width: 1024px) {

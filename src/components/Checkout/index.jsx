@@ -235,25 +235,23 @@ function Checkout() {
             <span>Original Price:</span>
             <span>${originalPrice.toFixed(2)}</span>
           </div>
-          <hr></hr>
           <div className="line-item">
             <span>Discounts:</span>
             <span>-${discount.toFixed(2)}</span>
           </div>
           <hr></hr>
           <div className="line-item">
-            <span>Subtotal:</span>
-            <span>${subtotal.toFixed(2)}</span>
+            <span className="origin-price">Subtotal:</span>
+            <span className="origin-price">${subtotal.toFixed(2)}</span>
           </div>
-          <hr></hr>
           <div className="line-item">
             <span>Tax (8.25%):</span>
             <span>+${tax.toFixed(2)}</span>
           </div>
           <hr></hr>
           <div className="line-item total-line">
-            <span>Total:</span>
-            <span>${total.toFixed(2)}</span>
+            <span className="origin-price">Total:</span>
+            <span className="origin-price">${total.toFixed(2)}</span>
           </div>
           <span className="line-service">
             By completing your purchase you agree to these{" "}
