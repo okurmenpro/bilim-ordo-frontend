@@ -25,6 +25,7 @@ function SignUpModal({ onClose }) {
     try {
       await createUserWithEmailAndPassword(auth, user.Email, user.Password);
       alert("Регистрация прошла успешно!");
+      localStorage.setItem("isUserRegistered", "true"); // Сохраняем состояние регистрации в localStorage
       login();
       onClose();
     } catch (error) {
