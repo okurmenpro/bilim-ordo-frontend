@@ -14,7 +14,7 @@
 }
 
 .carousel-control-next,
- .carousel-control-prev{
+.carousel-control-prev {
     width: 50px;
     height: 50px;
     margin-top: 320px;
@@ -27,4 +27,60 @@
     width: 40px;
     height: 40px;
     border-radius: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-in img {
+        height: 300px;
+        width: 960px;
+        object-fit: cover;
+    }
+
+    .carousel {
+        width: 1000px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+        margin-top: 275px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        border: 1px gray solid;
+        background-color: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-in img {
+        height: 250px;
+        width: 750px;
+        object-fit: cover;
+    }
+
+    .carousel {
+        width: 790px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+        margin-top: 255px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        border: 1px gray solid;
+        background-color: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+    }
 }
