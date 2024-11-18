@@ -1,58 +1,124 @@
 .leave-request {
     width: 100%;
-    height: 465px;
+    height: auto; /* Allow flexible height */
 
     h4 {
-        font-size: 40px;
+        font-size: 2.5rem; /* Using rem for scalability */
         font-weight: 700;
         display: flex;
         justify-content: start;
-        margin-bottom: 40px;
+        margin-bottom: 2.8rem; /* Adjusted for better scaling */
     }
 
     .inf {
+        width: 41vw; /* Ширина формы фиксированная для всех устройств на 50% от ширины окна */
         display: block;
+        margin-top: -6px;
+    }
 
-        input {
-            width: 100%;
-            height: 60px;
-            border-radius: 8px;
-            background: #F2F2F2;
-            border: none;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 28px;
-            text-align: left;
-            padding-left: 12px;
-            margin-bottom: 20px;
-            margin-top: 0px;
-        }
+    .inf input {
+        width: 100%; /* Ввод по ширине родительского контейнера (который 50vw) */
+        height: 60px;
+        border: none;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        margin-bottom: 1.25rem; /* Margin between input fields */
+        padding-left: 14px;
+    }
 
-        .leave-req-btn {
-            width: 191px;
-            height: 52px;
-            border-radius: 8px;
-            background: #2D2F31;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 25.2px;
-            color: #FFFFFF;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-        }
+    .leave-req-btn {
+        width: 191px;
+        height: 52px;
+        border-radius: 8px;
+        background: #2d2f31;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: white;
+        margin-top: 1.25rem;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
-@media screen and (max-width:768px) {
-        .leave-req-btn {
-            display: inline-block !important;
-        }
+
+/* Mobile devices (max width: 768px) */
+@media screen and (max-width: 768px) {
     .leave-request {
-        margin-bottom: 50px;
+        height: auto; /* Allow flexible height */
     }
-    .leave-req-title {
-      display: inline-flex !important;
+
+    .inf {
+        width: 45vw; /* Зафиксированная ширина на 50% от окна */
+        margin-top: 0; /* Убираем отрицательный маргин */
+    }
+
+    .inf input {
+        height: 50px; /* Smaller height for input fields */
+        margin-bottom: 1rem; /* Adjusted margin */
+    }
+
+    .leave-req-btn {
+        width: 100%; /* Full width for the button */
+        height: 50px; /* Smaller button height */
+        font-size: 1rem; /* Reduced font size for the button */
+    }
+
+    h4 {
+        font-size: 2rem; /* Smaller header for mobile */
+    }
+}
+
+/* Tablets (max width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .leave-request {
+        height: auto;
+    }
+
+    .inf {
+        width: 40vw !important; /* Ширина формы фиксированная для планшетов */
+        margin-top: 12px;
+    }
+
+    .inf input {
+        height: 55px; /* Slightly larger input height */
+        margin-bottom: 1rem; /* Adjusted margin */
+    }
+
+    .leave-req-btn {
+        width: 100%;
+        height: 55px; /* Slightly larger button */
+        font-size: 1.0625rem; /* Increased button font size */
+    }
+
+    h4 {
+        font-size: 2.25rem; /* Adjusted header size for tablets */
+    }
+}
+
+/* For screens between 1025px and 1180px */
+@media screen and (min-width: 1025px) and (max-width: 1180px) {
+    .leave-request {
+        height: auto;
+    }
+
+    .inf {
+        width: 50vw; /* Ширина формы фиксированная на 50% от ширины экрана */
+    }
+
+    .inf input {
+        height: 55px;
+        margin-bottom: 2rem;
+    }
+
+    .leave-req-btn {
+        width: 100%;
+        height: 55px;
+        font-size: 1.0625rem; /* Increased font size for larger screens */
+    }
+
+    h4 {
+        font-size: 2.25rem; /* Adjusted for medium-large screens */
     }
 }
