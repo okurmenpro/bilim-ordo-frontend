@@ -25,10 +25,12 @@ function Card() {
   useEffect(() => {
     getcourse();
   }, []);
+  
 
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(
-      (cartItem) => cartItem.name === item.name
+      (cartItem) => cartItem.id === item.id
+      // (cartItem) => cartItem.name === item.name
     );
     if (!isAlreadyInCart) {
       addToCart(item);
@@ -58,7 +60,7 @@ function Card() {
       <div className="flex" ref={scrollRef}>
         {cardCourse.map((item, index) => {
           const isInCart = cartItems.some(
-            (cartItem) => cartItem.name === item.name
+            (cartItem) => cartItem.id === item.id
           );
           return (
             <div key={index} className="cart">
