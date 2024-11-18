@@ -18,12 +18,12 @@
 }
 
 .scroll-button.left {
-  left: 90px;
+  left: 170px;
   top: 190px;
 }
 
 .scroll-button.right {
-  right: 85px;
+  right: 155px;
   top: 190px;
 }
 
@@ -317,5 +317,11 @@
 
   .add-to-cart-button {
     margin-top: -10px !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 1280px) {
+  .scroll-button.left,
+  .scroll-button.right {
+    display: none !important;
   }
 }
