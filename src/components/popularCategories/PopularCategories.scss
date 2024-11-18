@@ -13,6 +13,7 @@
     background-color: #F5F5F5;
     padding-left: -20px;
     padding-top: 53px;
+
     img {
         width: 100px;
         height: 100px;
@@ -21,6 +22,9 @@
 
 .title {
     padding-top: 80px;
+    width: 1500px;
+    margin: auto;
+
     h2 {
         color: #000000;
         font-weight: 700;
@@ -55,26 +59,33 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .title h2{
-        font-weight: 700;
-        font-size: 26px;
-        text-align: left;
-        padding-left: 60px;
+    .title {
+        width: 850px;
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: left;
+            padding-left: 60px;
+        }
     }
+
     .background {
         margin-top: -20px;
         width: 100px;
         height: 100px;
     }
-    .background img{
+
+    .background img {
         margin-top: -25px;
         width: 50px;
         height: 50px;
     }
-    .dropdown-toggle{
+
+    .dropdown-toggle {
         width: 150px;
         font-size: 12px;
     }
+
     .border-png p {
         padding-top: 2px;
         text-align: center;
