@@ -25,6 +25,7 @@ function Card() {
   useEffect(() => {
     getcourse();
   }, []);
+  
 
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(
@@ -95,6 +96,7 @@ function Card() {
         <button onClick={scrollRight} className="scroll-button right">
           <IoIosArrowDroprightCircle size={30} />
         </button>
+
       </div>
     </div>
   );
