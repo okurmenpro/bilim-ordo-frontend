@@ -24,8 +24,9 @@ const CoursContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   //!get
-  const getCourses = async (id) => {
-    const { data } = await axios.get(`${API}/categories`);
+  const getCourses = async () => {
+    const { data } = await axios.get(`${API}/courses`);
+    console.log(data);
     dispatch({
       type: "GET_COURSES",
       payload: data,

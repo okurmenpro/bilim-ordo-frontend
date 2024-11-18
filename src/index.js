@@ -6,16 +6,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import Context from "./context/Context";
+// import Context from "./context/Context";
 import CoursContextProvider from "./context/CoursContextProvider";
+import Card from "./components/Card";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <CoursContextProvider>
-      <Context>
-        <App />
-      </Context>
+      {/* <Context> */}
+      <App />
+      <Card />
+      {/* </Context> */}
     </CoursContextProvider>
   </React.StrictMode>
 );

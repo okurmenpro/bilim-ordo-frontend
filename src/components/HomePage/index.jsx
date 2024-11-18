@@ -14,9 +14,7 @@ function HomePage() {
       <Banner />
       <Companystatistics />
       <Courses />
-      <CardContainer name="Учащиеся смотрят">
-        <Card />
-      </CardContainer>
+      <CardContainer name="Учащиеся смотрят">{/* <Card /> */}</CardContainer>
       <PopularCategories />
       <TeachSection />
       <InfoSection />
