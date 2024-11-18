@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .scroll-button {
@@ -17,12 +18,12 @@
 }
 
 .scroll-button.left {
-  left: -30px;
+  left: 170px;
   top: 190px;
 }
 
 .scroll-button.right {
-  right: -35px;
+  right: 155px;
   top: 190px;
 }
 
@@ -33,7 +34,7 @@
   gap: 1rem;
   overflow-x: scroll;
   scrollbar-color: transparent transparent;
-  width: 100%;
+  width: 75%;
 }
 
 .cart {
@@ -62,11 +63,10 @@
 }
 
 .cart h3 {
-  margin: 0;
+  margin-top: -6px;
   color: gray;
   font-size: 17px;
-  text-align: left;
-
+  margin-left: -105px;
 }
 
 .cart-flex {
@@ -130,12 +130,6 @@
   background-color: #28a745;
 }
 
-.card-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
   .flex {
     display: flex;
@@ -148,18 +142,16 @@
     margin: 0 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-top: 100px;
+    align-items: flex-start;
+    width: 180px;
+    max-height: 280px;
   }
 
   .cart img {
     width: 100%;
     height: auto;
-
-    max-width: 100%; 
-    object-fit: cover; 
-
+    max-height: 120px;
+    object-fit: cover;
   }
 
   .cart h2,
@@ -189,8 +181,7 @@
   }
 
   .scroll-button {
-    display: block !important; /* Показываем кнопки прокрутки */
-
+    display: block !important;
   }
 }
 
@@ -269,19 +260,12 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .scroll-button {
-    display: block;
-  }
-}
-
 @media (max-width: 600px) {
   .card-container {
     position: relative;
     display: flex;
     align-items: center;
   }
-
   .flex {
     display: flex;
     overflow-x: auto;
@@ -331,4 +315,13 @@
     display: none;
   }
 
+  .add-to-cart-button {
+    margin-top: -10px !important;
   }
+}
+@media (min-width: 360px) and (max-width: 1280px) {
+  .scroll-button.left,
+  .scroll-button.right {
+    display: none !important;
+  }
+}
