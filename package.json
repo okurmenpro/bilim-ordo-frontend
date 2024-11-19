@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
-    "firebase": "^11.0.1",
+    "firebase": "^11.0.2",
     "formik": "^2.4.6",
     "postcss-normalize": "^13.0.1",
     "react": "^18.3.1",
