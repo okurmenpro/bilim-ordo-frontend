@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import "./SignUpModal.css";
 import { TbXboxX } from "react-icons/tb";
-// import { auth } from "../../firebase";
-// import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { CartContext } from "../CartContext";
 
 function SignUpModal({ onClose }) {
@@ -23,7 +23,7 @@ function SignUpModal({ onClose }) {
     }
 
     try {
-      // await createUserWithEmailAndPassword(auth, user.Email, user.Password);
+      await createUserWithEmailAndPassword(auth, user.Email, user.Password);
       alert("Регистрация прошла успешно!");
       localStorage.setItem("isUserRegistered", "true"); // Сохраняем состояние регистрации в localStorage
       login();
