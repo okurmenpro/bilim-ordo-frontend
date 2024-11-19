@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-
 import { MdLanguage } from "react-icons/md";
 import Nasdaq from "../../assets/images/nasdaq.png";
 import Volkswagen from "../../assets/images/volkswagen.png";
