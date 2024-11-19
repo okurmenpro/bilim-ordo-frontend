@@ -217,7 +217,7 @@ ul li a {
   color: white;
   font-size: 17px;
   font-weight: 800;
-  margin-left: 0;
+  margin-left: 50px;
 }
 
 .footer-business-strong strong span {
@@ -401,6 +401,9 @@ ul li a {
 
   .categori {
     margin-top: -27px;
+    ul{
+      padding-left: 14px;
+    }
   }
 }
 
