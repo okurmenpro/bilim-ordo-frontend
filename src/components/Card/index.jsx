@@ -35,7 +35,9 @@ function Card() {
 
   return (
     <div className="card-container">
-      <button onClick={scrollLeft} className="scroll-button left">
+
+      <div className="card">
+       <button onClick={scrollLeft} className="scroll-button left">
         <IoIosArrowDropleftCircle size={30} />
       </button>
 
@@ -52,6 +54,8 @@ function Card() {
       <button onClick={scrollRight} className="scroll-button right">
         <IoIosArrowDroprightCircle size={30} />
       </button>
+      </div>
+
     </div>
   );
 }
