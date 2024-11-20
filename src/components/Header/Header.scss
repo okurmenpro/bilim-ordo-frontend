@@ -206,6 +206,7 @@ a {
       display: none;
     }
   }
+
   .buttons {
     display: none;
   }
@@ -469,7 +470,8 @@ a {
 
   .teacher-page {
     p {
-      display: none;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 
@@ -522,10 +524,10 @@ a {
   }
 
   #search {
-    width: 100% !important;
+    width: 70% !important;
 
     .form-control {
-      width: 100% !important;
+      width: 70% !important;
     }
   }
 
