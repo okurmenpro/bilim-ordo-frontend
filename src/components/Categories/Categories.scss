@@ -1,19 +1,17 @@
-container {
-  width: 1100px;
-}
 .categories {
   display: grid;
-  padding: 30px;
+  margin: 20px auto 50px;
 
   .categoriesh2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    h6 {
+    p {
       color: rgb(59, 130, 246);
     }
 
-    h2 {
+    strong {
       color: rgb(15, 23, 42);
       font-family: Inter;
       font-size: 24px;

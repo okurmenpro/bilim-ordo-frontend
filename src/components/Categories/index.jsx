@@ -9,8 +9,8 @@ function index() {
   return (
     <div className="categories container">
       <div className="categoriesh2">
-        <h2>Top Categories</h2>
-        <h6>Label</h6>
+        <strong>Top Categories</strong>
+        <p>Label</p>
       </div>
 
       <div className="astrology ">
