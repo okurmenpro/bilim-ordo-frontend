@@ -1,0 +1,163 @@
+container {
+  width: 1200px;
+}
+.topcourses {
+  display: grid;
+  padding: 30px;
+
+  .topcoursesh2 {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: rgb(15, 23, 42);
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 140%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+
+    h6 {
+      color: rgb(59, 130, 246);
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  .beginners {
+    display: flex;
+    justify-content: space-between;
+
+    .design {
+      display: grid;
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid rgb(226, 232, 240);
+      border-radius: 16px;
+      box-shadow: 0px 0px 8px 0px rgba(59, 130, 246, 0.12);
+      background: rgb(255, 255, 255);
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .design1 {
+        margin-left: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      img {
+        position: static;
+        width: 266px;
+        height: 139px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 16px 16px;
+      }
+
+      h2 {
+        color: rgb(15, 23, 42);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h3 {
+        color: rgb(51, 65, 85);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .design-icon {
+        .line-ratings {
+          display: flex;
+        }
+
+        .linestart {
+          border-radius: 0.36px;
+          color: rgb(234, 179, 8);
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .ratings {
+          color: rgb(51, 65, 85);
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 15px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        .ratings2 {
+          color: rgb(51, 65, 85);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .price1 {
+          color: rgb(15, 23, 42);
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .topcourses {
+    margin: 0 auto;
+
+    .topcoursesh2 {
+      margin: 0 auto;
+      width: 600px;
+    }
+    .beginners {
+      margin: 0 auto;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .topcourses {
+    margin-left: -500px;
+
+    .topcoursesh2 {
+      width: 280px;
+    }
+    .beginners {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

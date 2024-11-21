@@ -8,6 +8,7 @@ import PopularCategories from "../PopularCategories/index";
 import InfoSection from "../InfoSection";
 import TeachSection from "../TeachSection";
 import Categories from "../Categories";
+import Topcourses from "../Topcourses";
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <Companystatistics />
       <Categories />
       <Courses />
+      <Topcourses />
       <CardContainer name="Учащиеся смотрят"></CardContainer>
       <Card />
       <PopularCategories />
