@@ -8,8 +8,6 @@
   background-color: #fefefe;
   position: fixed;
   z-index: 999;
-
-
 }
 
 .head {
@@ -22,7 +20,6 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
 }
 
 .bilim {
@@ -49,8 +46,6 @@ a {
   padding-bottom: 20px;
   text-decoration: none;
 }
-
-
 
 .buttons {
   display: flex;
@@ -87,11 +82,15 @@ a {
 }
 
 .teacher-page {
+  width: 200px;
   p {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21.09px;
-    color: #2D2F31;
+    color: rgb(51, 65, 85);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
     cursor: pointer;
   }
 }
@@ -103,13 +102,26 @@ a {
   margin-top: 22px;
 
   button {
-    margin-left: 0;
-    border-radius: 0px 7px 7px 0px;
+    width: 50px;
+    height: 40px;
+    border: none;
+    margin-left: -1px;
   }
 
   input {
-    height: 48px;
-    margin-right: 0;
+    border: none;
+    width: 200px;
+    margin-top: 5px;
+    margin-left: -20px;
+    height: 30px;
+  }
+
+  .input-group {
+    width: 640px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 65, 85);
+    border-radius: 8px;
   }
 }
 
@@ -117,6 +129,10 @@ a {
   padding: 15px 15px 15px 15px !important;
   margin-top: 0px;
   margin-left: 5px;
+
+  .search-icon {
+    color: black;
+  }
 }
 
 .icon {
@@ -124,32 +140,57 @@ a {
   border-radius: 4px;
 
   .icon__image {
-    width: 120px;
-    height: 50px;
+    width: 73px;
+    height: 40px;
+
     border-radius: 4px;
     background: #f2f2f2;
   }
 }
 
 .sign-up {
-  background: #2d2f31;
-  color: #ffffff !important;
+  width: 73px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(51, 65, 85);
+  background: #f2f2f2;
+
+  color: rgb(51, 65, 85);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
   border-radius: 4px;
-  padding: 14px 15px 14px 15px;
+
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .sign-up:hover {
-  background: gray;
+  background: rgb(51, 65, 85);
+  color: rgba(255, 255, 255, 0.899);
+  transition: 0.3s ease;
 }
 
 .login {
-  padding: 13px 12px;
+  width: 61px;
+  height: 40px;
   background: #f2f2f2;
   border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid rgb(51, 65, 85);
+
+  color: rgb(51, 65, 85);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .login:hover {
-  background: #2d2f319a;
+  background: rgb(51, 65, 85);
   color: rgba(255, 255, 255, 0.899);
   transition: 0.3s ease;
 }
@@ -167,10 +208,6 @@ a {
 .burger-menu {
   display: none;
 }
-
-// .side-menu {
-//   display: flex;
-// }
 
 .close-menu {
   display: flex;
@@ -575,4 +612,10 @@ a {
   .input-group {
     width: 100%;
   }
+}
+
+.form-control {
+  border: none !important; /* Убираем границу */
+  box-shadow: none !important; /* Убираем тень */
+  outline: none; /* Убираем обводку при фокусе */
 }
