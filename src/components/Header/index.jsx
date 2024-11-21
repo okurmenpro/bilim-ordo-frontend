@@ -102,6 +102,12 @@ function Header() {
         <Dropdown id="dropdowns" />
 
         {/* Search Input */}
+
+        <div className="teacher-page">
+          <NavLink to={"/teacherpage"}>
+            <p>Преподаватель</p>
+          </NavLink>
+        </div>
         <div id="search">
           <div className="input-group mb-3">
             <input
@@ -132,11 +138,11 @@ function Header() {
         {/* Login and Signup Buttons */}
         <div className="buttons">
           <NavLink to="/signup">
-          <button className="login">Войти</button>
+            <button className="login">Войти</button>
           </NavLink>
           <NavLink to="/login">
             <button className="sign-up">Зарегистрироваться</button>
-            </NavLink>
+          </NavLink>
         </div>
 
         {/* Burger Menu for Mobile */}

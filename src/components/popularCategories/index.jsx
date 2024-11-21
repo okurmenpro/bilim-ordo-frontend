@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { popular_categories } from "../../data/popular_categories";
-import "./PopularCategories.css";
+import "./PopularCategories.scss";
 
 const PopularCategories = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);

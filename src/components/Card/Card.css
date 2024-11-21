@@ -16,14 +16,18 @@
   cursor: pointer;
   padding: 10px;
 }
+.card {
+  margin: 0 auto;
+  border: none;
+}
 
 .scroll-button.left {
-  left: 170px;
+  left: 140px;
   top: 190px;
 }
 
 .scroll-button.right {
-  right: 155px;
+  right: 150px;
   top: 190px;
 }
 
@@ -35,13 +39,13 @@
   overflow-x: scroll;
   scrollbar-color: transparent transparent;
   width: 75%;
+  margin: 0 auto;
 }
 
 .cart {
   background: #f9f9f9;
   border-radius: 8px;
   padding: 15px;
-  position: relative;
   margin: 10px;
   min-width: 250px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -259,6 +263,7 @@
     width: 100%;
   }
 }
+
 
 @media (max-width: 600px) {
   .card-container {
