@@ -1,0 +1,107 @@
+.homeReviews { 
+  text-align: left;
+  margin-bottom: 100px;
+  margin: auto;
+  width: 1400px;
+  height: 512px;
+
+  .reviews-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 650;
+      line-height: 33.6px;
+      margin-bottom: 24px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 24px;
+
+      button {
+        width: 56px;
+        height: 40px;
+        border-radius: 8px;
+        background: #94A3B8;
+        border: none;
+
+        .scroll-icon {
+          width: 22px;
+          color: #E2E8F0;
+        }
+      }
+    }
+  }
+
+  .reviews-carts {
+    width: 1776px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+    margin: 0 auto;
+
+
+    .reviews-cart {
+      width: 432px;
+      height: 276px;
+      padding: 24px;
+      gap: 8px;
+      border-radius: 16px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 10px 0px 10px 0px #3B82F61F;
+
+
+      .quotes {
+        width: 35.66px;
+        height: 27.35px;
+        color: #3B82F6;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        color: #000000;
+      }
+
+      .cart-end {
+        width: 150px;
+        height: 60px;
+        gap: 8px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 55px;
+          height: 52px;
+          border-radius: 50%;
+        }
+
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28.8px;
+          margin: 0;
+        }
+
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.reviews-carts-wrapper {
+  overflow: hidden;
+}

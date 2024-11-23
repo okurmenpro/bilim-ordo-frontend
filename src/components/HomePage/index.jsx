@@ -6,7 +6,7 @@ import CardContainer from "../CardContainer";
 import Card from "../Card";
 import PopularCategories from "../PopularCategories/index";
 import InfoSection from "../InfoSection";
-import TeachSection from "../TeachSection";
+import HomeReviews from "../HomeReviews";
 import Categories from "../Categories";
 
 function HomePage() {
@@ -19,7 +19,7 @@ function HomePage() {
       <CardContainer name="Учащиеся смотрят"></CardContainer>
       <Card />
       <PopularCategories />
-      <TeachSection />
+      <HomeReviews />
       <InfoSection />
     </div>
   );
