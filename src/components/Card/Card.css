@@ -264,7 +264,6 @@
   }
 }
 
-
 @media (max-width: 600px) {
   .card-container {
     position: relative;
@@ -323,4 +322,4 @@
   .add-to-cart-button {
     margin-top: -10px !important;
   }
-
+}
