@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Basket from "./pages/Basket";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
 import Layout from "./components/Layout/Layout";
 import Course from "./pages/Course";
 import HomePage from "./components/HomePage";
 import Sidebar from "./components/Sidebar";
 import TeacherProfile from "./components/TeacherProfile";
 import SignUp from "./components/SignUp";
+import TeachersCourses from "./components/TeachersCourses";
+import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
 export const Router = createBrowserRouter([
   {
@@ -18,13 +18,10 @@ export const Router = createBrowserRouter([
         path: "/basket",
         element: <Basket />,
       },
-      {
-        path: "/register",
-        element: <Register />,
-      },
+
       {
         path: "/login",
-        element: <Login />,
+        element: <Loginn />,
       },
       {
         path: "/",
@@ -44,12 +41,16 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/signup",
-        element: <SignUp />
+        element: <SignUp />,
+      },
+      {
+        path: "/mycourses",
+        element: <TeachersCourses/>
       },
       {
         path: "/teacherpage",
-        element: <TeacherPage/>
-      }
+        element: <TeacherPage />,
+      },
     ],
   },
 ]);

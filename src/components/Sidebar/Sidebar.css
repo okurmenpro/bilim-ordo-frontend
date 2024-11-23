@@ -5,11 +5,10 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
     background-color: white;
     margin: 0 auto;
-
 }
 
 .container1 {
-    margin: 0 0 0 800px;
+    margin: 40px 0 0 800px;
     padding: 0;
 }
 
@@ -203,7 +202,6 @@ p {
     color: rgb(15, 15, 160);
     text-decoration: underline;
     line-height: 40px;
-    margin-bottom: 10px;
     border: none;
 }
 
@@ -228,7 +226,6 @@ span {
 
 .used_coupon {
     width: 280px;
-    height: 70px;
     border: 1px dashed rgba(0, 0, 0, 0.448);
     display: flex;
     justify-content: space-between;
@@ -243,9 +240,11 @@ span {
     text-align: start;
     color: rgba(0, 0, 0, 0.523);
     cursor: pointer none;
+    margin: 0;
 }
 
 .used_coupon p a {
+    margin: 0;
     font-size: 18px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.523);
@@ -264,7 +263,7 @@ span {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .enter_coupon input {
@@ -282,16 +281,13 @@ span {
     color: #fff;
     background: #000;
     border: none;
-    margin-top: 10px;
 }
 
 .line {
-
+    margin: auto;
     width: 280px;
     height: 1px;
     background-color: #00000027;
-    margin-top: -35px;
-    margin-left: -30px;
     margin-bottom: 35px;
 }
 
@@ -321,4 +317,39 @@ span {
 
 .try_btn:hover {
     background: rgba(10, 10, 10, 0.085);
+}
+
+
+
+
+
+
+
+
+
+/* Планшетке адаптация */
+@media (max-width: 1024px) {
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse; /* Sidebarды ылдый түшүрүү үчүн */
+        margin: 0;
+        padding: 0 15px;
+        
+    }
+
+    .Sidebar {
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .video video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Башка стилдер */
 }

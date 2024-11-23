@@ -11,11 +11,16 @@
     margin-bottom: 40px;
   }
   .accordions-container {
+ 
     display: flex;
     flex-direction: column;
     justify-content: start;
     max-width: 670px;
     gap: 20px 0px;
+
+    .accordion-content {
+      width: 345px;
+    }
 
     .accordion {
       display: flex;
@@ -105,7 +110,7 @@
   .faq-content {
     width: 100%;
     height: auto;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .faq-title {
