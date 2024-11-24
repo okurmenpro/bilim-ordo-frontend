@@ -47,9 +47,8 @@
   border-radius: 8px;
   padding: 15px;
   margin: 10px;
-  min-width: 250px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 350px;
+  min-width: 200px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -62,56 +61,39 @@
   font-size: 18px;
   font-weight: 500;
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
   color: black;
 }
 
 .cart h3 {
-  margin-top: -6px;
-  color: gray;
   font-size: 17px;
-  margin-left: -105px;
+  margin: 0;
+color: rgb(51, 65, 85);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
 }
 
 .cart-flex {
   display: flex;
   align-items: center;
-  margin-top: -20px;
   gap: 5px;
   color: yellow;
 }
 
-.cart-flex h2 {
-  font-size: 20px;
+.cart-flex h2{
   text-align: left;
   color: black;
-  margin-top: 18px;
 }
 
 .cart-flex p {
   color: black;
+  margin: 0;
 }
 
-.cart-top {
-  display: flex;
-  margin-top: -20px;
-  gap: 7px;
-  color: black;
-}
-
-.cart-top p {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 17px;
-  text-align: left;
-  margin-top: 10px;
-  padding-bottom: 20px;
-}
-
-.cart-top h3 {
-  font-size: 17px;
-  margin-top: 5px;
-}
 
 .add-to-cart-button {
   background-color: black;
@@ -323,4 +305,4 @@
   .add-to-cart-button {
     margin-top: -10px !important;
   }
-
+}
