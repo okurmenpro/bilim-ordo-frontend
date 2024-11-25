@@ -11,12 +11,13 @@
 
 
 }
+
 .head {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 22px;
   background-color: #fefefe;
   width: 100%;
   max-width: 1280px;
@@ -24,30 +25,31 @@
 
 }
 
-  .bilim{
-    align-items: center;
-    justify-content: center !important;
-    display: flex;
-    width: 120px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: -2px;
-  }
-  .B{
-    margin-top:15px;
-    color: purple;
-    font-size: 20px;
-    font-weight: 600;
-  }
+.bilim {
+  align-items: center;
+  justify-content: center !important;
+  display: flex;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: -2px;
+}
 
-    a {
-      color: purple;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-decoration: none;
-    }
-  
+.B {
+  margin-top: 15px;
+  color: purple;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+a {
+  color: purple;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
 
 
 .buttons {
@@ -84,11 +86,21 @@
   transform: scaleX(1);
 }
 
+.teacher-page {
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.09px;
+    color: #2D2F31;
+    cursor: pointer;
+  }
+}
+
 #search {
-display: flex;
-justify-content: center;
-align-items: center !important;
-margin-top:22px;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  margin-top: 22px;
 
   button {
     margin-left: 0;
@@ -141,17 +153,21 @@ margin-top:22px;
   color: rgba(255, 255, 255, 0.899);
   transition: 0.3s ease;
 }
+
 .searchIcon {
   display: none;
 }
+
 .icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .burger-menu {
   display: none;
 }
+
 // .side-menu {
 //   display: flex;
 // }
@@ -159,36 +175,52 @@ margin-top:22px;
 .close-menu {
   display: flex;
 }
+
 .category-button {
   display: none;
 }
+
 .sidebar-link {
   display: none;
 }
+
 .menu-text {
   display: none;
 }
+
 .back-arrow {
   display: none;
 }
+
 .back-button-container {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   #search {
     display: none;
   }
+
+  .teacher-page {
+    p {
+      display: none;
+    }
+  }
+
   .buttons {
     display: none;
   }
+
   .dropdown {
     display: none;
   }
+
   .icon {
     .icon__image {
       width: 50px !important;
       height: 30px;
     }
+
     .searchIcon {
       display: block;
       color: #000;
@@ -197,9 +229,11 @@ margin-top:22px;
       margin-top: 7px;
     }
   }
+
   .bilim-ordo {
     margin-left: 50px;
   }
+
   .burger-menu {
     display: block;
     font-size: 36px;
@@ -251,11 +285,13 @@ margin-top:22px;
         text-align: left;
       }
     }
+
     .sidebar-link {
       display: block;
       text-align: left;
       padding-top: 5px;
     }
+
     .popular-categories {
       margin-top: 20px;
 
@@ -308,6 +344,7 @@ margin-top:22px;
         }
       }
     }
+
     .buttonLanguage {
       display: flex;
       justify-content: space-between;
@@ -390,12 +427,14 @@ margin-top:22px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
+
   .close {
     width: 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .close-place {
     display: flex;
     justify-content: space-between;
@@ -409,6 +448,7 @@ margin-top:22px;
     border-radius: 4px;
     margin-left: 5px;
   }
+
   // .searchIcon {
   //   display: block;
   //   font-size: 14px;
@@ -425,6 +465,13 @@ margin-top:22px;
     h2 {
       font-size: 18px;
       width: 110px;
+    }
+  }
+
+  .teacher-page {
+    p {
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 
@@ -477,10 +524,10 @@ margin-top:22px;
   }
 
   #search {
-    width: 100% !important;
+    width: 70% !important;
 
     .form-control {
-      width: 100% !important;
+      width: 70% !important;
     }
   }
 
@@ -529,4 +576,3 @@ margin-top:22px;
     width: 100%;
   }
 }
-
