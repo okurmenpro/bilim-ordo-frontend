@@ -11,7 +11,7 @@ import {
   MdLanguage,
 } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../../context/CartContext";
 import Dropdown from "../Dropdown/Index";
 
 function Header() {

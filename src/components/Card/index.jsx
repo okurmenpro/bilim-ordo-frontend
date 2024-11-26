@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
 import "./Card.css";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../../context/CartContext";
 import { NavLink } from "react-router-dom";
 import { course } from "../../data/Card";
 import {
