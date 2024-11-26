@@ -23,31 +23,79 @@ function Header() {
 
   const categories = {
     "Веб-разработка": [
-      "JavaScript", "React JS", "Angular", "CSS", "Next.js", "HTML", "ASP.NET Core", "Node.js", "WordPress"
+      "JavaScript",
+      "React JS",
+      "Angular",
+      "CSS",
+      "Next.js",
+      "HTML",
+      "ASP.NET Core",
+      "Node.js",
+      "WordPress",
     ],
     "Разработка мобильных приложений": [
-      "Google Flutter", "IOS Development", "Android Development", "Dart", "Swift", "Kotlin", "SwiftUI"
+      "Google Flutter",
+      "IOS Development",
+      "Android Development",
+      "Dart",
+      "Swift",
+      "Kotlin",
+      "SwiftUI",
     ],
     "Разработка игр": [
-      "Unreal Engine", "Unity", "Game Development Basics", "C#", "3D Game Development", "Unreal Engine Blueprints"
+      "Unreal Engine",
+      "Unity",
+      "Game Development Basics",
+      "C#",
+      "3D Game Development",
+      "Unreal Engine Blueprints",
     ],
     "Бизнес-анализ и Business Intelligence": [
-      "Microsoft Power BI", "SQL", "Data Modeling", "Data Analysis", "Business Analysis", "Tableau"
+      "Microsoft Power BI",
+      "SQL",
+      "Data Modeling",
+      "Data Analysis",
+      "Business Analysis",
+      "Tableau",
     ],
     "ИТ-сертификация": [
-      "AWS Certified Cloud Practitioner", "AWS Certified Solution Architect", "CompTIA Security+", "CompTIA A+"
+      "AWS Certified Cloud Practitioner",
+      "AWS Certified Solution Architect",
+      "CompTIA Security+",
+      "CompTIA A+",
     ],
     "Личностные изменения": [
-      "Life Coaching", "NLP", "Personal Growth", "Sound Therapy", "Coaching", "Mindfulness", "CBT"
+      "Life Coaching",
+      "NLP",
+      "Personal Growth",
+      "Sound Therapy",
+      "Coaching",
+      "Mindfulness",
+      "CBT",
     ],
     "Графический дизайн и иллюстрация": [
-      "Graphic Design", "Canva", "Adobe Illustrator", "Adobe Photoshop", "Drawing", "Adobe InDesign"
+      "Graphic Design",
+      "Canva",
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Drawing",
+      "Adobe InDesign",
     ],
     "Цифровой маркетинг": [
-      "Digital Marketing", "Marketing Strategy", "Social Media Marketing", "Internet Marketing", "Copywriting"
+      "Digital Marketing",
+      "Marketing Strategy",
+      "Social Media Marketing",
+      "Internet Marketing",
+      "Copywriting",
     ],
     "Все категории": [
-      "Разработка", "Бизнес", "Финансы и бухгалтерский учет", "ИТ и ПО", "Личностный рост", "Дизайн", "Маркетинг"
+      "Разработка",
+      "Бизнес",
+      "Финансы и бухгалтерский учет",
+      "ИТ и ПО",
+      "Личностный рост",
+      "Дизайн",
+      "Маркетинг",
     ],
   };
 
@@ -94,7 +142,9 @@ function Header() {
       <header className="head">
         <div className="logo">
           <NavLink to="/">
-            <h2 className='bilim'><p className="B">B</p>ILIM-ORDO</h2>
+            <h2 className="bilim">
+              <p className="B">B</p>ILIM-ORDO
+            </h2>
           </NavLink>
         </div>
 
@@ -126,7 +176,7 @@ function Header() {
         </div>
 
         {/* Cart Icon */}
-        <NavLink to='/basket'>
+        <NavLink to="/basket">
           <div className="icon">
             <img className="icon__image" src={cart} alt="Cart" />
             {cartItems.length > 0 && (
@@ -137,18 +187,16 @@ function Header() {
 
         {/* Login and Signup Buttons */}
         <div className="buttons">
-          <NavLink to="/signup">
+          <NavLink to="/login">
             <button className="login">Войти</button>
           </NavLink>
-          <NavLink to="/login">
+          <NavLink to="/signup">
             <button className="sign-up">Зарегистрироваться</button>
           </NavLink>
         </div>
 
         {/* Burger Menu for Mobile */}
-        {isMobile && (
-          <MdMenu className="burger-menu" onClick={toggleMenu} />
-        )}
+        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
       </header>
 
       {/* Side Menu (Mobile) */}
@@ -172,21 +220,27 @@ function Header() {
             </div>
             <ul>
               {categories[selectedCategory].map((sub) => (
-                <li key={sub} className="subcategory-item">{sub}</li>
+                <li key={sub} className="subcategory-item">
+                  {sub}
+                </li>
               ))}
             </ul>
           </div>
         ) : (
           <div className="menu-options">
             <div className="close-place">
-              <NavLink to="/login" className="sidebar-link">Войти</NavLink>
+              <NavLink to="/login" className="sidebar-link">
+                Войти
+              </NavLink>
               <div className="close-icon-container" onClick={toggleMenu}>
                 <MdClose className="close-icon" />
               </div>
             </div>
 
             <div className="divider" />
-            <NavLink to="/signup" className="sidebar-link">Регистрация</NavLink>
+            <NavLink to="/signup" className="sidebar-link">
+              Регистрация
+            </NavLink>
             <div className="lines" />
 
             {/* Popular Categories for Mobile */}
