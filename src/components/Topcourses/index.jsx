@@ -1,9 +1,44 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./topcourses.scss";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import topcourses from "../../assets/images/topcourses.png";
+import { topcourse } from "../../data/topcourse";
+import {
+  IoIosArrowDropleftCircle,
+  IoIosArrowDroprightCircle,
+} from "react-icons/io";
 
-function index() {
+function TopCourses() {
+  const scrollRef = useRef(null);
+
+  const [topcourses, setTopCourse] = useState(topcourse);
+  const getcourse = async () => {
+    try {
+      const response = await fetch("/topcourse");
+      const data = await response.json();
+      setTopCourse(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getcourse();
+  }, []);
+
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({
+      left: -scrollRef.current.clientWidth,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({
+      left: scrollRef.current.clientWidth,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="topcourses container">
       <div className="topcoursesh2">
@@ -11,86 +46,40 @@ function index() {
         <h6>Label</h6>
       </div>
 
-      <div className="beginners ">
-        <div className="design">
-          <img src={topcourses} alt="" />
-          <div className="design1">
-            <h2>Beginner’s Guide to Design</h2>
-            <h3>By Ronald Richards</h3>
-            <div className="design-icon">
-              <div className="line-ratings">
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <p className="ratings">(1200 Ratings)</p>
+      <div className="beginners" ref={scrollRef}>
+        <button onClick={scrollLeft} className="scroll-button left">
+          <IoIosArrowDropleftCircle size={30} className="icon-scroll" />
+        </button>
+
+        {topcourses.map((course) => (
+          <div className="design" key={course.id}>
+            <img src={course.image} alt={course.title} />
+            <div className="design1">
+              <h2>{course.title}</h2>
+              <h3>{course.author}</h3>
+              <div className="design-icon">
+                <div className="line-ratings">
+                  {[...Array(5)].map((_, index) => (
+                    <MdOutlineStarPurple500 className="linestart" key={index} />
+                  ))}
+                  <p className="ratings">({course.ratings} Ratings)</p>
+                </div>
+                <p className="ratings2">
+                  {course.totalHours} Total Hours. {course.lectures} Lectures.{" "}
+                  {course.level}
+                </p>
+                <p className="price1">{course.price}</p>
               </div>
-              <p className="ratings2">22 Total Hours. 155 Lectures. Beginner</p>
-              <p className="price1">$149.9</p>
             </div>
           </div>
-        </div>
-        <div className="design">
-          <img src={topcourses} alt="" />
-          <div className="design1">
-            <h2>Beginner’s Guide to Design</h2>
-            <h3>By Ronald Richards</h3>
-            <div className="design-icon">
-              <div className="line-ratings">
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <p className="ratings">(1200 Ratings)</p>
-              </div>
-              <p className="ratings2">22 Total Hours. 155 Lectures. Beginner</p>
-              <p className="price1">$149.9</p>
-            </div>
-          </div>
-        </div>
-        <div className="design">
-          <img src={topcourses} alt="" />
-          <div className="design1">
-            <h2>Beginner’s Guide to Design</h2>
-            <h3>By Ronald Richards</h3>
-            <div className="design-icon">
-              <div className="line-ratings">
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <p className="ratings">(1200 Ratings)</p>
-              </div>
-              <p className="ratings2">22 Total Hours. 155 Lectures. Beginner</p>
-              <p className="price1">$149.9</p>
-            </div>
-          </div>
-        </div>
-        <div className="design">
-          <img src={topcourses} alt="" />
-          <div className="design1">
-            <h2>Beginner’s Guide to Design</h2>
-            <h3>By Ronald Richards</h3>
-            <div className="design-icon">
-              <div className="line-ratings">
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <MdOutlineStarPurple500 className="linestart" />
-                <p className="ratings">(1200 Ratings)</p>
-              </div>
-              <p className="ratings2">22 Total Hours. 155 Lectures. Beginner</p>
-              <p className="price1">$149.9</p>
-            </div>
-          </div>
-        </div>
+        ))}
+
+        <button onClick={scrollRight} className="scroll-button right">
+          <IoIosArrowDroprightCircle size={30} className="icon-scroll" />
+        </button>
       </div>
     </div>
   );
 }
 
-export default index;
+export default TopCourses;

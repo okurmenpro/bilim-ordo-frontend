@@ -4,10 +4,12 @@ container {
 .topcourses {
   display: grid;
   padding: 30px;
+  position: relative;
 
   .topcoursesh2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 950px;
 
     h2 {
       color: rgb(15, 23, 42);
@@ -15,7 +17,6 @@ container {
       font-size: 24px;
       font-weight: 600;
       line-height: 140%;
-      letter-spacing: 0%;
       text-align: left;
     }
 
@@ -25,17 +26,42 @@ container {
       font-size: 14px;
       font-weight: 500;
       line-height: 160%;
-      letter-spacing: 0%;
       text-align: left;
     }
   }
   .beginners {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: hidden;
+    padding: 10px;
+    width: 1160px;
+    margin-left: 38px;
+
+    .scroll-button {
+      display: block;
+      background: transparent;
+      border: none;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      z-index: 1;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .scroll-button.left {
+      left: 20px;
+    }
+
+    .scroll-button.right {
+      right: 30px;
+    }
 
     .design {
       display: grid;
-      width: 300px;
+      width: 260px;
       box-sizing: border-box;
       border: 1px solid rgb(226, 232, 240);
       border-radius: 16px;
@@ -43,6 +69,7 @@ container {
       background: rgb(255, 255, 255);
       margin-top: 0;
       margin-bottom: 0;
+      flex: 0 0 auto;
 
       .design1 {
         margin-left: 16px;
@@ -52,12 +79,13 @@ container {
 
       img {
         position: static;
-        width: 266px;
+        width: 226px;
         height: 139px;
         flex: none;
         order: 0;
         flex-grow: 0;
         margin: 16px 16px;
+        border-radius: 6px;
       }
 
       h2 {
@@ -87,6 +115,7 @@ container {
       .design-icon {
         .line-ratings {
           display: flex;
+          margin: 0;
         }
 
         .linestart {
@@ -103,6 +132,7 @@ container {
           line-height: 15px;
           letter-spacing: 0%;
           text-align: left;
+          margin: 4px 0;
         }
         .ratings2 {
           color: rgb(51, 65, 85);
@@ -123,8 +153,8 @@ container {
           line-height: 150%;
           letter-spacing: 0%;
           text-align: left;
-          margin-top: 0;
-          margin-bottom: 0;
+          margin-top: 6px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -134,30 +164,97 @@ container {
 @media (max-width: 1024px) {
   .topcourses {
     margin: 0 auto;
+    position: relative;
+    margin-right: 120px;
+    width: 900px;
 
     .topcoursesh2 {
-      margin: 0 auto;
-      width: 600px;
+      display: flex;
+      gap: 630px;
+    }
+
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 860px;
+      margin-left: 38px;
+
+      .scroll-button {
+        cursor: pointer;
+        z-index: 10;
+        border: none;
+        .design {
+          flex: 0 0 30%;
+          margin: 0 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          scroll-snap-align: start;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    margin-right: 120px;
+    width: 700px;
+
+    .topcoursesh2 {
+      display: flex;
+      gap: 520px;
     }
     .beginners {
-      margin: 0 auto;
-      display: grid;
-      gap: 30px;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 700px;
+      margin-left: 8px;
     }
   }
 }
 
 @media (max-width: 320px) {
   .topcourses {
-    margin-left: -500px;
-
+    margin: 0 auto;
+    position: relative;
+    margin-right: 120px;
+    width: 300px;
+    margin-right: 50px;
     .topcoursesh2 {
-      width: 280px;
+      display: flex;
+      gap: 80px;
     }
     .beginners {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 300px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
     }
   }
 }
