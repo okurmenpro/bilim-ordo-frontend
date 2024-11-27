@@ -15,23 +15,16 @@
 }
 
 .cate-btn {
+  padding: 10px 15px;
   font-weight: 500;
   cursor: pointer;
-  padding: 10px 15px 10px 15px;
   border-radius: 4px;
-  text-align: center;
-  color: #efefff;
   border: none;
   font-size: 15px;
-  cursor: pointer;
-
   color: rgb(51, 65, 85);
   font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0%;
   text-align: left;
+  /* margin-top: 4px; */
 }
 
 .cate-btn:hover {

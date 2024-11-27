@@ -3,7 +3,7 @@
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  margin-bottom: 500px;
+  margin-bottom: 100px;
   height: 100px;
   background-color: #fefefe;
   position: fixed;
@@ -18,8 +18,13 @@
   gap: 22px;
   background-color: #fefefe;
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
 }
 
 .bilim {
@@ -30,21 +35,12 @@
   font-size: 20px;
   font-weight: 600;
   color: #000;
-  margin-bottom: -2px;
 }
 
 .B {
-  margin-top: 15px;
   color: purple;
   font-size: 20px;
   font-weight: 600;
-}
-
-a {
-  color: purple;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-decoration: none;
 }
 
 .buttons {
@@ -82,7 +78,8 @@ a {
 }
 
 .teacher-page {
-  width: 200px;
+  width: 240px;
+
   p {
     color: rgb(51, 65, 85);
     font-family: Inter;
@@ -98,21 +95,20 @@ a {
 #search {
   display: flex;
   justify-content: center;
-  align-items: center !important;
-  margin-top: 22px;
+  align-items: center ;
+  margin-top: 20px;
 
   button {
     width: 50px;
     height: 40px;
     border: none;
-    margin-left: -1px;
   }
 
   input {
     border: none;
     width: 200px;
     margin-top: 5px;
-    margin-left: -20px;
+    margin-left: -18px;
     height: 30px;
   }
 
@@ -140,9 +136,8 @@ a {
   border-radius: 4px;
 
   .icon__image {
-    width: 73px;
+    width: 85px;
     height: 40px;
-
     border-radius: 4px;
     background: #f2f2f2;
   }
@@ -234,11 +229,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+.aback{
+  width: 100%;
+}
   #search {
     display: none;
   }
 
   .teacher-page {
+    display: none;
     p {
       display: none;
     }
@@ -486,10 +485,6 @@ a {
     margin-left: 5px;
   }
 
-  // .searchIcon {
-  //   display: block;
-  //   font-size: 14px;
-  // }
 }
 
 @media screen and (max-width: 1024px) {
@@ -590,7 +585,7 @@ a {
   border-radius: 50%;
   font-size: 12px;
   bottom: 37px;
-  left: 40px;
+  left: 35px;
   text-decoration: none;
 }
 
@@ -615,7 +610,7 @@ a {
 }
 
 .form-control {
-  border: none !important; /* Убираем границу */
-  box-shadow: none !important; /* Убираем тень */
-  outline: none; /* Убираем обводку при фокусе */
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
 }

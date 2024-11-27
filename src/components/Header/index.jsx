@@ -138,11 +138,12 @@ function Header() {
 
   return (
     <div className="aback">
-      <header className="head">
+      <header className="head container">
+      {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
         <div className="logo">
           <NavLink to="/">
             <h2 className="bilim">
-              <p className="B">B</p>ILIM-ORDO
+              <strong className="B">B</strong>ILIM-ORDO
             </h2>
           </NavLink>
         </div>
@@ -167,7 +168,7 @@ function Header() {
         </div>
         <div className="teacher-page">
           <NavLink to={"/teacherpage"}>
-            <p>Teach on Byway</p>
+            <p>Teach on Bilim Ordo</p>
           </NavLink>
         </div>
 
@@ -189,7 +190,6 @@ function Header() {
           </NavLink>
         </div>
 
-        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
       </header>
 
       <div
