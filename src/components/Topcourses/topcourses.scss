@@ -161,6 +161,35 @@ container {
   }
 }
 
+@media (max-width: 1290px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    margin-left: -10px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 1000px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 1100px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .topcourses {
     margin: 0 auto;
@@ -203,6 +232,36 @@ container {
   }
 }
 
+@media (max-width: 920px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 900px;
+    margin-left: -60px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 600px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 800px;
+      margin-right: 100px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 820px) {
   .topcourses {
     margin: 0 auto;
@@ -225,6 +284,185 @@ container {
       padding: 10px;
       width: 700px;
       margin-left: 8px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 740px;
+    margin-left: -50px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 550px;
+      margin-right: 25px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 700px;
+      margin-left: 20px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 540px;
+    margin-left: -50px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 300px;
+      margin-right: 25px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 500px;
+      margin-left: 20px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    margin-right: 50px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 80px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 300px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    margin-left: -20px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 130px;
+      margin-left: -60px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 350px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 370px;
+    margin-right: 50px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 80px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 300px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .topcourses {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    margin-left: -20px;
+    .topcoursesh2 {
+      display: flex;
+      gap: 130px;
+    }
+    .beginners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      overflow-x: auto;
+      text-overflow: ellipsis;
+      scrollbar-color: transparent transparent;
+      padding: 10px;
+      width: 300px;
+    }
+    .scroll-button {
+      .icon-scroll {
+        display: none;
+      }
     }
   }
 }
