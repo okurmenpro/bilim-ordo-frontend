@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     box-sizing: border-box;
     margin: none;
@@ -61,58 +60,6 @@
     background-color: grey;
     border: none;
     margin:auto;
-=======
-.Companystatistics{
-    width: 1207px;
-    height: 303px;
-    margin: 0 auto;
-}
-.Companystatistics h2{
-color: rgb(0, 0, 0);
-font-family: Roboto;
-font-size: 32px;
-font-weight: 700;
-line-height: 38px;
-letter-spacing: 0%;
-text-align: center;
-}
-.Statistics{
-    margin-top: 41px;
-    display: flex;
-    justify-content: space-between;
-}
-.Statistica{
-    width: 260px;
-    height: 202px;
-}
-.Statistica strong{
-color: rgb(164, 53, 240);
-font-family: SF Pro Display;
-font-size: 49px;
-font-weight: 700;
-line-height: 121.2%;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
-}
-.Statistica h3{
-color: rgb(45, 47, 49);
-font-family: SF Pro Display;
-font-size: 18px;
-font-weight: 700;
-line-height: 150%;
-letter-spacing: 0%;
-text-align: center;
-}
-.Statistica p{
-color: rgb(45, 47, 49);
-font-family: SF Pro Display;
-font-size: 16px;
-font-weight: 500;
-line-height: 150%;
-letter-spacing: -2%;
-text-align: center;
->>>>>>> 4e655a59fa8652e1816b3ffe7f328220d4b7bf1d
 }
 
 /* Стили для экранов шириной до 768px */
@@ -136,7 +83,6 @@ text-align: center;
     }
 }
 
-<<<<<<< HEAD
 /* Стили для экранов шириной до 480px */
 @media screen and (max-width: 480px) {
     .Companystatistics {
@@ -220,22 +166,12 @@ text-align: center;
         flex-direction: column; 
         justify-content: center; /* Центрируем содержимое */
         align-items: center;
-=======
-@media screen and (max-width: 1024px) {
-    .Companystatistics h2{
-        font-size: 26px;
-        margin-top: 10px;
     }
-    .Statistica{
-        width: 200px;
-        margin-left: -9px;
->>>>>>> 4e655a59fa8652e1816b3ffe7f328220d4b7bf1d
-    }
+
     .Statistica strong {
         font-size: 32px; /* Размер текста для значений */
         line-height: 1.2; /* Линейная высота */
     }
-<<<<<<< HEAD
 
     .Statistica h3 {
         font-size: 10px; /* Размер текста для заголовков */
@@ -244,11 +180,5 @@ text-align: center;
 
     .line {
         display: none; /* Вертикальные линии скрыты для компактности */
-=======
-    .Statistica h3{
-        margin-top: 10px;
-        font-size: 15px;
-        font-weight: 700;
->>>>>>> 4e655a59fa8652e1816b3ffe7f328220d4b7bf1d
     }
 }
