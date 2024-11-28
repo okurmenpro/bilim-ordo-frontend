@@ -16,10 +16,14 @@
     .reviews-carts {
         display: flex;
         margin-top: 32px;
+        gap: 40px;
 
         .cart {
             width: 384px;
-            height: 258px;
+            height: 290px;
+            margin: 0 0 28px 0;
+            background: none;
+            box-shadow: none;
 
             .first {
                 display: flex;
@@ -36,7 +40,7 @@
                     width: 201px;
                     height: 60px;
 
-                    h4 {
+                    h3 {
                         font-size: 24px;
                         font-weight: 700;
                         line-height: 28.13px;
