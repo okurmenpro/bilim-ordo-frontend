@@ -66,28 +66,17 @@ function Card() {
               <div key={index} className="cart">
                 <NavLink to="/course">
                   <img src={item.img} alt={item.name} />
-                  <h2>{truncateText(item.name, 30)}</h2>
+                  <h2>{truncateText(item.name)}</h2>
                   <h3>{item.author}</h3>
+                  <div className="widht-left"></div>
                   <div className="cart-flex">
-                    <h2>4,3</h2>
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <p>(3 3316)</p>
-                  </div>
-                  <div className="cart-top">
-                    <p>{item.price}</p>
+                    <div className="cart-star">
+                      <IoStarSharp />
+                      <span>4.9</span>
+                    </div>
+                    <p>2400 Students</p>
                   </div>
                 </NavLink>
-                <button
-                  onClick={() => handleAddToCart(item)}
-                  className="add-to-cart-button"
-                  disabled={isInCart}
-                >
-                  {isInCart ? "В корзине" : "Добавить в корзину"}
-                </button>
               </div>
             );
           })}
