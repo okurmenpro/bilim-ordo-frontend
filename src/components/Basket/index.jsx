@@ -52,11 +52,9 @@ function AddCart() {
             src="https://business.udemy.com/wp-content/uploads/2022/01/Empty_Cart_Spot@2x.png"
             alt="Пустая корзина"
           />
-          <p className="cart3">
-          The cart is empty. Continue searching to find the course you're looking for.
-          </p>
+          <p className="cart3">Your cart is empty. Keep shopping to find a course!</p>
           <a href="/">
-            <button className="cart4">Continue search</button>
+            <button className="cart4">Keep shopping</button>
           </a>
         </div>
       </div>
