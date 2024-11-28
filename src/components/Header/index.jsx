@@ -1,17 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
-import "./Header.scss";
-import cart from "../../assets/svg/cart.svg";
-import { GrSearch } from "react-icons/gr";
-import { IoSearchOutline } from "react-icons/io5";
-import {
-  MdMenu,
-  MdKeyboardArrowRight,
-  MdKeyboardArrowLeft,
-  MdLanguage,
-} from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { CartContext } from "../CartContext";
+import { MdMenu, MdKeyboardArrowRight, MdKeyboardArrowLeft, MdLanguage } from "react-icons/md";
+import cart from "../../assets/svg/cart.svg";
+import { GrSearch } from "react-icons/gr";
 import Dropdown from "../Dropdown/Index";
+import categories from "../../data/Header"; // Жаңы файлды импорттоо
+import "./Header.scss"
 
 function Header() {
   const { cartItems } = useContext(CartContext);
@@ -19,84 +14,6 @@ function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  const categories = {
-    "Веб-разработка": [
-      "JavaScript",
-      "React JS",
-      "Angular",
-      "CSS",
-      "Next.js",
-      "HTML",
-      "ASP.NET Core",
-      "Node.js",
-      "WordPress",
-    ],
-    "Разработка мобильных приложений": [
-      "Google Flutter",
-      "IOS Development",
-      "Android Development",
-      "Dart",
-      "Swift",
-      "Kotlin",
-      "SwiftUI",
-    ],
-    "Разработка игр": [
-      "Unreal Engine",
-      "Unity",
-      "Game Development Basics",
-      "C#",
-      "3D Game Development",
-      "Unreal Engine Blueprints",
-    ],
-    "Бизнес-анализ и Business Intelligence": [
-      "Microsoft Power BI",
-      "SQL",
-      "Data Modeling",
-      "Data Analysis",
-      "Business Analysis",
-      "Tableau",
-    ],
-    "ИТ-сертификация": [
-      "AWS Certified Cloud Practitioner",
-      "AWS Certified Solution Architect",
-      "CompTIA Security+",
-      "CompTIA A+",
-    ],
-    "Личностные изменения": [
-      "Life Coaching",
-      "NLP",
-      "Personal Growth",
-      "Sound Therapy",
-      "Coaching",
-      "Mindfulness",
-      "CBT",
-    ],
-    "Графический дизайн и иллюстрация": [
-      "Graphic Design",
-      "Canva",
-      "Adobe Illustrator",
-      "Adobe Photoshop",
-      "Drawing",
-      "Adobe InDesign",
-    ],
-    "Цифровой маркетинг": [
-      "Digital Marketing",
-      "Marketing Strategy",
-      "Social Media Marketing",
-      "Internet Marketing",
-      "Copywriting",
-    ],
-    "Все категории": [
-      "Разработка",
-      "Бизнес",
-      "Финансы и бухгалтерский учет",
-      "ИТ и ПО",
-      "Личностный рост",
-      "Дизайн",
-      "Маркетинг",
-    ],
-  };
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -139,7 +56,7 @@ function Header() {
   return (
     <div className="aback">
       <header className="head container">
-      {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
+        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
         <div className="logo">
           <NavLink to="/">
             <h2 className="bilim">

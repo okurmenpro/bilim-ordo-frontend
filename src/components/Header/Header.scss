@@ -228,10 +228,12 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-.aback{
-  width: 100%;
-}
+@media (min-width: 368px) and (max-width: 768px) {
+  .cart-count{
+    font-size: 10px;
+    width: 10px;
+  }
+
   #search {
     display: none;
   }
