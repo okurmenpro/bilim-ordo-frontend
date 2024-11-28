@@ -68,14 +68,15 @@ function Card() {
                   <img src={item.img} alt={item.name} />
                   <h2>{truncateText(item.name)}</h2>
                   <h3>{item.author}</h3>
+                  <div className="widht-left"></div>
                   <div className="cart-flex">
-                    <IoStarSharp />
-                    <h2>4.9</h2>
+                    <div className="cart-star">
+                      <IoStarSharp />
+                      <span>4.9</span>
+                    </div>
                     <p>2400 Students</p>
                   </div>
-                  
                 </NavLink>
-                
               </div>
             );
           })}
