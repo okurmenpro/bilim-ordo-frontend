@@ -4,8 +4,8 @@ import { CartContext } from "../CartContext";
 import { MdMenu, MdKeyboardArrowRight, MdKeyboardArrowLeft, MdLanguage } from "react-icons/md";
 import cart from "../../assets/svg/cart.svg";
 import { GrSearch } from "react-icons/gr";
-import Dropdown from "../Dropdown/Index";
-import categories from "../../data/Header"; // Жаңы файлды импорттоо
+import Dropdown from "../Dropdown";
+import categories from "../../data/Header";
 import "./Header.scss"
 
 function Header() {
@@ -18,6 +18,10 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
     setSelectedCategory(null);
+  };
+
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
   };
 
   const handleCategoryClick = (category) => {
@@ -113,6 +117,10 @@ function Header() {
         className={`side-menu ${isMenuOpen ? "open" : ""}`}
         onScroll={handleMenuScroll}
       >
+        <button className="close-menu" onClick={handleCloseMenu}>
+          X
+        </button>
+
         {selectedCategory ? (
           <div className="subcategory-menu">
             <div className="back-button-container">
@@ -180,6 +188,7 @@ function Header() {
           </div>
         )}
       </div>
+
     </div>
   );
 }

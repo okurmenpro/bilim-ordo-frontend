@@ -58,13 +58,13 @@ const Footer = () => {
             <strong className="text">Get Help</strong>
             <ul>
               <li>
-                <a href="">Address: 123 Main Street, Anytown, CA 12345</a>
+                <a href="">Address: Ahunbaeva Abaya 7A</a>
               </li>
               <li>
                 <a href="">Tel: +(123) 456-7890</a>
               </li>
               <li>
-                <a href="">Mail: bywayedu@webkul.in</a>
+                <a href="">Mail: BilimOrdo@webkul.in</a>
               </li>
             </ul>
             <div className="images">
