@@ -1,13 +1,22 @@
 [
-    {
-      "imgSrc": "https://img-c.udemycdn.com/notices/web_carousel_slide/image/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg",
-      "title": "First Okurmen Project",
-      "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+  {
+    "title": "Unlock Your Potential with Byway",
+    "description": "Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success.",
+    "img": "https://24blog.support.by/upload/landing/d16/4ga4ydx1p6umgmmin8kvqi0c3y42c7ad/img_hero_1_1x@1x.png"
     },
-    {
-      "imgSrc": "https://img-c.udemycdn.com/notices/web_carousel_slide/image/10ca89f6-811b-400e-983b-32c5cd76725a.jpg",
-      "title": "Second Okurmen Project",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    }
-  ]
-  
+  {
+    "title": "Unlock Your Potential with Byway",
+    "description": "Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success.",
+    "img": "https://img-1-cdn.airdroid.com/aiAssets/img/solutions/itSupport/pic_head-1da2ca5d1e.png"
+  },
+  {
+    "title": "Unlock Your Potential with Byway",
+    "description": "Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success.",
+    "img": "https://cdn-ru.bitrix24.ru/b13206858/landing/fe9/fe911bdb9658d5d02bea6b81ddfa6ff7/kbnavz3o2qv6vinkydb2txddog0fkgjb_png_1x.webp"
+  },
+  {
+    "title": "Unlock Your Potential with Byway",
+    "description": "Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success.",
+    "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYWtjwDTqKOAtxRinhXzRZ49MAB4bhblFdlrJsVrJ0EmAOE0AU"
+  }
+]
