@@ -7,6 +7,7 @@ import PopularCategories from "../PopularCategories/index";
 import InfoSection from "../InfoSection";
 import HomeReviews from "../HomeReviews";
 import Categories from "../Categories";
+import Become from "../Become";
 import Topcourses from "../Topcourses";
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
       <PopularCategories />
       <HomeReviews />
       <InfoSection />
+      <Become />
     </div>
   );
 }
