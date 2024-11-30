@@ -2,13 +2,14 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import axios from "axios";
 import "./Card.css";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../../context/CartContext";
 import { NavLink } from "react-router-dom";
 import { course } from "../../data/Card";
 import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
+
 function Card() {
   const { addToCart, cartItems } = useContext(CartContext);
   const [cardCourse, setCourse] = useState(course);
@@ -29,7 +30,6 @@ function Card() {
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(
       (cartItem) => cartItem.id === item.id
-      // (cartItem) => cartItem.name === item.name
     );
     if (!isAlreadyInCart) {
       addToCart(item);
@@ -69,12 +69,11 @@ function Card() {
                   <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
                   <div className="cart-flex">
-                    <h2>4,3</h2>
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
+                    <div className="card-iconp">
+                      <MdOutlineStarPurple500 />
+                      <span>4,3</span>
+                    </div>
+
                     <p>(3 3316)</p>
                   </div>
                   <div className="cart-top">

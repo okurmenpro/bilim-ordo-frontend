@@ -1,72 +1,184 @@
-.Companystatistics{
-    width: 1207px;
-    height: 303px;
+* {
+    box-sizing: border-box;
+    margin: none;
+    height: none    ;
+}
+.Companystatistics {
+    width: 1340px;
     margin: 0 auto;
-}
-.Companystatistics h2{
-color: rgb(0, 0, 0);
-font-family: Roboto;
-font-size: 32px;
-font-weight: 700;
-line-height: 38px;
-letter-spacing: 0%;
-text-align: center;
-}
-.Statistics{
-    margin-top: 41px;
     display: flex;
-    justify-content: space-between;
-}
-.Statistica{
-    width: 260px;
-    height: 202px;
-}
-.Statistica strong{
-color: rgb(164, 53, 240);
-font-family: SF Pro Display;
-font-size: 49px;
-font-weight: 700;
-line-height: 121.2%;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
-}
-.Statistica h3{
-color: rgb(45, 47, 49);
-font-family: SF Pro Display;
-font-size: 18px;
-font-weight: 700;
-line-height: 150%;
-letter-spacing: 0%;
-text-align: center;
-}
-.Statistica p{
-color: rgb(45, 47, 49);
-font-family: SF Pro Display;
-font-size: 16px;
-font-weight: 500;
-line-height: 150%;
-letter-spacing: -2%;
-text-align: center;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    background-color: #F8FAFC;
+    padding: 0 10px;
 }
 
+.Statistic {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-@media screen and (max-width: 1024px) {
-    .Companystatistics h2{
-        font-size: 26px;
-        margin-top: 10px;
+.Statistica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.Statistica strong {
+    color: black;
+    font-family: SF Pro Display;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 121.2%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Statistica h3 {
+    color: rgb(45, 47, 49);
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    width: 180px;
+    text-align: center;
+}
+
+.line {
+    width: 4px;
+    height: 50px;
+    background-color: grey;
+    border: none;
+    margin:auto;
+}
+
+/* Стили для экранов шириной до 768px */
+@media screen and (max-width: 768px) {
+    .Companystatistics {
+        flex-direction: column;
+        min-height: 200px;
     }
-    .Statistica{
-        width: 200px;
-        margin-left: -9px;
+    .Statistic {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .line {
+        display: none; /* Скрываем линии */
     }
     .Statistica strong {
-        font-size: 38px;
-
+        font-size: 40px; /* Увеличиваем размер шрифта для значений */
     }
-    .Statistica h3{
-        margin-top: 10px;
-        font-size: 15px;
-        font-weight: 700;
+    .Statistica h3 {
+        font-size: 12px; /* Уменьшаем размер шрифта для заголовков */
+    }
+}
+
+/* Стили для экранов шириной до 480px */
+@media screen and (max-width: 480px) {
+    .Companystatistics {
+        flex-direction: column;
+        min-height: 200px;
+    }
+    .Statistic {
+        width: 100%;
+        margin-bottom: 15px; /* Уменьшаем отступ между элементами */
+    }
+    .line {
+        display: none; /* Скрываем линии */
+    }
+    .Statistica strong {
+        font-size: 36px; /* Немного уменьшаем размер шрифта для значений */
+    }
+    .Statistica h3 {
+        font-size: 10px; /* Уменьшаем размер шрифта для заголовков */
+    }
+}
+
+/* Стили для экранов шириной до 320px */
+@media screen and (max-width: 320px) {
+    .Companystatistics {
+        flex-direction: column;
+        min-height: 180px; /* Уменьшаем минимальную высоту */
+    }
+    .Statistic {
+        width: 100%;
+        margin-bottom: 10px; /* Уменьшаем отступ между элементами */
+    }
+    .line {
+        display: none; /* Скрываем линии */
+    }
+    .Statistica strong {
+        font-size: 30px; /* Уменьшаем размер шрифта для значений */
+    }
+    .Statistica h3 {
+        font-size: 8px; /* Уменьшаем размер шрифта для заголовков */
+    }
+}
+
+/* Стили для экранов шириной до 240px */
+@media screen and (max-width: 240px) {
+    .Companystatistics {
+        flex-direction: column;
+        min-height: 150px; /* Уменьшаем минимальную высоту */
+    }
+    .Statistic {
+        width: 100%;
+        margin-bottom: 5px; /* Уменьшаем отступ между элементами */
+    }
+    .line {
+        display: none; /* Скрываем линии */
+    }
+    .Statistica strong {
+        font-size: 24px; /* Уменьшаем размер шрифта для значений */
+    }
+    .Statistica h3 {
+        font-size: 6px; /* Уменьшаем размер шрифта для заголовков */
+    }
+}
+/* Стили для экранов шириной до 414px */
+@media screen and (max-width: 414px) {
+    .Companystatistics {
+        width: 90%; /* Контейнер занимает 90% ширины экрана */
+        max-width: 320px; /* Ограничиваем максимальную ширину */
+        flex-direction: column; /* Элементы идут в колонку */
+        align-items: center; /* Центрируем их по горизонтали */
+        justify-content: center; /* Центрируем их по вертикали */
+    }
+
+    .Statistic {
+        width: 80%; /* Блоки занимают 80% ширины контейнера */
+        margin-bottom: 10px; /* Отступы между элементами */
+    }
+
+    .Statistica {
+        min-width: 50px; /* Минимальная ширина для текста */
+        display: flex; /* Flexbox для вертикального выравнивания */
+        flex-direction: column; 
+        justify-content: center; /* Центрируем содержимое */
+        align-items: center;
+    }
+
+    .Statistica strong {
+        font-size: 32px; /* Размер текста для значений */
+        line-height: 1.2; /* Линейная высота */
+    }
+
+    .Statistica h3 {
+        font-size: 10px; /* Размер текста для заголовков */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .line {
+        display: none; /* Вертикальные линии скрыты для компактности */
     }
 }

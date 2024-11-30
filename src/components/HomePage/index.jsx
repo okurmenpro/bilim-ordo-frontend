@@ -1,14 +1,14 @@
-import React from "react";
-import Banner from "../Banner";
-import Companystatistics from "../Companystatistics";
-import Courses from "../Courses";
+import React from 'react'
+import Banner from '../Banner'
+import Companystatistics from "../Companystatistics"
 import CardContainer from "../CardContainer";
 import Card from "../Card";
 import PopularCategories from "../PopularCategories/index";
 import InfoSection from "../InfoSection";
-import TeachSection from "../TeachSection";
+import HomeReviews from "../HomeReviews";
 import Categories from "../Categories";
 import Become from "../Become";
+import Topcourses from "../Topcourses";
 
 function HomePage() {
   return (
@@ -16,11 +16,11 @@ function HomePage() {
       <Banner />
       <Companystatistics />
       <Categories />
-      <Courses />
+      <Topcourses />
       <CardContainer name="Учащиеся смотрят"></CardContainer>
       <Card />
       <PopularCategories />
-      <TeachSection />
+      <HomeReviews />
       <InfoSection />
       <Become />
     </div>
