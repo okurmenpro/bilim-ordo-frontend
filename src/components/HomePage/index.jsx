@@ -6,8 +6,9 @@ import CardContainer from "../CardContainer";
 import Card from "../Card";
 import PopularCategories from "../PopularCategories/index";
 import InfoSection from "../InfoSection";
-import TeachSection from "../TeachSection";
+import HomeReviews from "../HomeReviews";
 import Categories from "../Categories";
+import Topcourses from "../Topcourses";
 
 function HomePage() {
   return (
@@ -16,10 +17,11 @@ function HomePage() {
       <Companystatistics />
       <Categories />
       <Courses />
+      <Topcourses />
       <CardContainer name="Учащиеся смотрят"></CardContainer>
       <Card />
       <PopularCategories />
-      <TeachSection />
+      <HomeReviews />
       <InfoSection />
     </div>
   );

@@ -1,18 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
-import "./Header.scss";
-import cart from "../../assets/svg/cart.svg";
-import { GrSearch } from "react-icons/gr";
-import { IoSearchOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 import {
   MdMenu,
-  MdClose,
   MdKeyboardArrowRight,
   MdKeyboardArrowLeft,
   MdLanguage,
 } from "react-icons/md";
-import { NavLink } from "react-router-dom";
-import { CartContext } from "../CartContext";
-import Dropdown from "../Dropdown/Index";
+import cart from "../../assets/svg/cart.svg";
+import { GrSearch } from "react-icons/gr";
+import categories from "../../data/Header";
+import "./Header.scss";
+import { CartContext } from "../../context/CartContext";
+import Dropdown from "../Dropdown";
 
 function Header() {
   const { cartItems } = useContext(CartContext);
@@ -20,6 +19,7 @@ function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
 
   const categories = {
     "Веб-разработка": [
@@ -99,9 +99,14 @@ function Header() {
     ],
   };
 
+
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
     setSelectedCategory(null);
+  };
+
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
   };
 
   const handleCategoryClick = (category) => {
@@ -139,43 +144,44 @@ function Header() {
 
   return (
     <div className="aback">
-      <header className="head">
+      <header className="head container">
+        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
         <div className="logo">
           <NavLink to="/">
             <h2 className="bilim">
+
               <p className="B">B</p>ILIM-ORDO
+
             </h2>
           </NavLink>
         </div>
 
-        {/* Dropdown Component */}
         <Dropdown id="dropdowns" />
 
-        {/* Search Input */}
-
-        <div className="teacher-page">
-          <NavLink to={"/teacherpage"}>
-            <p>Преподаватель</p>
-          </NavLink>
-        </div>
         <div id="search">
           <div className="input-group mb-3">
+            <div className="input-group-append">
+              <button className="button-search">
+                <GrSearch className="search-icon" />
+              </button>
+            </div>
             <input
               className="form-control"
-              placeholder="Search"
+              placeholder="Search courses"
               style={{ width: inputWidth }}
               aria-label="Search"
               aria-describedby="basic-addon2"
             />
-            <div className="input-group-append">
-              <button className="btn btn-outline-secondary">
-                <GrSearch />
-              </button>
-            </div>
           </div>
+        </div>
+        <div className="teacher-page">
+          <NavLink to={"/teacherpage"}>
+            <p>Teach on Bilim Ordo</p>
+          </NavLink>
         </div>
 
         {/* Cart Icon */}
+
         <NavLink to="/basket">
           <div className="icon">
             <img className="icon__image" src={cart} alt="Cart" />
@@ -185,8 +191,8 @@ function Header() {
           </div>
         </NavLink>
 
-        {/* Login and Signup Buttons */}
         <div className="buttons">
+
           <NavLink to="/login">
             <button className="login">Войти</button>
           </NavLink>
@@ -197,13 +203,17 @@ function Header() {
 
         {/* Burger Menu for Mobile */}
         {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
+
       </header>
 
-      {/* Side Menu (Mobile) */}
       <div
         className={`side-menu ${isMenuOpen ? "open" : ""}`}
         onScroll={handleMenuScroll}
       >
+        <button className="close-menu" onClick={handleCloseMenu}>
+          X
+        </button>
+
         {selectedCategory ? (
           <div className="subcategory-menu">
             <div className="back-button-container">
@@ -232,9 +242,11 @@ function Header() {
               <NavLink to="/login" className="sidebar-link">
                 Войти
               </NavLink>
+
               <div className="close-icon-container" onClick={toggleMenu}>
                 <MdClose className="close-icon" />
               </div>
+
             </div>
 
             <div className="divider" />
@@ -243,7 +255,6 @@ function Header() {
             </NavLink>
             <div className="lines" />
 
-            {/* Popular Categories for Mobile */}
             {isMobile && (
               <div className="popular-categories">
                 <h3>Самые популярные</h3>
@@ -260,14 +271,12 @@ function Header() {
                 </div>
                 <div className="lines" />
 
-                {/* Additional Links */}
                 <h3>Другие предложения Udemy</h3>
                 <h4>Bilim Ordo Business</h4>
                 <h4>Скачать приложение</h4>
                 <h4>Пригласить друзей</h4>
                 <h4>Справка и поддержка</h4>
 
-                {/* Language Selector */}
                 <div className="buttonLanguage">
                   <MdLanguage className="language-icon" />
                   <button>Русский</button>

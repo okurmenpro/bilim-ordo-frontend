@@ -3,7 +3,7 @@ import "./SignUpModal.css";
 import { TbXboxX } from "react-icons/tb";
 // import { auth } from "../../firebase";
 // import { createUserWithEmailAndPassword } from "firebase/auth";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function SignUpModal({ onClose }) {
   const { login } = useContext(CartContext);

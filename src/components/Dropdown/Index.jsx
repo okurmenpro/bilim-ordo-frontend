@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import "./dropdown.css"
+import "./Dropdown.css"
 
 const DropdownMenu = () => {
   const [showMainMenu, setShowMainMenu] = useState(false);
@@ -78,7 +78,7 @@ const DropdownMenu = () => {
       onMouseEnter={handleMouseEnterAllMenus}
       onMouseLeave={handleMouseLeaveAllMenus}
     >
-      <button className='cate-btn'>Категории</button>
+      <button className='cate-btn'>Categories</button>
       {showMainMenu && (
         <div className="main-menu" onMouseEnter={handleMouseEnterAllMenus} onMouseLeave={handleMouseLeaveAllMenus}>
           {mainMenuItems.map((item, index) => (
