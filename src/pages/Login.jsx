@@ -5,7 +5,7 @@ function Loginn() {
   return (
     <div>
       <Login />
-    </div>        
+    </div>
   );
 }
 
