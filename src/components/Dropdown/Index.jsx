@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import "./Dropdown.css"
+import "./Dropdown.scss"
 
 const DropdownMenu = () => {
   const [showMainMenu, setShowMainMenu] = useState(false);

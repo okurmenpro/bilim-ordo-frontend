@@ -1,7 +1,6 @@
 import React from 'react'
 import Banner from '../Banner'
 import Companystatistics from "../Companystatistics"
-import Courses from "../Courses";
 import CardContainer from "../CardContainer";
 import Card from "../Card";
 import PopularCategories from "../PopularCategories/index";
@@ -15,7 +14,6 @@ function HomePage() {
       <Banner />
       <Companystatistics />
       <Categories />
-      <Courses />
       <CardContainer name="Учащиеся смотрят"></CardContainer>
       <Card />
       <PopularCategories />
