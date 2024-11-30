@@ -70,12 +70,11 @@ function Card() {
                   <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
                   <div className="cart-flex">
-                    <h2>4,3</h2>
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
-                    <MdOutlineStarPurple500 />
+                    <div className="card-iconp">
+                      <MdOutlineStarPurple500 />
+                      <span>4,3</span>
+                    </div>
+
                     <p>(3 3316)</p>
                   </div>
                   <div className="cart-top">
