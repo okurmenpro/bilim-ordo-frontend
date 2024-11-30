@@ -324,9 +324,7 @@
 
   .scroll-button {
     display: none;
-  }
 
-  .add-to-cart-button {
     margin-top: -10px !important;
   }
 }
