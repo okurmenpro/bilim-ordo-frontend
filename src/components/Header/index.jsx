@@ -1,10 +1,15 @@
 import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { MdMenu, MdKeyboardArrowRight, MdKeyboardArrowLeft, MdLanguage } from "react-icons/md";
+import {
+  MdMenu,
+  MdKeyboardArrowRight,
+  MdKeyboardArrowLeft,
+  MdLanguage,
+} from "react-icons/md";
 import cart from "../../assets/svg/cart.svg";
 import { GrSearch } from "react-icons/gr";
 import categories from "../../data/Header";
-import "./Header.scss"
+import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 import Dropdown from "../Dropdown";
 
@@ -110,7 +115,6 @@ function Header() {
             <button className="sign-up">Sign Up</button>
           </NavLink>
         </div>
-
       </header>
 
       <div
@@ -188,7 +192,6 @@ function Header() {
           </div>
         )}
       </div>
-
     </div>
   );
 }
