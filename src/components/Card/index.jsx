@@ -30,7 +30,6 @@ function Card() {
   const handleAddToCart = (item) => {
     const isAlreadyInCart = cartItems.find(
       (cartItem) => cartItem.id === item.id
-      // (cartItem) => cartItem.name === item.name
     );
     if (!isAlreadyInCart) {
       addToCart(item);
