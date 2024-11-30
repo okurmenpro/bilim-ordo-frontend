@@ -1,8 +1,7 @@
-.homeReviews { 
+.homeReviews {
   text-align: left;
-  margin-bottom: 100px;
   margin: auto;
-  width: 1400px;
+  width: 1270px;
   height: 512px;
 
   .reviews-hero {
@@ -38,7 +37,6 @@
 
   .reviews-carts {
     width: 1776px;
-    gap: 16px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -49,14 +47,13 @@
 
 
     .reviews-cart {
-      width: 432px;
       height: 276px;
       padding: 24px;
       gap: 8px;
       border-radius: 16px;
       border: 1px solid #E2E8F0;
       box-shadow: 10px 0px 10px 0px #3B82F61F;
-
+      margin-right: 16px;
 
       .quotes {
         width: 35.66px;
@@ -72,7 +69,6 @@
       }
 
       .cart-end {
-        width: 150px;
         height: 60px;
         gap: 8px;
         display: flex;
@@ -104,4 +100,115 @@
 
 .reviews-carts-wrapper {
   overflow: hidden;
+}
+
+@media (max-width: 1524px) {
+  .homeReviews {
+    width: 90%;
+
+    .reviews-hero {
+      h2 {
+        font-size: 23px;
+        font-weight: 650;
+        line-height: 33px;
+      }
+
+      .btns {
+        button {
+          width: 48px;
+          height: 35px;
+
+          .scroll-icon {
+            width: 20px;
+            color: #E2E8F0;
+          }
+        }
+      }
+    }
+
+    .reviews-carts {
+      .reviews-cart {
+        height: 250px;
+        padding: 22px;
+        gap: 6px;
+
+        .quotes {
+          width: 35.66px;
+          height: 27.35px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 23px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homeReviews {
+    width: 90%;
+
+    .reviews-hero {
+      h2 {
+        font-size: 20px;
+        font-weight: 650;
+        line-height: 30px;
+      }
+
+      .btns {
+        button {
+          width: 45px;
+          height: 30px;
+
+          .scroll-icon {
+            width: 18px;
+            color: #E2E8F0;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+
+    .reviews-carts {
+      .reviews-cart {
+        height: 200px;
+        padding: 20px;
+        gap: 5px;
+
+        .quotes {
+          width: 30px;
+          height: 25px;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #000000;
+        }
+
+        .cart-end {
+          height: 40px;
+
+          img {
+            width: 50px;
+            height: 49px;
+          }
+
+          h5 {
+            font-size: 16px;
+          }
+
+          h6 {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
 }
