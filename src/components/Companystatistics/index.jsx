@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Companystatistics.css";
 import { statisticsData  } from '../../data/statisticscompany.js';
-import useCountAnimation from './UseCountAnimation.jsx'; 
+import useCountAnimation from '../hooks/UseCountAnimation.jsx'; 
 
 function Companystatistics() {
   const [isVisible, setIsVisible] = useState(false);
