@@ -1,17 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  MdMenu,
-  MdKeyboardArrowRight,
-  MdKeyboardArrowLeft,
-  MdLanguage,
-} from "react-icons/md";
+import { MdMenu, MdKeyboardArrowRight, MdKeyboardArrowLeft, MdLanguage } from "react-icons/md";
 import cart from "../../assets/svg/cart.svg";
 import { GrSearch } from "react-icons/gr";
-import categories from "../../data/Header";
+import categories from "../../data/Header";  // Import categories from external file
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
-import Dropdown from "../Dropdown/Index";
+import Dropdown from "../Dropdown";
 
 function Header() {
   const { cartItems } = useContext(CartContext);
@@ -69,7 +64,7 @@ function Header() {
         <div className="logo">
           <NavLink to="/">
             <h2 className="bilim">
-              <strong className="B">B</strong>ILIM-ORDO
+              <p className="B">B</p>ILIM-ORDO
             </h2>
           </NavLink>
         </div>
@@ -101,26 +96,23 @@ function Header() {
         <NavLink to="/basket">
           <div className="icon">
             <img className="icon__image" src={cart} alt="Cart" />
-            {cartItems.length > 0 && (
-              <span className="cart-count">{cartItems.length}</span>
-            )}
+            {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
           </div>
         </NavLink>
 
         <div className="buttons">
-          <NavLink to="/signup">
-            <button className="login">Log In</button>
-          </NavLink>
           <NavLink to="/login">
-            <button className="sign-up">Sign Up</button>
+            <button className="login">Login</button> {/* "Войти" changed to "Login" */}
+          </NavLink>
+          <NavLink to="/signup">
+            <button className="sign-up">Sign Up</button> {/* "Зарегистрироваться" changed to "Sign Up" */}
           </NavLink>
         </div>
+
+        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
       </header>
 
-      <div
-        className={`side-menu ${isMenuOpen ? "open" : ""}`}
-        onScroll={handleMenuScroll}
-      >
+      <div className={`side-menu ${isMenuOpen ? "open" : ""}`} onScroll={handleMenuScroll}>
         <button className="close-menu" onClick={handleCloseMenu}>
           X
         </button>
@@ -128,42 +120,31 @@ function Header() {
         {selectedCategory ? (
           <div className="subcategory-menu">
             <div className="back-button-container">
-              <MdKeyboardArrowLeft
-                className="back-arrow"
-                onClick={() => setSelectedCategory(null)}
-              />
-              <span
-                className="menu-text"
-                onClick={() => setSelectedCategory(null)}
-              >
-                Меню
-              </span>
+              <MdKeyboardArrowLeft className="back-arrow" onClick={() => setSelectedCategory(null)} />
+              <span className="menu-text" onClick={() => setSelectedCategory(null)}>
+                Menu
+              </span> {/* "Меню" changed to "Menu" */}
             </div>
             <ul>
               {categories[selectedCategory].map((sub) => (
-                <li key={sub} className="subcategory-item">
-                  {sub}
-                </li>
+                <li key={sub} className="subcategory-item">{sub}</li>
               ))}
             </ul>
           </div>
         ) : (
           <div className="menu-options">
             <div className="close-place">
-              <NavLink to="/login" className="sidebar-link">
-                Войти
-              </NavLink>
+              <NavLink to="/login" className="sidebar-link">Login</NavLink> {/* "Войти" changed to "Login" */}
+              <div className="close-icon-container" onClick={toggleMenu}></div>
             </div>
 
             <div className="divider" />
-            <NavLink to="/signup" className="sidebar-link">
-              Регистрация
-            </NavLink>
+            <NavLink to="/signup" className="sidebar-link">Sign Up</NavLink> {/* "Регистрация" changed to "Sign Up" */}
             <div className="lines" />
 
             {isMobile && (
               <div className="popular-categories">
-                <h3>Самые популярные</h3>
+                <h3>Most Popular</h3> {/* "Самые популярные" changed to "Most Popular" */}
                 <div className="category-list">
                   {Object.keys(categories).map((category) => (
                     <div
@@ -177,15 +158,15 @@ function Header() {
                 </div>
                 <div className="lines" />
 
-                <h3>Другие предложения Udemy</h3>
+                <h3>Other Udemy Offers</h3> {/* "Другие предложения Udemy" changed to "Other Udemy Offers" */}
                 <h4>Bilim Ordo Business</h4>
-                <h4>Скачать приложение</h4>
-                <h4>Пригласить друзей</h4>
-                <h4>Справка и поддержка</h4>
+                <h4>Download App</h4> {/* "Скачать приложение" changed to "Download App" */}
+                <h4>Invite Friends</h4> {/* "Пригласить друзей" changed to "Invite Friends" */}
+                <h4>Help & Support</h4> {/* "Справка и поддержка" changed to "Help & Support" */}
 
                 <div className="buttonLanguage">
                   <MdLanguage className="language-icon" />
-                  <button>Русский</button>
+                  <button>English</button> {/* "Русский" changed to "English" */}
                 </div>
               </div>
             )}

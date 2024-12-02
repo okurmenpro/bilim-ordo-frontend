@@ -1,8 +1,9 @@
-
 .topcourses {
   display: grid;
   padding: 30px;
   position: relative;
+  padding: 0;
+  margin: 0 auto;
 
   .topcoursesh2 {
     display: flex;
@@ -34,8 +35,7 @@
     gap: 2rem;
     overflow-x: hidden;
     padding: 10px;
-    width: 1160px;
-    margin-left: 38px;
+    width: 1300px;
 
     .scroll-button {
       display: block;
@@ -50,16 +50,16 @@
     }
 
     .scroll-button.left {
-      left: 20px;
+      left: -24px;
     }
 
     .scroll-button.right {
-      right: 30px;
+      right: -20px;
     }
 
     .design {
       display: grid;
-      width: 260px;
+      width: 295px;
       box-sizing: border-box;
       border: 1px solid rgb(226, 232, 240);
       border-radius: 16px;
@@ -77,7 +77,7 @@
 
       img {
         position: static;
-        width: 226px;
+        width: 256px;
         height: 139px;
         flex: none;
         order: 0;
