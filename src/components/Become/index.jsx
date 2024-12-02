@@ -1,5 +1,5 @@
 import React from "react";
-import "./become.scss";
+import "./Become.scss";
 import become from "../../assets/images/become.png";
 import become2 from "../../assets/images/become2.png";
 import { RiArrowRightLine } from "react-icons/ri";
