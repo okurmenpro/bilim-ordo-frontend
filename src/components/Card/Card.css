@@ -24,12 +24,12 @@
 }
 
 .scroll-button.left {
-  left: 98px;
+  left: -25px;
   top: 145px;
 }
 
 .scroll-button.right {
-  right: 95px;
+  right: -25px;
   top: 145px;
 }
 .flex {
@@ -39,7 +39,7 @@
   gap: 4rem;
   overflow-x: scroll;
   scrollbar-color: transparent transparent;
-  width: 84%;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -357,5 +357,4 @@
 
     margin-top: -10px !important;
   }
-  
 }
