@@ -1,8 +1,4 @@
 import "./HomeReviews.scss";
-import teach from "../../assets/images/teach.png";
-import teach1 from "../../assets/images/teach1.png";
-import teach2 from "../../assets/images/teach2.png";
-import teach3 from "../../assets/images/teach3.png";
 import { HomeReviewsData } from "../../data/HomeReviews";
 import React, { useRef } from "react";
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
