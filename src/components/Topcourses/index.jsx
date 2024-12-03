@@ -42,11 +42,6 @@ function TopCourses() {
 
   return (
     <div className="topcourses container">
-      <div className="topcoursesh2">
-        <h2>Top Courses</h2>
-        <h6>Label</h6>
-      </div>
-
       <div className="beginners" ref={scrollRef}>
         <button onClick={scrollLeft} className="scroll-button left">
           <IoIosArrowDropleftCircle size={30} className="icon-scroll" />

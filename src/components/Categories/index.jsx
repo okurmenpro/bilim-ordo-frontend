@@ -20,6 +20,7 @@ function Categories() {
   }, []);
   return (
     <div className="categories container">
+
       <div className="categoriesh2">
         <strong>Top Categories</strong>
         <p>Label</p>
@@ -33,6 +34,7 @@ function Categories() {
             <span className="span1">{course.courseCount} Courses</span>
           </div>
         ))}
+
       </div>
     </div>
   );
