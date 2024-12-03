@@ -12,6 +12,7 @@ import categories from "../../data/Header"; // Import categories from external f
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 
+
 import Dropdown from "../Dropdown";
 
 
