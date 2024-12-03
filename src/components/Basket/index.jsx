@@ -22,12 +22,17 @@ function AddCart() {
       navigate("/basket");
     }
   }, [cartItems, navigate]);
-
   const calculateTotalPrice = () => {
     return cartItems
       .reduce((total, item) => {
-        const price = parseFloat(item.price.replace("$", "").replace(",", "."));
-        return total + price;
+        if (item?.price && typeof item.price === "string") {
+          const price = parseFloat(
+            item.price.replace("$", "").replace(",", ".")
+          );
+          return total + (isNaN(price) ? 0 : price);
+        }
+        console.warn("Invalid item in cart:", item);
+        return total;
       }, 0)
       .toFixed(2);
   };
@@ -52,7 +57,9 @@ function AddCart() {
             src="https://business.udemy.com/wp-content/uploads/2022/01/Empty_Cart_Spot@2x.png"
             alt="Пустая корзина"
           />
-          <p className="cart3">Your cart is empty. Keep shopping to find a course!</p>
+          <p className="cart3">
+            Your cart is empty. Keep shopping to find a course!
+          </p>
           <a href="/">
             <button className="cart4">Keep shopping</button>
           </a>
@@ -71,26 +78,31 @@ function AddCart() {
           {cartItems.map((item, index) => (
             <div className="aboutCart" key={index}>
               <img src={item.img} alt={item.name} />
-                <div className="description">
-                    <h4>{item.name}</h4> 
-                    <p>By {item.author}</p>
-                    <div className="stars">
-                      <span>4.6</span>
-                      <FaStar className="star"/>
-                      <FaStar className="star"/>
-                      <FaStar className="star"/>
-                      <FaStar className="star"/>
-                      <FaStar className="star"/>
-                      <p>(250 rating)</p>
-                    </div>
-                    <div className="btns">
-                      <button className="save-button">Save for later</button>
-                  <button onClick={() => removeFromCart(item.id)} className="remove-button">Remove</button>
+              <div className="description">
+                <h4>{item.name}</h4>
+                <p>By {item.author}</p>
+                <div className="stars">
+                  <span>4.6</span>
+                  <FaStar className="star" />
+                  <FaStar className="star" />
+                  <FaStar className="star" />
+                  <FaStar className="star" />
+                  <FaStar className="star" />
+                  <p>(250 rating)</p>
                 </div>
+                <div className="btns">
+                  <button className="save-button">Save for later</button>
+                  <button
+                    onClick={() => removeFromCart(item.id)}
+                    className="remove-button"
+                  >
+                    Remove
+                  </button>
                 </div>
-                <div className="price">
-                  <span>{item.price}</span>
-                </div>
+              </div>
+              <div className="price">
+                <span>{item.price}</span>
+              </div>
             </div>
           ))}
         </div>

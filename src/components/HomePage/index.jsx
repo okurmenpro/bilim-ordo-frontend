@@ -6,6 +6,7 @@ import Card from "../Card";
 import Categories from "../Categories";
 import Become from "../Become";
 import Topcourses from "../Topcourses";
+import HomeReviews from "../HomeReviews";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
       <Topcourses />
       <CardContainer name="Top Instructors" text="Label"></CardContainer>
       <Card />
+      <HomeReviews/>
       <Become />
     </div>
   );
