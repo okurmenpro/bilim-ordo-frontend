@@ -8,11 +8,6 @@ import astrology3 from "../../assets/svg/astrology3.svg";
 function index() {
   return (
     <div className="categories container">
-      <div className="categoriesh2">
-        <strong>Top Categories</strong>
-        <p>Label</p>
-      </div>
-
       <div className="astrology ">
         <div className="astrology-cours">
           <img src={astrology} alt="" />
