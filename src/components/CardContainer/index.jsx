@@ -1,10 +1,11 @@
-import React, {useContext} from 'react';
-import "./Container.css"
+import React, { useContext } from "react";
+import "./Container.css";
 
-function CardContainer({children, name}) {
+function CardContainer({ children, name, text }) {
   return (
-    <div className='cart-1 container'>
-      <h2 style={{marginRight: "800px", fontWeight: "700", fontSize: "30px"}}>{name}</h2> 
+    <div className="cart-1 container">
+      <h2>{name}</h2>
+      <p>{text}</p>
       {children}
     </div>
   );
