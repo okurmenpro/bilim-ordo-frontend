@@ -1,42 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Categories.scss";
-import astrology from "../../assets/svg/astrology.svg";
-import astrology1 from "../../assets/svg/astrology1.svg";
-import astrology2 from "../../assets/svg/astrology2.svg";
-import astrology3 from "../../assets/svg/astrology3.svg";
+import { categories } from "../../data/categories";
+import axios from "axios";
 
-function index() {
+function Categories() {
+  const [topcategories, setcategories] = useState(categories);
+
+  const catagoriesarr = async () => {
+    try {
+      const response = await axios.get("/categories");
+      setcategories(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    catagoriesarr();
+  }, []);
   return (
     <div className="categories container">
+
       <div className="categoriesh2">
         <strong>Top Categories</strong>
         <p>Label</p>
       </div>
 
-      <div className="astrology ">
-        <div className="astrology-cours">
-          <img src={astrology} alt="" />
-          <span className="span">Astrology</span>
-          <span className="span1">11 Courses</span>
-        </div>
-        <div className="astrology-cours">
-          <img src={astrology1} alt="" />
-          <span className="span">Astrology</span>
-          <span className="span1">11 Courses</span>
-        </div>
-        <div className="astrology-cours">
-          <img src={astrology2} alt="" />
-          <span className="span">Astrology</span>
-          <span className="span1">11 Courses</span>
-        </div>
-        <div className="astrology-cours">
-          <img src={astrology3} alt="" />
-          <span className="span">Astrology</span>
-          <span className="span1">11 Courses</span>
-        </div>
+      <div className="astrology">
+        {topcategories.map((course) => (
+          <div key={course.id} className="astrology-cours">
+            <img src={course.image} alt={course.title} />
+            <span className="span">{course.title}</span>
+            <span className="span1">{course.courseCount} Courses</span>
+          </div>
+        ))}
+
       </div>
     </div>
   );
 }
 
-export default index;
+export default Categories;

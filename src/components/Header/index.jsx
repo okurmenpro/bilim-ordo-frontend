@@ -11,7 +11,10 @@ import { GrSearch } from "react-icons/gr";
 import categories from "../../data/Header"; // Import categories from external file
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
-import Dropdown from "../Dropdown/index";
+
+
+import Dropdown from "../Dropdown";
+
 
 function Header() {
   const { cartItems } = useContext(CartContext);
