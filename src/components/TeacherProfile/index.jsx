@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import "./TeacherProfile.scss";
-import { GoStarFill } from "react-icons/go";
-import { IoPeopleSharp } from "react-icons/io5";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
-import { VscPreview } from "react-icons/vsc";
-import { IoIosArrowDown } from "react-icons/io";
-import { TeacherProfileData } from "../../data/TeacherProfile";
-import { NavLink } from "react-router-dom";
+import { MdOutlineStarPurple500 as Star } from "react-icons/md";
+import { TeacherProfileData } from "../../data/TeacherProfile"; // Массивди импорттоо
+
 function TeacherProfile() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [teacherData, setTeacherData] = useState(TeacherProfileData);
 
   const toggleText = () => {
     setIsExpanded(!isExpanded);
@@ -17,58 +12,55 @@ function TeacherProfile() {
 
   return (
     <section className="teacher-profile container">
-      <h1>Преподаватель</h1>
-      {teacherData.map((el) => (
-        <div className="">
-          <NavLink to="/mycourses">
-            <h2>
-              {el.name} | {el.work}
-            </h2>
-          </NavLink>
+      <h1>Learner Reviews</h1>
 
-          <h3>{el.slogan}</h3>
-          <div className="aboutTeacher">
-            <img id="teach-img" src={el.img} alt="Преподаватель" />
-            <div className="statistics">
-              <div className="aboutStatistic">
-                <GoStarFill className="icon" />
-                <strong id="strong">{el.rating} рейтинг</strong>
+      <div className="revis">
+        <div className="reting-left">
+          <div className="teachers-informetion">
+            <Star className="star-yellow" />
+            <strong>4.6</strong>
+            <p>146,951 reviews</p>
+          </div>
+
+          {[...Array(5)].map((_, rowIndex) => {
+            const percentage = (5 - rowIndex) * 20;
+            return (
+              <div className="star-row" key={rowIndex}>
+                {[...Array(5)].map((_, index) => (
+                  <Star
+                    className={`icon-star ${index < 5 - rowIndex ? "star-yellow" : ""}`}
+                    key={index + rowIndex * 5}
+                  />
+                ))}
+                <span className="percentage">{percentage}%</span>
               </div>
-              <div className="aboutStatistic">
-                <VscPreview className="icon" />
-                <strong>{el.numberReviews} отзывов</strong>
+            );
+          })}
+        </div>
+
+        <div className="right-com">
+          {TeacherProfileData.map((review) => (
+            <div key={review.id} className="review-card">
+
+              <div className="info-review">
+                <img src={review.img} alt={review.name} className="review-avatar" />
+                <h3>{review.name}</h3>
               </div>
-              <div className="aboutStatistic">
-                <IoPeopleSharp className="icon" />
-                <strong>{el.numberStudets} студентов</strong>
-              </div>
-              <div className="aboutStatistic">
-                <MdOutlineSlowMotionVideo className="icon" />
-                <strong>{el.numberCourses} курса</strong>
+
+              <div className="review-content">
+                <div className="top-review">
+                  <Star className="star-yellow" />
+                  <span>{review.reting}</span>
+                  <p className="review-date">{review.tema}</p>
+                </div>
+
+                <p>{review.text}</p>
               </div>
             </div>
-          </div>
-
-          <p>{el.text1}</p>
-          <p>{el.text2}</p>
-          <p>{el.text3}</p>
-          <p>{el.text4}</p>
-
-          {isExpanded && (
-            <>
-              <p>{el.text5}</p>
-              <p>{el.text6}</p>
-              <p>{el.text7}</p>
-            </>
-          )}
-          <div className="toggleButton">
-            <strong className="toggle-button" onClick={toggleText}>
-              {isExpanded ? "Свернуть" : "Развернуть"}
-            </strong>
-            <IoIosArrowDown className="arrow" />
-          </div>
+          ))}
+          <button>View more Reviews</button>
         </div>
-      ))}
+      </div>
     </section>
   );
 }

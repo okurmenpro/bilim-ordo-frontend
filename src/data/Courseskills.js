@@ -1,10 +1,12 @@
 export const skillsData = [
-    { id: 1, text: "Писать простые программы на Python 3" },
-    { id: 2, text: "Как писать простые игры типа крестиков-ноликов" },
-    { id: 3, text: "Логика с условиями и циклами" },
-    { id: 4, text: "Объектно-ориентированное программирование на Python" },
-    { id: 5, text: "Использование Jupyter Notebook" },
-    { id: 6, text: "Использование коллекций в Python: списки, словари и так далее" },
-    { id: 7, text: "Декораторы" },
-    { id: 8, text: "Неизменяемые объекты" }
+  {
+    id: 1,
+    name: "Course Description",
+    title: "This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises. "
+  },
+  {
+    id: 2,
+    name: "Certification",
+    title: "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field."
+  }
   ];

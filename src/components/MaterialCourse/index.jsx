@@ -16,11 +16,11 @@ function CouserMaterials() {
 
     return (
         <div className='materials container'>
-            <h2>Материалы курса</h2>
-            <div className='materials__text'>
+            <h2>Syllabus</h2>
+            {/* <div className='materials__text'>
                 <p>21 раздел • 217 лекций • Общая продолжительность 38 ч 48 мин</p>
                 <h4>Развернуть все разделы</h4>
-            </div>
+            </div> */}
             <div className='materials__div'>
                 {materials.map((x, index) => (
                     <div key={index}>
