@@ -7,6 +7,7 @@
   height: 100px;
   background-color: #fefefe;
   position: fixed;
+  top: 0;
   z-index: 999;
 }
 
@@ -273,9 +274,9 @@
 }
 
 @media (max-width: 480px) {
-  .aback{
-    width:430px;
-  }         
+  .aback {
+    width: 430px;
+  }
 
   .input-group {
     display: none;
@@ -387,11 +388,8 @@
             font-size: 30px;
             color: #000;
           }
-
         }
-
       }
-
     }
 
     .buttonLanguage {
@@ -424,7 +422,6 @@
 
     .subcategory-item {
       margin-top: 10px;
-
     }
 
     .lines {
@@ -434,7 +431,6 @@
       background-color: #e2dddd;
       margin-left: -45px;
     }
-
   }
 
   .back-button-container {
@@ -482,5 +478,4 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
-
 }
