@@ -1,0 +1,121 @@
+.categories-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 300px;
+  margin-left: 125px;
+}
+
+.text-h2h3 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 150px;
+}
+.text-h2h3 {
+  margin-right: 110px;
+}
+.text-h2h3 h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.text-h2h3 button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  width: 112px;
+  height: 48px;
+}
+.text-h2h3 button:hover {
+  background-color: #eee;
+}
+
+.text-h2h3 button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.text-h2h3 button p {
+  font-size: 14px;
+  color: #333;
+}
+
+.star-rating {
+  margin-bottom: 20px;
+}
+
+.filter-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.star-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.icon-star {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.star-yellow {
+  color: #ffc107;
+}
+
+.checkbox-age {
+  margin-bottom: 20px;
+}
+
+.filter-age {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.checkbox-input {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.checkbox-input input {
+  margin-right: 8px;
+}
+
+.down-filter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.filter-chevron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
