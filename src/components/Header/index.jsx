@@ -12,7 +12,9 @@ import categories from "../../data/Header";
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 
+
 import Dropdown from "../Dropdown";
+
 
 
 function Header() {
