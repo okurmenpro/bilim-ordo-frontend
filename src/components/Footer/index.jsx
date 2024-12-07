@@ -9,8 +9,7 @@ import facebook from "../../assets/svg/facebook.svg"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="info container">
-
+      <div className="info">
         <div className="info-bottom">
           <strong>
             <span className="first-letter">B</span>ILIM-ORDO

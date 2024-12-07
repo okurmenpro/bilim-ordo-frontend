@@ -1,15 +1,16 @@
 .footer {
-  max-width: 100%;
+  width: 100%;
   background-color: #1E293B;
   margin: 0 auto;
 }
 
 .info {
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 10px 75px;
+  margin: auto;
 }
 
 .info-bottom {
@@ -179,6 +180,7 @@
 
   .categoris {
     display: grid;
+    width: 100%;
   }
 
   .categori {
