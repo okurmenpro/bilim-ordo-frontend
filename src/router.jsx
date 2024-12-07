@@ -10,6 +10,8 @@ import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
 import Categoriespage from "./pages/Categoriespage";
+import OrderPage from "./pages/Order";
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -56,6 +58,10 @@ export const Router = createBrowserRouter([
         path: "/categoriespage",
         element: <Categoriespage />,
       },
+      {
+        path: "/order",
+        element: <OrderPage />
+      }
     ],
   },
 ]);
