@@ -9,7 +9,13 @@ import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
+
 import Checkout from "./components/Checkout";
+
+import Categoriespage from "./pages/Categoriespage";
+import OrderPage from "./pages/Order";
+
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -53,9 +59,19 @@ export const Router = createBrowserRouter([
         element: <TeacherPage />,
       },
       {
+
         path: "/checkout",
         element: <Checkout />,
       },
+
+        path: "/categoriespage",
+        element: <Categoriespage />,
+      },
+      {
+        path: "/order",
+        element: <OrderPage />
+      }
+
     ],
   },
 ]);

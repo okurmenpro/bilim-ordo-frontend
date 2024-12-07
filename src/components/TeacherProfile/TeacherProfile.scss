@@ -1,106 +1,109 @@
 .teacher-profile {
-    width: 800px;
-    padding: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
     text-align: left;
 
     h1 {
-        font-family: Georgia;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 36.36px;
-        text-align: left;
+        font-family: "Georgia", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
         color: #2D2F31;
     }
 
-    h2 {
-        color: #A435F0;
-        text-decoration: underline;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 32.81px;
-        text-align: left;
-    }
-
-    h3 {
-        color: #707070;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 23.44px;
-        text-align: left;
-    }
-
-    .aboutTeacher {
+    .revis {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 400px;
-        margin-top: 30px;
+    }
 
-        .icon {
-            width: 19.99px;
-            height: 19.2px;
-            margin-right: 10px;
+    .reting-left {
+        width: 70%; /* This gives more space to the left part */
+    }
+
+    .teachers-informetion {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 3px 0 0 5px;
         }
     }
 
-    #teach-img {
-        width: 11rem !important;
-        height: 11rem !important;
-        border-radius: 50%;
-    }
-
-    .statistics {
-        margin-left: 40px;
-    }
-
-    .aboutStatistic {
+    .star-row {
         display: flex;
-        align-items: center;
-        width: 250px;
     }
 
-    .aboutStatistic img {
-        width: 20px;
-        height: 20px;
+    .percentage {
+        margin-left: 10px;
+    }
+}
+
+.star-yellow {
+    color: rgb(255, 196, 0);
+    font-size: 22px;
+}
+
+.icon-star {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.right-com{
+    button{
+        padding: 10px 24px;
+        border-radius: 8px;
+        border:1px solid #ccc;
+
+    }
+    button:hover{
+        background-color: #ddd;
+    }
+}
+
+.review-card{
+    display: flex;
+    border: 1px solid#ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.info-review{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img{
+        width: 60px;
+        height: 60px;
     }
 
-    .aboutStatistic strong {
-        color: #2d2f31;
-        font-family: var(--font-stack-text);
-        font-weight: 400;
-        line-height: 1.4;
-        font-size: 1.4rem;
-        text-align: left;
-    }
-
-
-    p {
+    h3{
         font-size: 18px;
-        font-weight: 400;
-        line-height: 21.09px;
-        text-align: left;
-        color: #5B5B5B;
+        font-weight: bold;
     }
+}
 
-    .toggle-button {
-        margin-right: 500px;
-        color: #5022c3;
-    }
+.review-content{
+    width: 600px;
+}
 
-    .toggleButton {
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-    }
+.top-review{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 
-    .arrow {
-        margin-right: 395px;
-        margin-top: -48px;
-        color: #5022c3;
+    span{
+        font-size: 18px;
+        font-weight: 600;
     }
+}
+
+.review-date{
+    margin: 3px 0 0 10px;
 }

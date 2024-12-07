@@ -1,44 +1,39 @@
 import React from 'react'
 import "./BannerCourse.css"
 import { GrLanguage } from "react-icons/gr";
-import { FaRegStar } from "react-icons/fa";
-import { BsExclamationOctagon } from "react-icons/bs";
+import { FaRegStar as Star } from "react-icons/fa";
+import { BsExclamationOctagon } from "react-icons/bs";  
+import autor from "../../assets/images/autor.png"
 
 function Banner() {
     return (
         <div className='course__banner'>
 
-            <div className='inbanner'>
-
-            <div className='img__text'>
-                <p>Разработка</p>
-                <p>Языки программирования</p>
-                <p>Python</p>
-            </div>
-            <h1>Полное руководство по Python 3: от новичка до специалиста</h1>
-            <h3>Изучи Python 3 с нуля - один из самых популярных языков программирования в мире + Введение в SQL и PostgreSQL</h3>
+            <div className='inbanner container'>
+            <h1>Introduction to User Experience Design</h1>
+            <p>This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.</p>
             <div className='banner__rating'>
                 <div className='banner__star'>
-                    <button><FaRegStar /></button>
-                    <button><FaRegStar /></button>
-                    <button><FaRegStar /></button>
-                    <button><FaRegStar /></button>
-                    <button><FaRegStar /></button>
+                    4.6
+                    <button><Star /></button>
+                    <button><Star /></button>
+                    <button><Star /></button>
+                    <button><Star /></button>
+                    <button><Star /></button>
                 </div>
-                <h5>(9185 оценок)</h5>
-                <p>27 208 студента</p>
+                <h5>(651651 rating)</h5>
+                <p>22 Total Hours. 155 Lectures. All levels</p>
             </div>
-            <h4>Авторы: Илья Фофанов,DevSchool.Progressive Training Solutions</h4>
-            <div className='course__update'>
-                <button><BsExclamationOctagon /></button>
 
-                <div className='incourse'>
-                <p>Последнее обновление:</p>
-                <h5> 04.2023</h5>
-                </div>
-                
+            <div className='autor'>
+                <img src={autor} alt="" />
+                <strong>Created by Ronal Richards</strong>
+            </div>
+
+            <div className='course__update'>
+                <div className='incourse'></div>
                 <button><GrLanguage /></button>
-                <p>русский</p>
+                <strong>English, Kyrgyz, Russian</strong>
             </div>
             </div>
         </div>

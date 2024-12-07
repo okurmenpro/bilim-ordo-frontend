@@ -1,0 +1,17 @@
+.Buttons{
+    text-align: left;
+    display: flex;
+    gap: 20px;
+
+    button{
+        padding: 18px 21px;
+        border-radius: 8px;
+        width: 150px;
+        border: 2px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    button:hover{
+        background-color: #EFF6FF;
+    }
+}

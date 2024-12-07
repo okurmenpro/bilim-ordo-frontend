@@ -1,26 +1,19 @@
 import React from 'react';
 import "./Courseskills.css";
-import { IoMdCheckmark } from "react-icons/io";
 import { skillsData } from '../../data/Courseskills';
 
-
-
 function Skills() {
- 
   return (
     <div className='skill container'>
-      <div className="Course-skills ">
-        <h2>Чему вы научитесь</h2>
-
+      <div className="Course-skills">
         <div className="skills-container">
           {skillsData.map((skill) => (
             <div className="skills" key={skill.id}>
-              <IoMdCheckmark />
-              <p>{skill.text}</p>
+              <h1>{skill.name}</h1>
+              <p>{skill.title}</p>
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
