@@ -9,6 +9,7 @@ import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
+import Checkout from "./components/Checkout";
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -45,11 +46,15 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/mycourses",
-        element: <TeachersCourses/>
+        element: <TeachersCourses />,
       },
       {
         path: "/teacherpage",
         element: <TeacherPage />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },
