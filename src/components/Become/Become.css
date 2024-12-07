@@ -19,7 +19,6 @@ container {
     .top {
       display: grid;
       position: static;
-      width: 500px;
       align-items: flex-start;
       flex: none;
       align-content: center;
@@ -149,8 +148,6 @@ container {
   .become {
     .become-top {
       .top {
-        padding-right: 200px;
-
         span {
           width: 300px;
         }

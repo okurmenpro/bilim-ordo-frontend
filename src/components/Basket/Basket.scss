@@ -4,6 +4,7 @@
   position: relative;
   top: 120px;
   margin: auto;
+  flex-grow: 1;
 }
 
 .v2 {
@@ -72,6 +73,7 @@
   align-items: flex-start;
   margin: 0 auto;
   margin-bottom: 100px;
+  flex-grow: 1;
 
   hr {
     border: 1px solid #E2E8F0;
