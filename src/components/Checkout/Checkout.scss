@@ -162,6 +162,11 @@ container {
       .order {
         display: grid;
         gap: 16px;
+
+        .btn {
+          width: 400px;
+        }
+
         .order-details {
           display: flex;
           width: 400px;
@@ -228,6 +233,7 @@ container {
           border-radius: 8px;
           width: 400px;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
         }
 
         .summary-item {
@@ -307,6 +313,9 @@ container {
       }
       .checkout-right {
         .order {
+          .btn{
+            width: 350px;
+          }
           .order-details {
             width: 350px;
           }
@@ -387,6 +396,11 @@ container {
       }
       .checkout-right {
         .order {
+
+          .btn{
+            width: 350px;
+
+          }
           .order-details {
             width: 350px;
           }
@@ -454,6 +468,9 @@ container {
       }
       .checkout-right {
         .order {
+          .btn{
+            width: 500px;
+          }
           .order-details {
             width: 500px;
           }
@@ -525,6 +542,11 @@ container {
       }
       .checkout-right {
         .order {
+
+          .btn{
+            width: 280px;
+          }
+
           .order-details {
             width: 280px;
 

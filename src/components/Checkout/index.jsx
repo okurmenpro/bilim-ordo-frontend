@@ -3,7 +3,8 @@ import "./Checkout.scss";
 import { FaChevronRight } from "react-icons/fa6";
 import visa from "../../assets/svg/visa.svg";
 import paypal from "../../assets/svg/paypal.svg";
-import order from "../../assets/images/order.png";
+import product from "../../assets/images/product.png";
+import { NavLink } from "react-router-dom";
 
 function Checkout() {
   const [selectedPayment, setSelectedPayment] = useState("");
@@ -93,7 +94,7 @@ function Checkout() {
           <h3>Order Details</h3>
           <div className="order">
             <div className="order-details">
-              <img src={order} alt="" />
+              <img src={product} alt="" />
               <div className="design">
                 <h6>Design</h6>
                 <span className="user">
@@ -123,7 +124,9 @@ function Checkout() {
                 <span>${total.toFixed(2)}</span>
               </div>
             </div>
-            <button>Label</button>
+            <NavLink to="/order">
+            <button className="btn">Label</button>
+            </NavLink>
           </div>
         </div>
       </div>
