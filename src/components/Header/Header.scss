@@ -7,6 +7,7 @@
   height: 100px;
   background-color: #fefefe;
   position: fixed;
+  top: 0;
   z-index: 999;
 }
 
@@ -173,6 +174,7 @@
 @media screen and (max-width: 800px) {
   .aback {
     height: 70px;
+
   }
 
   .input-group {
@@ -329,11 +331,8 @@
             font-size: 30px;
             color: #000;
           }
-
         }
-
       }
-
     }
 
     .buttonLanguage {
@@ -366,7 +365,6 @@
 
     .subcategory-item {
       margin-top: 10px;
-
     }
 
     .lines {
@@ -376,7 +374,6 @@
       background-color: #e2dddd;
       margin-left: -45px;
     }
-
   }
 
   .back-button-container {
@@ -424,4 +421,8 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dev

@@ -1,91 +1,63 @@
 .Sidebar {
     position: absolute;
     top: 100px;
-    width: 350px;
+    width: 370px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
     background-color: white;
     margin: 0 auto;
+    border-radius: 8px;
 }
 
 .container1 {
-    margin: 40px 0 0 800px;
-    padding: 0;
+    margin: 40px 0 0 905px;
+    padding: 10px;
 }
 
 .video video {
     width: 350px;
+    border-radius: 8px;
     object-fit: cover;
 }
 
 .list5 {
-    padding: 0 30px;
-    margin-left: 5px;
+    padding: 0;
 }
 
 .price1 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
+    margin: 10px 3px;
 }
 
 .price-value {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .original-price {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.508);
     text-decoration: line-through;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .discount-div {
-    color: rgba(0, 0, 0, 0.684);
-    padding-right: 50px;
-    font-weight: 550;
+    font-weight: 600;
+    font-size: 20px;
+    color: #16A34A;
 }
-
-.day {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-
-.watch {
-    font-size: 16px;
-    color: rgba(255, 0, 0, 0.695);
-
-}
-
-.watch-text {
-    font-size: 16px;
-    font-weight: 500;
-    padding-right: 100px;
-    color: rgba(255, 0, 0, 0.695);
-}
-
-.watch-text a {
-    color: rgb(186, 58, 58);
-    font-family: Arial;
-    font-weight: 700;
-    text-decoration: none;
-}
-
 
 .add-btn {
-    width: 280px;
+    width: 100%;
     height: 50px;
     font-size: 18px;
     font-weight: 500;
-    background: rgb(163, 93, 232);
+    background: black;
+    color: white;
     margin-bottom: 15px;
-    margin-right: 10px;
     border: none;
+    border-radius: 8px;
 }
 
 .add-btn:hover {
@@ -93,248 +65,55 @@
 }
 
 .buy_now-btn {
-    width: 280px;
+    width: 100%;
     height: 50px;
     font-size: 18px;
     font-weight: 500;
     background: #fff;
     border: 1px solid black;
     margin-right: 10px;
+    border-radius: 8px;
 }
 
 .buy_now-btn:hover {
     background: rgba(10, 10, 10, 0.085);
 }
 
-p {
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.discount {
-    width: 280px;
-    height: 120px;
-    border: 1px dashed rgba(0, 0, 0, 0.448);
+.iconka {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-align: start;
-    padding-left: 15px;
-
+    gap: 20px;
+    margin: 10px 3px;
 }
 
-.discount_price span {
-    text-align: start;
-    text-decoration: none;
-}
-
-.discount_price span a {
-    color: rgba(0, 0, 0, 0.541);
-    font-family: Arial;
-}
-
-.bonus {
-    color: rgba(0, 0, 0, 0.541);
-    text-align: start;
-    font-family: Arial;
-}
-
-.apply-btn {
-    font-weight: 700;
-    color: rgb(39, 15, 145);
-    text-decoration: underline;
+.microsoft2{
+    width: 35px;
     cursor: pointer;
-    padding-right: 15px;
-    border: none;
 }
 
-.discont__course {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 50px;
+.facebok2,
+.icons2 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
-.discont__course h3 {
-    font-size: 18px;
-    text-align: start;
-    font-weight: 650;
-    padding-left: 2px;
-}
-
-.discont__map1 {
-    display: block;
-}
-
-.discont__map {
-    display: flex;
-    align-items: center;
-    max-height: 38px;
-    margin-bottom: 16px;
-    gap: 8px;
-}
-
-.map1-icon {
-    width: 20px;
-    color: #707070;
-    margin-bottom: 5px;
-}
-
-.discont__map1 h5 {
+.title {
     text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    color: #707070;
-}
-
-
-.share_it {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.share_it button {
+    border-top: 1px solid #ccc;
+    margin: 20px 0 10px;
+    padding-left: 3px;
     font-size: 18px;
-    cursor: pointer;
     font-weight: 500;
-    color: rgb(15, 15, 160);
-    text-decoration: underline;
-    line-height: 40px;
-    border: none;
 }
-
-a.share_it-title {
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: 500;
-    color: rgb(15, 15, 160);
-    line-height: 40px;
-    text-decoration: underline;
-}
-
-span {
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: 500;
-    color: rgb(15, 15, 160);
-    line-height: 40px;
-    text-decoration: underline;
-}
-
-
-.used_coupon {
-    width: 280px;
-    border: 1px dashed rgba(0, 0, 0, 0.448);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    margin-top: 10px;
-}
-
-.used_coupon p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: start;
-    color: rgba(0, 0, 0, 0.523);
-    cursor: pointer none;
-    margin: 0;
-}
-
-.used_coupon p a {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.523);
-    text-decoration: none;
-}
-
-.icons_x {
-    font-size: 18px;
-    cursor: pointer;
-    color: rgb(43, 61, 176);
-    border: none;
-}
-
-.enter_coupon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.enter_coupon input {
-    outline: none;
-    border: 1.5px solid black;
-    width: 200px;
-    height: 55px;
-    border-radius: 0;
-}
-
-.enter_coupon button {
-    width: 200px;
-    height: 55px;
-    border-radius: 0;
-    color: #fff;
-    background: #000;
-    border: none;
-}
-
-.line {
-    margin: auto;
-    width: 280px;
-    height: 1px;
-    background-color: #00000027;
-    margin-bottom: 35px;
-}
-
-.training h4 {
-    font-size: 18px;
-    font-weight: 650;
-    margin-left: 2px;
-    text-align: start;
-}
-
-.training p {
-    font-size: 18px;
-    text-align: start;
-    font-weight: 490;
-    margin-left: 2px;
-}
-
-.try_btn {
-    width: 280px;
-    height: 50px;
-    background-color: #fff;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    color: #000;
-    border: 1.5px solid black;
-}
-
-.try_btn:hover {
-    background: rgba(10, 10, 10, 0.085);
-}
-
-
-
-
-
-
-
-
 
 /* Планшетке адаптация */
 @media (max-width: 1024px) {
     .container1 {
         display: flex;
-        flex-direction: column-reverse; /* Sidebarды ылдый түшүрүү үчүн */
+        flex-direction: column-reverse;
         margin: 0;
         padding: 0 15px;
-        
     }
 
     .Sidebar {
@@ -350,6 +129,4 @@ span {
         width: 100%;
         object-fit: cover;
     }
-
-    /* Башка стилдер */
 }

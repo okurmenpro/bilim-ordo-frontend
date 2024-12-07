@@ -1,6 +1,6 @@
-import React from 'react'
-import Banner from '../Banner'
-import Companystatistics from "../Companystatistics"
+import React from "react";
+import Banner from "../Banner";
+import Companystatistics from "../Companystatistics";
 import CardContainer from "../CardContainer";
 import Card from "../Card";
 import Categories from "../Categories";
@@ -13,9 +13,11 @@ function HomePage() {
     <div>
       <Banner />
       <Companystatistics />
+      <CardContainer name="Top Categories" text="Label"></CardContainer>
       <Categories />
+      <CardContainer name="Top Courses" text="Label"></CardContainer>
       <Topcourses />
-      <CardContainer name="Учащиеся смотрят"></CardContainer>
+      <CardContainer name="Top Instructors" text="Label"></CardContainer>
       <Card />
       <HomeReviews/>
       <Become />

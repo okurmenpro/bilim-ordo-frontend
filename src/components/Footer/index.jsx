@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.scss";
+import facebook from "../../assets/svg/facebook.svg"
 import { GrGithub as Github } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
-import microsoft from "../../assets/svg/microsoft.svg"
 import { FaXTwitter } from "react-icons/fa6";
-import facebook from "../../assets/svg/facebook.svg"
+import microsoft from "../../assets/svg/microsoft.svg"
 
 const Footer = () => {
   return (

@@ -8,7 +8,7 @@ import {
 } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { GrSearch } from "react-icons/gr";
-import categories from "../../data/Header"; // Import categories from external file
+import categories from "../../data/Header"; 
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 import Dropdown from "../Dropdown";
