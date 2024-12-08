@@ -2,7 +2,7 @@ import React from "react";
 import "./TeachersCourses.scss";
 import Card from "../Card";
 
-const index = () => {
+const TeachersCourses = () => {
 
   return (
     <div id="container-teachers-courses">
@@ -13,4 +13,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default TeachersCourses;

@@ -3,17 +3,14 @@ import Basket from "./pages/Basket";
 import Layout from "./components/Layout/Layout";
 import Course from "./pages/Course";
 import HomePage from "./components/HomePage";
-import Sidebar from "./components/Sidebar";
-import TeacherProfile from "./components/TeacherProfile";
 import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
-
 import Checkout from "./components/Checkout";
-
 import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
+import Mentor from "./pages/Mentor";
 
 
 export const Router = createBrowserRouter([
@@ -39,14 +36,6 @@ export const Router = createBrowserRouter([
         element: <Course />,
       },
       {
-        path: "/sidebar",
-        element: <Sidebar />,
-      },
-      {
-        path: "/teacherprofile",
-        element: <TeacherProfile />,
-      },
-      {
         path: "/signup",
         element: <SignUp />,
       },
@@ -63,13 +52,17 @@ export const Router = createBrowserRouter([
         path: "/checkout",
         element: <Checkout />,
       },
-
+      {
         path: "/categoriespage",
         element: <Categoriespage />,
       },
       {
         path: "/order",
         element: <OrderPage />
+      },
+      {
+        path: "/mentor",
+        element: <Mentor />
       }
 
     ],

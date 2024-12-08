@@ -8,7 +8,7 @@ function Order() {
   }, []);
 
   return (
-    <div className='order container'>
+    <div className='order2 container'>
       <img src={Ordersvg} alt="Order Complete" />
       <h1>Order Complete</h1>
       <h2>You Will Receive a confirmation email soon!</h2>

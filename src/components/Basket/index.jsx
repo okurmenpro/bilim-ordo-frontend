@@ -91,7 +91,7 @@ function AddCart() {
                   <p>(250 rating)</p>
                 </div>
                 <div className="btns">
-                  <button className="save-button">Save for later</button>
+                  {/* <button className="save-button">Save for later</button> */}
                   <button
                     onClick={() => removeFromCart(item.id)}
                     className="remove-button"
