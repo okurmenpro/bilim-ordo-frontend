@@ -10,6 +10,7 @@ import TeacherPage from "./pages/TeacherPage";
 import Checkout from "./components/Checkout";
 import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
+import Mentor from "./pages/Mentor";
 
 
 export const Router = createBrowserRouter([
@@ -58,6 +59,10 @@ export const Router = createBrowserRouter([
       {
         path: "/order",
         element: <OrderPage />
+      },
+      {
+        path: "/mentor",
+        element: <Mentor />
       }
 
     ],

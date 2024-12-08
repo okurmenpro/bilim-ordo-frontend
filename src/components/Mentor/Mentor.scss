@@ -1,0 +1,159 @@
+.mentor-page {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentor-top {
+    width: 300px;
+    text-align: left;
+    margin: 0;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    strong {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.informetion {
+    margin-top: 10px;
+    display: flex;
+    gap: 100px;
+
+    .sandar {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .bottom {
+        display: grid;
+    }
+}
+
+.mentor-main {
+    width: 800px;
+    text-align: left;
+    margin: 50px 0;
+
+    .h2text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .text-category li {
+        list-style-type: disc;
+    }
+}
+
+.mentor-right {
+    display: grid;
+    height: 400px;
+
+    button {
+        padding: 10px 24px;
+        width: 200px;
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    button:hover{
+        background-color: gray;
+    }
+
+    .mentor-image {
+        height: 200px;
+        width: 200px;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mentor-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-top,
+    .mentor-main,
+    .mentor-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .informetion {
+        display: block;
+        text-align: center;
+    }
+
+    .mentor-main {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .mentor-right {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .mentor-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .mentor-right button {
+        width: 150px;
+        padding: 8px 16px;
+    }
+
+    .mentor-top h1 {
+        font-size: 28px;
+    }
+
+    .mentor-top strong {
+        font-size: 12px;
+    }
+
+    .informetion .sandar {
+        font-size: 20px;
+    }
+
+    .mentor-main .h2text {
+        font-size: 18px;
+    }
+
+    .mentor-main .text-category li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mentor-page {
+        flex-direction: row;
+    }
+
+    .mentor-top,
+    .mentor-main,
+    .mentor-right {
+        width: 45%;
+    }
+
+    .informetion {
+        gap: 50px;
+    }
+
+    .mentor-right {
+        height: 300px;
+    }
+}
