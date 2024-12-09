@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import authorization from "../../assets/images/Loginbackground.jpg";
 import "./Login.scss";
-import  microsoft from '../../assets/images/microsoft.jpg'
+import facebook from "../../assets/svg/facebook.svg";
+import google from "../../assets/svg/googel.svg";
+import microsoft from "../../assets/svg/microsoft.svg";
 
 const Authorization = () => {
   const [email, setEmail] = useState("");
@@ -30,7 +32,7 @@ const Authorization = () => {
   };
 
   return (
-    <div className="authorization">
+    <div className="authorization container">
         <div className="authorization-right">
         <p className="sign-account">Sign in to your account </p>
         <input
@@ -71,30 +73,43 @@ const Authorization = () => {
         
       
 
-        <div className="social-icons">
-          <button className="facebook-button">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1024px-2023_Facebook_icon.svg.png"
-            alt="Facebook"
-            />
-            </button>
-            <button className="Google-button">
-
-          <img 
-            src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
-            alt="Google"
-            />
-       
+        <div className="fgm-sign-in">
+              <button className="Facebook-google-microsoft">
+                <div>
+                  <img src={facebook} alt="" />
+                  <p 
+                    style={{
+                      color: "blue"
+                    }}>
+                    Facebook
+                  </p>
+                </div>
               </button>
-            <button className="Microsoft">
-
-          <img className="Microsoft-img"
-            src={microsoft}
-            alt="Microsoft"
-            />
-       
-            </button>
-        </div>
+              <button className="Facebook-google-microsoft">
+                <div>
+                  <img src={google} alt="" />
+                  <p
+                    style={{
+                      color: " rgb(234, 67, 53)",
+                    }}
+                  >
+                    Google
+                  </p>
+                </div>
+              </button>
+              <button className="Facebook-google-microsoft">
+                <div>
+                  <img src={microsoft} alt="" />
+                  <p
+                    style={{
+                      color: "rgb(0, 0, 0)",
+                    }}
+                  >
+                    Microsoft
+                  </p>
+                </div>
+              </button>
+            </div>
       </div>
       <div className="authorization-left">
         <img className="big-images" src={authorization} alt="Authorization" />
