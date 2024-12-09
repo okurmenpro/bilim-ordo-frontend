@@ -6,21 +6,17 @@ import {
   MdKeyboardArrowLeft,
   MdLanguage,
 } from "react-icons/md";
-import cart from "../../assets/svg/cart.svg";
+import { IoCartOutline } from "react-icons/io5";
 import { GrSearch } from "react-icons/gr";
 import categories from "../../data/Header"; 
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
-
 import Dropdown from "../Dropdown";
-
 
 function Header() {
   const { cartItems } = useContext(CartContext);
-  const [inputWidth] = useState("200px");
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -35,10 +31,6 @@ function Header() {
     setSelectedCategory(category);
   };
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
-  };
-
   const handleMenuScroll = (e) => {
     const target = e.target;
     if (target.scrollTop + target.clientHeight >= target.scrollHeight) {
@@ -46,32 +38,14 @@ function Header() {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-      document.body.classList.add("overlay");
-    } else {
-      document.body.style.overflow = "auto";
-      document.body.classList.remove("overlay");
-    }
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      document.body.style.overflow = "auto";
-      document.body.classList.remove("overlay");
-    };
-  }, [isMenuOpen]);
-
   return (
     <div className="aback">
       <header className="head container">
-        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
+        <MdMenu className="burger-menu" onClick={toggleMenu} />
         <div className="logo">
           <NavLink to="/">
             <h2 className="bilim">
-              <p className="B">B</p>ILIM-ORDO
+              <span className="B">B</span>ILIM-ORDO
             </h2>
           </NavLink>
         </div>
@@ -79,20 +53,16 @@ function Header() {
         <Dropdown id="dropdowns" />
 
         <div id="search">
-          <div className="input-group mb-3">
-            <div className="input-group-append">
-              <button className="button-search">
-                <GrSearch className="search-icon" />
-              </button>
-            </div>
-            <input
-              className="form-control"
-              placeholder="Search courses"
-              style={{ width: inputWidth }}
-              aria-label="Search"
-              aria-describedby="basic-addon2"
-            />
+          <div className="input-group-append">
+            <button className="button-search">
+              <GrSearch className="search-icon" />
+            </button>
           </div>
+          <input
+            placeholder="Search courses"
+            aria-label="Search"
+            aria-describedby="basic-addon2"
+          />
         </div>
         <div className="teacher-page">
           <NavLink to={"/teacherpage"}>
@@ -102,7 +72,7 @@ function Header() {
 
         <NavLink to="/basket">
           <div className="icon">
-            <img className="icon__image" src={cart} alt="Cart" />
+            <IoCartOutline className="icon__image" />
             {cartItems.length > 0 && (
               <span className="cart-count">{cartItems.length}</span>
             )}
@@ -119,8 +89,6 @@ function Header() {
             {/* "Зарегистрироваться" changed to "Sign Up" */}
           </NavLink>
         </div>
-
-        {isMobile && <MdMenu className="burger-menu" onClick={toggleMenu} />}
       </header>
 
       <div
@@ -169,38 +137,36 @@ function Header() {
             </NavLink>{" "}
             {/* "Регистрация" changed to "Sign Up" */}
             <div className="lines" />
-            {isMobile && (
-              <div className="popular-categories">
-                <h3>Most Popular</h3>{" "}
-                {/* "Самые популярные" changed to "Most Popular" */}
-                <div className="category-list">
-                  {Object.keys(categories).map((category) => (
-                    <div
-                      className="category-item"
-                      key={category}
-                      onClick={() => handleCategoryClick(category)}
-                    >
-                      {category} <MdKeyboardArrowRight className="arrow-icon" />
-                    </div>
-                  ))}
-                </div>
-                <div className="lines" />
-                <h3>Other Udemy Offers</h3>{" "}
-                {/* "Другие предложения Udemy" changed to "Other Udemy Offers" */}
-                <h4>Bilim Ordo Business</h4>
-                <h4>Download App</h4>{" "}
-                {/* "Скачать приложение" changed to "Download App" */}
-                <h4>Invite Friends</h4>{" "}
-                {/* "Пригласить друзей" changed to "Invite Friends" */}
-                <h4>Help & Support</h4>{" "}
-                {/* "Справка и поддержка" changed to "Help & Support" */}
-                <div className="buttonLanguage">
-                  <MdLanguage className="language-icon" />
-                  <button>English</button>{" "}
-                  {/* "Русский" changed to "English" */}
-                </div>
+            <div className="popular-categories">
+              <h3>Most Popular</h3>{" "}
+              {/* "Самые популярные" changed to "Most Popular" */}
+              <div className="category-list">
+                {Object.keys(categories).map((category) => (
+                  <div
+                    className="category-item"
+                    key={category}
+                    onClick={() => handleCategoryClick(category)}
+                  >
+                    {category} <MdKeyboardArrowRight className="arrow-icon" />
+                  </div>
+                ))}
               </div>
-            )}
+              <div className="lines" />
+              <h3>Other Udemy Offers</h3>{" "}
+              {/* "Другие предложения Udemy" changed to "Other Udemy Offers" */}
+              <h4>Bilim Ordo Business</h4>
+              <h4>Download App</h4>{" "}
+              {/* "Скачать приложение" changed to "Download App" */}
+              <h4>Invite Friends</h4>{" "}
+              {/* "Пригласить друзей" changed to "Invite Friends" */}
+              <h4>Help & Support</h4>{" "}
+              {/* "Справка и поддержка" changed to "Help & Support" */}
+              <div className="buttonLanguage">
+                <MdLanguage className="language-icon" />
+                <button>English</button>{" "}
+                {/* "Русский" changed to "English" */}
+              </div>
+            </div>
           </div>
         )}
       </div>

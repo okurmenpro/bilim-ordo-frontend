@@ -1,0 +1,63 @@
+.order2 {
+    margin: 150px auto 100px;
+    display: grid;
+    animation: fadeIn 1s ease-out;
+
+    img {
+        margin: 0 auto;
+        animation: rotateSvg 2s ease-in-out; 
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 20px auto;
+        animation: slideInFromLeft 2s ease-out;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        animation: slideInFromRight 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes rotateSvg {
+        0% {
+            transform: rotateY(0deg); 
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
