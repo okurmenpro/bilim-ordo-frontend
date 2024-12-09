@@ -159,35 +159,6 @@
   }
 }
 
-@media (max-width: 1290px) {
-  .topcourses {
-    margin: 0 auto;
-    position: relative;
-    width: 1200px;
-    margin-left: -10px;
-    .topcoursesh2 {
-      display: flex;
-      gap: 1000px;
-    }
-    .beginners {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      overflow-x: auto;
-      text-overflow: ellipsis;
-      scrollbar-color: transparent transparent;
-      padding: 10px;
-      width: 1100px;
-    }
-    .scroll-button {
-      .icon-scroll {
-        display: none;
-      }
-    }
-  }
-}
-
 @media (max-width: 1024px) {
   .topcourses {
     margin: 0 auto;
