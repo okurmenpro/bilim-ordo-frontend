@@ -21,11 +21,6 @@ function Categories() {
   }, []);
   return (
     <div className="categories container">
-      <div className="categoriesh2">
-        <strong>Top Categories</strong>
-        <p>Label</p>
-      </div>
-
       <div className="astrology">
         {topcategories.map((course) => (
           <div key={course.id} className="astrology-cours">
