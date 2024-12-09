@@ -5,13 +5,13 @@ import Course from "./pages/Course";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
-import Loginn from "./pages/Login";
+import Login from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
 import Checkout from "./components/Checkout";
 import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
-
+import ProfileLayout from "./components/ProfileLayout";
 
 export const Router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ export const Router = createBrowserRouter([
 
       {
         path: "/login",
-        element: <Loginn />,
+        element: <Login />,
       },
       {
         path: "/",
@@ -63,8 +63,17 @@ export const Router = createBrowserRouter([
       {
         path: "/mentor",
         element: <Mentor />
-      }
-
+      },
+      {
+        path: "/profile",
+        element: <ProfileLayout />,
+        children: [
+          {
+            path: "details",
+            element: <div>a</div>,
+          },
+        ],
+      },
     ],
   },
 ]);
