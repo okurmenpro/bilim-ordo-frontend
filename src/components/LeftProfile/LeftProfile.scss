@@ -1,0 +1,72 @@
+.left-profile {
+    width: 290px;
+    height: 607px;
+    padding: 24px 0px 0px 0px;
+    border-radius: 16px;
+    background: #F8FAFC;
+    color: #0F172A;
+    margin-top: 140px;
+    margin-bottom: 100px;
+
+    img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        margin: 16px 0px;
+    }
+
+    .share-profile {
+        width: 164px;
+        height: 48px;
+        border-radius: 8px;
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22.4px;
+
+        .share-icon {
+            width: 18px;
+            height: 20px;
+        }
+    }
+
+    hr {
+        border: 1px solid #E2E8F0;
+        width: 274px;
+        margin: 22px 5px;
+
+    }
+
+    .profile-btns {
+        button {
+            width: 290px;
+            height: 53px;
+            border: none;
+            background: #F8FAFC;
+            border-bottom: 1px solid #E2E8F0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+
+        }
+
+        button:hover {
+            background: #0F172A;
+            color: #FFFFFF;
+        }
+
+        .end-button {
+            border: none;
+            background: #F8FAFC;
+            border-radius: 0 0 16px 16px;
+        }
+    }
+}
