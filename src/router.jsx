@@ -12,6 +12,7 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import UploadingPhoto from "./components/Uploadingphoto";
 
 export const Router = createBrowserRouter([
   {
@@ -48,7 +49,6 @@ export const Router = createBrowserRouter([
         element: <TeacherPage />,
       },
       {
-
         path: "/checkout",
         element: <Checkout />,
       },
@@ -58,19 +58,20 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/order",
-        element: <OrderPage />
+        element: <OrderPage />,
       },
+
       {
         path: "/mentor",
-        element: <Mentor />
+        element: <Mentor />,
       },
       {
         path: "/profile",
         element: <ProfileLayout />,
         children: [
           {
-            path: "details",
-            element: <div>a</div>,
+            path: "uploadingphoto",
+            element: <UploadingPhoto />,
           },
         ],
       },
