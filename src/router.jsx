@@ -7,12 +7,11 @@ import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
-import Checkout from "./components/Checkout";
-import Categoriespage from "./pages/Categoriespage";
-import OrderPage from "./pages/Order";
-import Mentor from "./pages/Mentor";
-
-
+import OrderComplete from "./pages/OrderComplete";
+import Checkout from "./pages/Checkout"; // Make sure this is imported
+import Categoriespage from "./pages/Categoriespage"; // Make sure this is imported
+import Mentor from "./components/Mentor"; // Make sure this is imported
+import OrderPage from "./pages/OrderComplete";
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +21,6 @@ export const Router = createBrowserRouter([
         path: "/basket",
         element: <Basket />,
       },
-
       {
         path: "/login",
         element: <Loginn />,
@@ -48,7 +46,6 @@ export const Router = createBrowserRouter([
         element: <TeacherPage />,
       },
       {
-
         path: "/checkout",
         element: <Checkout />,
       },
@@ -58,13 +55,16 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/order",
-        element: <OrderPage />
+        element: <OrderPage />,
       },
       {
         path: "/mentor",
-        element: <Mentor />
-      }
-
+        element: <Mentor />,
+      },
+      {
+        path: "/orderComplete",
+        element: <OrderComplete />,
+      },
     ],
   },
 ]);
