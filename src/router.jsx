@@ -7,11 +7,17 @@ import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
+
+import Checkout from "./components/Checkout";
+import Categoriespage from "./pages/Categoriespage";
+import OrderPage from "./pages/Order";
+import Mentor from "./pages/Mentor";
+import ProfileLayout from "./components/ProfileLayout";
+import UploadingPhoto from "./components/Uploadingphoto";
+
+
 import OrderComplete from "./pages/OrderComplete";
-import Checkout from "./pages/Checkout"; // Make sure this is imported
-import Categoriespage from "./pages/Categoriespage"; // Make sure this is imported
-import Mentor from "./components/Mentor"; // Make sure this is imported
-import OrderPage from "./pages/OrderComplete";
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -57,13 +63,25 @@ export const Router = createBrowserRouter([
         path: "/order",
         element: <OrderPage />,
       },
+
       {
         path: "/mentor",
         element: <Mentor />,
       },
       {
+
+        path: "/profile",
+        element: <ProfileLayout />,
+        children: [
+          {
+            path: "uploadingphoto",
+            element: <UploadingPhoto />,
+          },
+        ],
+
         path: "/orderComplete",
         element: <OrderComplete />,
+
       },
     ],
   },
