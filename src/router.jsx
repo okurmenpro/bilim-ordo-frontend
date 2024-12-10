@@ -12,6 +12,7 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import TeachersProfile from "./components/TeachersProfile";
 
 export const Router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ export const Router = createBrowserRouter([
             path: "details",
             element: <div>a</div>,
           },
+          {
+            path: "/profile/teachers",
+            element: <TeachersProfile />,
+          }
         ],
       },
     ],

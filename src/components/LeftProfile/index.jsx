@@ -2,6 +2,7 @@ import React from 'react'
 import { ProfileData } from '../../data/Profile'
 import { IoShareSocialOutline } from "react-icons/io5";
 import "./LeftProfile.scss"
+import { NavLink } from 'react-router-dom';
 
 const LeftProfile = () => {
     return (
@@ -9,13 +10,15 @@ const LeftProfile = () => {
             <img src={ProfileData.img} alt="" />
             <h3>{ProfileData.name}</h3>
             <button class="share-profile">Share Profile
-                <IoShareSocialOutline className='share-icon'/>
+                <IoShareSocialOutline className='share-icon' />
             </button>
             <hr />
             <div class="profile-btns">
                 <button>Profile</button>
                 <button>My Courses</button>
-                <button>Teachers</button>
+                <NavLink to={"/profile/teachers"}>
+                    <button>Teachers</button>
+                </NavLink>
                 <button>Message</button>
                 <button class="end-button">My Reviews</button>
             </div>
