@@ -13,6 +13,7 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import Reviews from "./components/Reviews";
 import TeachersProfile from "./components/TeachersProfile";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
@@ -73,6 +74,10 @@ export const Router = createBrowserRouter([
         element: <ProfileLayout />,
         children: [
           {
+            path: "reviews",
+            element: <Reviews />,
+          },
+        ],
             path: "uploadingphoto",
             element: <UploadingPhoto />,
           },

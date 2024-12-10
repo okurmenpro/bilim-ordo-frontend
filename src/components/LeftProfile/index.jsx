@@ -1,6 +1,7 @@
 import React from "react";
 import { ProfileData } from "../../data/Profile";
 import { IoShareSocialOutline } from "react-icons/io5";
+
 import "./LeftProfile.scss"
 import { NavLink } from 'react-router-dom';
 
@@ -22,7 +23,9 @@ const LeftProfile = () => {
                     <button>Teachers</button>
                 </NavLink>
                 <button>Message</button>
-                <button class="end-button">My Reviews</button>
+                <Link to="reviews">
+          <button>My Reviews</button>
+        </Link>
             </div>
         </div>
     )
