@@ -1,0 +1,166 @@
+// Variables
+$primary-color: #ffffff;
+$secondary-color: #f0f0f0;
+$highlight-color: #007bff;
+$text-color: #333;
+$time-color: #888;
+
+// Main container
+.course-completion-1 {
+  border-radius: 16px;
+  position: absolute;
+  font-family: Arial, sans-serif;
+  left: 990px;
+  top: 161px;
+  background-color: $primary-color;
+  padding-bottom: 10px;  // Убираем отступы
+  background-color:#E2E8F0;
+  width: 400px;  // Ширина 100% для основного контейнера
+  
+  .section-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0; // Убираем отступы
+    bottom: -22px;
+  }
+
+  .section {
+    width: 100%;  // Ширина 100% для каждого контейнера
+    margin: 0;  // Убираем отступы между контейнерами
+    padding: 0; // Убираем паддинги внутри контейнера
+
+    .section-header {
+      background-color: #E2E8F0;
+      padding: 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid grey;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #d1d9e6;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        color: $text-color;
+        margin-left: 20px;
+        font-weight: 600;
+      }
+
+      .icon-arrow {
+        width: 13px;
+        height: 8px;
+      }
+    }
+    .section-items {
+      padding: 0;
+      margin: 0; // Убираем внешние отступы
+      width: 100%;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+    
+      .item {
+        display: flex !important;
+        justify-content: flex-start; // Элементы выравниваются слева направо
+        align-items: center !important; // Выравниваем элементы по вертикали
+        height: 60px;
+        width: 100%; // Растягиваем элемент на всю ширину родителя
+        padding: 0 20px; // Добавляем боковые отступы для аккуратности
+    
+        input[type="checkbox"] {
+          margin-right: 15px; // Отступ между чекбоксом и текстом
+          height: 20px;
+        }
+    
+        label {
+          flex-grow: 1; // Текст занимает оставшееся место
+          color: $text-color;
+          font-size: 16px;
+          text-align: left; // Выравниваем текст по левому краю
+        }
+    
+        .item-info {
+          display: flex;
+          align-items: center;
+          margin-left: auto; // Сдвигаем информацию о времени вправо
+    
+          .icon-video {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+          }
+    
+          .time {
+            font-size: 12px;
+            color: $time-color;
+          }
+        }
+      }
+    }
+  }     
+
+  .show-text-button {
+    background-color: $highlight-color;
+    color: $primary-color;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($highlight-color, 10%);
+    }
+  }
+
+  .details {
+    margin-top: 16px;
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: 4px;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+}
+
+// Responsiveness
+@media (max-width: 768px) {
+  .course-completion {
+    left: 20px;  // Сдвигаем влево для маленьких экранов
+    bottom: 20px;
+    width: 100%;  // Ширина 100% для контейнера
+    height: auto;
+  }
+
+  .section-container {
+    padding: 10px;
+  }
+
+  .section {
+    margin-bottom: 0;  // Убираем отступы между контейнерами
+  }
+
+}
+.box-1{
+  width: 100%;
+
+}
+.completion{
+  position: relative;
+  font-size: 24px;
+  font-weight:600;
+  margin-right: 140px;
+  top: 17px;
+}
