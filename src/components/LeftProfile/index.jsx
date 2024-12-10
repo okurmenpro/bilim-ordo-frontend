@@ -4,6 +4,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import "./LeftProfile.scss"
 import { NavLink } from 'react-router-dom';
 
+
 const LeftProfile = () => {
     return (
         <div class="left-profile">
@@ -15,21 +16,24 @@ const LeftProfile = () => {
             <hr />
             <div class="profile-btns">
 
-                 <Link to="uploadingphoto">
-          <button>Profile</button>
-        </Link>
-                 <Link to='profilemycourse' style={{color: "black"}}>
-                    <button style={{color: "black",}}>
-                            My Courses
+                <NavLink to="uploadingphoto">
+                    <button>Profile</button>
+                </NavLink>
+                <NavLink to='/profile/mycourse' style={{ color: "black" }}>
+                    <button style={{ color: "black", }}>
+                        My Courses
                     </button>
-                </Link>
+                </NavLink>
                 <NavLink to={"/profile/teachers"}>
                     <button>Teachers</button>
                 </NavLink>
+                <NavLink to={"/profile/message"}>
                 <button>Message</button>
-                <Link to="reviews">
-          <button>My Reviews</button>
-        </Link>
+                </NavLink>
+                
+                <NavLink to="reviews">
+                    <button>My Reviews</button>
+                </NavLink>
             </div>
         </div>
     )

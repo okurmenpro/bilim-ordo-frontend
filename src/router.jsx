@@ -7,7 +7,6 @@ import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
 import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
-
 import Checkout from "./components/Checkout";
 import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
@@ -18,6 +17,7 @@ import Reviews from "./components/Reviews";
 import TeachersProfile from "./components/TeachersProfile";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
+import MessagePage from "./components/Message";
 
 export const Router = createBrowserRouter([
   {
@@ -70,30 +70,37 @@ export const Router = createBrowserRouter([
         element: <Mentor />,
       },
       {
-
         path: "/profile",
         element: <ProfileLayout />,
         children: [
           {
-            path: "profilemycourse",
-            element: <ProfileMycourse/>,
-            path: "reviews",
+            path: "/profile/mycourse",
+            element: <ProfileMycourse />,
+
+          },
+          {
+            path: "/profile/reviews",
             element: <Reviews />,
           },
-        ],
-            path: "uploadingphoto",
+          {
+            path: "/profile/uploadingphoto",
             element: <UploadingPhoto />,
           },
           {
             path: "/profile/teachers",
             element: <TeachersProfile />,
+          },
+          {
+            path: "/profile/orderComplete",
+            element: <OrderComplete />,
+          },
+          {
+            path: "/profile/message",
+            element: <MessagePage />
           }
         ],
-
-        path: "/orderComplete",
-        element: <OrderComplete />,
-
       },
+
     ],
   },
 ]);

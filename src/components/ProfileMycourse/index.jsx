@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ProfileMycourse.scss"
 import Topcoursescategories from '../Topcoursescategories'
-import Courses from "../Courses/Index"
+import Courses from "../Courses"
 
 
 function index() {
