@@ -39,9 +39,10 @@
 }
 
 .banner__star{
+    height: 40px;
     color: #FEC84B;
     font-size: 16px;
-    font-weight: 500
+    font-weight: 500;
 }
 
 .banner__star button {

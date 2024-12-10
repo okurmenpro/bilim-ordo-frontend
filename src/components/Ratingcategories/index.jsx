@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 import "./infocategories.css";
-import Filter from "../../assets/svg/filter.svg";
+import { MdOutlineStarPurple500 as Star } from "react-icons/md";
+import { AiOutlineClose as CloseIcon } from "react-icons/ai";
+import Topcoursescategories from "../Topcoursescategories";
 import chevron from "../../assets/svg/chevron.svg";
 import downchevron from "../../assets/svg/downchevron.svg";
 
-import { MdOutlineStarPurple500 as Star } from "react-icons/md";
-
 function Ratingcategories() {
-  const [isStarVisible, setIsStarVisible] = useState(true); // состояние для звезд
-  const [isCheckboxVisible, setIsCheckboxVisible] = useState(true); // состояние для чекбоксов
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isStarVisible, setIsStarVisible] = useState(true);
+  const [isCheckboxVisible, setIsCheckboxVisible] = useState(true);
+  const [isfilterchevron, setIsfilterchevron] = useState(true);
+
+  const toggleModal = () => {
+    setIsModalVisible((prev) => !prev);
+  };
+  const filterchevron = () => {
+    setIsfilterchevron((prev) => !prev);
+  };
 
   const toggleStarVisibility = () => {
     setIsStarVisible((prev) => !prev);
@@ -21,77 +30,98 @@ function Ratingcategories() {
   return (
     <div>
       <div className="categories-container">
-        <div className="text-h2h3">
-          <h2>Design Courses</h2>
-          <h3>All Development Courses</h3>
-          <button>
-            <img src={Filter} alt="" />
-            <p>Label</p>
-          </button>
-        </div>
-        <div className="star-rating">
-          <div className="filter-rating" onClick={toggleStarVisibility}>
-            <p>Rating</p>
-            <img
-              src={isStarVisible ? chevron : downchevron} // меняем иконку
-              alt=""
-            />
+        <div className="left-raitng">
+          <div className="text-h2h3">
+            <h2>DesignCourses</h2>
+            <h3>All Development Courses</h3>
+            <button
+              onClick={toggleModal}
+              className={isModalVisible ? "active" : ""}
+            >
+              <p>Label</p>
+            </button>
           </div>
-          {isStarVisible && (
-            <div>
-              {[...Array(5)].map((_, rowIndex) => (
-                <div className="star-row" key={rowIndex}>
-                  {[...Array(5)].map((_, index) => (
-                    <Star
-                      className={`icon-star ${
-                        index < 5 - rowIndex ? "star-yellow" : ""
-                      }`}
-                      key={index + rowIndex * 5}
-                    />
-                  ))}
+          {isModalVisible && (
+            <div className="modal-overlay active">
+              <div className="modal-content">
+                <button className="close-btn" onClick={toggleModal}>
+                  <CloseIcon size={20} />
+                </button>
+                <div className="star-rating">
+                  <div className="filter-rating">
+                    <p>Rating</p>
+                    <img onClick={toggleStarVisibility} src={chevron} alt="" />
+                  </div>
+                  {isStarVisible && (
+                    <div>
+                      {[...Array(5)].map((_, rowIndex) => (
+                        <div className="star-row" key={rowIndex}>
+                          {[...Array(5)].map((_, index) => (
+                            <Star
+                              className={`icon-star ${
+                                index < 5 - rowIndex ? "star-yellow" : ""
+                              }`}
+                              key={index + rowIndex * 5}
+                            />
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              ))}
+                <div className="checkbox-age">
+                  <div className="filter-age">
+                    <p>Number of Chapters</p>
+                    <img
+                      onClick={toggleCheckboxVisibility}
+                      src={chevron}
+                      alt=""
+                    />
+                  </div>
+                  {isCheckboxVisible && (
+                    <div>
+                      <div className="checkbox-input1">
+                        <input type="checkbox" />
+                        <p>1-10</p>
+                      </div>
+                      <div className="checkbox-input">
+                        <input type="checkbox" />
+                        <p>10-15</p>
+                      </div>
+                      <div className="checkbox-input">
+                        <input type="checkbox" />
+                        <p>15-20</p>
+                      </div>
+                      <div className="checkbox-input">
+                        <input type="checkbox" />
+                        <p>20-25</p>
+                      </div>
+                    </div>
+                  )}
+                  <div onClick={filterchevron} className="filter-label">
+                    <p>label</p>
+                    <img src={downchevron} alt="" />
+                  </div>
+                  {isfilterchevron && (
+                    <div>
+                      <div className="filter-chevron">
+                        <p>filter</p>
+                        <img src={chevron} alt="" />
+                      </div>
+                      <div className="filter-chevron">
+                        <p>filter</p>
+                        <img src={chevron} alt="" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           )}
         </div>
-        <div className="checkbox-age">
-          <div className="filter-age" onClick={toggleCheckboxVisibility}>
-            {/* Клик на chevron для показа/скрытия чекбоксов */}
-            <p>Number of Chaptu</p>
-            <img
-              src={isCheckboxVisible ? chevron : downchevron} // меняем иконку
-              alt=""
-            />
-          </div>
-          {isCheckboxVisible && (
-            <div>
-              {/* Показываем чекбоксы, если isCheckboxVisible === true */}
-              <div className="checkbox-input">
-                <input type="checkbox" />
-                <p>1-10</p>
-              </div>
-              <div className="checkbox-input">
-                <input type="checkbox" />
-                <p>10-15</p>
-              </div>
-              <div className="checkbox-input">
-                <input type="checkbox" />
-                <p>15-20</p>
-              </div>
-              <div className="checkbox-input">
-                <input type="checkbox" />
-                <p>20-25</p>
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="filter-chevron">
-          <p>Filter</p>
-          <img src={chevron} alt="" />
-        </div>
-        <div className="filter-chevron">
-          <p>Filter</p>
-          <img src={chevron} alt="" />
+
+        <div className="topcousescategories">
+          <Topcoursescategories />
         </div>
       </div>
     </div>

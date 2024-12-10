@@ -16,8 +16,7 @@ const index = () => {
           <IoChevronBackOutline className="backward" /> Backward
         </NavLink>
       </div>
-      <div className="mian-spot container">
-        <div className="main-spot">
+      <div className="main-spot">
           <img className="signup-png" src={signup} alt="" />
           <div className="right-register">
             <h1 className="registration">Create Your Account</h1>
@@ -66,45 +65,43 @@ const index = () => {
 
             <div className="fgm-sign-in">
               <button className="Facebook-google-microsoft">
-                <img src={facebook} alt="" />
-                <p
-                  style={{
-                    color: " rgb(8, 102, 255)",
-                    fontFamily: " Inter",
-                    fontSize: "14px",
-                  }}
-                >
-                  Facebook
-                </p>
+                <div>
+                  <img src={facebook} alt="" />
+                  <p
+                    style={{
+                      color: "blue"
+                    }}>
+                    Facebook
+                  </p>
+                </div>
               </button>
               <button className="Facebook-google-microsoft">
-                <img src={google} alt="" />
-                <p
-                  style={{
-                    color: " rgb(234, 67, 53)",
-                    fontFamily: " Inter",
-                    fontSize: "14px",
-                  }}
-                >
-                  Google
-                </p>
+                <div>
+                  <img src={google} alt="" />
+                  <p
+                    style={{
+                      color: " rgb(234, 67, 53)",
+                    }}
+                  >
+                    Google
+                  </p>
+                </div>
               </button>
               <button className="Facebook-google-microsoft">
-                <img src={microsoft} alt="" />
-                <p
-                  style={{
-                    color: "rgb(0, 0, 0)",
-                    fontFamily: " Inter",
-                    fontSize: "14px",
-                  }}
-                >
-                  Microsoft
-                </p>
+                <div>
+                  <img src={microsoft} alt="" />
+                  <p
+                    style={{
+                      color: "rgb(0, 0, 0)",
+                    }}
+                  >
+                    Microsoft
+                  </p>
+                </div>
               </button>
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

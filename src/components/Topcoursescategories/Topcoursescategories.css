@@ -1,0 +1,444 @@
+.sortby {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+.sortby p {
+  margin-top: 15px;
+}
+
+.sortby button {
+  box-sizing: border-box;
+  border: 1px solid rgb(15, 23, 42);
+  border-radius: 8px;
+
+  background: rgb(255, 255, 255);
+  width: 140px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.topcourses-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  width: 940px;
+  height: 1094px;
+}
+.design {
+  display: grid;
+  width: 295px;
+  box-sizing: border-box;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 16px;
+  box-shadow: 0px 0px 8px 0px rgba(59, 130, 246, 0.12);
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 0;
+  flex: 0 0 auto;
+}
+
+.design .design1 {
+  margin-left: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.design img {
+  position: static;
+  width: 256px;
+  height: 139px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 16px;
+  border-radius: 6px;
+}
+
+.design h2 {
+  color: rgb(15, 23, 42);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.design h3 {
+  color: rgb(51, 65, 85);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.design .design-icon .line-ratings {
+  display: flex;
+  margin: 0;
+}
+
+.design .design-icon .linestart {
+  border-radius: 0.36px;
+  color: rgb(234, 179, 8);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.design .design-icon .ratings {
+  color: rgb(51, 65, 85);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 4px 0;
+}
+
+.design .design-icon .ratings2 {
+  color: rgb(51, 65, 85);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.design .design-icon .price1 {
+  color: rgb(15, 23, 42);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.left-rigth-button {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.left-rigth-button button {
+  box-sizing: border-box;
+  border: 1px solid rgb(226, 232, 240);
+  background: rgb(255, 255, 255);
+  width: 43px;
+  height: 41px;
+  box-sizing: border-box;
+  border: 1px solid rgb(226, 232, 240);
+  background: rgb(255, 255, 255);
+}
+.left {
+  border-radius: 10px 0 0 10px;
+}
+.rigth {
+  border-radius: 0 10px 10px 0;
+}
+.left img {
+  margin-top: 9px;
+}
+.rigth img {
+  margin-top: 9px;
+}
+
+@media (max-width: 415px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -30px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 300px;
+  }
+  .sortby {
+    margin-right: 120px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 433px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 200px;
+  }
+  .sortby {
+    margin-right: 120px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 770px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 650px;
+  }
+  .sortby {
+    margin-right: -10px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 822px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 700px;
+  }
+  .sortby {
+    margin-right: -10px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 1026px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 900px;
+  }
+  .sortby {
+    margin-right: -10px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 914px) {
+  .topcoursescategories-container {
+    margin-left: -450px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 700px;
+  }
+  .sortby {
+    margin-right: 10px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 542px) {
+  .topcoursescategories-container {
+    margin-left: -350px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: -35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 350px;
+  }
+  .sortby {
+    margin-right: -10px;
+  }
+  .left-rigth-button {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 346px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 300px;
+  }
+  .sortby {
+    margin-right: 90px;
+  }
+  .left-rigth-button {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 413px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 350px;
+  }
+  .sortby {
+    margin-right: 110px;
+  }
+  .left-rigth-button {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 361px) {
+  .topcoursescategories-container {
+    margin-left: -400px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 300px;
+  }
+  .sortby {
+    margin-right: 90px;
+  }
+  .left-rigth-button {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 376px) {
+  .topcoursescategories-container {
+    margin-left: -450px;
+    margin-top: 50px;
+  }
+
+  .topcourses-grid {
+    gap: 10px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    overflow-x: auto;
+    gap: 16px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+    height: 350px;
+    width: 300px;
+  }
+  .sortby {
+    margin-right: 90px;
+  }
+  .left-rigth-button {
+    margin-right: 90px;
+  }
+}
