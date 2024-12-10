@@ -95,4 +95,16 @@ export const topcourse = [
     image:
       "https://icdn.lenta.ru/images/2022/04/27/18/20220427184317498/pic_dc01ddc6c52cac0feff4447828f80e97.jpeg",
   },
+  {
+    id: 9,
+    title: "Web Development Essentials",
+    author: "By Sarah Johnson",
+    ratings: 870,
+    totalHours: 18,
+    lectures: 100,
+    level: "Beginner",
+    price: "$129.9",
+    image:
+      "https://icdn.lenta.ru/images/2022/04/27/18/20220427184317498/pic_dc01ddc6c52cac0feff4447828f80e97.jpeg",
+  },
 ];
