@@ -13,9 +13,8 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import TeachersProfile from "./components/TeachersProfile";
 import UploadingPhoto from "./components/Uploadingphoto";
-
-
 import OrderComplete from "./pages/OrderComplete";
 
 export const Router = createBrowserRouter([
@@ -77,6 +76,10 @@ export const Router = createBrowserRouter([
             path: "uploadingphoto",
             element: <UploadingPhoto />,
           },
+          {
+            path: "/profile/teachers",
+            element: <TeachersProfile />,
+          }
         ],
 
         path: "/orderComplete",

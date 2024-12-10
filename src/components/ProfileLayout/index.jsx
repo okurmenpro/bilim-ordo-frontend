@@ -4,7 +4,12 @@ import LeftProfile from "../LeftProfile";
 
 function ProfileLayout() {
   return (
-    <div style={{ display: "flex", gap: "30px" }} className="container">
+    <div className='container'
+      style={{
+        display: "flex",
+        gap: "40px",
+      }}>
+
       <LeftProfile />
       <Outlet />
     </div>
