@@ -12,6 +12,7 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import ProfileMycourse from "./components/ProfileMycourse";
 
 export const Router = createBrowserRouter([
   {
@@ -69,8 +70,8 @@ export const Router = createBrowserRouter([
         element: <ProfileLayout />,
         children: [
           {
-            path: "details",
-            element: <div>a</div>,
+            path: "profilemycourse",
+            element: <ProfileMycourse/>,
           },
         ],
       },

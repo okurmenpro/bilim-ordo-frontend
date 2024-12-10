@@ -1,0 +1,444 @@
+.my-courses {
+    h1 {
+        text-align: left;
+        /* [object Object] */
+        color: rgb(15, 23, 42);
+        font-size: 20px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .my-courses-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .course-search-right {
+            width: 320px;
+            display: flex;
+        }
+        .my-course-search {
+            position: relative;
+            width: 300px;   
+            height: 48px;
+            .button-search {
+                position: absolute;
+                right: 0;
+                top: 0px;
+              width: 50px;
+              height: 40px;
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          
+            input {
+              border: none;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+              /* grey/border */
+              border: 1px solid rgb(226, 232, 240);
+              border-radius: 8px;
+              /* white */
+              background: rgb(255, 255, 255);
+              padding-left: 10px;
+            }
+          }
+          .sort-by {
+            display: flex;
+            align-items: center;
+            gap: 10px;   
+            p {
+              margin-top: 15px;
+            }
+            button {
+                box-sizing: border-box;
+                border: 1px solid rgb(15, 23, 42);
+                border-radius: 8px;
+                background: rgb(255, 255, 255);
+                width: 140px;
+                height: 48px;
+                margin-right: 10px;
+              }
+          }
+    }
+}
+.categories-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 300px;
+    margin-left: 125px;
+    display: flex;
+    gap: 90px;
+  }
+  
+  .text-h2h3 h2 {
+    margin-bottom: 5px;
+    margin-top: 150px;
+    margin-left: 85px;
+    color: rgb(15, 23, 42);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  
+  .text-h2h3 {
+    color: rgb(15, 23, 42);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+  
+  .text-h2h3 h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    margin-left: 85px;
+  }
+  
+  .text-h2h3 button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #0a0a0a;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90px;
+    height: 48px;
+    margin-left: 85px;
+  }
+  
+  .text-h2h3 button:hover {
+    background-color: #eee;
+  }
+  
+  .text-h2h3 button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .text-h2h3 button p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+  .filter-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .filter-label p {
+    margin-top: 10px;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    margin-left: -1210px;
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideInFromTop 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  .topcousescategories {
+    margin-top: 300px;
+    margin-left: 10px;
+  }
+  
+  .close-btn:hover {
+    color: #ff0000;
+  }
+  
+  .star-rating {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .filter-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .filter-rating p {
+    margin-top: 10px;
+  }
+  
+  .star-row {
+    display: flex;
+    margin: 5px 0;
+  }
+  
+  .icon-star {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .star-yellow {
+    color: #ffc107;
+  }
+  
+  .checkbox-age {
+    margin-bottom: 20px;
+  }
+  
+  .filter-age {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .filter-age p {
+    margin-top: 5px;
+  }
+  
+  .checkbox-input {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+  }
+  
+  .checkbox-input1 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox-input1 input {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-input input {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .down-filter {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .filter-chevron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .modal-overlay {
+    display: flex;
+  }
+  @media (max-width: 361px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-bottom: 1590px;
+      margin-left: -100px;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-bottom: 1590px;
+      margin-left: -1000px;
+    }
+  }
+  
+  @media (max-width: 433px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-bottom: 1590px;
+      margin-left: -1000px;
+    }
+  }
+  @media (max-width: 768px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-right: -30px;
+    }
+  }
+  @media (max-width: 822px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -515px;
+    }
+  }
+  
+  @media (min-width: 912px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-right: 70px;
+      margin-bottom: 120px;
+    }
+  }
+  @media (max-width: 542px) {
+    .text-h2h3 {
+      margin-left: -190px;
+    }
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -1050px;
+      margin-bottom: 450px;
+    }
+  }
+  @media (max-width: 346px) {
+    .text-h2h3 {
+      margin-left: -90px;
+    }
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -1000px;
+      margin-bottom: 2050px;
+    }
+  }
+  @media (min-width: 855px) {
+    .text-h2h3 {
+      margin-left: -90px;
+    }
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -490px;
+    }
+  }
+  @media (max-width: 413px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -1040px;
+      margin-bottom: 1700px;
+    }
+  }
+  
+  @media (max-width: 376px) {
+    .text-h2h3 {
+      margin-left: -120px;
+    }
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -1050px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-right: 170px;
+    }
+  }
+  @media (min-width: 852px) and (max-width: 853px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -405px;
+    }
+  }
+  @media (min-width: 826px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -845px;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1289px) {
+    .modal-overlay {
+      display: flex;
+    }
+    .modal-content {
+      margin-left: -905px;
+    }
+  }
+  

@@ -1,10 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import LeftProfile from '../LeftProfile'
+import "./ProfileLayout.scss" 
 
 function ProfileLayout() {
   return (
-    <div className='container'>
+    <div className='profile-layout container'>
       <LeftProfile />
       <Outlet />
     </div>

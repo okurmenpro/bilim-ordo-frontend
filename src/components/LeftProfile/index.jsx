@@ -2,6 +2,7 @@ import React from 'react'
 import { ProfileData } from '../../data/Profile'
 import { IoShareSocialOutline } from "react-icons/io5";
 import "./LeftProfile.scss"
+import { Link } from 'react-router-dom';
 
 const LeftProfile = () => {
     return (
@@ -14,7 +15,11 @@ const LeftProfile = () => {
             <hr />
             <div class="profile-btns">
                 <button>Profile</button>
-                <button>My Courses</button>
+                <Link to='profilemycourse' style={{color: "black"}}>
+                    <button style={{color: "black",}}>
+                            My Courses
+                    </button>
+                </Link>
                 <button>Teachers</button>
                 <button>Message</button>
                 <button class="end-button">My Reviews</button>

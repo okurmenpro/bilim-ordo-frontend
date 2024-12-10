@@ -6,6 +6,23 @@
   display: flex;
   gap: 90px;
 }
+.sort-by {
+  display: flex;
+  align-items: center;
+  gap: 10px;   
+  p {
+    margin-top: 15px;
+  }
+  button {
+      box-sizing: border-box;
+      border: 1px solid rgb(15, 23, 42);
+      border-radius: 8px;
+      background: rgb(255, 255, 255);
+      width: 140px;
+      height: 48px;
+      margin-right: 10px;
+    }
+}
 
 .text-h2h3 h2 {
   margin-bottom: 5px;
