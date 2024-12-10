@@ -1,6 +1,6 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import LeftProfile from '../LeftProfile'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import LeftProfile from "../LeftProfile";
 
 function ProfileLayout() {
   return (
@@ -9,10 +9,11 @@ function ProfileLayout() {
         display: "flex",
         gap: "40px",
       }}>
+
       <LeftProfile />
       <Outlet />
     </div>
-  )
+  );
 }
 
-export default ProfileLayout
+export default ProfileLayout;
