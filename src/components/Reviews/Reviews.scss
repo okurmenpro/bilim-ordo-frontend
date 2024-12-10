@@ -1,0 +1,76 @@
+.reviews {
+  margin-top: 140px;
+  margin-left: 40px;
+  display: grid;
+  gap: 16px;
+
+  h4 {
+    color: rgb(15, 23, 42);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .beginners {
+    width: 902px;
+    height: 195px;
+    box-sizing: border-box;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+
+    .dots {
+      display: flex;
+      justify-content: space-between;
+
+      .span5 {
+        display: flex;
+        align-items: center;
+
+        .course-name {
+          color: rgb(15, 23, 42);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        h5 {
+          color: rgb(15, 23, 42);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 160%;
+          margin: 0;
+        }
+      }
+    }
+
+    .purple {
+      display: flex;
+      margin-top: 15px;
+
+      .rev {
+        color: rgb(15, 23, 42);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        text-align: left;
+      }
+      .line-ratings {
+        .linestart {
+          color: rgb(234, 179, 8);
+        }
+      }
+
+      .initial {
+        width: 720px;
+        color: rgb(51, 65, 85);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+  }
+}
