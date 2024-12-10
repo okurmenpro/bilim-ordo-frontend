@@ -14,7 +14,8 @@ import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
 import Reviews from "./components/Reviews";
-
+import TeachersProfile from "./components/TeachersProfile";
+import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 
 export const Router = createBrowserRouter([
@@ -62,6 +63,7 @@ export const Router = createBrowserRouter([
         path: "/order",
         element: <OrderPage />,
       },
+
       {
         path: "/mentor",
         element: <Mentor />,
@@ -76,8 +78,18 @@ export const Router = createBrowserRouter([
             element: <Reviews />,
           },
         ],
+            path: "uploadingphoto",
+            element: <UploadingPhoto />,
+          },
+          {
+            path: "/profile/teachers",
+            element: <TeachersProfile />,
+          }
+        ],
+
         path: "/orderComplete",
         element: <OrderComplete />,
+
       },
     ],
   },
