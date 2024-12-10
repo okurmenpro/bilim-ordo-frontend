@@ -13,6 +13,7 @@ import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
+import ProfileMycourse from "./components/ProfileMycourse";
 import Reviews from "./components/Reviews";
 import TeachersProfile from "./components/TeachersProfile";
 import UploadingPhoto from "./components/Uploadingphoto";
@@ -74,6 +75,8 @@ export const Router = createBrowserRouter([
         element: <ProfileLayout />,
         children: [
           {
+            path: "profilemycourse",
+            element: <ProfileMycourse/>,
             path: "reviews",
             element: <Reviews />,
           },

@@ -1,7 +1,6 @@
 import React from "react";
 import { ProfileData } from "../../data/Profile";
 import { IoShareSocialOutline } from "react-icons/io5";
-
 import "./LeftProfile.scss"
 import { NavLink } from 'react-router-dom';
 
@@ -15,10 +14,15 @@ const LeftProfile = () => {
             </button>
             <hr />
             <div class="profile-btns">
+
                  <Link to="uploadingphoto">
           <button>Profile</button>
         </Link>
-                <button>My Courses</button>
+                 <Link to='profilemycourse' style={{color: "black"}}>
+                    <button style={{color: "black",}}>
+                            My Courses
+                    </button>
+                </Link>
                 <NavLink to={"/profile/teachers"}>
                     <button>Teachers</button>
                 </NavLink>
