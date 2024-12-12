@@ -13,6 +13,7 @@ import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 import Dropdown from "../Dropdown";
 
+
 function Header() {
   const { cartItems } = useContext(CartContext);
   const [isMenuOpen, setMenuOpen] = useState(false);

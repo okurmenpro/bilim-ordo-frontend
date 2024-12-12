@@ -5,14 +5,20 @@ import Course from "./pages/Course";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import TeachersCourses from "./components/TeachersCourses";
-import Login from "./pages/Login";
+import Loginn from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
 import Checkout from "./components/Checkout";
 import Categoriespage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
-
+import ProfileMycourse from "./components/ProfileMycourse";
+import Reviews from "./components/Reviews";
+import TeachersProfile from "./components/TeachersProfile";
+import UploadingPhoto from "./components/Uploadingphoto";
+import OrderComplete from "./pages/OrderComplete";
+import MessagePage from "./components/Message";
+import Profilemessageteachers from "./components/Profile-page-teacher";
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -22,10 +28,9 @@ export const Router = createBrowserRouter([
         path: "/basket",
         element: <Basket />,
       },
-
       {
         path: "/login",
-        element: <Login />,
+        element: <Loginn />,
       },
       {
         path: "/",
@@ -48,7 +53,6 @@ export const Router = createBrowserRouter([
         element: <TeacherPage />,
       },
       {
-
         path: "/checkout",
         element: <Checkout />,
       },
@@ -58,22 +62,50 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/order",
-        element: <OrderPage />
+        element: <OrderPage />,
       },
+
       {
         path: "/mentor",
-        element: <Mentor />
+        element: <Mentor />,
       },
       {
         path: "/profile",
         element: <ProfileLayout />,
         children: [
           {
-            path: "details",
-            element: <div>a</div>,
+            path: "/profile/mycourse",
+            element: <ProfileMycourse />,
+
           },
+          {
+            path: "/profile/reviews",
+            element: <Reviews />,
+          },
+          {
+            path: "/profile/uploadingphoto",
+            element: <UploadingPhoto />,
+          },
+          {
+            path: "/profile/teachers",
+            element: <TeachersProfile />,
+          },
+          {
+            path: "/profile/orderComplete",
+            element: <OrderComplete />,
+          },
+          {
+            path: "/profile/message",
+            element: <MessagePage />
+          },
+       
         ],
+      
       },
+      {
+        path:"/profilemessageteachers",
+        element:<Profilemessageteachers />
+        }  
     ],
   },
 ]);

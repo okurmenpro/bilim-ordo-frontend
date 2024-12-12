@@ -121,6 +121,13 @@ function Ratingcategories() {
         </div>
 
         <div className="topcousescategories">
+          <div className="sortby">
+            <p>Sort By</p>
+            <button>
+              <span>Relevance</span>
+              <img src={downchevron} alt="" />
+            </button>
+          </div>
           <Topcoursescategories />
         </div>
       </div>

@@ -1,3 +1,75 @@
+.my-courses {
+  h1 {
+    text-align: left;
+    color: rgb(15, 23, 42);
+    font-size: 20px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .my-courses-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .course-search-right {
+      width: 320px;
+      display: flex;
+    }
+
+    .my-course-search {
+      position: relative;
+      width: 300px;
+      height: 48px;
+
+      .button-search {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 50px;
+        height: 40px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input {
+        border: none;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgb(226, 232, 240);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        padding-left: 10px;
+      }
+    }
+
+    .sort-by {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        margin-top: 15px;
+      }
+
+      button {
+        box-sizing: border-box;
+        border: 1px solid rgb(15, 23, 42);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        width: 140px;
+        height: 48px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 .categories-container {
   font-family: Arial, sans-serif;
   color: #333;
@@ -5,23 +77,6 @@
   margin-left: 125px;
   display: flex;
   gap: 90px;
-}
-.sort-by {
-  display: flex;
-  align-items: center;
-  gap: 10px;   
-  p {
-    margin-top: 15px;
-  }
-  button {
-      box-sizing: border-box;
-      border: 1px solid rgb(15, 23, 42);
-      border-radius: 8px;
-      background: rgb(255, 255, 255);
-      width: 140px;
-      height: 48px;
-      margin-right: 10px;
-    }
 }
 
 .text-h2h3 h2 {
@@ -44,7 +99,6 @@
   font-weight: 600;
   line-height: 140%;
   letter-spacing: 0%;
-  text-align: left;
 }
 
 .text-h2h3 h3 {
@@ -58,7 +112,7 @@
   display: flex;
   align-items: center;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #0a0a0a;
   border-radius: 8px;
   cursor: pointer;
   width: 90px;
@@ -85,7 +139,7 @@
 .modal-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -101,11 +155,13 @@
   display: flex;
   opacity: 1;
 }
+
 .filter-label {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .filter-label p {
   margin-top: 10px;
 }
@@ -128,6 +184,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -143,6 +200,7 @@
   cursor: pointer;
   color: #333;
 }
+
 .topcousescategories {
   margin-top: 300px;
   margin-left: 10px;
@@ -250,10 +308,12 @@
 .modal-overlay {
   display: flex;
 }
+
 @media (max-width: 361px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-bottom: 1590px;
     margin-left: -100px;
@@ -264,6 +324,7 @@
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-bottom: 1590px;
     margin-left: -1000px;
@@ -274,23 +335,28 @@
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-bottom: 1590px;
     margin-left: -1000px;
   }
 }
+
 @media (max-width: 768px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-right: -30px;
   }
 }
+
 @media (max-width: 822px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -515px;
   }
@@ -300,50 +366,62 @@
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-right: 70px;
     margin-bottom: 120px;
   }
 }
+
 @media (max-width: 542px) {
   .text-h2h3 {
     margin-left: -190px;
   }
+
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -1050px;
     margin-bottom: 450px;
   }
 }
+
 @media (max-width: 346px) {
   .text-h2h3 {
     margin-left: -90px;
   }
+
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -1000px;
     margin-bottom: 2050px;
   }
 }
+
 @media (min-width: 855px) {
   .text-h2h3 {
     margin-left: -90px;
   }
+
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -490px;
   }
 }
+
 @media (max-width: 413px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -1040px;
     margin-bottom: 1700px;
@@ -354,41 +432,51 @@
   .text-h2h3 {
     margin-left: -120px;
   }
+
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -1050px;
   }
 }
+
 @media (min-width: 1024px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-right: 170px;
   }
 }
+
 @media (min-width: 852px) and (max-width: 853px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -405px;
   }
 }
+
 @media (min-width: 826px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -845px;
   }
 }
+
 @media (min-width: 1280px) and (max-width: 1289px) {
   .modal-overlay {
     display: flex;
   }
+
   .modal-content {
     margin-left: -905px;
   }
