@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./TeacherProfile.scss";
 import { MdOutlineStarPurple500 as Star } from "react-icons/md";
 import { TeacherProfileData } from "../../data/TeacherProfile"; // Массивди импорттоо
+import Courses from "../Filter"
 
 function TeacherProfile() {
   const [isExpanded, setIsExpanded] = useState(false);
