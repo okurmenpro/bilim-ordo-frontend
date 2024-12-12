@@ -1,5 +1,6 @@
 .teachers-profile {
     margin-top: 140px;
+    margin-bottom: 29px;
 
     .cards-teach-prof {
         width: 896px;
@@ -75,8 +76,9 @@
 
     .end-teach-prof {
         display: flex;
+        width: 211px;
+        margin: auto;
         margin-top: 16px;
-        margin-left: 300px;
 
         button {
             width: 43px;
@@ -87,7 +89,14 @@
             font-weight: 600;
             line-height: 14.52px;
             color: #0F172A;
+        }
 
+        .back-button-teach {
+            border-radius: 8px 0px 0px 8px;
+        }
+
+        .for-button-teach {
+            border-radius: 0px 8px 8px 0px;
         }
     }
 }
