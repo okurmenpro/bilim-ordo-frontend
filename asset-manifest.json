@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/okurmenpro/bilim-ordo-frontend/static/css/main.fb7bb2de.css",
+    "main.js": "/okurmenpro/bilim-ordo-frontend/static/js/main.fd33980f.js",
+    "static/js/453.37976eaa.chunk.js": "/okurmenpro/bilim-ordo-frontend/static/js/453.37976eaa.chunk.js",
+    "static/media/Python3.mp4": "/okurmenpro/bilim-ordo-frontend/static/media/Python3.f465cf94daac27690084.mp4",
+    "static/media/signup2.png": "/okurmenpro/bilim-ordo-frontend/static/media/signup2.9c08ec29b3c49df8846a.png",
+    "static/media/become2.png": "/okurmenpro/bilim-ordo-frontend/static/media/become2.42c7f834f952096b532f.png",
+    "static/media/become.png": "/okurmenpro/bilim-ordo-frontend/static/media/become.cd83cd9c4bf139be1cc5.png",
+    "static/media/Loginbackground.jpg": "/okurmenpro/bilim-ordo-frontend/static/media/Loginbackground.f3770a37908b5b366529.jpg",
+    "static/media/autor.png": "/okurmenpro/bilim-ordo-frontend/static/media/autor.96245c830d0afe460dc1.png",
+    "static/media/facebook.svg": "/okurmenpro/bilim-ordo-frontend/static/media/facebook.f0bc1532a4da460682b602b6330b40ed.svg",
+    "static/media/microsoft.svg": "/okurmenpro/bilim-ordo-frontend/static/media/microsoft.1918edf36d7732e5c1f7e78cefd06718.svg",
+    "static/media/astrology.svg": "/okurmenpro/bilim-ordo-frontend/static/media/astrology.e47639d49ea67255a5bf18e9b3165094.svg",
+    "static/media/course-icon-1.svg": "/okurmenpro/bilim-ordo-frontend/static/media/course-icon-1.8e969d79b48e0d2c994e41902269c1b0.svg",
+    "static/media/astrology2.svg": "/okurmenpro/bilim-ordo-frontend/static/media/astrology2.46241c78396ea944f728feb576cc87a6.svg",
+    "static/media/googel.svg": "/okurmenpro/bilim-ordo-frontend/static/media/googel.3e919113d95fcb91687ebcfdb9809ba5.svg",
+    "static/media/astrology1.svg": "/okurmenpro/bilim-ordo-frontend/static/media/astrology1.1002c91d4382faecde6ca8945426af37.svg",
+    "static/media/astrology3.svg": "/okurmenpro/bilim-ordo-frontend/static/media/astrology3.ed63208a936934c413fc8ed6065bdce9.svg",
+    "static/media/course-2-icon.svg": "/okurmenpro/bilim-ordo-frontend/static/media/course-2-icon.643fb8d581365e002568ea207b89018e.svg",
+    "static/media/cart.svg": "/okurmenpro/bilim-ordo-frontend/static/media/cart.b34eaa5c3c09a697d7ef02575d0605f9.svg",
+    "index.html": "/okurmenpro/bilim-ordo-frontend/index.html",
+    "static/media/filter.svg": "/okurmenpro/bilim-ordo-frontend/static/media/filter.8df3dd47b9a5028bfd01e53f21011436.svg",
+    "static/media/downchevron.svg": "/okurmenpro/bilim-ordo-frontend/static/media/downchevron.16af229be9cf38d95a42563f7efaa23e.svg",
+    "static/media/chevron.svg": "/okurmenpro/bilim-ordo-frontend/static/media/chevron.91a7e83a1fd1b628d0f23d6ba0e25965.svg",
+    "static/media/course-3-icon.svg": "/okurmenpro/bilim-ordo-frontend/static/media/course-3-icon.54e4665fceb72ca5e45c4fc0b5917ad0.svg",
+    "main.fb7bb2de.css.map": "/okurmenpro/bilim-ordo-frontend/static/css/main.fb7bb2de.css.map",
+    "main.fd33980f.js.map": "/okurmenpro/bilim-ordo-frontend/static/js/main.fd33980f.js.map",
+    "453.37976eaa.chunk.js.map": "/okurmenpro/bilim-ordo-frontend/static/js/453.37976eaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb7bb2de.css",
+    "static/js/main.fd33980f.js"
+  ]
+}

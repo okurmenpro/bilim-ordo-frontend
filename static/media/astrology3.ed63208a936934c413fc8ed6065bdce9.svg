@@ -1,0 +1,16 @@
+<svg width="100.000000" height="100.000000" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_3817">
+			<rect id="atom-01" rx="0.000000" width="38.333332" height="38.333332" transform="translate(30.833334 30.833334)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Rectangle 1069" rx="50.000000" width="100.000000" height="100.000000" fill="#E0F2FE" fill-opacity="1.000000"/>
+	<rect id="icon/physics" rx="0.000000" width="39.000000" height="39.000000" transform="translate(30.500000 30.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="atom-01" rx="0.000000" width="38.333332" height="38.333332" transform="translate(30.833334 30.833334)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_3817)">
+		<path id="Icon" d="M35.85 64.14C32.6 60.88 36.29 51.91 44.1 44.1C51.91 36.29 60.88 32.6 64.14 35.85C67.39 39.11 63.7 48.08 55.89 55.89C48.08 63.7 39.11 67.39 35.85 64.14ZM64.14 64.14C60.88 67.39 51.91 63.7 44.1 55.89C36.29 48.08 32.6 39.11 35.85 35.85C39.11 32.6 48.08 36.29 55.89 44.1C63.7 51.91 67.39 60.88 64.14 64.14ZM49.99 50L50.01 50M49.99 50.83C49.53 50.83 49.16 50.46 49.16 50C49.16 49.54 49.53 49.16 49.99 49.16C50.45 49.16 50.83 49.54 50.83 50C50.83 50.46 50.45 50.83 49.99 50.83Z" stroke="#3B82F6" stroke-opacity="1.000000" stroke-width="3.333333" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
