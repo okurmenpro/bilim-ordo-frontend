@@ -14,7 +14,7 @@ import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
 import ProfileMycourse from "./components/ProfileMycourse";
 import Reviews from "./components/Reviews";
-import TeachersProfile from "./components/TeachersProfile";
+import ProfileTeachers from "./components/ProfileTeachers";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
@@ -83,12 +83,12 @@ export const Router = createBrowserRouter([
             element: <Reviews />,
           },
           {
-            path: "/profile/uploadingphoto",
+            path: "/profile/",
             element: <UploadingPhoto />,
           },
           {
             path: "/profile/teachers",
-            element: <TeachersProfile />,
+            element: <ProfileTeachers />,
           },
           {
             path: "/profile/orderComplete",
