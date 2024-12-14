@@ -1,7 +1,6 @@
-
-import React from "react";
-import { Outlet } from "react-router-dom";
-import LeftProfile from "../LeftProfile";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import LeftProfile from '../LeftProfile'
 
 function ProfileLayout() {
   return (
