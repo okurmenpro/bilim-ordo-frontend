@@ -1,17 +1,35 @@
-.Buttons{
-    text-align: left;
-    display: flex;
-    gap: 20px;
+.Buttons {
+  text-align: left;
+  display: flex;
+  gap: 20px;
 
-    button{
-        padding: 18px 21px;
-        border-radius: 8px;
-        width: 150px;
-        border: 2px solid #ccc;
-        margin-bottom: 10px;
-    }
+  button {
+    padding: 18px 21px;
+    border-radius: 8px;
+    width: 150px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+  }
 
-    button:hover{
-        background-color: #EFF6FF;
+  button:hover {
+    background-color: #eff6ff;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .Buttons {
+    button {
+      padding: 18px 21px;
+      border-radius: 8px;
+      width: 70px;
+      border: 2px solid #ccc;
+      margin-bottom: 10px;
+
+      font-size: 12px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+  }
 }
