@@ -70,13 +70,16 @@ export const Router = createBrowserRouter([
         element: <Mentor />,
       },
       {
+        path: "/orderComplete",
+        element: <OrderComplete />,
+      },
+      {
         path: "/profile",
         element: <ProfileLayout />,
         children: [
           {
             path: "/profile/mycourse",
             element: <ProfileMycourse />,
-
           },
           {
             path: "/profile/reviews",
@@ -90,17 +93,13 @@ export const Router = createBrowserRouter([
             path: "/profile/teachers",
             element: <TeachersProfile />,
           },
-          {
-            path: "/profile/orderComplete",
-            element: <OrderComplete />,
-          },
+
           {
             path: "/profile/message",
-            element: <MessagePage />
-          }
+            element: <MessagePage />,
+          },
         ],
       },
-
     ],
   },
 ]);

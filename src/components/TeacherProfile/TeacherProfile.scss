@@ -1,109 +1,293 @@
 .teacher-profile {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    text-align: left;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: left;
 
-    h1 {
-        font-family: "Georgia", sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 30px;
-        color: #2D2F31;
+  h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #2d2f31;
+  }
+
+  .revis {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reting-left {
+    width: 70%; /* This gives more space to the left part */
+  }
+
+  .teachers-informetion {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 3px 0 0 5px;
     }
+  }
 
-    .revis {
-        display: flex;
-        justify-content: space-between;
-    }
+  .star-row {
+    display: flex;
+  }
 
-    .reting-left {
-        width: 70%; /* This gives more space to the left part */
-    }
-
-    .teachers-informetion {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 10px;
-
-        p {
-            font-size: 14px;
-            font-weight: 500;
-            margin: 3px 0 0 5px;
-        }
-    }
-
-    .star-row {
-        display: flex;
-    }
-
-    .percentage {
-        margin-left: 10px;
-    }
+  .percentage {
+    margin-left: 10px;
+  }
 }
 
 .star-yellow {
-    color: rgb(255, 196, 0);
-    font-size: 22px;
+  color: rgb(255, 196, 0);
+  font-size: 22px;
 }
 
 .icon-star {
-    font-size: 22px;
-    margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.right-com{
-    button{
-        padding: 10px 24px;
-        border-radius: 8px;
-        border:1px solid #ccc;
-
-    }
-    button:hover{
-        background-color: #ddd;
-    }
+button:hover {
+  background-color: #ddd;
 }
 
-.review-card{
-    display: flex;
-    border: 1px solid#ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 20px;
+button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+.review-card {
+  display: flex;
+  border: 1px solid#ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
-.info-review{
-    width: 200px;
+.info-review {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  img {
+    width: 60px;
     height: 60px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
+  }
 
-    img{
-        width: 60px;
-        height: 60px;
-    }
-
-    h3{
-        font-size: 18px;
-        font-weight: bold;
-    }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
-.review-content{
-    width: 600px;
+.review-content {
+  width: 600px;
 }
 
-.top-review{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.top-review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 
-    span{
-        font-size: 18px;
-        font-weight: 600;
+  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.review-date {
+  margin: 3px 0 0 10px;
+}
+
+@media screen and (width: 768px) {
+  .teacher-profile {
+    .revis {
+      .reting-left {
+        // width: 200px;
+        .teachers-informetion {
+          .star-yellow {
+            width: 60px;
+            height: 20px;
+          }
+        }
+        .star-row {
+          .star {
+            font-size: 34px;
+            color: yellow;
+          }
+          .star_yellow {
+            font-size: 34px;
+            color: grey;
+          }
+        }
+      }
+      .right-com {
+        margin-top: 290px;
+        margin-left: -100px;
+
+        .review-card {
+          width: 690px;
+        }
+      }
     }
+  }
 }
+@media screen and (width: 820px) {
+  .teacher-profile {
+    .revis {
+      display: grid;
 
-.review-date{
-    margin: 3px 0 0 10px;
+      .reting-left {
+        .teachers-informetion {
+          .star-yellow {
+            width: 60px;
+            height: 20px;
+          }
+        }
+        .star-row {
+          .star {
+            font-size: 34px;
+            color: yellow;
+          }
+          .star_yellow {
+            font-size: 34px;
+            color: grey;
+          }
+        }
+      }
+      .right-com {
+        margin-top: 90px;
+        margin-left: 5px;
+
+        .review-card {
+          width: 690px;
+        }
+      }
+    }
+  }
+}
+@media screen and (width: 1024px) {
+  .teacher-profile {
+    .revis {
+      display: grid;
+      .reting-left {
+        .teachers-informetion {
+          .star-yellow {
+            width: 60px;
+            height: 20px;
+          }
+        }
+        .star-row {
+          .star {
+            font-size: 34px;
+            color: yellow;
+          }
+          .star_yellow {
+            font-size: 34px;
+            color: grey;
+          }
+        }
+      }
+      .right-com {
+        margin-top: 30px;
+        margin-left: -20px;
+
+        .review-card {
+          width: 690px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 377px) {
+  .teacher-profile {
+    .revis {
+      display: grid;
+      .right-com {
+        padding: 0 10px;
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        width: 350px;
+        .review-card {
+          display: grid;
+          width: 200px;
+
+          p {
+            width: 100px;
+          }
+        }
+        .review-content {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 432px) {
+  .teacher-profile {
+    .revis {
+      display: grid;
+      .right-com {
+        padding: 0 10px;
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        width: 350px;
+        .review-card {
+          display: grid;
+          width: 200px;
+
+          p {
+            width: 100px;
+          }
+        }
+        .review-content {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+@media screen and (width: 912px) {
+  .teacher-profile {
+    margin-right: 170px;
+    .revis {
+      display: grid;
+
+      .reting-left {
+        .teachers-informetion {
+          .star-yellow {
+            width: 60px;
+            height: 20px;
+          }
+        }
+        .star-row {
+          .star {
+            font-size: 34px;
+            color: yellow;
+          }
+          .star_yellow {
+            font-size: 34px;
+            color: grey;
+          }
+        }
+      }
+      .right-com {
+        margin-top: 90px;
+        margin-left: 5px;
+
+        .review-card {
+          width: 690px;
+        }
+      }
+    }
+  }
 }
