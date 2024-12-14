@@ -29,10 +29,20 @@ function MessagePage() {
                         <h1>Devon Lane</h1>
                         <p>18th March, 2024</p>
                     </div>
+                    <strong>Thank you for asking your doubt, I’ll send you a pdf file which cover the problems you are facing. If you have any...</strong>
                 </div>
-                <strong>I’ll Get back to you as soon as possbile.</strong>
+                <div className='first-direct' >
+                    <div className='info-direct'>
+                        <img className='Autor2' src={Autor2} alt="" />
+                        <div className='date-direct'>
+                            <h1>Devon Lane</h1>
+                            <p>18th March, 2024</p>
+                        </div>
+                    </div>
+                    <strong>I’ll Get back to you as soon as possbile.</strong>
+                </div>
             </div>
-        </div>
+            </div>
         </section>
     )
 }

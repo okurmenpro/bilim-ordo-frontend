@@ -1,7 +1,6 @@
-    .boxes-122{
+    .boxes-12{
     position: relative;
     width: 1000px;
-    border: 1px solid red;
     display: flex;
     }
     .Lefts-profile-1{
@@ -171,7 +170,7 @@
     }
     /* Адаптивность для планшетов (ширина экрана 768px и меньше) */
     @media screen and (max-width: 768px) {
-        .boxes-122 {
+        .boxes-12 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -212,7 +211,7 @@
     
   /* Адаптивность для планшетов (ширина экрана 768px и меньше) */
 @media screen and (max-width: 768px) {
-    .boxes-122 {
+    .boxes-12 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -260,99 +259,3 @@
     }
 }
 
-/* Адаптивность для мобильных устройств (ширина экрана 480px и меньше) */
-/* Адаптивность для мобильных устройств (ширина экрана 480px и меньше) */
-@media screen and (max-width: 480px) {
-    /* Контейнер с фиксированным позиционированием */
-    .boxes-122 {
-        position: fixed; /* Закрепляем контейнер */
-        display: block;
-        width: 100%;
-        height: 100%; /* Задаем полную высоту экрана */
-        top: 0;
-        left: 0;
-        align-items: flex-end; /* Выравниваем элементы снизу */
-        padding: 0 10px;
-    }
-
-    /* Контейнер для основной страницы, фиксированное позиционирование */
-    .Page-Containers-1 {
-        position: fixed; /* Закрепляем контейнер */
-        bottom: 70px; /* Убираем отступ снизу */
-        left: 10px;
-        width: calc(100% - 20px); /* Ширина с учетом отступов */
-        height: 400px; /* Высота контейнера */
-        border: 1px solid #E2E8F0;
-        border-radius: 16px;
-    }
-
-    /* Задаем для других элементов фиксированное позиционирование */
-    .Header-text-1,
-    .Profile-1,
-    .menu-left-1,
-    .text-Message-1,
-    .Third-3,
-    .text,
-    .Footer-text-1 {
-        position: relative;
-        width: 100%; /* Занимаем всю ширину */
-    }
-
-    /* Картинки и стрелки с фиксированным размером */
-    .Autor-1, .Arrows-1 {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Текстовые поля */
-    .Texts12 {
-        width: calc(100% - 20px); /* Заполняем всю ширину */
-        margin: 0 auto;
-    }
-
-    /* Кнопки */
-    .Btns-1 {
-        width: 80%;
-        margin: 12px auto;
-    }
-
-    /* Меню */
-    .menu-left-1 {
-        position: fixed;
-        bottom: 10px; /* Фиксируем меню внизу */
-        left: 50%;
-        width: auto;
-        justify-content: center;
-    }
-
-    /* Профиль */
-    .Profile-1 {
-        position: fixed;
-        bottom: 60px; /* Фиксируем профиль */
-        left: 50%;
-        width: auto;
-        justify-content: center;
-    }
-
-    /* Время */
-    .time-1 {
-        width: 40%;
-        margin-left: 0;
-    }
-
-    /* Прочие элементы */
-    .first-1, .second-2, .third-3 {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    /* Три кружка */
-    .Three-circle-1 {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-
-        width: 12px;
-        height: 12px;
-    }
-}
