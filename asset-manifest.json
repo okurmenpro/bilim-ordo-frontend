@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bilim-ordo-frontend/static/css/main.fb7bb2de.css",
-    "main.js": "/bilim-ordo-frontend/static/js/main.50b8ddf5.js",
+    "main.js": "/bilim-ordo-frontend/static/js/main.842f556f.js",
     "static/js/453.37976eaa.chunk.js": "/bilim-ordo-frontend/static/js/453.37976eaa.chunk.js",
     "static/media/Python3.mp4": "/bilim-ordo-frontend/static/media/Python3.f465cf94daac27690084.mp4",
     "static/media/signup2.png": "/bilim-ordo-frontend/static/media/signup2.9c08ec29b3c49df8846a.png",
@@ -25,11 +25,11 @@
     "index.html": "/bilim-ordo-frontend/index.html",
     "static/media/course-3-icon.svg": "/bilim-ordo-frontend/static/media/course-3-icon.54e4665fceb72ca5e45c4fc0b5917ad0.svg",
     "main.fb7bb2de.css.map": "/bilim-ordo-frontend/static/css/main.fb7bb2de.css.map",
-    "main.50b8ddf5.js.map": "/bilim-ordo-frontend/static/js/main.50b8ddf5.js.map",
+    "main.842f556f.js.map": "/bilim-ordo-frontend/static/js/main.842f556f.js.map",
     "453.37976eaa.chunk.js.map": "/bilim-ordo-frontend/static/js/453.37976eaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb7bb2de.css",
-    "static/js/main.50b8ddf5.js"
+    "static/js/main.842f556f.js"
   ]
 }
