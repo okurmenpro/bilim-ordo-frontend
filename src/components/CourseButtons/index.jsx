@@ -1,15 +1,15 @@
-import React from 'react'
-import "./Buttons.scss"
+import React from "react";
+import "./Buttons.scss";
 
-function Buttons() {
+function Buttons({ scrollToSkills, scrollToExercises, scrollToMaterials, scrollToTeacher }) {
   return (
-    <div className='Buttons container'>
-        <button>Description</button>
-        <button>Instructor</button>
-        <button>Syllabus</button>
-        <button>Reviews</button>
+    <div className="Buttons container">
+      <button onClick={scrollToSkills}>Skills</button>
+      <button onClick={scrollToExercises}>Exercises</button>
+      <button onClick={scrollToMaterials}>Materials</button>
+      <button onClick={scrollToTeacher}>Teacher</button>
     </div>
-  )
+  );
 }
 
-export default Buttons
+export default Buttons;
