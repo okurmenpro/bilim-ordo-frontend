@@ -45,7 +45,7 @@ function Index() {
                     </div>
                     <div className="course-search-right">
                     <div className="sort-by">
-                        <p>Sort By</p>
+                        <p className='sort-by-p'>Sort By</p>
                         <button>
                             <span>Relevance</span>
                             <img src={downchevron} alt="" />

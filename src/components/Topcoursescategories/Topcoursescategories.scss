@@ -23,7 +23,6 @@
 
 .topcourses-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   width: 940px;
   height: 1094px;
@@ -155,10 +154,10 @@
   margin-top: 9px;
 }
 
-@media (max-width: 415px) {
+@media (min-width: 375px) and  (max-width: 668px) {
   .topcoursescategories-container {
-    margin-left: -400px;
-    margin-top: 50px;
+    // margin-left: -400px;
+    margin-top: 80px;
   }
 
   .topcourses-grid {
@@ -168,48 +167,48 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 16px;
-    margin-left: -30px;
+    margin-left: -55px;
     padding-bottom: 10px;
     height: 350px;
-    width: 300px;
+    width: 490px;
   }
   .sortby {
-    margin-right: 120px;
+    // margin-right: 120px;
   }
   .left-rigth-button {
     margin-right: 150px;
   }
 }
+// @media (max-width: 433px) {
+//   .topcoursescategories-container {
+//     // margin-left: -400px;
+//     margin-top: 150px;
+//   }
 
-@media (max-width: 433px) {
+//   .topcourses-grid {
+//     gap: 10px;
+//     padding: 0 10px;
+//     display: flex;
+//     flex-wrap: nowrap;
+//     overflow-x: auto;
+//     gap: 16px;
+//     // margin-left: 35px;
+//     padding-bottom: 10px;
+//     height: 350px;
+//     width: 490px;
+//   }
+//   .sortby {
+//     margin-right: 120px;
+//   }
+//   .left-rigth-button {
+//     margin-right: 150px;
+//   }
+// }
+@media (min-width: 668px) and (max-width: 770px) {
   .topcoursescategories-container {
     margin-left: -400px;
     margin-top: 50px;
-  }
-
-  .topcourses-grid {
-    gap: 10px;
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 16px;
-    margin-left: -35px;
-    padding-bottom: 10px;
-    height: 350px;
-    width: 200px;
-  }
-  .sortby {
-    margin-right: 120px;
-  }
-  .left-rigth-button {
-    margin-right: 150px;
-  }
-}
-@media (max-width: 770px) {
-  .topcoursescategories-container {
-    margin-left: -400px;
-    margin-top: 50px;
+    // width: 650px;
   }
 
   .topcourses-grid {
@@ -229,18 +228,25 @@
   }
   .left-rigth-button {
     margin-right: 150px;
+    img {
+      width: 20px;
+      height: 20px
+    }
   }
 }
 @media (max-width: 822px) {
   .topcoursescategories-container {
     margin-left: -400px;
     margin-top: 50px;
+    width: 650px;
+    
   }
 
   .topcourses-grid {
     gap: 10px;
     padding: 0 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: nowrap;
     scrollbar-width: none;
     overflow-x: auto;
@@ -248,72 +254,54 @@
     margin-left: -35px;
     padding-bottom: 10px;
     height: 350px;
-    width: 700px;
+    width: 650px;
   }
   .sortby {
     margin-right: -10px;
   }
   .left-rigth-button {
     margin-right: 150px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
-@media (max-width: 1026px) {
-  .topcoursescategories-container {
-    margin-left: -400px;
-    margin-top: 50px;
-  }
 
-  .topcourses-grid {
-    gap: 10px;
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    scrollbar-width: none;
-    overflow-x: auto;
-    gap: 16px;
-    margin-left: -35px;
-    padding-bottom: 10px;
-    height: 350px;
-    width: 900px;
-  }
-  .sortby {
-    margin-right: -10px;
-  }
-  .left-rigth-button {
-    margin-right: 150px;
-  }
-}
 @media (max-width: 914px) {
   .topcoursescategories-container {
-    margin-left: -450px;
-    margin-top: 50px;
+    // margin-left: -450px;
+    margin-top: 80px;
   }
 
   .topcourses-grid {
     gap: 10px;
-    padding: 0 10px;
     display: flex;
     flex-wrap: nowrap;
     scrollbar-width: none;
     overflow-x: auto;
     gap: 16px;
-    margin-left: -35px;
+    margin-left: -30px;
     padding-bottom: 10px;
     height: 350px;
-    width: 700px;
+    width: 500px;
   }
   .sortby {
     margin-right: 10px;
   }
   .left-rigth-button {
     margin-right: 150px;
+    img {
+      width: 20px;
+      height: 20px
+    }
   }
 }
 
-@media (max-width: 542px) {
+@media (max-width: 540px) {
   .topcoursescategories-container {
-    margin-left: -350px;
-    margin-top: 50px;
+    // margin-left: -50px;
+    margin-top: 80px;
   }
 
   .topcourses-grid {
@@ -324,48 +312,55 @@
     scrollbar-width: none;
     overflow-x: auto;
     gap: 16px;
-    margin-left: -35px;
+    margin-left: -90px;
     padding-bottom: 10px;
     height: 350px;
-    width: 350px;
+    width: 750px;
   }
   .sortby {
     margin-right: -10px;
   }
   .left-rigth-button {
     margin-right: 150px;
+    img {
+      width: 20px;
+      height: 20px
+    }
   }
 }
-@media (max-width: 346px) {
-  .topcoursescategories-container {
-    margin-left: -400px;
-    margin-top: 50px;
-  }
+// @media (max-width: 346px) {
+//   .topcoursescategories-container {
+//     margin-left: -400px;
+//     margin-top: 50px;
+//   }
 
-  .topcourses-grid {
-    gap: 10px;
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    scrollbar-width: none;
-    overflow-x: auto;
-    gap: 16px;
-    margin-left: 35px;
-    padding-bottom: 10px;
-    height: 350px;
-    width: 300px;
-  }
-  .sortby {
-    margin-right: 90px;
-  }
-  .left-rigth-button {
-    margin-right: 90px;
-  }
-}
+//   .topcourses-grid {
+//     gap: 10px;
+//     padding: 0 10px;
+//     display: flex;
+//     flex-wrap: nowrap;
+//     scrollbar-width: none;
+//     overflow-x: auto;
+//     gap: 16px;
+//     margin-left: 35px;
+//     padding-bottom: 10px;
+//     height: 350px;
+//     width: 300px;
+//   }
+//   .sortby {
+//     margin-right: 90px;
+//   }
+//   .left-rigth-button {
+//     margin-right: 90px;
+//     img {
+//       width: 20px;
+//       height: 20px
+//     }
+//   }
+// }
 
 @media (max-width: 413px) {
   .topcoursescategories-container {
-    margin-left: -400px;
     margin-top: 50px;
   }
 
@@ -377,37 +372,10 @@
     scrollbar-width: none;
     overflow-x: auto;
     gap: 16px;
-    margin-left: 35px;
+    margin-left: 70px;
     padding-bottom: 10px;
     height: 350px;
-    width: 350px;
-  }
-  .sortby {
-    margin-right: 110px;
-  }
-  .left-rigth-button {
-    margin-right: 90px;
-  }
-}
-
-@media (max-width: 361px) {
-  .topcoursescategories-container {
-    margin-left: -400px;
-    margin-top: 50px;
-  }
-
-  .topcourses-grid {
-    gap: 10px;
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    scrollbar-width: none;
-    overflow-x: auto;
-    gap: 16px;
-    margin-left: 35px;
-    padding-bottom: 10px;
-    height: 350px;
-    width: 300px;
+    width: 1000px;
   }
   .sortby {
     margin-right: 90px;
@@ -416,9 +384,9 @@
     margin-right: 90px;
   }
 }
+
 @media (max-width: 376px) {
   .topcoursescategories-container {
-    margin-left: -450px;
     margin-top: 50px;
   }
 
@@ -430,10 +398,10 @@
     scrollbar-width: none;
     overflow-x: auto;
     gap: 16px;
-    margin-left: 35px;
+    margin-left: 70px;
     padding-bottom: 10px;
     height: 350px;
-    width: 300px;
+    width: 700px;
   }
   .sortby {
     margin-right: 90px;
