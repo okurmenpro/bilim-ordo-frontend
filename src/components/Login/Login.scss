@@ -98,10 +98,12 @@
         background: rgb(255, 255, 255);
         width: 220px;
         height: 50px;
+        margin-top: 12px;
         div {
           display: flex; 
           gap: 8px;
-          margin-top: 12px;
+          align-items: center;
+
           img {
             width: 24px;
             height: 24px;

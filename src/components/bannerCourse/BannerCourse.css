@@ -45,12 +45,16 @@
     font-weight: 500;
 }
 
-.banner__star button {
+.banner__star .banner-btn {
     border: none;
+    width: 25px;
+    background-color: none;
 }
 
 .course__update button {
-    background: none;
+    width: 40px;
+    background-color: none;
+    border: none;
     font-weight: 400;
     font-size: 25px;
 }

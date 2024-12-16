@@ -15,11 +15,11 @@ function Banner() {
             <div className='banner__rating'>
                 <div className='banner__star'>
                     4.6
-                    <button><Star /></button>
-                    <button><Star /></button>
-                    <button><Star /></button>
-                    <button><Star /></button>
-                    <button><Star /></button>
+                    <button className='banner-btn'><Star /></button>
+                    <button className='banner-btn'><Star /></button>
+                    <button className='banner-btn'><Star /></button>
+                    <button className='banner-btn'><Star /></button>
+                    <button className='banner-btn'><Star /></button>
                 </div>
                 <h5>(651651 rating)</h5>
                 <p>22 Total Hours. 155 Lectures. All levels</p>
