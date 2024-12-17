@@ -3,8 +3,10 @@ import "./Become.css";
 import become from "../../assets/images/become.png";
 import become2 from "../../assets/images/become2.png";
 import { RiArrowRightLine } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 function index() {
+  
   return (
     <div className="become container">
       <div className="become-top">
@@ -15,9 +17,12 @@ function index() {
             Instructors from around the world teach millions of students on
             Byway. We provide the tools and skills to teach what you love.
           </span>
-          <button>
-            Label <RiArrowRightLine className="icon" />
-          </button>
+          <NavLink to={"/teacherpage"}>
+            <button>
+              Label <RiArrowRightLine className="icon" />
+            </button>
+          </NavLink>
+
         </div>
       </div>
       <div className="become-bottom">
@@ -27,9 +32,11 @@ function index() {
             Learners around the world are launching new careers, advancing in
             their fields, and enriching their lives.
           </span>
-          <button>
-            Label <RiArrowRightLine className="icon" />
-          </button>
+          <NavLink to={"/teacherpage"}>
+            <button>
+              Label <RiArrowRightLine className="icon" />
+            </button>
+          </NavLink>
         </div>
         <img src={become2} alt="" />
       </div>
