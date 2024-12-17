@@ -14,12 +14,12 @@ function Banner() {
             <p>This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.</p>
             <div className='banner__rating'>
                 <div className='banner__star'>
-                    4.6
-                    <button className='banner-btn'><Star /></button>
-                    <button className='banner-btn'><Star /></button>
-                    <button className='banner-btn'><Star /></button>
-                    <button className='banner-btn'><Star /></button>
-                    <button className='banner-btn'><Star /></button>
+                    <h6>4.6</h6>
+                    <span className='banner-btn'><Star /></span>
+                    <span className='banner-btn'><Star /></span>
+                    <span className='banner-btn'><Star /></span>
+                    <span className='banner-btn'><Star /></span>
+                    <span className='banner-btn'><Star /></span>
                 </div>
                 <h5>(651651 rating)</h5>
                 <p>22 Total Hours. 155 Lectures. All levels</p>
@@ -32,7 +32,7 @@ function Banner() {
 
             <div className='course__update'>
                 <div className='incourse'></div>
-                <button><GrLanguage /></button>
+                <button className='course__button'><GrLanguage /></button>
                 <strong>English, Kyrgyz, Russian</strong>
             </div>
             </div>

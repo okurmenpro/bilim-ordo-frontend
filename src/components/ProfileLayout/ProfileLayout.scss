@@ -2,4 +2,22 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 40px;
 }
+
+@media (min-width: 375px) and (max-width: 667px) {
+    .profile-layout {
+        display: grid;
+    }
+}
+@media (min-width: 668px) and (max-width: 862px) {
+    .profile-layout {
+        
+    }
+}
+@media (min-width: 853px) and (max-width: 1280px) {
+    .profile-layout {
+    }
+}
+
+

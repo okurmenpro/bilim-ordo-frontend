@@ -1,3 +1,25 @@
 .my-course {
-    margin-top: 140px;
+    margin-top: 10px;
+}
+
+@media (max-width: 375px)  {
+    .my-course {
+        display: grid;
+        max-width: 100%;
+    }
+}
+@media (max-width: 668px) {
+
+}
+@media (min-width: 668px) and  (max-width: 862px){
+    .my-course {
+        display: flex;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 863px) and  (max-width: 1280px){
+    .my-course {
+        display: flex;
+        flex-direction: column;
+    }
 }

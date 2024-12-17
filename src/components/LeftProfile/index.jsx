@@ -18,7 +18,7 @@ const LeftProfile = () => {
                 <NavLink to="/profile/">
                     <button>Profile</button>
                 </NavLink>
-                <NavLink to='mycourse'>
+                <NavLink to='/profile/mycourse' style={{ color: "black" }}>
                     <button>
                         My Courses
                     </button>
