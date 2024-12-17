@@ -1,17 +1,16 @@
-import React from 'react'
-import "./ProfileMycourse.scss"
-import Topcoursescategories from '../Topcoursescategories'
-import Courses from "../Filter"
-import { topcourse } from '../../data/Topcourse';
+import React from "react";
+import "./ProfileMycourse.scss";
+import Topcoursescategories from "../Topcoursescategories";
+import Courses from "../Filter";
+import { topcourse } from "../../data/topcourse";
 
 function index() {
-
   return (
-    <div className='my-course'>
+    <div className="my-course">
       <Courses name="Courses" count={topcourse.length} />
       <Topcoursescategories />
     </div>
-  )
+  );
 }
 
-export default index
+export default index;
