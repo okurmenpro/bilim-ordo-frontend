@@ -43,6 +43,10 @@
     color: #FEC84B;
     font-size: 16px;
     font-weight: 500;
+    display: flex;
+}
+.banner__star h6 {
+    margin-top: 6px;
 }
 
 .banner__star .banner-btn {
@@ -52,7 +56,7 @@
 }
 
 .course__update button {
-    width: 40px;
+    width: 80px;
     background-color: none;
     border: none;
     font-weight: 400;

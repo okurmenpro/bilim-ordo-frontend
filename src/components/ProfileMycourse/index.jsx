@@ -1,14 +1,14 @@
 import React from 'react'
 import "./ProfileMycourse.scss"
 import Topcoursescategories from '../Topcoursescategories'
-import Courses from "../Filter"
+import Filter from "../Filter"
 import { topcourse } from '../../data/Topcourse';
 
 function index() {
 
   return (
     <div className='my-course'>
-      <Courses name="Courses" count={topcourse.length} />
+      <Filter name="Courses" count={topcourse.length} />
       <Topcoursescategories />
     </div>
   )

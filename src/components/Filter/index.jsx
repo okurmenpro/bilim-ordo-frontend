@@ -63,9 +63,9 @@ function Index({ name, count }) {
                             {isModalVisible && (
                                 <div className="modal-overlay active">
                                     <div className="modal-content">
-                                        <button className="close-btn" onClick={toggleModal}>
-                                            <CloseIcon size={20} />
-                                        </button>
+                                        <div className="close-btn" onClick={toggleModal}>
+                                            <CloseIcon size={35} />
+                                        </div>
                                         <div className="star-rating">
                                             <div className="filter-rating">
                                                 <p>Rating</p>

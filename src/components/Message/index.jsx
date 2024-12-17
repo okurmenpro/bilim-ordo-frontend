@@ -2,13 +2,13 @@ import React from "react";
 import "./Message.scss";
 import Autor from "../../assets/images/autor.png";
 import Autor2 from "../../assets/images/tacher2.png";
-import Courses from "../Courses";
 import { NavLink } from "react-router-dom";
+import Filter from "../Filter"
 
 function MessagePage() {
   return (
     <section className="section">
-      <Courses />
+      <Filter />
       <div className="direct">
         <NavLink to="/profilemessageteachers">
           <div className="first-direct">
