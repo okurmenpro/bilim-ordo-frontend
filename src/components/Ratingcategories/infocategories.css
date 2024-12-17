@@ -134,21 +134,22 @@
   }
 }
 
-.close-btn {
+.modal-close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
-  background: transparent;
+  right: 15px;
   border: none;
   cursor: pointer;
   color: #333;
+  width: 30px;
+  background-color: transparent;
 }
 .topcousescategories {
   margin-top: 300px;
   margin-left: 10px;
 }
 
-.close-btn:hover {
+.modal-close-btn:hover {
   color: #ff0000;
 }
 
@@ -209,23 +210,24 @@
 .checkbox-input {
   display: flex;
   align-items: center;
-  margin-top: -15px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .checkbox-input1 {
   display: flex;
   align-items: center;
-  margin-top: 10px;
 }
 
 .checkbox-input1 input {
   margin-right: 8px;
-  margin-bottom: 15px;
+  margin-top: 12px;
 }
 
 .checkbox-input input {
   margin-right: 8px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+
 }
 
 .down-filter {

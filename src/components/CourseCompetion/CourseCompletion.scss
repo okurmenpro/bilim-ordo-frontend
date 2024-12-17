@@ -13,10 +13,10 @@ $time-color: #888;
   left: 990px;
   top: 161px;
   background-color: $primary-color;
-  padding-bottom: 10px;  // Убираем отступы
-  background-color:#E2E8F0;
-  width: 400px;  // Ширина 100% для основного контейнера
-  
+  padding-bottom: 10px; // Убираем отступы
+  background-color: #e2e8f0;
+  width: 400px; // Ширина 100% для основного контейнера
+
   .section-container {
     position: relative;
     display: flex;
@@ -27,12 +27,12 @@ $time-color: #888;
   }
 
   .section {
-    width: 100%;  // Ширина 100% для каждого контейнера
-    margin: 0;  // Убираем отступы между контейнерами
+    width: 100%; // Ширина 100% для каждого контейнера
+    margin: 0; // Убираем отступы между контейнерами
     padding: 0; // Убираем паддинги внутри контейнера
 
     .section-header {
-      background-color: #E2E8F0;
+      background-color: #e2e8f0;
       padding: 10px;
       border-radius: 7px;
       cursor: pointer;
@@ -65,7 +65,7 @@ $time-color: #888;
       padding-bottom: 60px;
       display: flex;
       flex-direction: column;
-    
+
       .item {
         display: flex !important;
         justify-content: flex-start; // Элементы выравниваются слева направо
@@ -73,30 +73,30 @@ $time-color: #888;
         height: 60px;
         width: 100%; // Растягиваем элемент на всю ширину родителя
         padding: 0 20px; // Добавляем боковые отступы для аккуратности
-    
+
         input[type="checkbox"] {
           margin-right: 15px; // Отступ между чекбоксом и текстом
           height: 20px;
         }
-    
+
         label {
           flex-grow: 1; // Текст занимает оставшееся место
           color: $text-color;
           font-size: 16px;
           text-align: left; // Выравниваем текст по левому краю
         }
-    
+
         .item-info {
           display: flex;
           align-items: center;
           margin-left: auto; // Сдвигаем информацию о времени вправо
-    
+
           .icon-video {
             width: 10px;
             height: 10px;
             margin-right: 5px;
           }
-    
+
           .time {
             font-size: 12px;
             color: $time-color;
@@ -104,7 +104,7 @@ $time-color: #888;
         }
       }
     }
-  }     
+  }
 
   .show-text-button {
     background-color: $highlight-color;
@@ -135,32 +135,66 @@ $time-color: #888;
   }
 }
 
-// Responsiveness
-@media (max-width: 768px) {
-  .course-completion {
-    left: 20px;  // Сдвигаем влево для маленьких экранов
-    bottom: 20px;
-    width: 100%;  // Ширина 100% для контейнера
-    height: auto;
+@media screen and (width: 768px) {
+  .course-completion-1 {
+    margin-top: 530px;
+    margin-left: -960px;
   }
-
-  .section-container {
-    padding: 10px;
-  }
-
-  .section {
-    margin-bottom: 0;  // Убираем отступы между контейнерами
-  }
-
 }
-.box-1{
+@media screen and (width: 820px) {
+  .course-completion-1 {
+    margin-top: 530px;
+    margin-left: -940px;
+  }
+}
+@media screen and (width: 1024px) {
+  .course-completion-1 {
+    margin-top: 540px;
+    margin-left: -960px;
+  }
+}
+@media screen and (max-width: 377px) {
+  .course-completion-1 {
+    width: 335px;
+    // height: 290px;
+    margin-top: 260px;
+    margin-left: -980px;
+
+    .completion {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (width: 912px) {
+  .course-completion-1 {
+    margin-top: 530px;
+    margin-left: -940px;
+  }
+}
+@media screen and (width: 853px) {
+  .course-completion-1 {
+    margin-top: 530px;
+    margin-left: -940px;
+  }
+}
+@media screen and (max-width: 432px) {
+  .course-completion-1 {
+    width: 335px;
+    margin-top: 260px;
+    margin-left: -980px;
+
+    .completion {
+      font-size: 20px;
+    }
+  }
+}
+.box-1 {
   width: 100%;
-
 }
-.completion{
+.completion {
   position: relative;
   font-size: 24px;
-  font-weight:600;
+  font-weight: 600;
   margin-right: 140px;
   top: 17px;
 }

@@ -14,11 +14,11 @@ import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
 import ProfileMycourse from "./components/ProfileMycourse";
 import Reviews from "./components/Reviews";
-import TeachersProfile from "./components/TeachersProfile";
+import ProfileTeachers from "./components/ProfileTeachers";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
-
+import Profilemessageteachers from "./components/Profile-page-teacher";
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -70,37 +70,42 @@ export const Router = createBrowserRouter([
         element: <Mentor />,
       },
       {
+        path: "/orderComplete",
+        element: <OrderComplete />,
+      },
+      {
         path: "/profile",
         element: <ProfileLayout />,
         children: [
           {
             path: "/profile/mycourse",
             element: <ProfileMycourse />,
-
           },
           {
             path: "/profile/reviews",
             element: <Reviews />,
           },
           {
-            path: "/profile/uploadingphoto",
+            path: "/profile/",
             element: <UploadingPhoto />,
           },
           {
             path: "/profile/teachers",
-            element: <TeachersProfile />,
+            element: <ProfileTeachers />,
           },
-          {
-            path: "/profile/orderComplete",
-            element: <OrderComplete />,
-          },
+
           {
             path: "/profile/message",
             element: <MessagePage />
-          }
+          },
+       
         ],
+      
       },
-
+      {
+        path:"/profilemessageteachers",
+        element:<Profilemessageteachers />
+        }  
     ],
   },
 ]);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./TeacherProfile.scss";
 import { MdOutlineStarPurple500 as Star } from "react-icons/md";
 import { TeacherProfileData } from "../../data/TeacherProfile"; // Массивди импорттоо
+import Courses from "../Filter"
 
 function TeacherProfile() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,7 +14,6 @@ function TeacherProfile() {
   return (
     <section className="teacher-profile container">
       <h1>Learner Reviews</h1>
-
       <div className="revis">
         <div className="reting-left">
           <div className="teachers-informetion">
@@ -28,7 +28,11 @@ function TeacherProfile() {
               <div className="star-row" key={rowIndex}>
                 {[...Array(5)].map((_, index) => (
                   <Star
-                    className={`icon-star ${index < 5 - rowIndex ? "star-yellow" : ""}`}
+                    className={
+                      index > 5 - rowIndex
+                        ? `${("star", "star_yellow")}`
+                        : `${"star"}`
+                    }
                     key={index + rowIndex * 5}
                   />
                 ))}
@@ -41,9 +45,12 @@ function TeacherProfile() {
         <div className="right-com">
           {TeacherProfileData.map((review) => (
             <div key={review.id} className="review-card">
-
               <div className="info-review">
-                <img src={review.img} alt={review.name} className="review-avatar" />
+                <img
+                  src={review.img}
+                  alt={review.name}
+                  className="review-avatar"
+                />
                 <h3>{review.name}</h3>
               </div>
 
@@ -58,8 +65,8 @@ function TeacherProfile() {
               </div>
             </div>
           ))}
-          <button>View more Reviews</button>
         </div>
+        <button>View more Reviews</button>
       </div>
     </section>
   );

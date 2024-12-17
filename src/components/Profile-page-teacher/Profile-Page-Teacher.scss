@@ -1,0 +1,261 @@
+    .boxes-12{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    }
+    .Lefts-profile-1{
+        margin-left: 200px;
+    }
+    .Page-Containers-1{
+        margin-top: 120px;
+        display: block;
+        position: absolute;
+        left: 520px;
+        top: 22px;
+        width: 950px;
+        height: 647px;
+        border: 1px solid #E2E8F0;
+        border-radius: 16px;
+    }
+    .Header-text-1{
+        display: flex;
+        position: relative;
+        width: 918px;
+        height: 60px;
+        left: 12px;
+    }
+    .Profile-1{
+        margin-top: 12px;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        width: 241px;
+        height: 60px;
+    }
+    .Autor-1{
+        width: 60px;
+        height: 60px;
+    }
+    .Arrows-1{
+        width: 16px;
+        height: 12px;
+    }
+    .menu-left-1{
+        align-items: center;
+        display: flex;
+        width: 120px;
+        height: 60px;
+        justify-content: flex-end;
+        margin-left: 540px;
+        margin-top: 12px;
+
+    }
+    .time-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 31px;
+        text-align: center;
+        border: 8px;
+        background-color: #F1F5F9;
+        font-size: 10px;
+        margin-left: 400px;
+    }
+    p{
+    margin-top: 12px;
+    }
+    .text-Message-1{
+        align-items: flex-end;
+        gap: 12px;
+        justify-content: flex-end;
+    width: 555px;
+    height: 115px;
+    display: block;
+    margin-left: 390px;
+
+
+    }
+    .first-1{
+        border-radius: 8px;
+        width: 71px;
+        height: 42px;
+        border: 8px;
+        margin-left: 480px;
+        margin-bottom: 12px;
+        background-color: #0F172A;
+        color: white;
+    }
+    .second-2{
+        width: 555px;
+        height: 42px;
+        border-radius: 8px;
+        background-color: #0F172A;
+        color: white;
+        
+
+    }
+
+    .Third-3{
+        margin: 0;
+        width: 550px;
+        text-align: left;
+    }
+
+    .text{
+        background-color:#F1F5F9;
+        border-radius: 8px;
+        margin-left: 12px;
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+    .bottom-text{
+        margin-left: 850px;
+        strong{
+            background-color: black;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 8px;
+        }
+    }
+    .Footer-text-1{
+        height: 200px;
+        display: flex;
+        align-items: center;
+
+    }
+    .Texts12{
+        width: 811px;
+        height: 48px;
+        border: 1px solid #E2E8F0;
+        margin-left: 12px;
+        border-radius: 8px;
+
+
+    }
+    .Btns-1{
+        width: 83px;
+        height: 48px;
+        background-color: #3B82F6;
+        border-radius:8px ;
+        border-style: none;
+        margin-left: 32px;
+    }
+    .text-time-1{
+        width: 120px;
+        height: 40px;
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 12px;
+        margin-left: 12px;
+        justify-content: space-around;
+        color: #64748B;
+    }
+    .Times-set{
+        margin-left: 460px;
+        color: #64748B;
+    }
+    .Times-text-2{
+        color: #64748B;
+    }
+    .send-autors1{
+        width: 40px;
+        height: 40px;
+    }
+    .Three-circle-1{
+        width: 25px;
+        height: 7px;
+    }
+    /* Адаптивность для планшетов (ширина экрана 768px и меньше) */
+    @media screen and (max-width: 768px) {
+        .boxes-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+        }
+        .Lefts-profile-1 {
+        margin: 0;
+        }
+        .Page-Containers-1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 950px;
+        height: 647px;
+        }
+        .Header-text-1,
+        .Profile-1,
+        .menu-left-1,
+        .text-Message-1,
+        .Third-3,
+        .text,
+        .Footer-text-1 {
+        position: relative;
+        width: 100%;
+        }
+        .Autor-1, .Arrows-1 {
+        width: 60px;
+        height: 60px;
+        }
+        .Texts12 {
+        width: 800px;
+        }
+        .Btns-1 {
+        width: 83px;
+        }
+    }
+    
+  /* Адаптивность для планшетов (ширина экрана 768px и меньше) */
+@media screen and (max-width: 768px) {
+    .boxes-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+    }
+    .Lefts-profile-1 {
+        margin: 0;
+    }
+    .Page-Containers-1 {
+        position: absolute;
+        top: 22px;
+        left: 520px;
+        width: 950px;
+        height: 647px;
+        border: 1px solid #E2E8F0;
+        border-radius: 16px;
+    }
+    .Header-text-1,
+    .Profile-1,
+    .menu-left-1,
+    .text-Message-1,
+    .Third-3,
+    .text,
+    .Footer-text-1 {
+        position: relative;
+        width: 100%;
+    }
+    .Autor-1, .Arrows-1 {
+        width: 60px;
+        height: 60px;
+    }
+    .Texts12 {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .Btns-1 {
+        width: 83px;
+        margin: 12px auto;
+    }
+    .time-1 {
+        width: 52px;
+        height: 31px;
+        margin-left: 400px;
+    }
+}
+

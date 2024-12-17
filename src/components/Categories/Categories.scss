@@ -99,10 +99,12 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 432px) {
   .categories {
     .astrology {
       display: grid;
+      gap: 20px;
+      margin-left: 10px;
       grid-template-columns: repeat(1, 1fr);
     }
   }

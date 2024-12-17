@@ -1,71 +1,175 @@
 .Programming-Exercises {
-    width: 800px;
-    display: grid;
-    padding: 0;
-    text-align: left;
+  width: 800px;
+  display: grid;
+  padding: 0;
+  text-align: left;
 }
 
-.p{
-    color: #334155;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 10px;
-    max-width: 800px;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 20px;
+.p {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+  max-width: 800px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
 }
 
 .Exercises {
-    width: 295px;
-    margin:0 0 0 12px;
+  width: 295px;
+  margin: 0 0 0 12px;
 }
 
 .Exercises h2 {
-color: #0F172A;
-font-size: 20px;
-font-weight: 600;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .Exercises p {
-    color: #2563EB;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-    font-family: inter;
-    margin: 0;
+  color: #2563eb;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  font-family: inter;
+  margin: 0;
 }
 
 .block {
-    margin:20px 0 20px 12px;
-    display: flex;
-    gap: 20px;
+  margin: 20px 0 20px 12px;
+  display: flex;
+  gap: 20px;
 }
 
 .block-right strong {
-    color: #0F172A;
-    font-size: 14px;
-    font-weight: 400;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.Instructor{
-    display: flex;
-    gap: 10px;
+.Instructor {
+  display: flex;
+  gap: 10px;
 }
 
 @media (max-width: 600px) {
+  .Programming-Exercises {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 468px;
+    padding-top: 90px;
+  }
 
-    .Programming-Exercises {
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
-        height: 468px;
-        padding-top: 90px;
-    }
+  .Exercises {
+    margin-left: 0;
+    margin-top: 90px;
+  }
+}
+@media screen and (width: 768px) {
+  .Instructor img {
+    width: 30px;
 
-    .Exercises {
-        margin-left: 0;
-        margin-top: 90px;
-    }
+    margin-top: 10px;
+  }
+  .block-left img {
+    width: 160px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (width: 820px) {
+  .Instructor img {
+    width: 30px;
+
+    margin-top: 10px;
+  }
+  .block-left img {
+    width: 120px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (width: 1024px) {
+  .Instructor img {
+    width: 50px;
+  }
+  .block-left img {
+    width: 140px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 377px) {
+  .Instructor img {
+    width: 40px;
+  }
+  .Programming-Exercises {
+    margin-top: -130px;
+    margin-left: 20px;
+    margin-bottom: 140px;
+  }
+  .p {
+    width: 300px;
+  }
+  .block-left img {
+    width: 140px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 432px) {
+  .Instructor img {
+    width: 40px;
+  }
+  .Programming-Exercises {
+    margin-top: -130px;
+    margin-left: 20px;
+    margin-bottom: 140px;
+  }
+  .p {
+    width: 300px;
+  }
+  .block-left img {
+    width: 140px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (width: 912px) {
+  .Programming-Exercises {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 140px;
+  }
+  .Instructor img {
+    width: 30px;
+
+    margin-top: 10px;
+  }
+  .block-left img {
+    width: 120px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
 }

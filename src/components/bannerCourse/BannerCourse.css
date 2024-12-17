@@ -41,16 +41,26 @@
 .banner__star{
     height: 40px;
     color: #FEC84B;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3px;
+    display: flex;
+}
+.banner__star h6 {
+    margin-top: 6px;
 }
 
-.banner__star button {
+.banner__star .banner-btn {
     border: none;
+    width: 20px; 
+    background-color: none;
 }
 
-.course__update button {
-    background: none;
+
+.course__update .course__button {
+    width: 100px;
+    background-color: none;
+    border: none;
     font-weight: 400;
     font-size: 25px;
 }

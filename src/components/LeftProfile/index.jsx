@@ -15,8 +15,7 @@ const LeftProfile = () => {
             </button>
             <hr />
             <div class="profile-btns">
-
-                <NavLink to="uploadingphoto">
+                <NavLink to="/profile/">
                     <button>Profile</button>
                 </NavLink>
                 <NavLink to='/profile/mycourse' style={{ color: "black" }}>
@@ -24,15 +23,15 @@ const LeftProfile = () => {
                         My Courses
                     </button>
                 </NavLink>
-                <NavLink to={"/profile/teachers"}>
+                <NavLink to={"teachers"}>
                     <button>Teachers</button>
                 </NavLink>
-                <NavLink to={"/profile/message"}>
-                <button>Message</button>
+                <NavLink to={"message"}>
+                    <button>Message</button>
                 </NavLink>
-                
+
                 <NavLink to="reviews">
-                    <button>My Reviews</button>
+                    <button className="end-button">My Reviews</button>
                 </NavLink>
             </div>
         </div>

@@ -4,6 +4,7 @@ import { MdOutlineStarPurple500 as Star } from "react-icons/md";
 import { AiOutlineClose as CloseIcon } from "react-icons/ai";
 import Topcoursescategories from "../Topcoursescategories";
 import chevron from "../../assets/svg/chevron.svg";
+import label from "../../assets/svg/label.svg";
 import downchevron from "../../assets/svg/downchevron.svg";
 
 function Ratingcategories() {
@@ -38,15 +39,16 @@ function Ratingcategories() {
               onClick={toggleModal}
               className={isModalVisible ? "active" : ""}
             >
+              <img src={label} alt="" />
               <p>Label</p>
             </button>
           </div>
           {isModalVisible && (
             <div className="modal-overlay active">
               <div className="modal-content">
-                <button className="close-btn" onClick={toggleModal}>
-                  <CloseIcon size={20} />
-                </button>
+                <div className="modal-close-btn" onClick={toggleModal}>
+                  <CloseIcon size={40} />
+                </div>
                 <div className="star-rating">
                   <div className="filter-rating">
                     <p>Rating</p>
