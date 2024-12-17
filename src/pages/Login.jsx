@@ -1,12 +1,12 @@
 import React from "react";
-import Login from "../components/Login";
+import LogIn from "../components/LogIn";
 
-function Loginn() {
+function Login() {
   return (
     <div>
-      <Login />
+      <LogIn />
     </div>
   );
 }
 
-export default Loginn;
+export default Login;

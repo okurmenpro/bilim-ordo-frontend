@@ -11,8 +11,8 @@ import axios from "axios";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    // firstName: "",
+    // lastName: "",
     username: "",
     email: "",
     password: "",
@@ -32,7 +32,6 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (formData.password !== formData.confirmPassword) {
       setError("Passwords do not match.");
       return;
@@ -40,16 +39,17 @@ const SignUp = () => {
 
     setLoading(true);
     setError(null);
-
+    console.log("data", formData);
     try {
       const response = await axios.post(
-        "http://35.229.249.53/register/",
+        "http://35.229.249.53/api/register/",
         {
-          first_name: formData.firstName,
-          last_name: formData.lastName,
+          // first_name: formData.firstName,
+          // last_name: formData.lastName,
           username: formData.username,
           email: formData.email,
-          password: formData.password,
+          password1: formData.password,
+          password2: formData.confirmPassword,
         },
         {
           headers: {
@@ -85,7 +85,7 @@ const SignUp = () => {
             <div className="inputs">
               <h3>Full Name</h3>
               <div className="full-name-input">
-                <input
+                {/* <input
                   type="text"
                   placeholder="First Name"
                   name="firstName"
@@ -100,7 +100,7 @@ const SignUp = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                />
+                /> */}
               </div>
             </div>
 
