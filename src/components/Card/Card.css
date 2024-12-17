@@ -10,7 +10,7 @@
   background: transparent;
   border: none;
   position: absolute;
-  top: 50%;
+  top: 10%;
 
   transform: translateY(-50%);
   z-index: 1;
@@ -24,12 +24,12 @@
 }
 
 .scroll-button.left {
-  left: -25px;
+   right:1160px;
   top: 145px;
 }
 
 .scroll-button.right {
-  right: -25px;
+  left: 1170px;
   top: 145px;
 }
 .flex {
