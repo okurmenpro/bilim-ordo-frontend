@@ -1,54 +1,65 @@
 .materials {
-    width: 800px;
-    margin-top: 10px;
+  width: 800px;
+  margin-top: 10px;
 }
 
 .materials h2 {
-    font-weight: 600;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .materials__text {
-    display: flex;
-    align-items: center;
-    gap: 120px;
-
+  display: flex;
+  align-items: center;
+  gap: 120px;
 }
 
-.materials__text h4{
-    font-size: 12px;
-    color: #5022c3;
+.materials__text h4 {
+  font-size: 12px;
+  color: #5022c3;
 }
 
 .div__mini {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 750px;
-    height: 70px;
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 750px;
+  height: 70px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 8px;
 }
-.document{
-    font-size: 6px;
+.document {
+  font-size: 6px;
+  margin-left: -110px;
 }
 .mini__img {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .mini__img button {
-    background: none;
-    border: none;
-    font-size: 25px;
-    margin-bottom: 10px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.mini__img button:hover {
+  background-color: white;
+}
+.ArrowDown {
+  margin-left: -230px;
 }
 
-.mini__img h3{
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 15px;
+.mini__img h3 {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: -220px;
+  margin-top: 5px;
+}
+.mini__img p {
+  margin-left: -110px;
 }
