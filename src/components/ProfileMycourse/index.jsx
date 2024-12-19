@@ -2,7 +2,7 @@ import React from "react";
 import "./ProfileMycourse.scss";
 import Topcoursescategories from "../Topcoursescategories";
 import Courses from "../Filter";
-import { topcourse } from "../../data/topcourse";
+import { topcourse } from "../../data/Topcourse.js";
 
 function index() {
   return (
