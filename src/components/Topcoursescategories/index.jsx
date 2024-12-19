@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Topcoursescategories.scss";
-import { topcourse } from "../../data/Topcourse";
+import { topcourse } from "../../data/topcourse";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import downchevron from "../../assets/svg/downchevron.svg";
 import left from "../../assets/svg/left.svg";
 import rigth from "../../assets/svg/rigth.svg";
 

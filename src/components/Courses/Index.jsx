@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8890c404d161a253d57d5814020b90dda3c76011
 import downchevron from "../../assets/svg/downchevron.svg";
 import { GrSearch } from "react-icons/gr";
 import chevron from "../../assets/svg/chevron.svg";

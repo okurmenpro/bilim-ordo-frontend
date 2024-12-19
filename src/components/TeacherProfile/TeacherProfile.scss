@@ -12,7 +12,8 @@
   }
 
   .revis {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1r);
     justify-content: space-between;
   }
 
@@ -105,7 +106,9 @@ button {
 .review-date {
   margin: 3px 0 0 10px;
 }
-
+.right-com {
+  margin-top: 10px;
+}
 @media screen and (width: 768px) {
   .teacher-profile {
     .revis {

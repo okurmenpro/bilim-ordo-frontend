@@ -8,11 +8,10 @@ import {
 } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { GrSearch } from "react-icons/gr";
-import categories from "../../data/Header"; 
+import categories from "../../data/Header";
 import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 import Dropdown from "../Dropdown";
-
 
 function Header() {
   const { cartItems } = useContext(CartContext);
@@ -83,11 +82,9 @@ function Header() {
         <div className="buttons">
           <NavLink to="/login">
             <button className="login">Login</button>{" "}
-            {/* "Войти" changed to "Login" */}
           </NavLink>
           <NavLink to="/signup">
-            <button className="sign-up">Sign Up</button>{" "}
-            {/* "Зарегистрироваться" changed to "Sign Up" */}
+            <button className="sign-up">SignUp</button>{" "}
           </NavLink>
         </div>
       </header>
@@ -164,8 +161,7 @@ function Header() {
               {/* "Справка и поддержка" changed to "Help & Support" */}
               <div className="buttonLanguage">
                 <MdLanguage className="language-icon" />
-                <button>English</button>{" "}
-                {/* "Русский" changed to "English" */}
+                <button>English</button> {/* "Русский" changed to "English" */}
               </div>
             </div>
           </div>
