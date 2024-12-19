@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// import "./Courses.scss";
 import downchevron from "../../assets/svg/downchevron.svg";
 import { GrSearch } from "react-icons/gr";
 import chevron from "../../assets/svg/chevron.svg";
 import { MdOutlineStarPurple500 as Star } from "react-icons/md";
 import { AiOutlineClose as CloseIcon } from "react-icons/ai";
 
-function Index() {
+function Courses() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isStarVisible, setIsStarVisible] = useState(true);
   const [isCheckboxVisible, setIsCheckboxVisible] = useState(true);
@@ -150,4 +149,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Courses;
