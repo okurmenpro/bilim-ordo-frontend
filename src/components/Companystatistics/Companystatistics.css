@@ -72,17 +72,16 @@
         margin-bottom: 20px;
     }
     .line {
-        display: none; /* Скрываем линии */
+        display: none;
     }
     .Statistica strong {
-        font-size: 40px; /* Увеличиваем размер шрифта для значений */
+        font-size: 40px; 
     }
     .Statistica h3 {
-        font-size: 12px; /* Уменьшаем размер шрифта для заголовков */
+        font-size: 12px;
     }
 }
 
-/* Стили для экранов шириной до 480px */
 @media screen and (max-width: 480px) {
     .Companystatistics {
         flex-direction: column;
@@ -90,94 +89,92 @@
     }
     .Statistic {
         width: 100%;
-        margin-bottom: 15px; /* Уменьшаем отступ между элементами */
+        margin-bottom: 15px; 
     }
     .line {
-        display: none; /* Скрываем линии */
+        display: none;
     }
     .Statistica strong {
-        font-size: 36px; /* Немного уменьшаем размер шрифта для значений */
+        font-size: 36px;
     }
     .Statistica h3 {
-        font-size: 10px; /* Уменьшаем размер шрифта для заголовков */
+        font-size: 10px;
     }
 }
 
-/* Стили для экранов шириной до 320px */
 @media screen and (max-width: 320px) {
     .Companystatistics {
         flex-direction: column;
-        min-height: 180px; /* Уменьшаем минимальную высоту */
+        min-height: 180px; 
     }
     .Statistic {
         width: 100%;
-        margin-bottom: 10px; /* Уменьшаем отступ между элементами */
+        margin-bottom: 10px; 
     }
     .line {
-        display: none; /* Скрываем линии */
+        display: none; 
     }
     .Statistica strong {
-        font-size: 30px; /* Уменьшаем размер шрифта для значений */
+        font-size: 30px; 
     }
     .Statistica h3 {
-        font-size: 8px; /* Уменьшаем размер шрифта для заголовков */
+        font-size: 8px; 
     }
 }
 
-/* Стили для экранов шириной до 240px */
 @media screen and (max-width: 240px) {
     .Companystatistics {
         flex-direction: column;
-        min-height: 150px; /* Уменьшаем минимальную высоту */
+        min-height: 150px;
     }
     .Statistic {
         width: 100%;
-        margin-bottom: 5px; /* Уменьшаем отступ между элементами */
+        margin-bottom: 5px;
     }
     .line {
-        display: none; /* Скрываем линии */
+        display: none; 
     }
     .Statistica strong {
-        font-size: 24px; /* Уменьшаем размер шрифта для значений */
+        font-size: 24px;
     }
     .Statistica h3 {
-        font-size: 6px; /* Уменьшаем размер шрифта для заголовков */
+        font-size: 6px;
     }
 }
-/* Стили для экранов шириной до 414px */
+
 @media screen and (max-width: 414px) {
     .Companystatistics {
-        width: 90%; /* Контейнер занимает 90% ширины экрана */
-        max-width: 320px; /* Ограничиваем максимальную ширину */
-        flex-direction: column; /* Элементы идут в колонку */
-        align-items: center; /* Центрируем их по горизонтали */
-        justify-content: center; /* Центрируем их по вертикали */
+        width: 90%; 
+        max-width: 320px; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
     }
 
     .Statistic {
-        width: 80%; /* Блоки занимают 80% ширины контейнера */
-        margin-bottom: 10px; /* Отступы между элементами */
+        width: 80%; 
+        margin-bottom: 10px; 
     }
 
     .Statistica {
-        min-width: 50px; /* Минимальная ширина для текста */
-        display: flex; /* Flexbox для вертикального выравнивания */
+        min-width: 50px; 
+        display: flex; 
         flex-direction: column; 
-        justify-content: center; /* Центрируем содержимое */
+        justify-content: center; 
         align-items: center;
     }
 
     .Statistica strong {
-        font-size: 32px; /* Размер текста для значений */
-        line-height: 1.2; /* Линейная высота */
+        font-size: 32px; 
+        line-height: 1.2; 
     }
 
     .Statistica h3 {
-        font-size: 10px; /* Размер текста для заголовков */
-        text-align: center; /* Центрируем текст */
+        font-size: 10px; 
+        text-align: center; 
     }
 
     .line {
-        display: none; /* Вертикальные линии скрыты для компактности */
+        display: none; 
     }
 }

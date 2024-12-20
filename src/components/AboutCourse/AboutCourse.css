@@ -1,11 +1,11 @@
-/* .registration__course {
+.registration__course {
   margin: 50px auto;
   padding: 40px 50px;
-
   display: grid;
   grid-template-columns: repeat(1, 2fr);
   box-shadow: 2px 5px 10px;
   border-radius: 5px;
+  margin-top: 150px;
 }
 
 .registration__course h2 {
@@ -183,4 +183,4 @@
 
 .update {
   margin-top: -15px !important;
-} */
+}
