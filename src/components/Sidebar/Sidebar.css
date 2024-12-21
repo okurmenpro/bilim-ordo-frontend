@@ -1,132 +1,139 @@
 .Sidebar {
-    position: absolute;
-    top: 100px;
-    width: 370px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 8px;
+  position: absolute;
+  top: 100px;
+  width: 370px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.444);
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 .container1 {
-    margin: 40px 0 0 905px;
-    padding: 10px;
+  margin: 40px 0 0 905px;
+  padding: 10px;
 }
 
 .video video {
-    width: 350px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .list5 {
-    padding: 0;
+  padding: 0;
 }
 
 .price1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 3px;
 }
 
 .price-value {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .original-price {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.508);
-    text-decoration: line-through;
-    font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.508);
+  text-decoration: line-through;
+  font-weight: 600;
 }
 
 .discount-div {
-    font-weight: 600;
-    font-size: 20px;
-    color: #16A34A;
+  font-weight: 600;
+  font-size: 20px;
+  color: #16a34a;
 }
 
 .add-btn {
-    width: 100%;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    background: black;
-    color: white;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  background: black;
+  color: white;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
 }
 
 .add-btn:hover {
-    background: rgb(143, 49, 236);
+  background: rgb(143, 49, 236);
 }
 
 .buy_now-btn {
-    width: 100%;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    background: #fff;
-    border: 1px solid black;
-    margin-right: 10px;
-    border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid black;
+  margin-right: 10px;
+  border-radius: 8px;
 }
 
 .buy_now-btn:hover {
-    background: rgba(10, 10, 10, 0.085);
+  background: rgba(10, 10, 10, 0.085);
 }
 
 .iconka {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 10px 3px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 3px;
 }
 
-.microsoft2{
-    width: 35px;
-    cursor: pointer;
+.microsoft2 {
+  width: 35px;
+  cursor: pointer;
 }
 
 .facebok2,
 .icons2 {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .title {
-    text-align: left;
-    border-top: 1px solid #ccc;
-    margin: 20px 0 10px;
-    padding-left: 3px;
-    font-size: 18px;
-    font-weight: 500;
+  text-align: left;
+  border-top: 1px solid #ccc;
+  margin: 20px 0 10px;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Планшетке адаптация */
 @media (max-width: 1024px) {
-    .container1 {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0;
-        padding: 0 15px;
-    }
+  .container1 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0 15px;
+  }
 
-    .Sidebar {
-        width: 100%;
-        max-width: 700px;
-        position: relative;
-        top: 20px;
-        margin: 0 auto;
-        padding: 15px;
-    }
+  .Sidebar {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    top: 20px;
+    padding: 15px;
+  }
 
-    .video video {
-        width: 100%;
-        object-fit: cover;
-    }
+  .video video {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .Sidebar {
+    width: 350px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
 }
