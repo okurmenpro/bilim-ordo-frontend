@@ -1,41 +1,44 @@
 .registration__course {
   margin: 50px auto;
-  padding: 40px 50px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  grid-template-columns: 1fr;
   box-shadow: 2px 5px 10px;
   border-radius: 5px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .registration__course h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .gray__line {
   height: 1px;
   background-color: rgb(193, 193, 193);
+  margin-bottom: 20px;
 }
 
 .registration__course__description {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: left;
   color: rgb(82, 82, 82);
 }
 
 .input__name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 .aboutCourseInput {
   width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 5px;
 }
 
 .description {
@@ -49,138 +52,139 @@
   text-align: left;
   width: 100%;
   border: 1px solid rgb(193, 193, 193);
+  border-radius: 5px;
 }
 
 .registration__course__icon {
-  margin-top: -15px;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-left: 10px;
-  text-align: left;
+  padding: 10px;
   border-bottom: 1px solid rgb(193, 193, 193);
 }
 
 .registration__course__icon p {
-  font-size: 25px;
-}
-
-.number__menu {
-  font-size: 20px !important;
-  margin-top: 22px;
+  font-size: 20px;
 }
 
 .description__course__input {
   margin: 5px;
   border: none;
+  width: calc(100% - 10px);
 }
 
 .select__language {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .language {
-  width: 350px;
-  height: 50px;
-  padding: 10px;
-  margin: 10px;
+  flex: 1;
+  min-width: 150px;
+  height: 40px;
+  padding: 5px;
 }
 
 .registration__image {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .CourseImage {
-  width: 600px;
-  height: 350px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   object-fit: contain;
   margin-top: 10px;
   border: 1px solid rgb(197, 196, 196);
-  margin-bottom: 20px;
 }
 
 .CourseText p {
-  width: 600px;
   text-align: left;
 }
 
-.AddFileInput {
-  height: 60px;
-  margin-top: 0;
-  border: none;
-}
-
-.AddFileBtn {
-  height: 60px;
-  border: none;
-  border-left: 1px solid black;
-}
-
 .AddFile {
-  height: 60px;
-  width: 500px;
   display: flex;
   align-items: center;
   border: 1px solid black;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.AddFileInput {
+  flex: 1;
+  border: none;
+  padding: 5px;
+}
+
+.AddFileBtn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
 .registration__course__warning {
-  margin-top: 5px;
   display: flex;
   align-items: center;
   gap: 10px;
   background-color: rgb(251, 161, 137);
-  padding: 5px 15px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .WarningExclamation {
-  font-size: 25px;
-}
-
-.minWord {
-  margin-top: -5px;
-  text-align: left;
-  margin-bottom: 3px;
-  font-size: 14px;
-}
-
-.official__account {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.account__examplamation {
-  font-size: 18px;
-  color: rgb(255, 106, 0);
-}
-
-.account__profile {
-  font-size: 40px;
-}
-
-.account__name {
-  font-size: 18px;
-  margin-top: 30px;
+  font-size: 20px;
 }
 
 .notification {
   background-color: rgb(251, 161, 137);
-  padding: 10px 15px;
+  padding: 10px;
   text-align: left;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 .notification p {
-  margin-top: 0;
   font-size: 14px;
 }
 
-.required__image {
-  margin-top: -15px !important;
+@media (max-width: 768px) {
+  .registration__course {
+    padding: 20px;
+  }
+
+  .CourseImage {
+    max-width: 100%;
+  }
+
+  .AddFile {
+    flex-wrap: wrap;
+  }
+
+  .AddFileInput,
+  .AddFileBtn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .select__language {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }
 
-.update {
-  margin-top: -15px !important;
+@media (max-width: 576px) {
+  .registration__course {
+    padding: 10px;
+  }
+
+  .select__language {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
