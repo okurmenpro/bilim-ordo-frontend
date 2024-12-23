@@ -63,3 +63,20 @@
 .mini__img p {
   margin-left: -110px;
 }
+
+@media screen and (max-width: 432px) {
+  .div__mini {
+    width: 350px;
+  }
+  .mini__img h3 {
+    font-size: 12px;
+  }
+  .div__mini h6 {
+    font-size: 12px;
+  }
+}
+@media screen and (width: 820px) {
+  .div__mini {
+    width: 700px;
+  }
+}

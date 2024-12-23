@@ -33,3 +33,39 @@
     }
   }
 }
+
+@media screen and (max-width: 362px) {
+  .Buttons {
+    button {
+      width: 70px;
+      font-size: 10px;
+    }
+  }
+}
+@media screen and (width: 768px) {
+  .Buttons {
+    margin-top: 30px;
+    button {
+      width: 170px;
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (width: 820px) {
+  .Buttons {
+    margin-top: 30px;
+    button {
+      width: 170px;
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (width: 1024px) {
+  .Buttons {
+    margin-top: 30px;
+    button {
+      width: 170px;
+      font-size: 20px;
+    }
+  }
+}
