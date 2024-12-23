@@ -24,12 +24,12 @@
 }
 
 .scroll-button.left {
-  left: -25px;
+  left: -130px;
   top: 145px;
 }
 
 .scroll-button.right {
-  right: -25px;
+  right: -130px;
   top: 145px;
 }
 .flex {
