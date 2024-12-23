@@ -41,7 +41,7 @@ const Authorization = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <div className="password-container">
+        <div className="password-container2">
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Enter Password"
@@ -97,30 +97,27 @@ const Authorization = () => {
                 Facebook
               </p>
             </div>
+
           </button>
-          <button className="Facebook-google-microsoft">
-            <div>
-              <img src={google} alt="" />
-              <p
-                style={{
-                  color: " rgb(234, 67, 53)",
-                }}
-              >
-                Google
-              </p>
-            </div>
+          <button className="Facebook-google-microsoft2">
+            <img src={google} alt="" />
+            <p
+              style={{
+                color: " rgb(234, 67, 53)",
+              }}
+            >
+              Google
+            </p>
           </button>
-          <button className="Facebook-google-microsoft">
-            <div>
-              <img src={microsoft} alt="" />
-              <p
-                style={{
-                  color: "rgb(0, 0, 0)",
-                }}
-              >
-                Microsoft
-              </p>
-            </div>
+          <button className="Facebook-google-microsoft2">
+            <img src={microsoft} alt="" />
+            <p
+              style={{
+                color: "rgb(0, 0, 0)",
+              }}
+            >
+              Microsoft
+            </p>
           </button>
         </div>
       </div>
