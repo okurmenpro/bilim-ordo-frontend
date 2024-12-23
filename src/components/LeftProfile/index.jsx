@@ -2,10 +2,18 @@ import React from "react";
 import { ProfileData } from "../../data/Profile";
 import { IoShareSocialOutline } from "react-icons/io5";
 import "./LeftProfile.scss"
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 const LeftProfile = () => {
+    const Navigate = useNavigate();
+
+    function logOut() {
+        localStorage.removeItem("user")
+        Navigate("/")
+        window.location.reload();
+    }
+    
     return (
         <div class="left-profile">
             <img src={ProfileData.img} alt="" />
@@ -31,8 +39,9 @@ const LeftProfile = () => {
                 </NavLink>
 
                 <NavLink to="reviews">
-                    <button className="end-button">My Reviews</button>
+                    <button>My Reviews</button>
                 </NavLink>
+                <button className="end-button" onClick={logOut}>Log Out</button>
             </div>
         </div>
     )
