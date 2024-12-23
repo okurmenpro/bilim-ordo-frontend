@@ -85,16 +85,19 @@ const Authorization = () => {
           </div>
         </div>
 
-        <div className="fgm-sign-in2">
-          <button className="Facebook-google-microsoft2">
-            <img src={facebook} alt="" />
-            <p
-              style={{
-                color: "blue",
-              }}
-            >
-              Facebook
-            </p>
+        <div className="fgm-sign-in">
+          <button className="Facebook-google-microsoft">
+            <div>
+              <img src={facebook} alt="" />
+              <p
+                style={{
+                  color: "blue",
+                }}
+              >
+                Facebook
+              </p>
+            </div>
+
           </button>
           <button className="Facebook-google-microsoft2">
             <img src={google} alt="" />

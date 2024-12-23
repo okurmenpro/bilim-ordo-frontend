@@ -161,7 +161,6 @@
       justify-content: center;
       gap: 8px;
       box-sizing: border-box;
-      /* Major/Shade */
       border: 1px solid rgb(178, 181, 196);
       border-radius: 8px;
       background: rgb(255, 255, 255);
@@ -216,3 +215,154 @@
     }
   }
 }
+@media screen and (max-width: 432px) {
+  .main-spot {
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    .signup-png {
+      display: none;
+    }
+    .right-register {
+      margin: 0;
+      width: 300px;
+      .registration {
+        width: 300px;
+        margin: 60px 0 0 0;
+        text-align: left;
+      }
+      .full-name-input {
+        display: grid;
+      }
+      .Username-input {
+        input {
+          width: 330px;
+        }
+      }
+      .Email-input {
+        input {
+          width: 330px;
+        }
+      }
+      .password-container {
+        display: grid;
+        gap: 5px;
+
+        .password-input {
+          width: 300px;
+
+          h3 {
+            width: 300px;
+          }
+        }
+      }
+      .Sign-up-with {
+        display: none;
+        .left-width {
+          display: none;
+        }
+      }
+      .fgm-sign-in {
+        .Facebook-google-microsoft {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .main-spot {
+    margin-left: 50px;
+    width: 600px;
+    margin-bottom: 20px;
+    .signup-png {
+      display: none;
+    }
+    .right-register {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 912px) and (max-width: 912px) {
+  .main-spot {
+    margin-left: 50px;
+    width: 700px;
+    .signup-png {
+      display: none;
+    }
+    .right-register {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .main-spot {
+    margin-left: 50px;
+    width: 700px;
+    .signup-png {
+      display: none;
+    }
+    .right-register {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 540px) {
+  .main-spot {
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    .signup-png {
+      display: none;
+    }
+    .right-register {
+      margin: 0;
+      width: 300px;
+      .registration {
+        width: 300px;
+        margin: 60px 0 0 0;
+        text-align: left;
+      }
+      .full-name-input {
+        display: grid;
+      }
+      .Username-input {
+        input {
+          width: 330px;
+        }
+      }
+      .Email-input {
+        input {
+          width: 330px;
+        }
+      }
+      .password-container {
+        display: grid;
+        gap: 5px;
+
+        .password-input {
+          width: 300px;
+
+          h3 {
+            width: 300px;
+          }
+        }
+      }
+      .Sign-up-with {
+        display: none;
+        .left-width {
+          display: none;
+        }
+      }
+      .fgm-sign-in {
+        .Facebook-google-microsoft {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
