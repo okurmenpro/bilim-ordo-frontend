@@ -5,34 +5,42 @@
   overflow-x: hidden;
 }
 
-.scroll-button {
-  display: block;
+.scroll-button3 {
   background: transparent;
   border: none;
   position: absolute;
   top: 50%;
-
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
   padding: 10px;
   color: black;
+  display: inline-block;
 }
 .card {
   margin: 0 auto;
   border: none;
 }
 
-.scroll-button.left {
-  left: -25px;
-  top: 145px;
+.scroll-button3.left8 {
+  left: -23px;
+  top: 170px;
+
+  &:hover {
+    background: none !important; 
+  }
 }
 
-.scroll-button.right {
+.scroll-button3.right8 {
   right: -25px;
-  top: 145px;
+  top: 170px;
+
+  &:hover {
+    background: none !important; 
+  }
 }
-.flex {
+
+.flex99 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -171,7 +179,7 @@
 }
 
 @media (max-width: 768px) {
-  .flex {
+  .flex99 {
     display: flex;
     overflow-x: auto;
     padding: 10px 0;
@@ -220,7 +228,7 @@
     padding: 5px;
   }
 
-  .scroll-button {
+  .scroll-button3.left8 {
     display: none;
   }
 }
@@ -232,22 +240,22 @@
     align-items: center;
   }
 
-  .scroll-button {
+  .scroll-button3 {
     cursor: pointer;
     z-index: 10;
     display: none;
     border: none;
   }
 
-  .scroll-button.left {
+  .scroll-button3.left8 {
     margin-right: 10px;
   }
 
-  .scroll-button.right {
+  .scroll-button3.right8 {
     margin-left: 10px;
   }
 
-  .flex {
+  .flex99 {
     display: flex;
     overflow-x: auto;
     width: 100%;
@@ -307,7 +315,7 @@
     display: flex;
     align-items: center;
   }
-  .flex {
+  .flex99 {
     display: flex;
     overflow-x: auto;
     max-width: 100%;
@@ -352,9 +360,8 @@
     width: 100%;
   }
 
-  .scroll-button {
+  .scroll-button3 {
     display: none;
-
     margin-top: -10px !important;
   }
 }

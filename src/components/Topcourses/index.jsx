@@ -43,7 +43,7 @@ function TopCourses() {
   return (
     <div className="topcourses container">
       <div className="beginners" ref={scrollRef}>
-        <button onClick={scrollLeft} className="scroll-button left">
+        <button onClick={scrollLeft} className="scroll-button2 left9">
           <IoIosArrowDropleftCircle size={30} className="icon-scroll" />
         </button>
 
@@ -75,7 +75,7 @@ function TopCourses() {
           </div>
         ))}
 
-        <button onClick={scrollRight} className="scroll-button right">
+        <button onClick={scrollRight} className="scroll-button2 right9">
           <IoIosArrowDroprightCircle size={30} className="icon-scroll" />
         </button>
       </div>
