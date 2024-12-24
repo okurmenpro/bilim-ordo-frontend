@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 import slides from "./Carousel.json";
-import "./Carousel.css";
+import "./Carousel.scss";
 
 function Slider() {
   const [data, setData] = useState(slides);
   return (
-    <Carousel className="banner-container">
+    <Carousel className="banner container">
       {data.map((slide, index) => (
         <Carousel.Item key={index} className="banner-in">
           <div className="in-all">
@@ -15,7 +15,9 @@ function Slider() {
               <p>{slide.description}</p>
               <button>Start your instructor journey</button>
             </div>
-            <img src={slide.img} alt="" />
+            <div className="banner-img">
+              <img src={slide.img} alt="" />
+            </div>
           </div>
         </Carousel.Item>
       ))}
