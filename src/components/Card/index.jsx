@@ -52,10 +52,10 @@ function Card() {
     return text.length > limit ? text.substring(0, limit) + "..." : text;
   };
   return (
-    <div className="card-container">
+    <div className="card-container container">
       <div className="card">
-        <div className="flex" ref={scrollRef}>
-          <button onClick={scrollLeft} className="scroll-button left">
+        <div className="flex99" ref={scrollRef}>
+          <button onClick={scrollLeft} className="scroll-button3 left8">
             <IoIosArrowDropleftCircle size={30} />
           </button>
           {cardCourse.map((item, index) => {
@@ -91,7 +91,7 @@ function Card() {
             );
           })}
         </div>
-        <button onClick={scrollRight} className="scroll-button right">
+        <button onClick={scrollRight} className="scroll-button3 right8">
           <IoIosArrowDroprightCircle size={30} />
         </button>
       </div>

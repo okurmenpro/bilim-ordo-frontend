@@ -17,6 +17,8 @@ function Header() {
   const { cartItems } = useContext(CartContext);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const user = localStorage.getItem("user")
+  const userData = JSON.parse(user)
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -37,6 +39,8 @@ function Header() {
       target.scrollTop = target.scrollHeight - target.clientHeight;
     }
   };
+
+
 
   return (
     <div className="aback">
@@ -79,14 +83,25 @@ function Header() {
           </div>
         </NavLink>
 
-        <div className="buttons">
-          <NavLink to="/login">
-            <button className="login">Login</button>{" "}
+        {user ?
+          <NavLink to={"/profile"}>
+            <div className="user">
+              {userData.username[0].toUpperCase()}
+            </div>
           </NavLink>
-          <NavLink to="/signup">
-            <button className="sign-up">SignUp</button>{" "}
-          </NavLink>
-        </div>
+          :
+          <div className="buttons">
+            <NavLink to="/login">
+              <button className="login">Login</button>{" "}
+              {/* "Войти" changed to "Login" */}
+            </NavLink>
+            <NavLink to="/signup">
+              <button className="sign-up">Sign Up</button>{" "}
+              {/* "Зарегистрироваться" changed to "Sign Up" */}
+            </NavLink>
+          </div>
+        }
+        
       </header>
 
       <div

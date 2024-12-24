@@ -6,10 +6,11 @@ import facebook from "../../assets/svg/facebook.svg";
 import google from "../../assets/svg/googel.svg";
 import microsoft from "../../assets/svg/microsoft.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const SignUp = () => {
+  const Navigate = useNavigate();
   const [formData, setFormData] = useState({
     // firstName: "",
     // lastName: "",
@@ -44,12 +45,10 @@ const SignUp = () => {
       const response = await axios.post(
         "http://35.229.249.53/api/register/",
         {
-          // first_name: formData.firstName,
-          // last_name: formData.lastName,
           username: formData.username,
           email: formData.email,
-          password1: formData.password,
-          password2: formData.confirmPassword,
+          password: formData.password,  // password1, password2 дегендин ордуна password
+          confirmPassword: formData.confirmPassword,  // password2 деп жазбай
         },
         {
           headers: {
@@ -57,9 +56,13 @@ const SignUp = () => {
           },
         }
       );
+      
       console.log("Registration successful:", response.data);
+      localStorage.setItem("user", JSON.stringify(formData));
+      Navigate("/");
+      window.location.reload();
     } catch (err) {
-      console.error(
+      console.log(
         "Registration error:",
         err.response ? err.response.data : err
       );
@@ -80,12 +83,11 @@ const SignUp = () => {
         <img className="signup-png" src={signup} alt="" />
         <div className="right-register">
           <h1 className="registration">Create Your Account</h1>
-
           <form onSubmit={handleSubmit}>
             <div className="inputs">
               <h3>Full Name</h3>
               <div className="full-name-input">
-                <input
+                {/* <input
                   type="text"
                   placeholder="First Name"
                   name="firstName"
@@ -101,6 +103,7 @@ const SignUp = () => {
                   onChange={handleChange}
                   required
                 />
+                /> */}
               </div>
             </div>
 
@@ -115,7 +118,6 @@ const SignUp = () => {
                 required
               />
             </div>
-
             <div className="Email-input">
               <h3>Email</h3>
               <input
@@ -127,7 +129,6 @@ const SignUp = () => {
                 required
               />
             </div>
-
             <div className="password-container">
               <div className="password-input">
                 <h3>Password</h3>
@@ -140,7 +141,6 @@ const SignUp = () => {
                   required
                 />
               </div>
-
               <div className="password-input">
                 <h3>Confirm Password</h3>
                 <input
@@ -153,9 +153,8 @@ const SignUp = () => {
                 />
               </div>
             </div>
-
             {error && <p style={{ color: "red" }}>{error}</p>}
-
+            {error && <p style={{ color: "red" }}>{error}</p>}
             <div className="buttom-label">
               <button type="submit" disabled={loading}>
                 <p>{loading ? "Registering..." : "Register"}</p>
@@ -163,13 +162,11 @@ const SignUp = () => {
               </button>
             </div>
           </form>
-
           <div className="Sign-up-with">
             <div className="left-width"></div>
             <p>Sign up with</p>
             <div className="left-width"></div>
           </div>
-
           <div className="fgm-sign-in">
             <button className="Facebook-google-microsoft">
               <div>
