@@ -6,6 +6,7 @@
   background-color: white;
   margin: 0 auto;
   border-radius: 8px;
+  right: 120px;
 }
 
 .container1 {
@@ -107,8 +108,7 @@
   font-weight: 500;
 }
 
-/* Планшетке адаптация */
-@media (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .container1 {
     display: flex;
     flex-direction: column-reverse;
@@ -121,6 +121,7 @@
     max-width: 700px;
     position: relative;
     top: 20px;
+    left: 30px;
     padding: 15px;
   }
 
@@ -132,8 +133,16 @@
 
 @media screen and (max-width: 432px) {
   .Sidebar {
+    position: absolute;
+    left: -120px;
+    top: 720px;
     width: 350px;
-    margin-left: 10px;
+    margin-left: 140px;
     margin-bottom: 40px;
+  }
+  .video video {
+    width: 330px;
+    border-radius: 8px;
+    object-fit: cover;
   }
 }
