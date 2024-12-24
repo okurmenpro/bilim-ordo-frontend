@@ -37,11 +37,11 @@ export const CartProvider = ({ children }) => {
 
 
   const login = () => {
-    setIsLoggedIn(true); // Устанавливаем состояние входа
-  };
+    setIsLoggedIn(true); 
+  }; 
 
   const logout = () => {
-    setIsLoggedIn(false); // Устанавливаем состояние выхода
+    setIsLoggedIn(false); 
   };
 
 
