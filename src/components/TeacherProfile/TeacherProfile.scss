@@ -12,13 +12,13 @@
   }
 
   .revis {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1r);
     justify-content: space-between;
   }
 
   .reting-left {
-    width: 70%; /* This gives more space to the left part */
+    width: 70%;
   }
 
   .teachers-informetion {
@@ -52,14 +52,15 @@
   margin-bottom: 10px;
 }
 
-button:hover {
+.button-View-more-Reviews:hover {
   background-color: #ddd;
 }
 
-button {
+.button-View-more-Reviews {
   padding: 10px 24px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  margin-left: 1030px;
 }
 .review-card {
   display: flex;
@@ -105,14 +106,15 @@ button {
 .review-date {
   margin: 3px 0 0 10px;
 }
-.right-com {
-  margin-top: 10px;
-}
+
 @media screen and (width: 768px) {
   .teacher-profile {
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
     .revis {
+      display: grid;
       .reting-left {
-        // width: 200px;
         .teachers-informetion {
           .star-yellow {
             width: 60px;
@@ -131,8 +133,6 @@ button {
         }
       }
       .right-com {
-        margin-top: 290px;
-
         .review-card {
           width: 690px;
         }
@@ -142,6 +142,9 @@ button {
 }
 @media screen and (width: 820px) {
   .teacher-profile {
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
     .revis {
       display: grid;
 
@@ -176,6 +179,9 @@ button {
 }
 @media screen and (width: 1024px) {
   .teacher-profile {
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
     .revis {
       display: grid;
       .reting-left {
@@ -198,7 +204,7 @@ button {
       }
       .right-com {
         margin-top: 30px;
-        margin-left: -20px;
+        margin-left: 1px;
 
         .review-card {
           width: 690px;
@@ -209,6 +215,9 @@ button {
 }
 @media screen and (max-width: 377px) {
   .teacher-profile {
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
     .revis {
       display: grid;
       .right-com {
@@ -234,6 +243,16 @@ button {
 }
 @media screen and (max-width: 432px) {
   .teacher-profile {
+    width: 300px;
+    margin-left: 20px;
+
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
+
+    h1 {
+      width: 250px;
+    }
     .revis {
       display: grid;
       .right-com {
@@ -241,7 +260,7 @@ button {
         display: flex;
         overflow-x: auto;
         gap: 16px;
-        width: 350px;
+        width: 300px;
         .review-card {
           display: grid;
           width: 200px;

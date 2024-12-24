@@ -44,7 +44,7 @@ function Course() {
         <TeacherProfile />
       </div>
       <HomeReviews />
-      <TopCourses />
+      {/* <TopCourses /> */}
     </div>
   );
 }

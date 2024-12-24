@@ -1,6 +1,7 @@
 .materials {
   width: 800px;
   margin-top: 10px;
+  margin-left: 110px;
 }
 
 .materials h2 {
@@ -57,7 +58,6 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 15px;
-  margin-left: -220px;
   margin-top: 5px;
 }
 .mini__img p {
@@ -66,7 +66,12 @@
 
 @media screen and (max-width: 432px) {
   .div__mini {
-    width: 350px;
+    width: 300px;
+    margin-left: -120px;
+    padding: 0;
+  }
+  .materials h2 {
+    width: 30px;
   }
   .mini__img h3 {
     font-size: 12px;
@@ -74,9 +79,32 @@
   .div__mini h6 {
     font-size: 12px;
   }
+  .materials {
+    width: 220px;
+    margin-left: 130px;
+  }
 }
 @media screen and (width: 820px) {
   .div__mini {
     width: 700px;
+  }
+  .materials {
+    margin-left: 30px;
+  }
+}
+@media screen and (width: 1024px) {
+  .div__mini {
+    width: 700px;
+  }
+  .materials {
+    margin-left: 20px;
+  }
+}
+@media screen and (width: 768px) {
+  .div__mini {
+    width: 700px;
+  }
+  .materials {
+    margin-left: 30px;
   }
 }

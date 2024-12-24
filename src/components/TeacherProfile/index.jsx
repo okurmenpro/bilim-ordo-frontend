@@ -66,8 +66,8 @@ function TeacherProfile() {
             </div>
           ))}
         </div>
-        <button>View more Reviews</button>
       </div>
+      <button className="button-View-more-Reviews">View more Reviews</button>
     </section>
   );
 }

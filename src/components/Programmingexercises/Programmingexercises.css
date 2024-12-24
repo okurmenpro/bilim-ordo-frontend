@@ -2,6 +2,7 @@
   width: 800px;
   display: grid;
   padding: 0;
+  margin-left: 110px;
   text-align: left;
 }
 
@@ -82,6 +83,9 @@
     display: flex;
     align-items: center;
   }
+  .Programming-Exercises {
+    margin-left: 25px;
+  }
 }
 @media screen and (width: 820px) {
   .Instructor img {
@@ -97,6 +101,9 @@
     display: flex;
     align-items: center;
   }
+  .Programming-Exercises {
+    margin-left: 35px;
+  }
 }
 @media screen and (width: 1024px) {
   .Instructor img {
@@ -109,6 +116,9 @@
   .Instructor {
     display: flex;
     align-items: center;
+  }
+  .Programming-Exercises {
+    margin-left: 23px;
   }
 }
 @media screen and (max-width: 377px) {
@@ -140,6 +150,7 @@
     margin-top: -130px;
     margin-left: 20px;
     margin-bottom: 140px;
+    width: 300px;
   }
   .p {
     width: 300px;

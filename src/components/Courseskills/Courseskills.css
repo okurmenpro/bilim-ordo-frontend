@@ -14,6 +14,9 @@
 .skills-container {
   display: grid;
 }
+.skills {
+  margin-top: -90px;
+}
 
 .skills p {
   text-align: left;
@@ -29,53 +32,38 @@
 }
 
 @media screen and (width: 768px) {
-  .skill {
-    margin-top: 290px;
-  }
   .Course-skills {
-    margin-top: 10px;
     width: 700px;
     border-top: none;
+  }
+  .skills {
+    margin-top: -90px;
   }
 }
 @media screen and (width: 820px) {
-  .skill {
-    margin-top: 290px;
-  }
   .Course-skills {
-    margin-top: 10px;
     width: 700px;
     border-top: none;
+  }
+  .skills {
+    margin-top: -90px;
   }
 }
 @media screen and (width: 1024px) {
-  .skill {
-    margin-top: 190px;
-  }
   .Course-skills {
-    margin-top: 10px;
     width: 700px;
     border-top: none;
   }
-}
-@media screen and (max-width: 377px) {
-  .skill {
-    margin-top: 120px;
-  }
-  .Course-skills {
-    margin-top: 10px;
-    width: 300px;
-    font-size: 15px;
-    border-top: none;
-  }
-  .skills p {
-    width: 300px;
-    font-size: 12px;
+  .skills {
+    margin-top: -90px;
   }
 }
+
 @media screen and (max-width: 432px) {
   .skill {
-    margin-top: 120px;
+    width: 300px;
+    margin-top: -60px;
+    margin-left: 10px;
   }
   .Course-skills {
     margin-top: 10px;
@@ -83,9 +71,16 @@
     font-size: 15px;
     border-top: none;
   }
+  .skills {
+    margin-top: -90px;
+  }
   .skills p {
-    width: 300px;
-    font-size: 12px;
+    width: 200px;
+    font-size: 9px;
+  }
+  .skills h1 {
+    width: 100px;
+    font-size: 10px;
   }
 }
 @media screen and (width: 912px) {
