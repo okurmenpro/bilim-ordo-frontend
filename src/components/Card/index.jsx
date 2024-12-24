@@ -11,9 +11,10 @@ import {
 } from "react-icons/io";
 
 function Card() {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext); // addToCart removed, not needed anymore
   const [cardCourse, setCourse] = useState(course);
   const scrollRef = useRef(null);
+
   const getcourse = async () => {
     try {
       const response = await axios.get("/course");
@@ -27,30 +28,24 @@ function Card() {
     getcourse();
   }, []);
 
-  const handleAddToCart = (item) => {
-    const isAlreadyInCart = cartItems.find(
-      (cartItem) => cartItem.id === item.id
-    );
-    if (!isAlreadyInCart) {
-      addToCart(item);
-    }
-  };
-
   const scrollLeft = () => {
     scrollRef.current.scrollBy({
       left: -scrollRef.current.clientWidth,
       behavior: "smooth",
     });
   };
+
   const scrollRight = () => {
     scrollRef.current.scrollBy({
       left: scrollRef.current.clientWidth,
       behavior: "smooth",
     });
   };
+
   const truncateText = (text, limit) => {
     return text.length > limit ? text.substring(0, limit) + "..." : text;
   };
+
   return (
     <div className="card-container container">
       <div className="card">
@@ -59,12 +54,9 @@ function Card() {
             <IoIosArrowDropleftCircle size={30} />
           </button>
           {cardCourse.map((item, index) => {
-            const isInCart = cartItems.some(
-              (cartItem) => cartItem.id === item.id
-            );
             return (
               <div key={index} className="cart">
-                <NavLink to="/course">
+                <NavLink to="/mentor">
                   <img src={item.img} alt={item.name} />
                   <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
@@ -73,20 +65,12 @@ function Card() {
                       <MdOutlineStarPurple500 />
                       <span>4,3</span>
                     </div>
-
                     <p>(3 3316)</p>
                   </div>
                   <div className="cart-top">
                     <p>{item.price}</p>
                   </div>
                 </NavLink>
-                <button
-                  onClick={() => handleAddToCart(item)}
-                  className="add-to-cart-button"
-                  disabled={isInCart}
-                >
-                  {isInCart ? "В корзине" : "Добавить в корзину"}
-                </button>
               </div>
             );
           })}

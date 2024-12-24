@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import "./Topcourses.scss";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { topcourse } from "../../data/Topcourse";
-import {
-  IoIosArrowDropleftCircle,
-  IoIosArrowDroprightCircle,
-} from "react-icons/io";
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 
 function TopCourses() {
   const scrollRef = useRef(null);
-
   const [topcourses, setTopCourse] = useState(topcourse);
+
+  const { addToCart, cartItems } = useContext(CartContext);
+
   const getcourse = async () => {
     try {
       const response = await fetch("/topcourse");
@@ -40,6 +40,15 @@ function TopCourses() {
     });
   };
 
+  const handleAddToCart = (item) => {
+    const isAlreadyInCart = cartItems.find(
+      (cartItem) => cartItem.id === item.id
+    );
+    if (!isAlreadyInCart) {
+      addToCart(item);
+    }
+  };
+
   return (
     <div className="topcourses container">
       <div className="beginners" ref={scrollRef}>
@@ -47,33 +56,46 @@ function TopCourses() {
           <IoIosArrowDropleftCircle size={30} className="icon-scroll" />
         </button>
 
-        {topcourses.map((course) => (
-          <div className="design" key={course.id}>
-            <Link to="course">
-              <img src={course.image} alt={course.title} />
-              <div className="design1">
-                <h2>{course.title}</h2>
-                <h3>{course.author}</h3>
-                <div className="design-icon">
-                  <div className="line-ratings">
-                    {[...Array(5)].map((_, index) => (
-                      <MdOutlineStarPurple500
-                        className="linestart"
-                        key={index}
-                      />
-                    ))}
-                    <p className="ratings">({course.ratings} Ratings)</p>
+        {topcourses.map((course) => {
+          const isInCart = cartItems.some(
+            (cartItem) => cartItem.id === course.id
+          );
+
+          return (
+            <div className="design" key={course.id}>
+              <Link to="course">
+                <img src={course.image} alt={course.title} />
+                <div className="design1">
+                  <h2>{course.title}</h2>
+                  <h3>{course.author}</h3>
+                  <div className="design-icon">
+                    <div className="line-ratings">
+                      {[...Array(5)].map((_, index) => (
+                        <MdOutlineStarPurple500
+                          className="linestart"
+                          key={index}
+                        />
+                      ))}
+                      <p className="ratings">({course.ratings} Ratings)</p>
+                    </div>
+                    <p className="ratings2">
+                      {course.totalHours} Total Hours. {course.lectures} Lectures.{" "}
+                      {course.level}
+                    </p>
+                    <p className="price1">{course.price}</p>
                   </div>
-                  <p className="ratings2">
-                    {course.totalHours} Total Hours. {course.lectures} Lectures.{" "}
-                    {course.level}
-                  </p>
-                  <p className="price1">{course.price}</p>
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
+              </Link>
+              <button
+                onClick={() => handleAddToCart(course)}
+                className="add-to-cart-button"
+                disabled={isInCart}
+              >
+                {isInCart ? "В корзине" : "Добавить в корзину"}
+              </button>
+            </div>
+          );
+        })}
 
         <button onClick={scrollRight} className="scroll-button2 right9">
           <IoIosArrowDroprightCircle size={30} className="icon-scroll" />
