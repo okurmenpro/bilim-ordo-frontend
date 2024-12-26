@@ -6,6 +6,7 @@ import google from "../../assets/svg/googel.svg";
 import microsoft from "../../assets/svg/microsoft.svg";
 
 const Authorization = () => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -23,10 +24,10 @@ const Authorization = () => {
     if (email === "aidana@gmail.com" && password === "1234567") {
       alert("Успешная авторизация!");
     } else {
-      alert("Неправильный email или пароль.");
+       alert("Неправильный email или пароль.");
     }
   };
-
+  
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
