@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   MdMenu,
   MdKeyboardArrowRight,
@@ -17,8 +17,10 @@ function Header() {
   const { cartItems } = useContext(CartContext);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const user = localStorage.getItem("user")
-  const userData = JSON.parse(user)
+  const [mode, setMode] = useState("режим студента"); // Студент режимин баштапкы абал кылдык
+  const user = localStorage.getItem("user");
+  const userData = JSON.parse(user);
+  const navigate = useNavigate(); // navigate API аркылуу бетке өтүү
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -40,7 +42,17 @@ function Header() {
     }
   };
 
-
+  // Режимди өзгөртүү жана тиешелүү бетке өтүү
+  const toggleMode = () => {
+    if (mode === "режим преподавателя") {
+      setMode("режим студента");
+      navigate("/"); // Башкы бетке өтүү
+    } else {
+      setMode("режим преподавателя");
+      navigate("/teacherpage"); // Преподаватель бетине өтүү
+    }
+    setMenuOpen(false); // Меню жабуу
+  };
 
   return (
     <div className="aback">
@@ -68,6 +80,7 @@ function Header() {
             aria-describedby="basic-addon2"
           />
         </div>
+
         <div className="teacher-page">
           <NavLink to={"/teacherpage"}>
             <p>Teach on Bilim Ordo</p>
@@ -83,25 +96,22 @@ function Header() {
           </div>
         </NavLink>
 
-        {user ?
+        {user ? (
           <NavLink to={"/profile"}>
             <div className="user">
               {userData.username[0].toUpperCase()}
             </div>
           </NavLink>
-          :
+        ) : (
           <div className="buttons">
             <NavLink to="/login">
               <button className="login">Login</button>{" "}
-              {/* "Войти" changed to "Login" */}
             </NavLink>
             <NavLink to="/signup">
               <button className="sign-up">Sign Up</button>{" "}
-              {/* "Зарегистрироваться" changed to "Sign Up" */}
             </NavLink>
           </div>
-        }
-        
+        )}
       </header>
 
       <div
@@ -125,7 +135,6 @@ function Header() {
               >
                 Menu
               </span>{" "}
-              {/* "Меню" changed to "Menu" */}
             </div>
             <ul>
               {categories[selectedCategory].map((sub) => (
@@ -141,18 +150,28 @@ function Header() {
               <NavLink to="/login" className="sidebar-link">
                 Login
               </NavLink>{" "}
-              {/* "Войти" changed to "Login" */}
               <div className="close-icon-container" onClick={toggleMenu}></div>
             </div>
             <div className="divider" />
             <NavLink to="/signup" className="sidebar-link">
               Sign Up
             </NavLink>{" "}
-            {/* "Регистрация" changed to "Sign Up" */}
+
+            {/* Режимдин тагын өзгөртүү */}
+            <div className="mode-toggle">
+              {mode === "режим преподавателя" ? (
+                <NavLink to="/teacherpage" onClick={toggleMode}>
+                  <strong className="regim">Режим преподавателя</strong>
+                </NavLink>
+              ) : (
+                <NavLink to="/" onClick={toggleMode}>
+                  <strong className="regim">Режим студента</strong>
+                </NavLink>
+              )}
+            </div>
             <div className="lines" />
             <div className="popular-categories">
               <h3>Most Popular</h3>{" "}
-              {/* "Самые популярные" changed to "Most Popular" */}
               <div className="category-list">
                 {Object.keys(categories).map((category) => (
                   <div
@@ -166,17 +185,13 @@ function Header() {
               </div>
               <div className="lines" />
               <h3>Other Udemy Offers</h3>{" "}
-              {/* "Другие предложения Udemy" changed to "Other Udemy Offers" */}
               <h4>Bilim Ordo Business</h4>
               <h4>Download App</h4>{" "}
-              {/* "Скачать приложение" changed to "Download App" */}
               <h4>Invite Friends</h4>{" "}
-              {/* "Пригласить друзей" changed to "Invite Friends" */}
               <h4>Help & Support</h4>{" "}
-              {/* "Справка и поддержка" changed to "Help & Support" */}
               <div className="buttonLanguage">
                 <MdLanguage className="language-icon" />
-                <button>English</button> {/* "Русский" changed to "English" */}
+                <button>English</button>
               </div>
             </div>
           </div>

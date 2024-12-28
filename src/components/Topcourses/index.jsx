@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import "./Topcourses.scss";
+import "./Topcourse.scss";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { topcourse } from "../../data/Topcourse";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";

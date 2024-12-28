@@ -8,10 +8,7 @@ import { GrGithub as Github } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
 import microsoft from "../../assets/svg/microsoft.svg";
-
-
-function Sidebar() {
-  import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function Sidebar() {
   const { addToCart, cartItems } = useContext(CartContext);

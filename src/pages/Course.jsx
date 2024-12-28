@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import MaterialCourse from "../components/MaterialCourse";
-import BannerCourse from "../components/BannerCourse";
+import BannerCourse from "../components/BannerCourses";
 import Sidebar from "../components/Sidebar";
 import TeacherProfile from "../components/TeacherProfile";
 import Programmingexercises from "../components/Programmingexercises/index";
@@ -44,7 +44,7 @@ function Course() {
         <TeacherProfile />
       </div>
       <HomeReviews />
-      {/* <TopCourses /> */}
+      <TopCourses />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+/* Бастапкы стилдер: экран чоңураак болсо дагы нормалдуу көрүнүштү сактоо */
 .registration__course {
   margin: 50px auto;
   padding: 20px;
@@ -152,9 +153,43 @@
   font-size: 14px;
 }
 
+/* Мобилдик жана планшеттик түзмөктөргө ылайыкташтыруу */
+
+/* 320pxден жогорку экрандар үчүн */
+@media (max-width: 320px) {
+  .registration__course {
+    padding: 10px;
+  }
+
+  .CourseImage {
+    max-width: 100%;
+  }
+
+  .registration__course__description {
+    font-size: 14px;
+  }
+
+  .select__language {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .AddFileInput, .AddFileBtn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .language {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+  }
+}
+
+/* 320px жана андан жогорку экрандар үчүн жалпы түзмө-түз мүмкүнчүлүк */
 @media (max-width: 768px) {
   .registration__course {
-    padding: 20px;
+    padding: 15px;
   }
 
   .CourseImage {
@@ -163,21 +198,36 @@
 
   .AddFile {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .AddFileInput,
   .AddFileBtn {
-    width: 100%;
+    width: 48%;
     margin-top: 5px;
   }
 
   .select__language {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .description__container {
+    padding: 10px;
+  }
+
+  .registration__course__description {
+    font-size: 14px;
+  }
+
+  .registration__course__icon {
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
+/* 576px жана андан жогорку экрандар үчүн */
 @media (max-width: 576px) {
   .registration__course {
     padding: 10px;
@@ -186,5 +236,41 @@
   .select__language {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .registration__course__icon {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .language {
+    min-width: 100%;
+  }
+
+  .CourseImage {
+    max-width: 100%;
+  }
+
+  .registration__image {
+    flex-direction: column;
+  }
+
+  .AddFileInput,
+  .AddFileBtn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .notification {
+    font-size: 12px;
+  }
+
+  .notification p {
+    font-size: 12px;
+  }
+
+  .description__container {
+    padding: 5px;
   }
 }
