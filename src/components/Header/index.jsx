@@ -17,10 +17,11 @@ function Header() {
   const { cartItems } = useContext(CartContext);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [mode, setMode] = useState("режим студента"); // Студент режимин баштапкы абал кылдык
+  const [mode, setMode] = useState("режим студента");
+  const [isStudentMode, setIsStudentMode] = useState(false); // Бул жаңы state кошулду
   const user = localStorage.getItem("user");
   const userData = JSON.parse(user);
-  const navigate = useNavigate(); // navigate API аркылуу бетке өтүү
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -42,16 +43,22 @@ function Header() {
     }
   };
 
-  // Режимди өзгөртүү жана тиешелүү бетке өтүү
   const toggleMode = () => {
     if (mode === "режим преподавателя") {
       setMode("режим студента");
-      navigate("/"); // Башкы бетке өтүү
+      navigate("/");
     } else {
       setMode("режим преподавателя");
-      navigate("/teacherpage"); // Преподаватель бетине өтүү
+      navigate("/teacherpage");
     }
-    setMenuOpen(false); // Меню жабуу
+    setMenuOpen(false);
+  };
+
+  const toggleStudentMode = () => {
+    setIsStudentMode((prev) => !prev);
+    if (isStudentMode) {
+      navigate("/"); 
+    }
   };
 
   return (
@@ -81,10 +88,17 @@ function Header() {
           />
         </div>
 
+        {/* Бул жерде тексттер алмаштырылат */}
         <div className="teacher-page">
-          <NavLink to={"/teacherpage"}>
-            <p>Teach on Bilim Ordo</p>
-          </NavLink>
+          {!isStudentMode ? (
+            <NavLink to={"/teacherpage"}>
+              <p onClick={toggleStudentMode}>Teach on Bilim Ordo</p>
+            </NavLink>
+          ) : (
+            <NavLink to={"/"}>
+              <p onClick={toggleStudentMode}>Student</p>
+            </NavLink>
+          )}
         </div>
 
         <NavLink to="/basket">
@@ -156,16 +170,14 @@ function Header() {
             <NavLink to="/signup" className="sidebar-link">
               Sign Up
             </NavLink>{" "}
-
-            {/* Режимдин тагын өзгөртүү */}
             <div className="mode-toggle">
               {mode === "режим преподавателя" ? (
-                <NavLink to="/teacherpage" onClick={toggleMode}>
-                  <strong className="regim">Режим преподавателя</strong>
-                </NavLink>
-              ) : (
                 <NavLink to="/" onClick={toggleMode}>
                   <strong className="regim">Режим студента</strong>
+                </NavLink>
+              ) : (
+                <NavLink to="/teacherpage" onClick={toggleMode}>
+                  <strong className="regim">Режим преподавателя</strong>
                 </NavLink>
               )}
             </div>
