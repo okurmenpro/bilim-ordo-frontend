@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import "./Sidebar.css";
 import { SidebarData } from "../../data/Sidebar";
@@ -9,15 +8,15 @@ import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
 import microsoft from "../../assets/svg/microsoft.svg";
 
-
-function Sidebar() {
-  import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function Sidebar() {
   const { addToCart, cartItems } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    const isAlreadyInCart = cartItems.some((item) => item.id === SidebarData.id);
+    const isAlreadyInCart = cartItems.some(
+      (item) => item.id === SidebarData.id
+    );
     if (!isAlreadyInCart) {
       addToCart(SidebarData);
     }
