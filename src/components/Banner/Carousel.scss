@@ -65,10 +65,19 @@
   }
 
   .carousel-control-prev-icon {
-    background-color: black;
-    margin-left: -140px;
-    margin-top: 170px;
+    background-color: rgb(203, 199, 199);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    border-radius: 50%;
+
   }
+
+  .carousel-control-prev-icon:hover {
+    background-color: black;
+  }
+
   .carousel-control-prev {
     width: 0;
   }
@@ -78,9 +87,15 @@
   }
 
   .carousel-control-next-icon {
+    background-color: rgb(203, 199, 199);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 99;
+    border-radius: 50%;
+  }
+  .carousel-control-next-icon:hover{
     background-color: black;
-    margin-right: -130px;
-    margin-top: 170px;
   }
 }
 
@@ -104,6 +119,7 @@
       height: 700px;
       max-width: 300px;
     }
+
     .carousel-inner {
       width: 300px;
     }
@@ -163,6 +179,7 @@
     .carousel-control-prev-icon {
       display: none;
     }
+
     .carousel-control-prev {
       width: 0;
     }
@@ -181,6 +198,7 @@
   .carousel-control-prev-icon {
     display: none;
   }
+
   .carousel-control-prev {
     width: 0;
   }
@@ -214,6 +232,7 @@
       height: 700px;
       max-width: 300px;
     }
+
     .carousel-inner {
       width: 300px;
     }
@@ -272,6 +291,7 @@
     .carousel-control-prev-icon {
       display: none;
     }
+
     .carousel-control-prev {
       width: 0;
     }
