@@ -169,7 +169,13 @@
   color: white;
   margin-top: -37px;
   width: 100%;
+  // border-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
   height: 35px;
+  margin-left: 6px;
+  max-width: 280px;
   border: none;
   cursor: pointer;
   text-align: center;
