@@ -119,6 +119,9 @@
 }
 
 @media screen and (max-width: 432px) {
+  .course__banner{
+    width: 100%;
+  }
   .inbanner p {
     width: 300px;
     font-size: 13px;

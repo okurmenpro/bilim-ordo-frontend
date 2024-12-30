@@ -34,7 +34,7 @@ const Authorization = () => {
   return (
     <div className="authorization container">
       <div className="authorization-right">
-        <p className="sign-account">Sign in to your account </p>
+        <p className="sign-account">Sign in to your account</p>
         <input
           type="email"
           placeholder="Username or Email ID"
@@ -64,11 +64,10 @@ const Authorization = () => {
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
             />
           </svg>
@@ -76,48 +75,26 @@ const Authorization = () => {
 
         <div className="Signupwith">
           <div className="line1">
-            {" "}
             <hr className="here2" />
           </div>
-          <p className="words"> Sign With In</p>
-          <div className="Line2">
+          <p className="words">Sign With In</p>
+          <div className="line2">
             <hr className="here" />
           </div>
         </div>
 
         <div className="fgm-sign-in">
           <button className="Facebook-google-microsoft">
-            <div>
-              <img src={facebook} alt="" />
-              <p
-                style={{
-                  color: "blue",
-                }}
-              >
-                Facebook
-              </p>
-            </div>
-
+            <img src={facebook} alt="Facebook" />
+            <p style={{ color: "blue" }}>Facebook</p>
           </button>
-          <button className="Facebook-google-microsoft2">
-            <img src={google} alt="" />
-            <p
-              style={{
-                color: " rgb(234, 67, 53)",
-              }}
-            >
-              Google
-            </p>
+          <button className="Facebook-google-microsoft">
+            <img src={google} alt="Google" />
+            <p style={{ color: "rgb(234, 67, 53)" }}>Google</p>
           </button>
-          <button className="Facebook-google-microsoft2">
-            <img src={microsoft} alt="" />
-            <p
-              style={{
-                color: "rgb(0, 0, 0)",
-              }}
-            >
-              Microsoft
-            </p>
+          <button className="Facebook-google-microsoft">
+            <img src={microsoft} alt="Microsoft" />
+            <p style={{ color: "black" }}>Microsoft</p>
           </button>
         </div>
       </div>
