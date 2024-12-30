@@ -91,7 +91,7 @@ function Header() {
         {/* Бул жерде тексттер алмаштырылат */}
         <div className="teacher-page">
           {!isStudentMode ? (
-            <NavLink to={"/teacherpage"}>
+            <NavLink to={"/teaching"}>
               <p onClick={toggleStudentMode}>Teach on Bilim Ordo</p>
             </NavLink>
           ) : (
