@@ -95,13 +95,13 @@ function Checkout() {
           <div className="order">
             <div className="order-details">
               <img src={product} alt="" />
-              <div className="design">
+              <div className="design1">
                 <h6>Design</h6>
-                <span className="user">
+                <span className="user-checkout-rigth">
                   Introduction to User Experience Design
                 </span>
                 <p className="lectures">155 Lectures . 22 Total Hours</p>
-                <span className="user">$45.00</span>
+                <span className="user-checkout-rigth">$45.00</span>
               </div>
             </div>
             <div className="apply">APPLY COUPON CODE</div>
@@ -125,7 +125,7 @@ function Checkout() {
               </div>
             </div>
             <NavLink to="/order">
-            <button className="btn">Label</button>
+              <button className="btn">Label</button>
             </NavLink>
           </div>
         </div>
