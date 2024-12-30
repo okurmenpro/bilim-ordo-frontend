@@ -13,9 +13,7 @@
 
 .skills-container {
   display: grid;
-}
-.skills {
-  margin-top: -90px;
+  gap: 40px;
 }
 
 .skills p {
@@ -29,6 +27,7 @@
   text-align: left;
   font-size: 20px;
   font-weight: 600;
+  margin: 0;
 }
 
 @media screen and (width: 768px) {
