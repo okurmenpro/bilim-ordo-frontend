@@ -5,15 +5,19 @@ import { GrGithub as Github } from "react-icons/gr";
 import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
 import microsoft from "../../assets/svg/microsoft.svg"
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="info">
+      <div className="info container">
         <div className="info-bottom">
-          <strong>
-            <span className="first-letter">B</span>ILIM-ORDO
-          </strong>
+          <NavLink to={"/"}>
+            <strong>
+              <span className="first-letter">B</span>ILIM-ORDO
+            </strong>
+          </NavLink>
+
           <p>Empowering learners through accessible and engaging online education.
             Byway is a leading online learning platform dedicated to providing high-quality, flexible, and affordable educational experiences. </p>
         </div>
@@ -34,7 +38,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="categori">
-            <strong className="text">Get Help</strong>
+            <strong className="text">Programs</strong>
             <ul>
               <li>
                 <a href="">Art & Design</a>
@@ -54,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="categori">
-            <strong className="text">Get Help</strong>
+            <strong className="text">Contact Us</strong>
             <ul>
               <li>
                 <a href="">Address: Ahunbaeva Abaya 7A</a>
