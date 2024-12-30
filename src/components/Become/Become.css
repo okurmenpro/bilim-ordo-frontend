@@ -216,8 +216,8 @@ container {
     width: 320px;
     .become-top {
       display: grid;
-      width: 380px;
-      margin-left: 80px;
+      width: 300px;
+      margin-left: 10px;
       img {
         width: 300px;
       }
@@ -225,9 +225,9 @@ container {
     .become-bottom {
       display: flex;
       flex-direction: column-reverse;
-      width: 380px;
+      width: 300px;
       gap: 20px;
-      margin-left: 80px;
+      margin-left: 10px;
 
       img {
         width: 350px;
@@ -256,7 +256,7 @@ container {
     .become-top {
       display: grid;
       width: 280px;
-      margin-left: 80px;
+      margin-left: 10px;
       img {
         width: 300px;
       }
@@ -264,9 +264,9 @@ container {
     .become-bottom {
       display: flex;
       flex-direction: column-reverse;
-      width: 380px;
+      width: 300px;
       gap: 20px;
-      margin-left: 80px;
+      margin-left: 20px;
 
       img {
         width: 350px;
