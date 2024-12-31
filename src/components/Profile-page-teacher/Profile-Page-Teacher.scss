@@ -98,7 +98,13 @@ p {
 }
 
 .text {
-  color: white;
+  background-color: blue;
+  border-radius: 10px;
+
+  .Texxt-1 {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 
 .bottom-text {
@@ -155,7 +161,7 @@ p {
   width: 25px;
   height: 7px;
 }
-/* Адаптивность для планшетов (ширина экрана 768px и меньше) */
+
 @media screen and (max-width: 768px) {
   .boxes-12 {
     display: flex;
