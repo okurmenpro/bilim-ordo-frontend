@@ -211,3 +211,63 @@
     height: 30px;
   }
 }
+
+@media screen and (width: 540px) {
+  .info {
+    padding: 20px 10px;
+    display: grid;
+  }
+
+  .info-bottom p {
+    display: none;
+  }
+
+  .info-bottom strong {
+    font-size: 28px;
+  }
+
+  .first-letter {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+    color: white;
+  }
+
+  .categoris {
+    display: grid;
+    width: 100%;
+  }
+
+  .categori {
+    margin-top: 5px;
+  }
+
+  .categori {
+    text-align: left;
+  }
+
+  .categori ul {
+    text-align: left;
+  }
+
+  .categori ul li a {
+    font-size: 16px;
+  }
+
+  .images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: 0;
+  }
+
+  .icons,
+  .facebok,
+  .microsoft {
+    width: 30px;
+    height: 30px;
+  }
+}
