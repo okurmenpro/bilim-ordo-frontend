@@ -7,6 +7,7 @@ import Categories from "../Categories";
 import Become from "../Become";
 import Topcourses from "../Topcourses";
 import HomeReviews from "../HomeReviews";
+import { NavLink } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -15,11 +16,15 @@ function HomePage() {
       <Companystatistics />
       <CardContainer name="Top Categories" text="Label"></CardContainer>
       <Categories />
-      <CardContainer name="Top Courses" text="Label"></CardContainer>
+      <CardContainer name="Top Courses">
+        <NavLink to="/categoriespage">Label</NavLink>
+      </CardContainer>
       <Topcourses />
-      <CardContainer name="Top Instructors" text="Label"></CardContainer>
+      <CardContainer name="Top Instructors">
+        <NavLink to="/mentor">Label</NavLink>
+      </CardContainer>
       <Card />
-      <HomeReviews/>
+      <HomeReviews />
       <Become />
     </div>
   );

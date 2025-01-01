@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 import slides from "./Carousel.json";
 import "./Carousel.scss";
+import { NavLink } from "react-router-dom";
 
 function Banner() {
   const [data, setData] = useState(slides);
@@ -13,7 +14,10 @@ function Banner() {
             <div className="banner-text">
               <h3>{slide.title}</h3>
               <p>{slide.description}</p>
-              <button>Start your instructor journey</button>
+              <NavLink to={"/teacherpage"}>
+                <button>Start your instructor journey</button>
+              </NavLink>
+
             </div>
             <div className="banner-img">
               <img src={slide.img} alt="" />

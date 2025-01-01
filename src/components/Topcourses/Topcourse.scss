@@ -47,22 +47,20 @@
     }
 
     .scroll-button2.left9 {
-      left: -24px;
-    
-      &:hover {
-        background: none !important; 
-      }
-    }
-    
-    .scroll-button2.right9 {
-      right: -24px;
-    
-      &:hover {
-        background: none !important; 
-      }
+      left: -18px;
 
+      &:hover {
+        background: none !important;
+      }
     }
-    
+
+    .scroll-button2.right9 {
+      right: -15px;
+
+      &:hover {
+        background: none !important;
+      }
+    }
 
     .design {
       display: grid;
@@ -171,7 +169,13 @@
   color: white;
   margin-top: -37px;
   width: 100%;
+  // border-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
   height: 35px;
+  margin-left: 6px;
+  max-width: 280px;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -276,8 +280,8 @@
   .topcourses {
     margin: 0 auto;
     position: relative;
-    width: 900px;
-    margin-left: -60px;
+    width: 700px;
+    margin-left: -10px;
     .topcoursesh2 {
       display: flex;
       gap: 600px;
@@ -291,8 +295,8 @@
       text-overflow: ellipsis;
       scrollbar-color: transparent transparent;
       padding: 10px;
-      width: 800px;
-      margin-right: 100px;
+      width: 750px;
+      margin-left: 80px;
     }
     .scroll-button2 {
       .icon-scroll {
@@ -453,7 +457,7 @@
   .topcourses {
     margin: 0 auto;
     position: relative;
-    width: 370px;
+    width: 330px;
     margin-right: 50px;
     .topcoursesh2 {
       display: flex;
