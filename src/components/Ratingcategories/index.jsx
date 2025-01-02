@@ -58,7 +58,7 @@ function Ratingcategories() {
                 />
               </div>
               {isRatingOpen && (
-                <div>
+                <div className="star-con">
                   {[...Array(5)].map((_, rowIndex) => (
                     <div className="star-row" key={rowIndex}>
                       {[...Array(5)].map((_, index) => (
@@ -86,7 +86,7 @@ function Ratingcategories() {
               </div>
               {isChaptersOpen && (
                 <div>
-                  <div className="checkbox-input1">
+                  <div className="checkbox-input">
                     <input type="checkbox" />
                     <p>1-10</p>
                   </div>
@@ -115,7 +115,6 @@ function Ratingcategories() {
             </div>
             {isLabelOpen && (
               <div>
-                {/* Тут можно добавить дополнительный контент или фильтры для Label */}
                 <div className="filter-chevron">
                   <p>filter</p>
                   <img src={chevron} alt="" />
@@ -130,13 +129,6 @@ function Ratingcategories() {
         </div>
 
         <div className="topcousescategories">
-          <div className="sortby">
-            <p>Sort By</p>
-            <button>
-              <span>Relevance</span>
-              <img src={downchevron} alt="" />
-            </button>
-          </div>
           <Topcoursescategories />
         </div>
       </div>

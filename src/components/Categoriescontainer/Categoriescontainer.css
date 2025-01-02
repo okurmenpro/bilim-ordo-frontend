@@ -1,0 +1,9 @@
+@media screen and (max-width: 432px) {
+  .Categoriescontainer {
+    width: 300px;
+  }
+  .Categoriescontainer h2 {
+    width: 300px;
+    margin-left: -20px;
+  }
+}
