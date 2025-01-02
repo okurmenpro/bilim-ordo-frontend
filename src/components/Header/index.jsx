@@ -67,7 +67,7 @@ function Header() {
           />
         </div>
         <div className="teacher-page">
-          <NavLink to={"/teacherpage"}>
+          <NavLink to={"/teaching"}>
             <p>Teach on Bilim Ordo</p>
           </NavLink>
         </div>
@@ -89,11 +89,9 @@ function Header() {
           <div className="buttons">
             <NavLink to="/login">
               <button className="login">Login</button>{" "}
-              {/* "Войти" changed to "Login" */}
             </NavLink>
             <NavLink to="/signup">
               <button className="sign-up">SignUp</button>{" "}
-              {/* "Зарегистрироваться" changed to "Sign Up" */}
             </NavLink>
           </div>
         )}
@@ -120,7 +118,6 @@ function Header() {
               >
                 Menu
               </span>{" "}
-              {/* "Меню" changed to "Menu" */}
             </div>
             <ul>
               {categories[selectedCategory].map((sub) => (
@@ -136,18 +133,15 @@ function Header() {
               <NavLink to="/login" className="sidebar-link">
                 Login
               </NavLink>{" "}
-              {/* "Войти" changed to "Login" */}
               <div className="close-icon-container" onClick={toggleMenu}></div>
             </div>
             <div className="divider" />
             <NavLink to="/signup" className="sidebar-link">
               Sign Up
             </NavLink>{" "}
-            {/* "Регистрация" changed to "Sign Up" */}
             <div className="lines" />
             <div className="popular-categories">
               <h3>Most Popular</h3>{" "}
-              {/* "Самые популярные" changed to "Most Popular" */}
               <div className="category-list">
                 {Object.keys(categories).map((category) => (
                   <div
@@ -161,17 +155,13 @@ function Header() {
               </div>
               <div className="lines" />
               <h3>Other Udemy Offers</h3>{" "}
-              {/* "Другие предложения Udemy" changed to "Other Udemy Offers" */}
               <h4>Bilim Ordo Business</h4>
               <h4>Download App</h4>{" "}
-              {/* "Скачать приложение" changed to "Download App" */}
               <h4>Invite Friends</h4>{" "}
-              {/* "Пригласить друзей" changed to "Invite Friends" */}
               <h4>Help & Support</h4>{" "}
-              {/* "Справка и поддержка" changed to "Help & Support" */}
               <div className="buttonLanguage">
                 <MdLanguage className="language-icon" />
-                <button>English</button> {/* "Русский" changed to "English" */}
+                <button>English</button>
               </div>
             </div>
           </div>

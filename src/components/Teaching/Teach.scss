@@ -1,0 +1,83 @@
+.teaching {
+    margin-top: 100px;
+}
+
+.infoteaching {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    display: grid;
+
+    .teachingh1 {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .tstong {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .tbtn {
+        background: black;
+        color: white;
+        padding: 8px 22px;
+        border-radius: 6px;
+        width: 300px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+.infoteaching2 {
+    width: 60%;
+    height: 500px;
+    margin: 50px auto 0;
+
+    .help-teaching {
+        font-size: 39px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 70px;
+    }
+}
+
+.component-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    .component-text {
+        flex: 1;
+        text-align: left;
+        color: black;
+
+    }
+
+    .component-image {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+.button-container {
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid#ccc;
+    margin-bottom: 20px;
+
+    strong {
+        cursor: pointer;
+        color: black;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+}

@@ -19,6 +19,8 @@ import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
 import Profilemessageteachers from "./components/Profile-page-teacher";
+import TeachingPage from "./pages/Teaching";
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +49,10 @@ export const Router = createBrowserRouter([
       {
         path: "/mycourses",
         element: <MyCourses />,
+      },
+      {
+        path: "/teaching",
+        element: <TeachingPage />
       },
       {
         path: "/teacherpage",

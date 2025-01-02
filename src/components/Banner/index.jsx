@@ -14,7 +14,7 @@ function Banner() {
             <div className="banner-text">
               <h3>{slide.title}</h3>
               <p>{slide.description}</p>
-              <NavLink to={"/teacherpage"}>
+              <NavLink to={"/teaching"}>
                 <button>Start your instructor journey</button>
               </NavLink>
 
