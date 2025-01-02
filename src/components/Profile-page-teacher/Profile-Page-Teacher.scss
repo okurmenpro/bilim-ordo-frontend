@@ -82,11 +82,19 @@ p {
   margin-bottom: 12px;
   background-color: #0f172a;
   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .second-2 {
   width: 555px;
   height: 42px;
   border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #0f172a;
   color: white;
 }
