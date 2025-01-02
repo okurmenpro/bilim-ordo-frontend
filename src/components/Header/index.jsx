@@ -92,6 +92,7 @@ function Header() {
             </NavLink>
             <NavLink to="/signup">
               <button className="sign-up">SignUp</button>{" "}
+
             </NavLink>
           </div>
         )}
