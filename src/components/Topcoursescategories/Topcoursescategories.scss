@@ -153,13 +153,58 @@
 .rigth img {
   margin-top: 9px;
 }
-// * {
-//   outline: 1px solid red;
-// }
+
 @media screen and (max-width: 432px) {
   .topcoursescategories-container {
     width: 300px;
-    margin-left: -320px;
+    margin-left: -300px;
+    .topcourses-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 4rem;
+      overflow-x: scroll;
+      scrollbar-color: transparent transparent;
+      width: 300px;
+      height: 330px;
+
+      .design {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 912px) {
+  .topcoursescategories-container {
+    width: 300px;
+
+    .sortby {
+      margin-right: -370px;
+    }
+    .left-rigth-button {
+      margin-right: -420px;
+    }
+    .topcourses-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 4rem;
+      overflow-x: scroll;
+      scrollbar-color: transparent transparent;
+      width: 700px;
+      height: 330px;
+
+      .design {
+        width: 300px;
+      }
+    }
+  }
+}
+@media screen and (width: 540px) {
+  .topcoursescategories-container {
+    width: 300px;
+    margin-left: -300px;
     .topcourses-grid {
       display: flex;
       flex-wrap: nowrap;
