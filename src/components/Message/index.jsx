@@ -10,7 +10,7 @@ function MessagePage() {
     <section className="section">
       <Courses />
       <div className="direct">
-        <NavLink to="/profilemessageteachers">
+        <NavLink to="/profile/message/chat">
           <div className="first-direct">
             <div className="info-direct">
               <img src={Autor} alt="" />

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './CourseCompletion.scss';
 import arrow from '../../assets/images/DownArrows.png';
-import videos from '../../assets/images/icon/Icon.png'
 
 const CourseCompletion = () => {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -72,7 +71,6 @@ const CourseCompletion = () => {
        <p className='completion'>Course Completion</p>
        </div>
       <div className="section-container">
-        {/* Первый контейнер */}
         <div className="section">
           <div
             className="section-header"
@@ -92,7 +90,7 @@ const CourseCompletion = () => {
                     />
                   <label htmlFor={`item-0-${itemIndex}`}>{item}</label>
                   <div className="item-info">
-                    <img src={videos} alt="Video Icon" className="icon-video" />
+                    <img src="" alt="Video Icon" className="icon-video" />
                     <span className="time">4min</span>
                   </div>
                 </div>
@@ -100,7 +98,6 @@ const CourseCompletion = () => {
             </div>
           )}
         </div>
-        {/* Второй контейнер */}
         <div className="section">
           <div
             className="section-header"
@@ -120,7 +117,7 @@ const CourseCompletion = () => {
                   />
                   <label htmlFor={`item-1-${itemIndex}`}>{item}</label>
                   <div className="item-info">
-                      <img src={videos}alt="Video Icon" className="icon-video" />
+                      <img src="" alt="Video Icon" className="icon-video" />
                     <span className="time">4min</span>
                   </div>
                 </div>
@@ -129,7 +126,6 @@ const CourseCompletion = () => {
           )}
         </div>
 
-        {/* Третий контейнер */}
         <div className="section">
           <div
             className="section-header"
@@ -149,7 +145,7 @@ const CourseCompletion = () => {
                   />
                   <label htmlFor={`item-2-${itemIndex}`}>{item}</label>
                   <div className="item-info">
-                    <img src={videos} alt="Video Icon" className="icon-video" />
+                    <img src="" alt="Video Icon" className="icon-video" />
                     <span className="time">4min</span>
                   </div>
                 </div>
@@ -158,7 +154,6 @@ const CourseCompletion = () => {
           )}
         </div>
 
-        {/* Четвертый контейнер */}
         <div className="section">
           <div
             className="section-header"
@@ -178,7 +173,7 @@ const CourseCompletion = () => {
                   />
                   <label htmlFor={`item-3-${itemIndex}`}>{item}</label>
                   <div className="item-info">
-                    <img src={videos} alt="Video Icon" className="icon-video" />
+                    <img src="" alt="Video Icon" className="icon-video" />
                     <span className="time">4min</span>
                   </div>
                 </div>
