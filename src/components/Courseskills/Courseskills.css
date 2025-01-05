@@ -36,7 +36,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 @media screen and (width: 820px) {
@@ -45,7 +45,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 @media screen and (width: 1024px) {
@@ -54,14 +54,13 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (max-width: 432px) {
   .skill {
     width: 300px;
-    margin-top: -60px;
     margin-left: 10px;
   }
   .Course-skills {
@@ -71,7 +70,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: -40px;
   }
   .skills p {
     width: 200px;

@@ -232,6 +232,38 @@
   }
 }
 
+@media screen and (max-width: 377px) {
+  .teacher-profile {
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
+
+    .revis {
+      display: grid;
+
+      .right-com {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        width: 350px;
+
+        .review-card {
+          display: grid;
+          width: 200px;
+
+          p {
+            width: 100px;
+          }
+        }
+
+        .review-content {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 432px) {
   .teacher-profile {
     width: 300px;
@@ -249,7 +281,6 @@
       display: grid;
 
       .right-com {
-        padding: 0 10px;
         display: flex;
         overflow-x: auto;
         gap: 16px;
