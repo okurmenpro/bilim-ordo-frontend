@@ -1,10 +1,5 @@
 .v1 {
-  width: 1400px;
-  padding: 0px 48px;
-  position: relative;
-  top: 120px;
-  margin: auto;
-  flex-grow: 1;
+  margin-top: 120px;
 }
 
 .v2 {
@@ -87,6 +82,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 120px;
+  padding: 0;
 
   span {
     text-decoration: none;
@@ -109,13 +105,6 @@
     line-height: 21px;
     text-align: left;
     color: #334155;
-    margin-top: 30px;
-    margin-bottom: 6px;
-  }
-
-  hr {
-    margin: 0;
-    margin-bottom: 24px;
   }
 
   .aboutCarts {
@@ -314,47 +303,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .v1 {
-    width: 100%;
-  }
-
-  .addCart {
-    width: 100%;
-  }
-
-  .leftCart {
-    width: 100%;
-    margin-left: 45px;
-
-    .aboutCarts {
-      width: 100%;
-
-      .aboutCart {
-        width: 100%;
-      }
-    }
-  }
-
-  .cartOrder {
-    width: 30%;
-    margin-left: 50px;
-    margin-right: 50px;
-
-    .order-details {
-      width: 100%;
-
-      .details-text {
-        width: 100%;
-        padding: 16px;
-      }
-    }
-
-    button {
-      width: 100%;
-    }
-  }
-}
 
 @media (max-width: 980px) {
   .leftCart .aboutCarts .aboutCart img {
