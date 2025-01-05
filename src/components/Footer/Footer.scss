@@ -156,6 +156,10 @@
     padding: 20px 10px;
     display: grid;
   }
+  .container {
+    width: 100%;
+    max-width: 300px;
+  }
 
   .info-bottom p {
     display: none;
@@ -268,5 +272,9 @@
   .microsoft {
     width: 30px;
     height: 30px;
+  }
+  .container {
+    width: 100%;
+    max-width: 300px;
   }
 }
