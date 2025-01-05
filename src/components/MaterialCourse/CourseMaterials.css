@@ -34,7 +34,6 @@
 }
 .document {
   font-size: 6px;
-  margin-left: -110px;
 }
 .mini__img {
   display: flex;
@@ -50,18 +49,12 @@
 .mini__img button:hover {
   background-color: white;
 }
-.ArrowDown {
-  margin-left: -230px;
-}
 
 .mini__img h3 {
   cursor: pointer;
   font-weight: 600;
   font-size: 15px;
   margin-top: 5px;
-}
-.mini__img p {
-  margin-left: -110px;
 }
 
 @media screen and (max-width: 432px) {
@@ -72,6 +65,7 @@
   }
   .materials h2 {
     width: 30px;
+    margin-top: 223px;
   }
   .mini__img h3 {
     font-size: 12px;

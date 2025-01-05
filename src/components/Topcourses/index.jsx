@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import "./Topcourses.scss";
+import "./Topcourse.scss";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { topcourse } from "../../data/Topcourse";
-import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
+import {
+  IoIosArrowDropleftCircle,
+  IoIosArrowDroprightCircle,
+} from "react-icons/io";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
@@ -45,7 +48,13 @@ function TopCourses() {
       (cartItem) => cartItem.id === item.id
     );
     if (!isAlreadyInCart) {
-      addToCart(item);
+      addToCart({
+        id: item.id,
+        name: item.title,
+        author: item.author,
+        price: item.price,
+        img: item.image, // Добавьте изображение с ключом "img"
+      });
     }
   };
 
@@ -79,8 +88,8 @@ function TopCourses() {
                       <p className="ratings">({course.ratings} Ratings)</p>
                     </div>
                     <p className="ratings2">
-                      {course.totalHours} Total Hours. {course.lectures} Lectures.{" "}
-                      {course.level}
+                      {course.totalHours} Total Hours. {course.lectures}{" "}
+                      Lectures. {course.level}
                     </p>
                     <p className="price1">{course.price}</p>
                   </div>

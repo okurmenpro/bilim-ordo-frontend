@@ -32,52 +32,52 @@ function Index({ name, count }) {
 
     return (
         <div>
-            <div className='my-courses'>
+            <div className='my-courses1'>
                 <h1>{name}
                     {count > 0 && (
                         <span>  ({count})</span>
                     )}</h1>
-                <div className='my-courses-top'>
-                    <div className="my-course-search">
+                <div className='my-courses-top1'>
+                    <div className="my-course-search1">
                         <input
                             placeholder="Search User"
                             aria-label="Search"
                             aria-describedby="basic-addon2"
                         />
-                        <button className="button-search">
-                            <GrSearch className="search-icon" />
+                        <button className="button-search1">
+                            <GrSearch className="search-icon1" />
                         </button>
                     </div>
-                    <div className="course-search-right">
-                        <div className="sort-by">
+                    <div className="course-search-right1">
+                        <div className="sort-by1">
                             <p>Sort By</p>
                             <button>
                                 <span>Relevance</span>
-                                <IoIosArrowDown className='icon' />
+                                <IoIosArrowDown className='icon1' />
                             </button>
                         </div>
-                        <div className="left-raitng">
-                            <button onClick={toggleModal} className="button-filter">
-                                <BsFilter className='icon' />   Filter
+                        <div className="left-raitng1">
+                            <button onClick={toggleModal} className="button-filter1">
+                                <BsFilter className='icon1' />   Filter
                             </button>
                             {isModalVisible && (
-                                <div className="modal-overlay active">
-                                    <div className="modal-content">
-                                        <button className="close-btn" onClick={toggleModal}>
+                                <div className="modal-overlay active1">
+                                    <div className="modal-content1">
+                                        <button className="close-btn1" onClick={toggleModal}>
                                             <CloseIcon size={20} />
                                         </button>
-                                        <div className="star-rating">
-                                            <div className="filter-rating">
+                                        <div className="star-rating1">
+                                            <div className="filter-rating1">
                                                 <p>Rating</p>
                                                 <img onClick={toggleStarVisibility} src={chevron} alt="" />
                                             </div>
                                             {isStarVisible && (
                                                 <div>
                                                     {[...Array(5)].map((_, rowIndex) => (
-                                                        <div className="star-row" key={rowIndex}>
+                                                        <div className="star-row1" key={rowIndex}>
                                                             {[...Array(5)].map((_, index) => (
                                                                 <Star
-                                                                    className={`icon-star ${index < 5 - rowIndex ? "star-yellow" : ""
+                                                                    className={`icon-star1 ${index < 5 - rowIndex ? "star-yellow1" : ""
                                                                         }`}
                                                                     key={index + rowIndex * 5}
                                                                 />
@@ -87,8 +87,8 @@ function Index({ name, count }) {
                                                 </div>
                                             )}
                                         </div>
-                                        <div className="checkbox-age">
-                                            <div className="filter-age">
+                                        <div className="checkbox-age1">
+                                            <div className="filter-age1">
                                                 <p>Number of Chapters</p>
                                                 <img
                                                     onClick={toggleCheckboxVisibility}
@@ -98,35 +98,35 @@ function Index({ name, count }) {
                                             </div>
                                             {isCheckboxVisible && (
                                                 <div>
-                                                    <div className="checkbox-input1">
-                                                        <input type="checkbox" />
+                                                    <div className="checkbox-input11">
+                                                        <input type="checkbox1" />
                                                         <p>1-10</p>
                                                     </div>
-                                                    <div className="checkbox-input">
-                                                        <input type="checkbox" />
+                                                    <div className="checkbox-input1">
+                                                        <input type="checkbox1" />
                                                         <p>10-15</p>
                                                     </div>
-                                                    <div className="checkbox-input">
-                                                        <input type="checkbox" />
+                                                    <div className="checkbox-input1">
+                                                        <input type="checkbox1" />
                                                         <p>15-20</p>
                                                     </div>
-                                                    <div className="checkbox-input">
-                                                        <input type="checkbox" />
+                                                    <div className="checkbox-input1">
+                                                        <input type="checkbox1" />
                                                         <p>20-25</p>
                                                     </div>
                                                 </div>
                                             )}
-                                            <div onClick={filterchevron} className="filter-label">
+                                            <div onClick={filterchevron} className="filter-label1">
                                                 <p>label</p>
                                                 <img src={downchevron} alt="" />
                                             </div>
                                             {isfilterchevron && (
                                                 <div>
-                                                    <div className="filter-chevron">
+                                                    <div className="filter-chevron1">
                                                         <p>filter</p>
                                                         <img src={chevron} alt="" />
                                                     </div>
-                                                    <div className="filter-chevron">
+                                                    <div className="filter-chevron1">
                                                         <p>filter</p>
                                                         <img src={chevron} alt="" />
                                                     </div>

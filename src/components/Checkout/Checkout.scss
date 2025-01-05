@@ -61,7 +61,6 @@ container {
 
         .country-state {
           h3 {
-            /* heading 5 - subheading */
             color: rgb(15, 23, 42);
             font-family: Inter;
             font-size: 18px;
@@ -177,7 +176,7 @@ container {
           gap: 8px;
           background-color: rgb(248, 250, 252);
 
-          .design {
+          .design1 {
             width: 229px;
             height: 137px;
             text-align: left;
@@ -204,7 +203,7 @@ container {
               padding: 0;
               margin: 0;
             }
-            .user {
+            .user-checkout-rigth {
               color: rgb(15, 23, 42);
               font-family: Inter;
               font-size: 17px;
@@ -233,7 +232,6 @@ container {
           border-radius: 8px;
           width: 400px;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
         }
 
         .summary-item {
@@ -313,7 +311,7 @@ container {
       }
       .checkout-right {
         .order {
-          .btn{
+          .btn {
             width: 350px;
           }
           .order-details {
@@ -396,10 +394,8 @@ container {
       }
       .checkout-right {
         .order {
-
-          .btn{
+          .btn {
             width: 350px;
-
           }
           .order-details {
             width: 350px;
@@ -468,7 +464,7 @@ container {
       }
       .checkout-right {
         .order {
-          .btn{
+          .btn {
             width: 500px;
           }
           .order-details {
@@ -542,8 +538,7 @@ container {
       }
       .checkout-right {
         .order {
-
-          .btn{
+          .btn {
             width: 280px;
           }
 
