@@ -102,3 +102,25 @@
     margin-left: 30px;
   }
 }
+
+@media screen and (width: 540px) {
+  .div__mini {
+    width: 300px;
+    margin-left: -120px;
+    padding: 0;
+  }
+  .materials h2 {
+    width: 30px;
+    margin-top: 223px;
+  }
+  .mini__img h3 {
+    font-size: 10px;
+  }
+  .div__mini h6 {
+    font-size: 10px;
+  }
+  .materials {
+    width: 220px;
+    margin-left: 130px;
+  }
+}

@@ -13,7 +13,7 @@
 
   button:hover {
     background-color: #eff6ff;
-    border-color: #3399ff; 
+    border-color: #3399ff;
   }
 }
 
@@ -22,6 +22,21 @@
     width: 300px;
     margin-left: 10px;
     margin-top: 570px;
+    button {
+      width: 70px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+    }
+  }
+}
+@media screen and (width: 540px) {
+  .Buttons {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 640px;
     button {
       width: 70px;
       height: 30px;

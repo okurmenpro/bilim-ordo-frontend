@@ -184,3 +184,26 @@
     align-items: center;
   }
 }
+
+@media screen and (width: 540px) {
+  .Instructor img {
+    width: 40px;
+  }
+  .Programming-Exercises {
+    margin-top: -130px;
+    margin-left: 20px;
+    margin-bottom: 140px;
+    width: 300px;
+  }
+  .p {
+    width: 300px;
+  }
+  .block-left img {
+    width: 140px;
+    object-fit: cover;
+  }
+  .Instructor {
+    display: flex;
+    align-items: center;
+  }
+}

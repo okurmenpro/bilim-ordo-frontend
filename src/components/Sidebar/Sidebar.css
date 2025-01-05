@@ -146,3 +146,19 @@
     object-fit: cover;
   }
 }
+
+@media screen and (width: 540px) {
+  .Sidebar {
+    position: absolute;
+    left: -120px;
+    top: 720px;
+    width: 350px;
+    margin-left: 140px;
+    margin-bottom: 40px;
+  }
+  .video video {
+    width: 330px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}

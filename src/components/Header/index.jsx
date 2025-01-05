@@ -92,7 +92,7 @@ function Header() {
               {/* "Войти" changed to "Login" */}
             </NavLink>
             <NavLink to="/signup">
-              <button className="sign-up">Sign Up</button>{" "}
+              <button className="sign-up">SignUp</button>{" "}
               {/* "Зарегистрироваться" changed to "Sign Up" */}
             </NavLink>
           </div>

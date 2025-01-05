@@ -8,7 +8,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    color: #2D2F31;
+    color: #2d2f31;
   }
 
   .revis {
@@ -51,12 +51,12 @@
   margin-bottom: 10px;
 }
 
-.right-com {
+.right-com-con {
   button {
     padding: 10px 24px;
     border-radius: 8px;
     border: 1px solid #ccc;
-
+    margin-left: 10px;
   }
 
   button:hover {
@@ -291,7 +291,8 @@
           width: 200px;
 
           p {
-            width: 100px;
+            width: 170px;
+            font-size: 10px;
           }
         }
 
@@ -305,8 +306,6 @@
 
 @media screen and (width: 912px) {
   .teacher-profile {
-    margin-right: 170px;
-
     .revis {
       display: grid;
 
@@ -337,6 +336,47 @@
 
         .review-card {
           width: 690px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width: 540px) {
+  .teacher-profile {
+    width: 300px;
+    margin-left: 20px;
+
+    .button-View-more-Reviews {
+      margin-left: 0;
+    }
+
+    h1 {
+      width: 250px;
+    }
+
+    .revis {
+      display: grid;
+
+      .right-com {
+        padding: 0 10px;
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        width: 300px;
+
+        .review-card {
+          display: grid;
+          width: 200px;
+
+          p {
+            width: 170px;
+            font-size: 10px;
+          }
+        }
+
+        .review-content {
+          width: 100px;
         }
       }
     }
