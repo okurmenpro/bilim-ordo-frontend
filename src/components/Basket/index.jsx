@@ -11,7 +11,6 @@ function AddCart() {
   const [isUserRegistered, setIsUserRegistered] = useState(false);
   const navigate = useNavigate();
 
-  // Проверка, был ли пользователь зарегистрирован при монтировании компонента
   useEffect(() => {
     const registered = localStorage.getItem("isUserRegistered");
     if (registered === "true") {
@@ -37,11 +36,10 @@ function AddCart() {
       .toFixed(2);
   };
 
-  // Обработчик оформления заказа
   const handleOrder = () => {
     const registered = localStorage.getItem("isUserRegistered");
     if (registered !== "true" && !isModalOpen) {
-      setIsModalOpen(true); // Открываем модал, если пользователь не зарегистрирован
+      setIsModalOpen(true);
     } else {
       console.log("Оформление заказа...");
     }
@@ -91,7 +89,6 @@ function AddCart() {
                   <p>(250 rating)</p>
                 </div>
                 <div className="btns">
-                  {/* <button className="save-button">Save for later</button> */}
                   <button
                     onClick={() => removeFromCart(item.id)}
                     className="remove-button"
