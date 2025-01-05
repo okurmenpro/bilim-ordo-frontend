@@ -55,10 +55,6 @@ export const Router = createBrowserRouter([
         element: <TeachingPage />
       },
       {
-        path: "/teacherpage",
-        element: <TeacherPage />,
-      },
-      {
         path: "/checkout",
         element: <Checkout />,
       },
@@ -113,5 +109,9 @@ export const Router = createBrowserRouter([
         element:<Profilemessageteachers />
         }  
     ],
+  },
+  {
+    path: "/teacherpage",
+    element: <TeacherPage />,
   },
 ]);

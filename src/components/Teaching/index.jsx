@@ -81,7 +81,7 @@ function Teaching() {
 
   return (
     <div className="teaching">
-      <img src={Teachingimg} alt="Teaching" />
+      <img className="teach-image" src={Teachingimg} alt="Teaching" />
       <div className="infoteaching container">
         <h1 className="teachingh1">Учите у нас</h1>
         <strong className="tstong">
@@ -98,23 +98,24 @@ function Teaching() {
         <div className="button-container">
           <strong
             onClick={() => setActiveComponent(1)}
-            className="btn-first"
+            className={`btn-first ${activeComponent === 1 ? "active" : ""}`}
           >
             Создайте учёбный план
           </strong>
           <strong
             onClick={() => setActiveComponent(2)}
-            className="btn-second"
+            className={`btn-second ${activeComponent === 2 ? "active" : ""}`}
           >
             Запишите видео
           </strong>
           <strong
             onClick={() => setActiveComponent(3)}
-            className="btn-third"
+            className={`btn-third ${activeComponent === 3 ? "active" : ""}`}
           >
             Запустите свой курс
           </strong>
         </div>
+
         {renderComponent()}
       </div>
     </div>

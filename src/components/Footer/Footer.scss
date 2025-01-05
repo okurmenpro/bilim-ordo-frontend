@@ -4,7 +4,6 @@
 }
 
 .info {
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -88,11 +87,9 @@
   align-items: center;
 }
 
-/* Планшет үчүн адаптация */
 @media (min-width: 768px) and (max-width: 1024px) {
   .info {
     display: grid;
-    padding: 30px 15px;
   }
 
   .info-bottom p {
