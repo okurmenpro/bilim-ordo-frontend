@@ -169,19 +169,19 @@ const SignUp = () => {
           </div>
           <div className="fgm-sign-in">
             <button className="Facebook-google-microsoft">
-              <div>
+              <div className="sotsety">
                 <img src={facebook} alt="" />
                 <p style={{ color: "blue" }}>Facebook</p>
               </div>
             </button>
             <button className="Facebook-google-microsoft">
-              <div>
+              <div className="sotsety">
                 <img src={google} alt="" />
                 <p style={{ color: " rgb(234, 67, 53)" }}>Google</p>
               </div>
             </button>
             <button className="Facebook-google-microsoft">
-              <div>
+              <div className="sotsety">
                 <img src={microsoft} alt="" />
                 <p style={{ color: "rgb(0, 0, 0)" }}>Microsoft</p>
               </div>

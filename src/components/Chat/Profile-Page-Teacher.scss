@@ -1,71 +1,133 @@
 .chat-content {
-    text-align: left;
-    width: 900px;
-  
-    .chat-style {
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 8px;
+  text-align: left;
+  width: 1000px;
+
+  .chat-style {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
+
+.header-chat {
+  display: flex;
+  justify-content: space-between;
+
+  .chat-box1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .left-icon {
+      transform: rotate(180deg);
+      font-size: 30px;
+    }
+
+    img {
+      width: 50px;
     }
   }
-  
-  .header-chat {
-    display: flex;
-    justify-content: space-between;
-  
-    .chat-box1 {
+}
+
+.chat-main {
+  text-align: center;
+  display: grid;
+
+  h3 {
+    margin: 0 auto;
+    background: #f1f5f9;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .sms-right {
+    display: grid;
+    gap: 5px;
+    text-align: right;
+    margin-top: 20px;
+
+    p {
+      display: inline-block;
+      color: #64748b;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .chat-text {
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      display: inline-block;
+      margin: 0 0 0 auto;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 60%;
+    }
+  }
+
+
+  .sms-left {
+    margin-top: 30px;
+    text-align: left;
+    display: grid;
+    gap: 5px;
+
+    .chat-image {
       display: flex;
       align-items: center;
       gap: 10px;
-  
-      .left-icon {
-        transform: rotate(180deg);
-        font-size: 30px;
-      }
-  
+
       img {
-        width: 50px;
+        width: 35px;
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 600;
       }
     }
-  }
-  
-  .chat-main {
-    text-align: center;
-    display: grid;
-  
-    h3 {
-      margin: 0 auto;
-      background: #f1f5f9;
+
+    strong {
+      background: #dde1e6;
       color: black;
       padding: 5px 10px;
-      border-radius: 8px;
       display: inline-block;
-    }
-  
-    .sms-right {
-      display: grid;
-      gap: 5px;
-      text-align: right;
-  
-      p {
-        display: inline-block;
-        color: #64748b;
-        margin: 0;
-        padding: 0;
-      }
-  
-      .text {
-        background: black;
-        color: white;
-        padding: 5px 10px;
-        display: inline-block;
-      }
-  
-      .chat-text {
-        background-color: #64748b;
-        color: black;
-        display: inline-block;
-      }
+      margin: 0 auto 0 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 60%;
     }
   }
-  
+
+}
+
+
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 90%;
+    text-align: left;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: #3B82F6;
+    color: white;
+    border-radius: 8px;
+    border: none;
+  }
+}

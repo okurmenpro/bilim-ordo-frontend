@@ -25,11 +25,31 @@ function Chat() {
           <div className='sms-right'>
             <p>10:25am</p>
             <strong className='chat-text'>Hello</strong>
-            <strong className='text'>
+            <strong className='chat-text'>
               Just wanted to tell you that I started your course and it’s going great!!
             </strong>
           </div>
+
+          <div className='sms-left'>
+            <nav className='chat-image'>
+              <img src={Autors} alt="" />
+              <p>12:23pm</p>
+            </nav>
+            <strong>Hello! Thank you for reaching out to me. Feel free to ask any questions regarding the course, I will try to reply ASAP</strong>
+          </div>
+
+          <div className='sms-right'>
+            <p>13:25am</p>
+            <strong className='chat-text'>Yes Sure</strong>
+          </div>
+          <hr />
         </main>
+
+        <div className='chat-input'>
+          <input type="text" placeholder='Type Your Message'/>
+          <button>Send</button>
+        </div>
+
       </div>
     </section>
   );

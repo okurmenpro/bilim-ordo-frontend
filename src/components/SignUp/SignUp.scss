@@ -30,7 +30,6 @@
   margin: 0 auto;
 }
 .right-register {
-  margin-top: 170px;
   width: 692px;
   margin-right: 200px;
   .Email-input {
@@ -155,6 +154,7 @@
     gap: 16px;
     align-items: center;
     justify-content: center;
+
     .Facebook-google-microsoft {
       display: flex;
       align-items: center;
@@ -167,13 +167,19 @@
       width: 220px;
       height: 50px;
       margin-top: 12px;
-      div {
+
+      .sotsety {
         display: flex;
         gap: 8px;
         align-items: center;
+
         img {
           width: 24px;
           height: 24px;
+        }
+
+        p{
+          margin: 0;
         }
       }
     }
