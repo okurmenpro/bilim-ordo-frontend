@@ -6,6 +6,7 @@
   margin-right: 20px;
   margin-top: -20px;
 }
+
 .sortby p {
   margin-top: 15px;
 }
@@ -27,6 +28,7 @@
   width: 940px;
   height: 1094px;
 }
+
 .design {
   display: grid;
   width: 295px;
@@ -126,10 +128,12 @@
   margin-top: 6px;
   margin-bottom: 10px;
 }
+
 .left-rigth-button {
   margin-top: 24px;
   margin-bottom: 20px;
 }
+
 .left-rigth-button button {
   box-sizing: border-box;
   border: 1px solid rgb(226, 232, 240);
@@ -140,22 +144,25 @@
   border: 1px solid rgb(226, 232, 240);
   background: rgb(255, 255, 255);
 }
+
 .left {
   border-radius: 10px 0 0 10px;
 }
+
 .rigth {
   border-radius: 0 10px 10px 0;
 }
+
 .left img {
   margin-top: 9px;
 }
+
 .rigth img {
   margin-top: 9px;
 }
 
-@media (min-width: 375px) and  (max-width: 668px) {
+@media (min-width: 375px) and (max-width: 668px) {
   .topcoursescategories-container {
-    // margin-left: -400px;
     margin-top: 80px;
   }
 
@@ -171,43 +178,16 @@
     height: 350px;
     width: 490px;
   }
-  .sortby {
-    // margin-right: 120px;
-  }
+
   .left-rigth-button {
     margin-right: 150px;
   }
 }
-// @media (max-width: 433px) {
-//   .topcoursescategories-container {
-//     // margin-left: -400px;
-//     margin-top: 150px;
-//   }
 
-//   .topcourses-grid {
-//     gap: 10px;
-//     padding: 0 10px;
-//     display: flex;
-//     flex-wrap: nowrap;
-//     overflow-x: auto;
-//     gap: 16px;
-//     // margin-left: 35px;
-//     padding-bottom: 10px;
-//     height: 350px;
-//     width: 490px;
-//   }
-//   .sortby {
-//     margin-right: 120px;
-//   }
-//   .left-rigth-button {
-//     margin-right: 150px;
-//   }
-// }
 @media (min-width: 668px) and (max-width: 770px) {
   .topcoursescategories-container {
     margin-left: -400px;
     margin-top: 50px;
-    // width: 650px;
   }
 
   .topcourses-grid {
@@ -222,23 +202,27 @@
     height: 350px;
     width: 650px;
   }
+
   .sortby {
     margin-right: -10px;
   }
+
   .left-rigth-button {
     margin-right: 150px;
+
     img {
       width: 20px;
       height: 20px
     }
   }
 }
+
 @media (max-width: 822px) {
   .topcoursescategories-container {
     margin-left: -400px;
     margin-top: 50px;
     width: 650px;
-    
+
   }
 
   .topcourses-grid {
@@ -255,11 +239,14 @@
     height: 350px;
     width: 650px;
   }
+
   .sortby {
     margin-right: -10px;
   }
+
   .left-rigth-button {
     margin-right: 150px;
+
     img {
       width: 20px;
       height: 20px;
@@ -269,7 +256,6 @@
 
 @media (max-width: 914px) {
   .topcoursescategories-container {
-    // margin-left: -450px;
     margin-top: 80px;
   }
 
@@ -285,11 +271,14 @@
     height: 350px;
     width: 500px;
   }
+
   .sortby {
     margin-right: 10px;
   }
+
   .left-rigth-button {
     margin-right: 150px;
+
     img {
       width: 20px;
       height: 20px
@@ -299,7 +288,6 @@
 
 @media (max-width: 540px) {
   .topcoursescategories-container {
-    // margin-left: -50px;
     margin-top: 80px;
   }
 
@@ -316,47 +304,20 @@
     height: 350px;
     width: 750px;
   }
+
   .sortby {
     margin-right: -10px;
   }
+
   .left-rigth-button {
     margin-right: 150px;
+
     img {
       width: 20px;
       height: 20px
     }
   }
 }
-// @media (max-width: 346px) {
-//   .topcoursescategories-container {
-//     margin-left: -400px;
-//     margin-top: 50px;
-//   }
-
-//   .topcourses-grid {
-//     gap: 10px;
-//     padding: 0 10px;
-//     display: flex;
-//     flex-wrap: nowrap;
-//     scrollbar-width: none;
-//     overflow-x: auto;
-//     gap: 16px;
-//     margin-left: 35px;
-//     padding-bottom: 10px;
-//     height: 350px;
-//     width: 300px;
-//   }
-//   .sortby {
-//     margin-right: 90px;
-//   }
-//   .left-rigth-button {
-//     margin-right: 90px;
-//     img {
-//       width: 20px;
-//       height: 20px
-//     }
-//   }
-// }
 
 @media (max-width: 413px) {
   .topcoursescategories-container {
@@ -376,9 +337,11 @@
     height: 350px;
     width: 1000px;
   }
+
   .sortby {
     margin-right: 90px;
   }
+
   .left-rigth-button {
     margin-right: 90px;
   }
@@ -402,9 +365,11 @@
     height: 350px;
     width: 700px;
   }
+
   .sortby {
     margin-right: 90px;
   }
+
   .left-rigth-button {
     margin-right: 90px;
   }

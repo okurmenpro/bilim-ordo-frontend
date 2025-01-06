@@ -28,7 +28,9 @@ function TeacherProfile() {
               <div className="star-row" key={rowIndex}>
                 {[...Array(5)].map((_, index) => (
                   <Star
-                    className={`icon-star ${index < 5 - rowIndex ? "star-yellow" : ""}`}
+                    className={`icon-star ${
+                      index < 5 - rowIndex ? "star-yellow" : ""
+                    }`}
                     key={index + rowIndex * 5}
                   />
                 ))}
@@ -37,27 +39,31 @@ function TeacherProfile() {
             );
           })}
         </div>
-
-        <div className="right-com">
-          {TeacherProfileData.map((review) => (
-            <div key={review.id} className="review-card">
-
-              <div className="info-review">
-                <img src={review.img} alt={review.name} className="review-avatar" />
-                <h3>{review.name}</h3>
-              </div>
-
-              <div className="review-content">
-                <div className="top-review">
-                  <Star className="star-yellow" />
-                  <span>{review.reting}</span>
-                  <p className="review-date">{review.tema}</p>
+        <div className="right-com-con">
+          <div className="right-com">
+            {TeacherProfileData.map((review) => (
+              <div key={review.id} className="review-card">
+                <div className="info-review">
+                  <img
+                    src={review.img}
+                    alt={review.name}
+                    className="review-avatar"
+                  />
+                  <h3>{review.name}</h3>
                 </div>
 
-                <p>{review.text}</p>
+                <div className="review-content">
+                  <div className="top-review">
+                    <Star className="star-yellow" />
+                    <span>{review.reting}</span>
+                    <p className="review-date">{review.tema}</p>
+                  </div>
+
+                  <p>{review.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <button>View more Reviews</button>
         </div>
       </div>

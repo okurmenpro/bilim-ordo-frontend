@@ -15,6 +15,7 @@
   width: 100%;
   border-radius: 12px;
 }
+
 @media screen and (max-width: 377px) {
   .boxes-comlete-page {
     margin-left: 3px;
@@ -56,16 +57,19 @@
     margin-left: 40px;
   }
 }
+
 @media screen and (width: 1024px) {
   .boxes-comlete-page {
     margin-left: 23px;
   }
 }
+
 @media screen and (width: 912px) {
   .boxes-comlete-page {
     margin-left: 40px;
   }
 }
+
 @media screen and (width: 853px) {
   .boxes-comlete-page {
     margin-left: 40px;

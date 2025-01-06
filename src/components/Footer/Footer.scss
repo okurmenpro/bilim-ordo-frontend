@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 10px 75px;
+  padding: 50px 0 75px;
   margin: auto;
 }
 
@@ -90,6 +90,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .info {
     display: grid;
+    padding: 30px 0;
   }
 
   .info-bottom p {
@@ -125,7 +126,6 @@
 
   .categori ul li a {
     color: #cbd5e1;
-    /* Түс кодун туура жаздым */
     font-size: 18px;
   }
 
@@ -147,10 +147,9 @@
   }
 }
 
-/* Адаптация планшет жана мобилдик түзмөктөр үчүн */
 @media (max-width: 480px) {
   .info {
-    padding: 20px 10px;
+    padding: 20px 0;
     display: grid;
   }
 
@@ -210,7 +209,7 @@
 
 @media screen and (width: 540px) {
   .info {
-    padding: 20px 10px;
+    padding: 20px 0;
     display: grid;
   }
 
