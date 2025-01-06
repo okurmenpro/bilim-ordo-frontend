@@ -47,7 +47,7 @@ function AddCart() {
 
   if (cartItems.length === 0) {
     return (
-      <div className="v1">
+      <div className="v1 container">
         <h1 className="cart1">Shopping Cart</h1>
         <h5 className="cart2">0 Course in cart</h5>
         <div className="v2">
@@ -67,11 +67,10 @@ function AddCart() {
   }
 
   return (
-    <section className="addCart">
-      <div className="leftCart">
+    <section className="addCart ">
+      <div className="leftCart container">
         <h1>Shopping Cart</h1>
         <p className="countPro">{cartItems.length} Course in cart</p>
-        <hr />
         <div className="aboutCarts">
           {cartItems.map((item, index) => (
             <div className="aboutCart" key={index}>

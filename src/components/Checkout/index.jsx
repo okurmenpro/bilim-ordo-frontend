@@ -4,13 +4,33 @@ import { FaChevronRight } from "react-icons/fa6";
 import visa from "../../assets/svg/visa.svg";
 import paypal from "../../assets/svg/paypal.svg";
 import product from "../../assets/images/product.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Checkout() {
   const [selectedPayment, setSelectedPayment] = useState("");
+  const [country, setCountry] = useState("");
+  const [state, setState] = useState("");
+  const [cardName, setCardName] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [expiryDate, setExpiryDate] = useState("");
+
+  const navigate = useNavigate();
 
   const handleRadioChange = (paymentMethod) => {
     setSelectedPayment(paymentMethod);
+  };
+
+  const handleSubmit = () => {
+    if (
+      !country ||
+      !state ||
+      (selectedPayment === "credit-card" &&
+        (!cardName || !cardNumber || !expiryDate))
+    ) {
+      alert("Заполните все поля");
+    } else {
+      navigate("/order");
+    }
   };
 
   const price = 300.0;
@@ -35,11 +55,21 @@ function Checkout() {
           <div className="country">
             <div className="country-state">
               <h3>Country</h3>
-              <input type="text" placeholder="Enter Country" />
+              <input
+                type="text"
+                placeholder="Enter Country"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+              />
             </div>
             <div className="country-state">
               <h3>State/Union Territory</h3>
-              <input type="text" placeholder="Enter State" />
+              <input
+                type="text"
+                placeholder="Enter State"
+                value={state}
+                onChange={(e) => setState(e.target.value)}
+              />
             </div>
           </div>
           <h3>Payment Method</h3>
@@ -58,11 +88,26 @@ function Checkout() {
               {selectedPayment === "credit-card" && (
                 <div className="name-input">
                   <span>Name of Card</span>
-                  <input type="text" placeholder="Name of Card" />
+                  <input
+                    type="text"
+                    placeholder="Name of Card"
+                    value={cardName}
+                    onChange={(e) => setCardName(e.target.value)}
+                  />
                   <span>Card Number</span>
-                  <input type="text" placeholder="Card Number" />
+                  <input
+                    type="text"
+                    placeholder="Card Number"
+                    value={cardNumber}
+                    onChange={(e) => setCardNumber(e.target.value)}
+                  />
                   <span>Expiry Date</span>
-                  <input type="text" placeholder="Expiry Date" />
+                  <input
+                    type="text"
+                    placeholder="Expiry Date"
+                    value={expiryDate}
+                    onChange={(e) => setExpiryDate(e.target.value)}
+                  />
                 </div>
               )}
             </div>
@@ -80,11 +125,26 @@ function Checkout() {
               {selectedPayment === "paypal" && (
                 <div className="name-input">
                   <span>Name of Card</span>
-                  <input type="text" placeholder="Name of Card" />
+                  <input
+                    type="text"
+                    placeholder="Name of Card"
+                    value={cardName}
+                    onChange={(e) => setCardName(e.target.value)}
+                  />
                   <span>Card Number</span>
-                  <input type="text" placeholder="Card Number" />
+                  <input
+                    type="text"
+                    placeholder="Card Number"
+                    value={cardNumber}
+                    onChange={(e) => setCardNumber(e.target.value)}
+                  />
                   <span>Expiry Date</span>
-                  <input type="text" placeholder="Expiry Date" />
+                  <input
+                    type="text"
+                    placeholder="Expiry Date"
+                    value={expiryDate}
+                    onChange={(e) => setExpiryDate(e.target.value)}
+                  />
                 </div>
               )}
             </div>
@@ -124,9 +184,9 @@ function Checkout() {
                 <span>${total.toFixed(2)}</span>
               </div>
             </div>
-            <NavLink to="/order">
-              <button className="btn">Label</button>
-            </NavLink>
+            <button className="btn" onClick={handleSubmit}>
+              buy
+            </button>
           </div>
         </div>
       </div>

@@ -45,10 +45,12 @@ const SignUp = () => {
       const response = await axios.post(
         "http://35.229.249.53/api/register/",
         {
+          // first_name: formData.firstName,
+          // last_name: formData.lastName,
           username: formData.username,
           email: formData.email,
-          password: formData.password,  // password1, password2 дегендин ордуна password
-          confirmPassword: formData.confirmPassword,  // password2 деп жазбай
+          password1: formData.password,
+          password2: formData.confirmPassword,
         },
         {
           headers: {
@@ -56,13 +58,12 @@ const SignUp = () => {
           },
         }
       );
-      
       console.log("Registration successful:", response.data);
       localStorage.setItem("user", JSON.stringify(formData));
       Navigate("/");
       window.location.reload();
     } catch (err) {
-      console.log(
+      console.error(
         "Registration error:",
         err.response ? err.response.data : err
       );

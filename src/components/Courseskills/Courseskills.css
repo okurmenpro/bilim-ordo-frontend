@@ -36,7 +36,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 @media screen and (width: 820px) {
@@ -45,7 +45,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 @media screen and (width: 1024px) {
@@ -54,14 +54,13 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (max-width: 432px) {
   .skill {
     width: 300px;
-    margin-top: -60px;
     margin-left: 10px;
   }
   .Course-skills {
@@ -71,7 +70,7 @@
     border-top: none;
   }
   .skills {
-    margin-top: -90px;
+    margin-top: -40px;
   }
   .skills p {
     width: 200px;
@@ -91,5 +90,29 @@
     margin-top: 10px;
     width: 700px;
     border-top: none;
+  }
+}
+@media screen and (width: 540px) {
+  .skill {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .Course-skills {
+    margin-top: 10px;
+    width: 300px;
+    font-size: 15px;
+    border-top: none;
+  }
+  .skills {
+    margin-top: -30px;
+  }
+  .skills p {
+    width: 200px;
+    font-size: 9px;
+  }
+  .skills h1 {
+    width: 100px;
+    font-size: 10px;
   }
 }

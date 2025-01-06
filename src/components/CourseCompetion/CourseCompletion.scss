@@ -1,11 +1,9 @@
-// Variables
 $primary-color: #ffffff;
 $secondary-color: #f0f0f0;
 $highlight-color: #007bff;
 $text-color: #333;
 $time-color: #888;
 
-// Main container
 .course-completion-1 {
   border-radius: 16px;
   position: absolute;
@@ -13,23 +11,23 @@ $time-color: #888;
   left: 990px;
   top: 161px;
   background-color: $primary-color;
-  padding-bottom: 10px; // Убираем отступы
+  padding-bottom: 10px; 
   background-color: #e2e8f0;
-  width: 400px; // Ширина 100% для основного контейнера
+  width: 400px; 
 
   .section-container {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0; // Убираем отступы
+    padding: 0; 
     bottom: -22px;
   }
 
   .section {
-    width: 100%; // Ширина 100% для каждого контейнера
-    margin: 0; // Убираем отступы между контейнерами
-    padding: 0; // Убираем паддинги внутри контейнера
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
 
     .section-header {
       background-color: #e2e8f0;
@@ -60,7 +58,7 @@ $time-color: #888;
     }
     .section-items {
       padding: 0;
-      margin: 0; // Убираем внешние отступы
+      margin: 0; 
       width: 100%;
       padding-bottom: 60px;
       display: flex;
@@ -68,28 +66,28 @@ $time-color: #888;
 
       .item {
         display: flex !important;
-        justify-content: flex-start; // Элементы выравниваются слева направо
-        align-items: center !important; // Выравниваем элементы по вертикали
+        justify-content: flex-start; 
+        align-items: center !important; 
         height: 60px;
-        width: 100%; // Растягиваем элемент на всю ширину родителя
-        padding: 0 20px; // Добавляем боковые отступы для аккуратности
+        width: 100%; 
+        padding: 0 20px; 
 
         input[type="checkbox"] {
-          margin-right: 15px; // Отступ между чекбоксом и текстом
+          margin-right: 15px; 
           height: 20px;
         }
 
         label {
-          flex-grow: 1; // Текст занимает оставшееся место
+          flex-grow: 1;
           color: $text-color;
           font-size: 16px;
-          text-align: left; // Выравниваем текст по левому краю
+          text-align: left; 
         }
 
         .item-info {
           display: flex;
           align-items: center;
-          margin-left: auto; // Сдвигаем информацию о времени вправо
+          margin-left: auto; 
 
           .icon-video {
             width: 10px;
