@@ -1,9 +1,10 @@
 import React from 'react'
+import AdminPage from '../Admin'
 
 function Admin() {
   return (
     <div>
-      Admin -pages
+      <AdminPage />
     </div>
   )
 }
