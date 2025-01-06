@@ -18,7 +18,8 @@ import ProfileTeachers from "./components/ProfileTeachers";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
-import Profilemessageteachers from "./components/Profile-page-teacher";
+import Chat from "./components/Chat";
+
 export const Router = createBrowserRouter([
   {
     path: "/",
@@ -93,19 +94,18 @@ export const Router = createBrowserRouter([
             path: "/profile/teachers",
             element: <ProfileTeachers />,
           },
-
           {
             path: "/profile/message",
             element: <MessagePage />
           },
-       
+          {
+            path: "/profile/message/chat",
+            element: <Chat />
+          }
+
         ],
-      
-      },
-      {
-        path:"/profilemessageteachers",
-        element:<Profilemessageteachers />
-        }  
+
+      }
     ],
   },
 ]);
