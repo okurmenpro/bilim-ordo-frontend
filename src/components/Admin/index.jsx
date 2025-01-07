@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './Admin.scss';
-import AdminLogo from "../assets/svg/logo2.svg";
-import Back from "../assets/svg/back.svg";
-import Dashboard from "../assets/svg/dashboard.svg";
-import IconCourse from "../assets/svg/courses.svg";
-import Cominication from "../assets/svg/caminication.svg";
-import Revenue from "../assets/svg/revenue.svg";
-import Setting from "../assets/svg/setting.svg";
-import UserIcon from "../assets/images/autor.png";
+import AdminLogo from "../../assets/svg/logo2.svg";
+import Back from "../../assets/svg/back.svg";
+import Dashboard from "../../assets/svg/dashboard.svg";
+import IconCourse from "../../assets/svg/courses.svg";
+import Cominication from "../../assets/svg/caminication.svg";
+import Revenue from "../../assets/svg/revenue.svg";
+import Setting from "../../assets/svg/setting.svg";
+import UserIcon from "../../assets/images/autor.png";
 import { NavLink } from 'react-router-dom';
 
-const AdminPage = () => {
+const Admin = () => {
     const [isHovered, setIsHovered] = useState(false);
     const userName = "Клиенттин аты";
 
@@ -59,4 +59,4 @@ const AdminPage = () => {
     );
 };
 
-export default AdminPage;
+export default Admin;
