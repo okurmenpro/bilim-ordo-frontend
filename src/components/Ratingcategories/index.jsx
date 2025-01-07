@@ -123,7 +123,7 @@ function Ratingcategories() {
         </div>
       </div>
 
-      <div className="topcousescategories">
+      <div className="topcousescategories2">
         <Topcoursescategories />
       </div>
     </div>

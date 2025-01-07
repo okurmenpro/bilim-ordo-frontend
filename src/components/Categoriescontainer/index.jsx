@@ -1,4 +1,5 @@
 import React from "react";
+import "./Categoriescontainer.css";
 
 function Categoriescontainer({ children, namer }) {
   return (
