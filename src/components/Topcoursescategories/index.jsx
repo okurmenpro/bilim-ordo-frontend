@@ -4,6 +4,11 @@ import { topcourse } from "../../data/Topcourse";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import left from "../../assets/svg/left.svg";
 import rigth from "../../assets/svg/rigth.svg";
+import {
+  IoIosArrowDown,
+  IoIosArrowBack,
+  IoIosArrowForward,
+} from "react-icons/io";
 
 function Topcoursescategories() {
   const [topcourses, setTopCourse] = useState(topcourse);
@@ -23,6 +28,14 @@ function Topcoursescategories() {
   return (
     <div>
       <div className="topcoursescategories-container">
+        <div className="sort-by2">
+          <p>Sort By</p>
+          <button>
+            <span>Relevance</span>
+            <IoIosArrowDown className="icon" />
+          </button>
+        </div>
+
         <div className="topcourses-grid">
           {topcourses.map((course) => (
             <div className="design" key={course.id}>
