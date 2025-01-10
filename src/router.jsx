@@ -18,7 +18,9 @@ import ProfileTeachers from "./components/ProfileTeachers";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
+import TeachingPage from "./pages/Teaching";
 import Chat from "./components/Chat";
+import Admin from "./pages/Admin"
 
 export const Router = createBrowserRouter([
   {
@@ -50,8 +52,8 @@ export const Router = createBrowserRouter([
         element: <MyCourses />,
       },
       {
-        path: "/teacherpage",
-        element: <TeacherPage />,
+        path: "/teaching",
+        element: <TeachingPage />
       },
       {
         path: "/checkout",
@@ -108,4 +110,12 @@ export const Router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "/teacherpage",
+    element: <TeacherPage />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />
+  }
 ]);

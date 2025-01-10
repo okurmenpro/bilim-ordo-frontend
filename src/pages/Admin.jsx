@@ -1,11 +1,12 @@
 import React from 'react'
+import Admin from '../components/Admin'
 
-function Admin() {
+function AdminPage() {
   return (
     <div>
-      Admin -pages
+      <Admin />
     </div>
   )
 }
 
-export default Admin
+export default AdminPage

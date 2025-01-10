@@ -72,7 +72,7 @@ function TopCourses() {
 
           return (
             <div className="design" key={course.id}>
-              <Link to="course">
+              <Link to="/course">
                 <img src={course.image} alt={course.title} />
                 <div className="design1">
                   <h2>{course.title}</h2>
