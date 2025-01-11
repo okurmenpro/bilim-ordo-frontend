@@ -9,8 +9,7 @@ function Categoriespage() {
     <div>
       <div style={{ display: "flex" }}>
         <Ratingcategories />
-        <div style={{ marginTop: "240px", marginLeft: "50px" }}>
-        </div>
+        <div style={{ marginTop: "240px", marginLeft: "50px" }}></div>
       </div>
       <div>
         <div style={{ marginTop: "80px" }}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Instructor from '../components/Instructor'
 
-function Admin() {
+function AdminPage() {
   return (
     <div>
       <Instructor />
@@ -9,4 +9,4 @@ function Admin() {
   )
 }
 
-export default Admin
+export default AdminPage

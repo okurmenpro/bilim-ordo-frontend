@@ -67,7 +67,7 @@ function Header() {
           />
         </div>
         <div className="teacher-page">
-          <NavLink to={"/teacherpage"}>
+          <NavLink to={"/teaching"}>
             <p>Teach on Bilim Ordo</p>
           </NavLink>
         </div>

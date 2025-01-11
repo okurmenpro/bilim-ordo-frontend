@@ -310,7 +310,7 @@
   .topcourses {
     margin: 0 auto;
     position: relative;
-    margin-right: 120px;
+    margin-right: 90px;
     width: 700px;
 
     .topcoursesh2 {
@@ -367,7 +367,7 @@
   .topcourses {
     margin: 0 auto;
     position: relative;
-    width: 540px;
+    width: 500px;
     .topcoursesh2 {
       display: flex;
       gap: 300px;
@@ -382,8 +382,8 @@
       text-overflow: ellipsis;
       scrollbar-color: transparent transparent;
       padding: 10px;
-      width: 500px;
-      margin-left: 20px;
+      width: 450px;
+      margin: 0;
     }
     .scroll-button2 {
       .icon-scroll {

@@ -18,6 +18,7 @@ import ProfileTeachers from "./components/ProfileTeachers";
 import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
+import TeachingPage from "./pages/Teaching";
 import Chat from "./components/Chat";
 import TeachLayout from "./components/TeachLayout";
 
@@ -51,8 +52,8 @@ export const Router = createBrowserRouter([
         element: <MyCourses />,
       },
       {
-        path: "/teacherpage",
-        element: <TeacherPage />,
+        path: "/teaching",
+        element: <TeachingPage />
       },
       {
         path: "/checkout",
