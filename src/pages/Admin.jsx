@@ -1,9 +1,10 @@
 import React from 'react'
+import Instructor from '../components/Instructor'
 
 function Admin() {
   return (
     <div>
-      Admin -pages
+      <Instructor />
     </div>
   )
 }

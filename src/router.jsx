@@ -19,6 +19,7 @@ import UploadingPhoto from "./components/Uploadingphoto";
 import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
 import Chat from "./components/Chat";
+import TeachLayout from "./components/TeachLayout";
 
 export const Router = createBrowserRouter([
   {
@@ -108,4 +109,14 @@ export const Router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "/instructor/course",
+    element: <TeachLayout />,
+    children: [
+      {
+        path: "/instructor/course",
+        element: <TeacherPage />
+      }
+    ]
+  }
 ]);
