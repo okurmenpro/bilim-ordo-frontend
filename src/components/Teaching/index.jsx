@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Teach.scss";
-import Teachingimg from "../../assets/images/teaching.png";
+import Teachingimg from "../../assets/images/teaching1.png";
 import SignUpModal from "../SignUpModal";
-import ImageOne from "../../assets/images/teaching1.png";
-import ImageTwo from "../../assets/images/teaching2.png";
-import ImageThree from "../../assets/images/teaching3.png";
+import ImageOne from "../../assets/images/teaching2.png";
+import ImageTwo from "../../assets/images/teaching3.png";
+import ImageThree from "../../assets/images/teaching4.png";
 
 function Teaching() {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +18,6 @@ function Teaching() {
     setShowModal(false);
   };
 
-  // Биринчи компонент
   const ComponentOne = () => (
     <div className="component-container">
       <div className="component-text first">
@@ -33,7 +32,6 @@ function Teaching() {
     </div>
   );
 
-  // Экинчи компонент
   const ComponentTwo = () => (
     <div className="component-container">
       <div className="component-text second">
@@ -48,7 +46,6 @@ function Teaching() {
     </div>
   );
 
-  // Үчүнчү компонент
   const ComponentThree = () => (
     <div className="component-container">
       <div className="component-text third">
@@ -65,7 +62,6 @@ function Teaching() {
     </div>
   );
 
-  // Компонентти көрсөтүү функциясы
   const renderComponent = () => {
     switch (activeComponent) {
       case 1:
