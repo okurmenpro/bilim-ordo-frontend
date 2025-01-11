@@ -16,17 +16,14 @@ function SignUpModal({ onClose }) {
   const [isChecked, setIsChecked] = useState(false);
   const [error, setError] = useState("");
 
-  // Форма талааларынын маанисин жаңыртуу
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   }
 
-  // Форманы жиберүү
   async function handleSignup() {
     setError("");
 
-    // Текшерүүлөр
     if (!formData.fullName) {
       setError("Full name is required.");
       return;
@@ -49,7 +46,6 @@ function SignUpModal({ onClose }) {
     }
 
     try {
-      // Серверге POST запрос жөнөтүү
       const response = await axios.post("http://35.229.249.53/api/register/", {
         full_name: formData.fullName,
         username: formData.username,
@@ -61,8 +57,8 @@ function SignUpModal({ onClose }) {
       console.log("Registration successful:", response.data);
       alert("Registration successful!");
       localStorage.setItem("isUserRegistered", "true");
-      login(); // Контексттен логин функциясын чакыруу
-      onClose(); // Модалды жабуу
+      login();
+      onClose(); 
     } catch (err) {
       console.error("Registration error:", err.response?.data || err);
       setError(

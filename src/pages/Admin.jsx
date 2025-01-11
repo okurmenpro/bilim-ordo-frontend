@@ -1,10 +1,10 @@
 import React from 'react'
-import Admin from '../components/Admin'
+import Instructor from '../components/Instructor'
 
 function AdminPage() {
   return (
     <div>
-      <Admin />
+      <Instructor />
     </div>
   )
 }

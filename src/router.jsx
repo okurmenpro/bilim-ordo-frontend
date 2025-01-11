@@ -20,7 +20,7 @@ import OrderComplete from "./pages/OrderComplete";
 import MessagePage from "./components/Message";
 import TeachingPage from "./pages/Teaching";
 import Chat from "./components/Chat";
-import Admin from "./pages/Admin"
+import TeachLayout from "./components/TeachLayout";
 
 export const Router = createBrowserRouter([
   {
@@ -111,11 +111,13 @@ export const Router = createBrowserRouter([
     ],
   },
   {
-    path: "/teacherpage",
-    element: <TeacherPage />,
-  },
-  {
-    path: "/admin",
-    element: <Admin />
+    path: "/instructor/course",
+    element: <TeachLayout />,
+    children: [
+      {
+        path: "/instructor/course",
+        element: <TeacherPage />
+      }
+    ]
   }
 ]);
