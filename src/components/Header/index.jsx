@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   MdMenu,
   MdKeyboardArrowRight,
@@ -140,6 +140,9 @@ function Header() {
               Sign Up
             </NavLink>{" "}
             <div className="lines" />
+            <NavLink to="/teaching">
+              <span className="teach-burger">Teach on Bilim Ordo</span>
+            </NavLink>
             <div className="popular-categories">
               <h3>Most Popular</h3>{" "}
               <div className="category-list">
@@ -154,10 +157,8 @@ function Header() {
                 ))}
               </div>
               <div className="lines" />
-              <h3>Other Udemy Offers</h3>{" "}
-              <h4>Bilim Ordo Business</h4>
-              <h4>Download App</h4>{" "}
-              <h4>Invite Friends</h4>{" "}
+              <h3>Other Udemy Offers</h3> <h4>Bilim Ordo Business</h4>
+              <h4>Download App</h4> <h4>Invite Friends</h4>{" "}
               <h4>Help & Support</h4>{" "}
               <div className="buttonLanguage">
                 <MdLanguage className="language-icon" />
