@@ -1,114 +1,45 @@
 $font-family: "Arial", sans-serif;
-$primary-color: #4caf50; // Зеленый цвет
-$primary-color-hover: #45a049; // Темно-зеленый для ховера
-$secondary-color: #3498db; // Голубой для кнопок
-$secondary-color-hover: #2980b9; // Темно-голубой для ховера
-$background-color: #f9f9f9; // Фоновый цвет страницы
-$border-color: #ddd; // Светлый бордер
-$button-radius: 8px; // Радиус кнопок
-$input-padding: 16px; // Увеличенный отступ для инпутов
-$input-font-size: 18px; // Увеличенный размер шрифта
+$primary-color: #3498db;
+$primary-color-hover: #2980b9;
+$secondary-color: #4caf50;
+$secondary-color-hover: #45a049;
+$background-color: #f1f1f1;
+$border-color: #bbb;
+$button-radius: 12px;
+$input-padding: 14px;
+$input-font-size: 16px;
 
 .chapter-container {
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 40px;
+  padding: 30px;
   background-color: $background-color;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  .chapter-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-    .chapter-iconh2 {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      h2 {
-        padding-top: 5px;
-        font-size: 24px;
-        color: #333;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-    }
-
-    .chapter-1-button {
-      display: flex;
-      gap: 15px;
-
-      button {
-        padding: 12px 30px;
-        border-radius: $button-radius;
-        font-weight: bold;
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-
-      .Delete-red {
-        background: #e74c3c;
-        color: white;
-        border: none;
-
-        &:hover {
-          background: darken(#e74c3c, 10%);
-        }
-      }
-
-      .Nove-to-Draft-white {
-        background: #ecf0f1;
-        color: #2c3e50;
-        border: 1px solid $border-color;
-
-        &:hover {
-          background: lighten(#ecf0f1, 10%);
-        }
-      }
-
-      .add-course-blue {
-        background: $secondary-color;
-        color: white;
-        border: none;
-
-        &:hover {
-          background: $secondary-color-hover;
-        }
-      }
-    }
-  }
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 
   .chapter-2 {
     .form-container {
       background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       font-family: $font-family;
 
       h1 {
         text-align: center;
         color: #333;
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 25px;
       }
 
       form {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        max-width: 900px;
+        gap: 24px;
+        max-width: 1000px;
         margin: 0 auto;
 
         label {
-          font-size: 16px;
+          font-size: 18px;
           font-weight: bold;
           color: #333;
           text-align: left;
@@ -118,14 +49,16 @@ $input-font-size: 18px; // Увеличенный размер шрифта
         textarea {
           padding: $input-padding;
           font-size: $input-font-size;
-          border-radius: 8px;
+          font-size: 13px;
+          border-radius: 10px;
           border: 1px solid $border-color;
-          transition: border 0.3s ease;
+          transition: border 0.3s ease, box-shadow 0.3s ease;
           width: 100%;
 
           &:focus {
             border-color: $primary-color;
             outline: none;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
           }
         }
 
@@ -134,18 +67,19 @@ $input-font-size: 18px; // Увеличенный размер шрифта
         }
 
         button {
-          padding: 16px;
-          font-size: 18px;
-          background-color: $primary-color;
+          padding: 18px;
+          font-size: 20px;
+          background-color: $secondary-color;
           color: white;
           border: none;
           border-radius: $button-radius;
           cursor: pointer;
-          transition: background-color 0.3s, transform 0.3s;
+          transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 
           &:hover {
-            background-color: $primary-color-hover;
+            background-color: $secondary-color-hover;
             transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
           }
         }
 
@@ -156,7 +90,7 @@ $input-font-size: 18px; // Увеличенный размер шрифта
             width: 100%;
             max-width: 100%;
             aspect-ratio: 16 / 9;
-            border-radius: 8px;
+            border-radius: 12px;
             border: 1px solid $border-color;
             object-fit: cover;
           }
@@ -164,18 +98,33 @@ $input-font-size: 18px; // Увеличенный размер шрифта
           .remove-video {
             display: block;
             margin-top: 15px;
-            font-size: 14px;
+            font-size: 16px;
             color: white;
             background: none;
             border: none;
             cursor: pointer;
-            background-color: #4caf50;
+            background-color: $primary-color;
+            padding: 12px;
+            border-radius: 8px;
             transition: background-color 0.3s, transform 0.3s;
 
             &:hover {
-              color: darken(#e74c3c, 10%);
+              background-color: darken($primary-color, 10%);
+              transform: scale(1.1);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .chapter-container {
+    .chapter-2 {
+      .form-container {
+        h1 {
+          font-size: 20px;
         }
       }
     }

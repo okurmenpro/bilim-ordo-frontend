@@ -19,17 +19,6 @@ function Coursesinstructor() {
   return (
     <div>
       <div className="chapter-container container">
-        <div className="chapter-1">
-          <div className="chapter-iconh2">
-            <FaChevronLeft />
-            <h2>Chapter 1 - The Solid State</h2>
-          </div>
-          <div className="chapter-1-button">
-            <button className="Delete-red">Delete</button>
-            <button className="Nove-to-Draft-white">Nove to Draft</button>
-            <button className="add-course-blue">Add Course</button>
-          </div>
-        </div>
         <div className="chapter-2">
           <div className="form-container">
             <h1>Форма добавления</h1>
