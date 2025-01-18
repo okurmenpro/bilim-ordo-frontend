@@ -1,0 +1,132 @@
+$font-family: "Arial", sans-serif;
+$primary-color: #3498db;
+$primary-color-hover: #2980b9;
+$secondary-color: #4caf50;
+$secondary-color-hover: #45a049;
+$background-color: #f1f1f1;
+$border-color: #bbb;
+$button-radius: 12px;
+$input-padding: 14px;
+$input-font-size: 16px;
+
+.chapter-container {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: $background-color;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  .chapter-2 {
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: $font-family;
+
+      h1 {
+        text-align: center;
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 25px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        label {
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+          text-align: left;
+        }
+
+        input,
+        textarea {
+          padding: $input-padding;
+          font-size: $input-font-size;
+          font-size: 13px;
+          border-radius: 10px;
+          border: 1px solid $border-color;
+          transition: border 0.3s ease, box-shadow 0.3s ease;
+          width: 100%;
+
+          &:focus {
+            border-color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+          }
+        }
+
+        textarea {
+          resize: vertical;
+        }
+
+        button {
+          padding: 18px;
+          font-size: 20px;
+          background-color: $secondary-color;
+          color: white;
+          border: none;
+          border-radius: $button-radius;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+          &:hover {
+            background-color: $secondary-color-hover;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        .video-preview {
+          margin-top: 20px;
+
+          video {
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            border: 1px solid $border-color;
+            object-fit: cover;
+          }
+
+          .remove-video {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            background-color: $primary-color;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+
+            &:hover {
+              background-color: darken($primary-color, 10%);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .chapter-container {
+    .chapter-2 {
+      .form-container {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
