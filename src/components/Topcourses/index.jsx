@@ -6,7 +6,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
 function TopCourses() {
@@ -53,7 +53,7 @@ function TopCourses() {
         name: item.title,
         author: item.author,
         price: item.price,
-        img: item.image, // Добавьте изображение с ключом "img"
+        img: item.image,
       });
     }
   };
@@ -72,7 +72,7 @@ function TopCourses() {
 
           return (
             <div className="design" key={course.id}>
-              <Link to="/course">
+              <NavLink to="/course" onClick={() => window.scrollTo(0, 0)}>
                 <img src={course.image} alt={course.title} />
                 <div className="design1">
                   <h2>{course.title}</h2>
@@ -94,7 +94,7 @@ function TopCourses() {
                     <p className="price1">{course.price}</p>
                   </div>
                 </div>
-              </Link>
+              </NavLink>
               <button
                 onClick={() => handleAddToCart(course)}
                 className="add-to-cart-button"

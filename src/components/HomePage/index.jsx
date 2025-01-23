@@ -17,11 +17,15 @@ function HomePage() {
       <CardContainer name="Top Categories" text="Label"></CardContainer>
       <Categories />
       <CardContainer name="Top Courses">
-        <NavLink to="/categoriespage">Label</NavLink>
+        <NavLink to="/categoriespage" onClick={() => window.scrollTo(0, 0)}>
+          Label
+        </NavLink>
       </CardContainer>
       <Topcourses />
       <CardContainer name="Top Instructors">
-        <NavLink to="/mentor">Label</NavLink>
+        <NavLink to="/mentor" onClick={() => window.scrollTo(0, 0)}>
+          Label
+        </NavLink>
       </CardContainer>
       <Card />
       <HomeReviews />

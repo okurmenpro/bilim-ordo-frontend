@@ -11,7 +11,7 @@ import {
 } from "react-icons/io";
 
 function Card() {
-  const { cartItems } = useContext(CartContext); // addToCart removed, not needed anymore
+  const { cartItems } = useContext(CartContext);
   const [cardCourse, setCourse] = useState(course);
   const scrollRef = useRef(null);
 
@@ -56,7 +56,7 @@ function Card() {
           {cardCourse.map((item, index) => {
             return (
               <div key={index} className="cart">
-                <NavLink to="/mentor">
+                <NavLink to="/mentor" onClick={() => window.scrollTo(0, 0)}>
                   <img src={item.img} alt={item.name} />
                   <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
