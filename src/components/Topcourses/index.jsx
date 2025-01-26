@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import "./Topcourse.scss";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import { topcourse } from "../../data/Topcourse";
 import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
@@ -11,17 +9,23 @@ import { CartContext } from "../../context/CartContext";
 
 function TopCourses() {
   const scrollRef = useRef(null);
-  const [topcourses, setTopCourse] = useState(topcourse);
-
+  const [topcourses, setTopCourse] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { addToCart, cartItems } = useContext(CartContext);
 
   const getcourse = async () => {
     try {
-      const response = await fetch("/topcourse");
+      const response = await fetch("http://34.93.66.214/api/product_list/");
       const data = await response.json();
-      setTopCourse(data);
+      const updatedData = data.map((item) => ({
+        ...item,
+        image: `http://34.93.66.214${item.images}`,
+      }));
+      setTopCourse(updatedData);
+      setLoading(false);
     } catch (error) {
       console.error(error);
+      setLoading(false);
     }
   };
 
@@ -50,66 +54,54 @@ function TopCourses() {
     if (!isAlreadyInCart) {
       addToCart({
         id: item.id,
-        name: item.title,
-        author: item.author,
+        name: item.name,
         price: item.price,
-        img: item.image, // Добавьте изображение с ключом "img"
+        img: item.image,
       });
     }
   };
 
   return (
     <div className="topcourses container">
-      <div className="beginners" ref={scrollRef}>
-        <button onClick={scrollLeft} className="scroll-button2 left9">
-          <IoIosArrowDropleftCircle size={30} className="icon-scroll" />
-        </button>
+      {loading ? (
+        <p>Загрузка...</p>
+      ) : (
+        <div className="beginners" ref={scrollRef}>
+          <button onClick={scrollLeft} className="scroll-button2 left9">
+            <IoIosArrowDropleftCircle size={30} className="icon-scroll" />
+          </button>
 
-        {topcourses.map((course) => {
-          const isInCart = cartItems.some(
-            (cartItem) => cartItem.id === course.id
-          );
+          {topcourses.map((course) => {
+            const isInCart = cartItems.some(
+              (cartItem) => cartItem.id === course.id
+            );
 
-          return (
-            <div className="design" key={course.id}>
-              <Link to="/course">
-                <img src={course.image} alt={course.title} />
-                <div className="design1">
-                  <h2>{course.title}</h2>
-                  <h3>{course.author}</h3>
-                  <div className="design-icon">
-                    <div className="line-ratings">
-                      {[...Array(5)].map((_, index) => (
-                        <MdOutlineStarPurple500
-                          className="linestart"
-                          key={index}
-                        />
-                      ))}
-                      <p className="ratings">({course.ratings} Ratings)</p>
-                    </div>
-                    <p className="ratings2">
-                      {course.totalHours} Total Hours. {course.lectures}{" "}
-                      Lectures. {course.level}
-                    </p>
-                    <p className="price1">{course.price}</p>
+            return (
+              <div className="design" key={course.id}>
+                <Link to={`/course/${course.id}`}>
+                  <img src={course.image} alt={course.name} />
+                  <div className="design1">
+                    <h2>{course.name}</h2>
+                    <p>{course.description}</p>
+                    <p className="price1">{course.price} $</p>
                   </div>
-                </div>
-              </Link>
-              <button
-                onClick={() => handleAddToCart(course)}
-                className="add-to-cart-button"
-                disabled={isInCart}
-              >
-                {isInCart ? "В корзине" : "Добавить в корзину"}
-              </button>
-            </div>
-          );
-        })}
+                </Link>
+                <button
+                  onClick={() => handleAddToCart(course)}
+                  className="add-to-cart-button"
+                  disabled={isInCart}
+                >
+                  {isInCart ? "В корзине" : "Добавить в корзину"}
+                </button>
+              </div>
+            );
+          })}
 
-        <button onClick={scrollRight} className="scroll-button2 right9">
-          <IoIosArrowDroprightCircle size={30} className="icon-scroll" />
-        </button>
-      </div>
+          <button onClick={scrollRight} className="scroll-button2 right9">
+            <IoIosArrowDroprightCircle size={30} className="icon-scroll" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
