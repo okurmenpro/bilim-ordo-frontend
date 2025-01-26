@@ -49,10 +49,6 @@ export const Router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "/mycourses",
-        element: <MyCourses />,
-      },
-      {
         path: "/teaching",
         element: <TeachingPage />,
       },
@@ -120,6 +116,10 @@ export const Router = createBrowserRouter([
       {
         path: "/instructor/courses",
         element: <Coursesinstructor />,
+      },
+      {
+        path: "/instructor/mycourses",
+        element: <MyCourses />,
       },
     ],
   },
