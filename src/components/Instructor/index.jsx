@@ -33,19 +33,19 @@ const Instructor = () => {
                 </div>
                 <div className="sidebar2__nav-item">
                     <img src={IconCourse} alt="Courses" className="sidebar2__nav-icon" />
-                    <NavLink to="/courses" className="sidebar2__nav-text">Courses</NavLink>
+                    <NavLink to="/instructor/course" className="sidebar2__nav-text">Courses</NavLink>
                 </div>
                 <div className="sidebar2__nav-item">
                     <img src={Cominication} alt="Communication" className="sidebar2__nav-icon" />
-                    <NavLink to="/communication" className="sidebar2__nav-text">Communication</NavLink>
+                    <NavLink to="/instructor/communication" className="sidebar2__nav-text">Communication</NavLink>
                 </div>
                 <div className="sidebar2__nav-item">
                     <img src={Revenue} alt="Revenue" className="sidebar2__nav-icon" />
-                    <NavLink to="/revenue" className="sidebar2__nav-text">Revenue</NavLink>
+                    <NavLink to="/instructor/revenue" className="sidebar2__nav-text">Revenue</NavLink>
                 </div>
                 <div className="sidebar2__nav-item">
                     <img src={Setting} alt="Setting" className="sidebar2__nav-icon" />
-                    <NavLink to="/settings" className="sidebar2__nav-text">Setting</NavLink>
+                    <NavLink to="/instructor/settings" className="sidebar2__nav-text">Setting</NavLink>
                 </div>
             </div>
 
