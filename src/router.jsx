@@ -21,6 +21,7 @@ import MessagePage from "./components/Message";
 import TeachingPage from "./pages/Teaching";
 import Chat from "./components/Chat";
 import TeachLayout from "./components/TeachLayout";
+import Coursesinstructor from "./components/Coursesinstructor";
 
 export const Router = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/teaching",
-        element: <TeachingPage />
+        element: <TeachingPage />,
       },
       {
         path: "/checkout",
@@ -98,26 +99,28 @@ export const Router = createBrowserRouter([
           },
           {
             path: "/profile/message",
-            element: <MessagePage />
+            element: <MessagePage />,
           },
           {
             path: "/profile/message/chat",
-            element: <Chat />
-          }
-
+            element: <Chat />,
+          },
         ],
-
-      }
+      },
     ],
   },
   {
-    path: "/instructor/course",
+    path: "/instructor",
     element: <TeachLayout />,
     children: [
       {
         path: "/instructor/course",
-        element: <TeacherPage />
-      }
-    ]
-  }
+        element: <TeacherPage />,
+      },
+      {
+        path: "/instructor/courses",
+        element: <Coursesinstructor />,
+      },
+    ],
+  },
 ]);
