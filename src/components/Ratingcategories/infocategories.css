@@ -167,12 +167,12 @@
 .checkbox-input {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
 }
 
 .checkbox-input input {
   margin-right: 8px;
+}
+.checkbox-input p {
   margin-top: 12px;
 }
 

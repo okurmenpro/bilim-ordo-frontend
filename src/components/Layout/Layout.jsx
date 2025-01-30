@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "../Header";
 import { Outlet } from "react-router-dom";
+import Header from "../Header";
 import Footer from "../Footer";
+import ScrollToTop from "../ScrollToTop/ScrollToTop"; // Импортируем ScrollToTop
 
 function Layout() {
   return (
@@ -13,6 +14,7 @@ function Layout() {
         minHeight: "100vh",
       }}
     >
+      <ScrollToTop /> {/* Добавляем компонент */}
       <Header />
       <Outlet />
       <Footer />

@@ -24,7 +24,7 @@ function Categories() {
       <div className="astrology">
         {topcategories.map((course) => (
           <div key={course.id} className="astrology-cours">
-            <NavLink to="/categoriespage" onClick={() => window.scrollTo(0, 0)}>
+            <NavLink to="/categoriespage">
               <img src={course.image} alt={course.title} />
             </NavLink>
             <span className="span">{course.title}</span>

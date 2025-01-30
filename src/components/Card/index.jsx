@@ -56,7 +56,7 @@ function Card() {
           {cardCourse.map((item, index) => {
             return (
               <div key={index} className="cart">
-                <NavLink to="/mentor" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink to="/mentor">
                   <img src={item.img} alt={item.name} />
                   <h2>{truncateText(item.name, 30)}</h2>
                   <h3>{item.author}</h3>
