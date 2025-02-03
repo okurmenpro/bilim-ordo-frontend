@@ -99,6 +99,7 @@
     padding: 5px 0 0 5px;
     border-top: 1px solid #555;
     margin-top: auto;
+    height: 50px;
 
     .sidebar2__user-icon {
       width: 30px;
@@ -107,18 +108,9 @@
       object-fit: cover;
     }
 
-    &.hovered {
-        .sidebar2__title {
-            opacity: 1;
-            visibility: visible;
-        }
+    .sidebar2__user-greeting {
+      color: white;
 
-        .sidebar2__nav-item {
-            .sidebar2__nav-text {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
     }
   }
 
