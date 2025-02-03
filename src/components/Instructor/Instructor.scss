@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   top: 0;
+  overflow: hidden;
 
   &.hovered {
     width: 250px;
@@ -37,7 +38,9 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
   }
 
   .sidebar2__back {
@@ -61,7 +64,7 @@
       padding: 10px;
       border-radius: 5px;
       width: 100%;
-      transition: background-color 0.3s, opacity 0.3s;
+      transition: background-color 0.3s;
 
       &:hover {
         background-color: #555;
@@ -83,15 +86,6 @@
     }
   }
 
-  &.hovered {
-    .sidebar2__nav-item {
-      .sidebar2__nav-text {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-
   &__footer {
     display: flex;
     align-items: center;
@@ -109,54 +103,28 @@
     }
 
     .sidebar2__user-greeting {
+      opacity: 0;
+      visibility: hidden;
+      font-size: 16px;
       color: white;
-
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: opacity 0.3s, visibility 0.3s;
     }
   }
 
+  // Ховер болгондо тексттер көрүнөт
   &.hovered {
-    &__footer {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 5px 0 0 5px;
-        border-top: 1px solid #555;
-        margin-top: auto;
-
-        .sidebar2__user-icon {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .sidebar2__user-greeting {
-            opacity: 0;
-            visibility: hidden;
-            font-size: 16px;
-            color: white;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            transition: opacity 0.3s, visibility 0.3s;
-        }
-      .sidebar2__user-greeting {
-        opacity: 1;
-        visibility: visible;
-      }
+    .sidebar2__title,
+    .sidebar2__nav-item .sidebar2__nav-text,
+    .sidebar2__footer .sidebar2__user-greeting {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
 
-    &.hovered {
-        &__footer {
-            .sidebar2__user-greeting {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
-}
 @media screen and (max-width: 542px) {
   .sidebar2 {
     display: none;
