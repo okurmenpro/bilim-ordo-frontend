@@ -43,7 +43,7 @@ const SignUp = () => {
     console.log("data", formData);
     try {
       const response = await axios.post(
-        "http://35.229.249.53/api/register/",
+        "http://34.93.66.214/api/register/",
         {
           username: formData.username,
           email: formData.email,
