@@ -4,28 +4,92 @@ import "./Login.scss";
 import facebook from "../../assets/svg/facebook.svg";
 import google from "../../assets/svg/googel.svg";
 import microsoft from "../../assets/svg/microsoft.svg";
+import { useNavigate } from "react-router";
+import axios from "axios";
 
 const Authorization = () => {
+  const Navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleLogin = () => {
-    if (!email) {
-      alert("Пожалуйста, введите адрес электронной почты.");
-      return;
-    }
-    if (!password) {
-      alert("Пожалуйста, введите пароль.");
-      return;
-    }
+  // const [formData, setFormData] = useState({
+  //   username: "",
+  //   password: ""
+  // });
 
-    if (email === "aidana@gmail.com" && password === "1234567") {
-      alert("Успешная авторизация!");
-    } else {
-      alert("Неправильный email или пароль.");
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    // if (formData.password !== formData.confirmPassword) {
+    //   setError("Passwords do not match.");
+    //   return;
+    // }
+
+    // setLoading(true);
+    // setError(null);
+    console.log("data", 
+    {
+      username: email,
+      password1: password,
+    });
+    try {
+      const response = await axios.post(
+        "http://34.93.66.214/api/login/",
+        {
+          username: email,
+          password: password,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Registration successful:", response.data);
+      localStorage.setItem("user", JSON.stringify({
+        username: email,
+        password: password
+      }));
+      Navigate("/");
+      window.location.reload();
+    } catch (err) {
+      console.error(
+        "Registration error:",
+        err.response ? err.response.data : err
+      );
+      // setError("Error during registration. Please try again.");
+    } finally {
+      // setLoading(false);
     }
   };
+
+  // const handleLogin = () => {
+    // if (!email) {
+    //   alert("Пожалуйста, введите адрес электронной почты.");
+    //   return;
+    // }
+    // if (!password) {
+    //   alert("Пожалуйста, введите пароль.");
+    //   return;
+    // }
+
+    // if (email === "aidana@gmail.com" && password === "1234567") {
+    //   alert("Успешная авторизация!");
+    // } else {
+    //   alert("Неправильный email или пароль.");
+    // }
+  // };
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);

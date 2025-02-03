@@ -13,14 +13,6 @@ const Instructor = () => {
   const [isHovered, setIsHovered] = useState(false);
   const userName = "Клиенттин аты";
 
-  const Navigate = useNavigate();
-
-  function logOut() {
-    localStorage.removeItem("user");
-    Navigate("/");
-    window.location.reload();
-  }
-
   return (
     <div
       className={`sidebar2 ${isHovered ? "hovered" : ""}`}
@@ -73,7 +65,7 @@ const Instructor = () => {
 
       <div className="sidebar2__footer">
         <img src={UserIcon} alt="User" className="sidebar2__user-icon" />
-        <strong className="sidebar2__user-greeting">Салам, {userName}</strong>
+        <strong className="sidebar2__user-greeting">Салам, alisher</strong>
       </div>
     </div>
   );

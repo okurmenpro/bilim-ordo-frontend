@@ -1,33 +1,80 @@
 import React, { useState } from "react";
 import "./Coursesinstructor.scss";
-import { FaChevronLeft } from "react-icons/fa";
 
 function Coursesinstructor() {
-  const [videoPreview, setVideoPreview] = useState(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    description: "",
+    price: "",
+    images: null, 
+  });
+  const [imagePreview, setImagePreview] = useState(null); 
 
-  const handleVideoChange = (event) => {
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      const videoURL = URL.createObjectURL(file);
-      setVideoPreview(videoURL);
+      setFormData({ ...formData, images: file });
+      setImagePreview(URL.createObjectURL(file));
     }
   };
 
-  const handleVideoRemove = () => {
-    setVideoPreview(null);
+  const handleImageRemove = () => {
+    setFormData({ ...formData, images: null });
+    setImagePreview(null);
   };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    const data = new FormData(); // FormData объектинин түзүлүшү
+    data.append("name", formData.name);
+    data.append("description", formData.description);
+    data.append("price", formData.price);
+    if (formData.images) {
+      data.append("images", formData.images); // Сүрөт файлды кошуу
+    }
+  
+    try {
+      const response = await fetch("http://34.93.66.214/api/add-product/", {
+        method: "POST",
+        body: data,
+      });
+  
+      if (response.ok) {
+        alert("Продукт успешно добавлен!");
+        setFormData({ name: "", description: "", price: "", images: null });
+        setImagePreview(null);
+      } else {
+        const errorData = await response.json();
+        console.error("Error details:", errorData);
+        alert("Ошибка при добавлении продукта.");
+      }
+    } catch (error) {
+      console.error("Ошибка:", error);
+      alert("Ошибка при добавлении продукта.");
+    }
+  };
+  
+
   return (
     <div>
       <div className="chapter-container container">
         <div className="chapter-2">
           <div className="form-container">
             <h1>Форма добавления</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name">Имя:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
+                onChange={handleInputChange}
                 placeholder="Введите имя"
                 required
               />
@@ -36,6 +83,8 @@ function Coursesinstructor() {
               <textarea
                 id="description"
                 name="description"
+                value={formData.description}
+                onChange={handleInputChange}
                 rows="4"
                 placeholder="Введите описание"
                 required
@@ -46,28 +95,30 @@ function Coursesinstructor() {
                 type="number"
                 id="price"
                 name="price"
+                value={formData.price}
+                onChange={handleInputChange}
                 placeholder="Введите цену"
                 required
               />
 
-              <label htmlFor="video">Видео:</label>
+              <label htmlFor="image">Сүрөт:</label>
               <input
                 type="file"
-                id="video"
-                name="video"
-                accept="video/*"
-                onChange={handleVideoChange}
+                id="image"
+                name="image"
+                accept="image/*"
+                onChange={handleImageChange}
               />
 
-              {videoPreview && (
-                <div className="video-preview">
-                  <video controls src={videoPreview} />
+              {imagePreview && (
+                <div className="image-preview">
+                  <img src={imagePreview} alt="Image Preview" />
                   <button
                     type="button"
-                    onClick={handleVideoRemove}
-                    className="remove-video"
+                    onClick={handleImageRemove}
+                    className="remove-image"
                   >
-                    Удалить видео
+                    Удалить изображение
                   </button>
                 </div>
               )}

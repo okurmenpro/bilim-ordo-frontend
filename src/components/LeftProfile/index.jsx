@@ -1,11 +1,18 @@
-import React from "react";
-import { ProfileData } from "../../data/Profile";
+import React, { useEffect, useState } from "react";
 import { IoShareSocialOutline } from "react-icons/io5";
 import "./LeftProfile.scss";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const LeftProfile = () => {
   const Navigate = useNavigate();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
   function logOut() {
     localStorage.removeItem("user");
@@ -14,15 +21,15 @@ const LeftProfile = () => {
   }
 
   return (
-    <div class="left-profile">
-      <img src={ProfileData.img} alt="" />
-      <h3>{ProfileData.name}</h3>
-      <button class="share-profile">
+    <div className="left-profile">
+      <img src="https://via.placeholder.com/150" alt="Profile Avatar" />
+      {user ? <h3>{user.username}</h3> : <h3>Guest</h3>}
+      <button className="share-profile">
         Share Profile
         <IoShareSocialOutline className="share-icon" />
       </button>
       <hr />
-      <div class="profile-btns">
+      <div className="profile-btns">
         <NavLink to="/profile/">
           <button>Profile</button>
         </NavLink>

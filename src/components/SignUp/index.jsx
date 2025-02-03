@@ -43,10 +43,8 @@ const SignUp = () => {
     console.log("data", formData);
     try {
       const response = await axios.post(
-        "http://35.229.249.53/api/register/",
+        "http://34.93.66.214/api/register/",
         {
-          // first_name: formData.firstName,
-          // last_name: formData.lastName,
           username: formData.username,
           email: formData.email,
           password1: formData.password,
@@ -59,7 +57,15 @@ const SignUp = () => {
         }
       );
       console.log("Registration successful:", response.data);
-      localStorage.setItem("user", JSON.stringify(formData));
+
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          username: formData.username,
+          email: formData.email,
+        })
+      );
+
       Navigate("/");
       window.location.reload();
     } catch (err) {
@@ -71,6 +77,7 @@ const SignUp = () => {
     } finally {
       setLoading(false);
     }
+
   };
 
   return (
