@@ -1,4 +1,8 @@
-import { createBrowserRouter } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Basket from "./pages/Basket";
@@ -8,7 +12,7 @@ import MyCourses from "./pages/Mycourses";
 import Login from "./pages/Login";
 import TeacherPage from "./pages/TeacherPage";
 import Checkout from "./pages/Checkout";
-import Categoriespage from "./pages/Categoriespage";
+import CategoriesPage from "./pages/Categoriespage";
 import OrderPage from "./pages/Order";
 import Mentor from "./pages/Mentor";
 import ProfileLayout from "./components/ProfileLayout";
@@ -23,104 +27,37 @@ import Chat from "./components/Chat";
 import TeachLayout from "./components/TeachLayout";
 import Coursesinstructor from "./components/Coursesinstructor";
 
-export const Router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/basket",
-        element: <Basket />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/course",
-        element: <Course />,
-      },
-      {
-        path: "/signup",
-        element: <SignUp />,
-      },
-      {
-        path: "/mycourses",
-        element: <MyCourses />,
-      },
-      {
-        path: "/teaching",
-        element: <TeachingPage />,
-      },
-      {
-        path: "/checkout",
-        element: <Checkout />,
-      },
-      {
-        path: "/categoriespage",
-        element: <Categoriespage />,
-      },
-      {
-        path: "/order",
-        element: <OrderPage />,
-      },
-
-      {
-        path: "/mentor",
-        element: <Mentor />,
-      },
-      {
-        path: "/orderComplete",
-        element: <OrderComplete />,
-      },
-      {
-        path: "/profile",
-        element: <ProfileLayout />,
-        children: [
-          {
-            path: "/profile/mycourse",
-            element: <ProfileMycourse />,
-          },
-          {
-            path: "/profile/reviews",
-            element: <Reviews />,
-          },
-          {
-            path: "/profile/",
-            element: <UploadingPhoto />,
-          },
-          {
-            path: "/profile/teachers",
-            element: <ProfileTeachers />,
-          },
-          {
-            path: "/profile/message",
-            element: <MessagePage />,
-          },
-          {
-            path: "/profile/message/chat",
-            element: <Chat />,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    path: "/instructor",
-    element: <TeachLayout />,
-    children: [
-      {
-        path: "/instructor/course",
-        element: <TeacherPage />,
-      },
-      {
-        path: "/instructor/courses",
-        element: <Coursesinstructor />,
-      },
-    ],
-  },
-]);
+export const AppRouter = () => {
+  return createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/basket" element={<Basket />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/mycourses" element={<MyCourses />} />
+          <Route path="/teaching" element={<TeachingPage />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/categoriespage" element={<CategoriesPage />} />
+          <Route path="/order" element={<OrderPage />} />
+          <Route path="/mentor" element={<Mentor />} />
+          <Route path="/orderComplete" element={<OrderComplete />} />
+          <Route path="/profile" element={<ProfileLayout role="profile" />}>
+            <Route path="mycourse" element={<ProfileMycourse />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="" element={<UploadingPhoto />} />
+            <Route path="teachers" element={<ProfileTeachers />} />
+            <Route path="message" element={<MessagePage />} />
+            <Route path="message/chat" element={<Chat />} />
+          </Route>
+          <Route path="/instructor" element={<TeachLayout />}>
+            <Route path="course" element={<TeacherPage />} />
+            <Route path="courses" element={<Coursesinstructor />} />
+          </Route>
+        </Route>
+      </>
+    )
+  );
+};

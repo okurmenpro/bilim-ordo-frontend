@@ -1,16 +1,14 @@
-import './App.css';
-import { RouterProvider } from 'react-router-dom';
-import { Router } from './router';
-import { CartProvider } from "./context/CartContext"; 
-
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { AppRouter } from "./router";
+import { CartProvider } from "./context/CartContext";
 
 export default function App() {
-
-
+  const router = AppRouter();
   return (
-    <CartProvider> 
+    <CartProvider>
       <div className="App">
-        <RouterProvider router={Router} />
+        <RouterProvider router={router} />
       </div>
     </CartProvider>
   );
