@@ -146,7 +146,6 @@
       }
     }
   }
-}
 
     &.hovered {
         &__footer {
@@ -157,6 +156,7 @@
         }
     }
 }
+
 @media screen and (max-width: 542px) {
   .sidebar2 {
     display: none;
