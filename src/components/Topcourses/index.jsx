@@ -4,7 +4,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
 function TopCourses() {
@@ -76,26 +76,41 @@ function TopCourses() {
               (cartItem) => cartItem.id === course.id
             );
 
-            return (
-              <div className="design" key={course.id}>
-                <Link to={`/course/${course.id}`}>
-                  <img src={course.image} alt={course.name} />
-                  <div className="design1">
-                    <h2>{course.name}</h2>
-                    <p>{course.description}</p>
-                    <p className="price1">{course.price} $</p>
+          return (
+            <div className="design" key={course.id}>
+              <NavLink to="/course">
+                <img src={course.image} alt={course.title} />
+                <div className="design1">
+                  <h2>{course.title}</h2>
+                  <h3>{course.author}</h3>
+                  <div className="design-icon">
+                    <div className="line-ratings">
+                      {[...Array(5)].map((_, index) => (
+                        <MdOutlineStarPurple500
+                          className="linestart"
+                          key={index}
+                        />
+                      ))}
+                      <p className="ratings">({course.ratings} Ratings)</p>
+                    </div>
+                    <p className="ratings2">
+                      {course.totalHours} Total Hours. {course.lectures}{" "}
+                      Lectures. {course.level}
+                    </p>
+                    <p className="price1">{course.price}</p>
                   </div>
-                </Link>
-                <button
-                  onClick={() => handleAddToCart(course)}
-                  className="add-to-cart-button"
-                  disabled={isInCart}
-                >
-                  {isInCart ? "В корзине" : "Добавить в корзину"}
-                </button>
-              </div>
-            );
-          })}
+                </div>
+              </NavLink>
+              <button
+                onClick={() => handleAddToCart(course)}
+                className="add-to-cart-button"
+                disabled={isInCart}
+              >
+                {isInCart ? "В корзине" : "Добавить в корзину"}
+              </button>
+            </div>
+          );
+        })}
 
           <button onClick={scrollRight} className="scroll-button2 right9">
             <IoIosArrowDroprightCircle size={30} className="icon-scroll" />

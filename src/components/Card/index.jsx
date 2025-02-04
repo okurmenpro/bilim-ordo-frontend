@@ -11,7 +11,7 @@ import {
 } from "react-icons/io";
 
 function Card() {
-  const { cartItems } = useContext(CartContext); // addToCart removed, not needed anymore
+  const { cartItems } = useContext(CartContext);
   const [cardCourse, setCourse] = useState(course);
   const scrollRef = useRef(null);
 
