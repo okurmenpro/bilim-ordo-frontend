@@ -122,6 +122,15 @@
       visibility: visible;
     }
   }
+
+    &.hovered {
+        &__footer {
+            .sidebar2__user-greeting {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 542px) {

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   MdMenu,
@@ -154,10 +154,8 @@ function Header() {
                 ))}
               </div>
               <div className="lines" />
-              <h3>Other Udemy Offers</h3>{" "}
-              <h4>Bilim Ordo Business</h4>
-              <h4>Download App</h4>{" "}
-              <h4>Invite Friends</h4>{" "}
+              <h3>Other Udemy Offers</h3> <h4>Bilim Ordo Business</h4>
+              <h4>Download App</h4> <h4>Invite Friends</h4>{" "}
               <h4>Help & Support</h4>{" "}
               <div className="buttonLanguage">
                 <MdLanguage className="language-icon" />
