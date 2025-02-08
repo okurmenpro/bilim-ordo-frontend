@@ -8,12 +8,13 @@ import microsoft from "../../assets/svg/microsoft.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
+import apiClient from "../../Api/ClientApi";
 
 const SignUp = () => {
   const Navigate = useNavigate();
   const [formData, setFormData] = useState({
-    // firstName: "",
-    // lastName: "",
+    firstName: "",
+    lastName: "",
     username: "",
     email: "",
     password: "",
@@ -95,7 +96,7 @@ const SignUp = () => {
             <div className="inputs">
               <h3>Full Name</h3>
               <div className="full-name-input">
-                {/* <input
+                <input
                   type="text"
                   placeholder="First Name"
                   name="firstName"
@@ -111,7 +112,6 @@ const SignUp = () => {
                   onChange={handleChange}
                   required
                 />
-                /> */}
               </div>
             </div>
 
