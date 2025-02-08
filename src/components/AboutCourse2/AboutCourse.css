@@ -164,6 +164,7 @@
   .AddFile {
     flex-wrap: wrap;
   }
+
   .official__account {
     display: flex;
     gap: 12px;
@@ -185,9 +186,11 @@
   .registration__course {
     width: 500px;
   }
+
   .input-description-aboutCourse {
     width: 400px;
   }
+
   .registration__course h2 {
     width: 400px;
   }
@@ -195,37 +198,47 @@
   .registration__course__description {
     width: 450px;
   }
+
   .aboutCourseInput {
     width: 450px;
   }
+
   .description {
     width: 450px;
     font-size: 10px;
   }
+
   .description__container {
     width: 450px;
   }
+
   .select__language {
     display: grid;
     width: 450px;
   }
+
   .registration__course__icon {
     width: 450px;
   }
+
   .language {
     width: 450px;
   }
+
   .input__name {
     font-size: 10px;
     width: 450px;
     margin-top: 10px;
   }
+
   .registration__image {
     width: 450px;
   }
+
   .CourseText p {
     font-size: 10px;
   }
+
   .AddFileBtn {
     padding: 14px 10px;
     border: none;
@@ -234,14 +247,17 @@
     cursor: pointer;
     font-size: 12px;
   }
+
   .registration__course__warning {
     width: 450px;
   }
+
   .official__account {
     width: 450px;
     display: flex;
     gap: 12px;
   }
+
   .notification {
     width: 450px;
   }
@@ -251,9 +267,11 @@
   .registration__course {
     width: 340px;
   }
+
   .input-description-aboutCourse {
     width: 300px;
   }
+
   .registration__course h2 {
     width: 300px;
   }
@@ -261,37 +279,47 @@
   .registration__course__description {
     width: 300px;
   }
+
   .aboutCourseInput {
     width: 300px;
   }
+
   .description {
     width: 300px;
     font-size: 10px;
   }
+
   .description__container {
     width: 300px;
   }
+
   .select__language {
     display: grid;
     width: 310px;
   }
+
   .registration__course__icon {
     width: 300px;
   }
+
   .language {
     width: 300px;
   }
+
   .input__name {
     font-size: 10px;
     width: 300px;
     margin-top: 10px;
   }
+
   .registration__image {
     width: 300px;
   }
+
   .CourseText p {
     font-size: 10px;
   }
+
   .AddFileBtn {
     padding: 14px 10px;
     border: none;
@@ -300,14 +328,17 @@
     cursor: pointer;
     font-size: 12px;
   }
+
   .registration__course__warning {
     width: 300px;
   }
+
   .official__account {
     width: 300px;
     display: flex;
     gap: 12px;
   }
+
   .notification {
     width: 300px;
   }
