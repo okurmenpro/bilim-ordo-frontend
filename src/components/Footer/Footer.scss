@@ -1,210 +1,209 @@
 .footer {
-    max-width: 100%;
-    background-color: #1e293b;
+  max-width: 100%;
+  background-color: #1e293b;
 }
 
 .info {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px 10px 75px;
-    margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 10px 75px;
+  margin: auto;
 }
 
 .info-bottom {
-    text-align: left;
-    padding-left: 40px;
+  text-align: left;
 }
 
 .first-letter {
-    color: purple;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 800;
+  color: purple;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .info-bottom strong {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 
 .info-bottom p {
-    color: #cbd5e1;
-    margin: 5px 0 0 0;
-    width: 420px;
+  color: #cbd5e1;
+  margin: 5px 0 0 0;
+  width: 420px;
 }
 
 .categoris {
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .categori {
-    margin-top: 10px;
+  margin-top: 10px;
+  text-align: left;
+
+  ul {
     text-align: left;
+    padding: 0;
+  }
 
-    ul {
-        text-align: left;
-        padding: 0;
-    }
-
-    a {
-        color: #cbd5e1;
-    }
+  a {
+    color: #cbd5e1;
+  }
 }
 
 .text {
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
 }
 
 .categori ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .images {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
 .icons,
 .facebok,
 .microsoft {
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 5px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .microsoft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .info {
-        display: grid;
-        padding: 30px 15px;
-    }
+  .info {
+    display: grid;
+    padding: 30px 15px;
+  }
 
-    .info-bottom p {
-        display: none;
-    }
+  .info-bottom p {
+    display: none;
+  }
 
-    .info-bottom strong {
-        font-size: 30px;
-    }
+  .info-bottom strong {
+    font-size: 30px;
+  }
 
-    .first-letter {
-        font-size: 30px;
-    }
+  .first-letter {
+    font-size: 30px;
+  }
 
-    .text {
-        font-size: 18px;
-        color: white;
-    }
+  .text {
+    font-size: 18px;
+    color: white;
+  }
 
-    .categoris {
-        display: flex;
-        justify-content: space-between;
-    }
+  .categoris {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .categori {
-        margin-top: 5px;
-        text-align: left;
-    }
+  .categori {
+    margin-top: 5px;
+    text-align: left;
+  }
 
-    .categori ul {
-        text-align: left;
-    }
+  .categori ul {
+    text-align: left;
+  }
 
-    .categori ul li a {
-        color: #cbd5e1;
-        font-size: 18px;
-    }
+  .categori ul li a {
+    color: #cbd5e1;
+    font-size: 18px;
+  }
 
-    .images {
-        margin-top: 20px;
-        position: relative;
-        left: 0;
-    }
+  .images {
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+  }
 
-    .icons,
-    .facebook,
-    .microsoft {
-        width: 35px;
-        height: 35px;
-    }
+  .icons,
+  .facebook,
+  .microsoft {
+    width: 35px;
+    height: 35px;
+  }
 
-    .info-bottom p {
-        font-size: 16px;
-    }
+  .info-bottom p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    .info {
-        padding: 20px 10px;
-        display: grid;
-    }
+  .info {
+    padding: 20px 10px;
+    display: grid;
+  }
 
-    .info-bottom p {
-        display: none;
-    }
+  .info-bottom p {
+    display: none;
+  }
 
-    .info-bottom strong {
-        font-size: 28px;
-    }
+  .info-bottom strong {
+    font-size: 28px;
+  }
 
-    .first-letter {
-        font-size: 28px;
-    }
+  .first-letter {
+    font-size: 28px;
+  }
 
-    .text {
-        font-size: 16px;
-        color: white;
-    }
+  .text {
+    font-size: 16px;
+    color: white;
+  }
 
-    .categoris {
-        display: grid;
-        width: 100%;
-    }
+  .categoris {
+    display: grid;
+    width: 100%;
+  }
 
-    .categori {
-        margin-top: 5px;
-    }
+  .categori {
+    margin-top: 5px;
+  }
 
-    .categori {
-        text-align: left;
-    }
+  .categori {
+    text-align: left;
+  }
 
-    .categori ul {
-        text-align: left;
-    }
+  .categori ul {
+    text-align: left;
+  }
 
-    .categori ul li a {
-        font-size: 16px;
-    }
+  .categori ul li a {
+    font-size: 16px;
+  }
 
-    .images {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        position: relative;
-        left: 0;
-    }
+  .images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: 0;
+  }
 
-    .icons,
-    .facebok,
-    .microsoft {
-        width: 30px;
-        height: 30px;
-    }
+  .icons,
+  .facebok,
+  .microsoft {
+    width: 30px;
+    height: 30px;
+  }
 }
