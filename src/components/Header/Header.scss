@@ -3,8 +3,7 @@
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-bottom: 100px;
-    height: 100px;
+    height: 75px;
     background-color: #fefefe;
     position: fixed;
     top: 0;
@@ -82,6 +81,7 @@
         text-align: left;
         cursor: pointer;
         color: #64748b;
+        margin: 0;
     }
 }
 
@@ -121,22 +121,11 @@
     gap: 14px;
 
     button {
-        width: 61px;
         height: 40px;
         border: 1px solid #334155;
         color: #334155;
-    }
-
-    .sign-up {
+        padding: 0px 12px 0px 12px;
         font-size: 14px;
-        padding-left: 10px;
-    }
-
-    .login {
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        padding-left: 12px;
     }
 
     button:hover {
