@@ -106,6 +106,7 @@
     .fgm-sign-in {
       display: flex;
       gap: 16px;
+      align-items: center;
       justify-content: center;
 
       .Facebook-google-microsoft {
@@ -113,67 +114,230 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
-        width: 220px;
-        height: 50px;
-        border: 1px solid #b2b5c4;
+        box-sizing: border-box;
+        border: 1px solid rgb(178, 181, 196);
         border-radius: 8px;
-        background-color: #fff;
+        background: rgb(255, 255, 255);
+        padding: 10px 16px;
+        margin-top: 12px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        min-width: 140px;
+        .sotsety {
+          display: flex;
+          align-items: center;
+          gap: 8px;
 
-        img {
-          width: 24px;
-          height: 24px;
-          object-fit: contain;
-        }
+          img {
+            width: 20px; // Сделал иконки чуть меньше для баланса
+            height: 20px;
+            display: block;
+          }
 
-        p {
-          margin: 0;
-          font-size: 14px;
-          font-weight: 500;
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1;
+            white-space: nowrap; // Защита от разрыва текста на узких экранах
+          }
         }
+      }
 
-        &:hover {
-          background-color: #f0f0f0;
-        }
+      .Facebook-google-microsoft:hover {
+        background-color: #f0f0f0;
+      }
+
+      .Facebook-google-microsoft:active {
+        background-color: #e0e0e0;
       }
     }
   }
 }
 
-
 @media screen and (max-width: 432px) {
   .authorization {
     .authorization-right {
-      margin-left: -60px;
+      width: 400px;
       input {
         width: 300px;
-        margin-right: 330px;
+      }
+
+      .password-container2 {
+        .toggle-password {
+          position: absolute;
+          left: 67%;
+          top: 25px;
+        }
+      }
+      .login-button {
+        margin-left: 30px;
+      }
+
+      .fgm-sign-in {
+        flex-direction: column;
+        gap: 12px;
+
+        .Facebook-google-microsoft {
+          width: 100%;
+          max-width: 180px;
+          .sotsety {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .authorization-left {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 376px) {
+  .authorization {
+    .authorization-right {
+      width: 400px;
+      input {
+        width: 300px;
+      }
+
+      .password-container2 {
+        .toggle-password {
+          position: absolute;
+          left: 67%;
+          top: 25px;
+        }
+      }
+      .login-button {
+        margin-left: 5px;
+      }
+
+      .fgm-sign-in {
+        flex-direction: column;
+        gap: 12px;
+
+        .Facebook-google-microsoft {
+          width: 100%;
+          max-width: 180px;
+          .sotsety {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .authorization-left {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 416px) {
+  .authorization {
+    .authorization-right {
+      width: 400px;
+      input {
+        width: 300px;
+      }
+
+      .password-container2 {
+        .toggle-password {
+          position: absolute;
+          left: 67%;
+          top: 25px;
+        }
+      }
+      .login-button {
+        margin-left: 25px;
+      }
+
+      .fgm-sign-in {
+        flex-direction: column;
+        gap: 12px;
+
+        .Facebook-google-microsoft {
+          width: 100%;
+          max-width: 180px;
+          .sotsety {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .authorization-left {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 376px) {
+  .authorization {
+    .authorization-right {
+      width: 400px;
+      input {
+        width: 300px;
+      }
+
+      .password-container2 {
+        .toggle-password {
+          position: absolute;
+          left: 67%;
+          top: 25px;
+        }
+      }
+      .login-button {
+        margin-left: 5px;
+      }
+
+      .fgm-sign-in {
+        flex-direction: column;
+        gap: 12px;
+
+        .Facebook-google-microsoft {
+          width: 100%;
+          max-width: 180px;
+          .sotsety {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .authorization-left {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  .authorization {
+    margin-top: 190px;
+    min-height: 10vh;
+    .authorization-right {
+      input {
+        width: 550px;
       }
       .sign-account {
-        margin-right: 320px;
+        margin-left: 20px;
       }
       .password-container2 {
         .toggle-password {
           position: absolute;
-          right: -130px;
+          left: 70%;
           top: 25px;
         }
       }
+      .login-button {
+        margin-left: 50px;
+      }
       .Signupwith {
         .words {
-          margin-right: 320px;
+          margin-left: 110px;
         }
       }
       .fgm-sign-in2 {
         display: flex;
         gap: 10px;
-        margin-right: 90px;
+        margin-left: 130px;
         .Facebook-google-microsoft2 {
           display: flex;
           align-items: center;
           gap: 8px;
-          width: 90px;
+          width: 150px;
           height: 50px;
           border: 1px solid #b2b5c4;
           border-radius: 8px;
@@ -181,14 +345,14 @@
           cursor: pointer;
 
           img {
-            width: 14px;
-            height: 10px;
+            width: 24px;
+            height: 20px;
             object-fit: cover;
           }
 
           p {
             margin: 0;
-            font-size: 6px;
+            font-size: 14px;
           }
 
           &:hover {
@@ -205,9 +369,11 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
   .authorization {
+    margin-top: 190px;
+    min-height: 50vh;
     .authorization-right {
       input {
-        width: 700px;
+        width: 550px;
       }
       .sign-account {
         margin-left: 20px;
@@ -215,9 +381,70 @@
       .password-container2 {
         .toggle-password {
           position: absolute;
-          right: -180px;
+          left: 80%;
           top: 25px;
         }
+      }
+
+      .Signupwith {
+        .words {
+          margin-left: 110px;
+        }
+      }
+      .fgm-sign-in2 {
+        display: flex;
+        gap: 10px;
+        margin-left: 130px;
+        .Facebook-google-microsoft2 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 150px;
+          height: 50px;
+          border: 1px solid #b2b5c4;
+          border-radius: 8px;
+          background-color: #fff;
+          cursor: pointer;
+
+          img {
+            width: 24px;
+            height: 20px;
+            object-fit: cover;
+          }
+
+          p {
+            margin: 0;
+            font-size: 14px;
+          }
+
+          &:hover {
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 914px) {
+  .authorization {
+    margin-top: 190px;
+    min-height: 50vh;
+    .authorization-right {
+      input {
+        width: 550px;
+      }
+      .sign-account {
+        margin-left: 20px;
+      }
+      .password-container2 {
+        .toggle-password {
+          position: absolute;
+          left: 70%;
+          top: 25px;
+        }
+      }
+      .login-button {
+        margin-left: 50px;
       }
       .Signupwith {
         .words {

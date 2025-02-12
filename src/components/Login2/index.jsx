@@ -38,8 +38,7 @@ const Authorization = () => {
 
     // setLoading(true);
     // setError(null);
-    console.log("data", 
-    {
+    console.log("data", {
       username: email,
       password1: password,
     });
@@ -57,10 +56,13 @@ const Authorization = () => {
         }
       );
       console.log("Registration successful:", response.data);
-      localStorage.setItem("user", JSON.stringify({
-        username: email,
-        password: password
-      }));
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          username: email,
+          password: password,
+        })
+      );
       Navigate("/");
       window.location.reload();
     } catch (err) {
@@ -75,20 +77,20 @@ const Authorization = () => {
   };
 
   // const handleLogin = () => {
-    // if (!email) {
-    //   alert("Пожалуйста, введите адрес электронной почты.");
-    //   return;
-    // }
-    // if (!password) {
-    //   alert("Пожалуйста, введите пароль.");
-    //   return;
-    // }
+  // if (!email) {
+  //   alert("Пожалуйста, введите адрес электронной почты.");
+  //   return;
+  // }
+  // if (!password) {
+  //   alert("Пожалуйста, введите пароль.");
+  //   return;
+  // }
 
-    // if (email === "aidana@gmail.com" && password === "1234567") {
-    //   alert("Успешная авторизация!");
-    // } else {
-    //   alert("Неправильный email или пароль.");
-    // }
+  // if (email === "aidana@gmail.com" && password === "1234567") {
+  //   alert("Успешная авторизация!");
+  // } else {
+  //   alert("Неправильный email или пароль.");
+  // }
   // };
 
   const togglePasswordVisibility = () => {
@@ -149,16 +151,22 @@ const Authorization = () => {
 
         <div className="fgm-sign-in">
           <button className="Facebook-google-microsoft">
-            <img src={facebook} alt="Facebook" />
-            <p style={{ color: "blue" }}>Facebook</p>
+            <div className="sotsety">
+              <img src={facebook} alt="" />
+              <p style={{ color: "blue" }}>Facebook</p>
+            </div>
           </button>
           <button className="Facebook-google-microsoft">
-            <img src={google} alt="Google" />
-            <p style={{ color: "rgb(234, 67, 53)" }}>Google</p>
+            <div className="sotsety">
+              <img src={google} alt="" />
+              <p style={{ color: " rgb(234, 67, 53)" }}>Google</p>
+            </div>
           </button>
           <button className="Facebook-google-microsoft">
-            <img src={microsoft} alt="Microsoft" />
-            <p style={{ color: "black" }}>Microsoft</p>
+            <div className="sotsety">
+              <img src={microsoft} alt="" />
+              <p style={{ color: "rgb(0, 0, 0)" }}>Microsoft</p>
+            </div>
           </button>
         </div>
       </div>
