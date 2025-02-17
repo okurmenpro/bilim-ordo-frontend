@@ -6,6 +6,7 @@ import {
 } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
 function TopCourses() {
   const scrollRef = useRef(null);
