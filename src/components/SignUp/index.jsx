@@ -8,6 +8,7 @@ import microsoft from "../../assets/svg/microsoft.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
+import apiClient from "../../Api/ClientApi";
 
 const SignUp = () => {
   const Navigate = useNavigate();
