@@ -17,7 +17,6 @@ function Banner() {
               <NavLink to={"/teaching"}>
                 <button>Start your instructor journey</button>
               </NavLink>
-
             </div>
             <div className="banner-img">
               <img src={slide.img} alt="" />

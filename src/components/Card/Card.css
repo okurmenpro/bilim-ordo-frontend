@@ -152,6 +152,7 @@
   }
   .flex99 {
     display: flex;
+    gap: 20px;
     overflow-x: auto;
     max-width: 300px;
     padding: 10px 0;

@@ -61,8 +61,6 @@
     width: 90%;
     max-width: 320px;
     flex-direction: column;
-    align-items: center;
-    margin-left: -70px;
   }
 
   .Statistic {
