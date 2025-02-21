@@ -102,13 +102,14 @@
 @media (max-width: 432px) {
   .categories {
     width: 300px;
-    margin-left: 7px;
+    // margin: 0;
+    margin-right: 180px;
     .astrology {
       display: grid;
       gap: 20px;
       width: 300px;
       margin-left: 10px;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
