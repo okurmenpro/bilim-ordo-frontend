@@ -13,17 +13,17 @@ import {
 } from "react-icons/io";
 import { BsFilter } from "react-icons/bs";
 
-function Index({ name, count }) {
+function FilterComponent({ name, count }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isStarVisible, setIsStarVisible] = useState(true);
   const [isCheckboxVisible, setIsCheckboxVisible] = useState(true);
-  const [isfilterchevron, setIsfilterchevron] = useState(true);
+  const [isFilterChevronVisible, setIsFilterChevronVisible] = useState(true);
 
   const toggleModal = () => {
     setIsModalVisible((prev) => !prev);
   };
-  const filterchevron = () => {
-    setIsfilterchevron((prev) => !prev);
+  const toggleFilterChevron = () => {
+    setIsFilterChevronVisible((prev) => !prev);
   };
 
   const toggleStarVisibility = () => {
@@ -36,42 +36,42 @@ function Index({ name, count }) {
 
   return (
     <div>
-      <div className="my-courses">
+      <div className="filter-container">
         <h1>
           {name}
           {count > 0 && <span> ({count})</span>}
         </h1>
-        <div className="my-courses-top">
-          <div className="my-course-search">
+        <div className="filter-header">
+          <div className="filter-search">
             <input
               placeholder="Search User"
               aria-label="Search"
               aria-describedby="basic-addon2"
             />
-            <button className="button-search">
+            <button className="search-button">
               <GrSearch className="search-icon" />
             </button>
           </div>
-          <div className="course-search-right">
-            <div className="sort-by">
+          <div className="filter-actions">
+            <div className="sort-actions">
               <p>Sort By</p>
               <button>
                 <span>Relevance</span>
-                <IoIosArrowDown className="icon" />
+                <IoIosArrowDown className="arrow-icon" />
               </button>
             </div>
-            <div className="left-raitng">
-              <button onClick={toggleModal} className="button-filter">
+            <div className="rating-actions">
+              <button onClick={toggleModal} className="filter-button">
                 <BsFilter className="icon" /> Filter
               </button>
               {isModalVisible && (
                 <div className="modal-overlay active">
                   <div className="modal-content">
-                    <button className="close-btn" onClick={toggleModal}>
+                    <button className="close-button" onClick={toggleModal}>
                       <CloseIcon size={20} />
                     </button>
-                    <div className="star-rating">
-                      <div className="filter-rating">
+                    <div className="rating-filter">
+                      <div className="rating-header">
                         <p>Rating</p>
                         <img
                           onClick={toggleStarVisibility}
@@ -85,8 +85,8 @@ function Index({ name, count }) {
                             <div className="star-row" key={rowIndex}>
                               {[...Array(5)].map((_, index) => (
                                 <Star
-                                  className={`icon-star ${
-                                    index < 5 - rowIndex ? "star-yellow" : ""
+                                  className={`star-icon ${
+                                    index < 5 - rowIndex ? "yellow-star" : ""
                                   }`}
                                   key={index + rowIndex * 5}
                                 />
@@ -96,8 +96,8 @@ function Index({ name, count }) {
                         </div>
                       )}
                     </div>
-                    <div className="checkbox-age">
-                      <div className="filter-age">
+                    <div className="age-checkbox">
+                      <div className="age-filter-header">
                         <p>Number of Chapters</p>
                         <img
                           onClick={toggleCheckboxVisibility}
@@ -107,35 +107,38 @@ function Index({ name, count }) {
                       </div>
                       {isCheckboxVisible && (
                         <div>
-                          <div className="checkbox-input1">
+                          <div className="checkbox-item">
                             <input type="checkbox" />
                             <p>1-10</p>
                           </div>
-                          <div className="checkbox-input">
+                          <div className="checkbox-item">
                             <input type="checkbox" />
                             <p>10-15</p>
                           </div>
-                          <div className="checkbox-input">
+                          <div className="checkbox-item">
                             <input type="checkbox" />
                             <p>15-20</p>
                           </div>
-                          <div className="checkbox-input">
+                          <div className="checkbox-item">
                             <input type="checkbox" />
                             <p>20-25</p>
                           </div>
                         </div>
                       )}
-                      <div onClick={filterchevron} className="filter-label">
+                      <div
+                        onClick={toggleFilterChevron}
+                        className="filter-label"
+                      >
                         <p>label</p>
                         <img src={downchevron} alt="" />
                       </div>
-                      {isfilterchevron && (
+                      {isFilterChevronVisible && (
                         <div>
-                          <div className="filter-chevron">
+                          <div className="filter-item">
                             <p>filter</p>
                             <img src={chevron} alt="" />
                           </div>
-                          <div className="filter-chevron">
+                          <div className="filter-item">
                             <p>filter</p>
                             <img src={chevron} alt="" />
                           </div>
@@ -153,4 +156,4 @@ function Index({ name, count }) {
   );
 }
 
-export default Index;
+export default FilterComponent;
