@@ -208,7 +208,7 @@
 
 @media (max-width: 435px) {
   .become {
-    padding-top: 60px;
+    margin: 0 10px;
     width: 320px;
     .become-top {
       display: grid;
@@ -216,6 +216,7 @@
       margin-left: 10px;
       img {
         width: 300px;
+        object-fit: cover;
       }
     }
     .become-bottom {
@@ -228,6 +229,7 @@
       img {
         width: 350px;
         height: 350px;
+        object-fit: cover;
       }
       .bottom {
         margin-left: 5px;

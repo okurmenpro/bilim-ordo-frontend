@@ -17,6 +17,7 @@
   justify-content: space-between;
   top: 0;
   overflow: hidden;
+  z-index: 9999;
 
   &.hovered {
     width: 250px;

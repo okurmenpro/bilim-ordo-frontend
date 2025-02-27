@@ -27,7 +27,7 @@
   width: 1440px;
   gap: 40px;
   margin-bottom: 90px;
-  margin: 0 auto;
+  margin: 100px auto 0 ;
 }
 .right-register {
   width: 692px;
@@ -122,6 +122,7 @@
     }
   }
   .inputs {
+    margin-top: 90px;
     h3 {
       color: rgb(15, 23, 42);
       font-family: Inter;
@@ -164,57 +165,71 @@
       border: 1px solid rgb(178, 181, 196);
       border-radius: 8px;
       background: rgb(255, 255, 255);
-      width: 220px;
-      height: 50px;
+      padding: 10px 16px;
       margin-top: 12px;
-
+      cursor: pointer;
+      min-width: 140px;
       .sotsety {
         display: flex;
-        gap: 8px;
         align-items: center;
+        gap: 8px;
 
         img {
-          width: 24px;
-          height: 24px;
+          width: 20px; // Сделал иконки чуть меньше для баланса
+          height: 20px;
+          display: block;
         }
 
-        p{
+        p {
           margin: 0;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1;
+          white-space: nowrap; // Защита от разрыва текста на узких экранах
         }
       }
     }
+
     .Facebook-google-microsoft:hover {
-      background-color: #ccc;
-      color: white;
+      background-color: #f0f0f0;
+    }
+
+    .Facebook-google-microsoft:active {
+      background-color: #e0e0e0;
     }
   }
 
   .buttom-label {
     button {
       border: none;
-      width: 183px;
-      height: 48px;
+      padding: 10px 20px;
       border-radius: 8px;
-
       background: rgb(2, 6, 23);
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 8px;
       margin-bottom: 9px;
 
       p {
         color: rgb(255, 255, 255);
-        font-family: Inter;
+        font-family: Inter, sans-serif;
         font-size: 14px;
         font-weight: 500;
-        line-height: 160%;
-        letter-spacing: 0%;
-        text-align: left;
+        line-height: 1.6;
+        margin: 0;
       }
+
       .icon-right {
         color: white;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
+
     button:hover {
       background-color: grey;
       border: none;
@@ -262,6 +277,7 @@
           }
         }
       }
+
       .Sign-up-with {
         display: none;
         .left-width {
@@ -269,8 +285,16 @@
         }
       }
       .fgm-sign-in {
+        flex-direction: column;
+        margin-right: 113px;
+        gap: 12px;
+
         .Facebook-google-microsoft {
-          width: 110px;
+          width: 100%;
+          max-width: 180px;
+          .sotsety {
+            justify-content: center;
+          }
         }
       }
     }
@@ -316,7 +340,7 @@
   }
 }
 
-@media screen and (min-width: 540px) and (max-width: 540px) {
+@media screen and (min-width: 540px) and (max-width: 542px) {
   .main-spot {
     width: 300px;
     margin-left: 20px;
@@ -334,15 +358,18 @@
       }
       .full-name-input {
         display: grid;
+        input {
+          width: 490px;
+        }
       }
       .Username-input {
         input {
-          width: 330px;
+          width: 490px;
         }
       }
       .Email-input {
         input {
-          width: 330px;
+          width: 490px;
         }
       }
       .password-container {
@@ -351,24 +378,35 @@
 
         .password-input {
           width: 300px;
+          input {
+            width: 490px;
+          }
 
           h3 {
             width: 300px;
           }
         }
       }
+
       .Sign-up-with {
-        display: none;
+        margin-right: 120px;
         .left-width {
           display: none;
         }
       }
       .fgm-sign-in {
+        flex-direction: column;
+        margin-right: 113px;
+        gap: 12px;
+
         .Facebook-google-microsoft {
-          width: 110px;
+          width: 100%;
+          max-width: 380px;
+          .sotsety {
+            justify-content: center;
+          }
         }
       }
     }
   }
 }
-
