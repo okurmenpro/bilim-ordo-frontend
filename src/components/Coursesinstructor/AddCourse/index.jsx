@@ -5,33 +5,37 @@ function AddCourse() {
     name: "",
     description: "",
     price: "",
-    images: null,
-    video: null,
-    isProgrammingRelated: "",
-    programmingLanguage: "",
+    videos: null,
+    images: null, 
   });
 
-  const [imagePreview, setImagePreview] = useState(null);
   const [videoPreview, setVideoPreview] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      setFormData({ ...formData, images: file });
-      setImagePreview(URL.createObjectURL(file));
-    }
-  };
-
   const handleVideoChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      setFormData({ ...formData, video: file });
+      if (videoPreview) {
+        URL.revokeObjectURL(videoPreview);
+      }
+      setFormData({ ...formData, videos: file });
       setVideoPreview(URL.createObjectURL(file));
+    }
+  };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      if (imagePreview) {
+        URL.revokeObjectURL(imagePreview);
+      }
+      setFormData({ ...formData, images: file });
+      setImagePreview(URL.createObjectURL(file));
     }
   };
 
@@ -40,26 +44,44 @@ function AddCourse() {
     const data = new FormData();
     data.append("name", formData.name);
     data.append("description", formData.description);
-    data.append("price", formData.price);
-    data.append("isProgrammingRelated", formData.isProgrammingRelated);
-    data.append("programmingLanguage", formData.programmingLanguage);
-    if (formData.images) data.append("images", formData.images);
-    if (formData.video) data.append("video", formData.video);
+    data.append("price", parseFloat(formData.price));
+    console.log('FormData:', data);
+
+    if (formData.videos) {
+      data.append("video", formData.videos);
+    }
+
+    if (formData.images) {
+      data.append("coverImage", formData.images); 
+    }
+
+    console.log("FormData:", data);
 
     try {
-      const response = await fetch("http://34.93.66.214/api/add-product/", {
+      const response = await fetch("http://35.223.148.229/api/add-product/", {
         method: "POST",
         body: data,
       });
+
+      const result = await response.json(); 
+      console.log("Server Response:", result);
+
       if (response.ok) {
         alert("Продукт успешно добавлен!");
-        setFormData({ name: "", description: "", price: "", images: null, video: null, isProgrammingRelated: "", programmingLanguage: "" });
-        setImagePreview(null);
+        setFormData({
+          name: "",
+          description: "",
+          price: "",
+          videos: null,
+          images: null,
+        });
         setVideoPreview(null);
+        setImagePreview(null);
       } else {
-        alert("Ошибка при добавлении продукта.");
+        alert(`Ошибка: ${result.message || "Продукт кошулган жок."}`);
       }
     } catch (error) {
+      console.error("Error:", error);
       alert("Ошибка при добавлении продукта.");
     }
   };
@@ -69,44 +91,43 @@ function AddCourse() {
       <h2>Курс кошуу</h2>
       <form onSubmit={handleSubmit}>
         <label>Имя:</label>
-        <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+          required
+        />
 
         <label>Описание:</label>
-        <textarea name="description" value={formData.description} onChange={handleInputChange} required />
+        <textarea
+          name="description"
+          value={formData.description}
+          onChange={handleInputChange}
+          required
+        />
 
         <label>Цена:</label>
-        <input type="number" name="price" value={formData.price} onChange={handleInputChange} required />
-
-        <label>Бул продукт программалоого тиешелүүбү?</label>
-        <select name="isProgrammingRelated" value={formData.isProgrammingRelated} onChange={handleInputChange} required>
-          <option value="">Тандаңыз</option>
-          <option value="yes">Разработка</option>
-          <option value="no">Бизнес</option>
-          <option value="no">ИТ и ПО</option>
-        </select>
-
-        {formData.isProgrammingRelated === "yes" && (
-          <>
-            <label>Кайсы программалоо тили?</label>
-            <select name="programmingLanguage" value={formData.programmingLanguage} onChange={handleInputChange} required>
-              <option value="">Тандаңыз</option>
-              <option value="JavaScript">JavaScript</option>
-              <option value="Python">Python</option>
-              <option value="Java">Java</option>
-              <option value="C#">C#</option>
-              <option value="C++">C++</option>
-              <option value="Go">Go</option>
-            </select>
-          </>
-        )}
-
-        <label>Сүрөт (обложка):</label>
-        <input type="file" accept="image/*" onChange={handleImageChange} />
-        {imagePreview && <img src={imagePreview} alt="Image Preview" />}
+        <input
+          type="number"
+          name="price"
+          value={formData.price}
+          onChange={handleInputChange}
+          required
+        />
 
         <label>Видео кошуу:</label>
         <input type="file" accept="video/*" onChange={handleVideoChange} />
-        {videoPreview && <video controls width="100%"><source src={videoPreview} type="video/mp4" /></video>}
+        {videoPreview && (
+          <video controls width="100%">
+            <source src={videoPreview} type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+        )}
+
+        <label>Обложка для видео (сүрөт):</label>
+        <input type="file" accept="image/*" onChange={handleImageChange} />
+        {imagePreview && <img src={imagePreview} alt="Image Preview" width="100%" />}
 
         <button type="submit">Загрузить</button>
       </form>
