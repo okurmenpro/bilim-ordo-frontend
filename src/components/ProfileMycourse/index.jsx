@@ -4,7 +4,7 @@ import Topcoursescategories from "../Topcoursescategories";
 import Courses from "../Filter";
 import { topcourse } from "../../data/Topcourses";
 
-function index() {
+function ProfileMycourse() {
   return (
     <div className="my-course">
       <Courses name="Courses" count={topcourse.length} />
@@ -13,4 +13,4 @@ function index() {
   );
 }
 
-export default index;
+export default ProfileMycourse;
