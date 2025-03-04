@@ -39,8 +39,8 @@ const Authorization = () => {
     // setLoading(true);
     // setError(null);
     console.log("data", {
-      username: email,
-      password1: password,
+      username: email1,
+      password1: password1,
     });
     try {
       const response = await axios.post(
@@ -59,8 +59,8 @@ const Authorization = () => {
       localStorage.setItem(
         "user",
         JSON.stringify({
-          username: email,
-          password: password,
+          username: email1,
+          password: password1,
         })
       );
       Navigate("/");
