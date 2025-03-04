@@ -52,10 +52,10 @@ export const AppRouter = () => {
             <Route path="message" element={<MessagePage />} />
             <Route path="message/chat" element={<Chat />} />
           </Route>
-          <Route path="/instructor" element={<TeachLayout />}>
-            <Route path="course" element={<TeacherPage />} />
-            <Route path="courses" element={<Coursesinstructor />} />
-          </Route>
+        </Route>
+        <Route path="/instructor" element={<TeachLayout />}>
+          <Route path="/instructor" element={<TeacherPage />} />
+          <Route path="courses" element={<Coursesinstructor />} />
         </Route>
       </>
     )

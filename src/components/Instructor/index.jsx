@@ -19,48 +19,56 @@ const Instructor = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="sidebar2__header">
-        <img src={AdminLogo} alt="Logo" className="sidebar2__logo" />
-        <NavLink to={"/instructor/course"} className="sidebar2__title-link">
+      <NavLink to={"/instructor"} className="sidebar2__title-link">
+        <div className="sidebar2__header">
+          <img src={AdminLogo} alt="Logo" className="sidebar2__logo" />
           <strong className="sidebar2__title">Bilim-Ordo</strong>
-        </NavLink>
-      </div>
+        </div>
+      </NavLink>
 
       <div className="sidebar2__nav">
-        <div className="sidebar2__nav-item">
-          <img src={Dashboard} alt="Dashboard" className="sidebar2__nav-icon" />
-          <NavLink to="/instructor/course" className="sidebar2__nav-text">
+        <NavLink to="/instructor/dashboard" className="sidebar2__nav-text">
+          <div className="sidebar2__nav-item">
+            <img
+              src={Dashboard}
+              alt="Dashboard"
+              className="sidebar2__nav-icon"
+            />
             Dashboard
-          </NavLink>
-        </div>
-        <div className="sidebar2__nav-item">
-          <img src={IconCourse} alt="Courses" className="sidebar2__nav-icon" />
-          <NavLink to="courses" className="sidebar2__nav-text">
+          </div>
+        </NavLink>
+        <NavLink to="courses" className="sidebar2__nav-text">
+          <div className="sidebar2__nav-item">
+            <img
+              src={IconCourse}
+              alt="Courses"
+              className="sidebar2__nav-icon"
+            />
             Courses
-          </NavLink>
-        </div>
-        <div className="sidebar2__nav-item">
-          <img
-            src={Cominication}
-            alt="Communication"
-            className="sidebar2__nav-icon"
-          />
-          <NavLink to="/communication" className="sidebar2__nav-text">
+          </div>
+        </NavLink>
+        <NavLink to="/communication" className="sidebar2__nav-text">
+          <div className="sidebar2__nav-item">
+            <img
+              src={Cominication}
+              alt="Communication"
+              className="sidebar2__nav-icon"
+            />
             Communication
-          </NavLink>
-        </div>
-        <div className="sidebar2__nav-item">
-          <img src={Revenue} alt="Revenue" className="sidebar2__nav-icon" />
-          <NavLink to="/revenue" className="sidebar2__nav-text">
+          </div>
+        </NavLink>
+        <NavLink to="/revenue" className="sidebar2__nav-text">
+          <div className="sidebar2__nav-item">
+            <img src={Revenue} alt="Revenue" className="sidebar2__nav-icon" />
             Revenue
-          </NavLink>
-        </div>
-        <div className="sidebar2__nav-item">
-          <img src={Setting} alt="Setting" className="sidebar2__nav-icon" />
-          <NavLink to="/settings" className="sidebar2__nav-text">
+          </div>
+        </NavLink>
+        <NavLink to="/settings" className="sidebar2__nav-text">
+          <div className="sidebar2__nav-item">
+            <img src={Setting} alt="Setting" className="sidebar2__nav-icon" />
             Setting
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
       </div>
 
       <div className="sidebar2__footer">
