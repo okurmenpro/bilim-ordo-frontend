@@ -22,7 +22,7 @@ const LeftProfile = () => {
 
   return (
     <div className="left-profile">
-      <img src="https://via.placeholder.com/150" alt="Profile Avatar" />
+      {user ? <div className="avatar-profile">{user.username[0].toUpperCase()}</div> : <img src='' alt="Profile Avatar" />}
       {user ? <h3>{user.username}</h3> : <h3>Guest</h3>}
       <button className="share-profile">
         Share Profile

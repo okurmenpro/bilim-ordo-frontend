@@ -1,6 +1,6 @@
 .left-profile {
     width: 290px;
-    height: 607px;
+    max-height: 607px;
     padding: 24px 0px 0px 0px;
     border-radius: 16px;
     background: #F8FAFC;
@@ -8,10 +8,17 @@
     margin-top: 140px;
     margin-bottom: 100px;
 
-    img {
+    .avatar-profile {
         width: 160px;
         height: 160px;
         border-radius: 50%;
+        background-color: #334155;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        margin: auto;
     }
 
     h3 {

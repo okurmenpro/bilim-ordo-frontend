@@ -9,8 +9,8 @@ import axios from "axios";
 
 const Authorization = () => {
   const Navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email1, setEmail] = useState("");
+  const [password1, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   // const [formData, setFormData] = useState({
@@ -39,15 +39,15 @@ const Authorization = () => {
     // setLoading(true);
     // setError(null);
     console.log("data", {
-      username: email,
-      password1: password,
+      username: email1,
+      password1: password1,
     });
     try {
       const response = await axios.post(
-        "http://34.93.66.214/api/login/",
+        "http://35.223.148.229/api/login/",
         {
-          username: email,
-          password: password,
+          email: email1,
+          password: password1,
         },
         {
           headers: {
@@ -59,8 +59,8 @@ const Authorization = () => {
       localStorage.setItem(
         "user",
         JSON.stringify({
-          username: email,
-          password: password,
+          username: email1,
+          password: password1,
         })
       );
       Navigate("/");
@@ -104,14 +104,14 @@ const Authorization = () => {
         <input
           type="email"
           placeholder="Username or Email ID"
-          value={email}
+          value={email1}
           onChange={(e) => setEmail(e.target.value)}
         />
         <div className="password-container2">
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Enter Password"
-            value={password}
+            value={password1}
             onChange={(e) => setPassword(e.target.value)}
           />
           <button
