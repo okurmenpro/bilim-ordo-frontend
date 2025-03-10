@@ -26,6 +26,7 @@ import TeachingPage from "./pages/Teaching";
 import Chat from "./components/Chat";
 import TeachLayout from "./components/TeachLayout";
 import Coursesinstructor from "./components/Coursesinstructor";
+import TeachDashboart from "./components/TeachDashboard";
 
 export const AppRouter = () => {
   return createBrowserRouter(
@@ -56,6 +57,7 @@ export const AppRouter = () => {
         <Route path="/instructor" element={<TeachLayout />}>
           <Route path="/instructor" element={<TeacherPage />} />
           <Route path="courses" element={<Coursesinstructor />} />
+          <Route path="dashboard" element={<TeachDashboart />} />
         </Route>
       </>
     )
